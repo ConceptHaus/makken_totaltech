@@ -15,7 +15,7 @@ class CreateTextoTable extends Migration
     {
         Schema::create('texto', function (Blueprint $table) {
             $table->increments('id_texto')->unsigned();
-            $table->increments('id_seccion')->unsigned();
+            $table->integer('id_seccion')->unsigned();
             $table->foreign('id_seccion')->references('id_seccion')->on('seccion')->onDelete('cascade');
             $table->string('contenido');
             $table->timestamps();
