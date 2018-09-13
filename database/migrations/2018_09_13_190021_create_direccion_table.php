@@ -14,7 +14,9 @@ class CreateDireccionTable extends Migration
     public function up()
     {
         Schema::create('direccion', function (Blueprint $table) {
+            $table->increments('id_direccion')->unsigned();
             $table->increments('id_direccion')->primary();
+            $table->increments('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('cascade');
             $table->string('cp');
             $table->string('estado');

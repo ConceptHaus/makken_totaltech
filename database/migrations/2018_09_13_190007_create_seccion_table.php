@@ -14,6 +14,7 @@ class CreateSeccionTable extends Migration
     public function up()
     {
         Schema::create('seccion', function (Blueprint $table) {
+            $table->increments('id_seccion')->unsigned();
             $table->increments('id_seccion')->primary();
             $table->string('nombre');
             $table->string('clase');
