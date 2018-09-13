@@ -1,4 +1,4 @@
-::placeholder { 
+::placeholder {
     color: $gris!important;
 }
 :focus{
@@ -12,6 +12,14 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+footer {
+background: blue;
+}
+  
+html {
+height: 100%;
 }
 
 .body-bg {
@@ -41,11 +49,6 @@ a {
         margin-right: 30px;
         margin-top: 40px;
     }
-    // .navbar-nav > li {
-    //     &:hover {
-    //         background-color: transparent; 
-    //     }
-    // }
     .navbar-nav > li > a {
         color: $blanco;
         font-size: 17px;
@@ -86,6 +89,53 @@ a {
     padding: 10px 12px;
     width: 200px;
 }
+
+
+
+// Estilos de Home
+.fondo {
+    background: url('../img/images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -18.5%;
+  }
+  
+  .fila-header {
+    height: 100%;
+  }
+  
+  .dinamica {
+    background-color: blue;
+  }
+  
+  .pasos-img {
+    width: 80%;
+  }
+  
+  .tiendas-img {
+    width: 80%;
+  }
+  
+  .ganadores {
+    background: url('../img/images/background3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  // .login {
+  //   background: url('../img/images/background2.jpg');
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   min-height: 100%;
+  // }
+  // .formulario-login {
+  //     padding: 2%;
+  //     background: rgba(255,255,255,0.5);
+  // }
 
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
 
@@ -157,11 +207,3 @@ a {
     //   color: pink!important;
     // }
 }
-  
-  
-  
-  
-  
-  
-  
-  

@@ -25,10 +25,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function addNewTicket()
-    {
-        return view('add_ticket');
-    }
-
 }
