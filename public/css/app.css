@@ -7721,6 +7721,14 @@ button.close {
   }
 }
 
+footer {
+  background: blue;
+}
+
+html {
+  height: 100%;
+}
+
 ::-webkit-input-placeholder {
   color: #D5D4D4 !important;
 }
@@ -7770,6 +7778,38 @@ a:hover {
   letter-spacing: 1px;
   padding: 10px 12px;
   width: 200px;
+}
+
+.fondo {
+  background: url("../img/images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -18.5%;
+}
+
+.fila-header {
+  height: 100%;
+}
+
+.dinamica {
+  background-color: blue;
+}
+
+.pasos-img {
+  width: 80%;
+}
+
+.tiendas-img {
+  width: 80%;
+}
+
+.ganadores {
+  background: url("../img/images/background3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #login .panel {
