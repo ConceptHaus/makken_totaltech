@@ -68,6 +68,7 @@
         </style>
     </head>
     <body>
+        <button class="btn btn-primary">Prueba Bootstrap 4</button>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -86,5 +87,8 @@
                 </div>
             </div>
         </div>
+
+
+        <script src="{{ asset('js/app.js')}}"></script>
     </body>
 </html>
