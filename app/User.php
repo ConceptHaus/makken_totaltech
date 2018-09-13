@@ -31,14 +31,14 @@ class User extends Authenticatable
     ];
 
     public function tickets(){
-      return $this->hasMany('App\Ticket', 'id_ticket');
+      return $this->hasMany('App\Ticket', 'id_usuario');
     }
 
     public function direccion(){
-      return $this->hasOne('App\Direccion', 'id_direccion');
+      return $this->hasOne('App\Direccion', 'id_usuario');
     }
 
     public function ganador(){
-      return $this->hasOne('App\Ganador', 'id_ganador');
+      return $this->hasMany('App\Ganador', 'id_usuario');
     }
 }
