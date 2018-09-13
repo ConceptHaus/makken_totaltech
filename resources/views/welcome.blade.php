@@ -210,13 +210,6 @@
               </tbody>
           </table>
         </div>
-<<<<<<< HEAD
-
-
-        <script src="{{ asset('js/app.js')}}"></script>
-    </body>
-</html>
-=======
       </div>
     </div>
     <div class="tab-pane fade" id="semana4" role="tabpanel" aria-labelledby="semana4-tab">
@@ -258,4 +251,3 @@
   <!-- Fin Ganadores -->
 
 @endsection
->>>>>>> 4c3bca2c4f63e5df53329ac7fa842695cbfaead4
