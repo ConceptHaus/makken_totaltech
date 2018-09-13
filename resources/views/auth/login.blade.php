@@ -1,7 +1,7 @@
 @extends('layouts.app-forms')
 
 @section('content')
-<div id="login" class="container">
+<div id="pageSytyle" class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel">

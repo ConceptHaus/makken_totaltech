@@ -1,6 +1,15 @@
-#login {
+#pageSytyle {
+    a, p {
+        color: $blanco;
+        transition:all .5s ease-in-out;
+    }
+    a {
+        &:hover {
+            color: $amarillo;
+        }
+    }
     .panel {
-        background: rgba(1, 25, 73, .85);
+        background: rgba(1, 25, 73, .6);
         border-radius: 0;
         padding: 3% 15%;
         padding-top: 0%!important;

@@ -1,8 +1,3 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url(../fonts/HelveticaNeue.ttc) format('truetype');
-// }
-
 ::placeholder { 
     color: $gris!important;
 }
@@ -20,7 +15,9 @@ a {
 }
 
 .body-bg {
-    background: url('../img/backgrounds/bg-bike-mask.jpg');
+    background: url(../img/backgrounds/bg-bike-mask-v7.jpg) no-repeat;
+    background-size: cover;
+
 }
 .form-control {
     border: none;
@@ -30,6 +27,54 @@ a {
     letter-spacing: 2px;
 }
 
+#app {
+    height: 100vh;
+}
+
+// Navbar
+.navbar {
+    background-color: transparent; 
+    border: none; 
+    min-height: 166px; 
+    padding-top: 20px;
+    .navbar-nav {
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+    // .navbar-nav > li {
+    //     &:hover {
+    //         background-color: transparent; 
+    //     }
+    // }
+    .navbar-nav > li > a {
+        color: $blanco;
+        font-size: 17px;
+        font-weight: 600;
+        transition:all .5s ease-in-out;
+        text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
+        &:hover, &:focus {
+            background-color: transparent; 
+            color: $amarillo;
+        }
+    }
+} 
+.navbar-toggle {
+    background: rgba(1, 25, 73, .6);
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    .icon-bar {
+        background: $amarillo;
+    }
+}
+.navbar-brand {
+    img {
+        width: 350px;
+    }
+}
+.navbar-collapse {
+    box-shadow: none;
+}
 // Botones
 .btn-submit {
     background: $amarillo;
@@ -41,3 +86,82 @@ a {
     padding: 10px 12px;
     width: 200px;
 }
+
+// Breakpoints para rwd 320 480 600 767 992 1250 1680
+
+@media screen and (max-width: 1680px){
+//   h3{
+//     color: brown!important;
+//   }
+}
+@media screen and (max-width: 1250px){ 
+    // h3{
+    //     color: orange!important;
+    // }
+    // Navbar
+    .navbar {
+        .navbar-nav > li > a {
+            font-size: 14px;
+        }
+    } 
+}
+@media screen and (max-width: 992px){ 
+    // h3{
+    //     color: blue!important;
+    // }
+    .navbar-brand {
+        img {
+            width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 767px){ 
+    // h3{
+    //     color: green!important;
+    // }
+    .navbar {
+        .navbar-nav {
+            margin-right: 0px;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .navbar-nav > li > a {
+            &:hover, &:focus {
+                background: rgba(1, 25, 73, 0.6);
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    // h3{
+    //   color: black!important;
+    // }
+    #pageSytyle {
+        .panel {
+            padding: 3% 5%!important;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    // h3{
+    //   color: yellow!important;
+    // }
+    .navbar-brand {
+        img {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    // h3{
+    //   color: pink!important;
+    // }
+}
+  
+  
+  
+  
+  
+  
+  
+  

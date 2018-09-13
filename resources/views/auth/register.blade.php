@@ -1,13 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.app-forms')
 
 @section('content')
-<div class="container">
+<div id="pageSytyle" class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-
-                <div class="panel-body">
+            <div class="panel">
+                <div class="panel-body  text-center">
+                    <a class="forget-password" href="{{ route('password.request') }}">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+                    <h3>REGÍSTRATE</h3>
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
@@ -62,10 +64,8 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-submit">ENTRAR</button>
                             </div>
                         </div>
                     </form>
