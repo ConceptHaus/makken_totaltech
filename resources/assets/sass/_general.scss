@@ -1,0 +1,43 @@
+// @font-face {
+//     font-family: 'HelveticaNeue';
+//     src: url(../fonts/HelveticaNeue.ttc) format('truetype');
+// }
+
+::placeholder { 
+    color: $gris!important;
+}
+:focus{
+	outline:0px!important;
+}
+
+body {
+    letter-spacing: 2px;
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.body-bg {
+    background: url('../img/backgrounds/bg-bike-mask.jpg');
+}
+.form-control {
+    border: none;
+    border-radius: 0;
+    color: $gris_oscuro!important;
+    height: 45px;
+    letter-spacing: 2px;
+}
+
+// Botones
+.btn-submit {
+    background: $amarillo;
+    border-radius: 50px;
+    color: $azul;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+    width: 200px;
+}
