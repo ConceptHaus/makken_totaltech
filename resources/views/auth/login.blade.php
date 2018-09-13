@@ -1,21 +1,17 @@
-@extends('layouts.app')
+@extends('layouts.app-forms')
 
 @section('content')
-<div class="container">
+<div id="login" class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-
-                <div class="panel-body">
+            <div class="panel">
+                <div class="panel-body text-center">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-
+                        <h3>INICIAR SESIÓN</h3>
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                            <div class="col-md-12">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Usuario" required autofocus>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -26,10 +22,8 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                            <div class="col-md-12">
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -39,7 +33,16 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group content-actions">
+                            <div class="col-md-12">
+                                <p>¿No tienes cuenta? <a class="" href="{{ route('register') }}">Regístrate.</a></p>
+                                <a class="forget-password" href="{{ route('password.request') }}">
+                                    ¿Olvidaste tu contraseña?
+                                </a>
+                            </div>
+                        </div>
+
+                        {{-- <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
@@ -47,19 +50,14 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-submit">ENTRAR</button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>
