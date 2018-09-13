@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
