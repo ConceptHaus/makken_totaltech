@@ -15,11 +15,11 @@ class CreateGanadorTable extends Migration
     {
         Schema::create('ganador', function (Blueprint $table) {
             $table->increments('id_ganador')->unsigned();
-            $table->increments('id_usuario')->unsigned();
+            $table->integer('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('cascade');
-            $table->increments('id_ticket')->unsigned();
+            $table->integer('id_ticket')->unsigned();
             $table->foreign('id_ticket')->references('id_ticket')->on('tickets')->onDelete('cascade');
-            $table->increments('id_premio')->unsigned();
+            $table->integer('id_premio')->unsigned();
             $table->foreign('id_premio')->references('id_premio')->on('premio')->onDelete('cascade');
             $table->timestamps();
         });
