@@ -15,7 +15,6 @@ class CreateSeccionTable extends Migration
     {
         Schema::create('seccion', function (Blueprint $table) {
             $table->increments('id_seccion')->unsigned();
-            $table->increments('id_seccion')->primary();
             $table->string('nombre');
             $table->string('clase');
             $table->timestamps();

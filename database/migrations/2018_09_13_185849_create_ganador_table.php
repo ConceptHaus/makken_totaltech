@@ -15,7 +15,6 @@ class CreateGanadorTable extends Migration
     {
         Schema::create('ganador', function (Blueprint $table) {
             $table->increments('id_ganador')->unsigned();
-            $table->increments('id_ganador')->primary();
             $table->increments('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('cascade');
             $table->increments('id_ticket')->unsigned();

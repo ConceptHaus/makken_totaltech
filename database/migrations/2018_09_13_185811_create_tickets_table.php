@@ -15,7 +15,6 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->increments('id_ticket')->unsigned();
-            $table->increments('id_ticket')->primary();
             $table->integer('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('cascade');
             $table->string('no_ticket')->unique();
