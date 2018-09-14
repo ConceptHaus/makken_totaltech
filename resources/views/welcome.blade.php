@@ -11,7 +11,7 @@
 
   {{-- <!-- Header -->
   <div class="container-fluid fondo">
-    
+
     <div class="row align-items-end fila-header">
       <div class="col-lg-8 col-md-6 text-center justify-content-end ">
         <a href="#" class="btn">¡PARTICIPA!<br>DA CLICK AQUÍ</a>
@@ -29,7 +29,7 @@
   <!-- Fin del Header --> --}}
 
 
-    
+
     {{-- <div class="row align-items-end fila-header">
       <div class="col-lg-8 col-md-6 text-center justify-content-end ">
         <a href="#" class="btn">¡PARTICIPA!<br>DA CLICK AQUÍ</a>
@@ -47,31 +47,31 @@
   <!-- Dinámica del concurso -->
   <div class="container-fluid dinamica">
       <div class="row text-center justify-content-center">
-        <div class="col-lg-6 col-md-12 mt-5">
+        <div class="col-lg-12 col-md-12 mt-5">
           <h1>DINÁMICA DEL CONCURSO</h1>
         </div>
       </div>
       <div class="row text-center justify-content-center">
         <div class="row col-lg-8 justify-content-around">
           <div class="col-lg-3 col-sm-7">
-            <img src="{{ asset('img/icons/step1.png') }}" class="img-fluid pasos-img" alt="Paso 1">
-            <div class="text-left">
+            <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img" alt="Paso 1">
+            <div class="text-left text-responsive">
               <h5 class="no-margin">COMPRA</h5>
               <h6 class="no-margin blanco">PRODUCTOS</h6>
               <h5 class="blanco no-margin"> CEYS Y TOTAL TECH.</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-7">
-            <img src="{{ asset('img/icons/step2.png') }}" class="img-fluid pasos-img" alt="Paso 2">
-            <div class="text-left">
+            <img src="{{ asset('img/icons/step2.png') }}" class="pasos-img" alt="Paso 2">
+            <div class="text-left text-responsive">
               <h5 class="no-margin">REGISTRA</h5>
               <h6 class="no-margin blanco">TU TICKET VÍA WHATSAPP AL 044 (55) 4342 – 7322 O EN
               <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
             </div>
           </div>
           <div class="col-lg-3 col-sm-7">
-            <img src="{{ asset('img/icons/step3.png') }}" class="img-fluid pasos-img" alt="Paso 3">
-            <div class="text-left">
+            <img src="{{ asset('img/icons/step3.png') }}" class="pasos-img" alt="Paso 3">
+            <div class="text-left text-responsive">
               <h5 class="no-margin">GANA</h5>
               <h6 class="no-margin blanco">UNA BICICLETA</h6>
               <h5 class="blanco no-margin">CADA DÍA.</h5>
