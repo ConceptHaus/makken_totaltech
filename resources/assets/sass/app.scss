@@ -1,16 +1,53 @@
+/**
+***
+*** 1.- Fonts
+*** 2.- Variables
+*** 3.- Bootstrap v4
+*** 4.- Estilos Generales
+*** 5.- Estilos Login
+*** 6.- Estilos Home
+*** 7.- Tipografía Personalizada
+*** 8.- Responsive
+***
+**/
 
-// Fonts
+/**
+*** 1.- Fonts
+**/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
+/**
+*** 2.- Variables
+**/
 @import "variables";
 
-// Bootstrap
+/**
+*** 3.- Bootstrap v4
+**/
 @import "~bootstrap/scss/bootstrap";
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+/**
+*** 4.- Estilos Generales
+**/
 @import "general";
+
+/**
+*** 5.- Estilos Login
+**/
 @import "login";
+
+/**
+*** 6.- Estilos Home
+**/
 @import "home";
+
+/**
+*** 7.- Tipografía Personalizada
+**/
 @import "typography";
+
+/**
+*** 8.- Responsive
+**/
 @import "responsive";

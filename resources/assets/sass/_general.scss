@@ -1,15 +1,13 @@
 ::placeholder {
-    color: $gris!important;
-}
-:focus{
-	outline:0px!important;
+    color: $gris !important;
 }
 
-body {
-    letter-spacing: 2px;
+:focus {
+    outline: 0px !important;
 }
+
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -17,12 +15,13 @@ a {
     }
 }
 
-footer {
-background: $azul_2;
+body {
+    background: $blanco;
+    letter-spacing: 2px;
 }
 
 html {
-height: 100%;
+    height: 100%;
 }
 
 .body-bg {
@@ -30,10 +29,16 @@ height: 100%;
     background-size: cover;
 
 }
+
+.no-border {
+    border: none !important;
+}
+
+// Estilos input
 .form-control {
     border: none;
     border-radius: 0;
-    color: $gris_oscuro!important;
+    color: $gris_oscuro !important;
     height: 45px;
     letter-spacing: 2px;
 }
@@ -51,54 +56,68 @@ height: 100%;
     position: absolute;
     width: 100%;
     z-index: 9;
+
     .navbar-nav {
-        margin-right: 30px;
-        margin-top: 20px;
+        margin-right: 90px;
+        margin-top: -30px;
+
         .nav-link {
             color: $blanco;
             font-size: 17px;
             font-weight: 600;
-            transition:all .5s ease-in-out;
-            text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: all .5s ease-in-out;
+            text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
             text-decoration: none;
-            &:hover, &:focus {
+
+            &:hover,
+            &:focus {
                 background-color: transparent;
-                color: $amarillo!important;
+                color: $amarillo !important;
             }
         }
     }
-    .navbar-nav .active > .nav-link {
-        color: $amarillo!important;
+
+    .navbar-nav .active>.nav-link {
+        color: $amarillo !important;
     }
+
     .navbar-toggler-icon {
         background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46');
     }
 }
+
 .navbar-home {
     .navbar-nav {
         margin-top: -50px;
     }
 }
+
 .navbar-toggler {
     background: transparent;
     border: none;
     position: absolute;
     right: 20px;
     top: 50px;
+
     .icon-bar {
         background: $amarillo;
     }
 }
+
 .navbar-brand {
     img {
         width: 350px;
     }
 }
+
 .navbar-brand-home {
     img {
-        width: 100%!important;
+        width: 100% !important;
     }
 }
+
 .navbar-collapse {
     box-shadow: none;
 }
@@ -116,15 +135,55 @@ height: 100%;
 }
 
 // Tablas
+table {
+    th {
+        border-right: 1px solid $azul_3!important;
+        color: $azul;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 2rem !important;
+        // &:nth-of-type(3), &:nth-of-type(5) {
+        //     border: none!important;
+        // }
+
+    }
+
+    tr {
+        td {
+            border-right: 1px solid $azul_3!important;
+            padding: 2rem;
+
+            // &:nth-of-type(3), &:nth-of-type(5) {
+            //     border: none!important;
+            // }
+        }
+    }
+}
+
 .table-responsive {
     display: inline-table;
 }
 
+.content-table {
+    background: $blanco !important;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content-table-tickets {
+    margin-top: 50px;
+}
+
 .img-footer {
-  width: 60%;
+    width: 60%;
 }
 
 .camera-icon {
-  width: 35px;
-  height: auto;
+    width: 35px;
+    height: auto;
+}
+
+// Footer
+footer {
+    background: $azul_2;
 }

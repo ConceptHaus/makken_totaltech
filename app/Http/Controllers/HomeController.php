@@ -21,8 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
         return view('home');
+    }
+    public function addNewTicket() {
+        return view('add_ticket');
     }
 }
