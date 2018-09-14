@@ -45,7 +45,7 @@
   <!-- Fin del Header -->
 
   <!-- Dinámica del concurso -->
-  <div class="container-fluid dinamica">
+  <div class="container-fluid dinamica pb-sm-5">
       <div class="row text-center justify-content-center">
         <div class="col-lg-12 col-md-12 mt-5">
           <h1>DINÁMICA DEL CONCURSO</h1>
@@ -91,31 +91,31 @@
   <!-- Establecimientos Participantes -->
   <div class="container pt-5 pb-5">
     <div class="row">
-      <div class="row text-center col-6 mt-4">
+      <div class="row text-center col-lg-6 col-sm-12 mt-4">
         <div class="col-12">
           <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
         </div>
         <div class="col-6">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
         </div>
         <div class="col-6">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
-          <img class="img-fluid tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
+          <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
         </div>
-        <div class="col-12 mt-3">
+        <div class="col-12 mt-lg-3 mt-sm-5">
           <h2 class="azul">¡Y MUCHAS MÁS!</h2>
         </div>
       </div>
-      <div class="row text-center col-6 mt-4 justify-content-center">
+      <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center">
         <div class="col-12">
           <h2 class="azul">PREMIO</h2>
         </div>
-        <div class="col-8">
+        <div class="col-lg-8">
           <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
           <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
         </div>

@@ -9530,7 +9530,7 @@ a:hover {
 }
 
 footer {
-  background: blue;
+  background: #253B81;
 }
 
 html {
@@ -9629,6 +9629,10 @@ html {
   letter-spacing: 1px;
   padding: 10px 12px;
   width: 200px;
+}
+
+.img-footer {
+  width: 80%;
 }
 
 #pageSytyle a, #pageSytyle p {
@@ -9777,6 +9781,20 @@ a {
   color: white;
 }
 
+footer p {
+  color: white;
+  font-weight: 600;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 1250px) {
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
@@ -9795,17 +9813,23 @@ a {
   .navbar-brand img {
     width: 300px;
   }
-}
-
-@media screen and (max-width: 600px) {
-  #pageSytyle .panel {
-    padding: 3% 5% !important;
-  }
   .pasos-img {
     width: 60% !important;
   }
   .text-responsive {
     text-align: center !important;
+  }
+  .tiendas-img {
+    width: 100% !important;
+  }
+  .img-footer {
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #pageSytyle .panel {
+    padding: 3% 5% !important;
   }
 }
 
