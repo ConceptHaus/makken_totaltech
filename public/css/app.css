@@ -9778,6 +9778,56 @@ html {
   background-size: cover;
 }
 
+#ganadores .nav-tabs {
+  border: none;
+  margin-top: 30px;
+}
+
+#ganadores .nav-tabs .nav-link {
+  background-color: #F7E300;
+  border-color: #F7E300;
+  border-radius: 0;
+  color: #223F97;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+#ganadores .nav-tabs .nav-link.active {
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+#ganadores .content-table {
+  background: #FFF !important;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#ganadores table th {
+  border-right: 1px solid #223F97;
+  color: #223F97;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2rem !important;
+}
+
+#ganadores table th:nth-of-type(3) {
+  border: none;
+}
+
+#ganadores table tr td {
+  border-right: 1px solid #223F97;
+  padding: 2rem;
+}
+
+#ganadores table tr td:nth-of-type(3) {
+  border: none;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
@@ -9828,6 +9878,19 @@ a {
   }
   .navbar-brand img {
     width: 300px;
+  }
+  .navbar-brand-home img {
+    width: 80% !important;
+  }
+  #ganadores .nav-tabs .nav-link {
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ganadores .nav-tabs .nav-link {
+    font-size: 16px;
+    margin: 0px;
   }
 }
 
