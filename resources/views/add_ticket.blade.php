@@ -6,9 +6,10 @@
         <div class="col-md-8 offset-md-2">
             <div class="panel">
                 <div class="panel-body text-center">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form id="formulario-ticket" class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
                         <h3>REGÍSTRA TU TICKET</h3>
+                        <p class="text-left"><strong>Tienda de "..."/"..."</strong></p>
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Usuario" required autofocus>
                             @if ($errors->has('email'))
