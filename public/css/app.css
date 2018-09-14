@@ -9525,6 +9525,10 @@ body {
   letter-spacing: 2px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -9638,6 +9642,11 @@ html {
 
 .img-footer {
   width: 80%;
+}
+
+#pageSytyle {
+  padding-top: 170px;
+  padding-bottom: 120px;
 }
 
 #pageSytyle a, #pageSytyle p {

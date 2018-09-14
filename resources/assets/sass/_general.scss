@@ -9,6 +9,7 @@ body {
     letter-spacing: 2px;
 }
 a {
+    text-decoration: none!important;
     &:hover {
         text-decoration: none;
     }
