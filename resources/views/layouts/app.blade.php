@@ -63,7 +63,7 @@
           Términos y Condiciones</p>
         </div>
         <div class="col-lg-6 text-center">
-          <p><a href="https://mundoceys.com/" target="_blank">WWW.MUNDOCEYS.COM</a></p>
+          <p><a href="https://mundoceys.com/" target="_blank"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
         </div>
         <div class="col-lg-2 text-center">
           <a href="https://mundoceys.com/" target="_blank"><img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys"></a>

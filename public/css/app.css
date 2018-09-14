@@ -1,4 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+/**
+***
+*** 1.- Fonts
+*** 2.- Variables
+*** 3.- Bootstrap v4
+*** 4.- Estilos Generales
+*** 5.- Estilos Login
+*** 6.- Estilos Home
+*** 7.- Tipografía Personalizada
+*** 8.- Responsive
+***
+**/
+/**
+*** 1.- Fonts
+**/
+/**
+*** 2.- Variables
+**/
+/**
+*** 3.- Bootstrap v4
+**/
+/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -9501,18 +9523,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/**
+*** 4.- Estilos Generales
+**/
 ::-webkit-input-placeholder {
   color: #D5D4D4 !important;
 }
-
 :-ms-input-placeholder {
   color: #D5D4D4 !important;
 }
-
 ::-ms-input-placeholder {
   color: #D5D4D4 !important;
 }
-
 ::placeholder {
   color: #D5D4D4 !important;
 }
@@ -9652,6 +9674,9 @@ html {
   height: auto;
 }
 
+/**
+*** 5.- Estilos Login
+**/
 #pageSytyle {
   padding-top: 170px;
   padding-bottom: 120px;
@@ -9718,6 +9743,9 @@ html {
   top: 20px;
 }
 
+/**
+*** 6.- Estilos Home
+**/
 .header-home {
   background: url("../img/images/background.jpg");
   background-position: center center;
@@ -9908,6 +9936,9 @@ html {
   border-right: 2px solid #F0F0F0;
 }
 
+/**
+*** 7.- Tipografía Personalizada
+**/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
@@ -9961,6 +9992,9 @@ strong {
   font-weight: 800;
 }
 
+/**
+*** 8.- Responsive
+**/
 @media screen and (max-width: 1250px) {
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
