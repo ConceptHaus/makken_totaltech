@@ -10,40 +10,23 @@
   <a href="#" class="btn-call-to-action text-center">
     <span>¡PARTICIPA!</span> DA CLICK AQUÍ
   </a>
-  {{-- <div class="row">
-    <div class="col-lg-12 col-md-12 justify-content-end">
-      <a href="#" class="btn">
-        <span>¡PARTICIPA!</span> DA CLICK AQUÍ
-      </a>
-    </div>
-  </div> --}}
 </section>
 
-{{--
-<!-- Header -->
-<div class="container-fluid fondo">
-
-  <div class="row align-items-end fila-header">
-    <div class="col-lg-8 col-md-6 text-center justify-content-end ">
-      <a href="#" class="btn">¡PARTICIPA!<br>DA CLICK AQUÍ</a>
+<!-- Dinámica del concurso -->
+<div class="container-fluid dinamica pb-sm-5">
+  <div class="row text-center justify-content-center">
+    <div class="col-lg-12 col-md-12 mt-5">
+      <h1>DINÁMICA DEL CONCURSO</h1>
     </div>
-    <div class="col-lg-2 col-md-6 justify-content-end ">
-      <img class="img-fluid" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Silicón">
-    </div>
-    <div class="col-lg-2 col-md-6 justify-content-end ">
-      <img class="silicon img-fluid" src="{{ asset('img/images/product.png') }}" alt="Silicón">
-    </div>
-    <img class="img-fluid" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
   </div>
-
-</div>
-<!-- Fin del Header --> --}}
-
-  <!-- Dinámica del concurso -->
-  <div class="container-fluid dinamica pb-sm-5">
-      <div class="row text-center justify-content-center">
-        <div class="col-lg-12 col-md-12 mt-5">
-          <h1>DINÁMICA DEL CONCURSO</h1>
+  <div class="row text-center justify-content-center">
+    <div class="row col-lg-8 justify-content-around">
+      <div class="col-lg-3 col-sm-7">
+        <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img" alt="Paso 1">
+        <div class="text-left text-responsive">
+          <h5 class="no-margin">COMPRA</h5>
+          <h6 class="no-margin blanco">PRODUCTOS</h6>
+          <h5 class="blanco no-margin"> CEYS Y TOTAL TECH.</h5>
         </div>
       </div>
       <div class="col-lg-3 col-sm-7">
@@ -63,43 +46,11 @@
         </div>
       </div>
     </div>
-  <!-- Fin Dinámica del concurso -->
-
-  <!-- Establecimientos Participantes -->
-  <div class="container pt-5 pb-5">
-    <div class="row">
-      <div class="row text-center col-lg-6 col-sm-12 mt-4">
-        <div class="col-12">
-          <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
-        </div>
-        <div class="col-6">
-          <img class="tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
-        </div>
-        <div class="col-6">
-          <img class="tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
-          <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
-        </div>
-        <div class="col-12 mt-lg-3 mt-sm-5">
-          <h2 class="azul">¡Y MUCHAS MÁS!</h2>
-        </div>
-      </div>
-      <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center">
-        <div class="col-12">
-          <h2 class="azul">PREMIO</h2>
-        </div>
-        <div class="col-lg-8">
-          <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
-          <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
-        </div>
-        <div class="col-12">
-          <a class="btn" href="#">¡PARTICIPA! DA CLICK AQUÍ</a>
-        </div>
-      </div>
+  </div>
+  <div class="row text-center justify-content-center">
+    <div class="col-lg-8 col-md-12 mt-5">
+      <h6 class="blanco">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
+      <h4>¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</h4>
     </div>
   </div>
 </div>
@@ -108,31 +59,31 @@
 <!-- Establecimientos Participantes -->
 <div class="container pt-5 pb-5">
   <div class="row">
-    <div class="row text-center col-6 mt-4">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4">
       <div class="col-12">
         <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
       <div class="col-6">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
       </div>
       <div class="col-6">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
-        <img class="img-fluid tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
+        <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
       </div>
-      <div class="col-12 mt-3">
+      <div class="col-12 mt-lg-3 mt-sm-5">
         <h2 class="azul">¡Y MUCHAS MÁS!</h2>
       </div>
     </div>
-    <div class="row text-center col-6 mt-4 justify-content-center">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center">
       <div class="col-12">
         <h2 class="azul">PREMIO</h2>
       </div>
-      <div class="col-8">
+      <div class="col-lg-8">
         <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
