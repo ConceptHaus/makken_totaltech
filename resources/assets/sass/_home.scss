@@ -83,7 +83,7 @@
 }
 
 .pasos-img {
-  width: 80%;
+  width: 150px;
 }
 
 .tiendas-img {
@@ -123,7 +123,7 @@
 }
 
 .btn-call-to-action {
-  background: rgba(34, 63, 151, 0.8);
+  background: rgba(34, 63, 151, 1);
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
@@ -141,6 +141,25 @@
     color: #fff;
     transform: scale(1.1);
   }
+}
+
+#dinamica {
+
+  h5, .h5 {
+    &.responsive-title {
+        font-size: 22px;
+    }
+  }
+
+  h6, .h6 {
+    &.responsive-title {
+        font-size: 14px;
+    }
+  }
+}
+
+.premio {
+  border-right: 2px solid $gris_claro;
 }
 //    .nav-tabs .nav-item.show .nav-link {
 //     color: #495057;

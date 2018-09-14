@@ -17,9 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+//Vistas
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
 
-Auth::routes();
+//Funcionalidades
 
-Route::get('/home', 'HomeController@index')->name('home');

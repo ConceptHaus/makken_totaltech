@@ -21,13 +21,13 @@
 
     h5, .h5 {
       &.responsive-title {
-        font-size: 1rem;
+        font-size: 18px !important;
       }
     }
 
     h6, .h6 {
       &.responsive-title {
-        font-size: 0.6rem;
+        font-size: 11px !important;
       }
     }
 }
@@ -73,10 +73,6 @@
         }
     }
 
-    .pasos-img {
-        width: 40% !important;
-    }
-
     .text-responsive {
         text-align: center !important;
     }
@@ -101,6 +97,10 @@
             right: 220px;
             width: 150px;
         }
+    }
+
+    .premio {
+      border-right: 0;
     }
 }
 
@@ -182,10 +182,6 @@
 
     // Responsive home
 
-
-    .pasos-img {
-        width: 50% !important;
-    }
 }
 
 @media screen and (max-width: 320px) {
