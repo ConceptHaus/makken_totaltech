@@ -53,12 +53,12 @@
     <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
       <div class="row align-items-center">
         <div class="col-lg-2 text-responsive">
-          <p>SOPORTE<br>
+          <p><strong>SOPORTE</strong><br>
           55-555-5555
           info@correo.com</p>
         </div>
         <div class="col-lg-2 text-responsive">
-          <p>LEGALES<br>
+          <p><strong>LEGALES</strong><br>
           Aviso de Privacidad
           Términos y Condiciones</p>
         </div>

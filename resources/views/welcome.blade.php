@@ -24,25 +24,25 @@
       <div class="col-lg-3 col-sm-7">
         <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img" alt="Paso 1">
         <div class="text-left text-responsive">
-          <h5 class="no-margin">COMPRA</h5>
-          <h6 class="no-margin blanco">PRODUCTOS</h6>
-          <h5 class="blanco no-margin"> CEYS Y TOTAL TECH.</h5>
+          <h5 class="no-margin responsive-title">COMPRA</h5>
+          <h6 class="no-margin blanco responsive-title">PRODUCTOS</h6>
+          <h5 class="blanco no-margin responsive-title"> CEYS Y TOTAL TECH.</h5>
         </div>
       </div>
       <div class="col-lg-3 col-sm-7">
         <img src="{{ asset('img/icons/step2.png') }}" class="pasos-img" alt="Paso 2">
         <div class="text-left text-responsive">
-          <h5 class="no-margin">REGISTRA</h5>
-          <h6 class="no-margin blanco">TU TICKET VÍA WHATSAPP AL 044 (55) 4342 – 7322 O EN
+          <h5 class="no-margin responsive-title">REGISTRA</h5>
+          <h6 class="no-margin blanco responsive-title">TU TICKET VÍA WHATSAPP AL 044 (55) 4342 – 7322 O EN
             <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
         </div>
       </div>
       <div class="col-lg-3 col-sm-7">
         <img src="{{ asset('img/icons/step3.png') }}" class="pasos-img" alt="Paso 3">
         <div class="text-left text-responsive">
-          <h5 class="no-margin">GANA</h5>
-          <h6 class="no-margin blanco">UNA BICICLETA</h6>
-          <h5 class="blanco no-margin">CADA DÍA.</h5>
+          <h5 class="no-margin responsive-title">GANA</h5>
+          <h6 class="no-margin blanco responsive-title responsive-title">UNA BICICLETA</h6>
+          <h5 class="blanco no-margin responsive-title">CADA DÍA.</h5>
         </div>
       </div>
     </div>
@@ -88,7 +88,9 @@
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
       <div class="col-12">
-        <a class="btn" href="#">¡PARTICIPA! DA CLICK AQUÍ</a>
+        <a href="#" class="btn btn-call-to-action text-center">
+          <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+        </a>
       </div>
     </div>
   </div>
