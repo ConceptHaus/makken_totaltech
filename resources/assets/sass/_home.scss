@@ -4,24 +4,50 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 700px;
+    overflow: hidden;
     position: relative;
 
     .img-pleca, .img-silicon, .img-logo-ceys {
         position: absolute;
     }
     .img-pleca {
-        bottom: 0px;
+      bottom: -50px;
+      right: -50px;
+      width: 2000px;
     }
     .img-silicon {
-        bottom: 15px;
-        right: 50px;
-        width: 220px;
+      bottom: 15px;
+      right: 50px;
+      width: 220px;
     }
     .img-logo-ceys {
-        bottom: 70px;
-        right: 400px;
-        width: 220px;
+      bottom: 20px;
+      right: 340px;
+      width: 210px;
+    }
+    .btn-call-to-action {
+      background: rgba(34, 63, 151, 0.8);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.2;
+      position: absolute;
+      bottom: 170px;
+      left: 100px;
+      border-radius: 8px;
+      padding: 15px 40px;
+      text-decoration: none;
+      text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
+      transition: transform .2s;
+      span {
+        color: #F7E300;
+        font-size: 30px;
+        display: block;
+      }
+      &:hover, &:focus {
+        color: #fff;
+        transform: scale(1.1);
+      }
     }
 }
 

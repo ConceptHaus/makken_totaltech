@@ -9576,6 +9576,7 @@ html {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  text-decoration: none;
 }
 
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
@@ -9729,7 +9730,8 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 700px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -9738,7 +9740,9 @@ html {
 }
 
 .header-home .img-pleca {
-  bottom: 0px;
+  bottom: -50px;
+  right: -50px;
+  width: 2000px;
 }
 
 .header-home .img-silicon {
@@ -9748,9 +9752,39 @@ html {
 }
 
 .header-home .img-logo-ceys {
-  bottom: 70px;
-  right: 400px;
-  width: 220px;
+  bottom: 20px;
+  right: 340px;
+  width: 210px;
+}
+
+.header-home .btn-call-to-action {
+  background: rgba(34, 63, 151, 0.8);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+  border-radius: 8px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.header-home .btn-call-to-action span {
+  color: #F7E300;
+  font-size: 30px;
+  display: block;
+}
+
+.header-home .btn-call-to-action:hover, .header-home .btn-call-to-action:focus {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fila-header {

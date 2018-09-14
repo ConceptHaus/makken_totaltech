@@ -7,6 +7,16 @@
     <img class="img-pleca" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
     <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
     <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
+    <a href="#" class="btn-call-to-action text-center">
+      <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+    </a>
+    {{-- <div class="row">
+      <div class="col-lg-12 col-md-12 justify-content-end">
+        <a href="#" class="btn">
+          <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+        </a>
+      </div>
+    </div> --}}
   </section>
 
   {{-- <!-- Header -->
