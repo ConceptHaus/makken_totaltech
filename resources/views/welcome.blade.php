@@ -13,7 +13,7 @@
 </section>
 
 <!-- Dinámica del concurso -->
-<div class="container-fluid dinamica pb-sm-5">
+<div id="dinamica" class="container-fluid dinamica pb-sm-5">
   <div class="row text-center justify-content-center">
     <div class="col-lg-12 col-md-12 mt-5">
       <h1>DINÁMICA DEL CONCURSO</h1>

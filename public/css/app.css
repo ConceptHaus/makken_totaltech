@@ -9525,6 +9525,10 @@ body {
   letter-spacing: 2px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -9645,6 +9649,11 @@ html {
 .camera-icon {
   width: 35px;
   height: auto;
+}
+
+#pageSytyle {
+  padding-top: 170px;
+  padding-bottom: 120px;
 }
 
 #pageSytyle a, #pageSytyle p {
