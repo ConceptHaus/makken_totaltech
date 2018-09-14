@@ -38,27 +38,48 @@
             width: 300px;
         }
     }
+    .navbar-brand-home {
+        img {
+            width: 80%!important;
+        }
+    }
+
+    #ganadores {
+        .nav-tabs {
+          .nav-link {
+            margin: 0px 5px;
+          }
+        }
+    }
 
     .pasos-img {
-      width: 60% !important;
-    }
-
-    .text-responsive {
-      text-align: center !important;
-    }
-
-    .tiendas-img {
-      width: 100% !important;
-    }
-
-    .img-footer {
-      width: 20% !important;
-    }
+        width: 60% !important;
+      }
+  
+      .text-responsive {
+        text-align: center !important;
+      }
+  
+      .tiendas-img {
+        width: 100% !important;
+      }
+  
+      .img-footer {
+        width: 20% !important;
+      }
 }
 @media screen and (max-width: 767px){
     // h3{
     //     color: green!important;
     // }
+    #ganadores {
+        .nav-tabs {
+          .nav-link {
+            font-size: 16px;
+            margin: 0px;
+          }
+        }
+    }
 }
 @media screen and (max-width: 600px){
     // h3{
