@@ -9642,6 +9642,11 @@ html {
   width: 60%;
 }
 
+.camera-icon {
+  width: 35px;
+  height: auto;
+}
+
 #pageSytyle a, #pageSytyle p {
   color: #FFF;
   -webkit-transition: all .5s ease-in-out;
