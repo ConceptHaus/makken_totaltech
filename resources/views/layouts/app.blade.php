@@ -18,8 +18,12 @@
 <body>
 
   <!-- Inicio de Menú -->
-  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">
-    <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
+  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">  
+    @if (Request::path() !== 'home')
+      <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
+    @else
+     <a class="navbar-brand" href="{{ url('/') }}">
+    @endif
       <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
