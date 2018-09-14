@@ -48,46 +48,52 @@
   <div class="container-fluid dinamica">
       <div class="row text-center justify-content-center">
         <div class="col-lg-6 col-md-12 mt-5">
-          <p>DINÁMICA DEL CONCURSO</p>
+          <h1>DINÁMICA DEL CONCURSO</h1>
         </div>
       </div>
       <div class="row text-center justify-content-center">
         <div class="row col-lg-8 justify-content-around">
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-3 col-sm-7">
             <img src="{{ asset('img/icons/step1.png') }}" class="img-fluid pasos-img" alt="Paso 1">
-            <div> <p>COMPRA
-  PRODUCTOS CEYS Y TOTAL TECH.</p> </div>
+            <div class="text-left">
+              <h5 class="no-margin">COMPRA</h5>
+              <h6 class="no-margin blanco">PRODUCTOS</h6>
+              <h5 class="blanco no-margin"> CEYS Y TOTAL TECH.</h5>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-3 col-sm-7">
             <img src="{{ asset('img/icons/step2.png') }}" class="img-fluid pasos-img" alt="Paso 2">
-            <div> <p>REGISTRA
-  TU TICKET VÍA WHATSAPP AL
-  044 (55) 4342 – 7322 O EN
-  TUPUEDESCONTODO.COM</p> </div>
+            <div class="text-left">
+              <h5 class="no-margin">REGISTRA</h5>
+              <h6 class="no-margin blanco">TU TICKET VÍA WHATSAPP AL 044 (55) 4342 – 7322 O EN
+              <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-3 col-sm-7">
             <img src="{{ asset('img/icons/step3.png') }}" class="img-fluid pasos-img" alt="Paso 3">
-            <div> <p>GANA
-  UNA BICICLETA
-  CADA DÍA.</p> </div>
+            <div class="text-left">
+              <h5 class="no-margin">GANA</h5>
+              <h6 class="no-margin blanco">UNA BICICLETA</h6>
+              <h5 class="blanco no-margin">CADA DÍA.</h5>
+            </div>
           </div>
         </div>
       </div>
       <div class="row text-center justify-content-center">
         <div class="col-lg-8 col-md-12 mt-5">
-          <p>MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.
-  ¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</p>
+          <h6 class="blanco">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
+          <h4>¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</h4>
         </div>
       </div>
     </div>
   <!-- Fin Dinámica del concurso -->
 
   <!-- Establecimientos Participantes -->
-  <div class="container">
+  <div class="container pt-5 pb-5">
     <div class="row">
       <div class="row text-center col-6 mt-4">
         <div class="col-12">
-          <p>ESTABLECIMIENTOS PARTICIPANTES</p>
+          <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
         </div>
         <div class="col-6">
           <img class="img-fluid tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
@@ -101,16 +107,17 @@
           <img class="img-fluid tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
           <img class="img-fluid tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
         </div>
-        <div class="col-12">
-          <p>¡Y MUCHAS MÁS!</p>
+        <div class="col-12 mt-3">
+          <h2 class="azul">¡Y MUCHAS MÁS!</h2>
         </div>
       </div>
       <div class="row text-center col-6 mt-4 justify-content-center">
         <div class="col-12">
-          <p>PREMIO</p>
+          <h2 class="azul">PREMIO</h2>
         </div>
         <div class="col-8">
           <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
+          <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
         </div>
         <div class="col-12">
           <a class="btn" href="#">¡PARTICIPA! DA CLICK AQUÍ</a>
