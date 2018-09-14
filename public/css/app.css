@@ -9612,44 +9612,12 @@ html {
 .btn-submit {
   background: #F7E300;
   border-radius: 50px;
-  color: #263A81;
+  color: #223F97;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 10px 12px;
   width: 200px;
-}
-
-.fondo {
-  background: url("../img/images/background.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  margin-top: -18.5%;
-}
-
-.fila-header {
-  height: 100%;
-}
-
-.dinamica {
-  background-color: blue;
-}
-
-.pasos-img {
-  width: 80%;
-}
-
-.tiendas-img {
-  width: 80%;
-}
-
-.ganadores {
-  background: url("../img/images/background3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (max-width: 1250px) {
@@ -9743,4 +9711,71 @@ html {
 #pageSytyle .a-login {
   position: relative;
   top: 20px;
+}
+
+.fondo {
+  background: url("../img/images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -18.5%;
+}
+
+.fila-header {
+  height: 100%;
+}
+
+.dinamica {
+  background-color: #253B81;
+  padding-bottom: 4rem !important;
+}
+
+.pasos-img {
+  width: 80%;
+}
+
+.tiendas-img {
+  width: 80%;
+  padding: 4%;
+}
+
+.ganadores {
+  background: url("../img/images/background3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  line-height: 1;
+  color: #F7E300;
+  font-style: italic;
+}
+
+h1.blanco, h2.blanco, h3.blanco, h4.blanco, h5.blanco, h6.blanco, .h1.blanco, .h2.blanco, .h3.blanco, .h4.blanco, .h5.blanco, .h6.blanco {
+  color: white;
+}
+
+h1.azul, h2.azul, h3.azul, h4.azul, h5.azul, h6.azul, .h1.azul, .h2.azul, .h3.azul, .h4.azul, .h5.azul, .h6.azul {
+  color: #253B81;
+}
+
+h1.gris, h2.gris, h3.gris, h4.gris, h5.gris, h6.gris, .h1.gris, .h2.gris, .h3.gris, .h4.gris, .h5.gris, .h6.gris {
+  color: #D5D4D4;
+}
+
+h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-margin, .h1.no-margin, .h2.no-margin, .h3.no-margin, .h4.no-margin, .h5.no-margin, .h6.no-margin {
+  margin: 0;
+}
+
+h1, .h1 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
 }

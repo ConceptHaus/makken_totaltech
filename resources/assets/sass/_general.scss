@@ -17,7 +17,7 @@ a {
 footer {
 background: blue;
 }
-  
+
 html {
 height: 100%;
 }
@@ -41,9 +41,9 @@ height: 100%;
 
 // Navbar
 .navbar {
-    background-color: transparent; 
-    border: none; 
-    min-height: 166px; 
+    background-color: transparent;
+    border: none;
+    min-height: 166px;
     padding-top: 20px;
     .navbar-nav {
         margin-right: 30px;
@@ -55,7 +55,7 @@ height: 100%;
             transition:all .5s ease-in-out;
             text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
             &:hover, &:focus {
-                background-color: transparent; 
+                background-color: transparent;
                 color: $amarillo!important;
             }
         }
@@ -63,10 +63,10 @@ height: 100%;
     .navbar-nav .active > .nav-link {
         color: $amarillo!important;
     }
-    .navbar-toggler-icon { 
-        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46'); 
+    .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46');
     }
-} 
+}
 .navbar-toggler {
     // background: rgba(1, 25, 73, .6);
     background: transparent;
@@ -96,43 +96,7 @@ height: 100%;
     letter-spacing: 1px;
     padding: 10px 12px;
     width: 200px;
-}
-
-
-
-// Estilos de Home
-.fondo {
-    background: url('../img/images/background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    margin-top: -18.5%;
-  }
-  
-  .fila-header {
-    height: 100%;
-  }
-  
-  .dinamica {
-    background-color: blue;
-  }
-  
-  .pasos-img {
-    width: 80%;
-  }
-  
-  .tiendas-img {
-    width: 80%;
-  }
-  
-  .ganadores {
-    background: url('../img/images/background3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+}  
 
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
 @media screen and (max-width: 1680px){
@@ -140,7 +104,7 @@ height: 100%;
 //     color: brown!important;
 //   }
 }
-@media screen and (max-width: 1250px){ 
+@media screen and (max-width: 1250px){
     // h3{
     //     color: orange!important;
     // }
@@ -151,9 +115,9 @@ height: 100%;
                 font-size: 14px;
             }
         }
-    } 
+    }
 }
-@media screen and (max-width: 992px){ 
+@media screen and (max-width: 992px){
     // h3{
     //     color: blue!important;
     // }
@@ -175,7 +139,7 @@ height: 100%;
         }
     }
 }
-@media screen and (max-width: 767px){ 
+@media screen and (max-width: 767px){
     // h3{
     //     color: green!important;
     // }
