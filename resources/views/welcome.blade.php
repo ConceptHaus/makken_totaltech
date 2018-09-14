@@ -59,7 +59,7 @@
 <!-- Establecimientos Participantes -->
 <div class="container pt-5 pb-5">
   <div class="row">
-    <div class="row text-center col-lg-6 col-sm-12 mt-4">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio">
       <div class="col-12">
         <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
@@ -76,14 +76,14 @@
         <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
       </div>
       <div class="col-12 mt-lg-3 mt-sm-5">
-        <h2 class="azul">¡Y MUCHAS MÁS!</h2>
+        <h5 class="azul">¡Y MUCHAS MÁS!</h5>
       </div>
     </div>
     <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center">
       <div class="col-12">
         <h2 class="azul">PREMIO</h2>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-11">
         <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
