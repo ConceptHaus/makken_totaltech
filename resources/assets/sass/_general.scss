@@ -47,24 +47,32 @@ height: 100%;
     padding-top: 20px;
     .navbar-nav {
         margin-right: 30px;
-        margin-top: 40px;
-    }
-    .navbar-nav > li > a {
-        color: $blanco;
-        font-size: 17px;
-        font-weight: 600;
-        transition:all .5s ease-in-out;
-        text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
-        &:hover, &:focus {
-            background-color: transparent; 
-            color: $amarillo;
+        margin-top: 20px;
+        .nav-link {
+            color: $blanco;
+            font-size: 17px;
+            font-weight: 600;
+            transition:all .5s ease-in-out;
+            text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
+            &:hover, &:focus {
+                background-color: transparent; 
+                color: $amarillo!important;
+            }
         }
     }
+    .navbar-nav .active > .nav-link {
+        color: $amarillo!important;
+    }
+    .navbar-toggler-icon { 
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46'); 
+    }
 } 
-.navbar-toggle {
-    background: rgba(1, 25, 73, .6);
+.navbar-toggler {
+    // background: rgba(1, 25, 73, .6);
+    background: transparent;
+    border: none;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 50px;
     .icon-bar {
         background: $amarillo;
@@ -125,20 +133,8 @@ height: 100%;
     background-size: cover;
   }
   
-  // .login {
-  //   background: url('../img/images/background2.jpg');
-  //   background-position: center center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   min-height: 100%;
-  // }
-  // .formulario-login {
-  //     padding: 2%;
-  //     background: rgba(255,255,255,0.5);
-  // }
 
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
-
 @media screen and (max-width: 1680px){
 //   h3{
 //     color: brown!important;
@@ -150,8 +146,10 @@ height: 100%;
     // }
     // Navbar
     .navbar {
-        .navbar-nav > li > a {
-            font-size: 14px;
+        .navbar-nav {
+            .nav-link {
+                font-size: 14px;
+            }
         }
     } 
 }
@@ -159,6 +157,18 @@ height: 100%;
     // h3{
     //     color: blue!important;
     // }
+    .navbar {
+        .navbar-nav {
+            margin-right: 0px;
+            margin-left: 0px;
+            text-align: center;
+            .nav-link {
+                &:hover, &:focus {
+                    background: rgba(1, 25, 73, 0.6);
+                }
+            }
+        }
+    }
     .navbar-brand {
         img {
             width: 300px;
@@ -169,18 +179,6 @@ height: 100%;
     // h3{
     //     color: green!important;
     // }
-    .navbar {
-        .navbar-nav {
-            margin-right: 0px;
-            margin-left: 0px;
-            text-align: center;
-        }
-        .navbar-nav > li > a {
-            &:hover, &:focus {
-                background: rgba(1, 25, 73, 0.6);
-            }
-        }
-    }
 }
 @media screen and (max-width: 600px){
     // h3{

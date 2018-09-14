@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Total Tech</title>
+    <meta name="description" content="DESCRIPTION">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Total Tech</title>
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
+
 <body class="body-bg">
-    <div id="app">
-        <nav class="navbar navbar-static-top">
-            <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <!-- Inicio de Menú -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="{{ url('/') }}"> <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/')}}">DINÁMICA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/#ganadores')}}">GANADORES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/login')}}">PARTICIPA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin del Menú -->
 
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('img/logos/puedescontodo-logo.svg')}}" alt="Total Tech">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    &nbsp;
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @guest
-                        {{-- <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li> --}}
-                        <li><a href="">DINÁMICA</a></li>
-                        <li><a href="">GANADORES</a></li>
-                        <li><a href="">PARTICIPA</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                    @endguest
-                </ul>
-            </div>
-        </nav>
-
-        @yield('content')
-    </div>
+    {{-- Content --}}
+    @yield('content')
+    {{-- End Content --}}
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
 </body>
+
 </html>

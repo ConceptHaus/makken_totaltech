@@ -9563,10 +9563,10 @@ html {
 
 .navbar .navbar-nav {
   margin-right: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-.navbar .navbar-nav > li > a {
+.navbar .navbar-nav .nav-link {
   color: #FFF;
   font-size: 17px;
   font-weight: 600;
@@ -9575,19 +9575,28 @@ html {
   text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
 }
 
-.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
   background-color: transparent;
-  color: #F7E300;
+  color: #F7E300 !important;
 }
 
-.navbar-toggle {
-  background: rgba(1, 25, 73, 0.6);
+.navbar .navbar-nav .active > .nav-link {
+  color: #F7E300 !important;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46");
+}
+
+.navbar-toggler {
+  background: transparent;
+  border: none;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50px;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
   background: #F7E300;
 }
 
@@ -9644,25 +9653,22 @@ html {
 }
 
 @media screen and (max-width: 1250px) {
-  .navbar .navbar-nav > li > a {
+  .navbar .navbar-nav .nav-link {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-brand img {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .navbar .navbar-nav {
     margin-right: 0px;
     margin-left: 0px;
     text-align: center;
   }
-  .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+  .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
     background: rgba(1, 25, 73, 0.6);
+  }
+  .navbar-brand img {
+    width: 300px;
   }
 }
 
@@ -9691,17 +9697,25 @@ html {
 #pageSytyle .panel {
   background: rgba(1, 25, 73, 0.6);
   border-radius: 0;
+  margin-top: 5%;
   padding: 3% 15%;
   padding-top: 0% !important;
 }
 
-#pageSytyle h3, #pageSytyle p, #pageSytyle .forget-password {
-  font-weight: 600;
+#pageSytyle .panel-register {
+  padding: 5% 15%;
+  padding-top: 5% !important;
+}
+
+#pageSytyle .panel-forget {
+  padding: 10% 15%;
+  padding-top: 10% !important;
 }
 
 #pageSytyle h3 {
   color: #FFF;
   font-size: 20px;
+  font-weight: 600;
   padding: 25px;
 }
 
@@ -9709,11 +9723,24 @@ html {
   margin-bottom: 5px;
 }
 
+#pageSytyle form.form-ajust .btn-submit {
+  margin-top: 20px;
+}
+
 #pageSytyle .content-actions {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#pageSytyle .forget-password {
+#pageSytyle p, #pageSytyle .a-forget-password, #pageSytyle .a-login {
+  font-weight: 500;
+}
+
+#pageSytyle .a-forget-password, #pageSytyle .a-login {
   font-size: 12px;
+}
+
+#pageSytyle .a-login {
+  position: relative;
+  top: 20px;
 }
