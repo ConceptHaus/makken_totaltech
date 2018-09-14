@@ -9559,6 +9559,9 @@ html {
   border: none;
   min-height: 166px;
   padding-top: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
 }
 
 .navbar .navbar-nav {
@@ -9588,6 +9591,10 @@ html {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46");
 }
 
+.navbar-home .navbar-nav {
+  margin-top: -50px;
+}
+
 .navbar-toggler {
   background: transparent;
   border: none;
@@ -9604,6 +9611,10 @@ html {
   width: 350px;
 }
 
+.navbar-brand-home img {
+  width: 100% !important;
+}
+
 .navbar-collapse {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -9618,38 +9629,6 @@ html {
   letter-spacing: 1px;
   padding: 10px 12px;
   width: 200px;
-}
-
-.fondo {
-  background: url("../img/images/background.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  margin-top: -18.5%;
-}
-
-.fila-header {
-  height: 100%;
-}
-
-.dinamica {
-  background-color: blue;
-}
-
-.pasos-img {
-  width: 80%;
-}
-
-.tiendas-img {
-  width: 80%;
-}
-
-.ganadores {
-  background: url("../img/images/background3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (max-width: 1250px) {
@@ -9680,7 +9659,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .navbar-brand img {
-    width: 80%;
+    width: 80% !important;
   }
 }
 
@@ -9743,4 +9722,56 @@ html {
 #pageSytyle .a-login {
   position: relative;
   top: 20px;
+}
+
+.header-home {
+  background: url("../img/images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys {
+  position: absolute;
+}
+
+.header-home .img-pleca {
+  bottom: 0px;
+}
+
+.header-home .img-silicon {
+  bottom: 15px;
+  right: 50px;
+  width: 220px;
+}
+
+.header-home .img-logo-ceys {
+  bottom: 70px;
+  right: 400px;
+  width: 220px;
+}
+
+.fila-header {
+  height: 100%;
+}
+
+.dinamica {
+  background-color: blue;
+}
+
+.pasos-img {
+  width: 80%;
+}
+
+.tiendas-img {
+  width: 80%;
+}
+
+.ganadores {
+  background: url("../img/images/background3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

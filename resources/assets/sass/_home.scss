@@ -1,0 +1,49 @@
+// Estilos de Home
+.header-home {
+    background: url('../img/images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+
+    .img-pleca, .img-silicon, .img-logo-ceys {
+        position: absolute;
+    }
+    .img-pleca {
+        bottom: 0px;
+    }
+    .img-silicon {
+        bottom: 15px;
+        right: 50px;
+        width: 220px;
+    }
+    .img-logo-ceys {
+        bottom: 70px;
+        right: 400px;
+        width: 220px;
+    }
+}
+  
+  .fila-header {
+    height: 100%;
+  }
+  
+  .dinamica {
+    background-color: blue;
+  }
+  
+  .pasos-img {
+    width: 80%;
+  }
+  
+  .tiendas-img {
+    width: 80%;
+  }
+  
+  .ganadores {
+    background: url('../img/images/background3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
