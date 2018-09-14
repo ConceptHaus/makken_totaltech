@@ -13,7 +13,7 @@ class CreatePremioTable extends Migration
      */
     public function up()
     {
-        Schema::create('_premio', function (Blueprint $table) {
+        Schema::create('premio', function (Blueprint $table) {
             $table->increments('id_premio')->unsigned();
             $table->string('nombre');
             $table->string('cantidad');
@@ -28,6 +28,6 @@ class CreatePremioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_premio');
+        Schema::dropIfExists('premio');
     }
 }
