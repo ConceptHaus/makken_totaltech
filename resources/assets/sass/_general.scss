@@ -6,14 +6,8 @@
     outline: 0px !important;
 }
 
-body {
-    background: white;
-    letter-spacing: 2px;
-}
-
 a {
     text-decoration: none !important;
-
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -21,8 +15,9 @@ a {
     }
 }
 
-footer {
-    background: $azul_2;
+body {
+    background: $blanco;
+    letter-spacing: 2px;
 }
 
 html {
@@ -39,6 +34,7 @@ html {
     border: none !important;
 }
 
+// Estilos input
 .form-control {
     border: none;
     border-radius: 0;
@@ -185,4 +181,9 @@ table {
 .camera-icon {
     width: 35px;
     height: auto;
+}
+
+// Footer
+footer {
+    background: $azul_2;
 }

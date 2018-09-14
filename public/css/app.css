@@ -9543,11 +9543,6 @@ a.text-dark:hover, a.text-dark:focus {
   outline: 0px !important;
 }
 
-body {
-  background: white;
-  letter-spacing: 2px;
-}
-
 a {
   text-decoration: none !important;
 }
@@ -9558,8 +9553,9 @@ a:hover {
   opacity: 0.7;
 }
 
-footer {
-  background: #253B81;
+body {
+  background: #FFF;
+  letter-spacing: 2px;
 }
 
 html {
@@ -9701,6 +9697,10 @@ table tr td {
 .camera-icon {
   width: 35px;
   height: auto;
+}
+
+footer {
+  background: #253B81;
 }
 
 /**
