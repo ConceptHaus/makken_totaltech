@@ -43,6 +43,35 @@ html {
     letter-spacing: 2px;
 }
 
+#formulario-ticket {
+  .form-group {
+    margin-bottom: 2rem !important;
+  }
+  
+  .form-control {
+    background: transparent;
+    border-bottom: 2px solid white;
+    height: 30px;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 100;
+
+    &.form-check-input {
+      width: 6%;
+    }
+  }
+  .form-check-label {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  small {
+    color: white;
+    font-size: 60%;
+  }
+}
+
 #app {
     height: 100vh;
 }
