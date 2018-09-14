@@ -9705,7 +9705,7 @@ html {
   position: relative;
 }
 
-.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys {
+.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys, .header-home .texto-home {
   position: absolute;
 }
 
@@ -9723,6 +9723,19 @@ html {
   bottom: 70px;
   right: 400px;
   width: 220px;
+}
+
+.header-home .texto-home {
+  bottom: 300px;
+  left: 200px;
+}
+
+.header-home .texto-home h1 {
+  font-size: 5rem;
+}
+
+.header-home .texto-home h3 {
+  font-size: 2.75rem;
 }
 
 .fila-header {
