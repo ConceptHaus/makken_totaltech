@@ -9527,6 +9527,8 @@ body {
 
 a:hover {
   text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
 }
 
 footer {
@@ -9857,9 +9859,6 @@ html {
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
-  position: absolute;
-  bottom: 0;
-  left: 150px;
   border-radius: 8px;
   padding: 15px 40px;
   text-decoration: none;
@@ -9939,6 +9938,12 @@ strong {
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
   }
+  h5.responsive-title, .h5.responsive-title {
+    font-size: 1rem;
+  }
+  h6.responsive-title, .h6.responsive-title {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -9960,7 +9965,7 @@ strong {
     margin: 0px 5px;
   }
   .pasos-img {
-    width: 60% !important;
+    width: 40% !important;
   }
   .text-responsive {
     text-align: center !important;
@@ -9984,13 +9989,6 @@ strong {
   .header-home .img-logo-ceys {
     right: 220px;
     width: 150px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #ganadores .nav-tabs .nav-link {
-    font-size: 16px;
-    margin: 0px;
   }
 }
 
