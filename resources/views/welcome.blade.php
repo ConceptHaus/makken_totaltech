@@ -3,7 +3,15 @@
 @section('content')
 
   <!-- Header -->
+  <section class="header-home">
+    <img class="img-pleca" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
+    <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+    <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
+  </section>
+
+  {{-- <!-- Header -->
   <div class="container-fluid fondo">
+    
     <div class="row align-items-end fila-header">
       <div class="col-lg-8 col-md-6 text-center justify-content-end ">
         <a href="#" class="btn">¡PARTICIPA!<br>DA CLICK AQUÍ</a>
@@ -14,8 +22,26 @@
       <div class="col-lg-2 col-md-6 justify-content-end ">
         <img class="silicon img-fluid" src="{{ asset('img/images/product.png') }}" alt="Silicón">
       </div>
+      <img class="img-fluid" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
     </div>
+
   </div>
+  <!-- Fin del Header --> --}}
+
+
+    
+    {{-- <div class="row align-items-end fila-header">
+      <div class="col-lg-8 col-md-6 text-center justify-content-end ">
+        <a href="#" class="btn">¡PARTICIPA!<br>DA CLICK AQUÍ</a>
+      </div>
+      <div class="col-lg-2 col-md-6 justify-content-end ">
+        <img class="img-fluid" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Silicón">
+      </div>
+      <div class="col-lg-2 col-md-6 justify-content-end ">
+        <img class="silicon img-fluid" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+      </div>
+      <img class="img-fluid" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
+    </div> --}}
   <!-- Fin del Header -->
 
   <!-- Dinámica del concurso -->

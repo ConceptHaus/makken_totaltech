@@ -45,6 +45,9 @@ height: 100%;
     border: none;
     min-height: 166px;
     padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
     .navbar-nav {
         margin-right: 30px;
         margin-top: 20px;
@@ -67,8 +70,12 @@ height: 100%;
         background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46');
     }
 }
+.navbar-home {
+    .navbar-nav {
+        margin-top: -50px;
+    }
+}
 .navbar-toggler {
-    // background: rgba(1, 25, 73, .6);
     background: transparent;
     border: none;
     position: absolute;
@@ -83,9 +90,15 @@ height: 100%;
         width: 350px;
     }
 }
+.navbar-brand-home {
+    img {
+        width: 100%!important;
+    }
+}
 .navbar-collapse {
     box-shadow: none;
 }
+
 // Botones
 .btn-submit {
     background: $amarillo;
@@ -96,7 +109,8 @@ height: 100%;
     letter-spacing: 1px;
     padding: 10px 12px;
     width: 200px;
-}  
+}
+
 
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
 @media screen and (max-width: 1680px){
@@ -160,7 +174,7 @@ height: 100%;
     // }
     .navbar-brand {
         img {
-            width: 80%;
+            width: 80%!important;
         }
     }
 }
