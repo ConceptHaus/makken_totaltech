@@ -13,4 +13,58 @@
   </section>
   <!-- Fin de Header -->
 
+  <!-- Tickets -->
+  <div class="container-fluid ganadores" id="tickets">
+    <div class="row text-center justify-content-center">
+              <div class="col-12 content-table">
+                <table class="table table-borderless table-responsive">
+                  <thead>
+                    <tr>
+                      <th scope="col">FECHA</th>
+                      <th scope="col"># TICKET</th>
+                      <th scope="col">CANTIDAD</th>
+                      <th scope="col">ESTABLECIMIENTO</th>
+                      <th scope="col">FOTO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>mdo</td>
+                      <td>Mark</td>
+                      <td> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket"> </td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+  </div>
+  <!-- Fin Tickets -->
+
 @endsection
