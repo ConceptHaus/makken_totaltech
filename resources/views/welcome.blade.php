@@ -124,7 +124,7 @@
         <div class="tab-pane fade show active" id="semana1" role="tabpanel" aria-labelledby="semana1-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless">
+              <table class="table table-borderless table-responsive">
                 <thead>
                   <tr>
                     <th scope="col">NOMBRE</th>

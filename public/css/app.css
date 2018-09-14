@@ -9632,6 +9632,10 @@ html {
   width: 200px;
 }
 
+.table-responsive {
+  display: inline-table;
+}
+
 .img-footer {
   width: 80%;
 }
@@ -9707,7 +9711,10 @@ html {
   position: relative;
 }
 
-.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys, .header-home .texto-home {
+.header-home .img-pleca,
+.header-home .img-silicon,
+.header-home .img-logo-ceys,
+.header-home .texto-home {
   position: absolute;
 }
 
@@ -9910,28 +9917,12 @@ footer p a:hover {
   .navbar-brand img {
     width: 300px;
   }
-<<<<<<< HEAD
   .navbar-brand-home img {
     width: 80% !important;
   }
   #ganadores .nav-tabs .nav-link {
     margin: 0px 5px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  #ganadores .nav-tabs .nav-link {
-    font-size: 16px;
-    margin: 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #pageSytyle .panel {
-    padding: 3% 5% !important;
-  }
-=======
->>>>>>> 3cab03d1e30488571d9f8e481e98840db08e452e
   .pasos-img {
     width: 60% !important;
   }
@@ -9944,11 +9935,59 @@ footer p a:hover {
   .img-footer {
     width: 20% !important;
   }
+  .header-home {
+    height: 500px;
+  }
+  .header-home .img-pleca {
+    bottom: -65px;
+    right: -150px;
+  }
+  .header-home .img-silicon {
+    width: 120px;
+  }
+  .header-home .img-logo-ceys {
+    right: 220px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ganadores .nav-tabs .nav-link {
+    font-size: 16px;
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .table-responsive {
+    display: block;
+  }
   #pageSytyle .panel {
     padding: 3% 5% !important;
+  }
+  #ganadores .nav-tabs .nav-item {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #ganadores .content-table {
+    max-width: 94%;
+  }
+  #ganadores table th {
+    font-size: 15px;
+  }
+  #ganadores table td {
+    padding: 1.5rem;
+  }
+  .header-home .btn-call-to-action {
+    left: 10%;
+    width: 80%;
+  }
+  .header-home .img-silicon {
+    display: none;
+  }
+  .header-home .img-logo-ceys {
+    left: 20%;
+    right: inherit;
   }
 }
 
