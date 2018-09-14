@@ -25,11 +25,15 @@ class AdminController extends Controller
     }
 
     public function getAllUsers(){
-
+        $users = User::getAllUsers();
+        
+        return response()->json($users);
     }
 
     public function getOneUser($id){
+        $user = User::getUser($id);
 
+        return response()->json($user);
     }
 
     public function getAllTickets(){
@@ -59,6 +63,6 @@ class AdminController extends Controller
     }
 
     public function editTexto(){
-        
+
     }
 }
