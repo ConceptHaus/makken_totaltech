@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePremioTable extends Migration
+class CreateEstablecimientoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreatePremioTable extends Migration
      */
     public function up()
     {
-        Schema::create('_premio', function (Blueprint $table) {
-            $table->increments('id_premio')->primary();
+        Schema::create('establecimiento', function (Blueprint $table) {
+            $table->increments('id_establecimiento')->unsigned();
             $table->string('nombre');
-            $table->string('cantidad');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreatePremioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_premio');
+        Schema::dropIfExists('establecimiento');
     }
 }

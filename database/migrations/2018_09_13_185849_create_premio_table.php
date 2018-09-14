@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSeccionTable extends Migration
+class CreatePremioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSeccionTable extends Migration
      */
     public function up()
     {
-        Schema::create('seccion', function (Blueprint $table) {
-            $table->increments('id_seccion')->primary();
+        Schema::create('premio', function (Blueprint $table) {
+            $table->increments('id_premio')->unsigned();
             $table->string('nombre');
-            $table->string('clase');
+            $table->string('cantidad');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateSeccionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('seccion');
+        Schema::dropIfExists('premio');
     }
 }

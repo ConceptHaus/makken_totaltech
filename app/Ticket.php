@@ -25,6 +25,10 @@ class Ticket extends Model
       return $this->belongsTo('App\Establecimiento', 'id_establecimiento');
     }
 
+    public function ganador(){
+        return $this->hasOne('App\Ganador','id_ticket','id_ticket');
+    }
+
     public function scopeGetAllTickets($query){
         return $query->with('user')->get();
     }
