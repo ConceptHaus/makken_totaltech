@@ -9632,7 +9632,7 @@ html {
 }
 
 .img-footer {
-  width: 80%;
+  width: 60%;
 }
 
 #pageSytyle a, #pageSytyle p {
@@ -9796,7 +9796,7 @@ a {
 
 footer p {
   color: white;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 footer p a {
@@ -9806,6 +9806,11 @@ footer p a {
 footer p a:hover {
   color: inherit;
   opacity: 0.7;
+}
+
+b,
+strong {
+  font-weight: 800;
 }
 
 @media screen and (max-width: 1250px) {
