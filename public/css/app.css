@@ -9845,6 +9845,36 @@ html {
   border: none;
 }
 
+.btn-call-to-action {
+  background: rgba(34, 63, 151, 0.8);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  border-radius: 8px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.btn-call-to-action span {
+  color: #F7E300;
+  font-size: 30px;
+  display: block;
+}
+
+.btn-call-to-action:hover, .btn-call-to-action:focus {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
@@ -9916,28 +9946,12 @@ strong {
   .navbar-brand img {
     width: 300px;
   }
-<<<<<<< HEAD
   .navbar-brand-home img {
     width: 80% !important;
   }
   #ganadores .nav-tabs .nav-link {
     margin: 0px 5px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  #ganadores .nav-tabs .nav-link {
-    font-size: 16px;
-    margin: 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #pageSytyle .panel {
-    padding: 3% 5% !important;
-  }
-=======
->>>>>>> 3cab03d1e30488571d9f8e481e98840db08e452e
   .pasos-img {
     width: 60% !important;
   }
@@ -9949,6 +9963,13 @@ strong {
   }
   .img-footer {
     width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ganadores .nav-tabs .nav-link {
+    font-size: 16px;
+    margin: 0px;
   }
 }
 

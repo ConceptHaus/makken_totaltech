@@ -88,7 +88,9 @@
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
       <div class="col-12">
-        <a class="btn" href="#">¡PARTICIPA! DA CLICK AQUÍ</a>
+        <a href="#" class="btn-call-to-action text-center">
+          <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+        </a>
       </div>
     </div>
   </div>
