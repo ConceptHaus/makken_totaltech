@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Total Tech</title>
     <meta name="description" content="DESCRIPTION">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -24,7 +26,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/')}}">DINÁMICA</a>
+                    <a class="nav-link" href="{{ url('/#dinamica')}}">DINÁMICA</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/#ganadores')}}">GANADORES</a>

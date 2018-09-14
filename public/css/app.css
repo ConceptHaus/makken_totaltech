@@ -9525,12 +9525,18 @@ body {
   letter-spacing: 2px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 a:hover {
   text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
 }
 
 footer {
-  background: blue;
+  background: #253B81;
 }
 
 html {
@@ -9576,6 +9582,7 @@ html {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  text-decoration: none;
 }
 
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
@@ -9631,36 +9638,22 @@ html {
   width: 200px;
 }
 
-@media screen and (max-width: 1250px) {
-  .navbar .navbar-nav .nav-link {
-    font-size: 14px;
-  }
+.table-responsive {
+  display: inline-table;
 }
 
-@media screen and (max-width: 992px) {
-  .navbar .navbar-nav {
-    margin-right: 0px;
-    margin-left: 0px;
-    text-align: center;
-  }
-  .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
-    background: rgba(1, 25, 73, 0.6);
-  }
-  .navbar-brand img {
-    width: 300px;
-  }
+.img-footer {
+  width: 60%;
 }
 
-@media screen and (max-width: 600px) {
-  #pageSytyle .panel {
-    padding: 3% 5% !important;
-  }
+.camera-icon {
+  width: 35px;
+  height: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .navbar-brand img {
-    width: 80% !important;
-  }
+#pageSytyle {
+  padding-top: 170px;
+  padding-bottom: 120px;
 }
 
 #pageSytyle a, #pageSytyle p {
@@ -9729,16 +9722,22 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 700px;
+  overflow: hidden;
   position: relative;
 }
 
-.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys {
+.header-home .img-pleca,
+.header-home .img-silicon,
+.header-home .img-logo-ceys,
+.header-home .texto-home {
   position: absolute;
 }
 
 .header-home .img-pleca {
-  bottom: 0px;
+  bottom: -50px;
+  right: -50px;
+  width: 2000px;
 }
 
 .header-home .img-silicon {
@@ -9748,9 +9747,52 @@ html {
 }
 
 .header-home .img-logo-ceys {
-  bottom: 70px;
-  right: 400px;
-  width: 220px;
+  bottom: 20px;
+  right: 340px;
+  width: 210px;
+}
+
+.header-home .btn-call-to-action {
+  background: rgba(34, 63, 151, 0.8);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+  border-radius: 8px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.header-home .btn-call-to-action span {
+  color: #F7E300;
+  font-size: 30px;
+  display: block;
+}
+
+.header-home .btn-call-to-action:hover, .header-home .btn-call-to-action:focus {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-home .texto-home {
+  bottom: 300px;
+  left: 200px;
+}
+
+.header-home .texto-home h1 {
+  font-size: 5rem;
+}
+
+.header-home .texto-home h3 {
+  font-size: 2.75rem;
 }
 
 .fila-header {
@@ -9758,7 +9800,7 @@ html {
 }
 
 .dinamica {
-  background-color: blue;
+  background-color: #253B81;
 }
 
 .pasos-img {
@@ -9774,6 +9816,83 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#ganadores .nav-tabs {
+  border: none;
+  margin-top: 30px;
+}
+
+#ganadores .nav-tabs .nav-link {
+  background-color: #F7E300;
+  border-color: #F7E300;
+  border-radius: 0;
+  color: #223F97;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+#ganadores .nav-tabs .nav-link.active {
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+#ganadores .content-table {
+  background: #FFF !important;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#ganadores table th {
+  border-right: 1px solid #223F97;
+  color: #223F97;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2rem !important;
+}
+
+#ganadores table th:nth-of-type(3) {
+  border: none;
+}
+
+#ganadores table tr td {
+  border-right: 1px solid #223F97;
+  padding: 2rem;
+}
+
+#ganadores table tr td:nth-of-type(3) {
+  border: none;
+}
+
+.btn-call-to-action {
+  background: rgba(34, 63, 151, 0.8);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 8px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.btn-call-to-action span {
+  color: #F7E300;
+  font-size: 30px;
+  display: block;
+}
+
+.btn-call-to-action:hover, .btn-call-to-action:focus {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -9801,10 +9920,137 @@ h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-marg
 }
 
 h1, .h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 a {
   text-decoration: underline;
   color: white;
+}
+
+footer p {
+  color: white;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+
+b,
+strong {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+  h5.responsive-title, .h5.responsive-title {
+    font-size: 1rem;
+  }
+  h6.responsive-title, .h6.responsive-title {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .navbar-nav {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
+    background: rgba(1, 25, 73, 0.6);
+  }
+  .navbar-brand img {
+    width: 300px;
+  }
+  .navbar-brand-home img {
+    width: 80% !important;
+  }
+  #ganadores .nav-tabs .nav-link {
+    margin: 0px 5px;
+  }
+  .pasos-img {
+    width: 40% !important;
+  }
+  .text-responsive {
+    text-align: center !important;
+  }
+  .tiendas-img {
+    width: 100% !important;
+  }
+  .img-footer {
+    width: 20% !important;
+  }
+  .header-home {
+    height: 500px;
+  }
+  .header-home .img-pleca {
+    bottom: -65px;
+    right: -150px;
+  }
+  .header-home .img-silicon {
+    width: 120px;
+  }
+  .header-home .img-logo-ceys {
+    right: 220px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ganadores .nav-tabs .nav-link {
+    font-size: 16px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table-responsive {
+    display: block;
+  }
+  #pageSytyle .panel {
+    padding: 3% 5% !important;
+  }
+  #ganadores .nav-tabs .nav-item {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #ganadores .content-table {
+    max-width: 94%;
+  }
+  #ganadores table th {
+    font-size: 15px;
+  }
+  #ganadores table td {
+    padding: 1.5rem;
+  }
+  .header-home .btn-call-to-action {
+    left: 10%;
+    width: 80%;
+  }
+  .header-home .img-silicon {
+    display: none;
+  }
+  .header-home .img-logo-ceys {
+    left: 20%;
+    right: inherit;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    width: 80% !important;
+  }
+  .pasos-img {
+    width: 50% !important;
+  }
 }

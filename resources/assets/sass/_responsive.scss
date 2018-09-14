@@ -1,0 +1,195 @@
+// Breakpoints para rwd 320 480 600 767 992 1250 1680
+@media screen and (max-width: 1680px) {
+    //   h3{
+    //     color: brown!important;
+    //   }
+}
+
+@media screen and (max-width: 1250px) {
+
+    // h3{
+    //     color: orange!important;
+    // }
+    // Navbar
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+
+    h5, .h5 {
+      &.responsive-title {
+        font-size: 1rem;
+      }
+    }
+
+    h6, .h6 {
+      &.responsive-title {
+        font-size: 0.6rem;
+      }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    // h3{
+    //     color: blue!important;
+    // }
+    .navbar {
+        .navbar-nav {
+            margin-right: 0px;
+            margin-left: 0px;
+            text-align: center;
+
+            .nav-link {
+
+                &:hover,
+                &:focus {
+                    background: rgba(1, 25, 73, 0.6);
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 300px;
+        }
+    }
+
+    .navbar-brand-home {
+        img {
+            width: 80% !important;
+        }
+    }
+
+    #ganadores {
+        .nav-tabs {
+            .nav-link {
+                margin: 0px 5px;
+            }
+        }
+    }
+
+    .pasos-img {
+        width: 40% !important;
+    }
+
+    .text-responsive {
+        text-align: center !important;
+    }
+
+    .tiendas-img {
+        width: 100% !important;
+    }
+
+    .img-footer {
+        width: 20% !important;
+    }
+    .header-home {
+        height: 500px;
+        .img-pleca {
+            bottom: -65px;
+            right: -150px;
+        }
+        .img-silicon {
+            width: 120px;
+        }
+        .img-logo-ceys {
+            right: 220px;
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    // h3{
+    //     color: green!important;
+    // }
+    #ganadores {
+        .nav-tabs {
+            .nav-link {
+                font-size: 16px;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    // h3{
+    //   color: black!important;
+    // }
+    .table-responsive {
+        display: block;
+    }
+    #pageSytyle {
+        .panel {
+            padding: 3% 5% !important;
+        }
+    }
+
+    #ganadores {
+        .nav-tabs {
+            .nav-item {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        .content-table {
+            max-width: 94%;
+        }
+        table {
+            th {
+                font-size: 15px;
+            }
+            td {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    .header-home {
+        .btn-call-to-action {
+            left: 10%;
+            width: 80%;
+        }
+        .img-silicon {
+            display: none;
+        }
+        .img-logo-ceys {
+            left: 20%;
+            right: inherit;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    // h3{
+    //   color: yellow!important;
+    // }
+    .navbar-brand {
+        img {
+            width: 80% !important;
+        }
+    }
+
+    // Responsive home
+
+
+    .pasos-img {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    // h3{
+    //   color: pink!important;
+    // }
+}

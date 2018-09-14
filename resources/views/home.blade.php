@@ -1,23 +1,70 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+  <!-- Header -->
+  <section class="header-home">
+    <img class="img-pleca" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
+    <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+    <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
+    <div class="texto-home col-6">
+      <h1>¡BIENVENIDO</h1>
+      <h3 class="blanco">NOMBRE DE USUARIO!</h3>
     </div>
-</div>
+  </section>
+  <!-- Fin de Header -->
+
+  <!-- Tickets -->
+  <div class="container-fluid ganadores" id="tickets">
+    <div class="row text-center justify-content-center">
+              <div class="col-12 content-table">
+                <table class="table table-borderless table-responsive">
+                  <thead>
+                    <tr>
+                      <th scope="col">FECHA</th>
+                      <th scope="col"># TICKET</th>
+                      <th scope="col">CANTIDAD</th>
+                      <th scope="col">ESTABLECIMIENTO</th>
+                      <th scope="col">FOTO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>mdo</td>
+                      <td>Mark</td>
+                      <td> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket"> </td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+  </div>
+  <!-- Fin Tickets -->
+
 @endsection

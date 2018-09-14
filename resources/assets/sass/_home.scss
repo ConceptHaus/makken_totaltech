@@ -1,49 +1,180 @@
 // Estilos de Home
 .header-home {
-    background: url('../img/images/background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    position: relative;
+  background: url('../img/images/background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
 
-    .img-pleca, .img-silicon, .img-logo-ceys {
-        position: absolute;
+  .img-pleca,
+  .img-silicon,
+  .img-logo-ceys,
+  .texto-home {
+    position: absolute;
+  }
+
+  .img-pleca {
+    bottom: -50px;
+    right: -50px;
+    width: 2000px;
+  }
+
+  .img-silicon {
+    bottom: 15px;
+    right: 50px;
+    width: 220px;
+  }
+
+  .img-logo-ceys {
+    bottom: 20px;
+    right: 340px;
+    width: 210px;
+  }
+
+  .btn-call-to-action {
+    background: rgba(34, 63, 151, 0.8);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 170px;
+    left: 100px;
+    border-radius: 8px;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+    transition: transform .2s;
+
+    span {
+      color: #F7E300;
+      font-size: 30px;
+      display: block;
     }
-    .img-pleca {
-        bottom: 0px;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      transform: scale(1.1);
     }
-    .img-silicon {
-        bottom: 15px;
-        right: 50px;
-        width: 220px;
+  }
+
+  .texto-home {
+    bottom: 300px;
+    left: 200px;
+
+    h1 {
+      font-size: 5rem;
     }
-    .img-logo-ceys {
-        bottom: 70px;
-        right: 400px;
-        width: 220px;
+
+    h3 {
+      font-size: 2.75rem;
     }
+  }
 }
 
-  .fila-header {
-    height: 100%;
+.fila-header {
+  height: 100%;
+}
+
+.dinamica {
+  background-color: $azul_2;
+}
+
+.pasos-img {
+  width: 80%;
+}
+
+.tiendas-img {
+  width: 80%;
+}
+
+.ganadores {
+  background: url('../img/images/background3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ganadores {
+  .nav-tabs {
+    border: none;
+    margin-top: 30px;
+
+    .nav-link {
+      background-color: $amarillo;
+      border-color: $amarillo;
+      border-radius: 0;
+      color: $azul;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: .5px;
+      margin: 0px 10px;
+      text-decoration: none;
+
+      &.active {
+        background-color: $blanco;
+        border-color: $blanco;
+      }
+    }
   }
 
-  .dinamica {
-    background-color: blue;
+  .content-table {
+    background: $blanco !important;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 
-  .pasos-img {
-    width: 80%;
-  }
+  table {
+    th {
+      border-right: 1px solid $azul;
+      color: $azul;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 2rem !important;
 
-  .tiendas-img {
-    width: 80%;
-  }
+      &:nth-of-type(3) {
+        border: none;
+      }
+    }
 
-  .ganadores {
-    background: url('../img/images/background3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    tr {
+      td {
+        border-right: 1px solid $azul;
+        padding: 2rem;
+
+        &:nth-of-type(3) {
+          border: none;
+        }
+      }
+    }
   }
+}
+
+.btn-call-to-action {
+  background: rgba(34, 63, 151, 0.8);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 8px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
+  transition: transform .2s;
+  span {
+    color: #F7E300;
+    font-size: 30px;
+    display: block;
+  }
+  &:hover, &:focus {
+    color: #fff;
+    transform: scale(1.1);
+  }
+}
+//    .nav-tabs .nav-item.show .nav-link {
+//     color: #495057;
+//     background-color: #f5f8fa;
+//     border-color: #dee2e6 #dee2e6 #f5f8fa;
+// }

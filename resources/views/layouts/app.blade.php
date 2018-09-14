@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Total Tech</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}"/>
   <meta name="description" content="DESCRIPTION">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -17,7 +19,7 @@
 
   <!-- Inicio de Menú -->
   <nav class="navbar navbar-home navbar-expand-lg navbar-dark">
-    <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}"> 
+    <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
       <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -27,7 +29,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="{{ url('/')}}">DINÁMICA</a>
+          <a class="nav-link" href="{{ url('/#dinamica')}}">DINÁMICA</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/#ganadores')}}">GANADORES</a>
@@ -48,23 +50,23 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container pt-4 pb-4">
+    <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
       <div class="row align-items-center">
-        <div class="col-lg-2">
-          SOPORTE
+        <div class="col-lg-2 text-responsive">
+          <p><strong>SOPORTE</strong><br>
           55-555-5555
-          info@correo.com
+          info@correo.com</p>
         </div>
-        <div class="col-lg-2">
-          LEGALES
+        <div class="col-lg-2 text-responsive">
+          <p><strong>LEGALES</strong><br>
           Aviso de Privacidad
-          Términos y Condiciones
+          Términos y Condiciones</p>
         </div>
         <div class="col-lg-6 text-center">
-          WWW.MUNDOCEYS.COM
+          <p><a href="https://mundoceys.com/" target="_blank">WWW.MUNDOCEYS.COM</a></p>
         </div>
-        <div class="col-lg-2">
-          <img class="img-fluid" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys">
+        <div class="col-lg-2 text-center">
+          <a href="https://mundoceys.com/" target="_blank"><img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys"></a>
         </div>
       </div>
     </div>
