@@ -41,4 +41,17 @@ class User extends Authenticatable
     public function ganador(){
       return $this->hasMany('App\Ganador', 'id_usuario');
     }
+
+    public function scopegetAllUsers($query){
+      return $query->with('tickets')
+                    ->with('direccion')
+                    ->with('ganador')->get();
+    }
+
+    public function scopegetUser($query,$id){
+      return $query->with('tickets')
+                   ->with('direccion')
+                   ->with('ganador')
+                   ->where('id_usuario',$id)->first();
+    }
 }
