@@ -1,23 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+  <!-- Header -->
+  <section class="header-home">
+    <img class="img-pleca" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
+    <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+    <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
+    <div class="texto-home col-6">
+      <h1>¡BIENVENIDO</h1>
+      <h3 class="blanco">NOMBRE DE USUARIO!</h3>
     </div>
-</div>
+  </section>
+  <!-- Fin de Header -->
+
 @endsection

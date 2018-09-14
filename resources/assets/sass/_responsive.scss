@@ -51,6 +51,22 @@
           }
         }
     }
+
+    .pasos-img {
+        width: 60% !important;
+      }
+  
+      .text-responsive {
+        text-align: center !important;
+      }
+  
+      .tiendas-img {
+        width: 100% !important;
+      }
+  
+      .img-footer {
+        width: 20% !important;
+      }
 }
 @media screen and (max-width: 767px){
     // h3{
@@ -75,13 +91,6 @@
         }
     }
 
-    .pasos-img {
-      width: 60% !important;
-    }
-
-    .text-responsive {
-      text-align: center !important;
-    }
 }
 
 @media screen and (max-width: 480px){

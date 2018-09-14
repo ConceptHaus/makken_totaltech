@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
 
-    .img-pleca, .img-silicon, .img-logo-ceys {
+    .img-pleca, .img-silicon, .img-logo-ceys, .texto-home {
         position: absolute;
     }
     .img-pleca {
@@ -47,6 +47,17 @@
       &:hover, &:focus {
         color: #fff;
         transform: scale(1.1);
+      }
+    }
+    .texto-home {
+      bottom: 300px;
+      left: 200px;
+
+      h1 {
+        font-size: 5rem;
+      }
+      h3 {
+        font-size: 2.75rem;
       }
     }
 }

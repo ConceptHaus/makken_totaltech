@@ -9530,7 +9530,7 @@ a:hover {
 }
 
 footer {
-  background: blue;
+  background: #253B81;
 }
 
 html {
@@ -9632,6 +9632,10 @@ html {
   width: 200px;
 }
 
+.img-footer {
+  width: 80%;
+}
+
 #pageSytyle a, #pageSytyle p {
   color: #FFF;
   -webkit-transition: all .5s ease-in-out;
@@ -9703,7 +9707,7 @@ html {
   position: relative;
 }
 
-.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys {
+.header-home .img-pleca, .header-home .img-silicon, .header-home .img-logo-ceys, .header-home .texto-home {
   position: absolute;
 }
 
@@ -9753,6 +9757,19 @@ html {
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.header-home .texto-home {
+  bottom: 300px;
+  left: 200px;
+}
+
+.header-home .texto-home h1 {
+  font-size: 5rem;
+}
+
+.header-home .texto-home h3 {
+  font-size: 2.75rem;
 }
 
 .fila-header {
@@ -9861,6 +9878,20 @@ a {
   color: white;
 }
 
+footer p {
+  color: white;
+  font-weight: 600;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 1250px) {
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
@@ -9879,6 +9910,7 @@ a {
   .navbar-brand img {
     width: 300px;
   }
+<<<<<<< HEAD
   .navbar-brand-home img {
     width: 80% !important;
   }
@@ -9898,11 +9930,25 @@ a {
   #pageSytyle .panel {
     padding: 3% 5% !important;
   }
+=======
+>>>>>>> 3cab03d1e30488571d9f8e481e98840db08e452e
   .pasos-img {
     width: 60% !important;
   }
   .text-responsive {
     text-align: center !important;
+  }
+  .tiendas-img {
+    width: 100% !important;
+  }
+  .img-footer {
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #pageSytyle .panel {
+    padding: 3% 5% !important;
   }
 }
 
