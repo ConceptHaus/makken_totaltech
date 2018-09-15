@@ -9583,6 +9583,11 @@ html {
   margin-bottom: 2rem !important;
 }
 
+#formulario-ticket p {
+  font-size: 14px;
+  margin-bottom: 25px !important;
+}
+
 #formulario-ticket .form-control {
   background: transparent;
   border-bottom: 2px solid white;
