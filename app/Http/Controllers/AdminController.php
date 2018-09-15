@@ -37,7 +37,9 @@ class AdminController extends Controller
     }
 
     public function getAllTickets(){
+        $tickets = Ticket::GetAllTickets($query);
 
+        return response()->json($tickets);
     }
 
     public function setGanadorTicket(){
@@ -45,15 +47,20 @@ class AdminController extends Controller
     }
 
     public function getAllGanadores(){
+        $ganadores = Ganador::getAllGanadores();
+
+        return response()->json($ganadoes);
 
     }
 
-    public function editEstablecimientos(){
-
+    public function editEstablecimientos(Request $request){
+        
     }
 
     public function getEstablecimientos(){
+        $establecimientos = Establecimiento::all();
 
+        return response()->json($establecimientos);
     }
 
     // El admin puede registrar 
@@ -62,7 +69,27 @@ class AdminController extends Controller
 
     }
 
-    public function editTexto(){
+    public function editTexto(Request $request){
+        
+        $id_texto = $request->id_texto;
 
+        $texto = Texto::where('id_texto',$id_texto)->first();
+
+        $texto->contenido = $request->contenido;
+        
+        if($texto->save()){
+            $json['success'] = 'success_texto';
+            return response()->json($json);
+        }
+
+        $json['error'] = 'error_texto';
+        return response()->json($json);
+
+    }
+
+    public function getTextos(){
+        $textos = Texto::all();
+
+        return response()->json($textos);
     }
 }
