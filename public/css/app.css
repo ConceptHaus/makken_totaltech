@@ -9579,6 +9579,34 @@ html {
   letter-spacing: 2px;
 }
 
+#formulario-ticket .form-group {
+  margin-bottom: 2rem !important;
+}
+
+#formulario-ticket .form-control {
+  background: transparent;
+  border-bottom: 2px solid white;
+  height: 30px;
+  color: white !important;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#formulario-ticket .form-control.form-check-input {
+  width: 6%;
+}
+
+#formulario-ticket .form-check-label {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+#formulario-ticket small {
+  color: white;
+  font-size: 60%;
+}
+
 #app {
   height: 100vh;
 }
