@@ -43,7 +43,7 @@ else{
     $("#menu1").css("background" , "rgb(34, 63, 151)");
     $('#menu1').addClass('shadow-menu');
 
-    $('.nav-link').click( function(){
+    $('#menu-link').click( function(){
       console.log('click');
       $('.navbar-toggler').click();
     });

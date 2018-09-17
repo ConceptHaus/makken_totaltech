@@ -107,19 +107,19 @@
     <div class="col-10 mt-2">
       <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="semana1-tab" data-toggle="tab" href="#semana1" role="tab" aria-controls="semana1"
+          <a class="nav-link active" id="semana1-tab" data-scroll-ignore data-toggle="tab" href="#semana1" role="tab" aria-controls="semana1"
             aria-selected="true">SEMANA 1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="semana2-tab" data-toggle="tab" href="#semana2" role="tab" aria-controls="semana2"
+          <a class="nav-link" id="semana2-tab" data-scroll-ignore data-toggle="tab" href="#semana2" role="tab" aria-controls="semana2"
             aria-selected="false">SEMANA 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="semana3-tab" data-toggle="tab" href="#semana3" role="tab" aria-controls="semana3"
+          <a class="nav-link" id="semana3-tab" data-scroll-ignore data-toggle="tab" href="#semana3" role="tab" aria-controls="semana3"
             aria-selected="false">SEMANA 3</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="semana4-tab" data-toggle="tab" href="#semana4" role="tab" aria-controls="semana4"
+          <a class="nav-link" id="semana4-tab" data-scroll-ignore data-toggle="tab" href="#semana4" role="tab" aria-controls="semana4"
             aria-selected="false">SEMANA 4</a>
         </li>
       </ul>
