@@ -158,7 +158,7 @@
         <div class="tab-pane fade" id="semana2" role="tabpanel" aria-labelledby="semana2-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless">
+              <table class="table table-borderless table-responsive">
                 <thead>
                   <tr>
                     <th scope="col">NOMBRE</th>
@@ -190,7 +190,7 @@
         <div class="tab-pane fade" id="semana3" role="tabpanel" aria-labelledby="semana3-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless">
+              <table class="table table-borderless table-responsive">
                 <thead>
                   <tr>
                     <th scope="col">NOMBRE</th>
@@ -222,7 +222,7 @@
         <div class="tab-pane fade" id="semana4" role="tabpanel" aria-labelledby="semana4-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless">
+              <table class="table table-borderless table-responsive">
                 <thead>
                   <tr>
                     <th scope="col">NOMBRE</th>

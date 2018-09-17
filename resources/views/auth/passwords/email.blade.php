@@ -1,4 +1,4 @@
-@extends('layouts.app-forms')
+@extends('layouts.app')
 
 @section('content')
 <div id="pageSytyle" class="container">
