@@ -5,9 +5,9 @@
 <!-- Header -->
 <section class="header-home">
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
-  <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
-  <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-  <a href="#" class="btn-call-to-action text-center">
+  <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+  <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
+  <a href="#" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
     <span>¡PARTICIPA!</span> DA CLICK AQUÍ
   </a>
 </section>
@@ -21,7 +21,7 @@
   </div>
   <div class="row text-center justify-content-center">
     <div class="row col-lg-8 justify-content-around">
-      <div class="col-lg-3 col-sm-7">
+      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img" alt="Paso 1">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">COMPRA</h5>
@@ -29,7 +29,7 @@
           <h5 class="blanco no-margin responsive-title"> CEYS Y TOTAL TECH.</h5>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-7">
+      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step2.png') }}" class="pasos-img" alt="Paso 2">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">REGISTRA</h5>
@@ -37,7 +37,7 @@
             <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-7">
+      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step3.png') }}" class="pasos-img" alt="Paso 3">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">GANA</h5>

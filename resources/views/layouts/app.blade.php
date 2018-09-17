@@ -12,6 +12,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
 </head>
 
 @if (Request::path() == '/')
@@ -26,7 +27,7 @@
     @else
       <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @endif
-      <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
+      <img class="logo-menu wow fadeInDown" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -80,6 +81,12 @@
     </footer>
   @endif
   <!-- Fin Footer -->
+
+  <!-- Scripts de Javi -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  <script>
+    new WOW().init();
+  </script>
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
