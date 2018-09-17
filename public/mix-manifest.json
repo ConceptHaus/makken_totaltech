@@ -1,12 +1,11 @@
 {
-    "/js/app.js": "/js/app.js?id=fb57bb51a1e29f008d6f",
+    "/js/vendor.js": "/js/vendor.js?id=382336f5f5052e407bdd",
     "/css/app.css": "/css/app.css?id=643a116eb4670351a749",
-    "/js/user.services.js": "/js/user.services.js?id=da6f51a66148a222e739",
-    "/js/user.controllers.js": "/js/user.controllers.js?id=19d53c7ca7c2b18e5a15",
+    "/js/user.services.js": "/js/user.services.js?id=43d78071824d7ddec5b6",
+    "/js/user.controllers.js": "/js/user.controllers.js?id=7aa764063988d9b700d7",
     "/js/home.services.js": "/js/home.services.js?id=f45f62f5435e5972e250",
     "/js/home.controllers.js": "/js/home.controllers.js?id=985f43cfe7d2b7d23282",
     "/js/admin.services.js": "/js/admin.services.js?id=4452faa06a9d64c26fbe",
     "/js/admin.controllers.js": "/js/admin.controllers.js?id=be1286493a72caf37db2",
-    "/js/vendor.js": "/js/vendor.js?id=8d7c2b727af5e3fe8c29",
     "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }

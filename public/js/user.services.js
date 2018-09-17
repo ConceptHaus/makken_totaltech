@@ -73,7 +73,7 @@
  *
  * Description
  */
-var app = angular.module("angularApp");
+var app = angular.module('userFactory', ['angularApp']);
 
 app.factory('UserFactory', function ($http) {
     return {

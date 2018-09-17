@@ -82,20 +82,24 @@
   @endif
   <!-- Fin Footer -->
 
+
+
+
+
   <!-- Scripts -->
+   <!-- Cambio de Menu con Scrolll -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
-  <script src="{{ mix('/js/vendor.js') }}"></script>
-  <script src="{{ mix('/js/admin.controllers.js') }}"></script>
-  <script src="{{ mix('/js/admin.services.js') }}"></script>
-  <script src="{{ mix('/js/home.controllers.js') }}"></script>
-  <script src="{{ mix('/js/home.services.js') }}"></script>
-  <script src="{{ mix('/js/user.controllers.js') }}"></script>
-  <script src="{{ mix('/js/user.services.js') }}"></script>
-  <!-- Cambio de Menu con Scrolll -->
-  <script src="{{ asset('js/scrollMenu.js') }}"></script>
+  <script src="{{ mix('js/vendor.js') }}"></script>
+  <script src="{{ mix('js/user.controllers.js') }}"></script>
+  <script src="{{ mix('js/user.services.js') }}"></script>
+  <script src="{{ mix('js/admin.controllers.js') }}"></script>
+  <script src="{{ mix('js/admin.services.js') }}"></script>
+  <script src="{{ mix('js/home.controllers.js') }}"></script>
+  <script src="{{ mix('js/home.services.js') }}"></script>
+ 
   <!-- End Scripts -->
   <script>
-    var app = angular.module('angularApp',['UserController']);
+    var app = angular.module('angularApp',['userController','userFactory']);
     app.config(function($interpolateProvider){
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');

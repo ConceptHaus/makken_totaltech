@@ -48,21 +48,25 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        $validator = $this->validator($request->all());
+        $validator = $this->validadorLogin($request->all());
 
         $email = $request->email;
         $password = $request->password;
 
         if($validator->passes()){
-            if(auth()->attempt(array('email'=>$email,'password'=>$password))){
+            if(auth()->attempt(array('correo'=>$email,'password'=>$password))){
                 if(auth()->user()->is_admin){
                     $json['admin'] = true;
                     return response()->json($json);
                 }
+                $json['success'] = true;
+                return response()->json($json);
             }
+            $json['fail']['error'] = 'La dirección de correo electrónico y/o la contraseña que has ingresado no coinciden.';
+            return response($json, 400);
         }
         $json['fail'] = $validator->errors()->toArray();   
-        return response()->json($json);
+        return response($json, 400);
     }
 
     public function logout(){

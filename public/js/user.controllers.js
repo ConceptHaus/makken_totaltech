@@ -73,16 +73,25 @@
  *
  * Description
  */
-var app = angular.module('UserController', ["angularApp"]);
+var app = angular.module('userController', ['angularApp']);
 
-app.controller('User', function ($scope, $http, $window, CSRF_TOKEN) {
+app.controller("userCtrl", function ($scope, UserFactory, $http, $window, CSRF_TOKEN) {
+
     $scope.login = function (user) {
-        console.log('login');
-        Swal('Prueba');
+        console.log(user);
+        UserFactory.login(user).then(success, error);
+    };
+    $scope.register = function (user) {
+        UserFactory.register(user).then(success, error);
+
+        console.log('register');
+    };
+    var success = function success(data) {
+        console.log(data.data);
     };
 
-    $scope.register = function (user) {
-        console.log('register');
+    var error = function error(errors) {
+        console.log(errors.data);
     };
 });
 
