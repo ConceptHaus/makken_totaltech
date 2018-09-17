@@ -17,10 +17,16 @@ mix.js('resources/assets/js/app.js', 'public/js')
         processCssUrls: false
     });
 mix.browserSync('192.168.33.10');
-mix.js('resources/assets/js/angular-app/app.js','public/js')
-   .js('resources/assets/js/angular-app/home/home.controllers.js', 'public/js')
+mix.js('resources/assets/js/angular-app/home/home.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/home/home.services.js', 'public/js')
    .js('resources/assets/js/angular-app/user/user.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/user/user.services.js', 'public/js')
    .js('resources/assets/js/angular-app/admin/admin.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/admin/admin.services.js', 'public/js').version();
+mix.styles([
+    'resources/assets/bower/sweetalert2/sweetalert2.css'
+],'public/css/all.css').version();
+mix.js([
+   'resources/assets/bower/angular/angular.js',
+   //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
+],'public/js/vendor.js').version();

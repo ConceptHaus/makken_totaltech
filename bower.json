@@ -1,0 +1,7 @@
+{
+  "name": "totaltech",
+  "dependencies": {
+    "angular": "^1.7.4",
+    "sweetalert2": "^7.26.29"
+  }
+}

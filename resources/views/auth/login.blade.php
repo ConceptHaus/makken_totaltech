@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="container">
+<div id="pageSytyle" class="container" ng-controller="User">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="panel">
                 <div class="panel-body text-center">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal"">
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -44,7 +44,7 @@
                         </div> --}}
                         <div class="form-group">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-submit">ENTRAR</button>
+                                <button ng-click="login()" class="btn btn-submit">ENTRAR</button>
                             </div>
                         </div>
 
