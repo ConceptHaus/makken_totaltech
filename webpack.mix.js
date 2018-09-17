@@ -10,17 +10,22 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css')
+mix.js([
+    'resources/assets/bower/angular/angular.js',
+    //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
+], 'public/js/vendor.js');
+mix.sass('resources/assets/sass/app.scss', 'public/css')
     .options({
         processCssUrls: false
     });
-mix.browserSync('192.168.33.10');
-mix.js('resources/assets/js/angular-app/app.js','public/js')
+mix.js('resources/assets/js/angular-app/user/user.controllers.js', 'public/js')
+   .js('resources/assets/js/angular-app/user/user.services.js', 'public/js')
    .js('resources/assets/js/angular-app/home/home.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/home/home.services.js', 'public/js')
-   .js('resources/assets/js/angular-app/user/user.controllers.js', 'public/js')
-   .js('resources/assets/js/angular-app/user/user.services.js', 'public/js')
    .js('resources/assets/js/angular-app/admin/admin.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/admin/admin.services.js', 'public/js').version();
+mix.styles([
+    'resources/assets/bower/sweetalert2/sweetalert2.css'
+],'public/css/all.css').version();
+
+mix.browserSync('192.168.33.10');

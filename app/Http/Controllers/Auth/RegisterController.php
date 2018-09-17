@@ -48,7 +48,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        //$this->middleware('guest');
     }
 
     /**
@@ -97,8 +97,9 @@ class RegisterController extends Controller
     }
 
     protected function registroUser(Request $request){
+      
         $input = $request->all();
-
+        $validator = $this->validator($input);
         if($validator->passes()){
             
                 $user = $this->createUser($input);

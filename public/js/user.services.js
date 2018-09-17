@@ -68,7 +68,31 @@
 /***/ "./resources/assets/js/angular-app/user/user.services.js":
 /***/ (function(module, exports) {
 
+/**
+ *  Module
+ *
+ * Description
+ */
+var app = angular.module('userFactory', ['angularApp']);
 
+app.factory('UserFactory', function ($http) {
+    return {
+        login: function login(data) {
+            return $http({
+                method: 'POST',
+                url: '/login',
+                data: data
+            });
+        },
+        register: function register(data) {
+            return $http({
+                method: 'POST',
+                url: '/registro',
+                data: data
+            });
+        }
+    };
+});
 
 /***/ }),
 

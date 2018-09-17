@@ -12,13 +12,17 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+<<<<<<< HEAD
   <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+=======
+  <link rel="stylesheet" href="{{ mix('css/all.css')}}">
+>>>>>>> dcd0d3e826d66ceb164265ddf18cd056f6cb6514
 </head>
 
 @if (Request::path() == '/')
-  <body>
+  <body ng-app="angularApp">
 @else
-  <body class="body-bg">
+  <body ng-app="angularApp" class="body-bg">
 @endif
   <!-- Inicio de Menú -->
   <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
@@ -82,6 +86,7 @@
   @endif
   <!-- Fin Footer -->
 
+<<<<<<< HEAD
   <!-- Scripts de Javi -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   <script src="{{ asset('js/smooth-scroll.js') }}"></script>
@@ -96,13 +101,32 @@
       resetAnimation: false,
     }).init();
   </script>
+=======
+
+
+>>>>>>> dcd0d3e826d66ceb164265ddf18cd056f6cb6514
 
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}"></script>
-  <!-- Cambio de Menu con Scrolll -->
-  <script src="{{ asset('js/scrollMenu.js') }}"></script>
+   <!-- Cambio de Menu con Scrolll -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+  <script src="{{ mix('js/vendor.js') }}"></script>
+  <script src="{{ mix('js/user.controllers.js') }}"></script>
+  <script src="{{ mix('js/user.services.js') }}"></script>
+  <script src="{{ mix('js/admin.controllers.js') }}"></script>
+  <script src="{{ mix('js/admin.services.js') }}"></script>
+  <script src="{{ mix('js/home.controllers.js') }}"></script>
+  <script src="{{ mix('js/home.services.js') }}"></script>
+ 
   <!-- End Scripts -->
+  <script>
+    var app = angular.module('angularApp',['userController','userFactory']);
+    app.config(function($interpolateProvider){
+      $interpolateProvider.startSymbol('<%');
+      $interpolateProvider.endSymbol('%>');
+    })
+    app.constant("CSRF_TOKEN",'{{csrf_token()}}');
+  </script>
 </body>
 
 </html>
