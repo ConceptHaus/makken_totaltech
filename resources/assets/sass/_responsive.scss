@@ -3,6 +3,9 @@
     //   h3{
     //     color: brown!important;
     //   }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -10,6 +13,9 @@
     // h3{
     //     color: orange!important;
     // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
     // Navbar
     .navbar {
         .navbar-nav {
@@ -37,7 +43,16 @@
     // h3{
     //     color: blue!important;
     // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+
+    h1, .h1 {
+      font-size: 2rem;
+    }
+
     .navbar {
+      min-height: 0;
         .navbar-nav {
             margin-right: 0px;
             margin-left: 0px;
@@ -109,6 +124,13 @@
     // h3{
     //     color: green!important;
     // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+    .establecimientos {
+      padding-right: 0;
+    }
+
     #ganadores {
         .nav-tabs {
             .nav-link {
@@ -124,6 +146,15 @@
     // h3{
     //   color: black!important;
     // }
+    .mb-sm-5 {
+      margin-bottom: 3rem;
+    }
+
+    .navbar-toggler {
+      right: 10px;
+      top: 25px;
+    }
+
     .table-responsive {
         display: block;
     }
@@ -162,7 +193,7 @@
             display: none;
         }
         .img-logo-ceys {
-            left: 20%;
+            left: 30%;
             right: inherit;
         }
     }
@@ -174,6 +205,7 @@
     // h3{
     //   color: yellow!important;
     // }
+
     .navbar-brand {
         img {
             width: 80% !important;
