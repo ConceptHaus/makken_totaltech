@@ -16,4 +16,6 @@ class Establecimiento extends Model
     public function tickets(){
         return $this->hasMany('App\Ticket','id_ticket');
     }
+
+    
 }

@@ -22,4 +22,10 @@ class Ganador extends Model
     public function premio(){
       return $this->hasOne('App\Premio', 'id_premio');
     }
+
+    public function scopegetAllGanadores($query){
+        return $query->with('user')
+                     ->with('establecimiento')
+                     ->with('ganador')->get();
+    }
 }

@@ -27,7 +27,7 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function __cunstructu(){
+    public function __construct(){
         $this->middleware('auth')->except('logout');
     }
     /**
