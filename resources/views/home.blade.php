@@ -8,7 +8,7 @@
     <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
     <div class="texto-home col-6">
       <h1>¡BIENVENIDO</h1>
-      <h3 class="blanco">NOMBRE DE USUARIO!</h3>
+      <h3 class="blanco">{{auth()->user()->nombre}} {{auth()->user()->apellido}}!</h3>
     </div>
   </section>
   <!-- Fin de Header -->

@@ -17,7 +17,7 @@ app.factory('UserFactory', function($http){
         register: function(data){
             return $http({
                 method:'POST',
-                url:'/register',
+                url:'/registro',
                 data:data
             })
         }

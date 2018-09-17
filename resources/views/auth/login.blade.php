@@ -18,7 +18,15 @@
                             <input ng-model="user.password" id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
                             
                         </div>
-
+                        <div ng-if="errors['error']" class="alert alert-warning" role="alert">
+                            <% errors['error'] %>
+                        </div>
+                        <div ng-if="errors['email']" class="alert alert-warning" role="alert">
+                            <% errors['email'][0] %>
+                        </div>
+                        <div ng-if="errors['password']" class="alert alert-warning" role="alert">
+                            <% errors['password'][0] %>
+                        </div>
                         <div class="form-group content-actions">
                             <p>¿No tienes cuenta? <a class="" href="{{ route('register') }}">Regístrate.</a></p>
                             <a class="a-forget-password" href="{{ route('password.request') }}">
