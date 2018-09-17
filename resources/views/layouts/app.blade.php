@@ -12,12 +12,13 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ mix('css/all.css')}}">
 </head>
 
 @if (Request::path() == '/')
-  <body>
+  <body ng-app="angularApp">
 @else
-  <body class="body-bg">
+  <body ng-app="angularApp" class="body-bg">
 @endif
   <!-- Inicio de Menú -->
   <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
@@ -82,10 +83,25 @@
   <!-- Fin Footer -->
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+  <script src="{{ mix('/js/vendor.js') }}"></script>
+  <script src="{{ mix('/js/admin.controllers.js') }}"></script>
+  <script src="{{ mix('/js/admin.services.js') }}"></script>
+  <script src="{{ mix('/js/home.controllers.js') }}"></script>
+  <script src="{{ mix('/js/home.services.js') }}"></script>
+  <script src="{{ mix('/js/user.controllers.js') }}"></script>
+  <script src="{{ mix('/js/user.services.js') }}"></script>
   <!-- Cambio de Menu con Scrolll -->
   <script src="{{ asset('js/scrollMenu.js') }}"></script>
   <!-- End Scripts -->
+  <script>
+    var app = angular.module('angularApp',['UserController']);
+    app.config(function($interpolateProvider){
+      $interpolateProvider.startSymbol('<%');
+      $interpolateProvider.endSymbol('%>');
+    })
+    app.constant("CSRF_TOKEN",'{{csrf_token()}}');
+  </script>
 </body>
 
 </html>
