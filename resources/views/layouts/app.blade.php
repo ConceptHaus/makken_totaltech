@@ -21,7 +21,7 @@
   <body ng-app="angularApp" class="body-bg">
 @endif
   <!-- Inicio de Menú -->
-  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">  
+  <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
     @if (Request::path() !== '/')
       <a class="navbar-brand" href="{{ url('/') }}">
     @else
@@ -91,6 +91,8 @@
   <script src="{{ mix('/js/home.services.js') }}"></script>
   <script src="{{ mix('/js/user.controllers.js') }}"></script>
   <script src="{{ mix('/js/user.services.js') }}"></script>
+  <!-- Cambio de Menu con Scrolll -->
+  <script src="{{ asset('js/scrollMenu.js') }}"></script>
   <!-- End Scripts -->
   <script>
     var app = angular.module('angularApp',['UserController']);
