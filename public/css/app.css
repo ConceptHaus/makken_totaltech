@@ -9655,6 +9655,10 @@ html {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46");
 }
 
+.navbar-home {
+  position: fixed;
+}
+
 .navbar-home .navbar-nav {
   margin-top: -50px;
 }
@@ -9676,7 +9680,7 @@ html {
 }
 
 .navbar-brand-home img {
-  width: 100% !important;
+  width: 100%;
 }
 
 .navbar-collapse {

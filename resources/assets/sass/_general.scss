@@ -120,6 +120,8 @@ html {
 }
 
 .navbar-home {
+    position: fixed;
+
     .navbar-nav {
         margin-top: -50px;
     }
@@ -145,7 +147,7 @@ html {
 
 .navbar-brand-home {
     img {
-        width: 100% !important;
+        width: 100%;
     }
 }
 

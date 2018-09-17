@@ -20,7 +20,7 @@
   <body class="body-bg">
 @endif
   <!-- Inicio de Menú -->
-  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">  
+  <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
     @if (Request::path() !== '/')
       <a class="navbar-brand" href="{{ url('/') }}">
     @else
@@ -83,6 +83,8 @@
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
+  <!-- Cambio de Menu con Scrolll -->
+  <script src="{{ asset('js/scrollMenu.js') }}"></script>
   <!-- End Scripts -->
 </body>
 
