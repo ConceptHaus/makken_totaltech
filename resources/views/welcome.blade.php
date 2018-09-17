@@ -3,6 +3,7 @@
 @section('content')
 
 <!-- Header -->
+<p id="home" class="home" style="display:none;"></p>
 <section class="header-home">
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
@@ -21,7 +22,7 @@
   </div>
   <div class="row text-center justify-content-center">
     <div class="row col-lg-8 justify-content-around">
-      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img" alt="Paso 1">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">COMPRA</h5>
@@ -29,7 +30,7 @@
           <h5 class="blanco no-margin responsive-title"> CEYS Y TOTAL TECH.</h5>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="135" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step2.png') }}" class="pasos-img" alt="Paso 2">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">REGISTRA</h5>
@@ -37,7 +38,7 @@
             <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-7 wow slideInUp" data-wow-offset="230" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="140" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step3.png') }}" class="pasos-img" alt="Paso 3">
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">GANA</h5>
@@ -64,16 +65,16 @@
         <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
       <div class="col-6">
-        <img class="tiendas-img" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.6s" src="{{ asset('img/logos/lacomer.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.7s" src="{{ asset('img/logos/heb.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s" src="{{ asset('img/logos/homedepot.png') }}" alt="Walmart">
       </div>
       <div class="col-6">
-        <img class="tiendas-img" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
-        <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/soriana.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.6s" src="{{ asset('img/logos/casacravioto.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.7s"src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
+        <img class="tiendas-img wow fadeInDown" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
       </div>
       <div class="col-12 mt-3">
         <h5 class="azul">¡Y MUCHAS MÁS!</h5>
@@ -84,7 +85,7 @@
         <h2 class="azul">PREMIO</h2>
       </div>
       <div class="col-lg-11">
-        <img class="img-fluid" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
+        <img class="img-fluid wow zoomIn" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
       <div class="col-12">
@@ -100,7 +101,7 @@
 <!-- Ganadores -->
 <div class="container-fluid ganadores" id="ganadores">
   <div class="row text-center justify-content-center">
-    <div class="col-12 mt-5">
+    <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1 class="blanco">GANADORES</h1>
     </div>
     <div class="col-10 mt-2">

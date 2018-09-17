@@ -27,7 +27,7 @@
     @else
       <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @endif
-      <img class="logo-menu wow fadeInDown" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
+      <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/#dinamica')}}">DINÁMICA</a>
+        <a class="nav-link" data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/#ganadores')}}">GANADORES</a>
+          <a class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/login')}}">PARTICIPA</a>
+          <a class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
         </li>
       </ul>
     </div>
@@ -84,9 +84,19 @@
 
   <!-- Scripts de Javi -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
+  <script src="{{ asset('js/smooth-scroll.js') }}"></script>
   <script>
-    new WOW().init();
+	 var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 2500,
+	    clip: true,
+   });
   </script>
+  <script>
+    new WOW({
+      resetAnimation: false,
+    }).init();
+  </script>
+
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}"></script>

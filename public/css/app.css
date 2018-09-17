@@ -10059,6 +10059,9 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 30px;
+  }
   .mb-sm-5 {
     margin-bottom: 0;
   }
