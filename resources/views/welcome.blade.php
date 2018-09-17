@@ -4,7 +4,7 @@
 
 <!-- Header -->
 <section class="header-home">
-  <img class="img-pleca" src="{{ asset('img/elements/pleca.svg') }}" alt="Pleca Total Tech">
+  <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon" src="{{ asset('img/images/product.png') }}" alt="Silicón">
   <img class="img-logo-ceys" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
   <a href="#" class="btn-call-to-action text-center">
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class="row text-center justify-content-center">
-    <div class="col-lg-8 col-md-12 mt-5">
+    <div class="col-lg-8 col-md-12 mt-5 mb-sm-5">
       <h6 class="blanco">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
       <h4>¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</h4>
     </div>
@@ -59,7 +59,7 @@
 <!-- Establecimientos Participantes -->
 <div class="container pt-5 pb-5">
   <div class="row">
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio establecimientos">
       <div class="col-12">
         <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
@@ -75,11 +75,11 @@
         <img class="tiendas-img" src="{{ asset('img/logos/lowes.png') }}" alt="Walmart">
         <img class="tiendas-img" src="{{ asset('img/logos/chedraui.png') }}" alt="Walmart">
       </div>
-      <div class="col-12 mt-lg-3 mt-sm-5">
+      <div class="col-12 mt-3">
         <h5 class="azul">¡Y MUCHAS MÁS!</h5>
       </div>
     </div>
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center establecimientos">
       <div class="col-12">
         <h2 class="azul">PREMIO</h2>
       </div>

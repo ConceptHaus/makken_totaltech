@@ -28565,13 +28565,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/assets/js/angular-app/app.js":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./resources/assets/js/app.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32607,7 +32600,6 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./resources/assets/js/app.js");
-__webpack_require__("./resources/assets/js/angular-app/app.js");
 module.exports = __webpack_require__("./resources/assets/sass/app.scss");
 
 

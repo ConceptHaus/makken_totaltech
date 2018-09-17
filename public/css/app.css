@@ -9619,7 +9619,6 @@ html {
   background-color: transparent;
   border: none;
   min-height: 166px;
-  padding-top: 20px;
   position: absolute;
   width: 100%;
   z-index: 9;
@@ -9655,6 +9654,10 @@ html {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46");
 }
 
+.navbar-home {
+  position: fixed;
+}
+
 .navbar-home .navbar-nav {
   margin-top: -50px;
 }
@@ -9662,6 +9665,7 @@ html {
 .navbar-toggler {
   background: transparent;
   border: none;
+  font-size: 1.8rem;
   position: absolute;
   right: 20px;
   top: 50px;
@@ -9676,7 +9680,7 @@ html {
 }
 
 .navbar-brand-home img {
-  width: 100% !important;
+  width: 100%;
 }
 
 .navbar-collapse {
@@ -9733,6 +9737,11 @@ table tr td {
 
 footer {
   background: #253B81;
+}
+
+.shadow-menu {
+  -webkit-box-shadow: 0px 0px 36px 0px black;
+          box-shadow: 0px 0px 36px 0px black;
 }
 
 /**
@@ -10028,7 +10037,16 @@ strong {
 /**
 *** 8.- Responsive
 **/
+@media screen and (max-width: 1680px) {
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 1250px) {
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
   }
@@ -10041,6 +10059,15 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+  h1, .h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    min-height: 0;
+  }
   .navbar .navbar-nav {
     margin-right: 0px;
     margin-left: 0px;
@@ -10087,6 +10114,12 @@ strong {
 }
 
 @media screen and (max-width: 767px) {
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+  .establecimientos {
+    padding-right: 0;
+  }
   #ganadores .nav-tabs .nav-link {
     font-size: 16px;
     margin: 0px;
@@ -10094,6 +10127,13 @@ strong {
 }
 
 @media screen and (max-width: 600px) {
+  .mb-sm-5 {
+    margin-bottom: 3rem;
+  }
+  .navbar-toggler {
+    right: 10px;
+    top: 25px;
+  }
   .table-responsive {
     display: block;
   }
@@ -10121,7 +10161,7 @@ strong {
     display: none;
   }
   .header-home .img-logo-ceys {
-    left: 20%;
+    left: 30%;
     right: inherit;
   }
 }
