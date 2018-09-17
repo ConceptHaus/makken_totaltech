@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Total Tech</title>
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}"/>
@@ -18,7 +19,7 @@
 <body>
 
   <!-- Inicio de Menú -->
-  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">  
+  <nav class="navbar navbar-home navbar-expand-lg navbar-dark">
     @if (Request::path() !== 'home')
       <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @else
