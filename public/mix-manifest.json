@@ -1,10 +1,11 @@
 {
-    "/js/app.js": "/js/app.js?id=2371c6ad02219d700b02",
+    "/js/vendor.js": "/js/vendor.js?id=382336f5f5052e407bdd",
     "/css/app.css": "/css/app.css?id=3c45a349b59d4083ea2d",
-    "/js/user.services.js": "/js/user.services.js?id=33db9908f6ddf610c983",
-    "/js/user.controllers.js": "/js/user.controllers.js?id=2d15e504b2589739b045",
-    "/js/home.services.js": "/js/home.services.js?id=f45f62f5435e5972e250",
-    "/js/home.controllers.js": "/js/home.controllers.js?id=985f43cfe7d2b7d23282",
+    "/js/user.services.js": "/js/user.services.js?id=4af2f109e714818736ae",
+    "/js/user.controllers.js": "/js/user.controllers.js?id=c2151359884e6c5ecd27",
+    "/js/home.services.js": "/js/home.services.js?id=5a43e691215d0f3cfc59",
+    "/js/home.controllers.js": "/js/home.controllers.js?id=c845dd5a46ac7fa8ac14",
     "/js/admin.services.js": "/js/admin.services.js?id=4452faa06a9d64c26fbe",
-    "/js/admin.controllers.js": "/js/admin.controllers.js?id=be1286493a72caf37db2"
+    "/js/admin.controllers.js": "/js/admin.controllers.js?id=be1286493a72caf37db2",
+    "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }
