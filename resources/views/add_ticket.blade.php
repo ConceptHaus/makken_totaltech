@@ -9,18 +9,10 @@
                     <form id="formulario-ticket" class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
                         <h3>REGÍSTRA TU TICKET</h3>
-                        <p class="text-left"><strong>Tienda de <i>"..."/"..."</i></strong></p>
-                        {{-- <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Usuario" required autofocus>
-                            @if ($errors->has('email'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('email') }}</strong>
-                                </span>
-                            @endif
-                        </div> --}}
+
                         <div class="form-group">
                           <select class="form-control" id="tienda" name="tienda" required>
-                              <option>Selecciona Establecimiento v</option>
+                              <option>Selecciona Establecimiento</option>
                               <option>Tienda 1</option>
                               <option>Tienda 2</option>
                               <option>Tienda 3</option>
@@ -29,14 +21,6 @@
                           </select>
                         </div>
 
-                        {{-- <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
-                            @if ($errors->has('password'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('password') }}</strong>
-                                </span>
-                            @endif
-                        </div> --}}
 
                         <div class="form-group{{ $errors->has('ticket') ? ' has-error' : '' }}">
                             <input id="ticket" type="number" class="form-control" name="ticket" placeholder="Número de ticket" required>
@@ -48,7 +32,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('monto') ? ' has-error' : '' }}">
-                            <input id="monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra en productos ''...''" required>
+                            <input id="monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra" required>
                             @if ($errors->has('ticket'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('monto') }}</strong>
@@ -56,9 +40,13 @@
                             @endif
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-submit">SUBE TU TICKET</button><br>
+                        <div class="form-group custom-margin">
+                            <div class="col-md-10">
+                                <label class="custom-file">
+                                    <input type="file" id="file" class="custom-file-input">
+                                    <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
+                                  </label>
+                                <h5 class="blanco mt-2">SUBE TU TICKET</h5>
                                 <small>Formatos .jpg, .png o .pdf</small>
                             </div>
                         </div>
@@ -69,22 +57,6 @@
                             <label class="form-check-label">He leído y aceptado los Términos y Condiciones.</label>
                           </div>
                         </div>
-
-                        {{-- <div class="form-group content-actions">
-                            <p>¿No tienes cuenta? <a class="" href="{{ route('register') }}">Regístrate.</a></p>
-                            <a class="a-forget-password" href="{{ route('password.request') }}">
-                                ¿Olvidaste tu contraseña?
-                            </a>
-                        </div> --}}
-                        {{-- <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div> --}}
                         <div class="form-group">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-submit">REGISTRAR</button>
