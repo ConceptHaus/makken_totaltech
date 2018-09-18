@@ -106,10 +106,10 @@ class RegisterController extends Controller
                 Auth::login($user,true);
 
                 $json['success'] = 'success_register';
-                return response()->json($json);
+                return response($json,200);
             
         }
-        $json['errors'] = $validator->errors()->toArray();
-        return response()->json($json);
+        $json['fail'] = $validator->errors()->toArray();
+        return response($json,400);
     }
 }

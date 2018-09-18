@@ -57,10 +57,10 @@ class LoginController extends Controller
             if(auth()->attempt(array('correo'=>$email,'password'=>$password))){
                 if(auth()->user()->is_admin){
                     $json['admin'] = true;
-                    return response()->json($json);
+                    return response($json,200);
                 }
                 $json['success'] = true;
-                return response()->json($json);
+                return response($json,200);
             }
             $json['fail']['error'] = 'La dirección de correo electrónico y/o la contraseña que has ingresado no coinciden.';
             return response($json, 400);
