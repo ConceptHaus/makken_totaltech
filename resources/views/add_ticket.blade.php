@@ -32,7 +32,7 @@
                         <div class="form-group custom-margin">
                             <div class="col-md-10">
                                 <label class="custom-file">
-                                    <input ng-model="ticket.fileticket" type="file" id="file" class="custom-file-input">
+                                    <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="custom-file-input">
                                     <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
                                   </label>
                                 <h5 class="blanco mt-2">SUBE TU TICKET</h5>
