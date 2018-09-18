@@ -6,12 +6,12 @@
         <div class="col-md-8 offset-md-2">
             <div class="panel">
                 <div class="panel-body text-center">
-                    <form id="formulario-ticket" class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form id="formulario-ticket" class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>REGÍSTRA TU TICKET</h3>
 
                         <div class="form-group">
-                          <select class="form-control" id="tienda" name="tienda" required>
+                          <select ng-model="ticket.id_establecimiento" class="form-control" id="tienda" name="tienda" required>
                               <option value="" disabled selected>Selecciona Establecimiento</option>
                               <option ng-repeat="est in establecimientos" value="est.id_establecimiento"><% est.nombre %></option>
                               
@@ -20,19 +20,19 @@
 
                       
                         <div class="form-group">
-                            <input id="ticket" type="text" class="form-control" name="ticket" placeholder="Número de ticket" required>
+                            <input id="ticket" ng-model="ticket.no_ticket" type="text" class="form-control" name="ticket" placeholder="Número de ticket" required>
                             
                         </div>
 
                         <div class="form-group">
-                            <input id="monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra" required>
+                            <input id="monto" ng-model="ticket.monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra" required>
                             
                         </div>
 
                         <div class="form-group custom-margin">
                             <div class="col-md-10">
                                 <label class="custom-file">
-                                    <input type="file" id="file" class="custom-file-input">
+                                    <input ng-model="ticket.fileticket" type="file" id="file" class="custom-file-input">
                                     <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
                                   </label>
                                 <h5 class="blanco mt-2">SUBE TU TICKET</h5>
