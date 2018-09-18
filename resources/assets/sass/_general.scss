@@ -42,11 +42,11 @@ html {
     letter-spacing: 2px;
 }
 
-.form-group {
-  &a {
-    color: $amarillo;
-  }
-}
+// .form-group {
+//   a {
+//     color: $amarillo !important;
+//   }
+// }
 
 #formulario-ticket {
   .form-group {
@@ -261,4 +261,22 @@ footer {
     color: white;
     font-style: inherit;
   }
+}
+
+// Estilos de errores
+
+.alert-warning {
+  color: $amarillo;
+  font-size: 13px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.error-form {
+    font-size: 13px;
+    color: $amarillo !important;
+}
+
+.invalido {
+    border: 3px solid $amarillo;
 }

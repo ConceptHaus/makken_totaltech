@@ -9578,10 +9578,6 @@ html {
   letter-spacing: 2px;
 }
 
-.form-groupa {
-  color: #F7E300;
-}
-
 #formulario-ticket .form-group {
   margin-bottom: 2rem !important;
 }
@@ -9773,6 +9769,22 @@ footer {
 .contenido-modal h1, .contenido-modal .h1 {
   color: white;
   font-style: inherit;
+}
+
+.alert-warning {
+  color: #F7E300;
+  font-size: 13px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.error-form {
+  font-size: 13px;
+  color: #F7E300 !important;
+}
+
+.invalido {
+  border: 3px solid #F7E300;
 }
 
 /**
