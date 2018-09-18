@@ -225,3 +225,34 @@ footer {
 .shadow-menu {
   box-shadow: 0px 0px 36px 0px black;
 }
+
+.dropdown-menu {
+  background: $azul;
+  border: 0;
+}
+
+.header-home {
+  &.header-user {
+    .btn-call-to-action {
+        bottom: -95px;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #ffffff87;
+  border: 0;
+  border-radius: 0;
+  min-height: 620px;
+}
+
+.contenido-modal {
+  position: absolute;
+  left: 29%;
+  top: 40%;
+
+  h1 ,.h1 {
+    color: white;
+    font-style: inherit;
+  }
+}

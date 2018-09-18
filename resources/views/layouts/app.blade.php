@@ -35,14 +35,26 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
         <a id="menu-link" class="nav-link" data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
         </li>
         <li class="nav-item">
-          <a id="menu-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
+          <a id="menus-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
         </li>
         <li class="nav-item">
-          <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
+          @if (Auth::check())
+            {{-- <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA LOGIN</a> --}}
+            <div class="dropdown nav-link">
+                <a class="dropdown-toggle" data-toggle="dropdown">MI CUENTA</a>
+                <div class="dropdown-menu shadow-menu">
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/ticket') }}">AGREGAR TICKET</a>
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/home') }}">MI CUENTA</a>
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/logout') }}">CERRAR SESIÓN</a>
+                </div>
+            </div>
+          @else
+            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
+          @endif
         </li>
       </ul>
     </div>
@@ -92,7 +104,7 @@
   <script>
 	 var scroll = new SmoothScroll('a[href*="#"]', {
       speed: 2500,
-	    clip: true,
+	    clip: false,
       ignore: '[data-scroll-ignore]',
    });
   </script>

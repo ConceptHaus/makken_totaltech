@@ -9744,6 +9744,33 @@ footer {
           box-shadow: 0px 0px 36px 0px black;
 }
 
+.dropdown-menu {
+  background: #223F97;
+  border: 0;
+}
+
+.header-home.header-user .btn-call-to-action {
+  bottom: -95px;
+}
+
+.modal-content {
+  background-color: #ffffff87;
+  border: 0;
+  border-radius: 0;
+  min-height: 620px;
+}
+
+.contenido-modal {
+  position: absolute;
+  left: 29%;
+  top: 40%;
+}
+
+.contenido-modal h1, .contenido-modal .h1 {
+  color: white;
+  font-style: inherit;
+}
+
 /**
 *** 5.- Estilos Login
 **/
@@ -10041,6 +10068,10 @@ strong {
   .mb-sm-5 {
     margin-bottom: 0;
   }
+  .header-home.header-user .btn-call-to-action {
+    left: 0;
+    bottom: -100px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -10059,6 +10090,24 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .contenido-modal {
+    left: 20%;
+  }
+  .table-responsive {
+    display: block;
+  }
+  .header-home .texto-home h1 {
+    font-size: 2rem;
+  }
+  .dropdown-menu {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .dropdown-menu .nav-link {
+    font-size: 20px !important;
+  }
   .navbar .navbar-nav .nav-link {
     font-size: 30px;
   }
@@ -10130,6 +10179,10 @@ strong {
 }
 
 @media screen and (max-width: 600px) {
+  .header-home .texto-home {
+    bottom: 220px;
+    left: 0px;
+  }
   .mb-sm-5 {
     margin-bottom: 3rem;
   }
@@ -10155,6 +10208,11 @@ strong {
   }
   #ganadores table td {
     padding: 1.5rem;
+  }
+  .header-home.header-user .btn-call-to-action {
+    left: 5%;
+    width: auto;
+    bottom: -85%;
   }
   .header-home .btn-call-to-action {
     left: 10%;
