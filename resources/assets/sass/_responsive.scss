@@ -48,6 +48,10 @@
 }
 
 @media screen and (max-width: 992px) {
+  .custom-margin {
+    margin-left: 0;
+    margin-right: -35%;
+  }
   .contenido-modal {
     left: 20%;
   }
@@ -183,6 +187,11 @@
     // h3{
     //   color: black!important;
     // }
+
+    .custom-margin {
+      margin-left: 0;
+      margin-right: 4%;
+    }
 
     .header-home .texto-home {
       bottom: 220px;

@@ -9,7 +9,7 @@
                     <form id="formulario-ticket" class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
                         <h3>REGÍSTRA TU TICKET</h3>
-                        
+
                         <div class="form-group">
                           <select class="form-control" id="tienda" name="tienda" required>
                               <option value="" disabled selected>Selecciona Establecimiento</option>
@@ -29,9 +29,13 @@
                             
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-submit">SUBE TU TICKET</button><br>
+                        <div class="form-group custom-margin">
+                            <div class="col-md-10">
+                                <label class="custom-file">
+                                    <input type="file" id="file" class="custom-file-input">
+                                    <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
+                                  </label>
+                                <h5 class="blanco mt-2">SUBE TU TICKET</h5>
                                 <small>Formatos .jpg, .png o .pdf</small>
                             </div>
                         </div>
