@@ -41,6 +41,14 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
                 
             })
     }
+    $scope.getEstablecimientos = function(){
+        $http.get('api/v1/establecimientos').then(function(res){
+            $scope.estableciemientos = res.data;
+            console.log($scope.estableciemientos);
+        },function(err){
+            console.log(err);
+        })
+    }
     var success = function(data){
         console.log(data.data);
         $window.location.href = '/home';

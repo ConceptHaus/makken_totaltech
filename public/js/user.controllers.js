@@ -108,6 +108,14 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, CSRF_T
             console.log($scope.errorCP);
         });
     };
+    $scope.getEstablecimientos = function () {
+        $http.get('api/v1/establecimientos').then(function (res) {
+            $scope.estableciemientos = res.data;
+            console.log($scope.estableciemientos);
+        }, function (err) {
+            console.log(err);
+        });
+    };
     var success = function success(data) {
         console.log(data.data);
         $window.location.href = '/home';
