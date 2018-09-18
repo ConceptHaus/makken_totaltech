@@ -15,9 +15,10 @@ mix.js([
     //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
 ], 'public/js/vendor.js');
 mix.sass('resources/assets/sass/app.scss', 'public/css')
-    .options({
+   .sass('resources/assets/sass-admin/main.scss', 'public/css')
+   .options({
         processCssUrls: false
-    });
+   });
 mix.js('resources/assets/js/angular-app/user/user.controllers.js', 'public/js')
    .js('resources/assets/js/angular-app/user/user.services.js', 'public/js')
    .js('resources/assets/js/angular-app/home/home.controllers.js', 'public/js')
