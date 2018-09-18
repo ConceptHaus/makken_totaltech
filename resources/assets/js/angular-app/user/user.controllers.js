@@ -49,7 +49,8 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
             console.log(err);
         })
     }
-   $scope.addTicker = function(ticket){
+   $scope.addTicket = function(ticket){
+       console.log(ticket);
     swal({
         title:"Espera...",
         text:"Estamos enviando tu ticket.",
@@ -61,10 +62,10 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
     })
     .then(function(res){
         swal.close();
-        console.log(res);
+        console.log(res.data);
     },function(err){
         swal.close();
-        console.log(err);
+        console.log(err.data);
     })
 
    }
