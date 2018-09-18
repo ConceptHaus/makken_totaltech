@@ -43,12 +43,15 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
     }
     $scope.getEstablecimientos = function(){
         $http.get('api/v1/establecimientos').then(function(res){
-            $scope.estableciemientos = res.data;
-            console.log($scope.estableciemientos);
+            $scope.establecimientos = res.data;
+            console.log($scope.establecimientos);
         },function(err){
             console.log(err);
         })
     }
+   $scope.addTicker = function(ticket){
+
+   }
     var success = function(data){
         console.log(data.data);
         $window.location.href = '/home';
@@ -59,6 +62,6 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
         swal.close();
         console.log(errors.data.fail);
     }
-    
+     $scope.getEstablecimientos();
 
 })
