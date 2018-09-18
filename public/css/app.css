@@ -9773,18 +9773,18 @@ footer {
 
 .alert-warning {
   color: #F7E300;
-  font-size: 13px;
+  font-size: 11px;
   background-color: transparent;
   border-color: transparent;
 }
 
 .error-form {
-  font-size: 13px;
+  font-size: 11px;
   color: #F7E300 !important;
 }
 
 .invalido {
-  border: 3px solid #F7E300;
+  border: 1px solid #fd4b5c;
 }
 
 /**
