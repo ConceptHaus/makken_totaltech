@@ -8,9 +8,15 @@
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-  <a href="#" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-    <span>¡PARTICIPA!</span> DA CLICK AQUÍ
-  </a>
+  @if (Auth::check())
+    <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+      <span>¡REGISTRA!</span> TÚ TICKET
+    </a>
+  @else
+    <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+      <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+    </a>
+  @endif
 </section>
 
 <!-- Dinámica del concurso -->
@@ -89,9 +95,16 @@
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
       <div class="col-12">
-        <a href="#" class="btn btn-call-to-action text-center">
+      @if (Auth::check())
+        <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
+          <span>¡REGISTRA!</span> TÚ TICKET
+        </a>
+      @else
+        <a href="{{ url('/login') }}" class="btn btn-call-to-action text-center">
           <span>¡PARTICIPA!</span> DA CLICK AQUÍ
         </a>
+      @endif
+
       </div>
     </div>
   </div>

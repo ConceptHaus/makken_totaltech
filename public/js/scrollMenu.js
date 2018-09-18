@@ -47,6 +47,11 @@ else{
       console.log('click');
       $('.navbar-toggler').click();
     });
+
+    $('#menus-link').click( function(){
+      console.log('click');
+      $('.navbar-toggler').click();
+    });
   }
 
 /* end detect mobile*/
