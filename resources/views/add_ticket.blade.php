@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-submit">REGISTRAR</button>
+                                <button type="submit" ng-click="addTicket(ticket)"  class="btn btn-submit">REGISTRAR</button>
                             </div>
                         </div>
 

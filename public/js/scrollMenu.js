@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var url = window.location.href.split('/');
-  console.log(url);
+  
 /*detect mobile*/
 if ($(window).width() > 991){
   if ($(window).scrollTop() > 100 ) {

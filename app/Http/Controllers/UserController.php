@@ -43,8 +43,8 @@ class UserController extends Controller
             //Validación de datos de tickets
             
             'no_ticket'=>'required|string',
-            'monto' => 'required | number',
-            'id_estableciento'=>'required|number',
+            'monto' => 'required|numeric',
+            'id_establecimiento'=>'required|numeric',
             'fileticket'=>'required|image',
 
         ]);
