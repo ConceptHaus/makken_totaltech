@@ -10,7 +10,7 @@ class ApiController extends Controller
 {
     public function getCP($cp){
         $datosCP = CodigosPostales::where('CodigoPostal','=',$cp)->first();
-        
+
         if(!$datosCP){
             $datosCP['error'] = 'Este código no es válido o no existe';
             return response($datosCP,400);

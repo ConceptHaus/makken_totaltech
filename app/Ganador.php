@@ -10,7 +10,7 @@ class Ganador extends Model
     public $table = 'ganador';
 
     protected $fillable = [
-        'id_ganador','id_usuario', 'id_ticket', 'id_premio'
+        'id_ganador','id_usuario', 'id_ticket', 'id_premio', 'id_semana'
     ];
 
     public function user(){
@@ -21,6 +21,9 @@ class Ganador extends Model
     }
     public function premio(){
       return $this->hasOne('App\Premio', 'id_premio');
+    }
+    public function semanas(){
+        return $this->hasOne('App\Semanas', 'id_semana');
     }
 
     public function scopegetAllGanadores($query){

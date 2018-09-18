@@ -27,7 +27,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
 
-//Catálogo
+//Funcionalidades
+Route::get('/api/v1/cp/{cp}','Apicontroller@getCP');
 Route::get('/api/v1/establecimientos','ApiController@getEstablecimientos');
 
 //Funcionalidades
