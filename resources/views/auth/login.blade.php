@@ -10,13 +10,13 @@
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
                         <div class="form-group">
-                            <input ng-model="user.email" id="email" type="email" class="form-control" name="email" placeholder="Usuario" required autofocus>
-                            
+                            <input ng-class="{'invalido': errors['error'] || errors['email'] }" ng-model="user.email" id="email" type="email" class="form-control" name="email" placeholder="Usuario" required autofocus>
+
                         </div>
 
                         <div class="form-group">
-                            <input ng-model="user.password" id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
-                            
+                            <input ng-class="{'invalido': errors['error'] || errors['password'] }" ng-model="user.password" id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
+
                         </div>
                         <div ng-if="errors['error']" class="alert alert-warning" role="alert">
                             <% errors['error'] %>

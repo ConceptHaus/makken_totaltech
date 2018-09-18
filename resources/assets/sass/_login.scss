@@ -6,7 +6,7 @@
         transition:all .5s ease-in-out;
     }
     a {
-        
+
         &:hover {
             color: $amarillo;
         }
@@ -53,5 +53,6 @@
     .a-login {
         position: relative;
         top: 20px;
+        // color: $amarillo;
     }
 }

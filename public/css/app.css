@@ -9680,7 +9680,7 @@ html {
 }
 
 .navbar-brand-home img {
-  width: 100%;
+  width: 85%;
 }
 
 .navbar-collapse {
@@ -9769,6 +9769,22 @@ footer {
 .contenido-modal h1, .contenido-modal .h1 {
   color: white;
   font-style: inherit;
+}
+
+.alert-warning {
+  color: #F7E300;
+  font-size: 11px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.error-form {
+  font-size: 11px;
+  color: #F7E300 !important;
+}
+
+.invalido {
+  border: 1px solid #fd4b5c;
 }
 
 /**
