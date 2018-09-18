@@ -48,7 +48,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
     
     var error = function(errors){
         $scope.errors = errors.data.fail;
-        swal.close()
+        swal.close();
         console.log(errors.data.fail);
     }
     
