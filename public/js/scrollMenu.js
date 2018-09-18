@@ -30,8 +30,8 @@ if ($(window).width() > 991){
         /* Fondo transparente */
         $("#menu1").css("background" , "transparent");
         $(".logo-menu").attr("src","/img/logos/puedescontodo-logo.svg");
-        $('.navbar-brand-home img').css('width', '100%');
-        $('.navbar-brand img').css('width', '100%');
+        $('.navbar-brand-home img').css('width', '85%');
+        $('.navbar-brand img').css('width', '85%');
         $('.navbar-home .navbar-nav').css('margin-top', '-50px')
         $('.navbar').css('min-height','166px');
         $('#menu1').removeClass('shadow-menu');
