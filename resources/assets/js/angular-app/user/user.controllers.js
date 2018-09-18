@@ -23,9 +23,23 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
             text: 'Estamos verificando tus datos.',
             showConfirmButton: false
         });
-        UserFactory.register(user).then(success, error);
-
         
+        UserFactory.register(user).then(success, error);       
+    }
+    $scope.getCP = function(cp){
+        $http.get('/api/v1/cp/' + cp)
+            .then(function(res) {
+                
+                    $scope.errorCP = null;
+                    $scope.user.estado = res.data.Estado;
+                    $scope.user.municipio = res.data.Municipio;
+                    console.log($scope.user);
+                
+            }, function(error){
+                $scope.errorCP = error.data.error;
+                console.log($scope.errorCP);
+                
+            })
     }
     var success = function(data){
         console.log(data.data);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Direccion;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -84,7 +85,14 @@ class RegisterController extends Controller
             $user->telefono = $data['telefono'];
             $user->correo = $data['correo'];
             $user->password = bcrypt($data['password']);
+            
+            $direccion = new Direccion();
+            $direccion->estado = $data['estado'];
+            $direccion->municipio = $data['municipio'];
+            $direccion->cp = $data['cp'];
+
             $user->save();
+            $user->direccion()->save($direccion);
             DB::commit();
 
             return $user;

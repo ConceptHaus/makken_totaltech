@@ -107,6 +107,7 @@
    <!-- Cambio de Menu con Scrolll -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
   <script src="{{ mix('js/vendor.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
   <script src="{{ mix('js/user.controllers.js') }}"></script>
   <script src="{{ mix('js/user.services.js') }}"></script>
   <script src="{{ mix('js/admin.controllers.js') }}"></script>
@@ -116,7 +117,7 @@
 
   <!-- End Scripts -->
   <script>
-    var app = angular.module('angularApp',['userController','userFactory']);
+    var app = angular.module('angularApp',['userController','userFactory','ngFileUpload']);
     app.config(function($interpolateProvider){
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');
