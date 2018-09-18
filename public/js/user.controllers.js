@@ -110,12 +110,13 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, CSRF_T
     };
     $scope.getEstablecimientos = function () {
         $http.get('api/v1/establecimientos').then(function (res) {
-            $scope.estableciemientos = res.data;
-            console.log($scope.estableciemientos);
+            $scope.establecimientos = res.data;
+            console.log($scope.establecimientos);
         }, function (err) {
             console.log(err);
         });
     };
+    $scope.addTicker = function (ticket) {};
     var success = function success(data) {
         console.log(data.data);
         $window.location.href = '/home';
@@ -126,6 +127,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, CSRF_T
         swal.close();
         console.log(errors.data.fail);
     };
+    $scope.getEstablecimientos();
 });
 
 /***/ }),

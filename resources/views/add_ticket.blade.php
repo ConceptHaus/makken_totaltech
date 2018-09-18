@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="container">
+<div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="panel">
@@ -12,32 +12,21 @@
                         
                         <div class="form-group">
                           <select class="form-control" id="tienda" name="tienda" required>
-                              <option>Selecciona Establecimiento</option>
-                              <option>Tienda 1</option>
-                              <option>Tienda 2</option>
-                              <option>Tienda 3</option>
-                              <option>Tienda 4</option>
-                              <option>Tienda 5</option>
+                              <option value="" disabled selected>Selecciona Establecimiento</option>
+                              <option ng-repeat="est in establecimientos" value="est.id_establecimiento"><% est.nombre %></option>
+                              
                           </select>
                         </div>
 
                       
-                        <div class="form-group{{ $errors->has('ticket') ? ' has-error' : '' }}">
-                            <input id="ticket" type="number" class="form-control" name="ticket" placeholder="Número de ticket" required>
-                            @if ($errors->has('ticket'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('ticket') }}</strong>
-                                </span>
-                            @endif
+                        <div class="form-group">
+                            <input id="ticket" type="text" class="form-control" name="ticket" placeholder="Número de ticket" required>
+                            
                         </div>
 
-                        <div class="form-group{{ $errors->has('monto') ? ' has-error' : '' }}">
+                        <div class="form-group">
                             <input id="monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra" required>
-                            @if ($errors->has('ticket'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('monto') }}</strong>
-                                </span>
-                            @endif
+                            
                         </div>
 
                         <div class="form-group">
