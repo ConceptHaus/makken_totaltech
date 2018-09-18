@@ -9699,6 +9699,18 @@ html {
   width: 200px;
 }
 
+.btn-submit-upload {
+  background: #F7E300;
+  border-radius: 50%;
+  color: #223F97;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+  width: auto;
+  text-align: center;
+  float: left;
+}
+
 table th {
   border-right: 1px solid #C5D0E9 !important;
   color: #223F97;
@@ -9785,6 +9797,11 @@ footer {
 
 .invalido {
   border: 1px solid #fd4b5c;
+}
+
+.custom-margin {
+  margin-top: -10%;
+  margin-left: 20%;
 }
 
 /**
@@ -10106,6 +10123,10 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .custom-margin {
+    margin-left: 0;
+    margin-right: -35%;
+  }
   .contenido-modal {
     left: 20%;
   }
@@ -10195,6 +10216,10 @@ strong {
 }
 
 @media screen and (max-width: 600px) {
+  .custom-margin {
+    margin-left: 0;
+    margin-right: 4%;
+  }
   .header-home .texto-home {
     bottom: 220px;
     left: 0px;
