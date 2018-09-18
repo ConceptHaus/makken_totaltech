@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+  var url = window.location.href.split('/');
+  console.log(url);
 /*detect mobile*/
 if ($(window).width() > 991){
   if ($(window).scrollTop() > 100 ) {
@@ -30,8 +31,13 @@ if ($(window).width() > 991){
         /* Fondo transparente */
         $("#menu1").css("background" , "transparent");
         $(".logo-menu").attr("src","/img/logos/puedescontodo-logo.svg");
-        $('.navbar-brand-home img').css('width', '100%');
-        $('.navbar-brand img').css('width', '100%');
+        if (url[3] == "") {
+          $('.navbar-brand-home img').css('width', '85%');
+          $('.navbar-brand img').css('width', '85%');
+        } else {
+          $('.navbar-brand-home img').css('width', '350px');
+          $('.navbar-brand img').css('width', '350px');
+        }
         $('.navbar-home .navbar-nav').css('margin-top', '-50px')
         $('.navbar').css('min-height','166px');
         $('#menu1').removeClass('shadow-menu');

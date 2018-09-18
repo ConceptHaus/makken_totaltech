@@ -42,6 +42,12 @@ html {
     letter-spacing: 2px;
 }
 
+// .form-group {
+//   a {
+//     color: $amarillo !important;
+//   }
+// }
+
 #formulario-ticket {
   .form-group {
     margin-bottom: 2rem !important;
@@ -148,7 +154,7 @@ html {
 
 .navbar-brand-home {
     img {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -166,6 +172,18 @@ html {
     letter-spacing: 1px;
     padding: 10px 12px;
     width: 200px;
+}
+
+.btn-submit-upload {
+  background: #F7E300;
+  border-radius: 50%;
+  color: #223F97;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+  width: auto;
+  text-align: center;
+  float: left;
 }
 
 // Tablas
@@ -255,4 +273,27 @@ footer {
     color: white;
     font-style: inherit;
   }
+}
+
+// Estilos de errores
+
+.alert-warning {
+  color: $amarillo;
+  font-size: 11px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.error-form {
+    font-size: 11px;
+    color: $amarillo !important;
+}
+
+.invalido {
+    border: 1px solid #fd4b5c;
+}
+
+.custom-margin {
+  margin-top: -10%;
+  margin-left: 20%; 
 }

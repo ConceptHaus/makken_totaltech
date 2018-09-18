@@ -79,7 +79,7 @@ class UserController extends Controller
                 DB::commit();
                 $json['success'] = 'Ticket guardado';
 
-                return response()->json($json);
+                return response($json,200);
 
             DB::commit();
             }catch(Exception $e){
@@ -88,7 +88,7 @@ class UserController extends Controller
             }
         }
 
-        return response()->json($json);
+        return response($json,400);
 
     }
 }

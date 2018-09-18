@@ -5,7 +5,7 @@
  */
 var app = angular.module('userController',['angularApp']);
 
-app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOKEN){
+app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
     
     $scope.login = function(user){
         console.log(user);
@@ -41,6 +41,33 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
                 
             })
     }
+    $scope.getEstablecimientos = function(){
+        $http.get('api/v1/establecimientos').then(function(res){
+            $scope.establecimientos = res.data;
+            console.log($scope.establecimientos);
+        },function(err){
+            console.log(err);
+        })
+    }
+   $scope.addTicker = function(ticket){
+    swal({
+        title:"Espera...",
+        text:"Estamos enviando tu ticket.",
+        showConfirmButton:false
+    });
+    Upload.upload({
+        url:'/ticket',
+        data:ticket
+    })
+    .then(function(res){
+        swal.close();
+        console.log(res);
+    },function(err){
+        swal.close();
+        console.log(err);
+    })
+
+   }
     var success = function(data){
         console.log(data.data);
         $window.location.href = '/home';
@@ -51,6 +78,6 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window,CSRF_TOK
         swal.close();
         console.log(errors.data.fail);
     }
-    
+     $scope.getEstablecimientos();
 
 })
