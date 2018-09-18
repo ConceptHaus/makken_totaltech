@@ -28,8 +28,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
 
 //Catálogo
-Route::get('/api/v1/cp/{cp}','Apicontroller@getCP');
 Route::get('/api/v1/establecimientos','ApiController@getEstablecimientos');
 
 //Funcionalidades
 Route::post('/ticket','UserController@creaTicketUser');
+
+// Administrador
+Route::get('/admin', 'WelcomeController@loginAdmin');
+
+Route::get('/usuarios/registrados', 'AdminController@usuariosRegistrados');
+Route::get('/usuarios/ganadores', 'AdminController@usuariosGanadores');
+Route::get('/nuevo/ticket', 'AdminController@nuevoTicket');
+Route::get('/tickets/registrados', 'AdminController@ticketsRegistrados');
+Route::get('/establecimientos', 'AdminController@establecimientos');

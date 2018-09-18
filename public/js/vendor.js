@@ -19835,6 +19835,13 @@ bindJQuery();publishExternalAPI(angular);angular.module("ngLocale",[],["$provide
 
 /***/ }),
 
+/***/ "./resources/assets/sass-admin/main.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/assets/sass/app.scss":
 /***/ (function(module, exports) {
 
@@ -19846,7 +19853,8 @@ bindJQuery();publishExternalAPI(angular);angular.module("ngLocale",[],["$provide
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./resources/assets/bower/angular/angular.js");
-module.exports = __webpack_require__("./resources/assets/sass/app.scss");
+__webpack_require__("./resources/assets/sass/app.scss");
+module.exports = __webpack_require__("./resources/assets/sass-admin/main.scss");
 
 
 /***/ })
