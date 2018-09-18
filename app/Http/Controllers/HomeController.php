@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\CodigosPostales;
 
 class HomeController extends Controller
 {
@@ -11,10 +12,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -26,5 +27,16 @@ class HomeController extends Controller
     }
     public function addNewTicket() {
         return view('add_ticket');
+    }
+
+    public function getCP($cp){
+        $datosCP = CodigosPostales::where('CodigoPostal','=',$cp)->first();
+        
+        if(!$datosCP){
+            $datosCP['error'] = 'Este código no es válido o no existe';
+            return response($datosCP,400);
+        }
+        return response($datosCP,200);
+
     }
 }

@@ -31,15 +31,15 @@ class User extends Authenticatable
     ];
 
     public function tickets(){
-      return $this->hasMany('App\Ticket', 'id_usuario');
+      return $this->hasMany('App\Ticket', 'id_usuario','id');
     }
 
     public function direccion(){
-      return $this->hasOne('App\Direccion', 'id_usuario');
+      return $this->hasOne('App\Direccion', 'id_usuario','id');
     }
 
     public function ganador(){
-      return $this->hasMany('App\Ganador', 'id_usuario');
+      return $this->hasMany('App\Ganador', 'id_usuario','id');
     }
 
     public function scopegetAllUsers($query){
@@ -52,6 +52,6 @@ class User extends Authenticatable
       return $query->with('tickets')
                    ->with('direccion')
                    ->with('ganador')
-                   ->where('id_usuario',$id)->first();
+                   ->where('id',$id)->first();
     }
 }

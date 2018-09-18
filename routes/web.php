@@ -27,4 +27,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
 
 //Funcionalidades
-
+Route::get('/api/v1/cp/{cp}','HomeController@getCP');

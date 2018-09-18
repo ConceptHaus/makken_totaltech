@@ -16,7 +16,7 @@ class CreateDireccionTable extends Migration
         Schema::create('direccion', function (Blueprint $table) {
             $table->increments('id_direccion')->unsigned();
             $table->integer('id_usuario')->unsigned();
-            $table->foreign('id_usuario')->references('id_usuario')->on('users')->onDelete('cascade');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
             $table->string('cp');
             $table->string('estado');
             $table->string('municipio');

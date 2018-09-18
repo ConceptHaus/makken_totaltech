@@ -18,7 +18,7 @@ class Ticket extends Model
     ];
 
     public function user(){
-        return $this->belongsTo('App\User','id_usuario');
+        return $this->belongsTo('App\User','id','id_usuario');
     }
 
     public function establecimiento(){

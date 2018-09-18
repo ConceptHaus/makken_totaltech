@@ -67,12 +67,12 @@ class UserController extends Controller
             DB::beginTransaction();
             try{
                 $ticket = new Ticket();
-                $ticket->id_usuario = $user->id_usuario;
+                $ticket->id_usuario = $user->id;
                 $ticket->no_ticket = $request->no_ticket;
                 $ticket->monto = $request->monto;
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 //Sube archivo
-                $this->uploadTicketS3($request->fileticket,$user->id_usuario);
+                $this->uploadTicketS3($request->fileticket,$user->id);
                 //{{ Falta guardar url don't forget. }}
 
                 $user->ticket()->save($ticket);
