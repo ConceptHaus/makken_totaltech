@@ -47,9 +47,9 @@
             <div class="dropdown nav-link">
                 <a class="dropdown-toggle" data-toggle="dropdown">MI CUENTA</a>
                 <div class="dropdown-menu shadow-menu">
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/ticket') }}">AGREGAR TICKET</a>
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/home') }}">MI CUENTA</a>
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/logout') }}">CERRAR SESIÓN</a>
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/ticket') }}">Agregar Ticket</a>
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/home') }}">Mi Cuenta</a>
+                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/logout') }}">Cerrar Sesión</a>
                 </div>
             </div>
           @else
