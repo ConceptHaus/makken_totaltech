@@ -13,17 +13,36 @@ use App\Establecimiento;
 use App\Seccion;
 use App\Texto;
 
-class AdminController extends Controller
-{
+class AdminController extends Controller {
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(){
-        $this->middleware('admin')->except('logout');
+    // public function __construct(){
+    //     $this->middleware('admin')->except('logout');
+    // }
+
+    public function usuariosRegistrados() {
+        return view('admin/usuarios_registrados');
     }
 
+    public function usuariosGanadores() {
+        return view('admin/usuarios_ganadores');
+    }
+
+    public function ticketsRegistrados() {
+        return view('admin/tickets_registrados');
+    }
+
+    public function nuevoTicket() {
+        return view('admin/nuevo_ticket');
+    }
+
+    public function establecimientos() {
+        return view('admin/establecimientos');
+    }
+    
     public function getAllUsers(){
         $users = User::getAllUsers();
         
