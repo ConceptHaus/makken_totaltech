@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Establecimiento;
+use App\CodigosPostales;
 
 class ApiController extends Controller
 {

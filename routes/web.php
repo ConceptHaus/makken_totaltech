@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Auth
 Route::post('/login','Auth\LoginController@login');
 Route::post('/registro','Auth\RegisterController@registroUser');
 Route::get('/logout', 'Auth\LoginController@logout');
@@ -29,6 +30,9 @@ Route::get('/ticket', 'HomeController@addNewTicket');
 //Funcionalidades
 Route::get('/api/v1/cp/{cp}','Apicontroller@getCP');
 Route::get('/api/v1/establecimientos','ApiController@getEstablecimientos');
+
+//Funcionalidades
+Route::post('/ticket','UserController@creaTicketUser');
 
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');
