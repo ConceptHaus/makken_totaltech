@@ -42,6 +42,12 @@ html {
     letter-spacing: 2px;
 }
 
+.form-group {
+  &a {
+    color: $amarillo;
+  }
+}
+
 #formulario-ticket {
   .form-group {
     margin-bottom: 2rem !important;

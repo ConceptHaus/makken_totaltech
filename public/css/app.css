@@ -9578,6 +9578,10 @@ html {
   letter-spacing: 2px;
 }
 
+.form-groupa {
+  color: #F7E300;
+}
+
 #formulario-ticket .form-group {
   margin-bottom: 2rem !important;
 }
