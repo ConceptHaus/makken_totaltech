@@ -153,7 +153,11 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
     };
     var success = function success(data) {
         console.log(data.data);
-        $window.location.href = '/home';
+        if (data.data['admin'] == true) {
+            $window.location.href = '/admin/usuarios/registrados';
+        } else {
+            $window.location.href = '/home';
+        }
     };
 
     var error = function error(errors) {

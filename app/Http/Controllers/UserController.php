@@ -38,7 +38,7 @@ class UserController extends Controller
 
     //Validador de registro de tickets
 
-    protected function validadorTickets(array $data){
+    public function validadorTickets(array $data){
         return Validator::make($data, [
             //Validación de datos de tickets
             
@@ -81,8 +81,6 @@ class UserController extends Controller
                 $json['success'] = 'Ticket guardado';
 
                 return response($json,200);
-
-            DB::commit();
             }catch(Exception $e){
                 DB::rollBack();
                 return $e;

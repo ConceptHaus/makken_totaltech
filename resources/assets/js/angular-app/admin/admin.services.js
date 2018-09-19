@@ -19,10 +19,22 @@ app.factory('AdminFactory', function($http){
                 url:'/api/v1/users/'+id,
             })
         },
-        establecimiento: function(){
+        establecimientos: function(){
             return $http({
                 method:'GET',
                 url:'/api/v1/establecimientos'
+            })
+        },
+        ganadores: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/ganadores'
+            })
+        },
+        tickets: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/tickets'
             })
         }
     }
