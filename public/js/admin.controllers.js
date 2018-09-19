@@ -68,7 +68,14 @@
 /***/ "./resources/assets/js/angular-app/admin/admin.controllers.js":
 /***/ (function(module, exports) {
 
+/**
+ *  Module
+ *
+ * Description
+ */
+var app = angular.module('adminController', ['angularApp']);
 
+app.controller("adminCtrl", function ($scope, $http, AdminFactory, $window, Upload, CSRF_TOKEN) {});
 
 /***/ }),
 

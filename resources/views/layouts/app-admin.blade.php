@@ -207,7 +207,7 @@
         <script src="{{ mix('js/home.services.js') }}"></script>
         <!-- End Scripts -->
         <script>
-            var app = angular.module('angularApp',['userController','userFactory','ngFileUpload']);
+            var app = angular.module('angularApp',['userController','userFactory','adminFactory','ngFileUpload']);
             app.config(function($interpolateProvider){
             $interpolateProvider.startSymbol('<%');
             $interpolateProvider.endSymbol('%>');
