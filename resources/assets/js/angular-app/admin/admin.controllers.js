@@ -18,4 +18,43 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         })
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $scope.getEstablecimientos = function(){
+        adminFactory.establecimientos().then(function(res){
+            $scope.establecimientos = res.data;
+            console.log($scope.establecimientos);
+        }, function(err){
+            console.log(err);
+        })
+    }
+
+    $scope.addTicket = function(){
+        
+    }
+
 })
