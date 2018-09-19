@@ -20,12 +20,12 @@
                     </div>
                     <div class="input-group-icon input-group-icon-left mr-3">
                         <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
-                        <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
+                        <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                             placeholder="Buscar ...">
                     </div>
                 </div>
                 <div class="table-responsive row">
-                    <table class="table table-bordered table-hover" id="orders-table">
+                    <table ng-table="demo.tableParams" class="table table-bordered table-hover">
                         <thead class="thead-default thead-lg">
                             <tr>
                                 <th>No.</th>
@@ -40,45 +40,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Becky Brooks</td>
-                                <td>becky.brooks@gmail.com</td>
-                                <td>(55) 5454 5454</td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
-                                <td>Semana 1</td>
-                                <td>17.05.2018</td>
+                            <tr ng-repeat="ganador in ganadores | filter:search" ng-cloak>
+                                <td><% ganador.id_ganador %></td>
+                                <td><% ganador.user.nombre %></td>
+                                <td><% ganador.user.correo %></td>
+                                <td><% ganador.user.telefono %></td>
+                                <td><% ganador.ticket.no_ticket %></td>
+                                <td><% ganador.ticket.monto %></td>
+                                <td><% ganador.id_semana %></td>
+                                <td><% ganador.ticket.created_at %></td>
                                 <td>
                                     <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Becky Brooks</td>
-                                <td>becky.brooks@gmail.com</td>
-                                <td>(55) 5454 5454</td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
-                                <td>Semana 1</td>
-                                <td>17.05.2018</td>
-                                <td>
-                                    <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/2') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Becky Brooks</td>
-                                <td>becky.brooks@gmail.com</td>
-                                <td>(55) 5454 5454</td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
-                                <td>Semana 1</td>
-                                <td>17.05.2018</td>
-                                <td>
-                                    <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/3') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
-                                </td>
-                            </tr>
+                            
+                            
                         </tbody>
                     </table>
                 </div>
