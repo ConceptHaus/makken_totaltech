@@ -15,7 +15,7 @@
                             <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                 placeholder="Buscar ...">
                         </div>
-                        <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/nuevo/establecimiento') }}">Agregar establecimiento</a>
+                        <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/nuevo/establecimiento') }}">Agregar establecimiento</a>
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -35,7 +35,7 @@
                                     Walmart
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -46,7 +46,7 @@
                                     Soriana
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -57,7 +57,7 @@
                                     La Comer
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -68,7 +68,7 @@
                                     Casa Gravioto
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -79,7 +79,7 @@
                                     H-E-B
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -90,7 +90,7 @@
                                     Lowe´s
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -101,7 +101,7 @@
                                     The Home Depot
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -112,7 +112,7 @@
                                     CHEDRAUI
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/editar/establecimiento') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>

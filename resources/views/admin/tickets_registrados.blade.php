@@ -14,7 +14,7 @@
                                 <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                     placeholder="Buscar ...">
                             </div>
-                            <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/nuevo/ticket') }}">Agregar Tickect</a>
+                            <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/nuevo/ticket') }}">Agregar Tickect</a>
                         </div>
                     </div>
                     <div class="table-responsive row">
