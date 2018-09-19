@@ -51,7 +51,7 @@
                                     <div>
                                         <select class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
                                             data-style="btn-solid">  
-                                                <option ng-repeat="user in usuarios" value="<% user.id %>"><% user.email %></option>
+                                                <option ng-repeat="user in usuarios" value="<% user.id %>"><% user.correo %></option>
                                         </select>
                                     </div>
                                 </div>
