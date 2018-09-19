@@ -9,13 +9,15 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
     
     console.log('CONTROLLER USERS');
     // Usuarios registrados
-    $scope.getUsuarioRegistrados = function(){
-        adminFactory.allUsers().then(function(res){
+    var getUsuarioRegistrados = function(){
+        AdminFactory.allUsers().then(function(res){
             $scope.usuarios = res.data;
             console.log($scope.usuarios);
-        },function(err){
-            console.log(err);
-        })
+        }, function(error){
+            console.log('Error usuarios',error);
+        });
     }
+
+    getUsuarioRegistrados();
 
 })
