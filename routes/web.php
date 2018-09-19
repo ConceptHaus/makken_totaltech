@@ -48,11 +48,11 @@ Route::post('/texto','AdminController@editTexto');
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');
 
-Route::get('/usuarios/registrados', 'AdminController@usuariosRegistrados');
-Route::get('/usuarios/ganadores', 'AdminController@usuariosGanadores');
-Route::get('/usuario/detalle/{id}', 'AdminController@usuarioDetalle');
-Route::get('/tickets/registrados', 'AdminController@ticketsRegistrados');
-Route::get('/establecimientos', 'AdminController@establecimientos');
-Route::get('/nuevo/ticket', 'AdminController@nuevoTicket');
-Route::get('/nuevo/establecimiento', 'AdminController@nuevoEstablecimiento');
-Route::get('/editar/establecimiento', 'AdminController@editarEstablecimiento');
+Route::get('/admin/usuarios/registrados', 'AdminController@usuariosRegistrados');
+Route::get('/admin/usuarios/ganadores', 'AdminController@usuariosGanadores');
+Route::get('/admin/usuario/detalle/{id}', 'AdminController@usuarioDetalle');
+Route::get('/admin/tickets/registrados', 'AdminController@ticketsRegistrados');
+Route::get('/admin/establecimientos', 'AdminController@establecimientos');
+Route::get('/admin/nuevo/ticket', 'AdminController@nuevoTicket');
+Route::get('/admin/nuevo/establecimiento', 'AdminController@nuevoEstablecimiento');
+Route::get('/admin/editar/establecimiento', 'AdminController@editarEstablecimiento');

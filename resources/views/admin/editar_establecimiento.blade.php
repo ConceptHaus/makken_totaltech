@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="text-right">
                                     <button class="btn btn-primary btn-air mr-2">Actualizar</button>
-                                    <a class="btn btn-secondary" href="{{ url('/establecimientos') }}">Cancelar</a>
+                                    <a class="btn btn-secondary" href="{{ url('/admin/establecimientos') }}">Cancelar</a>
                                 </div>
                             </form>
                         </div>

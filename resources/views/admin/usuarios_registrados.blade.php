@@ -36,7 +36,7 @@
                                 <td>1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/admin/usuario/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -47,7 +47,7 @@
                                 <td>1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/2') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/admin/usuario/detalle/2') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -58,7 +58,7 @@
                                 <td>1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/3') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/admin/usuario/detalle/3') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                         </tbody>

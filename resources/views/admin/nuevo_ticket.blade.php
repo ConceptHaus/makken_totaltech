@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="text-right">
                                     <button class="btn btn-primary btn-air mr-2">Guardar</button>
-                                    <a class="btn btn-secondary" href="{{ url('/tickets/registrados') }}">Cancelar</a>
+                                    <a class="btn btn-secondary" href="{{ url('/admin/tickets/registrados') }}">Cancelar</a>
                                 </div>
                             </form>
                         </div>
