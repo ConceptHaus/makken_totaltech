@@ -18,11 +18,11 @@ class Ticket extends Model
     ];
 
     public function user(){
-        return $this->belongsTo('App\User','id','id_usuario');
+        return $this->belongsTo('App\User','id_usuario','id');
     }
 
     public function establecimiento(){
-      return $this->belongsTo('App\Establecimiento', 'id_establecimiento');
+      return $this->belongsTo('App\Establecimiento', 'id_establecimiento','id_establecimiento');
     }
 
     public function ganador(){
@@ -31,6 +31,11 @@ class Ticket extends Model
 
     public function scopeGetAllTickets($query){
         return $query->with('user')->get();
+    }
+    public function scopeGetAllTicketsFromUser($query,$id){
+        return $query->with('user')
+                    ->with('establecimiento')
+                    ->where('id_usuario',$id)->get();
     }
 
 

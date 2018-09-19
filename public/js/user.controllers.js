@@ -127,10 +127,24 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
             url: '/ticket',
             data: ticket
         }).then(function (res) {
-            swal.close();
+            swal({
+                title: "¡Todo bien!",
+                text: "Tu ticket se ha registrado con éxito",
+                confirmButtonText: 'Regresar a mi cuenta',
+                cancelButtonText: 'Subir otro ticket'
+            }).then(function (result) {
+                if (result.value) {
+                    $window.location.href = "/home";
+                }
+            });
             console.log(res.data);
+            $ticket = null;
         }, function (err) {
-            swal.close();
+            swal({
+                type: 'error',
+                title: 'Oh no!',
+                text: 'Algo salió mal.'
+            });
             console.log(err.data);
         });
     };
