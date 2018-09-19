@@ -91,7 +91,7 @@ class AdminController extends Controller {
 
     }
     public function adminRegisterTicket(Request $request){
-        $user = User::where('id',$request->id_user)->first();
+        $user = User::where('id',$request->id_usuario)->first();
 
         $validator = $this->validadorTickets($request->all());
 
@@ -116,7 +116,7 @@ class AdminController extends Controller {
                 return $e;
             }
         }
-        $json['error'] = $validador->errors();
+        $json['error'] = $validator->errors();
         return response($json,400);
 
 

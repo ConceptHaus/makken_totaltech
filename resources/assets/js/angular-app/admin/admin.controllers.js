@@ -57,10 +57,29 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         swal({
             title: "Espera...",
             text: "Estamos enviando tu ticket.",
-            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
-        
+        Upload.upload({
+            url: '/adminTicket',
+            data: ticket
+        })
+        .then(function(res){
+            swal({
+                title:'¡Todo bien!',
+                text: 'Tu ticket se ha registrado con éxito',
+                confirmButtonText: 'Aceptar',
+            })
+            $scope.ticket = {};
+            $('.img-default-ticket').attr('src', '/img/icons/camera-blue.svg');
+        },function(err){
+            swal({
+                type: 'error',
+                title: 'Oh no!',
+                text: 'Algo salió mal.'
+            })
+            console.log(err.data);
+        })
     }
 
     var readUrl = function(input){

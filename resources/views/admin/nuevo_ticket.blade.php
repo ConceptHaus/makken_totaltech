@@ -36,7 +36,7 @@
                                         <select ng-model="ticket.id_establecimiento" class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
                                             data-style="btn-solid">
                                             @foreach ($establecimientos as $establecimiento)
-                                            <option value="{{$establecimiento->id_etablecimiento}}">{{$establecimiento->nombre}}</option>
+                                            <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
                                             @endforeach
                                         </select>
                                     </div>
