@@ -1,0 +1,58 @@
+#pageSytyle {
+    padding-top: 170px;
+    padding-bottom: 120px;
+    a, p {
+        color: $blanco;
+        transition:all .5s ease-in-out;
+    }
+    a {
+
+        &:hover {
+            color: $amarillo;
+        }
+    }
+    .panel {
+        background: rgba(1, 25, 73, .6);
+        border-radius: 0;
+        margin-top: 5%;
+        padding: 3% 15%;
+        padding-top: 0%!important;
+    }
+    .panel-register {
+        padding: 5% 15%;
+        padding-top: 5%!important;
+    }
+    .panel-forget {
+        padding: 10% 15%;
+        padding-top: 10% !important;
+    }
+    h3 {
+        color: $blanco;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 25px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    form.form-ajust {
+        .btn-submit {
+            margin-top: 20px;
+        }
+    }
+    .content-actions {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    p, .a-forget-password, .a-login {
+        font-weight: 500;
+    }
+    .a-forget-password, .a-login {
+        font-size: 12px;
+    }
+    .a-login {
+        position: relative;
+        top: 20px;
+        // color: $amarillo;
+    }
+}

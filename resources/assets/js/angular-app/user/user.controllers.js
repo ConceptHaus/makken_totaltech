@@ -1,0 +1,84 @@
+/**
+ *  Module
+ *
+ * Description
+ */
+var app = angular.module('userController',['angularApp']);
+
+app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
+    
+    $scope.login = function(user){
+        console.log(user);
+        swal({
+            title:'Espera...',
+            text:'Estamos verificando tus datos.',
+            showConfirmButton:false
+        });
+        UserFactory.login(user).then(success, error);
+    }
+    $scope.register = function(user) {
+        console.log(user);
+        swal({
+            title: 'Espera...',
+            text: 'Estamos verificando tus datos.',
+            showConfirmButton: false
+        });
+        
+        UserFactory.register(user).then(success, error);       
+    }
+    $scope.getCP = function(cp){
+        $http.get('/api/v1/cp/' + cp)
+            .then(function(res) {
+                
+                    $scope.errorCP = null;
+                    $scope.user.estado = res.data.Estado;
+                    $scope.user.municipio = res.data.Municipio;
+                    console.log($scope.user);
+                
+            }, function(error){
+                $scope.errorCP = error.data.error;
+                console.log($scope.errorCP);
+                
+            })
+    }
+    $scope.getEstablecimientos = function(){
+        $http.get('api/v1/establecimientos').then(function(res){
+            $scope.establecimientos = res.data;
+            console.log($scope.establecimientos);
+        },function(err){
+            console.log(err);
+        })
+    }
+   $scope.addTicket = function(ticket){
+       console.log(ticket);
+    swal({
+        title:"Espera...",
+        text:"Estamos enviando tu ticket.",
+        showConfirmButton:false
+    });
+    Upload.upload({
+        url:'/ticket',
+        data:ticket
+    })
+    .then(function(res){
+        swal.close();
+        console.log(res.data);
+    },function(err){
+        swal.close();
+        console.log(err.data);
+    })
+
+   }
+    var success = function(data){
+        console.log(data.data);
+        $window.location.href = '/home';
+    }
+    
+    var error = function(errors){
+        $scope.errors = errors.data.fail;
+        swal.close();
+        console.log(errors.data.fail);
+    }
+     $scope.getEstablecimientos();
+
+})

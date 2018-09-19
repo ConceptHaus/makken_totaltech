@@ -1,0 +1,282 @@
+// Breakpoints para rwd 320 480 600 767 992 1250 1680
+@media screen and (max-width: 1680px) {
+    //   h3{
+    //     color: brown!important;
+    //   }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+
+    .header-home {
+      &.header-user {
+        .btn-call-to-action {
+          left: 0;
+          bottom: -100px;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    // h3{
+    //     color: orange!important;
+    // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+    // Navbar
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+
+    h5, .h5 {
+      &.responsive-title {
+        font-size: 18px !important;
+      }
+    }
+
+    h6, .h6 {
+      &.responsive-title {
+        font-size: 11px !important;
+      }
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-margin {
+    margin-left: 0;
+    margin-right: -35%;
+  }
+  .contenido-modal {
+    left: 20%;
+  }
+  .table-responsive {
+    display: block;
+  }
+
+  .header-home {
+    .texto-home {
+      h1 {
+          font-size: 2rem;
+        }
+    }
+  }
+.dropdown-menu {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  .nav-link {
+    font-size: 20px !important;
+  }
+}
+    .navbar {
+      .navbar-nav {
+        .nav-link {
+          font-size: 30px;
+        }
+      }
+    }
+    // h3{
+    //     color: blue!important;
+    // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+
+    h1, .h1 {
+      font-size: 2rem;
+    }
+
+    .navbar {
+      min-height: 0;
+        .navbar-nav {
+            margin-right: 0px;
+            margin-left: 0px;
+            text-align: center;
+
+            .nav-link {
+
+                &:hover,
+                &:focus {
+                    background: rgba(1, 25, 73, 0.6);
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 300px;
+        }
+    }
+
+    .navbar-brand-home {
+        img {
+            width: 80% !important;
+        }
+    }
+
+    #ganadores {
+        .nav-tabs {
+            .nav-link {
+                margin: 0px 5px;
+            }
+        }
+    }
+
+    .text-responsive {
+        text-align: center !important;
+    }
+
+    .tiendas-img {
+        width: 100% !important;
+    }
+
+    .img-footer {
+        width: 20% !important;
+    }
+    .header-home {
+        height: 500px;
+        .img-pleca {
+            bottom: -65px;
+            right: -150px;
+        }
+        .img-silicon {
+            width: 120px;
+        }
+        .img-logo-ceys {
+            right: 220px;
+            width: 150px;
+        }
+    }
+
+    .premio {
+      border-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    // h3{
+    //     color: green!important;
+    // }
+    .mb-sm-5 {
+      margin-bottom: 0;
+    }
+    .establecimientos {
+      padding-right: 0;
+    }
+
+    #ganadores {
+        .nav-tabs {
+            .nav-link {
+                font-size: 16px;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    // h3{
+    //   color: black!important;
+    // }
+
+    .custom-margin {
+      margin-left: 0;
+      margin-right: 4%;
+    }
+
+    .header-home .texto-home {
+      bottom: 220px;
+      left: 0px;
+    }
+
+    .mb-sm-5 {
+      margin-bottom: 3rem;
+    }
+
+    .navbar-toggler {
+      right: 10px;
+      top: 25px;
+    }
+
+    .table-responsive {
+        display: block;
+    }
+    #pageSytyle {
+        .panel {
+            padding: 3% 5% !important;
+        }
+    }
+
+    #ganadores {
+        .nav-tabs {
+            .nav-item {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        .content-table {
+            max-width: 94%;
+        }
+        table {
+            th {
+                font-size: 15px;
+            }
+            td {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    .header-home {
+      &.header-user {
+        .btn-call-to-action{
+          left: 5%;
+          width: auto;
+          bottom: -85%;
+        }
+      }
+        .btn-call-to-action {
+            left: 10%;
+            width: 80%;
+        }
+        .img-silicon {
+            display: none;
+        }
+        .img-logo-ceys {
+            left: 30%;
+            right: inherit;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    // h3{
+    //   color: yellow!important;
+    // }
+
+    .navbar-brand {
+        img {
+            width: 80% !important;
+        }
+    }
+
+    // Responsive home
+
+}
+
+@media screen and (max-width: 320px) {
+    // h3{
+    //   color: pink!important;
+    // }
+}

@@ -19835,10 +19835,17 @@ bindJQuery();publishExternalAPI(angular);angular.module("ngLocale",[],["$provide
 
 /***/ }),
 
+/***/ "./resources/assets/sass-admin/main.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/assets/sass/app.scss":
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"~bootstrap-sass/assets/stylesheets/bootstrap\";\n^\n      File to import not found or unreadable: ~bootstrap-sass/assets/stylesheets/bootstrap.\n      in /Users/sergirams/Development/Laravel/makken_totaltech/resources/assets/sass/app.scss (line 9, column 1)\n    at runLoaders (/Users/sergirams/Development/Laravel/makken_totaltech/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/sergirams/Development/Laravel/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/sergirams/Development/Laravel/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/sergirams/Development/Laravel/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/sergirams/Development/Laravel/makken_totaltech/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Users/sergirams/Development/Laravel/makken_totaltech/node_modules/neo-async/async.js:7974:18)\n    at options.error (/Users/sergirams/Development/Laravel/makken_totaltech/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -19846,7 +19853,8 @@ throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./resources/assets/bower/angular/angular.js");
-module.exports = __webpack_require__("./resources/assets/sass/app.scss");
+__webpack_require__("./resources/assets/sass/app.scss");
+module.exports = __webpack_require__("./resources/assets/sass-admin/main.scss");
 
 
 /***/ })

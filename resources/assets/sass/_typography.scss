@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  line-height: 1;
+  color: $amarillo;
+  font-style: italic;
+
+  &.blanco {
+    color: white;
+  }
+
+  &.azul {
+    color: $azul_2;
+  }
+
+  &.gris {
+    color: $gris_oscuro;
+  }
+
+  &.no-margin{
+    margin: 0;
+  }
+}
+
+h1, .h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  p {
+    color: white;
+    font-weight: 100;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+b, strong {
+  font-weight: 800;
+}
