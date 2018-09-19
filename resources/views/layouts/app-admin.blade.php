@@ -166,10 +166,10 @@
         <script src="{{ asset('admin/vendors/toastr/toastr.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/jquery-validation/dist/jquery.validate.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-        <!-- PAGE LEVEL PLUGINS-->
-        <script src="{{ asset('admin/vendors/dataTables/datatables.min.js') }}"></script>
         <!-- CORE SCRIPTS-->
         <script src="{{ asset('admin/js/app.min.js') }}"></script>
+         <!-- PAGE LEVEL PLUGINS-->
+         <script src="{{ asset('admin/vendors/dataTables/datatables.min.js') }}"></script>
         <!-- PAGE LEVEL SCRIPTS-->
         <script>
             $(function() {
@@ -204,9 +204,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
         <script src="{{ mix('js/admin.controllers.js') }}"></script>
         <script src="{{ mix('js/admin.services.js') }}"></script>
+
+
+        {{-- <link rel="stylesheet"; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css"> --}}
+        <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+        
         <!-- End Scripts -->
         <script>
-            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload']);
+            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable']);
                 app.config(function($interpolateProvider){
                 $interpolateProvider.startSymbol('<%');
                 $interpolateProvider.endSymbol('%>');

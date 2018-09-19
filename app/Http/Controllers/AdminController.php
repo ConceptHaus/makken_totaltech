@@ -181,7 +181,6 @@ class AdminController extends Controller {
     //METHOD GET
     public function getAllUsers(){
         $users = User::getAllUsers();
-
         return response()->json($users);
     }
 
