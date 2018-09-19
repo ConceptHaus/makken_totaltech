@@ -68,28 +68,7 @@
 /***/ "./resources/assets/js/angular-app/admin/admin.controllers.js":
 /***/ (function(module, exports) {
 
-/**
- *  Module
- *
- * Description
- */
-var app = angular.module('adminController', ['angularApp']);
-
-app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN) {
-
-    console.log('CONTROLLER USERS');
-    // Usuarios registrados
-    var getUsuarioRegistrados = function getUsuarioRegistrados() {
-        AdminFactory.allUsers().then(function (res) {
-            $scope.usuarios = res.data;
-            console.log($scope.usuarios);
-        }, function (error) {
-            console.log('Error usuarios', error);
-        });
-    };
-
-    getUsuarioRegistrados();
-});
+throw new Error("Module build failed: SyntaxError: Unexpected token (136:0)\n\n\u001b[0m \u001b[90m 134 | \u001b[39m    $scope\u001b[33m.\u001b[39maddTicket \u001b[33m=\u001b[39m \u001b[36mfunction\u001b[39m(){\n \u001b[90m 135 | \u001b[39m        \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 | \u001b[39m\u001b[33m>>>\u001b[39m\u001b[33m>>>\u001b[39m\u001b[33m>\u001b[39m cce9eafd75782dcb310beb2b27f4f04efdfc90bc\n \u001b[90m     | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 | \u001b[39m    }\n \u001b[90m 138 | \u001b[39m\n \u001b[90m 139 | \u001b[39m    getUsuarioRegistrados()\u001b[33m;\u001b[39m\u001b[0m\n");
 
 /***/ }),
 

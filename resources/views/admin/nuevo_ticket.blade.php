@@ -50,15 +50,8 @@
                                     <label>Usuarios</label>
                                     <div>
                                         <select class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
-                                            data-style="btn-solid">
-                                                <option>Walmart</option>
-                                                <option>Soriana</option>
-                                                <option>laComer</option>
-                                                <option>Casa Gravioto</option>
-                                                <option>H-E-B</option>
-                                                <option>Lowe´s</option>
-                                                <option>The Home Depot</option>
-                                                <option>Chedraui</option>
+                                            data-style="btn-solid">  
+                                                <option ng-repeat="user in usuarios" value="<% user.id %>"><% user.email %></option>
                                         </select>
                                     </div>
                                 </div>
