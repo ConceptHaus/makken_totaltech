@@ -10,10 +10,10 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div>
-                                <img src="./assets/img/products/27.jpg" alt="image" />
+                                <img src="{{ asset('img/elements/ticket-default.jpg') }}">
                             </div>
                             <div class="flexbox-b mt-4">
-                                <div class="mr-2">
+                                {{-- <div class="mr-2">
                                     <img src="./assets/img/products/28.jpg" alt="image" />
                                 </div>
                                 <div class="mr-2">
@@ -21,7 +21,7 @@
                                 </div>
                                 <div class="mr-2">
                                     <img src="./assets/img/products/30.jpg" alt="image" />
-                                </div>
+                                </div> --}}
                                 <div class="file-input-plus file-input"><i class="la la-plus-circle"></i>
                                     <input type="file">
                                 </div>
@@ -29,74 +29,53 @@
                         </div>
                         <div class="col-lg-8">
                             <form action="javascript:;">
-                                <div class="form-group mb-4">
-                                    <label>Product Name</label>
-                                    <input class="form-control form-control-solid" type="text" placeholder="Enter Product Name">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group mb-4">
+                                        <label>No. de Ticket</label>
+                                        <input class="form-control form-control-solid" type="text" placeholder="Introduce tu número de ticket">
+                                    </div>
+                                    <div class="col-sm-6 form-group mb-4">
+                                        <label>Monto</label>
+                                        <input class="form-control form-control-solid" type="text" placeholder="$0.00">
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6 form-group mb-4">
-                                        <label>Category</label>
+                                        <label>Establecimientos</label>
                                         <div>
-                                            <select class="selectpicker show-tick form-control" title="Please select"
+                                            <select class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
                                                 data-style="btn-solid">
-                                                <optgroup label="Electronics">
-                                                    <option>TV & Video</option>
-                                                    <option>Cameras & Photo</option>
-                                                    <option>Computers & Tablets</option>
-                                                </optgroup>
-                                                <optgroup label="Fashion">
-                                                    <option>Health & Beauty</option>
-                                                    <option>Shoes</option>
-                                                    <option>Handbags & Purses</option>
-                                                    <option>Jewelry and Watches</option>
-                                                </optgroup>
+                                                    <option>Walmart</option>
+                                                    <option>Soriana</option>
+                                                    <option>laComer</option>
+                                                    <option>Casa Gravioto</option>
+                                                    <option>H-E-B</option>
+                                                    <option>Lowe´s</option>
+                                                    <option>The Home Depot</option>
+                                                    <option>Chedraui</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 form-group mb-4">
-                                        <label>SKU</label>
-                                        <input class="form-control form-control-solid" type="text" placeholder="SKU Number">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4 form-group mb-4">
-                                        <label>Price</label>
-                                        <input class="form-control form-control-solid" type="text" placeholder="Unit Price">
-                                    </div>
-                                    <div class="col-sm-4 form-group mb-4">
-                                        <label>Currency </label>
+                                        <label>Usuarios</label>
                                         <div>
-                                            <select class="selectpicker show-tick form-control" title="Please select"
+                                            <select class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
                                                 data-style="btn-solid">
-                                                <option>USD</option>
-                                                <option>Euro</option>
-                                                <option>Rouble</option>
-                                                <option>Pound</option>
+                                                    <option>Walmart</option>
+                                                    <option>Soriana</option>
+                                                    <option>laComer</option>
+                                                    <option>Casa Gravioto</option>
+                                                    <option>H-E-B</option>
+                                                    <option>Lowe´s</option>
+                                                    <option>The Home Depot</option>
+                                                    <option>Chedraui</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 form-group mb-4">
-                                        <label>Quantity</label>
-                                        <input class="form-control form-control-solid" type="text" placeholder="Quantity">
-                                    </div>
                                 </div>
-                                <div class="form-group mb-4">
-                                    <label>Tags</label>
-                                    <input class="tagsinput form-control form-control-solid" type="text" placeholder="Tags"
-                                        value="Fashion,Dress,Broadway,Autumn collection,Shop">
-                                </div>
-                                <div class="form-group mb-4">
-                                    <label>Description</label>
-                                    <textarea class="form-control form-control-solid" rows="4" placeholder="Description"></textarea>
-                                </div>
-                                <div class="form-group mb-4">
-                                    <label class="ui-switch switch-icon mr-3 mb-0">
-                                        <input type="checkbox" checked="">
-                                        <span></span>
-                                    </label>Available</div>
                                 <div class="text-right">
-                                    <button class="btn btn-primary btn-air mr-2">Save</button>
-                                    <button class="btn btn-secondary">Cancel</button>
+                                    <button class="btn btn-primary btn-air mr-2">Guardar</button>
+                                    <button class="btn btn-secondary">Cancelar</button>
                                 </div>
                             </form>
                         </div>

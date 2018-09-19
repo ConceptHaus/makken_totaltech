@@ -13,7 +13,7 @@
                         <div class="input-group-icon input-group-icon-left mr-3">
                             <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
                             <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
-                                placeholder="Search ...">
+                                placeholder="Buscar ...">
                         </div>
                         <a class="btn btn-rounded btn-primary btn-air" href="">Agregar establecimiento</a>
                     </div>
