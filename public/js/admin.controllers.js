@@ -123,6 +123,21 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     });
 
     $scope.addTicket = function () {};
+
+    var readUrl = function readUrl(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.img-default-ticket').attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    };
+    $('#nuevoticket').change(function () {
+        readUrl(this);
+    });
 });
 
 /***/ }),

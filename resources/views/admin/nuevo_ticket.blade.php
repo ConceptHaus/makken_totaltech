@@ -13,7 +13,7 @@
                         </div>
                         <div class="flexbox-b mt-4">
                             <div class="file-input-plus file-input"><i class="la la-plus-circle"></i>
-                                <input type="file">
+                                <input id="nuevoticket" ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file">
                             </div>
                         </div>
                     </div>
@@ -22,42 +22,39 @@
                             <div class="row">
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>No. de Ticket</label>
-                                    <input class="form-control form-control-solid" type="text" placeholder="Introduce tu número de ticket">
+                                    <input  ng-model="ticket.no_ticket" class="form-control form-control-solid" type="text" placeholder="Introduce tu número de ticket">
                                 </div>
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Monto</label>
-                                    <input class="form-control form-control-solid" type="text" placeholder="$0.00">
+                                    <input ng-model="ticket.monto" class="form-control form-control-solid" type="text" placeholder="$0.00">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Establecimientos</label>
                                     <div>
-                                        <select class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
+                                        <select ng-model="ticket.id_establecimiento" class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
                                             data-style="btn-solid">
-                                                <option>Walmart</option>
-                                                <option>Soriana</option>
-                                                <option>laComer</option>
-                                                <option>Casa Gravioto</option>
-                                                <option>H-E-B</option>
-                                                <option>Lowe´s</option>
-                                                <option>The Home Depot</option>
-                                                <option>Chedraui</option>
+                                            @foreach ($establecimientos as $establecimiento)
+                                            <option value="{{$establecimiento->id_etablecimiento}}">{{$establecimiento->nombre}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Usuarios</label>
                                     <div>
-                                        <select class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
-                                            data-style="btn-solid">  
-                                                <option ng-repeat="user in usuarios" value="<% user.id %>"><% user.correo %></option>
+                                        <select ng-model="ticket.id_usuario" class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
+                                            data-style="btn-solid"> 
+                                            @foreach ($users as $user)
+                                            <option value="{{$user->id}}">{{$user->correo}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <button class="btn btn-primary btn-air mr-2">Guardar</button>
+                                <button ng-click="addTicket(ticket)" class="btn btn-primary btn-air mr-2">Guardar</button>
                                 <a class="btn btn-secondary" href="{{ url('/admin/tickets/registrados') }}">Cancelar</a>
                             </div>
                         </form>
