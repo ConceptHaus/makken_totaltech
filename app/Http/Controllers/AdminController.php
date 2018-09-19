@@ -119,7 +119,18 @@ class AdminController extends Controller {
         
     }
     
-    public function setGanadorTicket(){
+    public function setGanadorTicket(Request $request){
+        $ganador = new Ganador();
+        $ganador->id_usuario = $request->id_usuario;
+        $ganador->id_ticket = $request->id_ticket;
+        $ganador->id_ticket = 1;
+
+        if($ganador->save()){
+            $json['success'] = 'success_ganador';
+            return response($json,200);
+        }
+        $json['error'] = 'error_ganador';
+        return response($json,400);
 
     }
     
@@ -137,7 +148,14 @@ class AdminController extends Controller {
 
     }
     public function addEstablecimiento(Request $request){
-
+        $establecimiento = new Establecimiento();
+        $establecimiento->nombre = $request->nombre;
+        if($establecimiento->save()){
+            $json['success'] = 'success_establecimiento';
+            return response()->json($json);
+        }
+        $json['error'] = 'error_establecimiento';
+        return response()->json($json);
     }
     public function editTexto(Request $request){
 
