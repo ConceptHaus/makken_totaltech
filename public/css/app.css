@@ -10085,6 +10085,10 @@ h1.gris, h2.gris, h3.gris, h4.gris, h5.gris, h6.gris, .h1.gris, .h2.gris, .h3.gr
   color: #626262;
 }
 
+h1.normal, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal, .h1.normal, .h2.normal, .h3.normal, .h4.normal, .h5.normal, .h6.normal {
+  font-style: normal;
+}
+
 h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-margin, .h1.no-margin, .h2.no-margin, .h3.no-margin, .h4.no-margin, .h5.no-margin, .h6.no-margin {
   margin: 0;
 }

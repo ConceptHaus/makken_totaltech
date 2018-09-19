@@ -51,8 +51,8 @@
                             <div class="modal-content">
                               <div class="modal-body text-center">
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
-                                    <h1>TICKET</h1>
-                                    <h1>{{$ticket->no_ticket}}</h1>
+                                    <h1 class="blanco normal no-margin">TICKET</h1>
+                                    <h1 class="blanco normal">{{$ticket->no_ticket}}</h1>
                                     <img class="img-fluid" src="{{ $ticket->url }}" alt="Cámara">
                               </div>
                             </div>
