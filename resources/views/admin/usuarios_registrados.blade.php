@@ -1,7 +1,7 @@
 @extends('layouts.app-admin')
 
 @section('content')
-<div class="content-wrapper">
+<div class="content-wrapper" ng-controller="adminCtrl">
     <!-- START PAGE CONTENT-->
     <div class="page-content admin-view fade-in-up">
         <div class="ibox">
