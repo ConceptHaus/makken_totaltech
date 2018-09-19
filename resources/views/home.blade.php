@@ -31,11 +31,13 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($tickets as $ticket)
                     <tr>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>mdo</td>
-                      <td>Mark</td>
+                      
+                      <td>{{$ticket->created_at}}</td>
+                      <td>{{$ticket->no_ticket}}</td>
+                      <td>${{$ticket->monto}}</td>
+                      <td>{{$ticket->establecimiento->nombre}}</td>
                       <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal">
                         <!-- Modal Tickets -->
                         <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
@@ -45,51 +47,19 @@
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
                                   <div class="contenido-modal">
                                     <h1>TICKET</h1>
-                                    <h1>029123U2832Y</h1>
-                                    <img  src="{{ asset('img/icons/camera-white.svg') }}" alt="Cámara">
+                                    <h1>{{$ticket->no_ticket}}</h1>
+                                    <img  src="{{ $ticket->url }}" alt="Cámara">
                                   </div>
                               </div>
                             </div>
                           </div>
                         </div>
+
                         <!-- Fin Modal Tickets -->
                        </td>
+                      
                     </tr>
-                    <tr>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>fat</td>
-                      <td>Mark</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal"> </td>
-                    </tr>
-                    <tr>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>twitter</td>
-                      <td>Mark</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal"> </td>
-                    </tr>
-                    <tr>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>twitter</td>
-                      <td>Mark</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal"> </td>
-                    </tr>
-                    <tr>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>twitter</td>
-                      <td>Mark</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal"> </td>
-                    </tr>
-                    <tr>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>twitter</td>
-                      <td>Mark</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal"> </td>
-                    </tr>
+                     @endforeach
                   </tbody>
                 </table>
               </div>

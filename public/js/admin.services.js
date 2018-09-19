@@ -68,7 +68,35 @@
 /***/ "./resources/assets/js/angular-app/admin/admin.services.js":
 /***/ (function(module, exports) {
 
+/**
+ *  Module
+ *
+ * Description
+ */
+var app = angular.module('adminFactory', ['angularApp']);
 
+app.factory('AdminFactory', function ($http) {
+    return {
+        allUsers: function allUsers() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/users'
+            });
+        },
+        oneUser: function oneUser(id) {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/users/' + id
+            });
+        },
+        establecimiento: function establecimiento() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/establecimientos'
+            });
+        }
+    };
+});
 
 /***/ }),
 
