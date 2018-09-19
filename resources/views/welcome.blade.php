@@ -150,17 +150,26 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @php
+                      $j = 0
+                    @endphp
                     @foreach ($ganadores as $ganador)
                       @if ($ganador->id_semana == $i)
                         <tr>
                           <td>{{ $ganador['user']->nombre }}</td>
                           <td>{{ $ganador['ticket']->url }}</td>
-                          <td>{{ $ganador->id_premio }}</td>
+                          <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
+                        @php
+                          $j++
+                        @endphp
                       @endif
                     @endforeach
                   </tbody>
                 </table>
+                @if ($j == 0)
+                  <h2 class="azul">No hay Ganadores</h2>
+                @endif
               </div>
             </div>
           </div>
