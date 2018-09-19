@@ -122,7 +122,15 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
-    $scope.addTicket = function () {};
+    $scope.addTicket = function (ticket) {
+        console.log(ticket);
+        swal({
+            title: "Espera...",
+            text: "Estamos enviando tu ticket.",
+            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            showConfirmButton: false
+        });
+    };
 
     var readUrl = function readUrl(input) {
         if (input.files && input.files[0]) {
