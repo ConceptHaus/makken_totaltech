@@ -53,7 +53,7 @@ class UserController extends Controller
         //Sube tickets a bucket de Amazon
         $disk = Storage::disk('s3');
         $path = $file->store('users/'.$user.'/tickets','s3');
-        return $disk->url($path);
+        return $path;
 
 
     }

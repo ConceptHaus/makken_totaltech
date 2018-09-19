@@ -31,8 +31,9 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($tickets as $ticket)
                     <tr>
-                      @foreach($tickets as $ticket)
+                      
                       <td>{{$ticket->created_at}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
@@ -56,8 +57,9 @@
 
                         <!-- Fin Modal Tickets -->
                        </td>
-                       @endforeach
+                      
                     </tr>
+                     @endforeach
                   </tbody>
                 </table>
               </div>
