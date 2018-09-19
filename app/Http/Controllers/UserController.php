@@ -53,14 +53,15 @@ class UserController extends Controller
         //Sube tickets a bucket de Amazon
         $disk = Storage::disk('s3');
         $path = $file->store('users/'.$user.'/tickets','s3');
-        
+        dd(Storage::url($path));
+
 
     }
     public function creaTicketUser(Request $request){
         //Guarda registro de ticket
         $user = auth()->user();
         $validador = $this->validadorTickets($request->all());
-        $json['error'] = $validador->errors();
+        
 
         if($validador->passes()){
             
@@ -71,11 +72,12 @@ class UserController extends Controller
                 $ticket->no_ticket = $request->no_ticket;
                 $ticket->monto = $request->monto;
                 $ticket->id_establecimiento = $request->id_establecimiento;
+                $ticket->url = 'url';
                 //Sube archivo
                 $this->uploadTicketS3($request->fileticket,$user->id);
                 //{{ Falta guardar url don't forget. }}
 
-                $user->ticket()->save($ticket);
+                $user->tickets()->save($ticket);
                 DB::commit();
                 $json['success'] = 'Ticket guardado';
 
@@ -87,7 +89,7 @@ class UserController extends Controller
                 return $e;
             }
         }
-
+        $json['error'] = $validador->errors();
         return response($json,400);
 
     }

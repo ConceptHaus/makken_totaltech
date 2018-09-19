@@ -42,10 +42,10 @@ class AdminController extends Controller {
     public function establecimientos() {
         return view('admin/establecimientos');
     }
-    
+
     public function getAllUsers(){
         $users = User::getAllUsers();
-        
+
         return response()->json($users);
     }
 
@@ -73,7 +73,7 @@ class AdminController extends Controller {
     }
 
     public function editEstablecimientos(Request $request){
-        
+
     }
 
     public function getEstablecimientos(){
@@ -82,20 +82,20 @@ class AdminController extends Controller {
         return response()->json($establecimientos);
     }
 
-    // El admin puede registrar 
+    // El admin puede registrar
 
-    public function adminRegisterTicker(){
+    public function adminRegisterTicket(){
 
     }
 
     public function editTexto(Request $request){
-        
+
         $id_texto = $request->id_texto;
 
         $texto = Texto::where('id_texto',$id_texto)->first();
 
         $texto->contenido = $request->contenido;
-        
+
         if($texto->save()){
             $json['success'] = 'success_texto';
             return response()->json($json);
