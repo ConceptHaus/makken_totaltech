@@ -145,7 +145,9 @@
         <!-- END SIDEBAR-->
 
         <!-- CONTENT-->
-        @yield('content')
+        <div class="content-wrapper" ng-controller="adminCtrl">
+            @yield('content')
+        </div>
        <!-- END CONTENT-->
 
         <!-- BEGIN PAGA BACKDROPS-->

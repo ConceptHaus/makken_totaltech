@@ -1,7 +1,6 @@
 @extends('layouts.app-admin')
 
 @section('content')
-<div class="content-wrapper">
     <!-- START PAGE CONTENT-->
     <div class="page-content admin-view fade-in-up">
         <div class="ibox">
@@ -91,6 +90,4 @@
         <div class="font-13">2018 © Total Tech</div>
         <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
     </footer>
-</div>
-</div>
 @endsection
