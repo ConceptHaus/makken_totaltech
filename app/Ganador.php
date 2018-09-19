@@ -14,10 +14,10 @@ class Ganador extends Model
     ];
 
     public function user(){
-        return $this->belongsTo('App\User','id','id_usuario');
+        return $this->belongsTo('App\User','id_usuario','id');
     }
     public function ticket(){
-        return $this->belongsTo('App\Ticket','id_ticket');
+        return $this->belongsTo('App\Ticket','id_ticket', 'id_ticket');
     }
     public function premio(){
       return $this->hasOne('App\Premio', 'id_premio');
@@ -28,7 +28,8 @@ class Ganador extends Model
 
     public function scopegetAllGanadores($query){
         return $query->with('user')
-                     ->with('establecimiento')
-                     ->with('ganador')->get();
+                     ->with('ticket')
+                     // ->with('premio')
+                     ->with('semanas')->get();
     }
 }

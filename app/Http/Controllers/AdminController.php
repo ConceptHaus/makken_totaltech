@@ -49,11 +49,11 @@ class AdminController extends Controller {
 
     public function nuevoEstablecimiento() {
         return view('admin/nuevo_establecimiento');
-    } 
-    
+    }
+
     public function editarEstablecimiento() {
         return view('admin/editar_establecimiento');
-    } 
+    }
 
     public function getAllUsers(){
         $users = User::getAllUsers();
@@ -80,7 +80,7 @@ class AdminController extends Controller {
     public function getAllGanadores(){
         $ganadores = Ganador::getAllGanadores();
 
-        return response()->json($ganadoes);
+        return response()->json($ganadores);
 
     }
 
