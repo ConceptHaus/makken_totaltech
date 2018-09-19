@@ -60,11 +60,11 @@ class AdminController extends Controller {
 
     public function nuevoEstablecimiento() {
         return view('admin/nuevo_establecimiento');
-    } 
-    
+    }
+
     public function editarEstablecimiento() {
         return view('admin/editar_establecimiento');
-    } 
+    }
 
     //API ADMIN
 
@@ -108,6 +108,7 @@ class AdminController extends Controller {
                 $json['success'] = 'Ticket guardado';
                 return response($json,200);
 
+        return response()->json($ganadores);
             }catch(Exception $e){
                 DB::rollBack();
                 return $e;
@@ -116,9 +117,9 @@ class AdminController extends Controller {
         $json['error'] = $validador->errors();
         return response($json,400);
 
-        
+
     }
-    
+
     public function setGanadorTicket(Request $request){
         $ganador = new Ganador();
         $ganador->id_usuario = $request->id_usuario;
@@ -133,10 +134,10 @@ class AdminController extends Controller {
         return response($json,400);
 
     }
-    
+
     public function editEstablecimientos(Request $request){
         $establecimiento = Establecimiento::where('id_establecimiento',$request->id_establecimiento)->first();
-        
+
         $establecimiento->nombre = $request->nombre;
 
         if($establecimiento->save()){
@@ -174,14 +175,14 @@ class AdminController extends Controller {
         return response()->json($json);
 
     }
-    
+
     //METHOD GET
     public function getAllUsers(){
         $users = User::getAllUsers();
 
         return response()->json($users);
     }
-    
+
     public function getOneUser($id){
         $user = User::getUser($id);
 

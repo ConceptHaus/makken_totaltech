@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Ganador;
 
 class WelcomeController extends Controller
 {
@@ -12,7 +13,11 @@ class WelcomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function loginAdmin() {
-        return view('admin/iniciar_sesion');
+    public function index() {
+
+        $data['ganadores'] = Ganador::getAllGanadores();
+
+
+        return view('welcome', $data);
     }
 }

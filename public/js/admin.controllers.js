@@ -80,6 +80,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuarios registrados  
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
+        console.log('Usuarios');
         console.log($scope.usuarios);
     }, function (err) {
         console.log(err);
@@ -87,6 +88,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     // Usuarios Ganadores  
     AdminFactory.ganadores().then(function (res) {
+        console.log('Ganadores');
         $scope.ganadores = res.data;
         console.log($scope.ganadores);
     }, function (err) {
@@ -96,6 +98,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuario detalle  
     AdminFactory.oneUser().then(function (res) {
         $scope.usuario = res.data;
+        console.log('Usuario Detalle');
         console.log($scope.usuario);
     }, function (err) {
         console.log(err);
@@ -104,6 +107,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Tickets
     AdminFactory.tickets().then(function (res) {
         $scope.tickets = res.data;
+        console.log('Tickets');
         console.log($scope.tickets);
     }, function (err) {
         console.log(err);
@@ -112,6 +116,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Establecimientos
     AdminFactory.establecimientos().then(function (res) {
         $scope.establecimientos = res.data;
+        console.log('Establecimientos');
         console.log($scope.establecimientos);
     }, function (err) {
         console.log(err);

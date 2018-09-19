@@ -141,6 +141,11 @@
           <div class="row justify-content-center">
             <div class="col-12 content-table">
               <table class="table table-borderless table-responsive">
+                {{$ganadores}}
+                @foreach ($ganadores as $ganador)
+                  {{-- {{$ganador}} --}}
+
+
                 <thead>
                   <tr>
                     <th scope="col">NOMBRE</th>
@@ -148,11 +153,11 @@
                     <th scope="col">PREMIO</th>
                   </tr>
                 </thead>
+                @if ($ganador->id_semana == 1)
                 <tbody>
                   <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>mdo</td>
+                    <td>{{$ganador['user']->nombre}}</td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td>Jacob</td>
@@ -165,6 +170,7 @@
                     <td>twitter</td>
                   </tr>
                 </tbody>
+                @endif
               </table>
             </div>
           </div>
@@ -262,6 +268,7 @@
                   </tr>
                 </tbody>
               </table>
+              @endforeach
             </div>
           </div>
         </div>

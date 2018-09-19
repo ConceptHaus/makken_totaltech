@@ -37,22 +37,16 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($tickets as $key => $ticket)
+                    @foreach($tickets as $ticket)
                     <tr>
 
                       <td>{{$ticket->created_at->format('d M')}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
                       <td>{{$ticket->establecimiento->nombre}}</td>
-<<<<<<< HEAD
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal{{+$key}}">
-                        <!-- Modal Tickets -->
-                        <div class="modal fade" id="ticketModal{{+$key}}" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
-=======
                     <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal{{$ticket->no_ticket}}">
                         <!-- Modal Tickets -->
                     <div class="modal fade" id="ticketModal{{$ticket->no_ticket}}" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
->>>>>>> f6e61f9c5d540ef4b1e04d5a7e630169be86e357
                           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div class="modal-content">
                               <div class="modal-body text-center">
