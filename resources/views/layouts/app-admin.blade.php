@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Admin / Total Tech</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}"/>
     <meta name="description" content="DESCRIPTION">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- GLOBAL MAINLY STYLES-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('admin/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/line-awesome/css/line-awesome.min.css') }}">
@@ -30,7 +32,7 @@
         <!-- START HEADER-->
         <header class="header">
             <div class="page-brand text-center">
-                <a href="index.html">
+                <a href="{{ url('/admin/usuarios/registrados') }}">
                     <span class="brand">
                         <img src="{{ asset('admin/img/logos/ceys-logo.svg') }}">
                     </span>
@@ -68,7 +70,7 @@
         <nav class="page-sidebar" id="sidebar">
             <div id="sidebar-collapse">
                 <ul class="side-menu metismenu">
-                    @if (Request::path() == 'usuarios/registrados' || Request::path() == 'usuarios/ganadores')
+                    @if (Request::path() == 'admin/usuarios/registrados' || Request::path() == 'admin/usuarios/ganadores')
                         <li class="active">
                     @else
                         <li>
@@ -80,22 +82,22 @@
                         </a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                @if (Request::path() == 'usuarios/registrados')
-                                    <a class="active" href="{{ url('/usuarios/registrados') }}">Registrados</a>
+                                @if (Request::path() == 'admin/usuarios/registrados')
+                                    <a class="active" href="{{ url('/admin/usuarios/registrados') }}">Registrados</a>
                                 @else
-                                    <a href="{{ url('/usuarios/registrados') }}">Registrados</a>
+                                    <a href="{{ url('/admin/usuarios/registrados') }}">Registrados</a>
                                 @endif
                             </li>
                             <li>
-                                @if (Request::path() == 'usuarios/ganadores')
-                                    <a class="active" href="{{ url('/usuarios/ganadores') }}">Ganadores</a>
+                                @if (Request::path() == 'admin/usuarios/ganadores')
+                                    <a class="active" href="{{ url('/admin/usuarios/ganadores') }}">Ganadores</a>
                                 @else
-                                    <a href="{{ url('/usuarios/ganadores') }}">Ganadores</a>
+                                    <a href="{{ url('/admin/usuarios/ganadores') }}">Ganadores</a>
                                 @endif
                             </li>
                         </ul>
                     </li>
-                    @if (Request::path() == 'nuevo/ticket' || Request::path() == 'tickets/registrados')
+                    @if (Request::path() == 'admin/tickets/nuevo' || Request::path() == 'admin/tickets/registrados')
                         <li class="active">
                     @else
                         <li>
@@ -105,28 +107,28 @@
                             <span class="nav-label">TICKETS</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                @if (Request::path() == 'nuevo/ticket')
-                                    <a class="active" href="{{ url('/nuevo/ticket') }}">Agregar Ticket</a>
+                                @if (Request::path() == 'admin/tickets/nuevo')
+                                    <a class="active" href="{{ url('/admin/tickets/nuevo') }}">Agregar Ticket</a>
                                 @else
-                                    <a href="{{ url('/nuevo/ticket') }}">Agregar Ticket</a>
+                                    <a href="{{ url('/admin/tickets/nuevo') }}">Agregar Ticket</a>
                                 @endif
                             </li>
                             <li>
-                                @if (Request::path() == 'tickets/registrados')
-                                    <a class="active" href="{{ url('/tickets/registrados') }}">Registrados</a>
+                                @if (Request::path() == 'admin/tickets/registrados')
+                                    <a class="active" href="{{ url('/admin/tickets/registrados') }}">Registrados</a>
                                 @else
-                                    <a href="{{ url('/tickets/registrados') }}">Registrados</a>
+                                    <a href="{{ url('/admin/tickets/registrados') }}">Registrados</a>
                                 @endif
                             </li>
                         </ul>
                     </li>
-                    @if (Request::path() == 'establecimientos')
+                    @if (Request::path() == 'admin/establecimientos')
                         <li class="active">
                     @else
                         <li>
                     @endif
                     <li>
-                        <a href="{{ url('/establecimientos') }}">
+                        <a href="{{ url('/admin/establecimientos') }}">
                             <i class="sidebar-item-icon ti-shopping-cart"></i>
                             <span class="nav-label">ESTABLECIMIENTOS</span>
                         </a>
@@ -163,7 +165,7 @@
         <script src="{{ asset('admin/vendors/jquery-validation/dist/jquery.validate.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
         <!-- PAGE LEVEL PLUGINS-->
-        <script src="{{ asset('admin/js/vendors/dataTables/datatables.min.js') }}"></script>
+        <script src="{{ asset('admin/vendors/dataTables/datatables.min.js') }}"></script>
         <!-- CORE SCRIPTS-->
         <script src="{{ asset('admin/js/app.min.js') }}"></script>
         <!-- PAGE LEVEL SCRIPTS-->

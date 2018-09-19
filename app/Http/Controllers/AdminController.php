@@ -31,6 +31,10 @@ class AdminController extends Controller {
         return view('admin/usuarios_ganadores');
     }
 
+    public function usuarioDetalle() {
+        return view('admin/usuario_detalle');
+    }
+
     public function ticketsRegistrados() {
         return view('admin/tickets_registrados');
     }
@@ -42,6 +46,14 @@ class AdminController extends Controller {
     public function establecimientos() {
         return view('admin/establecimientos');
     }
+
+    public function nuevoEstablecimiento() {
+        return view('admin/nuevo_establecimiento');
+    } 
+    
+    public function editarEstablecimiento() {
+        return view('admin/editar_establecimiento');
+    } 
 
     public function getAllUsers(){
         $users = User::getAllUsers();

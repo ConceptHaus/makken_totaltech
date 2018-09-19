@@ -1,22 +1,4 @@
 @charset "UTF-8";
-/*
-** FORMS
-*/
-/*
-** OUT LABELS
-*/
-/*
-** Input groups
-*/
-/*
-*  SOCIAL WIDGETS
-*/
-/*
-* WIDGETS
-*/
-/*
-* Tasks list
-*/
 @-webkit-keyframes collapseMenu {
   from {
     width: 60px;
@@ -2858,7 +2840,7 @@ body.fullscreen-mode {
 }
 
 .badge-blue {
-  background-color: #3498DB;
+  background-color: #223F97;
 }
 
 .label-blue {
@@ -8411,5 +8393,27 @@ table > tbody > tr > td > span.footable-toggle {
   }
   .dataTables_length {
     float: none;
+  }
+}
+
+.admin-view .table-responsive {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.content-img-ticket .img-default-ticket {
+  background: #f4f5f9;
+  margin: auto;
+  padding: 30px;
+}
+
+.content-img-ticket .flexbox-b {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .admin-view .input-group-search {
+    margin-right: 0px !important;
+    width: 100%;
   }
 }

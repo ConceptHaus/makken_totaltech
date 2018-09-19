@@ -8,20 +8,11 @@
                 <div class="ibox-body">
                     <h5 class="font-strong mb-5">AGREGAR TICKET</h5>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div>
-                                <img src="{{ asset('img/elements/ticket-default.jpg') }}">
+                        <div class="col-lg-4 content-img-ticket">
+                            <div class="text-center">
+                                <img class="img-default-ticket" src="{{ asset('img/icons/camera-blue.svg') }}">
                             </div>
                             <div class="flexbox-b mt-4">
-                                {{-- <div class="mr-2">
-                                    <img src="./assets/img/products/28.jpg" alt="image" />
-                                </div>
-                                <div class="mr-2">
-                                    <img src="./assets/img/products/29.jpg" alt="image" />
-                                </div>
-                                <div class="mr-2">
-                                    <img src="./assets/img/products/30.jpg" alt="image" />
-                                </div> --}}
                                 <div class="file-input-plus file-input"><i class="la la-plus-circle"></i>
                                     <input type="file">
                                 </div>
@@ -75,7 +66,7 @@
                                 </div>
                                 <div class="text-right">
                                     <button class="btn btn-primary btn-air mr-2">Guardar</button>
-                                    <button class="btn btn-secondary">Cancelar</button>
+                                    <a class="btn btn-secondary" href="{{ url('/admin/tickets/registrados') }}">Cancelar</a>
                                 </div>
                             </form>
                         </div>

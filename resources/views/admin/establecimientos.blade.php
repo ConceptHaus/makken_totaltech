@@ -3,7 +3,7 @@
 @section('content')
 <div class="content-wrapper">
     <!-- START PAGE CONTENT-->
-    <div class="page-content fade-in-up">
+    <div class="page-content admin-view fade-in-up">
         <div class="ibox">
             <div class="ibox-body">
                 <h5 class="font-strong mb-4">ESTABLECIMIENTOS</h5>
@@ -15,7 +15,7 @@
                             <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                 placeholder="Buscar ...">
                         </div>
-                        <a class="btn btn-rounded btn-primary btn-air" href="">Agregar establecimiento</a>
+                        <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a>
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -31,88 +31,88 @@
                             <tr>
                                 <td>1</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/07.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/walmart.png') }}" alt="image" width="90" />
                                     Walmart
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/10.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/soriana.png') }}" alt="image" width="90" />
                                     Soriana
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/16.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/lacomer.png') }}" alt="image" width="90" />
                                     La Comer
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/15.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/casacravioto.png') }}" alt="image" width="90" />
                                     Casa Gravioto
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/15.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/heb.png') }}" alt="image" width="90" />
                                     H-E-B
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/15.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/lowes.png') }}" alt="image" width="90" />
                                     Lowe´s
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>7</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/15.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/homedepot.png') }}" alt="image" width="90" />
                                     The Home Depot
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>8</td>
                                 <td>
-                                    {{-- <img class="mr-3" src="./assets/img/products/15.jpg" alt="image" width="60" /> --}}
+                                    <img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" />
                                     CHEDRAUI
                                 </td>
                                 <td>
-                                    <a class="text-light mr-3 font-16" href="javascript:;"><i class="ti-pencil"></i></a>
+                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
