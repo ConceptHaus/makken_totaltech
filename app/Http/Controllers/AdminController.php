@@ -51,7 +51,9 @@ class AdminController extends Controller {
     }
 
     public function nuevoTicket() {
-        return view('admin/nuevo_ticket');
+        $data['users'] = User::getAllUsers();
+        $data['establecimientos'] = Establecimiento::all();
+        return view('admin/nuevo_ticket',$data);
     }
 
     public function establecimientos() {

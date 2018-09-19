@@ -173,6 +173,7 @@
         <!-- PAGE LEVEL SCRIPTS-->
         <script>
             $(function() {
+                $('.selectpicker').selectpicker();
                 $('#orders-table').DataTable({
                     pageLength: 10,
                     fixedHeader: true,
