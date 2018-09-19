@@ -32,4 +32,10 @@ class Ganador extends Model
                      // ->with('premio')
                      ->with('semanas')->get();
     }
+
+    // public function ganadoresPorSemana ($query) {
+    //   $semana1 = $query->where('id_semana', '=', "1");
+    //
+    //   return $semana1;
+    // }
 }
