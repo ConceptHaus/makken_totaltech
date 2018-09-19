@@ -50,9 +50,9 @@ Route::get('/admin', 'WelcomeController@loginAdmin');
 
 Route::get('/admin/usuarios/registrados', 'AdminController@usuariosRegistrados');
 Route::get('/admin/usuarios/ganadores', 'AdminController@usuariosGanadores');
-Route::get('/admin/usuario/detalle/{id}', 'AdminController@usuarioDetalle');
+Route::get('/admin/usuarios/detalle/{id}', 'AdminController@usuarioDetalle');
 Route::get('/admin/tickets/registrados', 'AdminController@ticketsRegistrados');
+Route::get('/admin/tickets/nuevo', 'AdminController@nuevoTicket');
 Route::get('/admin/establecimientos', 'AdminController@establecimientos');
-Route::get('/admin/nuevo/ticket', 'AdminController@nuevoTicket');
-Route::get('/admin/nuevo/establecimiento', 'AdminController@nuevoEstablecimiento');
-Route::get('/admin/editar/establecimiento', 'AdminController@editarEstablecimiento');
+Route::get('/admin/establecimientos/nuevo', 'AdminController@nuevoEstablecimiento');
+Route::get('/admin/establecimientos/editar', 'AdminController@editarEstablecimiento');

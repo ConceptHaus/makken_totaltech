@@ -97,7 +97,7 @@
                             </li>
                         </ul>
                     </li>
-                    @if (Request::path() == 'admin/nuevo/ticket' || Request::path() == 'admin/tickets/registrados')
+                    @if (Request::path() == 'admin/tickets/nuevo' || Request::path() == 'admin/tickets/registrados')
                         <li class="active">
                     @else
                         <li>
@@ -107,10 +107,10 @@
                             <span class="nav-label">TICKETS</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                @if (Request::path() == 'admin/nuevo/ticket')
-                                    <a class="active" href="{{ url('/admin/nuevo/ticket') }}">Agregar Ticket</a>
+                                @if (Request::path() == 'admin/tickets/nuevo')
+                                    <a class="active" href="{{ url('/admin/tickets/nuevo') }}">Agregar Ticket</a>
                                 @else
-                                    <a href="{{ url('/admin/nuevo/ticket') }}">Agregar Ticket</a>
+                                    <a href="{{ url('/admin/tickets/nuevo') }}">Agregar Ticket</a>
                                 @endif
                             </li>
                             <li>
