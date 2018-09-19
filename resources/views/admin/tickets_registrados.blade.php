@@ -10,7 +10,7 @@
                     <div class="flexbox">
                         <div class="input-group-icon input-group-icon-left mr-3">
                             <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
-                            <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
+                            <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                 placeholder="Buscar ...">
                         </div>
                         <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/tickets/nuevo') }}">Agregar
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="table-responsive row">
-                    <table class="table table-bordered table-hover" id="customers-table">
+                    <table ng-table="demo.tableParams" class="table table-bordered table-hover" id="customers-table">
                         <thead class="thead-default thead-lg">
                             <tr>
                                 <th>No.</th>
@@ -31,59 +31,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
+                            <tr ng-repeat="ganador in ganadores | filter:search">
+                                <td><% ganador.id_ganador %></td>
                                 <td>
-                                    Connor Perez
+                                    <% ganador.user.nombre %>
                                 </td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
+                                <td><% ganador.user.telefono %></td>
+                                <td><% ganador.ticket.monto %></td>
                                 <td><img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" /></td>
-                                <td>17.05.2018</td>
-                                <td>
-                                    <span data-toggle="modal" data-target="#modalGanador">
-                                        <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario.">
-                                            <i class="fa fa-star-o"></i>
-                                        </a>
-                                    </span>
-                                    <span data-toggle="modal" data-target="#modalTicket">
-                                        <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                            <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
-                                        </a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    Connor Perez
-                                </td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
-                                <td><img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" /></td>
-                                <td>17.05.2018</td>
-                                <td>
-                                    <span data-toggle="modal" data-target="#modalGanador">
-                                        <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario.">
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </span>
-                                    <span data-toggle="modal" data-target="#modalTicket">
-                                        <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                            <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
-                                        </a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    Connor Perez
-                                </td>
-                                <td>552233-223344</td>
-                                <td>$3,000</td>
-                                <td><img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" /></td>
-                                <td>17.05.2018</td>
+                                <td><% ganador.ticket.created_at %></td>
                                 <td>
                                     <span data-toggle="modal" data-target="#modalGanador">
                                         <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario.">
