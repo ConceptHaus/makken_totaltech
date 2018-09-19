@@ -89,10 +89,22 @@ app.factory('AdminFactory', function ($http) {
                 url: '/api/v1/users/' + id
             });
         },
-        establecimiento: function establecimiento() {
+        establecimientos: function establecimientos() {
             return $http({
                 method: 'GET',
                 url: '/api/v1/establecimientos'
+            });
+        },
+        ganadores: function ganadores() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/ganadores'
+            });
+        },
+        tickets: function tickets() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/tickets'
             });
         }
     };
