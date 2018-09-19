@@ -3,7 +3,7 @@
  *
  * Description
  */
-var app = angular.module('adminFactory', ['angularApp']);
+var app = angular.module('AdminFactory', ['angularApp']);
 
 app.factory('AdminFactory', function($http){
     return{
