@@ -13,7 +13,7 @@
                         <div class="form-group">
                           <select ng-model="ticket.id_establecimiento" class="form-control" id="tienda" name="tienda" required>
                               <option value="" disabled selected>Selecciona Establecimiento</option>
-                              <option ng-repeat="est in establecimientos" value="est.id_establecimiento"><% est.nombre %></option>
+                              <option ng-repeat="est in establecimientos" value="<% est.id_establecimiento %>"><% est.nombre %></option>
                               
                           </select>
                         </div>
