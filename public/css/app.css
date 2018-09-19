@@ -9747,6 +9747,7 @@ table tr td {
 .camera-icon {
   width: 35px;
   height: auto;
+  cursor: pointer;
 }
 
 footer {
@@ -9768,7 +9769,7 @@ footer {
 }
 
 .modal-content {
-  background-color: #ffffff87;
+  background-color: #ffffffe3;
   border: 0;
   border-radius: 0;
   min-height: 620px;
@@ -9815,12 +9816,38 @@ footer {
   color: transparent;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .label-info {
   color: white;
   overflow: hidden;
   font-size: 13px;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+  color: #223F97 !important;
+  text-shadow: none;
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  right: 11px;
+}
+
+.swal2-confirm {
+  background: #F7E300 !important;
+  border-radius: 50px !important;
+  color: #223F97 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 10px 12px !important;
+  width: 200px !important;
 }
 
 /**
@@ -10085,6 +10112,10 @@ h1.gris, h2.gris, h3.gris, h4.gris, h5.gris, h6.gris, .h1.gris, .h2.gris, .h3.gr
   color: #626262;
 }
 
+h1.normal, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal, .h1.normal, .h2.normal, .h3.normal, .h4.normal, .h5.normal, .h6.normal {
+  font-style: normal;
+}
+
 h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-margin, .h1.no-margin, .h2.no-margin, .h3.no-margin, .h4.no-margin, .h5.no-margin, .h6.no-margin {
   margin: 0;
 }
@@ -10169,7 +10200,7 @@ strong {
     font-size: 20px !important;
   }
   .navbar .navbar-nav .nav-link {
-    font-size: 30px;
+    font-size: 28px;
   }
   .mb-sm-5 {
     margin-bottom: 0;
@@ -10276,7 +10307,7 @@ strong {
   .header-home.header-user .btn-call-to-action {
     left: 5%;
     width: auto;
-    bottom: -85%;
+    bottom: -115%;
   }
   .header-home .btn-call-to-action {
     left: 10%;
@@ -10289,11 +10320,15 @@ strong {
     left: 30%;
     right: inherit;
   }
+  table th {
+    font-size: 13px;
+    padding: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .navbar-brand img {
-    width: 80% !important;
+    width: 76% !important;
   }
 }
 

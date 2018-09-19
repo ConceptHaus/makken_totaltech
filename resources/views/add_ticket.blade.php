@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="container" ng-controller="userCtrl">
+<div id="pageSytyle" class="body-bg container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="panel">
