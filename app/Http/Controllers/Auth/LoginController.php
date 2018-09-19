@@ -55,7 +55,7 @@ class LoginController extends Controller
 
         if($validator->passes()){
             if(auth()->attempt(array('correo'=>$email,'password'=>$password))){
-                if(auth()->user()->is_admin){
+                if(auth()->user()->isAdmin){
                     $json['admin'] = true;
                     return response($json,200);
                 }

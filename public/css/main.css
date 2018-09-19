@@ -8401,6 +8401,11 @@ table > tbody > tr > td > span.footable-toggle {
   margin-left: 0px;
 }
 
+.fa-star, .fa-star-o {
+  border-color: #223F97 !important;
+  color: #223F97 !important;
+}
+
 .content-img-ticket .img-default-ticket {
   background: #f4f5f9;
   margin: auto;
@@ -8409,6 +8414,17 @@ table > tbody > tr > td > span.footable-toggle {
 
 .content-img-ticket .flexbox-b {
   float: right;
+}
+
+.modal .close {
+  color: #223F97;
+  text-align: right;
+  z-index: 99;
+}
+
+.modal .modal-title {
+  color: #213e97;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 600px) {
