@@ -20,6 +20,12 @@
   <div class="container-fluid ganadores" id="tickets">
     <div class="row text-center justify-content-center">
               <div class="col-10 content-table-tickets content-table">
+                @if ($tickets->count() == 0)
+                  <h5 class="azul-dos mb-3">Aún no haz registrado ningun ticket.</h5>
+                  <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
+                    <span>¡REGISTRA!</span> TÚ TICKET
+                  </a>
+                @else
                 <table class="table table-borderless table-responsive">
                   <thead>
                     <tr>
@@ -38,9 +44,9 @@
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
                       <td>{{$ticket->establecimiento->nombre}}</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal">
+                    <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal{{$ticket->no_ticket}}">
                         <!-- Modal Tickets -->
-                        <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
+                    <div class="modal fade" id="ticketModal{{$ticket->no_ticket}}" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
                           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div class="modal-content">
                               <div class="modal-body text-center">
@@ -60,6 +66,7 @@
                      @endforeach
                   </tbody>
                 </table>
+                @endif
               </div>
           </div>
   </div>

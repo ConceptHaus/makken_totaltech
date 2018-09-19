@@ -1,12 +1,7 @@
 {
     "/js/vendor.js": "/js/vendor.js?id=2f5914ccbe75bdbb0ea7",
-<<<<<<< HEAD
     "/css/app.css": "/css/app.css?id=5894ef84db1b799f83b9",
     "/css/main.css": "/css/main.css?id=cca85120f12c2aaa520c",
-=======
-    "/css/app.css": "/css/app.css?id=88427c60d88f4fe67e2d",
-    "/css/main.css": "/css/main.css?id=937014194313a03699ab",
->>>>>>> a2c5ba2a8ffd89db4e517ea052996aafd6d711e4
     "/js/user.services.js": "/js/user.services.js?id=4af2f109e714818736ae",
     "/js/user.controllers.js": "/js/user.controllers.js?id=cbbc39b9b0b4fe151159",
     "/js/home.services.js": "/js/home.services.js?id=5a43e691215d0f3cfc59",
