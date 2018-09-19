@@ -6,7 +6,7 @@
     <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
     <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
     <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-    <div class="texto-home col-6 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="texto-home col-lg-6 col-md-12 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1>¡BIENVENIDO</h1>
       <h3 class="blanco">{{auth()->user()->nombre}} {{auth()->user()->apellido}}!</h3>
       <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
@@ -37,22 +37,25 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($tickets as $ticket)
+                    @foreach($tickets as $key => $ticket)
                     <tr>
 
-                      <td>{{$ticket->created_at}}</td>
+                      <td>{{$ticket->created_at->format('d M')}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
                       <td>{{$ticket->establecimiento->nombre}}</td>
-                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal">
+                      <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal{{+$key}}">
                         <!-- Modal Tickets -->
-                        <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
+                        <div class="modal fade" id="ticketModal{{+$key}}" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
                           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div class="modal-content">
                               <div class="modal-body text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
-                                    <h1 class="blanco normal no-margin">TICKET</h1>
-                                    <h1 class="blanco normal">{{$ticket->no_ticket}}</h1>
+                                    <h1 class="azul-dos normal no-margin">TICKET</h1>
+                                    <h1 class="azul-dos normal">{{$ticket->no_ticket}}</h1>
                                     <img class="img-fluid" src="{{ $ticket->url }}" alt="Cámara">
                               </div>
                             </div>
