@@ -163,7 +163,7 @@
         <script src="{{ asset('admin/vendors/jquery-validation/dist/jquery.validate.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
         <!-- PAGE LEVEL PLUGINS-->
-        <script src="{{ asset('admin/js/vendors/dataTables/datatables.min.js') }}"></script>
+        <script src="{{ asset('admin/vendors/dataTables/datatables.min.js') }}"></script>
         <!-- CORE SCRIPTS-->
         <script src="{{ asset('admin/js/app.min.js') }}"></script>
         <!-- PAGE LEVEL SCRIPTS-->

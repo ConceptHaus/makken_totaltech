@@ -3,7 +3,7 @@
 @section('content')
     <div class="content-wrapper">
         <!-- START PAGE CONTENT-->
-        <div class="page-content fade-in-up">
+        <div class="page-content admin-view fade-in-up">
             <div class="ibox">
                 <div class="ibox-body">
                     <div class="flexbox mb-5">
@@ -14,7 +14,7 @@
                                 <input class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                     placeholder="Buscar ...">
                             </div>
-                            <a class="btn btn-rounded btn-primary btn-air" href="nuevo_ticket.html">Agregar Tickect</a>
+                            <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/nuevo/ticket') }}">Agregar Tickect</a>
                         </div>
                     </div>
                     <div class="table-responsive row">
@@ -41,7 +41,7 @@
                                     <td>Chedraui</td>
                                     <td>17.05.2018</td>
                                     <td>
-                                        <a class="text-light font-16" href="javascript:;"><i class="fa fa-heart-o"></i></a>
+                                        <a class="text-light font-16" href="javascript:;" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario."><i class="fa fa-heart-o"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -54,7 +54,7 @@
                                     <td>Chedraui</td>
                                     <td>17.05.2018</td>
                                     <td>
-                                        <a class="text-light font-16" href="javascript:;"><i class="fa fa-heart-o"></i></a>
+                                        <a class="text-light font-16" href="javascript:;" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario."><i class="fa fa-heart-o"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -67,7 +67,7 @@
                                     <td>Chedraui</td>
                                     <td>17.05.2018</td>
                                     <td>
-                                        <a class="text-light font-16" href="javascript:;"><i class="fa fa-heart-o"></i></a>
+                                        <a class="text-light font-16" href="javascript:;" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario."><i class="fa fa-heart-o"></i></a>
                                     </td>
                                 </tr>
                             </tbody>

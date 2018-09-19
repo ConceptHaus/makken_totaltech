@@ -3,7 +3,7 @@
 @section('content')
 <div class="content-wrapper">
     <!-- START PAGE CONTENT-->
-    <div class="page-content fade-in-up">
+    <div class="page-content admin-view fade-in-up">
         <div class="ibox">
             <div class="ibox-body">
                 <h5 class="font-strong mb-4">GANADORES</h5>
@@ -51,7 +51,7 @@
                                 <td>Semana 1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="javascript:;"><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -64,7 +64,7 @@
                                 <td>Semana 1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="javascript:;"><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/2') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -77,7 +77,7 @@
                                 <td>Semana 1</td>
                                 <td>17.05.2018</td>
                                 <td>
-                                    <a class="text-muted font-16" href="javascript:;"><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/usuario/detalle/3') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
                         </tbody>
