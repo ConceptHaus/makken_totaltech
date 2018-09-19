@@ -82,6 +82,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
+            imageUrl: 'img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
         UserFactory.login(user).then(success, error);
@@ -91,6 +92,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
+            imageUrl: 'img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
 
@@ -121,6 +123,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
         swal({
             title: "Espera...",
             text: "Estamos enviando tu ticket.",
+            imageUrl: 'img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
         Upload.upload({

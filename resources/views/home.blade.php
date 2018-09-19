@@ -33,7 +33,7 @@
                   <tbody>
                     @foreach($tickets as $ticket)
                     <tr>
-                      
+
                       <td>{{$ticket->created_at}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
@@ -45,11 +45,9 @@
                             <div class="modal-content">
                               <div class="modal-body text-center">
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
-                                  <div class="contenido-modal">
                                     <h1>TICKET</h1>
                                     <h1>{{$ticket->no_ticket}}</h1>
-                                    <img  src="{{ $ticket->url }}" alt="Cámara">
-                                  </div>
+                                    <img class="img-fluid" src="{{ $ticket->url }}" alt="Cámara">
                               </div>
                             </div>
                           </div>
@@ -57,7 +55,7 @@
 
                         <!-- Fin Modal Tickets -->
                        </td>
-                      
+
                     </tr>
                      @endforeach
                   </tbody>

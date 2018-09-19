@@ -9,6 +9,7 @@
 *** 6.- Estilos Home
 *** 7.- Tipografía Personalizada
 *** 8.- Responsive
+*** 9.- Sweet Alert
 ***
 **/
 /**
@@ -9702,13 +9703,14 @@ html {
 .btn-submit-upload {
   background: #F7E300;
   border-radius: 50%;
-  color: #223F97;
+  color: #223F97 !important;
   font-size: 20px;
   font-weight: 600;
   padding: 8px 12px;
   width: auto;
   text-align: center;
   float: left;
+  cursor: pointer;
 }
 
 table th {
@@ -9799,9 +9801,26 @@ footer {
   border: 1px solid #fd4b5c;
 }
 
-.custom-margin {
-  margin-top: -10%;
+.custom-margin2 {
   margin-left: 20%;
+}
+
+.inputfile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  background-color: transparent;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.label-info {
+  color: white;
+  overflow: hidden;
+  font-size: 13px;
 }
 
 /**
@@ -10123,7 +10142,7 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
-  .custom-margin {
+  .custom-margin2 {
     margin-left: 0;
     margin-right: -35%;
   }
@@ -10216,7 +10235,7 @@ strong {
 }
 
 @media screen and (max-width: 600px) {
-  .custom-margin {
+  .custom-margin2 {
     margin-left: 0;
     margin-right: 4%;
   }
@@ -10272,4 +10291,12 @@ strong {
   .navbar-brand img {
     width: 80% !important;
   }
+}
+
+/**
+*** 9.- Sweet Alert
+**/
+.swal2-title {
+  color: #223F97 !important;
+  font-style: normal !important;
 }
