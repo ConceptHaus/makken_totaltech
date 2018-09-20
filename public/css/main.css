@@ -5757,8 +5757,7 @@ a.text-light:focus {
 }
 
 .header .admin-dropdown-menu .admin-menu-content {
-  padding: 10px 30px 30px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .header .dropdown-notification a.dropdown-toggle .notify-signal {
@@ -8396,6 +8395,21 @@ table > tbody > tr > td > span.footable-toggle {
   }
 }
 
+.header .admin-dropdown-menu {
+  -webkit-transform: translate3d(4px, 55px, 0px) !important;
+          transform: translate3d(4px, 55px, 0px) !important;
+}
+
+.header .admin-dropdown-menu .dropdown-arrow:after {
+  background-color: #FFF;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header .admin-menu-content a:hover {
+  color: #223F97;
+}
+
 .admin-view .table-responsive {
   margin-right: 0px;
   margin-left: 0px;
@@ -8425,6 +8439,14 @@ table > tbody > tr > td > span.footable-toggle {
 .modal .modal-title {
   color: #213e97;
   font-weight: 600;
+}
+
+.table thead th {
+  background: #f4f5f9;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {

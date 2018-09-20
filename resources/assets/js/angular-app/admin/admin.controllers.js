@@ -4,14 +4,16 @@
  * Description
  */
 var app = angular.module('adminController',['angularApp']);
+
+app.run(function(amMoment) {
+	amMoment.changeLocale('es');
+});
     
 app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN){
-
     // Usuarios registrados  
     AdminFactory.allUsers().then(function(res){
         $scope.usuarios = res.data;
         console.log('Usuarios');
-        console.log($scope.usuarios);
     },function(err){
         console.log(err);
     })

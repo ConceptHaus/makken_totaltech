@@ -37,12 +37,15 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
+<<<<<<< HEAD
+                                <td><% ticket.monto | currency %></td>
+=======
                                 <td>$<% ticket.monto %></td>
+>>>>>>> 228f119e886c6da9324b6fb947e3e74666d2b3cb
                                 <td>
-                                    <% ticket.establecimiento.nombre %>
-                                    {{-- <img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" /> --}}
+                                    <img class="mr-3" src="{{ asset('<% ticket.establecimiento.url%>') }}" alt="image" width="90" />
                                 </td>
-                                <td><% ticket.created_at %></td>
+                                <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
 
                                     <span ng-if="ticket.ganador !=  null">
@@ -68,9 +71,14 @@
                                                 <div class="modal-body p-4">
                                                     <div class="form-group mb-4">
                                                         <p>Selecciona la semana correspondiente al ganador.</p>
+<<<<<<< HEAD
+                                                        <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="semana" data-style="btn-solid">
+                                                            <option value="1" selected>1 Semana</option>
+=======
                                                         <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="ticketganador.id_semana"  data-style="btn-solid">
                                                             <option value="" disabled selectes>Semana</option>
                                                             <option value="1">1 Semana</option>
+>>>>>>> 228f119e886c6da9324b6fb947e3e74666d2b3cb
                                                             <option value="2">2 Semana</option>
                                                             <option value="3">3 Semana</option>
                                                             <option value="4">4 Semana</option>
@@ -99,7 +107,7 @@
                                         </a>
                                     </span>
                                     <!-- START MODAL TICKET -->
-                                    <div class="modal fade" id="modalTicket<% ticket.id_ganador %>" tabindex="-1" role="dialog" aria-labelledby="modalTicket" aria-hidden="true">
+                                    {{-- <div class="modal fade" id="modalTicket<% ticket.id_ganador %>" tabindex="-1" role="dialog" aria-labelledby="modalTicket" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <form class="modal-content">
                                                 <div class="modal-header p-4">
@@ -108,15 +116,33 @@
                                                         <span aria-hidden="true">×</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-body p-4"></div>
-                                                    <img class="mr-3" ng-src="<% ticket.url %>" alt="image"/>
+                                                <div class="modal-body p-4"></div>}
+                                                    <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                                 </div>
                                                 <div class="modal-footer bg-primary-50">
                                                 </div>
                                             </form>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- END MODAL TICKET -->
+                                    <!-- START MODAL GANADOR -->
+                                    <div class="modal fade" id="modalTicket<% ticket.id_ganador %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <form class="modal-content">
+                                                    <div class="modal-header p-4">
+                                                        <h5 class="modal-title">TICKET</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body p-4">
+                                                        <img src="{{ asset('<% ticket.url%>') }}">
+                                                    </div>
+                                                    <div class="modal-footer bg-primary-50"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- END MODAL GANADOR -->
                                 </td>
                             </tr>
                         </tbody>

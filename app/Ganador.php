@@ -32,5 +32,4 @@ class Ganador extends Model
                      ->with('premio')
                      ->with('semanas')->get();
     }
-
 }
