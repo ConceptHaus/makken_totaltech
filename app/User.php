@@ -49,7 +49,7 @@ class User extends Authenticatable
     }
 
     public function scopegetUser($query,$id){
-      return $query->with('tickets')
+      return $query->with('tickets.establecimiento')
                    ->with('direccion')
                    ->with('ganador')
                    ->where('id',$id)->first();

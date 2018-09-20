@@ -35,7 +35,7 @@
                                         <td><% usuario.tickets.length %></td>
                                         <td><% usuario.created_at  %></td>
                                         <td>
-                                            <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
+                                            <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% usuario.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>

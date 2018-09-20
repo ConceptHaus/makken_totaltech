@@ -42,8 +42,10 @@ class AdminController extends Controller {
         return view('admin/usuarios_ganadores');
     }
 
-    public function usuarioDetalle() {
-        return view('admin/usuario_detalle');
+    public function usuarioDetalle($id) {
+        $data['user'] = User::getUser($id);
+
+        return view('admin/usuario_detalle',$data);
     }
 
     public function ticketsRegistrados() {
