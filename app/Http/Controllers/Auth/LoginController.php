@@ -65,7 +65,7 @@ class LoginController extends Controller
             $json['fail']['error'] = 'La dirección de correo electrónico y/o la contraseña que has ingresado no coinciden.';
             return response($json, 400);
         }
-        $json['fail'] = $validator->errors()->toArray();   
+        $json['fail'] = $validator->errors()->toArray();
         return response($json, 400);
     }
 

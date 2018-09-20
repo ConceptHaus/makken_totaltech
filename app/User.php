@@ -54,4 +54,9 @@ class User extends Authenticatable
                    ->with('ganador')
                    ->where('id',$id)->first();
     }
+
+    public function getEmailForPasswordReset()
+    {
+        return $this->correo;
+    }
 }
