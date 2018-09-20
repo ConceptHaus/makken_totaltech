@@ -23,6 +23,7 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Nombre</th>
+                                <th>Logo</th>
                                 <th class="no-sort"></th>
                             </tr>
                         </thead>
@@ -30,9 +31,9 @@
                             <tr ng-repeat="establecimiento in establecimientos">
                                 <td><% establecimiento.id_establecimiento %></td>
                                 <td>
-                                    <img class="mr-3" src="{{ asset('img/logos/walmart.png') }}" alt="image" width="90" />
                                     <% establecimiento.nombre %>
                                 </td>
+                                <td><img class="mr-3" ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" /></td>
                                 <td>
                                     <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
