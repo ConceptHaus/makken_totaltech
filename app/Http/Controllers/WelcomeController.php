@@ -46,7 +46,7 @@ class WelcomeController extends Controller
             $datosCP['error'] = 'Este código no es válido o no existe';
             return response($datosCP,400);
         }
-        return response('prueba',200);
+        return response($datosCP,200);
 
     }
 }
