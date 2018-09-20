@@ -3,7 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Direccion;
+use App\Premio;
+use App\Ticket;
 use App\Ganador;
+use App\Establecimiento;
+use App\Seccion;
+use App\Texto;
 
 class WelcomeController extends Controller
 {
