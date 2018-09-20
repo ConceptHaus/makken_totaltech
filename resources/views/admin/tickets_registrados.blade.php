@@ -92,7 +92,7 @@
                                         </div>
                                     </div>
                                     <!-- END MODAL GANADOR -->
-                                    <span data-toggle="modal" data-target="#modalTicket">
+                                    <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ganador %>">
                                         <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                             <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                         </a>
