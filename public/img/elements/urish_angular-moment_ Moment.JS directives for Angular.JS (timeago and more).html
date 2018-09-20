@@ -1,0 +1,1951 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-1FLfhli3wF1EqKy4+DmsB7My96mQ71ZtDpkmg/2A8RP+5uDgJ0zAT8sRDwSG0p75xQjd9aMIVb58gpjhC//ngA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-dcca19dafecb17dea634d2f083dc7f9f.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-uGJbFWxK4WspQo+oFCI2hAyiVuYKTd6Ep9fkZ1fhY+MGMy7+Ay+mlWsYrmrZztkaKIQeiYHu+c5TJrrj64BTAA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-e798667cb732fe9922518ac8647a0b53.css" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>urish/angular-moment: Moment.JS directives for Angular.JS (timeago and more)</title>
+    <meta name="description" content="Moment.JS directives for Angular.JS (timeago and more) - urish/angular-moment">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/892318?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="urish/angular-moment" /><meta property="og:url" content="https://github.com/urish/angular-moment" /><meta property="og:description" content="Moment.JS directives for Angular.JS (timeago and more) - urish/angular-moment" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU4MTYwMDA5OjBiNDUwMjU5MmIyNDE3YmY2YjUxZjVmZDUwOTcxOTViNDAzMjA3MDQwNmU2MTQ1ZjY2M2JmOWRiZjJkMjViNmM=--3484cc292aa92944301a141992b8a3a96770e9b1">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="DC04:2830:1053F64:1A2C4FE:5BA3EE6A" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="DC04:2830:1053F64:1A2C4FE:5BA3EE6A" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="20909886" /><meta name="octolytics-actor-login" content="Lizbethluna" /><meta name="octolytics-actor-hash" content="d8b1b27629ad8b60a3d3b9a8f8ec2bd5413d514941d6ef9988bfce99fd9b3836" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="5e8212f1fde4ef9d43c04657af45a306" %>
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Lizbethluna">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MDM5ZTA0ZDFlODJmNmI5NGE0ZDAyNjU1NjA1NGY3MzA3MzMzMDRhZDQ5NmM4OThkMTY4MzkxMzhlNjAzOTk1Y3x7InJlbW90ZV9hZGRyZXNzIjoiMTg3LjE2My41NC4xNTIiLCJyZXF1ZXN0X2lkIjoiREMwNDoyODMwOjEwNTNGNjQ6MUEyQzRGRTo1QkEzRUU2QSIsInRpbWVzdGFtcCI6MTUzNzQ3MDA1OCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_RETARGETING,QUOTE_MARKDOWN">
+
+  <meta name="html-safe-nonce" content="b565ba407f2cfdca88f989c35c14503708406140">
+
+  <meta http-equiv="x-pjax-version" content="948b02d7b6a9b2e25a2cbc95a1768210">
+  
+
+      <link href="https://github.com/urish/angular-moment/commits/master.atom" rel="alternate" title="Recent Commits to angular-moment:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/urish/angular-moment git https://github.com/urish/angular-moment.git">
+
+  <meta name="octolytics-dimension-user_id" content="892318" /><meta name="octolytics-dimension-user_login" content="urish" /><meta name="octolytics-dimension-repository_id" content="10312052" /><meta name="octolytics-dimension-repository_nwo" content="urish/angular-moment" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="10312052" /><meta name="octolytics-dimension-repository_network_root_nwo" content="urish/angular-moment" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/urish/angular-moment" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production emoji-size-boost">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="10312052" data-scoped-search-url="/urish/angular-moment/search" data-unscoped-search-url="/search" action="/urish/angular-moment/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=9UNkp+1cVkMjW2H8gVL5IofBGusZ2Fz4yirX9cDHEv5zhAUrhuFOZCmya5mUsHk7UIl+raP59uvw4zetoIj9CA=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://assets-cdn.github.com/images/search-shortcut-hint.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              <ul class="d-none js-jump-to-suggestions-template-container">
+                <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item" role="option">
+                  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center p-2 jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open" href="">
+                    <div class="jump-to-octicon js-jump-to-octicon mr-2 text-center d-none">
+                      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+                      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+                      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+                    </div>
+
+                    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+                    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+                    </div>
+
+                    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+                      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+                        In this repository
+                      </span>
+                      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+                        All GitHub
+                      </span>
+                      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+
+                    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+                      Jump to
+                      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="d-none js-jump-to-no-results-template-container">
+                <li class="d-flex flex-justify-center flex-items-center p-3 f5 d-none">
+                  <span class="text-gray">No suggested jump to results</span>
+                </li>
+              </ul>
+
+              <ul id="jump-to-results" role="listbox" class="js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container" >
+                <li class="d-flex flex-justify-center flex-items-center p-0 f5">
+                  <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+                </li>
+              </ul>
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+              <li>
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+                   Marketplace
+</a>              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:20909886" href="/notifications">
+        <span class="mail-status unread"></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="urish/angular-moment">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/urish/angular-moment/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@Lizbethluna" class="avatar float-left mr-1" src="https://avatars1.githubusercontent.com/u/20909886?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        <ul>
+          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/Lizbethluna" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">Lizbethluna</strong></a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Lizbethluna" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Lizbethluna?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/Lizbethluna?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
+            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
+          <li>
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Bd3Y9n/XafHKVxu2wh1THSLePwgDuJL5FjMnoMDFUxd4yr40bU50ZQmG+PG0TBwmJzOD8kz1ckRw2ij4i5flEA==" />
+              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+                Sign out
+              </button>
+</form>          </li>
+        </ul>
+      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="jxHhA2p3Zu4+cx3YQ9gUk45RipmUyXF7lsl2He6RpDvyBofBeO57ev2i/p81iVuoi7w2Y9uEkcbwIHlFpcMSPA==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OxJbqLer7HdKRQnzfWYVph7jzOR2JPgSmIqRAMbq3CX7h4YW7CqXZ8e6wrBVaZardRzflQZSQfK54BCQEYeaGA==" />      <input type="hidden" name="repository_id" id="repository_id" value="10312052" class="form-control" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/urish/angular-moment/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Toggle repository notifications menu"
+            data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/urish/angular-moment/watchers"
+            aria-label="53 users are watching this repository">
+            53
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/urish/angular-moment/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/LyhbZVvyuq/3q5p1/3cOBSCvQ2FmnCePxze3KA7QwuIJbhqo46hTOWuQq8HOf67vK9qQop4OIQuDYRRS+yYNQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar urish/angular-moment"
+        data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/urish/angular-moment/stargazers"
+           aria-label="2658 users starred this repository">
+          2,658
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/urish/angular-moment/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="vFwvNpzH31UzcpZM/Z3H8re9XADq9zQfsHoT7B12/UK3sOYG2jZMRS/1+GAEHoHloLYX2Q50GMPAiG7/uCYAig==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star urish/angular-moment"
+        data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/urish/angular-moment/stargazers"
+           aria-label="2658 users starred this repository">
+          2,658
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left"
+            data-deferred-details-content-url="/urish/angular-moment/fork?fragment=1">
+            <summary class="btn btn-sm btn-with-count"
+              title="Fork your own copy of urish/angular-moment to your account"
+              data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </summary>
+            <details-dialog class="anim-fade-in fast Box Box--overlay d-flex flex-column">
+              <div class="Box-header">
+                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+                </button>
+                <h3 class="Box-title">Where should we fork this repository?</h3>
+              </div>
+              <div class="Box-body overflow-auto text-center">
+                <include-fragment>
+                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/urish/angular-moment/fork">the fork page</a> directly.</p>
+                </include-fragment>
+              </div>
+            </details-dialog>
+          </details>
+
+    <a href="/urish/angular-moment/network/members" class="social-count"
+       aria-label="420 users forked this repository">
+      420
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/urish">urish</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/urish/angular-moment">angular-moment</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /urish/angular-moment" href="/urish/angular-moment">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /urish/angular-moment/issues" href="/urish/angular-moment/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">47</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /urish/angular-moment/pulls" href="/urish/angular-moment/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">4</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /urish/angular-moment/projects" href="/urish/angular-moment/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /urish/angular-moment/wiki" href="/urish/angular-moment/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /urish/angular-moment/pulse" href="/urish/angular-moment/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  
+
+    <div class="">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          Moment.JS directives for Angular.JS (timeago and more)
+        </span>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a href="/topics/angularjs" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:angularjs">
+        angularjs
+      </a>
+      <a href="/topics/moment" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:moment">
+        moment
+      </a>
+  </div>
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax href="/urish/angular-moment/commits/master">
+              <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
+              <span class="num text-emphasized">
+                437
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax href="/urish/angular-moment/branches">
+            <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <span class="num text-emphasized">
+              1
+            </span>
+            branch
+          </a>
+        </li>
+
+        <li>
+          <a href="/urish/angular-moment/releases">
+            <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.685 1.72a2.49 2.49 0 0 0-1.76-.726H3.48A2.5 2.5 0 0 0 .994 3.48v2.456c0 .656.269 1.292.726 1.76l6.024 6.024a.99.99 0 0 0 1.402 0l4.563-4.563a.99.99 0 0 0 0-1.402L7.685 1.72zM2.366 7.048a1.54 1.54 0 0 1-.467-1.123V3.48c0-.874.716-1.58 1.58-1.58h2.456c.418 0 .825.159 1.123.467l6.104 6.094-4.702 4.702-6.094-6.114zm.626-4.066h1.989v1.989H2.982V2.982h.01z"/></svg>
+            <span class="num text-emphasized">
+              45
+            </span>
+            releases
+          </a>
+        </li>
+
+
+        <li>
+            <a href="/urish/angular-moment/graphs/contributors">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+    <span class="num text-emphasized">
+      49
+    </span>
+    contributors
+</a>
+
+        </li>
+          <li>
+            <a href="/urish/angular-moment/blob/master/LICENSE">
+              <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+                MIT
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="/urish/angular-moment/search?l=javascript"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                  <span class="lang">JavaScript</span>
+                  <span class="percent">100.0%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <button type="button" class="d-flex p-0 repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="JavaScript 100.0%" style="width:100.0%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+  </button>
+
+
+
+    <div class="mt-2">
+      <include-fragment src="/urish/angular-moment/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+    </div>
+
+  <div class="file-navigation in-mid-page d-flex flex-items-start">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/urish/angular-moment/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.3.0"
+              data-name="1.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.3.0">
+                1.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.2.0"
+              data-name="1.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.2.0">
+                1.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.1.0"
+              data-name="1.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.1.0">
+                1.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.1"
+              data-name="1.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.1">
+                1.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0"
+              data-name="1.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0">
+                1.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.6"
+              data-name="1.0.0-beta.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.6">
+                1.0.0-beta.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.5"
+              data-name="1.0.0-beta.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.5">
+                1.0.0-beta.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.4"
+              data-name="1.0.0-beta.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.4">
+                1.0.0-beta.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.3"
+              data-name="1.0.0-beta.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.3">
+                1.0.0-beta.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.2"
+              data-name="1.0.0-beta.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.2">
+                1.0.0-beta.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/1.0.0-beta.1"
+              data-name="1.0.0-beta.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.0-beta.1">
+                1.0.0-beta.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.10.3"
+              data-name="0.10.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.10.3">
+                0.10.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.10.2"
+              data-name="0.10.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.10.2">
+                0.10.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.10.1"
+              data-name="0.10.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.10.1">
+                0.10.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.10.0"
+              data-name="0.10.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.10.0">
+                0.10.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.9.2"
+              data-name="0.9.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.9.2">
+                0.9.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.9.1"
+              data-name="0.9.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.9.1">
+                0.9.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.9.0"
+              data-name="0.9.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.9.0">
+                0.9.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.8.3"
+              data-name="0.8.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.8.3">
+                0.8.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.8.2"
+              data-name="0.8.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.8.2">
+                0.8.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.8.1"
+              data-name="0.8.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.8.1">
+                0.8.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.8.0"
+              data-name="0.8.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.8.0">
+                0.8.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.7.1"
+              data-name="0.7.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.7.1">
+                0.7.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.7.0"
+              data-name="0.7.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.7.0">
+                0.7.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.6.2"
+              data-name="0.6.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.6.2">
+                0.6.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.6.1"
+              data-name="0.6.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.6.1">
+                0.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.6.0"
+              data-name="0.6.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.6.0">
+                0.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.5.2"
+              data-name="0.5.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.5.2">
+                0.5.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.5.1"
+              data-name="0.5.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.5.1">
+                0.5.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.5.0"
+              data-name="0.5.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.5.0">
+                0.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.4.2"
+              data-name="0.4.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.4.2">
+                0.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.4.1"
+              data-name="0.4.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.4.1">
+                0.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.4.0"
+              data-name="0.4.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.4.0">
+                0.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.3.0"
+              data-name="0.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.3.0">
+                0.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.2.2"
+              data-name="0.2.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.2.2">
+                0.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.2.1"
+              data-name="0.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.2.1">
+                0.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.2.0"
+              data-name="0.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.2.0">
+                0.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.7"
+              data-name="0.1.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.7">
+                0.1.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.6"
+              data-name="0.1.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.6">
+                0.1.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.5"
+              data-name="0.1.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.5">
+                0.1.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.4"
+              data-name="0.1.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.4">
+                0.1.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.3"
+              data-name="0.1.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.3">
+                0.1.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.2"
+              data-name="0.1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.2">
+                0.1.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.1"
+              data-name="0.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.1">
+                0.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/urish/angular-moment/tree/0.1.0"
+              data-name="0.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.1.0">
+                0.1.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <a href="/urish/angular-moment/pull/new/master" class="btn btn-sm new-pull-request-btn" data-pjax data-ga-click="Repository, new pull request, location:repo overview">
+          New pull request
+        </a>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+  <div class="BtnGroup">
+      
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-form" action="/urish/angular-moment/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XdCtjRrNMFsAREESpPMcotpTUfir6NgFcKoEVhc/ZljDVz5/4VeiRcNxJQJhac1iCY2hhFiK4R6T+FCj405kBw==" />
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      
+  <a href="/urish/angular-moment/upload/master" class="btn btn-sm BtnGroup-item">
+    Upload files
+  </a>
+
+
+    <a href="/urish/angular-moment/find/master"
+      class="btn btn-sm empty-icon float-right BtnGroup-item"
+      data-pjax
+      data-hotkey="t"
+      data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+  
+
+    <details class="get-repo-select-menu js-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kM3Rf+1vohyFKVgHfdg6s7TX46oaeFXMKMsZf0O5NMUDBzBp8c/Fwo/TKN71nyyOQyinZnjWi7ermO0AKXOmNA==" /><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use SSH</button></form>
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="https://github.com/urish/angular-moment.git" aria-label="Clone this repository at https://github.com/urish/angular-moment.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/urish/angular-moment.git" aria-label="Copy to clipboard" class="btn btn-sm">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+          <div class="clone-options ssh-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/set_protocol?protocol_selector=https&amp;protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7S7oglHl1WcpHJEo//V//teButprrMqFC3uqJumD0G1+5AmUTUWyuSPm4fF3smnDIH7+FgkCFP6IKF5Zg0lCnA==" /><button type="submit" class="btn-link btn-change-protocol js-toggler-target float-right">Use HTTPS</button></form>
+
+              <h4 class="mb-1">
+                Clone with SSH
+                <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                  <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+                </a>
+              </h4>
+              <p class="mb-2 get-repo-decription-text">
+                Use an SSH key and passphrase from account.
+              </p>
+
+              <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="git@github.com:urish/angular-moment.git" aria-label="Clone this repository at git@github.com:urish/angular-moment.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="git@github.com:urish/angular-moment.git" aria-label="Copy to clipboard" class="btn btn-sm">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+        <div class="mt-2">
+            <a href="https://desktop.github.com" class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-get-repo" data-open-app="mac" aria-label="Clone urish/angular-moment to your computer and use it in GitHub Desktop.">
+    Open in Desktop
+  </a>
+
+<a href="/urish/angular-moment/archive/master.zip"
+   class="btn btn-outline get-repo-btn
+"
+   rel="nofollow"
+   data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+        </div>
+      </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details d-flex">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="urish">
+
+        <a class="avatar" data-skip-pjax="true" data-hovercard-user-id="892318" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/urish">
+          <img height="20" width="20" alt="@urish" src="https://avatars0.githubusercontent.com/u/892318?s=60&amp;v=4" />
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 no-wrap mr-3">
+      
+      <a href="/urish/angular-moment/commits?author=urish"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by urish">urish</a>
+
+
+  
+
+
+        <a data-pjax="true" title="docs: fix CHANGELOG" class="message" href="/urish/angular-moment/commit/aa3e39f77214da5a718755a3582aac517a53a04f">docs: fix CHANGELOG</a>
+
+    </div>
+    <div class="no-wrap">
+      Latest commit
+      <a class="commit-tease-sha" href="/urish/angular-moment/commit/aa3e39f77214da5a718755a3582aac517a53a04f" data-pjax>
+        aa3e39f
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-09-04T13:53:53Z">Sep 4, 2018</relative-time></span>
+    </div>
+  </div>
+
+
+
+
+<div class="file-wrap">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/urish/angular-moment/tree/aa3e39f77214da5a718755a3582aac517a53a04f">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".bowerrc" id="adba2f4daaaceb7e9889870260a0012e-f2571d7ffa5037a29922c139665ab4e127ab1a5a" href="/urish/angular-moment/blob/master/.bowerrc">.bowerrc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix(deps): add AngularJS v1.7.0
+
+The bower dependency range has been modified to support up through
+AngularJS v1.7.0, release in the summer of 2018.  Additionally, the
+bower registry has been updated to the current registry via the addition
+of .bowerrc.
+
+Closes #303." class="message" href="/urish/angular-moment/commit/fc677bdbf190620acabd557d35719ebca1265779">fix(deps): add AngularJS v1.7.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-24T16:03:42Z">Aug 24, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".editorconfig" id="1e70daafb475c0ce3fef7d2728279182-297368244a91b22e0c40b47582bc3647959709ce" href="/urish/angular-moment/blob/master/.editorconfig">.editorconfig</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Upgrade our npm  devDependencies, require node &gt;= 0.10.0" class="message" href="/urish/angular-moment/commit/954b6ecd147db5b803f0030aee68e197b34433db">Upgrade our npm devDependencies, require node &gt;= 0.10.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-15T11:35:41Z">Mar 15, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-d6e547b43f9ff9bd1655d263257b4baa55a8589c" href="/urish/angular-moment/blob/master/.gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="add npm-debug.log gitignore" class="message" href="/urish/angular-moment/commit/e5e29e9be27b788170ea75c4174eced2f4857103">add npm-debug.log gitignore</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-09-03T14:08:59Z">Sep 3, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".jshintrc" id="4d5aa81bf4f18104bb6ea53a8b5d1f43-d430ef2a6bc7d98349bfaad080c82611d76b8f49" href="/urish/angular-moment/blob/master/.jshintrc">.jshintrc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Added jshint" class="message" href="/urish/angular-moment/commit/2e7daaf26f07c78b8682849362710bddbe7a4958">Added jshint</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-07-08T09:18:12Z">Jul 8, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".travis.yml" id="354f30a63fb0907d4ad57269548329e3-c43c2bd27ed73ba249840eeb54e9c4044624dca5" href="/urish/angular-moment/blob/master/.travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="ci: use stable NodeJS versions
+
+Only even numbered NodeJS releases are considered stable and so TravisCI
+tests the stable releases." class="message" href="/urish/angular-moment/commit/58aa71c6e03d1ab1172fa05de209ab88ab80e3a8">ci: use stable NodeJS versions</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-24T16:17:49Z">Aug 24, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="CHANGELOG.md" id="4ac32a78649ca5bdd8e0ba38b7006a1e-ec391c7537ca598c19d2f3b2da8ad79e76b9b5bd" href="/urish/angular-moment/blob/master/CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="docs: fix CHANGELOG" class="message" href="/urish/angular-moment/commit/aa3e39f77214da5a718755a3582aac517a53a04f">docs: fix CHANGELOG</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T13:53:53Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="CONTRIBUTING.md" id="6a3371457528722a734f3c51d9238c13-a5dd48f708f1abe9de40392d1e1d78b414235acf" href="/urish/angular-moment/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix(build): npm install angular-moment fails. close #121" class="message" href="/urish/angular-moment/commit/27b1260c0436d91be317ce2c10ac15fcfa213a14">fix(build): npm install angular-moment fails.</a> <span aria-label="This commit closes issue #121." class="issue-keyword tooltipped tooltipped-se"><a data-pjax="true" title="fix(build): npm install angular-moment fails. close #121" class="message" href="/urish/angular-moment/commit/27b1260c0436d91be317ce2c10ac15fcfa213a14">close</a></span> <a href="https://github.com/urish/angular-moment/issues/121" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="62537281" data-permission-text="Issue title is private" data-url="https://github.com/urish/angular-moment/issues/121">#121</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-03-17T23:17:34Z">Mar 17, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="Gruntfile.js" id="35b4a816e0441e6a375cd925af50752c-5c1619b77c90481be4ce77d95d5890488027fc09" href="/urish/angular-moment/blob/master/Gruntfile.js">Gruntfile.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore(*): remove ngdocs grunt task" class="message" href="/urish/angular-moment/commit/345879d6fd8c6697ac86cfb247d82f5613888cc5">chore(*): remove ngdocs grunt task</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-14T21:33:55Z">Apr 14, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="LICENSE" id="9879d6db96fd29134fc802214163b95a-fe9db79b9113a7d0034394d29559aef67ea92c9d" itemprop="license" href="/urish/angular-moment/blob/master/LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Update license range" class="message" href="/urish/angular-moment/commit/f5fc7799cc83d2bc3a0660a4c4fc37f683ee98bc">Update license range</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-02-23T16:23:30Z">Feb 23, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-72a78cdc5b50e478ed91b99f5a0901a3c94b5e1b" href="/urish/angular-moment/blob/master/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="angular-moment.js" id="c440e8016180d068f3c98cb9fb14fd90-0c0435baf52a1bac44f72419e339bf2e28d0b9cb" href="/urish/angular-moment/blob/master/angular-moment.js">angular-moment.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="angular-moment.min.js" id="1c51f328a35a606db7cd88c7d9a19aef-52a6633247980ffe09845030be532b7962e5e519" href="/urish/angular-moment/blob/master/angular-moment.min.js">angular-moment.min.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="angular-moment.min.js.map" id="52130130edad986161e096e5c7afcacf-9bc615e17319d49215a0caed31fbf6e98a52986a" href="/urish/angular-moment/blob/master/angular-moment.min.js.map">angular-moment.min.js.map</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="angular-moment.nuspec" id="2107d4ef09d4d19e020a1aaf2b563de0-469f2eb9ce77027d1c7246abeb3cd9bd3f27f1bd" href="/urish/angular-moment/blob/master/angular-moment.nuspec">angular-moment.nuspec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="bower.json" id="0a08a7565aba4405282251491979bb6b-8acb93178e81d6ca6655209268bb1fc56ce98d25" href="/urish/angular-moment/blob/master/bower.json">bower.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix(deps): add AngularJS v1.7.0
+
+The bower dependency range has been modified to support up through
+AngularJS v1.7.0, release in the summer of 2018.  Additionally, the
+bower registry has been updated to the current registry via the addition
+of .bowerrc.
+
+Closes #303." class="message" href="/urish/angular-moment/commit/fc677bdbf190620acabd557d35719ebca1265779">fix(deps): add AngularJS v1.7.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-24T16:03:42Z">Aug 24, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="karma.conf.js" id="a2a3b7b0c9c3b4b93b4aebf4e3ec3cfb-9c6a4d2feb053b0b6ce838d83220c5cb5471de4c" href="/urish/angular-moment/blob/master/karma.conf.js">karma.conf.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore(*): release 0.9.0, update moment to 2.9.0, removed deprecated methods" class="message" href="/urish/angular-moment/commit/bf7da2a9e286fbf5f0561d784fd6b4e2798cfc98">chore(*): release 0.9.0, update moment to 2.9.0, removed deprecated m…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-01-11T20:31:18Z">Jan 11, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="package.json" id="b9cfc7f2cdf78a7f4b91a753d10865a2-4d4650e20d9300ed0860dbc54e94faec3b323a54" href="/urish/angular-moment/blob/master/package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chore: release 1.3.0" class="message" href="/urish/angular-moment/commit/a0b87cb11c7a8884ca6f423783d754b7f293107d">chore: release 1.3.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-04T10:42:04Z">Sep 4, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="tests.js" id="ce4097fa41097a3b63603226458faf55-b63522a1858e10173a9eca82e24ea3e2dfbfbb70" href="/urish/angular-moment/blob/master/tests.js">tests.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="amCalendar. Arguments referenceTime, formats added" class="message" href="/urish/angular-moment/commit/708dc9bbd687d46a6271bfd41acabfd8acc5a6bb">amCalendar. Arguments referenceTime, formats added</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-13T03:54:08Z">Apr 12, 2016</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+  <div id="readme" class="Box Box--condensed instapaper_body md">
+    <div class="Box-header px-2 clearfix">
+      <h3 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+        README.md
+      </h3>
+    </div>
+      <div class="Box-body p-6">
+        <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-angular-moment" class="anchor" aria-hidden="true" href="#angular-moment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>angular-moment</h1>
+<p>AngularJS directive and filters for <a href="http://www.momentjs.com" rel="nofollow">Moment.JS</a>.</p>
+<p>Copyright (C) 2013, 2014, 2015, 2016, 2017, 2018 Uri Shaked <a href="mailto:uri@urish.org">uri@urish.org</a></p>
+<p><a href="https://travis-ci.org/urish/angular-moment" rel="nofollow"><img src="https://camo.githubusercontent.com/c7fe407ffbeea337b650d6de1fa2a3e983dcee07/68747470733a2f2f7472617669732d63692e6f72672f75726973682f616e67756c61722d6d6f6d656e742e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/urish/angular-moment.png?branch=master" style="max-width:100%;"></a>
+<a href="https://coveralls.io/r/urish/angular-moment" rel="nofollow"><img src="https://camo.githubusercontent.com/4c63cd5ad271d1ee820e856aa562160b685c5fd2/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f75726973682f616e67756c61722d6d6f6d656e742f62616467652e706e67" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/urish/angular-moment/badge.png" style="max-width:100%;"></a></p>
+<h3><a id="user-content-new-angular-version-is-now-available-ngx-moment" class="anchor" aria-hidden="true" href="#new-angular-version-is-now-available-ngx-moment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New Angular version is now available: <a href="https://github.com/urish/ngx-moment">ngx-moment</a></h3>
+<hr>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<p>You can choose your preferred method of installation:</p>
+<ul>
+<li>Through bower: <code>bower install angular-moment --save</code></li>
+<li>Through npm: <code>npm install angular-moment moment --save</code></li>
+<li>Through NuGet: <code>Install-Package angular-moment Moment.js</code></li>
+<li>From a CDN: <a href="https://cdn.jsdelivr.net/npm/angular-moment@1.3.0/angular-moment.min.js" rel="nofollow">jsDelivr</a> or <a href="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.3.0/angular-moment.min.js" rel="nofollow">CDNJS</a></li>
+<li>Download from github: <a href="https://raw.github.com/urish/angular-moment/master/angular-moment.min.js">angular-moment.min.js</a></li>
+</ul>
+<h2><a id="user-content-instructions-for-using-moment-timezone-with-webpack" class="anchor" aria-hidden="true" href="#instructions-for-using-moment-timezone-with-webpack"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions for using moment-timezone with webpack</h2>
+<p>Even if you have <code>moment-timezone</code> in your <code>package.json</code>, <code>angular-moment</code> will not be able to use it unless you override
+moment using Angular's dependency injection <a href="https://github.com/urish/angular-moment/pull/234">See Resolved Issue</a></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> angular <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>angular<span class="pl-pds">'</span></span>);
+<span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>angular-moment<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> ngModule <span class="pl-k">=</span> <span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>ngApp<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>angularMoment<span class="pl-pds">'</span></span>]);
+<span class="pl-smi">ngModule</span>.<span class="pl-en">constant</span>(<span class="pl-s"><span class="pl-pds">'</span>moment<span class="pl-pds">'</span></span>, <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>moment-timezone<span class="pl-pds">'</span></span>));</pre></div>
+<h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>Include both <strong>moment.js</strong> and <strong>angular-moment.js</strong> in your application.</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>components/moment/moment.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1">&lt;</span>/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>components/angular-moment/angular-moment.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1">&lt;</span>/<span class="pl-ent">script</span>&gt;</pre></div>
+<p>Add the module <code>angularMoment</code> as a dependency to your app module:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> myapp <span class="pl-k">=</span> <span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>myapp<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>angularMoment<span class="pl-pds">'</span></span>]);</pre></div>
+<p>If you need internationalization support, load specified moment.js locale file right after moment.js:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>components/moment/moment.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1">&lt;</span>/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>components/moment/locale/de.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1">&lt;</span>/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>components/angular-moment/angular-moment.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1">&lt;</span>/<span class="pl-ent">script</span>&gt;</pre></div>
+<p>Then call the <code>amMoment.changeLocale()</code> method (e.g. inside your app's run() callback):</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">myapp</span>.<span class="pl-en">run</span>(<span class="pl-k">function</span>(<span class="pl-smi">amMoment</span>) {
+	<span class="pl-smi">amMoment</span>.<span class="pl-en">changeLocale</span>(<span class="pl-s"><span class="pl-pds">'</span>de<span class="pl-pds">'</span></span>);
+});</pre></div>
+<h3><a id="user-content-use-in-controllerservicefactory" class="anchor" aria-hidden="true" href="#use-in-controllerservicefactory"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Use in controller/service/factory</h3>
+<p>Inject the <code>moment</code>-constant into your dependency injection. For example:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>fooApp<span class="pl-pds">'</span></span>)
+    .<span class="pl-en">controller</span>(<span class="pl-s"><span class="pl-pds">'</span>FooCtrl<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>$scope<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>moment<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$scope</span>, <span class="pl-smi">moment</span>) {
+        <span class="pl-smi">$scope</span>.<span class="pl-smi">exampleDate</span> <span class="pl-k">=</span> <span class="pl-en">moment</span>().<span class="pl-en">hour</span>(<span class="pl-c1">8</span>).<span class="pl-en">minute</span>(<span class="pl-c1">0</span>).<span class="pl-en">second</span>(<span class="pl-c1">0</span>).<span class="pl-en">toDate</span>();
+    }]);</pre></div>
+<h3><a id="user-content-am-time-ago-directive" class="anchor" aria-hidden="true" href="#am-time-ago-directive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>am-time-ago directive</h3>
+<p>Use the <code>am-time-ago</code> directive to format your relative timestamps. For example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span> <span class="pl-e">am-time-ago</span>=<span class="pl-s"><span class="pl-pds">"</span>message.time<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<p>angular-moment will dynamically update the span to indicate how much time
+passed since the message was created. So, if your controller contains the following
+code:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">$scope</span>.<span class="pl-smi">message</span> <span class="pl-k">=</span> {
+   text<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>hello world!<span class="pl-pds">'</span></span>,
+   time<span class="pl-k">:</span> <span class="pl-k">new</span> <span class="pl-en">Date</span>()
+};</pre></div>
+<p>The user will initially see "a few seconds ago", and about a minute
+after the span will automatically update with the text "a minute ago",
+etc.</p>
+<h3><a id="user-content-amparse-filter" class="anchor" aria-hidden="true" href="#amparse-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amParse filter</h3>
+<p>Parses a custom-formatted date into a moment object that can be used with the <code>am-time-ago</code> directive and the
+other filters. For example, the following code will accept dates that are formatted like "2015.04.25 22:00:15':</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span> <span class="pl-e">am-time-ago</span>=<span class="pl-s"><span class="pl-pds">"</span>message.time | amParse:'YYYY.MM.DD HH:mm:ss'<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<h3><a id="user-content-amfromunix-filter" class="anchor" aria-hidden="true" href="#amfromunix-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amFromUnix filter</h3>
+<p>Converts a unix-timestamp (seconds since 1/1/1970) into a moment object. Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span> <span class="pl-e">am-time-ago</span>=<span class="pl-s"><span class="pl-pds">"</span>message.unixTime | amFromUnix<span class="pl-pds">"</span></span>&gt;</pre></div>
+<h3><a id="user-content-amutc-filter" class="anchor" aria-hidden="true" href="#amutc-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amUtc filter</h3>
+<p>Create / switch the current moment object into UTC mode. For example, given a date object in <code>message.date</code>,
+the following code will display the time in UTC instead of the local timezone:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.date | amUtc | amDateFormat:'MM.DD.YYYY HH:mm:ss'}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<h3><a id="user-content-amutcoffset-filter" class="anchor" aria-hidden="true" href="#amutcoffset-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amUtcOffset filter</h3>
+<p>Uses the given utc offset when displaying a date. For example, the following code will display the date with
+a UTC + 3 hours time offset:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.date | amUtcOffset:'+0300' | amDateFormat:'MM.DD.YYYY HH:mm:ss'}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<h3><a id="user-content-amlocal-filter" class="anchor" aria-hidden="true" href="#amlocal-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amLocal filter</h3>
+<p>Changes the given moment object to be in the local timezone. Usually used in conjunction with <code>amUtc</code> / <code>amTimezone</code>
+for timezone conversion. For example, the following will convert the given UTC date to local time:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.date | amUtc | amLocal | amDateFormat:'MM.DD.YYYY HH:mm:ss'}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<h3><a id="user-content-amtimezone-filter" class="anchor" aria-hidden="true" href="#amtimezone-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amTimezone filter</h3>
+<p>Applies a timezone to the given date / moment object. You need to include <code>moment-timezone.js</code> in your project
+and load timezone data in order to use this filter. The following example displays the time in Israel's timezone:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.date | amTimezone:'Israel' | amDateFormat:'MM.DD.YYYY HH:mm:ss'}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<h3><a id="user-content-amdateformat-filter" class="anchor" aria-hidden="true" href="#amdateformat-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amDateFormat filter</h3>
+<p>Format dates using moment.js format() method. Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.time | amDateFormat:'dddd, MMMM Do YYYY, h:mm:ss a'}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<p>This snippet will format the given time as "Monday, October 7th 2013, 12:36:29 am".</p>
+<p>For more information about Moment.JS formatting options, see the
+<a href="http://momentjs.com/docs/#/displaying/format/" rel="nofollow">docs for the format() function</a>.</p>
+<h3><a id="user-content-amcalendar-filter" class="anchor" aria-hidden="true" href="#amcalendar-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amCalendar filter</h3>
+<p>Format dates using moment.js calendar() method. Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{message.time | amCalendar:referenceTime:formats}}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<p>This snippet will format the given time as e.g. "Today 2:30 AM" or "Last Monday 2:30 AM" etc..</p>
+<p>For more information about Moment.JS calendar time format, see the
+<a href="http://momentjs.com/docs/#/displaying/calendar-time/" rel="nofollow">docs for the calendar() function</a>.</p>
+<h3><a id="user-content-amdifference-filter" class="anchor" aria-hidden="true" href="#amdifference-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amDifference filter</h3>
+<p>Get the difference between two dates in milliseconds.
+Parameters are date, units and usePrecision. Date defaults to current date. Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;Scheduled {{message.createdAt | amDifference : null : 'days' }} days from now&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<p>This snippet will return the number of days between the current date and the date filtered.</p>
+<p>For more information about Moment.JS difference function, see the
+<a href="http://momentjs.com/docs/#/displaying/difference/" rel="nofollow">docs for the diff() function</a>.</p>
+<h3><a id="user-content-amdurationformat-filter" class="anchor" aria-hidden="true" href="#amdurationformat-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amDurationFormat filter</h3>
+<p>Formats a duration (such as 5 days) in a human readable format. See <a href="http://momentjs.com/docs/#/durations/creating/" rel="nofollow">Moment.JS documentation</a>
+for a list of supported duration formats, and <a href="http://momentjs.com/docs/#/durations/humanize/" rel="nofollow"><code>humanize() documentation</code></a>
+for explanation about the formatting algorithm.</p>
+<p>Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;Message age: {{message.ageInMinutes | amDurationFormat : 'minute' }}&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+<p>Will display the age of the message (e.g. 10 minutes, 1 hour, 2 days, etc).</p>
+<h3><a id="user-content-amsubtract-filter" class="anchor" aria-hidden="true" href="#amsubtract-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amSubtract filter</h3>
+<p>Subtract values (hours, minutes, seconds ...) from a specified date.</p>
+<p>See <a href="http://momentjs.com/docs/#/durations/creating/" rel="nofollow">Moment.JS documentation</a> for a list of supported duration formats.</p>
+<p>Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;Start time: {{day.start | amSubtract : '1' : 'hours' | amDateFormat : 'hh'}} : {{day.start | amSubtract : '30' : 'minutes' | amDateFormat : 'mm'}}&lt;/<span class="pl-ent">span</span>&gt;
+</pre></div>
+<h3><a id="user-content-amadd-filter" class="anchor" aria-hidden="true" href="#amadd-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amAdd filter</h3>
+<p>Add values (hours, minutes, seconds ...) to a specified date.</p>
+<p>See <a href="http://momentjs.com/docs/#/durations/creating/" rel="nofollow">Moment.JS documentation</a> for a list of supported duration formats.</p>
+<p>Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;Start time: {{day.start | amAdd : '1' : 'hours' | amDateFormat : 'hh'}} : {{day.start | amAdd : '30' : 'minutes' | amDateFormat : 'mm'}}&lt;/<span class="pl-ent">span</span>&gt;
+</pre></div>
+<h3><a id="user-content-amstartof-filter" class="anchor" aria-hidden="true" href="#amstartof-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amStartOf filter</h3>
+<p>Mutates the original moment by setting it to the start of a unit(minute, hour, day..) of time.</p>
+<p>See <a href="http://momentjs.com/docs/#/manipulating/start-of/" rel="nofollow">Moment.JS documentation</a> for a list of supported duration formats.</p>
+<p>Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{ date | amStartOf:'month' | amLocal }}&lt;/<span class="pl-ent">span</span>&gt;
+</pre></div>
+<h3><a id="user-content-amendof-filter" class="anchor" aria-hidden="true" href="#amendof-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>amEndOf filter</h3>
+<p>Mutates the original moment by setting it to the end of a unit(minute, hour, day..) of time.</p>
+<p>See <a href="http://momentjs.com/docs/#/manipulating/end-of/" rel="nofollow">Moment.JS documentation</a> for a list of supported duration formats.</p>
+<p>Example:</p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">span</span>&gt;{{ date | amEndOf:'month' | amLocal }}&lt;/<span class="pl-ent">span</span>&gt;
+</pre></div>
+<h3><a id="user-content-time-zone-support" class="anchor" aria-hidden="true" href="#time-zone-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Time zone support</h3>
+<p>The <code>amDateFormat</code> and <code>amCalendar</code> filters can be configured to display dates aligned
+to a specific timezone. You can configure the timezone using the following syntax:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>myapp<span class="pl-pds">'</span></span>).<span class="pl-en">constant</span>(<span class="pl-s"><span class="pl-pds">'</span>angularMomentConfig<span class="pl-pds">'</span></span>, {
+    timezone<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Name of Timezone<span class="pl-pds">'</span></span> <span class="pl-c"><span class="pl-c">//</span> e.g. 'Europe/London'</span>
+});</pre></div>
+<p>Remember to include <code>moment-timezone.js</code> v0.3.0 or greater in your project, otherwise the custom timezone
+functionality will not be available. You will also need to include a timezone data file that
+you can create using the <a href="http://momentjs.com/timezone/" rel="nofollow">Timezone Data Builder</a>
+or simply download from <a href="https://rawgithub.com/qw4n7y/7282780/raw/6ae3b334b295f93047e8f3ad300db6bc4387e235/moment-timezone-data.js" rel="nofollow">here</a>.</p>
+<h3><a id="user-content-accessing-moment-in-your-javascript" class="anchor" aria-hidden="true" href="#accessing-moment-in-your-javascript"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessing <code>moment()</code> in your JavaScript</h3>
+<p>If you wish to use <code>moment()</code> in your services, controllers, or directives, simply inject the <code>moment</code> variable into the
+constructor.</p>
+<h2><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
+<p>Released under the terms of the <a href="/urish/angular-moment/blob/master/LICENSE">MIT License</a>.</p>
+</article>
+      </div>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.33285s from unicorn-2488961706-45rcs">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-Bb0Wovr1o2Cb3KlmHRGIjQlsUxTAa1LYyxdQ/tsndUC+t7gAyu/2fpdLW7eex9HXv13smytm3gzMD5+Z81gb9A==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-2b155dd967d6dd0a278d1a91dcafbeec.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-soY5O2nCbV0xNIEc+My3l94IG4krny2mZWWbhe4y2iuqN8oP+vJ/tIcY0dkcjnpmxViXvdqrkajw+JbG2aJwIQ==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-c9e6dc85be45ffe1418c18262385d460.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+

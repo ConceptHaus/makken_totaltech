@@ -22,6 +22,7 @@ use App\Ganador;
 use App\Establecimiento;
 use App\Seccion;
 use App\Texto;
+use App\Semanas;
 
 class AdminController extends Controller {
     /**
@@ -39,7 +40,8 @@ class AdminController extends Controller {
     }
 
     public function usuariosGanadores() {
-        return view('admin/usuarios_ganadores');
+        $data['semanas'] = Semanas::all();
+        return view('admin/usuarios_ganadores',$data);
     }
 
     public function usuarioDetalle($id) {
