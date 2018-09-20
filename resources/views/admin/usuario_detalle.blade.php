@@ -62,8 +62,7 @@
                                     <td>{{$ticket->id_ticket}}</td>
                                     <td>{{$ticket->no_ticket}}</td>
                                     <td>
-                                        <img class="mr-3" src="./assets/img/products/16.jpg" width="60" />
-                                        {{$ticket->establecimiento->nombre}}
+                                        <img class="mr-3" src="{{$ticket->establecimiento->url}}" width="60" />
                                     </td>
                                     <td>{{$ticket->created_at}}</td>
                                     <td>${{$ticket->monto}}</td>
