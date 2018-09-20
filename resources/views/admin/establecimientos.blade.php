@@ -14,7 +14,7 @@
                             <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                 placeholder="Buscar ...">
                         </div>
-                        <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a>
+                        {{-- <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a> --}}
                     </div>
                 </div>
                 <div class="table-responsive row">
