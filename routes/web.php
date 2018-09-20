@@ -32,8 +32,8 @@ Route::get('/api/v1/users','AdminController@getAllUsers');
 Route::get('/api/v1/users/{id}', 'AdminController@getOneUser');
 Route::get('/api/v1/tickets', 'AdminController@getAllTickets');
 Route::get('/api/v1/ganadores', 'AdminController@getAllGanadores');
-Route::get('/api/v1/establecimientos', 'AdminController@getEstablecimientos');
-Route::get('/api/v1/textos', 'AdminController@getTextos');
+Route::get('/api/v1/establecimientos', 'WelcomeController@getEstablecimientos');
+Route::get('/api/v1/textos', 'WelcomeController@getTextos');
 
 
 //Funcionalidades

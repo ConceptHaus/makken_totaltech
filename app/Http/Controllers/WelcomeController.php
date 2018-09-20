@@ -20,4 +20,15 @@ class WelcomeController extends Controller
 
         return view('welcome', $data);
     }
+    public function getEstablecimientos(){
+        $establecimientos = Establecimiento::all();
+
+        return response()->json($establecimientos);
+    }
+
+    public function getTextos(){
+        $textos = Texto::all();
+
+        return response()->json($textos);
+    }
 }
