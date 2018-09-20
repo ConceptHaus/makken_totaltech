@@ -156,7 +156,7 @@
                     @foreach ($ganadores as $ganador)
                       @if ($ganador->id_semana == $i)
                         <tr>
-                          <td>{{ $ganador['user']->nombre }}</td>
+                          <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
                           <td><img class="img-establecimiento"src="{{ $ganador['ticket']->establecimiento['url'] }}" alt="{{ $ganador['ticket']->establecimiento['nombre'] }}"></td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
