@@ -199,7 +199,13 @@ class AdminController extends Controller {
     }
 
     public function getAllTickets(){
+        $disk = Storage::disk('s3');
+        
         $tickets = Ticket::GetAllTickets();
+        foreach($tickets as $ticket){
+            Storage::setVisibility($ticket->url,'public');
+            $ticket->url = $disk->url($ticket->url);
+        }
 
         return response()->json($tickets);
     }
