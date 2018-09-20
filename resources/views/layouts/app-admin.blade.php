@@ -71,7 +71,7 @@
                                 <div class="dropdown-arrow"></div>
                                 <div class="admin-menu-content">
                                     <div class="d-flex justify-content-between mt-2">
-                                        <a class="d-flex align-items-center" href="javascript:;">Cerrar Sesión <i class="ti-shift-right ml-2 font-20"></i></a>
+                                        <a class="d-flex align-items-center" href="/logout">Cerrar Sesión <i class="ti-shift-right ml-2 font-20"></i></a>
                                     </div>
                                 </div>
                             </div>
