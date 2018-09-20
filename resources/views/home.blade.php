@@ -7,10 +7,10 @@
     <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
     <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
     <div class="texto-home col-lg-6 col-md-12 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-      <h1>¡BIENVENIDO</h1>
+      <h1>¡HOLA</h1>
       <h3 class="blanco">{{auth()->user()->nombre}} {{auth()->user()->apellido}}!</h3>
       <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-        <span>¡REGISTRA!</span> TÚ TICKET
+        <span>¡REGISTRA!</span> TU TICKET
       </a>
     </div>
   </section>
@@ -21,9 +21,9 @@
     <div class="row text-center justify-content-center">
               <div class="col-10 content-table-tickets content-table">
                 @if ($tickets->count() == 0)
-                  <h5 class="azul-dos mb-3">Aún no haz registrado ningun ticket.</h5>
+                  <h5 class="azul-dos mb-3">Aún no haz registrado ningún ticket.</h5>
                   <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-                    <span>¡REGISTRA!</span> TÚ TICKET
+                    <span>¡REGISTRA!</span> TU TICKET
                   </a>
                 @else
                 <table class="table table-borderless table-responsive">
