@@ -9835,8 +9835,8 @@ footer {
 *** 5.- Estilos Login
 **/
 #pageSytyle {
-  padding-top: 170px;
-  padding-bottom: 120px;
+  padding-top: 10%;
+  padding-bottom: 7%;
 }
 
 #pageSytyle a, #pageSytyle p {
@@ -10268,6 +10268,9 @@ strong {
   }
   .table-responsive {
     display: block;
+  }
+  #pageSytyle {
+    padding-top: 35%;
   }
   #pageSytyle .panel {
     padding: 3% 5% !important;
