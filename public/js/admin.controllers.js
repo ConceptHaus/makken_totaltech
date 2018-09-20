@@ -68,8 +68,6 @@
 /***/ "./resources/assets/js/angular-app/admin/admin.controllers.js":
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/HausMaster/Desktop/JAVIER/PROYECTOS/makken_totaltech/resources/assets/js/angular-app/admin/admin.controllers.js'");
-
 /**
  *  Module
  *
@@ -79,7 +77,7 @@ var app = angular.module('adminController', ['angularApp']);
 
 app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN) {
 
-    // Usuarios registrados
+    // Usuarios registrados  
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
         console.log('Usuarios');
@@ -88,7 +86,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
-    // Usuarios Ganadores
+    // Usuarios Ganadores  
     AdminFactory.ganadores().then(function (res) {
         console.log('Ganadores');
         $scope.ganadores = res.data;
@@ -97,7 +95,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
-    // Usuario detalle
+    // Usuario detalle  
     AdminFactory.oneUser().then(function (res) {
         $scope.usuario = res.data;
         console.log('Usuario Detalle');
@@ -190,7 +188,6 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         });
     };
 });
-
 
 /***/ }),
 
