@@ -168,7 +168,7 @@
                   </tbody>
                 </table>
                 @if ($j == 0)
-                  <h2 class="azul">No hay Ganadores</h2>
+                  <h2 class="azul">No hay ganadores</h2>
                 @endif
               </div>
             </div>

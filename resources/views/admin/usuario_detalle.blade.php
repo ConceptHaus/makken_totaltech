@@ -7,7 +7,7 @@
             <span class="mr-4 static-badge badge-blue"><i class="la la-user"></i></span>
             <div>
                 <h5 class="font-strong">Detalle Usuario</h5>
-                <div class="text-light">Emma Johnson</div>
+                <div class="text-light">{{$user->nombre}}</div>
             </div>
         </div>
         <div class="row">
@@ -17,27 +17,27 @@
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
-                            <div class="col-8">Emma Johnson</div>
+                            <div class="col-8">{{$user->nombre}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Dirección</div>
-                            <div class="col-8">San Francisco, CA 94103 Market Street</div>
+                            <div class="col-8">{{$user->direccion->municipio}}, {{$user->direccion->estado}}, {{$user->direccion->cp}} </div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Correo</div>
-                            <div class="col-8">example@gmail.com</div>
+                            <div class="col-8">{{$user->correo}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Teléfono</div>
-                            <div class="col-8">+380681478544</div>
+                            <div class="col-8">{{$user->telefono}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Fecha registro</div>
-                            <div class="col-8">17.05.2018</div>
+                            <div class="col-8">{{$user->created_at}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
-                            <div class="col-4 text-light">Ganador</div>
-                            <div class="col-8">Sí</div>
+                            <div class="col-4 text-light">Tickets ganadores</div>
+                            <div class="col-8">{{count($user->ganador)}}</div>
                         </div>
                     </div>
                 </div>
@@ -57,39 +57,21 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($user->tickets as $ticket)
                                 <tr>
-                                    <td>3</td>
-                                    <td>455354 - 546763</td>
+                                    <td>{{$ticket->id_ticket}}</td>
+                                    <td>{{$ticket->no_ticket}}</td>
                                     <td>
-                                        <img class="mr-3" src="./assets/img/products/16.jpg" alt="image" width="60" />
-                                        Cheadraui
+                                        <img class="mr-3" src="./assets/img/products/16.jpg" width="60" />
+                                        {{$ticket->establecimiento->nombre}}
                                     </td>
-                                    <td>17.05.2018</td>
-                                    <td>$3,000</td>
+                                    <td>{{$ticket->created_at}}</td>
+                                    <td>${{$ticket->monto}}</td>
                                 </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>455354 - 780978</td>
-                                    <td>
-                                        <img class="mr-3" src="./assets/img/products/16.jpg" alt="image" width="60" />
-                                        laComer
-                                    </td>
-                                    <td>18.05.2018</td>
-                                    <td>$1,500</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>455354 - 454233</td>
-                                    <td>
-                                        <img class="mr-3" src="./assets/img/products/16.jpg" alt="image" width="60" />
-                                        Walmart
-                                    </td>
-                                    <td>19.05.2018</td>
-                                    <td>$1,000</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
-                        <div class="d-flex justify-content-end">
+                        {{-- <div class="d-flex justify-content-end">
                             <div class="text-right" style="width:300px;">
                                 <div class="row font-strong font-15">
                                     <div class="col-6">Monto Total:</div>
@@ -98,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
