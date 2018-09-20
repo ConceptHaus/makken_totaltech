@@ -50,6 +50,10 @@ class AdminController extends Controller {
         return view('admin/usuario_detalle',$data);
     }
 
+    public function nuevoUsuario() {
+        return view('admin/nuevo_usuario');
+    }
+
     public function ticketsRegistrados() {
         return view('admin/tickets_registrados');
     }

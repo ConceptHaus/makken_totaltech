@@ -37,11 +37,7 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-<<<<<<< HEAD
                                 <td><% ticket.monto | currency %></td>
-=======
-                                <td>$<% ticket.monto %></td>
->>>>>>> 228f119e886c6da9324b6fb947e3e74666d2b3cb
                                 <td>
                                     <img class="mr-3" src="{{ asset('<% ticket.establecimiento.url%>') }}" alt="image" width="90" />
                                 </td>

@@ -83,16 +83,14 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuarios registrados  
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
-        console.log('Usuarios');
     }, function (err) {
         console.log(err);
     });
 
     // Usuarios Ganadores  
     AdminFactory.ganadores().then(function (res) {
-        console.log('Ganadores');
         $scope.ganadores = res.data;
-        console.log($scope.ganadores);
+        // console.log($scope.ganadores);
     }, function (err) {
         console.log(err);
     });
@@ -100,8 +98,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuario detalle  
     AdminFactory.oneUser().then(function (res) {
         $scope.usuario = res.data;
-        console.log('Usuario Detalle');
-        console.log($scope.usuario);
+        // console.log($scope.usuario);
     }, function (err) {
         console.log(err);
     });
@@ -109,8 +106,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Tickets
     AdminFactory.tickets().then(function (res) {
         $scope.tickets = res.data;
-        console.log('Tickets');
-        console.log($scope.tickets);
+        // console.log($scope.tickets);
     }, function (err) {
         console.log(err);
     });
@@ -118,8 +114,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Establecimientos
     AdminFactory.establecimientos().then(function (res) {
         $scope.establecimientos = res.data;
-        console.log('Establecimientos');
-        console.log($scope.establecimientos);
+        // console.log($scope.establecimientos);
     }, function (err) {
         console.log(err);
     });
@@ -188,6 +183,41 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         }, function (err) {
             console.log(err);
         });
+    };
+
+    $scope.getCP = function (cp) {
+        $http.get('/api/v1/cp/' + cp).then(function (res) {
+            $scope.errorCP = null;
+            $scope.user.estado = res.data.Estado;
+            $scope.user.municipio = res.data.Municipio;
+            // console.log($scope.user);
+        }, function (error) {
+            $scope.errorCP = error.data.error;
+            console.log($scope.errorCP);
+        });
+    };
+
+    $scope.register = function (user) {
+        console.log(user);
+        swal({
+            title: 'Espera...',
+            text: 'Estamos verificando tus datos.',
+            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            showConfirmButton: false
+        });
+
+        AdminFactory.register(user).then(success, error);
+    };
+
+    var success = function success(data) {
+        // console.log(data.data);
+        $window.location.href = '/admin/usuarios/registrados';
+    };
+
+    var error = function error(errors) {
+        $scope.errors = errors.data.fail;
+        swal.close();
+        console.log(errors.data.fail);
     };
 });
 

@@ -49,6 +49,7 @@ Route::get('/admin', 'WelcomeController@loginAdmin');
 Route::get('/admin/usuarios/registrados', 'AdminController@usuariosRegistrados');
 Route::get('/admin/usuarios/ganadores', 'AdminController@usuariosGanadores');
 Route::get('/admin/usuarios/detalle/{id}', 'AdminController@usuarioDetalle');
+Route::get('/admin/usuarios/nuevo', 'AdminController@nuevoUsuario');
 Route::get('/admin/tickets/registrados', 'AdminController@ticketsRegistrados');
 Route::get('/admin/tickets/nuevo', 'AdminController@nuevoTicket');
 Route::get('/admin/establecimientos', 'AdminController@establecimientos');
