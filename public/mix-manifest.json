@@ -1,4 +1,12 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/vendor.js": "/js/vendor.js",
+    "/css/app.css": "/css/app.css?id=f0a5368f4cb008bc12f4",
+    "/css/main.css": "/css/main.css",
+    "/js/user.services.js": "/js/user.services.js",
+    "/js/user.controllers.js": "/js/user.controllers.js",
+    "/js/home.services.js": "/js/home.services.js",
+    "/js/home.controllers.js": "/js/home.controllers.js",
+    "/js/admin.services.js": "/js/admin.services.js",
+    "/js/admin.controllers.js": "/js/admin.controllers.js",
+    "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }
