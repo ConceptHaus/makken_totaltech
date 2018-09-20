@@ -99,4 +99,27 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         readUrl(this);
     })
 
+    $scope.addGanador = function(ticket){
+        console.log(ticket);
+        swal({
+            title: "Espera...",
+            text: "Estamos agregando al ganador",
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
+            showConfirmButton: false
+        });
+        AdminFactory.setGanador(ticket)
+        .then(function(data){
+             swal({
+                 type:'success',
+                 title: "¡Listo!",
+                 text: "El ticket "+data.data.ticket+ " es ganador",
+             }).then((result)=>{
+                 location.reload();
+             });
+            console.log(data.data);
+        },function(err){
+            console.log(err);
+        })
+    }
+
 })
