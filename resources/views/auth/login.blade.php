@@ -9,7 +9,6 @@
                     <form class="form-horizontal" >
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
-                        <input ng-model="user.admin" class="form-control form-control-solid" name="admin" ng-init="user.admin = 0" type="text" hidden>
                         <div class="form-group">
                             <input ng-class="{'invalido': errors['error'] || errors['email'] }" ng-model="user.email" id="email" type="email" class="form-control" name="email" placeholder="Usuario" required autofocus>
                         </div>

@@ -37,7 +37,7 @@
 
                                   </label> --}}
 
-                                    <a class='btn-submit-upload' href='javascript:;'>
+                                    <a class='btn-submit-upload pointer' href='javascript:;'>
                                       <i class="fas fa-cloud-upload-alt"></i>
                                       <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="inputfile" name="file" onchange='$("#upload-file-info").html($(this).val());'>
                                     </a>
