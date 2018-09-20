@@ -10073,6 +10073,10 @@ footer {
   border-right: 2px solid #F0F0F0;
 }
 
+.pointer {
+  cursor: pointer !important;
+}
+
 /**
 *** 7.- Tipografía Personalizada
 **/
