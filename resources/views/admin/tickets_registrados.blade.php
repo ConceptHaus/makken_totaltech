@@ -39,7 +39,7 @@
                                 <td><% ticket.no_ticket %></td>
                                 <td><% ticket.monto | currency %></td>
                                 <td>
-                                    <img class="mr-3" src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
+                                    <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
                                 <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
@@ -127,7 +127,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body p-4">
-                                                        <img src="<% ticket.url %>">
+                                                        <img ng-src="<% ticket.url %>">
                                                     </div>
                                                     <div class="modal-footer bg-primary-50"></div>
                                                 </form>
