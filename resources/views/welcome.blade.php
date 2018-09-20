@@ -169,6 +169,7 @@
                 </table>
                 @if ($j == 0)
                   <h2 class="azul">No hay ganadores</h2>
+                  {{$ganadores}}
                 @endif
               </div>
             </div>

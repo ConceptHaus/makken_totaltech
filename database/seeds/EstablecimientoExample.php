@@ -17,6 +17,7 @@ class EstablecimientoExample extends Seeder
         for ($i=0; $i < 10; $i++) {
            \DB::table('establecimiento')->insert(array(
             'nombre' => 'Establecimiento nombre',
+            'url' => '/img',
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s')
           ));

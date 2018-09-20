@@ -23,13 +23,19 @@ class Ganador extends Model
       return $this->hasOne('App\Premio', 'id_premio','id_premio');
     }
     public function semanas(){
-        return $this->hasOne('App\Semanas', 'id_semana');
+        return $this->belongsTo('App\Semanas', 'id_semana', 'id_semana');
+    }
+
+    public function establecimiento (){
+      //$id_establecimiento = $this->hasOne('App\ticket', 'id_ticket');
+      return $this->hasOne('App\Establecimiento', 'id_establecimiento', 'id_establecimiento');
     }
 
     public function scopegetAllGanadores($query){
         return $query->with('user')
                      ->with('ticket')
                      ->with('premio')
+                     ->with('establecimiento')
                      ->with('semanas')->get();
     }
 
