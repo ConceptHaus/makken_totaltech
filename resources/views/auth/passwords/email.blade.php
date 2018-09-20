@@ -16,7 +16,7 @@
                         {{ csrf_field() }}
                         <h3>¿OLVIDASTE TU CONTRASEÑA?</h3>
                         <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
-                            <input id="correo" type="email" class="form-control" name="correo" value="{{ old('correo') }}" placeholder="Ingresa tu correo" required>
+                            <input ng-class="{'invalido': {{$errors->has('correo')}} }" id="correo" type="email" class="form-control" name="correo" value="{{ old('correo') }}" placeholder="Ingresa tu correo" required>
                             @if ($errors->has('correo'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('correo') }}</strong>
