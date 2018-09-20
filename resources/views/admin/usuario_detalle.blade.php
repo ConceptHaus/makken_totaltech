@@ -7,7 +7,7 @@
             <span class="mr-4 static-badge badge-blue"><i class="la la-user"></i></span>
             <div>
                 <h5 class="font-strong">Detalle Usuario</h5>
-                <div class="text-light">{{$user->nombre}}</div>
+                <div class="text-light">{{$user->nombre}} {{$user->apellido}}</div>
             </div>
         </div>
         <div class="row">
@@ -17,7 +17,7 @@
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
-                            <div class="col-8">{{$user->nombre}}</div>
+                            <div class="col-8">{{$user->nombre}} {{$user->apellido}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Dirección</div>
