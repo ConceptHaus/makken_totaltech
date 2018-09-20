@@ -148,12 +148,12 @@
                             <span class="nav-label">ESTABLECIMIENTOS</span>
                         </a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="">
                             <i class="sidebar-item-icon la la-file-text-o" style="font-size: 23px;"></i>
                             <span class="nav-label">TEXTOS</span>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </nav>
