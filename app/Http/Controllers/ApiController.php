@@ -9,12 +9,12 @@ use App\CodigosPostales;
 class ApiController extends Controller
 {
     public function getCP($cp){
-        // $datosCP = CodigosPostales::where('CodigoPostal','=',$cp)->first();
+        $datosCP = CodigosPostales::where('CodigoPostal','=',$cp)->first();
 
-        // if(!$datosCP){
-        //     $datosCP['error'] = 'Este código no es válido o no existe';
-        //     return response($datosCP,400);
-        // }
+        if(!$datosCP){
+            $datosCP['error'] = 'Este código no es válido o no existe';
+            return response($datosCP,400);
+        }
         return response('prueba',200);
 
     }
