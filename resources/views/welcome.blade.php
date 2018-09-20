@@ -10,7 +10,7 @@
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
   @if (Auth::check())
     <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-      <span>¡REGISTRA!</span> TÚ TICKET
+      <span>¡REGISTRA!</span> TU TICKET
     </a>
   @else
     <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -97,7 +97,7 @@
       <div class="col-12">
       @if (Auth::check())
         <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-          <span>¡REGISTRA!</span> TÚ TICKET
+          <span>¡REGISTRA!</span> TU TICKET
         </a>
       @else
         <a href="{{ url('/login') }}" class="btn btn-call-to-action text-center">
@@ -156,7 +156,7 @@
                     @foreach ($ganadores as $ganador)
                       @if ($ganador->id_semana == $i)
                         <tr>
-                          <td>{{ $ganador['user']->nombre }}</td>
+                          <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
                           <td><img class="img-establecimiento"src="{{ $ganador['ticket']->establecimiento['url'] }}" alt="{{ $ganador['ticket']->establecimiento['nombre'] }}"></td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>

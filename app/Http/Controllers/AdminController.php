@@ -136,13 +136,11 @@ class AdminController extends Controller {
         $ganador->id_ticket = $request->id_ticket;
         $ganador->id_semana = intval($request->id_semana);
         $ganador->id_premio = 1;
-
-        $ticket = Ticket::where('id_ticket',$request->id_ticket)->first();
-
+        $ticket = Ticket::where('id_ticket',$ganador->id_ticket)->first();
         if($ganador->save()){
             $json['success'] = 'success_ganador';
             $json['ticket'] = $ticket->no_ticket;
-            return response($json,200);
+            return response($json, 200);
         }
         $json['error'] = 'error_ganador';
         return response($json,400);
@@ -203,7 +201,13 @@ class AdminController extends Controller {
     }
 
     public function getAllTickets(){
+        $disk = Storage::disk('s3');
+        
         $tickets = Ticket::GetAllTickets();
+        foreach($tickets as $ticket){
+            Storage::setVisibility($ticket->url,'public');
+            $ticket->url = $disk->url($ticket->url);
+        }
 
         return response()->json($tickets);
     }

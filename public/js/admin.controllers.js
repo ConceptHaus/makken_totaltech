@@ -181,6 +181,11 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             });
             console.log(data.data);
         }, function (err) {
+            swal({
+                type: 'error',
+                title: '¡Oh no!',
+                text: err.data
+            });
             console.log(err);
         });
     };

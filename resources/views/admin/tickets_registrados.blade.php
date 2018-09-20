@@ -39,7 +39,7 @@
                                 <td><% ticket.no_ticket %></td>
                                 <td><% ticket.monto | currency %></td>
                                 <td>
-                                    <img class="mr-3" src="{{ asset('<% ticket.establecimiento.url%>') }}" alt="image" width="90" />
+                                    <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
                                 <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
@@ -67,14 +67,9 @@
                                                 <div class="modal-body p-4">
                                                     <div class="form-group mb-4">
                                                         <p>Selecciona la semana correspondiente al ganador.</p>
-<<<<<<< HEAD
-                                                        <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="semana" data-style="btn-solid">
-                                                            <option value="1" selected>1 Semana</option>
-=======
                                                         <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="ticketganador.id_semana"  data-style="btn-solid">
                                                             <option value="" disabled selectes>Semana</option>
                                                             <option value="1">1 Semana</option>
->>>>>>> 228f119e886c6da9324b6fb947e3e74666d2b3cb
                                                             <option value="2">2 Semana</option>
                                                             <option value="3">3 Semana</option>
                                                             <option value="4">4 Semana</option>
@@ -97,7 +92,7 @@
                                         </div>
                                     </div>
                                     <!-- END MODAL GANADOR -->
-                                    <span data-toggle="modal" data-target="#modalTicket">
+                                    <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
                                         <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                             <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                         </a>
@@ -122,7 +117,7 @@
                                     </div> --}}
                                     <!-- END MODAL TICKET -->
                                     <!-- START MODAL GANADOR -->
-                                    <div class="modal fade" id="modalTicket<% ticket.id_ganador %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                    <div class="modal fade" id="modalTicket<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <form class="modal-content">
                                                     <div class="modal-header p-4">
@@ -132,7 +127,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body p-4">
-                                                        <img src="{{ asset('<% ticket.url%>') }}">
+                                                        <img ng-src="<% ticket.url %>">
                                                     </div>
                                                     <div class="modal-footer bg-primary-50"></div>
                                                 </form>

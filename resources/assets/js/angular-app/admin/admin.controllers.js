@@ -113,6 +113,11 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
              });
             console.log(data.data);
         },function(err){
+            swal({
+                type:'error',
+                title:'¡Oh no!',
+                text:err.data
+            })
             console.log(err);
         })
     }
