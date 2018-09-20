@@ -15,11 +15,11 @@
                     <form class="form-horizontal form-ajust" method="POST" action="{{ route('password.email') }}">
                         {{ csrf_field() }}
                         <h3>¿OLVIDASTE TU CONTRASEÑA?</h3>
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Ingresa tu correo" required>
-                            @if ($errors->has('email'))
+                        <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
+                            <input id="correo" type="email" class="form-control" name="correo" value="{{ old('correo') }}" placeholder="Ingresa tu correo" required>
+                            @if ($errors->has('correo'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('email') }}</strong>
+                                    <strong>{{ $errors->first('correo') }}</strong>
                                 </span>
                             @endif
                         </div>
