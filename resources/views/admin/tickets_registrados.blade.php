@@ -92,7 +92,7 @@
                                         </div>
                                     </div>
                                     <!-- END MODAL GANADOR -->
-                                    <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ganador %>">
+                                    <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
                                         <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                             <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                         </a>
@@ -117,7 +117,7 @@
                                     </div> --}}
                                     <!-- END MODAL TICKET -->
                                     <!-- START MODAL GANADOR -->
-                                    <div class="modal fade" id="modalTicket<% ticket.id_ganador %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                    <div class="modal fade" id="modalTicket<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <form class="modal-content">
                                                     <div class="modal-header p-4">
