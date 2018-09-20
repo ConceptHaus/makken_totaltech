@@ -134,6 +134,7 @@ class AdminController extends Controller {
         $ganador->id_premio = 1;
         $ticket = Ticket::where('id_ticket',$ganador->id_ticket)->first();
         // if($ganador->save()){
+            $ganador->save();
             $json['success'] = 'success_ganador';
             $json['ticket'] = $ticket->no_ticket;
             return response($json, 200);
