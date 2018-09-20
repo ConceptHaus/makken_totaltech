@@ -3,9 +3,22 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Direccion;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+use DB;
+use Mail;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Database\Eloquent\Model;
 
 class RegisterController extends Controller
 {
@@ -36,7 +49,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        //$this->middleware('guest');
     }
 
     /**
@@ -48,8 +61,10 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'nombre' => 'required|string|max:255',
+            'apellido' => 'required|string|max:255',
+            'telefono' => 'required|string|max:255',
+            'correo' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -60,12 +75,49 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function createUser(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        DB::beginTransaction();
+        try{
+            $user = new User();
+            $user->nombre = $data['nombre'];
+            $user->apellido = $data['apellido'];
+            $user->telefono = $data['telefono'];
+            $user->correo = $data['correo'];
+            $user->password = bcrypt($data['password']);
+            
+            $direccion = new Direccion();
+            $direccion->estado = $data['estado'];
+            $direccion->municipio = $data['municipio'];
+            $direccion->cp = $data['cp'];
+
+            $user->save();
+            $user->direccion()->save($direccion);
+            DB::commit();
+
+            return $user;
+
+        }catch(Exception $e){
+            DB::rollBack();
+            return $e;
+        }
+        
+    }
+
+    protected function registroUser(Request $request){
+      
+        $input = $request->all();
+        $validator = $this->validator($input);
+        if($validator->passes()){
+            
+                $user = $this->createUser($input);
+                Auth::login($user,true);
+
+                $json['success'] = 'success_register';
+                return response($json,200);
+            
+        }
+        $json['fail'] = $validator->errors()->toArray();
+        return response($json,400);
     }
 }

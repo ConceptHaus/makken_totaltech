@@ -1,0 +1,35 @@
+.admin-view {
+    .table-responsive {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+.fa-star, .fa-star-o {
+    border-color: $azul!important;
+    color: $azul!important;
+}
+.content-img-ticket {
+    .img-default-ticket {
+        background: $gris_background;
+        margin: auto;
+        padding: 30px;
+    }
+    .flexbox-b {
+        float: right;
+    }
+}
+
+.modal {
+    .close {
+        color: $azul;
+        text-align: right;
+        // position: relative;
+        // top: 8px;
+        // right: 15px;
+        z-index: 99;
+    }
+    .modal-title {
+        color: #213e97;
+        font-weight: 600;
+    }
+}

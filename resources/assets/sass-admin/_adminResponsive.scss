@@ -1,0 +1,48 @@
+// Breakpoints para rwd 320 480 600 767 992 1250 1680
+@media screen and (max-width: 1680px) {
+    //   h5{
+    //     color: brown!important;
+    //   }
+}
+
+@media screen and (max-width: 1250px) {
+    // h5{
+    //     color: orange!important;
+    // }
+}
+
+@media screen and (max-width: 992px) {
+    // h5{
+    //     color: blue!important;
+    // }
+}
+
+@media screen and (max-width: 767px) {
+    // h5{
+    //     color: green!important;
+    // }
+}
+
+@media screen and (max-width: 600px) {
+    // h5{
+    //   color: black!important;
+    // }
+    .admin-view {
+        .input-group-search {
+            margin-right: 0px!important;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    // h5{
+    //   color: yellow!important;
+    // }
+}
+
+@media screen and (max-width: 320px) {
+    // h5{
+    //   color: pink!important;
+    // }
+}
