@@ -108,9 +108,8 @@
                                                         <span aria-hidden="true">×</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-body p-4">
+                                                <div class="modal-body p-4"></div>
                                                     <img class="mr-3" ng-src="<% ticket.url %>" alt="image"/>
-                                                    {{-- {{ asset('img/elements/ticket-default-2.jpg') }} --}}
                                                 </div>
                                                 <div class="modal-footer bg-primary-50">
                                                 </div>

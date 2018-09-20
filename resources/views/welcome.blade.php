@@ -157,7 +157,7 @@
                       @if ($ganador->id_semana == $i)
                         <tr>
                           <td>{{ $ganador['user']->nombre }}</td>
-                          <td>{{ $ganador['ticket']->url }}</td>
+                          <td><img class="img-establecimiento"src="{{ $ganador['ticket']->establecimiento['url'] }}" alt="{{ $ganador['ticket']->establecimiento['nombre'] }}"></td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
                         @php
