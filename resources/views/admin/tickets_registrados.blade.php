@@ -127,7 +127,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body p-4">
-                                                        <img src="{{ asset('<% ticket.url%>') }}">
+                                                        <img src="<% ticket.url%>">
                                                     </div>
                                                     <div class="modal-footer bg-primary-50"></div>
                                                 </form>
