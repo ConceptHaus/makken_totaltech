@@ -55,12 +55,27 @@
                 <!-- END TOP-LEFT TOOLBAR-->
                 <!-- START TOP-RIGHT TOOLBAR-->
                 <ul class="nav navbar-toolbar">
-                    <li class="dropdown dropdown-user">
+                    {{-- <li class="dropdown dropdown-user">
                         <a class="dropdown-toggle">
                             <span>Administrador</span>
                             <i class="la la-user"></i>
                         </a>
-                    </li>
+                    </li> --}}
+
+                    <li class="dropdown dropdown-user">
+                            <a class="nav-link dropdown-toggle link" data-toggle="dropdown" aria-expanded="false">
+                                <span>Administrador</span>
+                                <i class="la la-user"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-arrow dropdown-menu-right admin-dropdown-menu" x-placement="bottom-end" style="position: absolute; transform: translate3d(-300px, 66px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-arrow"></div>
+                                <div class="admin-menu-content">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <a class="d-flex align-items-center" href="{{ url('/logout') }}">Cerrar Sesión <i class="ti-shift-right ml-2 font-20"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                 </ul>
                 <!-- END TOP-RIGHT TOOLBAR-->
             </div>
@@ -133,12 +148,12 @@
                             <span class="nav-label">ESTABLECIMIENTOS</span>
                         </a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="">
                             <i class="sidebar-item-icon la la-file-text-o" style="font-size: 23px;"></i>
                             <span class="nav-label">TEXTOS</span>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </nav>
@@ -205,13 +220,16 @@
         <script src="{{ mix('js/admin.controllers.js') }}"></script>
         <script src="{{ mix('js/admin.services.js') }}"></script>
 
-
         {{-- <link rel="stylesheet"; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css"> --}}
         <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+
+        <script src="{{ asset('js/moment.min.js') }}"></script>
+        <script src="{{ asset('js/angular-moment.min.js') }}"></script>
+        <script src="{{ asset('js/es.js') }}"></script>
         
         <!-- End Scripts -->
         <script>
-            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable']);
+            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable','angularMoment']);
                 app.config(function($interpolateProvider){
                 $interpolateProvider.startSymbol('<%');
                 $interpolateProvider.endSymbol('%>');

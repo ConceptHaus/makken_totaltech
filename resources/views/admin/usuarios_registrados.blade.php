@@ -8,9 +8,15 @@
                 <h5 class="font-strong mb-4">USUARIOS REGISTRADOS</h5>
                 <div class="flexbox mb-4">
                     <div class="flexbox"></div>
-                    <div class="input-group-icon input-group-icon-left input-group-search mr-3">
-                        <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
-                        <input class="form-control form-control-rounded form-control-solid" id="key-search" ng-model="search" type="text" placeholder="Buscar ...">
+                    <div class="flexbox mb-4">
+                        <div class="flexbox"></div>
+                        <div class="flexbox">
+                            <div class="input-group-icon input-group-icon-left mr-3">
+                                <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
+                                <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text" placeholder="Buscar ...">
+                            </div>
+                            <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/usuarios/nuevo') }}">Agregar usuario</a>
+                        </div>
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -33,7 +39,7 @@
                                         <td><% usuario.correo %></td>
                                         <td><% usuario.telefono %></td>
                                         <td><% usuario.tickets.length %></td>
-                                        <td><% usuario.created_at  %></td>
+                                        <td class="capitalize"><% usuario.created_at | amDateFormat:'D, MMMM' %></td>
                                         <td>
                                             <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% usuario.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                         </td>

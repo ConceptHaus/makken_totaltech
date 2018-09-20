@@ -7,6 +7,13 @@ var app = angular.module('AdminFactory', ['angularApp']);
 
 app.factory('AdminFactory', function($http){
     return{
+        register: function(data){
+            return $http({
+                method:'POST',
+                url:'/registro',
+                data:data
+            })
+        },
         allUsers: function(){
             return $http({
                 method:'GET',

@@ -7,7 +7,7 @@
             <span class="mr-4 static-badge badge-blue"><i class="la la-user"></i></span>
             <div>
                 <h5 class="font-strong">Detalle Usuario</h5>
-                <div class="text-light">{{$user->nombre}}</div>
+                <div class="text-light">{{$user->nombre}} {{$user->apellido}}</div>
             </div>
         </div>
         <div class="row">
@@ -17,7 +17,7 @@
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
-                            <div class="col-8">{{$user->nombre}}</div>
+                            <div class="col-8">{{$user->nombre}} {{$user->apellido}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Dirección</div>
@@ -62,8 +62,7 @@
                                     <td>{{$ticket->id_ticket}}</td>
                                     <td>{{$ticket->no_ticket}}</td>
                                     <td>
-                                        <img class="mr-3" src="./assets/img/products/16.jpg" width="60" />
-                                        {{$ticket->establecimiento->nombre}}
+                                        <img class="mr-3" src="{{$ticket->establecimiento->url}}" width="60" />
                                     </td>
                                     <td>{{$ticket->created_at}}</td>
                                     <td>${{$ticket->monto}}</td>

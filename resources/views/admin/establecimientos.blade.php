@@ -14,7 +14,7 @@
                             <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
                                 placeholder="Buscar ...">
                         </div>
-                        <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a>
+                        {{-- <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a> --}}
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -23,20 +23,21 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Nombre</th>
-                                <th class="no-sort"></th>
+                                <th>Logo</th>
+                                {{-- <th class="no-sort"></th> --}}
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="establecimiento in establecimientos">
                                 <td><% establecimiento.id_establecimiento %></td>
                                 <td>
-                                    <img class="mr-3" src="{{ asset('img/logos/walmart.png') }}" alt="image" width="90" />
                                     <% establecimiento.nombre %>
                                 </td>
-                                <td>
+                                <td><img class="mr-3" ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" /></td>
+                                {{-- <td>
                                     <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
-                                </td>
+                                </td> --}}
                             </tr>
                             
                             

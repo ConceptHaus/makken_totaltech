@@ -22,10 +22,7 @@ class WelcomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-
         $data['ganadores'] = Ganador::getAllGanadores();
-
-
         return view('welcome', $data);
     }
     public function getEstablecimientos(){

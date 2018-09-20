@@ -9,12 +9,10 @@
                 <div class="flexbox mb-4">
                     <div class="flexbox">
                         <label class="mb-0 mr-2">Filtro por semana:</label>
-                        <select class="selectpicker show-tick form-control" id="type-filter" title="Selecciona"
-                            data-style="btn-solid" data-width="150px">
-                            <option>1 Semana</option>
-                            <option>2 Semana</option>
-                            <option>3 Semana</option>
-                            <option>4 Semana</option>
+                        <select ng-model="semana.selectTypeSemana" class="selectpicker show-tick form-control" title="Selecciona" data-style="btn-solid">
+                            @foreach ($semanas as $semana)
+                                <option value="{{$semana->id_semana}}">{{$semana->nombre}}</option>
+                            @endforeach
                             <option value="">Todas</option>
                         </select>
                     </div>
@@ -40,21 +38,19 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="ganador in ganadores | filter:search" ng-cloak>
+                            <tr ng-repeat="ganador in ganadores | filter:search | filter:{id_semana:semana.selectTypeSemana}" ng-cloak>
                                 <td><% ganador.id_ganador %></td>
                                 <td><% ganador.user.nombre %></td>
                                 <td><% ganador.user.correo %></td>
                                 <td><% ganador.user.telefono %></td>
                                 <td><% ganador.ticket.no_ticket %></td>
-                                <td><% ganador.ticket.monto %></td>
+                                <td><% ganador.ticket.monto | currency %></td>
                                 <td><% ganador.id_semana %></td>
-                                <td><% ganador.ticket.created_at %></td>
+                                <td class="capitalize"><% ganador.ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
-                                    <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/1') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
+                                    <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% ganador.user.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>
                             </tr>
-                            
-                            
                         </tbody>
                     </table>
                 </div>
