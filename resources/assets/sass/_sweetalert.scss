@@ -1,0 +1,28 @@
+.swal2-title {
+  color: $azul !important;
+  font-style: normal !important;
+}
+
+.close {
+    float: right;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    color: $azul !important;
+    text-shadow: none;
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    right: 11px;
+}
+
+.swal2-confirm {
+  background: $amarillo !important;
+  border-radius: 50px !important;
+  color: $azul !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 10px 12px !important;
+  width: 200px !important;
+}

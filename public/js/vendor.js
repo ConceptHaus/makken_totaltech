@@ -19845,7 +19845,7 @@ bindJQuery();publishExternalAPI(angular);angular.module("ngLocale",[],["$provide
 /***/ "./resources/assets/sass/app.scss":
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \nundefined\n^\n      File to import not found or unreadable: /Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/resources/assets/sass/_general.scss.\n      in /Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/resources/assets/sass/app.scss (line 34, column 1)\n    at runLoaders (/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/neo-async/async.js:7974:18)\n    at options.error (/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

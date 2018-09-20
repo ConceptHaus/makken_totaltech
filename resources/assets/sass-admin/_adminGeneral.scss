@@ -1,0 +1,62 @@
+.header {
+    .admin-dropdown-menu {
+        transform: translate3d(4px, 55px, 0px)!important;
+        .dropdown-arrow {
+            &:after {
+                background-color: $blanco;
+                box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+    .admin-menu-content {
+        a {
+            &:hover {
+                color: $azul;
+            }
+        }
+    }
+}
+.admin-view {
+    .table-responsive {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+.fa-star, .fa-star-o {
+    border-color: $azul!important;
+    color: $azul!important;
+}
+.content-img-ticket {
+    .img-default-ticket {
+        background: $gris_background;
+        margin: auto;
+        padding: 30px;
+    }
+    .flexbox-b {
+        float: right;
+    }
+}
+
+.modal {
+    .close {
+        color: $azul;
+        text-align: right;
+        z-index: 99;
+    }
+    .modal-title {
+        color: #213e97;
+        font-weight: 600;
+    }
+}
+
+.table {
+    thead {
+        th {
+            background: $gris_background;
+        }
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

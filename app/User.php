@@ -14,8 +14,11 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    public $table = 'users';
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'id_usuario','nombre','apellido', 'correo', 'password','telefono'
     ];
 
     /**
@@ -26,4 +29,29 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function tickets(){
+      return $this->hasMany('App\Ticket', 'id_usuario','id');
+    }
+
+    public function direccion(){
+      return $this->hasOne('App\Direccion', 'id_usuario','id');
+    }
+
+    public function ganador(){
+      return $this->hasMany('App\Ganador', 'id_usuario','id');
+    }
+
+    public function scopegetAllUsers($query){
+      return $query->with('tickets')
+                    ->with('direccion')
+                    ->with('ganador')->get();
+    }
+
+    public function scopegetUser($query,$id){
+      return $query->with('tickets.establecimiento')
+                   ->with('direccion')
+                   ->with('ganador')
+                   ->where('id',$id)->first();
+    }
 }

@@ -68,7 +68,54 @@
 /***/ "./resources/assets/js/angular-app/admin/admin.services.js":
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/concepthausdev/Proyectos_L/Proyectos_2018/Makken/makken_totaltech/resources/assets/js/angular-app/admin/admin.services.js'\n    at Error (native)");
+/**
+ *  Module
+ *
+ * Description
+ */
+var app = angular.module('AdminFactory', ['angularApp']);
+
+app.factory('AdminFactory', function ($http) {
+    return {
+        allUsers: function allUsers() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/users'
+            });
+        },
+        oneUser: function oneUser(id) {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/users/' + id
+            });
+        },
+        establecimientos: function establecimientos() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/establecimientos'
+            });
+        },
+        ganadores: function ganadores() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/ganadores'
+            });
+        },
+        tickets: function tickets() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/tickets'
+            });
+        },
+        setGanador: function setGanador(data) {
+            return $http({
+                method: 'POST',
+                url: '/ganador',
+                data: data
+            });
+        }
+    };
+});
 
 /***/ }),
 

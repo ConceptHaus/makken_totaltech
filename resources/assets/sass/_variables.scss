@@ -1,13 +1,15 @@
 // =========== Paleta de colores Total Tech ===========
-$azul: #263A81;
+$azul: #223F97;
 // Títulos
-$azul_2: #223F97;
+$azul_2: #253B81;
+$azul_3: #C5D0E9;
 $amarillo: #F7E300;
 // Línea
 $gris: #D5D4D4;
 $gris_claro: #F0F0F0;
 // Algunos textos
 $gris_oscuro: #626262;
+$blanco: #FFF;
 
 
 // =========== Generales ===========
@@ -31,12 +33,13 @@ $brand-danger: #bf5329;
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
+// $font-size-base: 14px;
+$font-size-base: 1rem;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
+// $navbar-default-bg: #fff;
 
 // Buttons
 $btn-default-color: $text-color;
