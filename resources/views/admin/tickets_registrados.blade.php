@@ -37,14 +37,20 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-                                <td><% ticket.monto %></td>
+                                <td>$<% ticket.monto %></td>
                                 <td>
                                     <% ticket.establecimiento.nombre %>
                                     {{-- <img class="mr-3" src="{{ asset('img/logos/chedraui.png') }}" alt="image" width="90" /> --}}
                                 </td>
                                 <td><% ticket.created_at %></td>
                                 <td>
-                                    <span data-toggle="modal" data-target="#modalGanador<% ticket.id_ticket %>">
+
+                                    <span ng-if="ticket.ganador !=  null">
+                                        <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Este ticket ya es ganador.">
+                                            <i class="fa fa-star"></i>
+                                        </a>
+                                    </span>
+                                    <span ng-if="ticket.ganador == null" data-toggle="modal" data-target="#modalGanador<% ticket.id_ticket %>">
                                         <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario.">
                                             <i class="fa fa-star-o"></i>
                                         </a>
@@ -62,12 +68,15 @@
                                                 <div class="modal-body p-4">
                                                     <div class="form-group mb-4">
                                                         <p>Selecciona la semana correspondiente al ganador.</p>
-                                                        <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="semana" data-style="btn-solid">
+                                                        <select class="form-control" id="type-filter" title="Semanas ganadores" ng-model="ticketganador.id_semana"  data-style="btn-solid">
+                                                            <option value="" disabled selectes>Semana</option>
                                                             <option value="1">1 Semana</option>
                                                             <option value="2">2 Semana</option>
                                                             <option value="3">3 Semana</option>
                                                             <option value="4">4 Semana</option>
                                                         </select>
+                                                        <input type="text" ng-model="ticketganador.id_ticket" hidden ng-init="ticketganador.id_ticket = ticket.id_ticket">
+                                                        <input type="text" ng-model="ticketganador.id_usuario" hidden ng-init="ticketganador.id_usuario = ticket.user.id">
                                                     </div>
                                                     <div class="form-group mb-4">
                                                         <h5 class="text-center">No. Ticket</h5>
@@ -76,7 +85,8 @@
                                                     <p>¿Está seguro que los datos son correctos y estas eligiendo este ticket como ganador?</p>
                                                 </div>
                                                 <div class="modal-footer bg-primary-50">
-                                                    <button class="btn btn-primary btn-rounded mr-3" type="button">Acepto</button>
+                                                    
+                                                    <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(ticketganador)">Aceptar</button>
                                                     <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
                                                 </div>
                                             </form>
