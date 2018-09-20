@@ -30,7 +30,7 @@ class AdminController extends Controller {
      * @return void
      */
     public function __construct(){
-        $this->middleware('auth')->except('logout');
+        $this->middleware('admin')->except('logout');
     }
 
     //VISTAS ADMIN
