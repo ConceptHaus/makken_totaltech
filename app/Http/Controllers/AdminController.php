@@ -29,9 +29,9 @@ class AdminController extends Controller {
      *
      * @return void
      */
-    // public function __construct(){
-    //     $this->middleware('admin')->except('logout');
-    // }
+    public function __construct(){
+        $this->middleware('auth')->except('logout');
+    }
 
     //VISTAS ADMIN
     public function usuariosRegistrados() {
