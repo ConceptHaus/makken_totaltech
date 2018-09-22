@@ -21,7 +21,7 @@
     <div class="row text-center justify-content-center">
               <div class="col-10 content-table-tickets content-table">
                 @if ($tickets->count() == 0)
-                  <h5 class="azul-dos mb-3">Aún no haz registrado ningún ticket.</h5>
+                  <h5 class="azul-dos mb-3">Aún no has registrado ningún ticket.</h5>
                   <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
                     <span>¡REGISTRA!</span> TU TICKET
                   </a>

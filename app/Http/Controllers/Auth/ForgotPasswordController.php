@@ -4,6 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use App\PasswordReset;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
+
+use Mail;
+use App\User;
 
 class ForgotPasswordController extends Controller
 {
@@ -29,4 +36,61 @@ class ForgotPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function forgot(Request $request){
+        $user_correo = $request->correo;
+
+        $user = User::where('correo','=',$user_correo)->first();
+
+        $token = Str::random(60);
+
+        $reset = new PasswordReset;
+        $reset->email = $user_correo;
+        $reset->token = $token;
+
+        $array['token'] = $token;
+        $array['email'] = $user_correo;
+
+        if($reset->save()){
+          Mail::send('auth.email.email',$array , function ($message) use ($array){
+                //$message->from('comunicaciones​@mundoceys.com','Mundo Ceys');
+                $message->to($array['email']);
+                //$message->subject('Recuperación de Contraseña');
+        });
+
+        return redirect ('/');
+
+      }
+
+    }
+
+    public function reset_view($token){
+
+      $reset = PasswordReset::where('token','=',$token)->first();
+
+      if($reset){
+        $data['email'] = $reset->email;
+        $data['token'] = $token;
+        return view('auth.passwords.reset', $data);
+      }
+
+      return redirect('/');
+
+
+    }
+  public function reset(Request $request){
+
+    $email = $request->correo;
+    echo $email;
+    $user = User::where('correo','=', $email)->first();
+    $user->password = bcrypt($request->password);
+    $user->remember_token = Str::random(60);
+
+    if($user->save()){
+      return redirect('/login');
+    }
+
+    return response('error',200);
+
+  }
 }

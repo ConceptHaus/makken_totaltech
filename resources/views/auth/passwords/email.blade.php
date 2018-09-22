@@ -12,7 +12,7 @@
                         </div>
                     @endif
 
-                    <form class="form-horizontal form-ajust" method="POST" action="{{ route('password.email') }}">
+                    <form class="form-horizontal form-ajust" method="POST" action="{{ url('/forgot') }}">
                         {{ csrf_field() }}
                         <h3>¿OLVIDASTE TU CONTRASEÑA?</h3>
                         <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
