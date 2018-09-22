@@ -30,14 +30,14 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-10">
+                            <div class="col-md-10 pointer">
                                 {{-- <label class="custom-file">
                                   <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
                                   <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="custom-file-input">
 
                                   </label> --}}
 
-                                    <a class='btn-submit-upload' href='javascript:;'>
+                                    <a class='btn-submit-upload pointer' href='javascript:;'>
                                       <i class="fas fa-cloud-upload-alt"></i>
                                       <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="inputfile" name="file" onchange='$("#upload-file-info").html($(this).val());'>
                                     </a>

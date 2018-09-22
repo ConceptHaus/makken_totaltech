@@ -112,8 +112,11 @@ class RegisterController extends Controller
         if($validator->passes()){    
 
                 $user = $this->createUser($input);
-                if($input['admin'] != 1) {
+
+                if($request->admin == 0) {
                     Auth::login($user,true);
+                    $json['success'] = 'success_register';
+                    return response($json,200);
                 }  
 
                 $json['success'] = 'success_register';

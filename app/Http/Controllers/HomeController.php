@@ -15,36 +15,33 @@ use App\User;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+/**
+* Create a new controller instance.
+*
+* @return void
+*/
+public function __construct()
+{
+$this->middleware('auth');
+}
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index() {
-        $disk = Storage::disk('s3');
-        $user = auth()->user();
-        $tickets['tickets'] = Ticket::GetAllTicketsFromUser($user->id);
-        foreach ($tickets['tickets'] as $ticket){
-            Storage::setVisibility($ticket->url,'public');
-            $ticket->url = $disk->url($ticket->url);
-        }
-       
-        return view('home', $tickets);
-    }
-    public function addNewTicket() {
-         
-        return view('add_ticket');
-    }
+/**
+* Show the application dashboard.
+*
+* @return \Illuminate\Http\Response
+*/
+public function index() {
+$disk = Storage::disk('s3');
+$user = auth()->user();
+$tickets['tickets'] = Ticket::GetAllTicketsFromUser($user->id);
+foreach ($tickets['tickets'] as $ticket){
+Storage::setVisibility($ticket->url,'public');
+$ticket->url = $disk->url($ticket->url);
+}
+return view('home', $tickets);
+}
+public function addNewTicket() {
+return view('add_ticket');
+}
 
-    
 }

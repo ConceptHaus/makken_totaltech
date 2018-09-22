@@ -6,16 +6,16 @@
         <div class="col-md-8 offset-md-2">
             <div class="panel panel-default">
                 <div class="panel-body text-center">
-                    <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
+                    <form class="form-horizontal" method="POST" action="{{ url('/resetpassword') }}">
                         {{ csrf_field() }}
                         <h3>¿OLVIDASTE TU CONTRASEÑA?</h3>
                         <input type="hidden" name="token" value="{{ $token }}">
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <input id="email" type="email" class="form-control" name="email" value="{{ $email or old('email') }}" placeholder="Ingresa tu correo" required autofocus>
-                            @if ($errors->has('email'))
+                        <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
+                            <input id="correo" type="email" class="form-control" name="correo" value="{{ $email or old('correo') }}" placeholder="Ingresa tu correo" required autofocus>
+                            @if ($errors->has('correo'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('email') }}</strong>
+                                    <strong>{{ $errors->first('correo') }}</strong>
                                 </span>
                             @endif
                         </div>
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-submit">RESTABLECER CONTRASEÑA</button>
+                            <button type="submit" class="btn btn-submit">RESTABLECER</button>
                         </div>
                     </form>
                 </div>

@@ -24,7 +24,10 @@ Auth::routes();
 //Vistas
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
-
+//Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@resetPassword');
+Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
+Route::get('/reset/{token}', 'Auth\ForgotPasswordController@reset_view');
+Route::post('/resetpassword', 'Auth\ForgotPasswordController@reset');
 //Funcionalidades
 Route::get('/api/v1/cp/{cp}','WelcomeController@getCP');
 Route::get('/api/v1/establecimientos','ApiController@getEstablecimientos');
@@ -55,3 +58,7 @@ Route::get('/admin/tickets/nuevo', 'AdminController@nuevoTicket');
 Route::get('/admin/establecimientos', 'AdminController@establecimientos');
 Route::get('/admin/establecimientos/nuevo', 'AdminController@nuevoEstablecimiento');
 Route::get('/admin/establecimientos/editar', 'AdminController@editarEstablecimiento');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
