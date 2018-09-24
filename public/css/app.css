@@ -10127,12 +10127,24 @@ footer p {
   font-size: 0.8rem;
 }
 
+footer p.no-margin {
+  margin: 0;
+}
+
 footer p a {
   text-decoration: none;
 }
 
 footer p a:hover {
   color: inherit;
+}
+
+footer p a.mail-footer {
+  font-size: 11px;
+}
+
+.modal-link {
+  color: #636b6f !important;
 }
 
 b,

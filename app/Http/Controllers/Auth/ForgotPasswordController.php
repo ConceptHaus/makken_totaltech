@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use App\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Validator;
 
 
 use Mail;
@@ -37,30 +38,44 @@ class ForgotPasswordController extends Controller
         $this->middleware('guest');
     }
 
+    public function validadorEmail (array $data){
+        return Validator::make($data, [
+          'correo' => 'required|email|exists:users'
+        ]);
+    }
+
     public function forgot(Request $request){
-        $user_correo = $request->correo;
 
-        $user = User::where('correo','=',$user_correo)->first();
+      $validador = $this->validadorEmail($request->all());
 
-        $token = Str::random(60);
+      if ($validador->passes()) {
+            $user_correo = $request->correo;
 
-        $reset = new PasswordReset;
-        $reset->email = $user_correo;
-        $reset->token = $token;
+            $user = User::where('correo','=',$user_correo)->first();
 
-        $array['token'] = $token;
-        $array['email'] = $user_correo;
+            $token = Str::random(60);
 
-        if($reset->save()){
-          Mail::send('auth.email.email',$array , function ($message) use ($array){
-                //$message->from('comunicaciones​@mundoceys.com','Mundo Ceys');
-                $message->to($array['email']);
-                //$message->subject('Recuperación de Contraseña');
-        });
+            $reset = new PasswordReset;
+            $reset->email = $user_correo;
+            $reset->token = $token;
 
-        return redirect ('/');
+            $array['token'] = $token;
+            $array['email'] = $user_correo;
 
-      }
+            if($reset->save()){
+              Mail::send('auth.email.email',$array , function ($message) use ($array){
+                    //$message->from('comunicaciones​@mundoceys.com','Mundo Ceys');
+                    $message->to($array['email']);
+                    //$message->subject('Recuperación de Contraseña');
+            });
+          }
+
+          $json['success'] = 'success_register';
+          return response($json,200);
+        }else {
+          $json['fail'] = $validador->errors()->toArray();
+          return response($json,400);
+        }
 
     }
 

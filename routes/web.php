@@ -24,7 +24,7 @@ Auth::routes();
 //Vistas
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
-//Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@resetPassword');
+//Reset Password
 Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
 Route::get('/reset/{token}', 'Auth\ForgotPasswordController@reset_view');
 Route::post('/resetpassword', 'Auth\ForgotPasswordController@reset');

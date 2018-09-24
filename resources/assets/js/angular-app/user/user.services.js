@@ -20,6 +20,13 @@ app.factory('UserFactory', function($http){
                 url:'/registro',
                 data:data
             })
+        },
+        forgot: function(data){
+          return $http({
+            method:'POST',
+            url:'/forgot',
+            data:data
+          })
         }
     }
 })
