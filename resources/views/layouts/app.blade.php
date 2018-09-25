@@ -146,10 +146,12 @@
   <script src="{{ mix('js/admin.services.js') }}"></script>
   <script src="{{ mix('js/home.controllers.js') }}"></script>
   <script src="{{ mix('js/home.services.js') }}"></script>
+  <script src="{{ mix('js/forgotPassword.controllers.js') }}"></script>
+  <script src="{{ mix('js/forgotPassword.services.js') }}"></script>
 
   <!-- End Scripts -->
   <script>
-    var app = angular.module('angularApp',['userController','userFactory','ngFileUpload']);
+    var app = angular.module('angularApp',['userController','userFactory','forgotPasswordController', 'forgotFactory','ngFileUpload']);
     app.config(function($interpolateProvider){
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');

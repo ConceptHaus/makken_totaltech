@@ -79,33 +79,5 @@ class ForgotPasswordController extends Controller
 
     }
 
-    public function reset_view($token){
-
-      $reset = PasswordReset::where('token','=',$token)->first();
-
-      if($reset){
-        $data['email'] = $reset->email;
-        $data['token'] = $token;
-        return view('auth.passwords.reset', $data);
-      }
-
-      return redirect('/');
-
-
-    }
-  public function reset(Request $request){
-
-    $email = $request->correo;
-    echo $email;
-    $user = User::where('correo','=', $email)->first();
-    $user->password = bcrypt($request->password);
-    $user->remember_token = Str::random(60);
-
-    if($user->save()){
-      return redirect('/login');
-    }
-
-    return response('error',200);
-
-  }
+    
 }

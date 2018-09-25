@@ -26,8 +26,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ticket', 'HomeController@addNewTicket');
 //Reset Password
 Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
-Route::get('/reset/{token}', 'Auth\ForgotPasswordController@reset_view');
-Route::post('/resetpassword', 'Auth\ForgotPasswordController@reset');
+Route::get('/reset/{token}', 'Auth\ResetPasswordController@reset_view');
+Route::post('/resetpassword', 'Auth\ResetPasswordController@reset');
 //Funcionalidades
 Route::get('/api/v1/cp/{cp}','WelcomeController@getCP');
 Route::get('/api/v1/establecimientos','ApiController@getEstablecimientos');

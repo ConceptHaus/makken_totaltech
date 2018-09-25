@@ -6,36 +6,7 @@
 var app = angular.module('userController',['angularApp']);
 
 app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
-  $scope.forgot2 = function (correo) {
-      //console.log(user);
-      swal({
-          title: 'Espera...',
-          text: 'Estamos verificando tus datos.',
-          imageUrl: '../img/icons/Spinner-1s-200px.gif',
-          showConfirmButton: false
-      });
-      UserFactory.forgot(correo).then(function(res){
-        swal({
-            title:"¡Todo bien!",
-            text:"Revisa tu correo electrónico",
-            confirmButtonText: 'Regresar a mi cuenta'
-        }).then((result)=>{
-            if(result.value){
-                $window.location.href="/login";
-            }
-        })
-      }, function(err){
-        swal({
-            title:"¡Ups algo salio mal!",
-            text:"{{ err }}",
-            confirmButtonText: 'Regresar a mi cuenta'
-        }).then((result)=>{
-            if(result.value){
-                $window.location.href="/home";
-            }
-        })
-      });
-  };
+  
     $scope.login = function(user){
         console.log(user);
         swal({

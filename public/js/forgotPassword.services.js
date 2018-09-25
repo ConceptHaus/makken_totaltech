@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/assets/js/angular-app/user/user.services.js":
+/***/ "./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js":
 /***/ (function(module, exports) {
 
 /**
@@ -73,33 +73,33 @@
  *
  * Description
  */
-var app = angular.module('userFactory', ['angularApp']);
+var app = angular.module('forgotFactory', ['angularApp']);
 
-app.factory('UserFactory', function ($http) {
-    return {
-        login: function login(data) {
-            return $http({
-                method: 'POST',
-                url: '/login',
-                data: data
-            });
-        },
-        register: function register(data) {
-            return $http({
-                method: 'POST',
-                url: '/registro',
-                data: data
-            });
-        }
-    };
+app.factory('ForgotFactory', function ($http) {
+  return {
+    forgot: function forgot(data) {
+      return $http({
+        method: 'POST',
+        url: '/forgot',
+        data: data
+      });
+    },
+    reset2: function reset2(data) {
+      return $http({
+        method: 'POST',
+        url: '/resetpassword',
+        data: data
+      });
+    }
+  };
 });
 
 /***/ }),
 
-/***/ 2:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/assets/js/angular-app/user/user.services.js");
+module.exports = __webpack_require__("./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js");
 
 
 /***/ })
