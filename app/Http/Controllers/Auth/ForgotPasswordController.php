@@ -8,8 +8,6 @@ use App\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Validator;
-
-
 use Mail;
 use App\User;
 
@@ -64,9 +62,9 @@ class ForgotPasswordController extends Controller
 
             if($reset->save()){
               Mail::send('auth.email.email',$array , function ($message) use ($array){
-                    //$message->from('comunicaciones​@mundoceys.com','Mundo Ceys');
+                    $message->subject('Recuperación de Contraseña');
+                    $message->from('privacidad@makken.com.mx','Mundo Ceys');
                     $message->to($array['email']);
-                    //$message->subject('Recuperación de Contraseña');
             });
           }
 
@@ -79,5 +77,5 @@ class ForgotPasswordController extends Controller
 
     }
 
-    
+
 }
