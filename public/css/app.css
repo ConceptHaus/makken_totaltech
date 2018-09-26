@@ -10127,12 +10127,24 @@ footer p {
   font-size: 0.8rem;
 }
 
+footer p.no-margin {
+  margin: 0;
+}
+
 footer p a {
   text-decoration: none;
 }
 
 footer p a:hover {
   color: inherit;
+}
+
+footer p a.mail-footer {
+  font-size: 11px;
+}
+
+.modal-link {
+  color: #636b6f !important;
 }
 
 b,
@@ -10349,6 +10361,17 @@ strong {
 }
 
 .swal2-confirm {
+  background: #F7E300 !important;
+  border-radius: 50px !important;
+  color: #223F97 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 10px 12px !important;
+  width: 200px !important;
+}
+
+.swal2-popup .swal2-styled.swal2-cancel {
   background: #F7E300 !important;
   border-radius: 50px !important;
   color: #223F97 !important;

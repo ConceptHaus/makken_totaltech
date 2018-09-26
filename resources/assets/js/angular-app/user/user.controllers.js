@@ -6,7 +6,7 @@
 var app = angular.module('userController',['angularApp']);
 
 app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
-
+  
     $scope.login = function(user){
         console.log(user);
         swal({
@@ -93,7 +93,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
         }else{
             $window.location.href = '/home';
         }
-        
+
     }
 
     var error = function(errors){

@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, {
   font-weight: 600;
   line-height: 1;
   color: $amarillo;
@@ -33,6 +33,7 @@ h1, .h1 {
   font-size: 3rem;
 }
 
+
 a {
   text-decoration: underline;
   color: white;
@@ -44,13 +45,25 @@ footer {
     font-weight: 100;
     font-size: 0.8rem;
 
+    &.no-margin {
+      margin: 0;
+    }
+
     a {
       text-decoration: none;
       &:hover {
         color: inherit;
       }
+
+      &.mail-footer {
+        font-size: 11px;
+      }
     }
   }
+}
+
+.modal-link {
+  color:$text-color !important;
 }
 
 b, strong {

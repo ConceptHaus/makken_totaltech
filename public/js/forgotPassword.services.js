@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/assets/js/angular-app/admin/admin.services.js":
+/***/ "./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js":
 /***/ (function(module, exports) {
 
 /**
@@ -73,63 +73,33 @@
  *
  * Description
  */
-var app = angular.module('AdminFactory', ['angularApp']);
+var app = angular.module('forgotFactory', ['angularApp']);
 
-app.factory('AdminFactory', function ($http) {
-    return {
-        register: function register(data) {
-            return $http({
-                method: 'POST',
-                url: '/registro',
-                data: data
-            });
-        },
-        allUsers: function allUsers() {
-            return $http({
-                method: 'GET',
-                url: '/api/v1/users'
-            });
-        },
-        oneUser: function oneUser(id) {
-            return $http({
-                method: 'GET',
-                url: '/api/v1/users/' + id
-            });
-        },
-        establecimientos: function establecimientos() {
-            return $http({
-                method: 'GET',
-                url: '/api/v1/establecimientos'
-            });
-        },
-        ganadores: function ganadores() {
-            return $http({
-                method: 'GET',
-                url: '/api/v1/ganadores'
-            });
-        },
-        tickets: function tickets() {
-            return $http({
-                method: 'GET',
-                url: '/api/v1/tickets'
-            });
-        },
-        setGanador: function setGanador(data) {
-            return $http({
-                method: 'POST',
-                url: '/ganador',
-                data: data
-            });
-        }
-    };
+app.factory('ForgotFactory', function ($http) {
+  return {
+    forgot: function forgot(data) {
+      return $http({
+        method: 'POST',
+        url: '/forgot',
+        data: data
+      });
+    },
+    reset2: function reset2(data) {
+      return $http({
+        method: 'POST',
+        url: '/resetpassword',
+        data: data
+      });
+    }
+  };
 });
 
 /***/ }),
 
-/***/ 8:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/assets/js/angular-app/admin/admin.services.js");
+module.exports = __webpack_require__("./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js");
 
 
 /***/ })
