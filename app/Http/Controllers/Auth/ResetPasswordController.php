@@ -10,7 +10,9 @@ use App\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
-use Illuminate\Support\Facades\Validator;
+use App\PasswordReset;
+use Validator;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 class ResetPasswordController extends Controller
 {
@@ -47,32 +49,45 @@ class ResetPasswordController extends Controller
     protected function validatorReset(array $data)
     {
         return Validator::make($data, [
-            'correo' => 'required|string|exists:users,email',
-            'password' => 'required|string|min:6|same:password_confirmation',
+            'correo' => 'required|string|exists:users',
+            'password' => 'required|string|min:6',
         ]);
     }
 
-    // protected function resetPassword(Request $request)
-    // {
-    //     $input = $request->all();
-    //
-    //     $validator = $this->validatorReset($input);
-    //     if ($validator->passes()) {
-    //     $user = User::where('user.correo','=', $request->correo)->first();
-    //     $user->password = bcrypt($request->password);
-    //     $user->remember_token = Str::random(60);
-    //     $user->save();
-    //
-    //
-    //     Auth::login($user,true);
-    //
-    //     $json['success'] = "Correcto";
-    //     return json_encode($json);
-    //   }else {
-    //     $json['errors'] = "Error";
-    //     // $json['token'] = $this->$request->token;
-    //     return json_encode($json);
-    //   }
-    //
-    // }
+    public function reset_view($token){
+
+      $reset = PasswordReset::where('token','=',$token)->first();
+
+      if($reset){
+        $data['email'] = $reset->email;
+        $data['token'] = $token;
+        return view('auth.passwords.reset', $data);
+      }
+
+      return redirect('/');
+
+
+    }
+  public function reset(Request $request){
+
+      $validador = $this->validatorReset($request->all());
+
+      if ($validador->passes()) {
+        $email = $request->correo;
+
+        $user = User::where('correo','=', $email)->first();
+        $user->password = bcrypt($request->password);
+        $user->remember_token = Str::random(60);
+
+        if($user->save()){
+          Auth::login($user);
+          
+          $json['success'] = 'success_register';
+          return response($json,200);
+        }
+      }else {
+      $json['fail'] = $validador->errors()->toArray();
+      return response($json,400);
+    }
+  }
 }
