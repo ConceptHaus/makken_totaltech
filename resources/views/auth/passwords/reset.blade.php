@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <input ng-model="resetP.password" id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar contraseña" required>
+                            <input ng-model="resetP.password_confirmation" id="password_confirmation" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar contraseña" required>
                             @if ($errors->has('password_confirmation'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('password_confirmation') }}</strong>
