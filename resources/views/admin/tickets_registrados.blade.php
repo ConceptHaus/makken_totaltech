@@ -84,7 +84,7 @@
                                                     <p>¿Está seguro que los datos son correctos y estas eligiendo este ticket como ganador?</p>
                                                 </div>
                                                 <div class="modal-footer bg-primary-50">
-                                                    
+
                                                     <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(ticketganador)">Aceptar</button>
                                                     <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
                                                 </div>
@@ -137,7 +137,7 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>                    
+                    </table>
                 </div>
             </div>
         </div>

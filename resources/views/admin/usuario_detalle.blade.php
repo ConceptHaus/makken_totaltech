@@ -41,6 +41,8 @@
                         </div>
                     </div>
                 </div>
+                <button class="btn btn-rounded btn-primary btn-air" type="button" name="posibleGanador">Posible Ganador</button>
+                <button class="btn btn-rounded btn-primary btn-air" type="button" name="ganador">Ganador</button>
             </div>
             <div class="col-xl-7">
                 <div class="ibox">

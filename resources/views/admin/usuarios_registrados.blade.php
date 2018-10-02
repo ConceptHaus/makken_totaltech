@@ -28,6 +28,7 @@
                                         <th>Correo</th>
                                         <th>Teléfono</th>
                                         <th>No. Tickets</th>
+                                        <th>Monto Total</th>
                                         <th>Fecha</th>
                                         <th class="sort"></th>
                                     </tr>
@@ -39,6 +40,7 @@
                                         <td><% usuario.correo %></td>
                                         <td><% usuario.telefono %></td>
                                         <td><% usuario.tickets.length %></td>
+                                        <td>$100</td>
                                         <td class="capitalize"><% usuario.created_at | amDateFormat:'D, MMMM' %></td>
                                         <td>
                                             <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% usuario.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>

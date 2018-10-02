@@ -71,6 +71,11 @@
 
   {{-- End Content --}}
 
+  {{-- Botónes en móvil --}}
+  <div class="BotonesFooter">
+  		<a class="btn1" href="https://wa.me/5543427822" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+	</div>
+
   <!-- Footer -->
   @if (Request::path() == '/' || Request::path() === 'home')
     <footer>
