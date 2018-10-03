@@ -12,7 +12,7 @@
                     <h3>REGÍSTRATE</h3>
                     <form class="form-horizontal form-ajust" >
                         {{ csrf_field() }}
-                        <input ng-model="user.admin" name="admin" ng-init="user.admin = 0" type="text" hidden>
+                        <input ng-model="user.registro_admin" name="registro_admin" ng-init="user.registro_admin = 0" type="text" hidden>
                         <div class="form-row">
                             <div class="col form-group">
                                 <input ng-class="{'invalido': errors.nombre }" ng-model="user.nombre" id="name" type="text" class="form-control" name="name"  placeholder="Nombre" required autofocus>

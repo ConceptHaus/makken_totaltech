@@ -28,10 +28,11 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Nombre</th>
+                                <th>Veces Ganadas</th>
                                 <th>Correo</th>
                                 <th>Teléfono</th>
-                                <th>No. Ticket</th>
-                                <th>Monto</th>
+                                <th>Cantidad de Tickets</th>
+                                <th>Monto Acumulado</th>
                                 <th>Semana</th>
                                 <th>Fecha</th>
                                 <th class="no-sort"></th>
@@ -41,9 +42,10 @@
                             <tr ng-repeat="ganador in ganadores | filter:search | filter:{id_semana:semana.selectTypeSemana}" ng-cloak>
                                 <td><% ganador.id_ganador %></td>
                                 <td><% ganador.user.nombre %></td>
+                                <td>3</td>
                                 <td><% ganador.user.correo %></td>
                                 <td><% ganador.user.telefono %></td>
-                                <td><% ganador.ticket.no_ticket %></td>
+                                <td><% ganador.ticket.length %></td>
                                 <td><% ganador.ticket.monto | currency %></td>
                                 <td><% ganador.id_semana %></td>
                                 <td class="capitalize"><% ganador.ticket.created_at | amDateFormat:'D, MMMM' %></td>
