@@ -134,6 +134,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
                 title: "¡Todo bien!",
                 text: "Tu ticket se ha registrado con éxito",
                 confirmButtonText: 'Regresar a mi cuenta',
+                showCancelButton: true,
                 cancelButtonText: 'Subir otro ticket'
             }).then(function (result) {
                 if (result.value) {
