@@ -44,7 +44,7 @@
                                       <label>Nombre del establecimiento</label>
                                       <div>
                                         <div class="form-group" >
-                                            <input id="establecimiento_otro" ng-model="ticket.establecimiento_otro" type="text" class="form-control" name="establecimiento_otro" placeholder="Nombre del establecimiento" required>
+                                            <input id="otro_establecimiento" ng-model="ticket.otro_establecimiento" type="text" class="form-control" name="otro_establecimiento" placeholder="Nombre del establecimiento" required>
                                         </div>
                                       </div>
                                     </div>

@@ -14,7 +14,7 @@
                                 placeholder="Buscar ...">
                         </div>
                         <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/tickets/nuevo') }}">Agregar
-                            Tickect</a>
+                            Ticket</a>
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -31,16 +31,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="ticket in tickets | filter:search">
+                            <tr ng-repeat="ticket in tickets | filter:search" ng-if="ticket.user.isAdmin == 0">
                                 <td><% ticket.id_ticket %></td>
                                 <td>
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
                                 <td><% ticket.monto | currency %><i class="la la-pencil"></i></td>
-                                <td>
+                                <td ng-if="ticket.id_establecimiento != 9">
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
+                                <td ng-if="ticket.id_establecimiento == 9"><% ticket.otro_establecimiento%></td>
                                 <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
 

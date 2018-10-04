@@ -72,7 +72,7 @@ class UserController extends Controller
                 $ticket->no_ticket = $request->no_ticket;
                 $ticket->monto = $request->monto;
                 $ticket->id_establecimiento = $request->id_establecimiento;
-                $ticket->otro_establecimiento = $request->establecimiento_otro;
+                $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->url = $this->uploadTicketS3($request->fileticket,$user->id);;
                 //Sube archivo
                 //{{ Falta guardar url don't forget. }}

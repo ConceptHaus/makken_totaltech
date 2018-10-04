@@ -36,7 +36,7 @@
                             <div class="col-8">{{$user->created_at}}</div>
                         </div>
                         <div class="row align-items-center mb-3">
-                            <div class="col-4 text-light">Tickets ganadores</div>
+                            <div class="col-4 text-light">Premios Ganados</div>
                             <div class="col-8">{{count($user->ganador)}}</div>
                         </div>
                     </div>
@@ -56,6 +56,7 @@
                                     <th>Establecimiento</th>
                                     <th>Fecha</th>
                                     <th>Monto</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -64,10 +65,39 @@
                                     <td>{{$ticket->id_ticket}}</td>
                                     <td>{{$ticket->no_ticket}}</td>
                                     <td>
+                                      @if ($ticket->id_establecimiento != 9)
                                         <img class="mr-3" src="{{$ticket->establecimiento->url}}" width="60" />
+                                      @else
+                                        {{$ticket->otro_establecimiento}}
+                                      @endif
                                     </td>
                                     <td>{{$ticket->created_at}}</td>
                                     <td>${{$ticket->monto}}</td>
+                                    <td>
+                                      <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
+                                          <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                              <img src="{{ asset('img/icons/camera-blue.svg') }}" width="60">
+                                          </a>
+                                      </span>
+                                      <!-- START MODAL GANADOR -->
+                                      <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                              <div class="modal-dialog" role="document">
+                                                  <form class="modal-content">
+                                                      <div class="modal-header p-4">
+                                                          <h5 class="modal-title">TICKET</h5>
+                                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                              <span aria-hidden="true">×</span>
+                                                          </button>
+                                                      </div>
+                                                      <div class="modal-body p-4">
+                                                          <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                      </div>
+                                                      <div class="modal-footer bg-primary-50"></div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      <!-- END MODAL GANADOR -->
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
