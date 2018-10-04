@@ -62,9 +62,7 @@ class UserController extends Controller
         $user = auth()->user();
         $validador = $this->validadorTickets($request->all());
 
-
         if($validador->passes()){
-
             DB::beginTransaction();
             try{
                 $ticket = new Ticket();
@@ -73,6 +71,7 @@ class UserController extends Controller
                 $ticket->monto = $request->monto;
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
+                $ticket->registro_admin = $request->registro_admin;
                 $ticket->url = $this->uploadTicketS3($request->fileticket,$user->id);;
                 //Sube archivo
                 //{{ Falta guardar url don't forget. }}

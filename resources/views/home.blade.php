@@ -39,7 +39,6 @@
                   <tbody>
                     @foreach($tickets as $ticket)
                     <tr>
-
                       <td>{{$ticket->created_at->format('d M')}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
@@ -61,8 +60,8 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
-                                    <h1 class="azul-dos normal no-margin">TICKET</h1>
-                                    <h1 class="azul-dos normal">{{$ticket->no_ticket}}</h1>
+                                    <h2 class="azul-dos normal no-margin">TICKET</h2>
+                                    <h3 class="azul-dos normal">{{$ticket->no_ticket}}</h3>
                                     <img class="img-fluid" src="{{ $ticket->url }}" alt="Cámara">
                               </div>
                             </div>
