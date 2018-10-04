@@ -110,6 +110,7 @@ class AdminController extends Controller {
                 $ticket->no_ticket = $request->no_ticket;
                 $ticket->monto = $request->monto;
                 $ticket->id_establecimiento = $request->id_establecimiento;
+                $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->url =$this->uploadTicketS3($request->fileticket,$user->id);
 
                 $user->tickets()->save($ticket);
@@ -201,7 +202,7 @@ class AdminController extends Controller {
 
     public function getAllTickets(){
         $disk = Storage::disk('s3');
-        
+
         $tickets = Ticket::GetAllTickets();
         foreach($tickets as $ticket){
             Storage::setVisibility($ticket->url,'public');

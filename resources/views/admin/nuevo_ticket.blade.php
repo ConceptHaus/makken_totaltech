@@ -40,6 +40,14 @@
                                             @endforeach
                                         </select>
                                     </div>
+                                    <div class="mt-4" ng-if="ticket.id_establecimiento == 9">
+                                      <label>Nombre del establecimiento</label>
+                                      <div>
+                                        <div class="form-group" >
+                                            <input id="otro_establecimiento" ng-model="ticket.otro_establecimiento" type="text" class="form-control" name="otro_establecimiento" placeholder="Nombre del establecimiento" required>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Usuarios</label>

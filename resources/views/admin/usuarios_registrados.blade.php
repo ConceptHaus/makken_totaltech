@@ -34,7 +34,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-repeat="usuario in usuarios | filter:search" ng-cloak>
+                                    <tr ng-repeat="usuario in usuarios | filter:search" ng-cloak ng-if="usuario.isAdmin == 0">
                                         <td><% usuario.id %></td>
                                         <td><% usuario.nombre %> <% usuario.apellido %></td>
                                         <td><% usuario.correo %></td>
