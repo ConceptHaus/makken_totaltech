@@ -16,7 +16,7 @@ class UpdateUsersTableAdmin extends Migration
         //
         Schema::table('users', function (Blueprint $table) {
            $table->boolean('isAdmin')->default(0);
-           $table->string('registro_admin');
+           $table->boolean('registro_admin');
        });
     }
 
@@ -30,6 +30,7 @@ class UpdateUsersTableAdmin extends Migration
         //
         Schema::table('users', function (Blueprint $table) {
            $table->dropColumn('isAdmin');
+           $table->dropColumn('registro_admin');
        });
 
     }
