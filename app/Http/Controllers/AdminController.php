@@ -46,7 +46,6 @@ class AdminController extends Controller {
 
     public function usuarioDetalle($id) {
         $data['user'] = User::getUser($id);
-
         return view('admin/usuario_detalle',$data);
     }
 

@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('correo')->unique();
             $table->string('password');
             $table->string('telefono');
+            $table->boolean('registro_admin');
+            $table->boolean('posible_ganador')->default(0);
+            $table->boolean('isAdmin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

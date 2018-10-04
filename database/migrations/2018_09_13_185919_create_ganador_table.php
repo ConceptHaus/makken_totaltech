@@ -17,12 +17,11 @@ class CreateGanadorTable extends Migration
             $table->increments('id_ganador')->unsigned();
             $table->integer('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('id_ticket')->unsigned();
-            $table->foreign('id_ticket')->references('id_ticket')->on('tickets')->onDelete('cascade');
             $table->integer('id_premio')->unsigned();
             $table->foreign('id_premio')->references('id_premio')->on('premio')->onDelete('cascade');
             $table->integer('id_semana')->unsigned();
             $table->foreign('id_semana')->references('id_semana')->on('semanas')->onDelete('cascade');
+            $table->string('dia');
             $table->timestamps();
         });
     }

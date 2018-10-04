@@ -27,9 +27,9 @@
                                         <th>Nombre</th>
                                         <th>Correo</th>
                                         <th>Teléfono</th>
-                                        <th>No. Tickets</th>
+                                        <th>Tickets Registrados</th>
                                         <th>Monto Total</th>
-                                        <th>Fecha</th>
+                                        <th>Fecha Registro</th>
                                         <th class="sort"></th>
                                     </tr>
                                 </thead>

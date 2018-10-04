@@ -140,7 +140,7 @@
 
   <!-- End Scripts -->
   <script>
-    var app = angular.module('angularApp',['userController','userFactory','forgotPasswordController', 'forgotFactory','ngFileUpload']);
+    var app = angular.module('angularApp',['userController','userFactory','forgotPasswordController', 'forgotFactory','ngFileUpload','ngMask']);
     app.config(function($interpolateProvider){
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');

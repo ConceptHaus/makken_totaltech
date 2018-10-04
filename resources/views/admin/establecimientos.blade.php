@@ -11,8 +11,7 @@
                     <div class="flexbox">
                         <div class="input-group-icon input-group-icon-left mr-3">
                             <span class="input-icon input-icon-right font-16"><i class="ti-search"></i></span>
-                            <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text"
-                                placeholder="Buscar ...">
+                            <input ng-model="search" class="form-control form-control-rounded form-control-solid" id="key-search" type="text" placeholder="Buscar ...">
                         </div>
                         {{-- <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/establecimientos/nuevo') }}">Agregar establecimiento</a> --}}
                     </div>
@@ -28,7 +27,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="establecimiento in establecimientos">
+                            <tr ng-repeat="establecimiento in establecimientos | filter:search">
                                 <td><% establecimiento.id_establecimiento %></td>
                                 <td>
                                     <% establecimiento.nombre %>
@@ -38,10 +37,7 @@
                                     <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
                                     <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
                                 </td> --}}
-                            </tr>
-                            
-                            
-                           
+                            </tr>      
                         </tbody>
                     </table>
                 </div>
