@@ -722,7 +722,7 @@ pre {
 	background-image: none;
 }
 .btn-primary {
-	color: #fff;
+	color: #fff !important;
 	background-color: $azul;
 	border-color: $azul;
 	&:focus {

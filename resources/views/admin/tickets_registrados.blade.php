@@ -37,7 +37,7 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-                                <td><% ticket.monto | currency %><i class="la la-pencil"></i></td>
+                                <td><% ticket.monto | currency %><i class="la la-pencil" style="float:right;"></i></td>
                                 <td ng-if="ticket.id_establecimiento != 9">
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
@@ -138,7 +138,7 @@
                                         <!-- START BORRAR -->
                                         <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
                                             <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                                <i class="la la-times-circle-o"></i>
+                                              <i class="la la-times-circle-o"></i>
                                             </a>
                                         </span>
                                         <!-- END BORRAR -->
