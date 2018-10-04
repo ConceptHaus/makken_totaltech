@@ -19,6 +19,7 @@
                     </div>
                     <div class="col-lg-8">
                         <form action="javascript:;">
+                            <input ng-model="ticket.registro_admin" name="registro_admin" ng-init="ticket.registro_admin = 1" type="text" hidden>
                             <div class="row">
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>No. de Ticket</label>

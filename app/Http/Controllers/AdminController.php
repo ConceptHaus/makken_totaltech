@@ -112,7 +112,8 @@ class AdminController extends Controller {
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->url =$this->uploadTicketS3($request->fileticket,$user->id);
-
+                $ticket->registro_admin = $request->registro_admin;
+                
                 $user->tickets()->save($ticket);
                 DB::commit();
                 $json['success'] = 'Ticket guardado';
