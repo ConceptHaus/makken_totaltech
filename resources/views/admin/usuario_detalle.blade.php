@@ -148,7 +148,8 @@
                                       {{-- Start Borrar --}}
                                       <span>
                                           <a class="text-light font-20" data-content="Borrar">
-                                            <i class="la la-times-circle-o"></i>
+                                            {{-- <i class="la la-times-circle-o"></i> --}}
+                                            <img src="{{ asset('img/icons/cancel-blue.svg') }}" width="20">
                                           </a>
                                       </span>
                                       {{-- End Borrar --}}
