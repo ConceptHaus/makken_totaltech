@@ -27,8 +27,9 @@
                                         <th>Nombre</th>
                                         <th>Correo</th>
                                         <th>Teléfono</th>
-                                        <th>Tickets Registrados</th>
+                                        <th>No. Tickets</th>
                                         <th>Monto Total</th>
+                                        <th>Registro</th>
                                         <th>Fecha Registro</th>
                                         <th class="sort"></th>
                                     </tr>
@@ -41,6 +42,10 @@
                                         <td><% usuario.telefono %></td>
                                         <td><% usuario.tickets.length %></td>
                                         <td></td>
+                                        <td>
+                                            <img ng-if=" usuario.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="20">
+                                            <img ng-if=" usuario.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="20">
+                                        </td>
                                         <td class="capitalize"><% usuario.created_at | amDateFormat:'D, MMMM' %></td>
                                         <td>
                                             <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% usuario.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>

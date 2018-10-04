@@ -131,22 +131,52 @@ class AdminController extends Controller {
 
     }
 
-    public function setGanadorTicket(Request $request){
+    public function sendPosibleGanador(Request $request){
+        $usuario = User::where('id',$request->id_usuario)->first();
+        $usuario->posible_ganador = 1;
+
+        if($usuario->save()){
+            $json['success'] = 'success_posible_ganador';
+            return response()->json($json);
+        }
+        $json['error'] = 'error_posible_ganador';
+        return response()->json($json);
+    }
+
+    public function setGanadorUser(Request $request){
         $ganador = new Ganador();
         $ganador->id_usuario = $request->id_usuario;
-        $ganador->id_ticket = $request->id_ticket;
-        $ganador->id_semana = intval($request->id_semana);
         $ganador->id_premio = 1;
-        $ticket = Ticket::where('id_ticket',$ganador->id_ticket)->first();
-        if($ganador->save()){
-            $json['success'] = 'success_ganador';
-            $json['ticket'] = $ticket->no_ticket;
+        $ganador->id_semana = intval($request->id_semana);
+        $ganador->dia = $request->dia;
+        
+        $usuario = User::where('id',$request->id_usuario)->first();
+        $usuario->posible_ganador = 0;
+        $usuario->save();
+
+        if($ganador->save() && $usuario->save()){
+            $json['success'] = 'success_ganador_user';
             return response($json, 200);
         }
-        $json['error'] = 'error_ganador';
+        $json['error'] = 'error_ganador_user';
         return response($json,400);
-
     }
+
+    // public function setGanadorTicket(Request $request){
+    //     $ganador = new Ganador();
+    //     $ganador->id_usuario = $request->id_usuario;
+    //     $ganador->id_ticket = $request->id_ticket;
+    //     $ganador->id_semana = intval($request->id_semana);
+    //     $ganador->id_premio = 1;
+    //     $ticket = Ticket::where('id_ticket',$ganador->id_ticket)->first();
+    //     if($ganador->save()){
+    //         $json['success'] = 'success_ganador';
+    //         $json['ticket'] = $ticket->no_ticket;
+    //         return response($json, 200);
+    //     }
+    //     $json['error'] = 'error_ganador';
+    //     return response($json,400);
+    // }
 
     public function editEstablecimientos(Request $request){
         $establecimiento = Establecimiento::where('id_establecimiento',$request->id_establecimiento)->first();
