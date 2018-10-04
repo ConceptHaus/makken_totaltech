@@ -41,7 +41,35 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-rounded btn-primary btn-air" name="posibleGanador" data-toggle="modal" data-target="#modalGanador{{$user->id_user}}">Posible Ganador</a>
+                <a class="btn btn-rounded btn-primary btn-air" name="posibleGanador" data-toggle="modal" data-target="#modalPosibleGanador{{$user->id_user}}">Posible Ganador</a>
+                <!-- START MODAL POSIBLE GANADOR -->
+                <div class="modal fade" id="modalPosibleGanador{{$user->id_user}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <form class="modal-content">
+                            <div class="modal-header p-4">
+                                <h5 class="modal-title">POSIBLE GANADOR</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body p-4">
+                                <div class="form-group mb-4">
+                                    <p>Estas a punto de envíar un correo para corroborar datos del posible ganador.</p>
+
+                                </div>
+
+                                <p>¿Está seguro que los datos son correctos y estas eligiendo este ticket como ganador?</p>
+                            </div>
+                            <div class="modal-footer bg-primary-50">
+
+                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(ticketganador)">Aceptar</button>
+                                <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END MODAL POSIBLE GANADOR -->
+                <a class="btn btn-rounded btn-primary btn-air" name="ganador" data-toggle="modal" data-target="#modalGanador{{$user->id_user}}">Ganador</a>
                 <!-- START MODAL GANADOR -->
                 <div class="modal fade" id="modalGanador{{$user->id_user}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -81,7 +109,6 @@
                     </div>
                 </div>
                 <!-- END MODAL GANADOR -->
-                <a class="btn btn-rounded btn-primary btn-air" name="ganador">Ganador</a>
             </div>
             <div class="col-xl-7">
                 <div class="ibox">
