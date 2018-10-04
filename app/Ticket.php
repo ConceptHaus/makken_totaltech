@@ -14,6 +14,7 @@ class Ticket extends Model
       'no_ticket',
       'monto',
       'id_establecimiento',
+      'otro_establecimiento',
       'url'
     ];
 

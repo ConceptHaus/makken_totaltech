@@ -21,6 +21,7 @@ class CreateTicketsTable extends Migration
             $table->string('monto');
             $table->integer('id_establecimiento')->unsigned();
             $table->foreign('id_establecimiento')->references('id_establecimiento')->on('establecimiento')->onDelete('cascade');
+            $table->string('otro_establecimiento')->nullable();
             $table->string('url');
             $table->timestamps();
         });
