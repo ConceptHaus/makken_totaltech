@@ -9,7 +9,7 @@
                     <form id="formulario-ticket" class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>REGÍSTRA TU TICKET</h3>
-
+                        <input ng-model="ticket.registro_admin" name="registro_admin" ng-init="ticket.registro_admin = 0" type="text" hidden>
                         <div class="form-group">
                           <select ng-model="ticket.id_establecimiento" class="form-control" id="tienda" name="tienda" required>
                               <option value="" disabled selected>Selecciona Establecimiento</option>
@@ -18,8 +18,7 @@
                           </select>
                         </div>
                         <div class="form-group" ng-if="ticket.id_establecimiento == 9">
-                            <input id="establecimiento_otro" ng-model="ticket.id_establecimiento_otro" type="text" class="form-control" name="establecimiento_otro" placeholder="Nombre del establecimiento" required>
-
+                            <input id="otro_establecimiento" ng-model="ticket.otro_establecimiento" type="text" class="form-control" name="otro_establecimiento" placeholder="Nombre del establecimiento" required>
                         </div>
 
                         <div class="form-group">

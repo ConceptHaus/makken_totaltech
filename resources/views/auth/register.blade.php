@@ -12,7 +12,8 @@
                     <h3>REGÍSTRATE</h3>
                     <form class="form-horizontal form-ajust" >
                         {{ csrf_field() }}
-                        <input ng-model="user.admin" name="admin" ng-init="user.admin = 0" type="text" hidden>
+                        <input ng-model="user.registro_admin" name="registro_admin" ng-init="user.registro_admin = 0" type="text" hidden>
+                        <input ng-model="user.admin" name="registro_admin" ng-init="user.admin = 0" type="text" hidden>
                         <div class="form-row">
                             <div class="col form-group">
                                 <input ng-class="{'invalido': errors.nombre }" ng-model="user.nombre" id="name" type="text" class="form-control" name="name"  placeholder="Nombre" required autofocus>
@@ -27,7 +28,7 @@
 
                         <div class="form-row">
                             <div class="col form-group">
-                                <input ng-class="{'invalido': errors.telefono }" ng-model="user.telefono" id="phone" type="text" class="form-control" name="phone"  placeholder="Teléfono" required autofocus>
+                                <input ng-class="{'invalido': errors.telefono }" ng-model="user.telefono" id="phone" type="text" class="form-control" name="phone" mask="(99) 9999-9999" placeholder="Teléfono" required autofocus>
                                 <p ng-cloak class="error-form" ng-if="errors.telefono"><% errors.telefono[0] %></p>
                             </div>
                             <div class="col form-group">

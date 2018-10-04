@@ -39,11 +39,17 @@
                   <tbody>
                     @foreach($tickets as $ticket)
                     <tr>
-
                       <td>{{$ticket->created_at->format('d M')}}</td>
                       <td>{{$ticket->no_ticket}}</td>
                       <td>${{$ticket->monto}}</td>
-                      <td><img class="img-establecimiento"src="{{$ticket->establecimiento->url}}" alt="{{$ticket->establecimiento->nombre}}"></td>
+                      <td>
+                        @if ($ticket->id_establecimiento != 9)
+                          <img class="img-establecimiento"src="{{$ticket->establecimiento->url}}" alt="{{$ticket->establecimiento->nombre}}">
+                        @else
+                          {{$ticket->otro_establecimiento}}
+                        @endif
+
+                      </td>
                     <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket" data-toggle="modal" data-target="#ticketModal{{$ticket->no_ticket}}">
                         <!-- Modal Tickets -->
                     <div class="modal fade" id="ticketModal{{$ticket->no_ticket}}" tabindex="-1" role="dialog" aria-labelledby="ticketModalTitle" aria-hidden="true">
@@ -54,8 +60,8 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                   {{-- <img class="img-fluid" src="{{ asset('img/backgrounds/bg-bike-mask-2.jpg') }}" alt="Ticket"> --}}
-                                    <h1 class="azul-dos normal no-margin">TICKET</h1>
-                                    <h1 class="azul-dos normal">{{$ticket->no_ticket}}</h1>
+                                    <h2 class="azul-dos normal no-margin">TICKET</h2>
+                                    <h3 class="azul-dos normal">{{$ticket->no_ticket}}</h3>
                                     <img class="img-fluid" src="{{ $ticket->url }}" alt="Cámara">
                               </div>
                             </div>

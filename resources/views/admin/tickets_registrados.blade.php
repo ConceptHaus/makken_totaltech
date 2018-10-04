@@ -14,7 +14,7 @@
                                 placeholder="Buscar ...">
                         </div>
                         <a class="btn btn-rounded btn-primary btn-air" href="{{ url('/admin/tickets/nuevo') }}">Agregar
-                            Tickect</a>
+                            Ticket</a>
                     </div>
                 </div>
                 <div class="table-responsive row">
@@ -31,20 +31,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="ticket in tickets | filter:search">
+                            <tr ng-repeat="ticket in tickets | filter:search" ng-if="ticket.user.isAdmin == 0">
                                 <td><% ticket.id_ticket %></td>
                                 <td>
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-                                <td><% ticket.monto | currency %></td>
-                                <td>
+                                <td><% ticket.monto | currency %><i class="la la-pencil" style="float:right;"></i></td>
+                                <td ng-if="ticket.id_establecimiento != 9">
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
+                                <td ng-if="ticket.id_establecimiento == 9"><% ticket.otro_establecimiento%></td>
                                 <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
 
-                                    <span ng-if="ticket.ganador !=  null">
+                                    {{-- <span ng-if="ticket.ganador !=  null">
                                         <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Este ticket ya es ganador.">
                                             <i class="fa fa-star"></i>
                                         </a>
@@ -53,9 +54,9 @@
                                         <a class="text-light font-20 mr-2" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Elige como ganador a este usuario.">
                                             <i class="fa fa-star-o"></i>
                                         </a>
-                                    </span>
+                                    </span> --}}
                                     <!-- START MODAL GANADOR -->
-                                    <div class="modal fade" id="modalGanador<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                    {{-- <div class="modal fade" id="modalGanador<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <form class="modal-content">
                                                 <div class="modal-header p-4">
@@ -90,7 +91,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- END MODAL GANADOR -->
                                     <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
                                         <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
@@ -134,6 +135,13 @@
                                             </div>
                                         </div>
                                         <!-- END MODAL GANADOR -->
+                                        <!-- START BORRAR -->
+                                        <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
+                                            <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                              <i class="la la-times-circle-o"></i>
+                                            </a>
+                                        </span>
+                                        <!-- END BORRAR -->
                                 </td>
                             </tr>
                         </tbody>

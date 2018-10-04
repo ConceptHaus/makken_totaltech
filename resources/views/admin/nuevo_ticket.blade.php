@@ -19,6 +19,7 @@
                     </div>
                     <div class="col-lg-8">
                         <form action="javascript:;">
+                            <input ng-model="ticket.registro_admin" name="registro_admin" ng-init="ticket.registro_admin = 1" type="text" hidden>
                             <div class="row">
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>No. de Ticket</label>
@@ -40,12 +41,20 @@
                                             @endforeach
                                         </select>
                                     </div>
+                                    <div class="mt-4" ng-if="ticket.id_establecimiento == 9">
+                                      <label>Nombre del establecimiento</label>
+                                      <div>
+                                        <div class="form-group" >
+                                            <input id="otro_establecimiento" ng-model="ticket.otro_establecimiento" type="text" class="form-control" name="otro_establecimiento" placeholder="Nombre del establecimiento" required>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Usuarios</label>
                                     <div>
                                         <select ng-model="ticket.id_usuario" class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
-                                            data-style="btn-solid"> 
+                                            data-style="btn-solid">
                                             @foreach ($users as $user)
                                             <option value="{{$user->id}}">{{$user->correo}}</option>
                                             @endforeach

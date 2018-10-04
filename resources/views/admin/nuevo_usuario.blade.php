@@ -10,7 +10,8 @@
                     <div class="col-lg-12">
                         <form>
                             {{ csrf_field() }}
-                            <input ng-model="user.admin" class="form-control form-control-solid" name="admin" ng-init="user.admin = 1" type="text" hidden>
+                            <input ng-model="user.registro_admin" class="form-control form-control-solid" name="registro_admin" ng-init="user.registro_admin = 1" type="text" hidden>
+                            <input ng-model="user.admin" name="registro_admin" ng-init="user.admin = 1" type="text" hidden>
                             <div class="row">
                                 <div class="col-md-6 form-group mb-4">
                                     <label>Nombre</label>
@@ -25,6 +26,7 @@
                                 <div class="col-md-6 form-group mb-4">
                                     <label>Teléfono</label>
                                     <input ng-model="user.telefono" class="form-control form-control-solid" name="telefono" type="text" placeholder="">
+                                    {{-- mask="(99) 9999-9999"  --}}
                                 </div>
                                 <div class="col-md-6 form-group mb-4">
                                     <label>C.P.</label>

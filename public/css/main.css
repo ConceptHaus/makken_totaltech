@@ -773,7 +773,7 @@ pre:hover .clipboard-copy {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #fff !important;
   background-color: #223F97;
   border-color: #223F97;
 }

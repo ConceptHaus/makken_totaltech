@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('admin/vendors/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/toastr/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/bootstrap-select/dist/css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/vendors/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
     <!-- PLUGINS STYLES-->
     <link href="{{ asset('admin/vendors/dataTables/datatables.min.css') }}" rel="stylesheet" />
     <!-- Estilos -->
@@ -200,7 +201,7 @@
                     columnDefs: [{
                         targets: 'no-sort',
                         orderable: false
-                    }]  
+                    }]
                 });
 
                 var table = $('#orders-table').DataTable();
@@ -226,7 +227,8 @@
         <script src="{{ asset('js/moment.min.js') }}"></script>
         <script src="{{ asset('js/angular-moment.min.js') }}"></script>
         <script src="{{ asset('js/es.js') }}"></script>
-        
+        <script src="{{ asset('admin/vendors/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
+
         <!-- End Scripts -->
         <script>
             var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable','angularMoment']);

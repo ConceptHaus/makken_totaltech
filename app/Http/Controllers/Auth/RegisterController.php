@@ -85,7 +85,8 @@ class RegisterController extends Controller
             $user->telefono = $data['telefono'];
             $user->correo = $data['correo'];
             $user->password = bcrypt($data['password']);
-            
+            $user->registro_admin = $data['registro_admin'];
+
             $direccion = new Direccion();
             $direccion->estado = $data['estado'];
             $direccion->municipio = $data['municipio'];
@@ -101,15 +102,15 @@ class RegisterController extends Controller
             DB::rollBack();
             return $e;
         }
-        
+
     }
 
     protected function registroUser(Request $request){
-      
+
         $input = $request->all();
         $validator = $this->validator($input);
-        
-        if($validator->passes()){    
+
+        if($validator->passes()){
 
                 $user = $this->createUser($input);
 
@@ -117,7 +118,7 @@ class RegisterController extends Controller
                     Auth::login($user,true);
                     $json['success'] = 'success_register';
                     return response($json,200);
-                }  
+                }
 
                 $json['success'] = 'success_register';
                 return response($json,200);
