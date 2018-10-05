@@ -43,8 +43,8 @@
                                         <td><% usuario.tickets.length %></td>
                                         <td></td>
                                         <td>
-                                            <img ng-if=" usuario.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="20">
-                                            <img ng-if=" usuario.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="20">
+                                            <img ng-if=" usuario.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="22">
+                                            <img ng-if=" usuario.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="22">
                                         </td>
                                         <td class="capitalize"><% usuario.created_at | amDateFormat:'D, MMMM' %></td>
                                         <td>

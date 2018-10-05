@@ -25,8 +25,7 @@
                             <div class="row">
                                 <div class="col-md-6 form-group mb-4">
                                     <label>Teléfono</label>
-                                    <input ng-model="user.telefono" class="form-control form-control-solid" name="telefono" type="text" placeholder="">
-                                    {{-- mask="(99) 9999-9999"  --}}
+                                    <input ng-model="user.telefono" class="form-control form-control-solid" name="telefono" type="text" mask="(99) 9999-9999" placeholder="">
                                 </div>
                                 <div class="col-md-6 form-group mb-4">
                                     <label>C.P.</label>

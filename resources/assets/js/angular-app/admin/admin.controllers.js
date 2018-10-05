@@ -66,7 +66,9 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
                 title:'¡Todo bien!',
                 text: 'Tu ticket se ha registrado con éxito',
                 confirmButtonText: 'Aceptar',
-            })
+            }).then((result)=>{
+                location.reload();
+            });
             $scope.ticket = {};
             $('.img-default-ticket').attr('src', '/img/icons/camera-blue.svg');
         },function(err){
@@ -109,7 +111,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
                  title: "¡Listo!",
                  text: "El ticket "+data.data.ticket+ " es ganador",
              }).then((result)=>{
-                 location.reload();
+                $window.location.href = '/admin/tickets/registrados';
              });
             console.log(data.data);
         },function(err){

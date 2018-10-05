@@ -26,6 +26,7 @@
                                 <th>No. Ticket</th>
                                 <th>Monto</th>
                                 <th>Establecimiento</th>
+                                <th>Registro</th>
                                 <th>Fecha</th>
                                 <th class="no-sort"></th>
                             </tr>
@@ -42,6 +43,10 @@
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
                                 <td ng-if="ticket.id_establecimiento == 9"><% ticket.otro_establecimiento%></td>
+                                <td>
+                                    <img ng-if=" ticket.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="22">
+                                    <img ng-if=" ticket.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="22">
+                                </td>
                                 <td class="capitalize"><% ticket.created_at | amDateFormat:'D, MMMM' %></td>
                                 <td>
 
@@ -136,8 +141,9 @@
                                         </div>
                                         <!-- END MODAL GANADOR -->
                                         <!-- START BORRAR -->
-                                            <a class="text-light font-25" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Eliminar Ticket.">
-                                              <i class="la la-trash trash"></i>
+                                        <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
+                                            <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                                <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                             </a>
                                        
                                         <!-- END BORRAR -->

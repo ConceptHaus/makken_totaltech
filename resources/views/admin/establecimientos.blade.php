@@ -23,7 +23,6 @@
                                 <th>No.</th>
                                 <th>Nombre</th>
                                 <th>Logo</th>
-                                {{-- <th class="no-sort"></th> --}}
                             </tr>
                         </thead>
                         <tbody>
@@ -32,11 +31,10 @@
                                 <td>
                                     <% establecimiento.nombre %>
                                 </td>
-                                <td><img class="mr-3" ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" /></td>
-                                {{-- <td>
-                                    <a class="text-light mr-3 font-16" href="{{ url('/admin/establecimientos/editar') }}"><i class="ti-pencil"></i></a>
-                                    <a class="text-light font-16" href="javascript:;"><i class="ti-trash"></i></a>
-                                </td> --}}
+                                <td>
+                                    <img ng-if="establecimiento.nombre != 'Otro'" class="mr-3" ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                                    <img ng-if="establecimiento.nombre == 'Otro'" class="img-establecimiento mr-3" ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                                </td>
                             </tr>      
                         </tbody>
                     </table>

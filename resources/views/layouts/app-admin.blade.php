@@ -231,7 +231,7 @@
 
         <!-- End Scripts -->
         <script>
-            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable','angularMoment']);
+            var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable','angularMoment','ngMask']);
                 app.config(function($interpolateProvider){
                 $interpolateProvider.startSymbol('<%');
                 $interpolateProvider.endSymbol('%>');
