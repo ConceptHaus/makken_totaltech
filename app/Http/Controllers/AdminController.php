@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Storage;
 use DB;
 use Mail;
 use Validator;
+use Carbon\Carbon;
+
 
 use App\User;
 use App\Direccion;
@@ -49,15 +51,24 @@ class AdminController extends Controller {
     }
 
     public function usuarioDetalle($id) {
+        //$user = User::where('id',$id)->first();
         $data['user'] = User::getUser($id);
 
-        $data['tickets_totales'] = User::where('users.id','=', $id)
-                                    ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
-                                    ->select('users.id','tickets.created_at', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
-                                    ->groupBy('tickets.created_at')
-                                    ->get();
+        // $data['tickets_totales'] = User::where('users.id','=', $id)
+        //                             ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+        //                             ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+        //                             ->get();
+                                    // ->groupBy(function($date){
+                                    //     return Carbon::parse($date->fecha)->format('d M');
+                                    // });
                                     
-        return view('admin/usuario_detalle',$data);
+        // $tickets = $user->tickets()->sum()->get()->groupBy(function($date){
+        //     return Carbon::parse($date->created_at)->format('d M');
+        // });
+                                    
+        
+        //                             return response()->json($tickets,200);
+                                    //return view('admin/usuario_detalle',$data);
     }
 
     public function nuevoUsuario() {
