@@ -136,11 +136,10 @@
                                         </div>
                                         <!-- END MODAL GANADOR -->
                                         <!-- START BORRAR -->
-                                        <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
-                                            <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                              <i class="la la-times-circle-o"></i>
+                                            <a class="text-light font-25" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Eliminar Ticket.">
+                                              <i class="la la-trash trash"></i>
                                             </a>
-                                        </span>
+                                       
                                         <!-- END BORRAR -->
                                 </td>
                             </tr>

@@ -250,5 +250,46 @@ class AdminController extends Controller {
 
     }
 
+    public function removeTicket(Request $request){
+        $id_ticket = $request->id_ticket;
+
+        $ticket = Ticket::where('id_ticket',$id_ticket)->first();
+        
+        if($ticket->delete()){
+
+            return response()->json([
+                'error'=>false,
+                'message'=>'El ticket se ha eliminado.'
+            ],200);
+
+        }
+
+        return response()->json([
+            'error'=>true,
+            'message'=>'El ticket no se ha eliminado.'
+        ],400);
+
+
+    }
+
+    public function updateMontoTicket(Request $request){
+        $id_ticket = $request->id_ticket;
+        $ticket = Ticket::where('id_ticket',$id_ticket)->first();
+        $ticket->monto = $request->monto;
+        
+        if($ticket->save()){
+            
+            return response()->json([
+                'error'=>false,
+                'message'=>'El monto se ha actualizado.'
+            ]);
+        }
+
+        return response()->json([
+            'error'=>true,
+            'message'=>'El monto no se ha actualizado.'
+        ]);
+
+    }
 
 }

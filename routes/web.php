@@ -45,6 +45,8 @@ Route::post('/ganador','AdminController@setGanadorTicket');
 Route::post('/editEstablecimiento','AdminController@editEstablecimientos');
 Route::post('/adminTicket','AdminController@adminRegisterTicket');
 Route::post('/texto','AdminController@editTexto');
+Route::post('/ticket/delete','AdminController@removeTicket');
+Route::post('/ticket/monto','AdminController@updateMontoTicket');
 
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');

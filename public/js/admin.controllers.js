@@ -224,6 +224,22 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         swal.close();
         console.log(errors.data.fail);
     };
+
+    $scope.delete = function (ticket) {
+        console.log(ticket);
+        swal({
+            title: '¿Estás seguro?',
+            text: 'El ticket se eliminará',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Si, eliminar'
+        }).then(function (result) {
+            if (result.value) {
+                AdminFactory.deleteTicket(ticket).then(function (res) {}, function (err) {});
+            }
+        });
+    };
 });
 
 /***/ }),

@@ -50,6 +50,20 @@ app.factory('AdminFactory', function($http){
                 url:'/ganador',
                 data:data
             })
+        },
+        deleteTicket: function(data){
+            return $http({
+                method:'POST',
+                url:'/ticket/delete',
+                data:data
+            })
+        },
+        editTicket: function(data){
+            return $http({
+                method:'POST',
+                url:'/ticket/monto',
+                data:data
+            })
         }
     }
 })
