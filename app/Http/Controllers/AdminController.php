@@ -50,15 +50,13 @@ class AdminController extends Controller {
 
     public function usuarioDetalle($id) {
         $data['user'] = User::getUser($id);
-        // $data['tickets_totales'] = User::where('users.id','=', $id)
-        //                            ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
-        //                            ->select('users.id',
-        //                              DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) as num_tickets")
-        //                             //    'users.id, SUM(tickets.monto) AS monto_total, COUNT(tickets.id_ticket) AS num_tickets, tickets.created_at'
-        //                                )
-        //                         //    ->groupBy('tickets.created_at')
-        //                            ->get();
 
+        $data['tickets_totales'] = User::where('users.id','=', $id)
+                                    ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                                    ->select('users.id','tickets.created_at', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                                    ->groupBy('tickets.created_at')
+                                    ->get();
+                                    
         return view('admin/usuario_detalle',$data);
     }
 

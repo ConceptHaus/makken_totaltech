@@ -14,6 +14,7 @@
             <div class="col-xl-5">
                 <div class="ibox">
                     <div class="ibox-body">
+                        {{$tickets_totales}}
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
