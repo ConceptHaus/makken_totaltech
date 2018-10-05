@@ -90,15 +90,19 @@
                                         <option value="3">3 Semana</option>
                                         <option value="4">4 Semana</option>
                                     </select>
-                                    <input class="form-control form-control-line datepicker date" id="new-event-start" type="text" name="start" value="">
-                                    <input type="text" ng-model="ticketganador.id_ticket" hidden ng-init="ticketganador.id_ticket = ticket.id_ticket">
+
+                                    <div class="form-group" id="date_1">
+                                        <label class="font-normal"></label>
+                                        <div class="input-group date">
+                                            <span class="input-group-addon bg-white"><i class="fa fa-calendar"></i></span>
+                                            <input class="form-control" type="text" value="04/12/2017">
+                                        </div>
+                                    </div>
+                                
+                                    {{-- <input type="text" ng-model="ticketganador.id_ticket" hidden ng-init="ticketganador.id_ticket = ticket.id_ticket"> --}}
                                     <input type="text" ng-model="ticketganador.id_usuario" hidden ng-init="ticketganador.id_usuario = ticket.user.id">
                                 </div>
-                                <div class="form-group mb-4">
-                                    <h5 class="text-center">No. Ticket</h5>
-                                    <h4 class="text-center"><% ticket.no_ticket %></h4>
-                                </div>
-                                <p>¿Está seguro que los datos son correctos y estas eligiendo este ticket como ganador?</p>
+                                <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
                             <div class="modal-footer bg-primary-50">
 
@@ -142,14 +146,14 @@
                                     <td>
                                       <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
                                           <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                              <img src="{{ asset('img/icons/camera-blue.svg') }}" width="30">
+                                              <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                           </a>
                                       </span>
                                       {{-- Start Borrar --}}
                                       <span>
                                           <a class="text-light font-20" data-content="Borrar">
                                             {{-- <i class="la la-times-circle-o"></i> --}}
-                                            <img src="{{ asset('img/icons/cancel-blue.svg') }}" width="20">
+                                            <img src="{{ asset('img/icons/eliminate.svg') }}" width="18">
                                           </a>
                                       </span>
                                       {{-- End Borrar --}}
