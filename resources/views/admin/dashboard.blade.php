@@ -10,26 +10,26 @@
             <p>30 de julio al 5 de agosto</p>
           </div>
           {{-- Fin Reporte Semanal --}}
+          {{-- Participantes --}}
           <div class="col-xl-4">
               <div class="ibox">
                   <div class="ibox-body">
                       <div class="flexbox mb-3">
                           <span class="flexbox">
-                              <span class="btn-icon-only btn-circle bg-primary-50 text-primary mr-3"><i class="ti-cup"></i></span>
                               <span>Participantes Acumulados</span>
                           </span>
-                          <span class="h3 mb-0 text-primary font-strong ml-2">71</span>
+                          <span class="h3 mb-0 text-blue-total font-strong ml-2">71</span>
                       </div>
                       <div class="flexbox mb-3">
                           <span class="flexbox">
-                              <span class="btn-icon-only btn-circle bg-success-50 text-success mr-3"><i class="ti-briefcase"></i></span>
                               <span>Registros Acumulados</span>
                           </span>
-                          <span class="h3 mb-0 text-success font-strong ml-2">89</span>
+                          <span class="h3 mb-0 text-blue-total font-strong ml-2">89</span>
                       </div>
                   </div>
               </div>
           </div>
+          {{-- Fin de Participantes --}}
           {{-- Panel 1 --}}
             <div class="col-xl-4">
                 <div class="ibox">
@@ -39,15 +39,15 @@
                     <div class="ibox-body">
                         <div class="flexbox mb-3">
                             <span class="flexbox">
-                                <span class="btn-icon-only btn-circle bg-primary-50 text-primary mr-3"><i class="ti-cup"></i></span>
+                                <span class="btn-icon-only btn-circle mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}"></span>
                             </span>
-                            <span class="h3 mb-0 text-primary font-strong ml-2">25</span>
+                            <span class="h3 mb-0 text-blue-total font-strong ml-2">25</span>
                         </div>
                         <div class="flexbox mb-3">
                             <span class="flexbox">
-                                <span class="btn-icon-only btn-circle bg-success-50 text-success mr-3"><i class="ti-briefcase"></i></span>
+                                <span class="btn-icon-only btn-circle mr-3"><img src="{{asset('img/icons/register.svg')}}"></span>
                             </span>
-                            <span class="h3 mb-0 text-success font-strong ml-2">46</span>
+                            <span class="h3 mb-0 text-blue-total font-strong ml-2">46</span>
                         </div>
                     </div>
                 </div>
@@ -66,6 +66,7 @@
                                 <li>Comercial Mexicana</li>
                                 <li>HEB</li>
                                 <li>HOWES</li>
+                                <li>Home Depot</li>
                               </ol>
                           </div>
                       </div>
@@ -87,15 +88,15 @@
 
                             </div>
                             <div class="flexbox mb-3" style="justify-content: center !important;">
-                              <span class="h3 mb-0 text-primary font-strong ml-2">$1250</span>
+                              <span class="h3 mb-0 text-blue-total font-strong ml-2">$1250</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 {{-- Fin Panel 3 --}}
                   {{-- Reporte Semanal --}}
-                  <div class="col-xl-8 coments">
-                    <h1>Comentarios</h1>
+                  <div class="col-xl-8 comments">
+                    <h1 class="text-blue-total">Comentarios</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                   {{-- Fin Reporte Semanal --}}
