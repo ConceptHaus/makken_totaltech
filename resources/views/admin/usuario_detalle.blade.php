@@ -105,12 +105,6 @@
                                             <input class="form-control" type="text" ng-model="userGanador.dia">
                                         </div>
                                     </div>
-<<<<<<< HEAD
-=======
-
-                                    {{-- <input type="text" ng-model="ticketganador.id_ticket" hidden ng-init="ticketganador.id_ticket = ticket.id_ticket"> --}}
-                                    <input type="text" ng-model="ticketganador.id_usuario" hidden ng-init="ticketganador.id_usuario = ticket.user.id">
->>>>>>> 6f78f9cbf2b2ee47c8313ac0805c9488e889b15a
                                 </div>
                                 <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
