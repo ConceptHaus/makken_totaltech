@@ -56,7 +56,9 @@
                                         <select ng-model="ticket.id_usuario" class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
                                             data-style="btn-solid">
                                             @foreach ($users as $user)
-                                            <option value="{{$user->id}}">{{$user->correo}}</option>
+                                              @if (!($user->isAdmin))
+                                                <option value="{{$user->id}}">{{$user->correo}}</option>
+                                              @endif
                                             @endforeach
                                         </select>
                                     </div>
