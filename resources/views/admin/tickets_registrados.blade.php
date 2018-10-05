@@ -141,8 +141,7 @@
                                         </div>
                                         <!-- END MODAL GANADOR -->
                                         <!-- START BORRAR -->
-                                        <span data-toggle="modal" data-target="#modalTicket<% ticket.id_ticket %>">
-                                            <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                            <a class="text-light font-20" ng-click="delete(ticket)" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                                 <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                             </a>
                                        

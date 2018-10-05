@@ -253,7 +253,7 @@ class AdminController extends Controller {
     public function removeTicket(Request $request){
         $id_ticket = $request->id_ticket;
 
-        $ticket = Ticket::where('id_ticket',$id_ticket)->first();
+        $ticket = Ticket::where('id_ticket','=',$id_ticket)->first();
         
         if($ticket->delete()){
 
