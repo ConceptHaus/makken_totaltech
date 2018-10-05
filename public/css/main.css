@@ -8449,6 +8449,12 @@ table > tbody > tr > td > span.footable-toggle {
   text-transform: capitalize;
 }
 
+.coments {
+  border: 2px dotted #223F97;
+  padding: 3%;
+  margin: auto;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;
