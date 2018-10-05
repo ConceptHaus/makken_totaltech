@@ -35,6 +35,10 @@ class AdminController extends Controller {
     }
 
     //VISTAS ADMIN
+    public function getDashboard() {
+      return view('admin/dashboard');
+    }
+
     public function usuariosRegistrados() {
         return view('admin/usuarios_registrados');
     }
@@ -113,7 +117,7 @@ class AdminController extends Controller {
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->url =$this->uploadTicketS3($request->fileticket,$user->id);
                 $ticket->registro_admin = $request->registro_admin;
-                
+
                 $user->tickets()->save($ticket);
                 DB::commit();
                 $json['success'] = 'Ticket guardado';
@@ -149,7 +153,7 @@ class AdminController extends Controller {
         $ganador->id_premio = 1;
         $ganador->id_semana = intval($request->id_semana);
         $ganador->dia = $request->dia;
-        
+
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 0;
         $usuario->save();

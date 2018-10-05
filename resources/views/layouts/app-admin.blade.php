@@ -33,7 +33,7 @@
         <!-- START HEADER-->
         <header class="header">
             <div class="page-brand text-center">
-                <a href="{{ url('/admin/usuarios/registrados') }}">
+                <a href="{{ url('/admin/dashboard') }}">
                     <span class="brand">
                         <img src="{{ asset('admin/img/logos/ceys-logo.svg') }}">
                     </span>

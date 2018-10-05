@@ -49,6 +49,7 @@ Route::post('/texto','AdminController@editTexto');
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');
 
+Route::get('/admin/dashboard', 'AdminController@getDashboard');
 Route::get('/admin/usuarios/registrados', 'AdminController@usuariosRegistrados');
 Route::get('/admin/usuarios/ganadores', 'AdminController@usuariosGanadores');
 Route::get('/admin/usuarios/detalle/{id}', 'AdminController@usuarioDetalle');
