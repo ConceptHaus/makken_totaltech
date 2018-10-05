@@ -105,6 +105,12 @@
                                             <input class="form-control" type="text" ng-model="userGanador.dia">
                                         </div>
                                     </div>
+<<<<<<< HEAD
+=======
+
+                                    {{-- <input type="text" ng-model="ticketganador.id_ticket" hidden ng-init="ticketganador.id_ticket = ticket.id_ticket"> --}}
+                                    <input type="text" ng-model="ticketganador.id_usuario" hidden ng-init="ticketganador.id_usuario = ticket.user.id">
+>>>>>>> 6f78f9cbf2b2ee47c8313ac0805c9488e889b15a
                                 </div>
                                 <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
@@ -134,7 +140,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($user->tickets as $ticket)
+                              @foreach ($user->tickets as $key => $value)
+                                  @php
+                                    $dia[$key] = $value->created_at->toDateString();
+                                  @endphp
+                                  {{$dia[$key]}}
+                                  @endforeach
+                                @foreach($user->tickets as $key => $ticket)
+
+                                  @php
+                                    $date = $ticket->created_at->toDateString();
+                                    $test = 0;
+                                  @endphp
+                                  @if ($key != 0)
+                                    @php
+                                      $test = $key-1;
+                                    @endphp
+
+                                  @endif
+                                  @if ($ticket->created_at->toDateString() != $dia[$test] || $key == 0)
+                                    <tr>
+                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M')}}</th>
+                                    </tr>
+                                  @endif
                                 <tr>
                                     <td>{{$ticket->id_ticket}}</td>
                                     <td>{{$ticket->no_ticket}}</td>
@@ -145,7 +173,7 @@
                                         {{$ticket->otro_establecimiento}}
                                       @endif
                                     </td>
-                                    <td>{{$ticket->created_at}}</td>
+                                    <td>{{$ticket->created_at->format('d M')}}</td>
                                     <td>${{$ticket->monto}}</td>
                                     <td>
                                       <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
@@ -182,6 +210,7 @@
                                     </td>
                                 </tr>
                                 @endforeach
+
                             </tbody>
                         </table>
                         {{-- <div class="d-flex justify-content-end">
