@@ -14,7 +14,7 @@
             <div class="col-xl-5">
                 <div class="ibox">
                     <div class="ibox-body">
-                        {{$tickets_totales}}
+                        {{-- {{$tickets_totales}} --}}
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
@@ -173,14 +173,12 @@
                                               <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
                                           </a>
                                       </span>
-                                      {{-- Start Borrar --}}
-                                      <span>
-                                          <a class="text-light font-20" data-content="Borrar">
-                                            {{-- <i class="la la-times-circle-o"></i> --}}
-                                            <img src="{{ asset('img/icons/eliminate.svg') }}" width="18">
+                                      <!-- START BORRAR -->
+                                          <a class="text-light font-20" ng-click="delete(ticket)" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                              <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                           </a>
-                                      </span>
-                                      {{-- End Borrar --}}
+
+                                      <!-- END BORRAR -->
                                       <!-- START MODAL GANADOR -->
                                       <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                                               <div class="modal-dialog" role="document">

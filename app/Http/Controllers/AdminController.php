@@ -76,7 +76,6 @@ class AdminController extends Controller {
     }
 
     public function ticketsRegistrados() {
-        $edit = true;
         return view('admin/tickets_registrados');
     }
 
