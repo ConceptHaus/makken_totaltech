@@ -111,10 +111,18 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
+    // Tickets Usuarios
+    AdminFactory.ticketsUsuarios().then(function (res) {
+        $scope.ticketsUsuarios = res.data;
+        // console.log($scope.ticketsUsuarios);
+    }, function (err) {
+        console.log(err);
+    });
+
     // Establecimientos
     AdminFactory.establecimientos().then(function (res) {
         $scope.establecimientos = res.data;
-        console.log($scope.establecimientos);
+        // console.log($scope.establecimientos);
     }, function (err) {
         console.log(err);
     });
@@ -172,6 +180,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
+        console.log(user);
         $('#modalPosibleGanador').modal('hide');
         AdminFactory.setPosibleGanadorGanador(user).then(function (data) {
             swal({

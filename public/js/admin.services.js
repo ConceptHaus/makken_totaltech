@@ -114,6 +114,12 @@ app.factory('AdminFactory', function ($http) {
                 url: '/api/v1/tickets'
             });
         },
+        ticketsUsuarios: function ticketsUsuarios() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/ticketsUsuarios'
+            });
+        },
         setPosibleGanadorGanador: function setPosibleGanadorGanador(data) {
             return $http({
                 method: 'POST',

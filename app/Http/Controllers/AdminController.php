@@ -10,12 +10,11 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Carbon;
+// use Illuminate\Support\Carbon;
 use DB;
 use Mail;
 use Validator;
 use Carbon\Carbon;
-
 
 use App\User;
 use App\Direccion;
@@ -273,6 +272,16 @@ class AdminController extends Controller {
         }
 
         return response()->json($tickets);
+    }
+
+    public function getAllTicketsUsuarios(){
+        $ticketsUsers = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
+                        ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
+                        ->get();
+                        // where('users.isAdmin','!=', '1')
+
+        return response()->json($ticketsUsers);
     }
 
     public function getAllGanadores(){

@@ -43,8 +43,8 @@
                                 <td><% ganador.user.nombre %> <% ganador.apellido %></td>
                                 <td><% ganador.user.correo %></td>
                                 <td><% ganador.user.telefono %></td>
-                                <td><% ganador.ticket.length %></td>
-                                <td><% ganador.ticket.monto | currency %></td>
+                                <td><% ganador.num_tickets %></td>
+                                <td><% ganador.monto_total | currency %></td>
                                 <td><% ganador.id_semana %></td>
                                 <td><% ganador.dia %></td>
                                 <td>

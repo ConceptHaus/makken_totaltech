@@ -3499,11 +3499,6 @@ body.fullscreen-mode {
   background-color: #e4e6f0;
 }
 
-.form-control-solid:disabled {
-  background-color: #f4f4f9;
-  border: none;
-}
-
 .form-control-air {
   -webkit-box-shadow: 0px 3px 25px 0px rgba(53, 73, 95, 0.1);
   box-shadow: 0px 3px 25px 0px rgba(53, 73, 95, 0.1);

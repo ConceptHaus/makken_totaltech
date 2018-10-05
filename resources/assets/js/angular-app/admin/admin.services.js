@@ -44,6 +44,12 @@ app.factory('AdminFactory', function($http){
                 url:'/api/v1/tickets'
             })
         },
+        ticketsUsuarios: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/ticketsUsuarios'
+            })
+        },
         setPosibleGanadorGanador: function(data){
             return $http({
                 method:'POST',
