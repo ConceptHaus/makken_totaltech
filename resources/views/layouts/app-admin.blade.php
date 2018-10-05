@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('admin/vendors/toastr/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/bootstrap-select/dist/css/bootstrap-select.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/vendors/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/vendors/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css') }}">
     <!-- PLUGINS STYLES-->
     <link href="{{ asset('admin/vendors/dataTables/datatables.min.css') }}" rel="stylesheet" />
     <!-- Estilos -->
@@ -182,6 +183,7 @@
         <script src="{{ asset('admin/vendors/toastr/toastr.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/jquery-validation/dist/jquery.validate.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+        <script src="{{ asset('admin/vendors/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
         <!-- CORE SCRIPTS-->
         <script src="{{ asset('admin/js/app.min.js') }}"></script>
          <!-- PAGE LEVEL PLUGINS-->
@@ -210,6 +212,14 @@
                 });
                 $('#type-filter').on('change', function() {
                     table.column(4).search($(this).val()).draw();
+                });
+
+                 $('#date_1 .input-group.date').datepicker({
+                    todayBtn: "linked",
+                    keyboardNavigation: false,
+                    forceParse: false,
+                    calendarWeeks: true,
+                    autoclose: true
                 });
             });
         </script>

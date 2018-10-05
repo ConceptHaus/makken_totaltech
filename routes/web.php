@@ -41,7 +41,8 @@ Route::get('/api/v1/dashboard','AdminController@dashboard');
 
 //Funcionalidades
 Route::post('/ticket','UserController@creaTicketUser');
-Route::post('/ganador','AdminController@setGanadorTicket');
+Route::post('/posibleganador','AdminController@sendPosibleGanador');
+Route::post('/ganador','AdminController@setGanadorUser');
 Route::post('/editEstablecimiento','AdminController@editEstablecimientos');
 Route::post('/adminTicket','AdminController@adminRegisterTicket');
 Route::post('/texto','AdminController@editTexto');
