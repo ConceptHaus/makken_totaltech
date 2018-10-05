@@ -114,7 +114,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Establecimientos
     AdminFactory.establecimientos().then(function (res) {
         $scope.establecimientos = res.data;
-        // console.log($scope.establecimientos);
+        console.log($scope.establecimientos);
     }, function (err) {
         console.log(err);
     });

@@ -14,7 +14,6 @@
             <div class="col-xl-5">
                 <div class="ibox">
                     <div class="ibox-body">
-                        {{$tickets_totales}}
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
@@ -106,12 +105,32 @@
                                             <input class="form-control" type="text" ng-model="userGanador.dia">
                                         </div>
                                     </div>
+
+
+                                    <div ng-if="userGanador.dia">
+                                        <div ng-repeat="ticket_total in {{$tickets_totales}} | filter:userGanador.dia">
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">No. Tickets Acumulados</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.total_tickets" ng-init="userGanador.total_tickets = ticket_total.num_tickets" class="form-control form-control-solid" name="total_tickets" disabled>
+                                                </div>
+                                                <% userGanador.total_tickets %>
+                                            </div>
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">Monto total acumulado</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.monto_total | currency" ng-init="userGanador.monto_total = ticket_total.monto_total" class="form-control form-control-solid" name="monto_total" disabled>
+                                                </div>
+                                                <% userGanador.monto_total %>
+                                            </div>
+                                        </div>
+                                    </div> 
+
                                 </div>
                                 <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
                             <div class="modal-footer bg-primary-50">
-
-                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)">Aceptar</button>
+                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)" ng-disabled="!(userGanador.id_usuario) || !(userGanador.id_semana) || !(userGanador.dia) || !(userGanador.total_tickets) || !(userGanador.monto_total)">Aceptar</button>
                                 <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
                             </div>
                         </form>
@@ -155,7 +174,7 @@
                                   @endif
                                   @if ($ticket->created_at->toDateString() != $dia[$test] || $key == 0)
                                     <tr>
-                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M')}}</th>
+                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M Y')}}</th>
                                     </tr>
                                   @endif
                                 <tr>
