@@ -1,14 +1,14 @@
 {
     "/js/vendor.js": "/js/vendor.js?id=db761d6dfc7292c9743a",
     "/css/app.css": "/css/app.css?id=b22311fce8ac00e8efa9",
-    "/css/main.css": "/css/main.css?id=155c2e34adf0010c3d00",
+    "/css/main.css": "/css/main.css?id=5242394120634303c6ce",
     "/js/user.services.js": "/js/user.services.js?id=4af2f109e714818736ae",
     "/js/user.controllers.js": "/js/user.controllers.js?id=22ec5b943f02f906163d",
     "/js/home.services.js": "/js/home.services.js?id=5a43e691215d0f3cfc59",
     "/js/home.controllers.js": "/js/home.controllers.js?id=c845dd5a46ac7fa8ac14",
     "/js/forgotPassword.services.js": "/js/forgotPassword.services.js?id=85601d3f0e526354a3d0",
     "/js/forgotPassword.controllers.js": "/js/forgotPassword.controllers.js?id=c695265f175f4171a0d9",
-    "/js/admin.services.js": "/js/admin.services.js?id=7ad36c627606ae388caa",
-    "/js/admin.controllers.js": "/js/admin.controllers.js?id=9794acd0f9b0cbbeafeb",
+    "/js/admin.services.js": "/js/admin.services.js?id=20908d304c40ae60cb40",
+    "/js/admin.controllers.js": "/js/admin.controllers.js?id=a13ddb2d97c40285753b",
     "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }

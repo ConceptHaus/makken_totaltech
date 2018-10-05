@@ -96,22 +96,49 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         readUrl(this);
     })
 
-    $scope.addGanador = function(ticket){
-        console.log(ticket);
+
+    $scope.checkPosibleGanador = function(user){
         swal({
             title: "Espera...",
-            text: "Estamos agregando al ganador",
+            text: "Estamos enviado la información al posible ganador.",
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
-        AdminFactory.setGanador(ticket)
+        $('#modalPosibleGanador').modal('hide');
+        AdminFactory.setPosibleGanadorGanador(user)
+        .then(function(data){
+            swal({
+                 type:'success',
+                 title: "¡Listo!",
+                 text: "El correo ha sido enviado con éxito."
+            })
+            location.reload();
+        },function(err){
+            swal({
+                type:'error',
+                title:'¡Oh no!',
+                text:err.data
+            })
+            console.log(err);
+        })
+    }
+
+    $scope.addGanador = function(userGanador){
+        console.log(userGanador);
+        swal({
+            title: "Espera...",
+            text: "Estamos agregando los datos del ganador.",
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
+            showConfirmButton: false
+        });
+        AdminFactory.setGanador(userGanador)
         .then(function(data){
              swal({
                  type:'success',
                  title: "¡Listo!",
-                 text: "El ticket "+data.data.ticket+ " es ganador",
+                 text: "El usuario ganador ha sido agregado con éxito.",
              }).then((result)=>{
-                $window.location.href = '/admin/tickets/registrados';
+                $window.location.href = '/admin/usuarios/ganadores';
              });
             console.log(data.data);
         },function(err){

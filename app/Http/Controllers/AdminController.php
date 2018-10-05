@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Storage;
 use DB;
 use Mail;
 use Validator;
+use Carbon\Carbon;
+
 
 use App\User;
 use App\Direccion;
@@ -49,8 +51,24 @@ class AdminController extends Controller {
     }
 
     public function usuarioDetalle($id) {
+        //$user = User::where('id',$id)->first();
         $data['user'] = User::getUser($id);
-        return view('admin/usuario_detalle',$data);
+
+        // $data['tickets_totales'] = User::where('users.id','=', $id)
+        //                             ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+        //                             ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+        //                             ->get();
+                                    // ->groupBy(function($date){
+                                    //     return Carbon::parse($date->fecha)->format('d M');
+                                    // });
+
+        // $tickets = $user->tickets()->sum()->get()->groupBy(function($date){
+        //     return Carbon::parse($date->created_at)->format('d M');
+        // });
+
+
+        //                             return response()->json($tickets,200);
+                                    //return view('admin/usuario_detalle',$data);
     }
 
     public function nuevoUsuario() {
@@ -58,6 +76,7 @@ class AdminController extends Controller {
     }
 
     public function ticketsRegistrados() {
+        $edit = true;
         return view('admin/tickets_registrados');
     }
 
@@ -258,7 +277,7 @@ class AdminController extends Controller {
         $id_ticket = $request->id_ticket;
 
         $ticket = Ticket::where('id_ticket','=',$id_ticket)->first();
-        
+
         if($ticket->delete()){
 
             return response()->json([
@@ -280,9 +299,9 @@ class AdminController extends Controller {
         $id_ticket = $request->id_ticket;
         $ticket = Ticket::where('id_ticket',$id_ticket)->first();
         $ticket->monto = $request->monto;
-        
+
         if($ticket->save()){
-            
+
             return response()->json([
                 'error'=>false,
                 'message'=>'El monto se ha actualizado.'
@@ -306,7 +325,7 @@ class AdminController extends Controller {
         $montos_top = DB::table('tickets')
                         ->orderBy('monto','desc')
                         ->take(10)->get();
-        
+
         $establecimientos_top = DB::table('tickets')
                                 ->select('id_establecimiento',DB::raw('count(*) as total'))
                                 ->groupBy('id_establecimiento')

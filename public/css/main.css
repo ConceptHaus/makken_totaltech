@@ -8459,6 +8459,15 @@ table > tbody > tr > td > span.footable-toggle {
   color: #223F97;
 }
 
+.p-table {
+  margin: 0;
+  display: contents;
+}
+
+td input {
+  width: 50%;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;

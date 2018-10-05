@@ -114,6 +114,13 @@ app.factory('AdminFactory', function ($http) {
                 url: '/api/v1/tickets'
             });
         },
+        setPosibleGanadorGanador: function setPosibleGanadorGanador(data) {
+            return $http({
+                method: 'POST',
+                url: '/posibleganador',
+                data: data
+            });
+        },
         setGanador: function setGanador(data) {
             return $http({
                 method: 'POST',

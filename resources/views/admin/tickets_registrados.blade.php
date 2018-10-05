@@ -38,7 +38,32 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-                                <td><% ticket.monto | currency %><i class="la la-pencil" style="float:right;"></i><input  type=text value="<% ticket.monto | currency %>"></td>
+                                <td>
+                                    <p class="p-table"><% ticket.monto | currency %></p>
+                                    <i data-toggle="modal" data-target="#editModal<% ticket.id_ticket %>" class="la la-pencil" style="float:right;"></i>
+                                    <!-- Modal Editar Monto -->
+                                      <div class="modal fade" id="editModal<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="editModal<% ticket.id_ticket %>Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="editModal<% ticket.id_ticket %>Label">Editar Monto</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>En este campo puedes modificar el monto total del ticket.</p>
+                                                <input type=text value="<% ticket.monto | currency %>">
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                              <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Fin Modal Editar Monto-->
+                                </td>
                                 <td ng-if="ticket.id_establecimiento != 9">
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
