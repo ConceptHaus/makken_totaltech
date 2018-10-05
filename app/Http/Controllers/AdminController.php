@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Support\Facades\Storage;
+//use Illuminate\Support\Carbon;
 use DB;
 use Mail;
 use Validator;
@@ -54,7 +55,13 @@ class AdminController extends Controller {
         //$user = User::where('id',$id)->first();
         $data['user'] = User::getUser($id);
 
-        // $data['tickets_totales'] = User::where('users.id','=', $id)
+        $data['tickets_totales'] = User::where('users.id','=', $id)
+                                    ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                                    ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
+                                    ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
+                                    ->get();
+
+                                    // $data['tickets_totales'] = User::where('users.id','=', $id)
         //                             ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
         //                             ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
         //                             ->get();
@@ -68,7 +75,8 @@ class AdminController extends Controller {
 
 
         //                             return response()->json($tickets,200);
-                                    //return view('admin/usuario_detalle',$data);
+
+        return view('admin/usuario_detalle',$data);
     }
 
     public function nuevoUsuario() {
@@ -171,6 +179,8 @@ class AdminController extends Controller {
         $ganador->id_premio = 1;
         $ganador->id_semana = intval($request->id_semana);
         $ganador->dia = $request->dia;
+        $ganador->num_tickets = $request->num_tickets;
+        $ganador->monto_total = $request->monto_total;
 
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 0;

@@ -39,7 +39,7 @@
                                 </td>
                                 <td><% ticket.no_ticket %></td>
                                 <td>
-                                    <p class="p-table"><% ticket.monto | currency %></p>
+                                    <% ticket.monto | currency %>
                                     <i data-toggle="modal" data-target="#editModal<% ticket.id_ticket %>" class="la la-pencil" style="float:right;"></i>
                                     <!-- Modal Editar Monto -->
                                       <div class="modal fade" id="editModal<% ticket.id_ticket %>" tabindex="-1" role="dialog" aria-labelledby="editModal<% ticket.id_ticket %>Label" aria-hidden="true">

@@ -22,6 +22,8 @@ class CreateGanadorTable extends Migration
             $table->integer('id_semana')->unsigned();
             $table->foreign('id_semana')->references('id_semana')->on('semanas')->onDelete('cascade');
             $table->string('dia');
+            $table->string('num_tickets');
+            $table->string('monto_total');
             $table->timestamps();
         });
     }

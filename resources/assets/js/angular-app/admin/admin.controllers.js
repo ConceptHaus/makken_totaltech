@@ -44,7 +44,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
     // Establecimientos
     AdminFactory.establecimientos().then(function(res){
         $scope.establecimientos = res.data;
-        // console.log($scope.establecimientos);
+        console.log($scope.establecimientos);
     },function(err){
         console.log(err);
     })
@@ -201,6 +201,37 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         }).then((result)=>{
             if(result.value){
                 AdminFactory.deleteTicket(ticket).then(function(res){
+                    swal({
+                        title:'Todo bien',
+                        text:res.data.message,
+                        type:'success'
+                    })
+                    location.reload();
+                },
+                function(err){
+                    swal({
+                        title: 'Algo salió mal',
+                        text: err.data.message,
+                        type: 'error'
+                    })
+
+                });
+            }
+        })
+    }
+
+		$scope.editMonto = function(ticket){
+        console.log(ticket);
+        swal({
+            title: '¿Estás seguro?',
+            text: 'El monto del ticket sera cambiado',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor:'#d33',
+            confirmButtonText:'Si, cambiar'
+        }).then((result)=>{
+            if(result.value){
+                AdminFactory.editTicket(ticket).then(function(res){
                     swal({
                         title:'Todo bien',
                         text:res.data.message,

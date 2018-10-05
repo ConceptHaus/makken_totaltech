@@ -14,7 +14,6 @@
             <div class="col-xl-5">
                 <div class="ibox">
                     <div class="ibox-body">
-                        {{-- {{$tickets_totales}} --}}
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
@@ -106,12 +105,32 @@
                                             <input class="form-control" type="text" ng-model="userGanador.dia">
                                         </div>
                                     </div>
+
+
+                                    <div ng-if="userGanador.dia">
+                                        <div ng-repeat="ticket_total in {{$tickets_totales}} | filter:userGanador.dia">
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">No. Tickets Acumulados</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.total_tickets" ng-init="userGanador.total_tickets = ticket_total.num_tickets" class="form-control form-control-solid" name="total_tickets" disabled>
+                                                </div>
+                                                <% userGanador.total_tickets %>
+                                            </div>
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">Monto total acumulado</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.monto_total | currency" ng-init="userGanador.monto_total = ticket_total.monto_total" class="form-control form-control-solid" name="monto_total" disabled>
+                                                </div>
+                                                <% userGanador.monto_total %>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
                             <div class="modal-footer bg-primary-50">
-
-                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)">Aceptar</button>
+                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)" ng-disabled="!(userGanador.id_usuario) || !(userGanador.id_semana) || !(userGanador.dia) || !(userGanador.total_tickets) || !(userGanador.monto_total)">Aceptar</button>
                                 <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
                             </div>
                         </form>
@@ -152,7 +171,7 @@
                                   @endif
                                   @if ($ticket->created_at->toDateString() != $dia[$test] || $key == 0)
                                     <tr>
-                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M')}}</th>
+                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M Y')}}</th>
                                     </tr>
                                   @endif
                                 <tr>
@@ -166,7 +185,32 @@
                                       @endif
                                     </td>
                                     <td>{{$ticket->created_at->format('d M')}}</td>
-                                    <td>${{$ticket->monto}}</td>
+                                    <td>${{$ticket->monto}}
+                                      <% ticket.monto | currency %>
+                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right;"></i>
+                                      <!-- Modal Editar Monto -->
+                                        <div class="modal fade" id="editModal{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="editModal{{$ticket->id_ticket}}Label" aria-hidden="true">
+                                          <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="editModal{{$ticket->id_ticket}}Label">Editar Monto</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <p>En este campo puedes modificar el monto total del ticket.</p>
+                                                  <input type=text value="${{$ticket->monto}}">
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                <button class="btn btn-primary" ng-click="editMonto({{$ticket}})">Guardar Cambios</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- Fin Modal Editar Monto-->
+                                    </td>
                                     <td>
                                       <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
                                           <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
@@ -174,7 +218,7 @@
                                           </a>
                                       </span>
                                       <!-- START BORRAR -->
-                                          <a class="text-light font-20" ng-click="delete(ticket)" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                          <a class="text-light font-20" ng-click="delete({{$ticket}})" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                               <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                           </a>
 
