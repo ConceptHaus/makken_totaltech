@@ -292,4 +292,37 @@ class AdminController extends Controller {
 
     }
 
+    public function dashboard(){
+        $users = count(User::all());
+
+        $tickets = count(Ticket::all());
+
+        $ganadores = count(Ganador::all());
+
+        $montos_top = DB::table('tickets')
+                        ->orderBy('monto','desc')
+                        ->take(10)->get();
+        
+        $establecimientos_top = DB::table('tickets')
+                                ->select('id_establecimiento',DB::raw('count(*) as total'))
+                                ->groupBy('id_establecimiento')
+                                ->orderBy('total','desc')
+                                ->take(10)->get();
+
+        $registros_whatsapp = count(Ticket::where('registro_admin','=',1));
+        return response()->json([
+            'error'=>false,
+            'message'=>'Successful get data.',
+            'data'=>[
+                'users'=>$users,
+                'tickets'=>$tickets,
+                'ganadores'=>$ganadores,
+                'tickets_whatsapp'=>$registros_whatsapp,
+                'montos_top'=>$montos_top,
+                'establecimientos_top'=>$establecimientos_top
+            ]
+        ]);
+
+    }
+
 }
