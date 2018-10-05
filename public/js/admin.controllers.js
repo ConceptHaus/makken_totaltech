@@ -135,6 +135,8 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                 title: '¡Todo bien!',
                 text: 'Tu ticket se ha registrado con éxito',
                 confirmButtonText: 'Aceptar'
+            }).then(function (result) {
+                location.reload();
             });
             $scope.ticket = {};
             $('.img-default-ticket').attr('src', '/img/icons/camera-blue.svg');
@@ -177,7 +179,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                 title: "¡Listo!",
                 text: "El ticket " + data.data.ticket + " es ganador"
             }).then(function (result) {
-                location.reload();
+                $window.location.href = '/admin/tickets/registrados';
             });
             console.log(data.data);
         }, function (err) {

@@ -8449,6 +8449,10 @@ table > tbody > tr > td > span.footable-toggle {
   text-transform: capitalize;
 }
 
+.img-establecimiento {
+  width: 140px !important;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;
