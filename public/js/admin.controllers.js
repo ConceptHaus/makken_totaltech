@@ -226,6 +226,35 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         swal.close();
         console.log(errors.data.fail);
     };
+
+    $scope.delete = function (ticket) {
+        console.log($scope.tickets);
+        swal({
+            title: '¿Estás seguro?',
+            text: 'El ticket se eliminará',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Si, eliminar'
+        }).then(function (result) {
+            if (result.value) {
+                AdminFactory.deleteTicket(ticket).then(function (res) {
+                    swal({
+                        title: 'Todo bien',
+                        text: res.data.message,
+                        type: 'success'
+                    });
+                    location.reload();
+                }, function (err) {
+                    swal({
+                        title: 'Algo salió mal',
+                        text: err.data.message,
+                        type: 'error'
+                    });
+                });
+            }
+        });
+    };
 });
 
 /***/ }),

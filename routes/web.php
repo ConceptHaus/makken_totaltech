@@ -37,7 +37,7 @@ Route::get('/api/v1/tickets', 'AdminController@getAllTickets');
 Route::get('/api/v1/ganadores', 'AdminController@getAllGanadores');
 Route::get('/api/v1/establecimientos', 'WelcomeController@getEstablecimientos');
 Route::get('/api/v1/textos', 'WelcomeController@getTextos');
-
+Route::get('/api/v1/dashboard','AdminController@dashboard');
 
 //Funcionalidades
 Route::post('/ticket','UserController@creaTicketUser');
@@ -45,6 +45,8 @@ Route::post('/ganador','AdminController@setGanadorTicket');
 Route::post('/editEstablecimiento','AdminController@editEstablecimientos');
 Route::post('/adminTicket','AdminController@adminRegisterTicket');
 Route::post('/texto','AdminController@editTexto');
+Route::post('/ticket/delete','AdminController@removeTicket');
+Route::post('/ticket/monto','AdminController@updateMontoTicket');
 
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');

@@ -254,5 +254,79 @@ class AdminController extends Controller {
 
     }
 
+    public function removeTicket(Request $request){
+        $id_ticket = $request->id_ticket;
+
+        $ticket = Ticket::where('id_ticket','=',$id_ticket)->first();
+        
+        if($ticket->delete()){
+
+            return response()->json([
+                'error'=>false,
+                'message'=>'El ticket se ha eliminado.'
+            ],200);
+
+        }
+
+        return response()->json([
+            'error'=>true,
+            'message'=>'El ticket no se ha eliminado.'
+        ],400);
+
+
+    }
+
+    public function updateMontoTicket(Request $request){
+        $id_ticket = $request->id_ticket;
+        $ticket = Ticket::where('id_ticket',$id_ticket)->first();
+        $ticket->monto = $request->monto;
+        
+        if($ticket->save()){
+            
+            return response()->json([
+                'error'=>false,
+                'message'=>'El monto se ha actualizado.'
+            ]);
+        }
+
+        return response()->json([
+            'error'=>true,
+            'message'=>'El monto no se ha actualizado.'
+        ]);
+
+    }
+
+    public function dashboard(){
+        $users = count(User::all());
+
+        $tickets = count(Ticket::all());
+
+        $ganadores = count(Ganador::all());
+
+        $montos_top = DB::table('tickets')
+                        ->orderBy('monto','desc')
+                        ->take(10)->get();
+        
+        $establecimientos_top = DB::table('tickets')
+                                ->select('id_establecimiento',DB::raw('count(*) as total'))
+                                ->groupBy('id_establecimiento')
+                                ->orderBy('total','desc')
+                                ->take(10)->get();
+
+        $registros_whatsapp = count(Ticket::where('registro_admin','=',1));
+        return response()->json([
+            'error'=>false,
+            'message'=>'Successful get data.',
+            'data'=>[
+                'users'=>$users,
+                'tickets'=>$tickets,
+                'ganadores'=>$ganadores,
+                'tickets_whatsapp'=>$registros_whatsapp,
+                'montos_top'=>$montos_top,
+                'establecimientos_top'=>$establecimientos_top
+            ]
+        ]);
+
+    }
 
 }
