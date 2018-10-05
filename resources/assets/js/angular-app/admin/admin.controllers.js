@@ -8,16 +8,16 @@ var app = angular.module('adminController',['angularApp']);
 app.run(function(amMoment) {
 	amMoment.changeLocale('es');
 });
-    
+
 app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN){
-    // Usuarios registrados  
+    // Usuarios registrados
     AdminFactory.allUsers().then(function(res){
         $scope.usuarios = res.data;
     },function(err){
         console.log(err);
     })
 
-    // Usuarios Ganadores  
+    // Usuarios Ganadores
     AdminFactory.ganadores().then(function(res){
         $scope.ganadores = res.data;
         // console.log($scope.ganadores);
@@ -25,7 +25,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         console.log(err);
     })
 
-    // Usuario detalle  
+    // Usuario detalle
     AdminFactory.oneUser().then(function(res){
         $scope.usuario = res.data;
         // console.log($scope.usuario);
@@ -48,7 +48,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
     },function(err){
         console.log(err);
     })
-  
+
     $scope.addTicket = function(ticket){
         console.log(ticket);
         swal({
@@ -144,7 +144,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
-            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
 

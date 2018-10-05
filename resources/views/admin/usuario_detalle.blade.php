@@ -134,10 +134,8 @@
                                   @php
                                     $dia[$key] = $value->created_at->toDateString();
                                   @endphp
-                                  {{$dia[$key]}}
                                   @endforeach
                                 @foreach($user->tickets as $key => $ticket)
-
                                   @php
                                     $date = $ticket->created_at->toDateString();
                                     $test = 0;
@@ -146,7 +144,6 @@
                                     @php
                                       $test = $key-1;
                                     @endphp
-
                                   @endif
                                   @if ($ticket->created_at->toDateString() != $dia[$test] || $key == 0)
                                     <tr>

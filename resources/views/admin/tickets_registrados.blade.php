@@ -38,7 +38,7 @@
                                     <% ticket.user.nombre %> <% ticket.user.apellido %>
                                 </td>
                                 <td><% ticket.no_ticket %></td>
-                                <td><% ticket.monto | currency %><i class="la la-pencil" style="float:right;"></i></td>
+                                <td><% ticket.monto | currency %><i class="la la-pencil" style="float:right;"></i><input  type=text value="<% ticket.monto | currency %>"></td>
                                 <td ng-if="ticket.id_establecimiento != 9">
                                     <img class="mr-3" ng-src="{{ asset('<% ticket.establecimiento.url %>') }}" alt="image" width="90" />
                                 </td>
@@ -144,7 +144,7 @@
                                             <a class="text-light font-20" ng-click="delete(ticket)" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
                                                 <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                             </a>
-                                       
+
                                         <!-- END BORRAR -->
                                 </td>
                             </tr>

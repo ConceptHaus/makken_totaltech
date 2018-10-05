@@ -80,14 +80,14 @@ app.run(function (amMoment) {
 });
 
 app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN) {
-    // Usuarios registrados  
+    // Usuarios registrados
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
     }, function (err) {
         console.log(err);
     });
 
-    // Usuarios Ganadores  
+    // Usuarios Ganadores
     AdminFactory.ganadores().then(function (res) {
         $scope.ganadores = res.data;
         // console.log($scope.ganadores);
@@ -95,7 +95,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
-    // Usuario detalle  
+    // Usuario detalle
     AdminFactory.oneUser().then(function (res) {
         $scope.usuario = res.data;
         // console.log($scope.usuario);
@@ -209,7 +209,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
-            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
 
