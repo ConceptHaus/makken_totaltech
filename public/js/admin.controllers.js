@@ -80,14 +80,14 @@ app.run(function (amMoment) {
 });
 
 app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN) {
-    // Usuarios registrados  
+    // Usuarios registrados
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
     }, function (err) {
         console.log(err);
     });
 
-    // Usuarios Ganadores  
+    // Usuarios Ganadores
     AdminFactory.ganadores().then(function (res) {
         $scope.ganadores = res.data;
         // console.log($scope.ganadores);
@@ -95,7 +95,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(err);
     });
 
-    // Usuario detalle  
+    // Usuario detalle
     AdminFactory.oneUser().then(function (res) {
         $scope.usuario = res.data;
         // console.log($scope.usuario);
@@ -243,7 +243,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
-            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
 
@@ -273,6 +273,35 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.deleteTicket(ticket).then(function (res) {
+                    swal({
+                        title: 'Todo bien',
+                        text: res.data.message,
+                        type: 'success'
+                    });
+                    location.reload();
+                }, function (err) {
+                    swal({
+                        title: 'Algo salió mal',
+                        text: err.data.message,
+                        type: 'error'
+                    });
+                });
+            }
+        });
+    };
+
+    $scope.editMonto = function (ticket) {
+        console.log(ticket);
+        swal({
+            title: '¿Estás seguro?',
+            text: 'El monto del ticket sera cambiado',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Si, cambiar'
+        }).then(function (result) {
+            if (result.value) {
+                AdminFactory.editTicket(ticket).then(function (res) {
                     swal({
                         title: 'Todo bien',
                         text: res.data.message,
