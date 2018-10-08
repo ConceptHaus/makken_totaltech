@@ -15,10 +15,15 @@
               <div class="ibox">
                   <div class="ibox-body">
                       <div class="flexbox mb-3">
+                        <div class="col-md-7">
+                            <div class="easypie centered" data-percent="71" data-size="120" data-line-width="8">
+                                <span class="easypie-data h4 font-strong text-blue-total">71</span>
+                            </div>
+                        </div>
                           <span class="flexbox">
                               <span>Participantes Acumulados</span>
                           </span>
-                          <span class="h3 mb-0 text-blue-total font-strong ml-2">71</span>
+                          {{-- <span class="h3 mb-0 text-blue-total font-strong ml-2">71</span> --}}
                       </div>
                   </div>
               </div>
@@ -27,10 +32,15 @@
               <div class="ibox">
                   <div class="ibox-body">
                       <div class="flexbox mb-3">
+                        <div class="col-md-7">
+                            <div class="easypie centered" data-percent="89" data-size="120" data-line-width="8">
+                                <span class="easypie-data h4 font-strong text-blue-total">89</span>
+                            </div>
+                        </div>
                           <span class="flexbox">
                               <span>Registros Acumulados</span>
                           </span>
-                          <span class="h3 mb-0 text-blue-total font-strong ml-2">89</span>
+                          {{-- <span class="h3 mb-0 text-blue-total font-strong ml-2">89</span> --}}
                       </div>
                   </div>
               </div>

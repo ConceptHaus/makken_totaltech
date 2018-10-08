@@ -184,7 +184,7 @@
                                     <td>{{$ticket->created_at->format('d M')}}</td>
                                     <td>${{$ticket->monto}}
                                       <!-- Acción Editar Monto Ticket -->
-                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right;"></i>
+                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i>
                                         <!-- START MODAL TICKET EDIT -->
                                         <div class="modal fade modalEdit" id="editModal{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
                                           <div class="modal-dialog modal-dialog-centered" role="document">

@@ -222,6 +222,14 @@
                     autoclose: true,
                     format: 'dd-mm-yyyy'
                 });
+                //Settings para chart de Dashboard
+                $('.easypie').each(function(){
+                    $(this).easyPieChart({
+                      //trackColor: $(this).attr('data-trackColor') || '#f2f2f2',
+                      scaleColor: false,
+                      barColor: '#223F97',
+                    });
+                });
             });
         </script>
         <!-- ANGULAR --->
@@ -250,6 +258,9 @@
             })
             app.constant("CSRF_TOKEN",'{{csrf_token()}}');
       </script>
+
+      <script src="{{asset('admin/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js')}}"></script>
+      <script src="{{asset('admin/vendors/chart.js/dist/Chart.min.js')}}"></script>
 
     </body>
 </html>
