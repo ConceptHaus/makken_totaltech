@@ -14,7 +14,6 @@
             <div class="col-xl-5">
                 <div class="ibox">
                     <div class="ibox-body">
-                        {{$tickets_totales}}
                         <h5 class="font-strong mb-4">Informacion General</h5>
                         <div class="row align-items-center mb-3">
                             <div class="col-4 text-light">Nombre</div>
@@ -106,12 +105,29 @@
                                             <input class="form-control" type="text" ng-model="userGanador.dia">
                                         </div>
                                     </div>
+
+                                    <div ng-if="userGanador.dia">
+                                        <div ng-repeat="ticket_total in {{$tickets_totales}} | filter:userGanador.dia">
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">No. Tickets Acumulados</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.num_tickets" ng-init="userGanador.num_tickets = ticket_total.num_tickets" class="form-control form-control-solid" name="num_tickets" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-4 row">
+                                                <label class="col-sm-6 col-form-label">Monto total acumulado</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" ng-model="userGanador.monto_total | currency" ng-init="userGanador.monto_total = ticket_total.monto_total" class="form-control form-control-solid" name="monto_total" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <p>¿Estás seguro que los datos son correctos y estas eligiendo a este usuario como ganador?</p>
                             </div>
                             <div class="modal-footer bg-primary-50">
-
-                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)">Aceptar</button>
+                                <button class="btn btn-primary btn-rounded mr-3" type="button" ng-click="addGanador(userGanador)" ng-disabled="!(userGanador.id_usuario) || !(userGanador.id_semana) || !(userGanador.dia) || !(userGanador.num_tickets) || !(userGanador.monto_total)">Aceptar</button>
                                 <button class="btn btn-rounded mr-3" type="button" data-dismiss="modal" aria-label="Close">Cancelar</button>
                             </div>
                         </form>
@@ -139,10 +155,8 @@
                                   @php
                                     $dia[$key] = $value->created_at->toDateString();
                                   @endphp
-                                  {{$dia[$key]}}
                                   @endforeach
                                 @foreach($user->tickets as $key => $ticket)
-
                                   @php
                                     $date = $ticket->created_at->toDateString();
                                     $test = 0;
@@ -151,11 +165,10 @@
                                     @php
                                       $test = $key-1;
                                     @endphp
-
                                   @endif
                                   @if ($ticket->created_at->toDateString() != $dia[$test] || $key == 0)
                                     <tr>
-                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M')}}</th>
+                                      <th colspan="6" style="text-align: center;">{{$ticket->created_at->format('d M Y')}}</th>
                                     </tr>
                                   @endif
                                 <tr>
@@ -169,39 +182,66 @@
                                       @endif
                                     </td>
                                     <td>{{$ticket->created_at->format('d M')}}</td>
-                                    <td>${{$ticket->monto}}</td>
-                                    <td>
-                                      <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
-                                          <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
-                                              <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
-                                          </a>
-                                      </span>
-                                      {{-- Start Borrar --}}
-                                      <span>
-                                          <a class="text-light font-20" data-content="Borrar">
-                                            {{-- <i class="la la-times-circle-o"></i> --}}
-                                            <img src="{{ asset('img/icons/eliminate.svg') }}" width="18">
-                                          </a>
-                                      </span>
-                                      {{-- End Borrar --}}
-                                      <!-- START MODAL GANADOR -->
-                                      <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
-                                              <div class="modal-dialog" role="document">
-                                                  <form class="modal-content">
-                                                      <div class="modal-header p-4">
-                                                          <h5 class="modal-title">TICKET</h5>
-                                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">×</span>
-                                                          </button>
-                                                      </div>
-                                                      <div class="modal-body p-4">
-                                                          <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
-                                                      </div>
-                                                      <div class="modal-footer bg-primary-50"></div>
-                                                  </form>
+                                    <td>${{$ticket->monto}}
+                                      {{-- <% ticket.monto | currency %> --}}
+                                      <!-- Acción Editar Monto Ticket -->
+                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right;"></i>
+                                        <!-- START MODAL TICKET EDIT -->
+                                        <div class="modal fade" id="editModal{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+                                          <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title">Editar Monto</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
                                               </div>
+                                                <div class="modal-body text-center">
+                                                    <p>En este campo puedes modificar el monto total del ticket.</p>
+                                                    <h6 class="mt-5">No. de Ticket</h6>
+                                                    <h4 class="mb-4 text-blue-total">{{$ticket->no_ticket}}</h1>
+                                                    <h6>Monto</h6>
+                                                    <input type=text class="form-control mb-5" name="ticket_monto" value="{{$ticket->monto}}">
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                <button class="btn btn-primary" ng-click="editMonto({{$ticket}})">Guardar Cambios</button>
+                                              </div>
+                                            </div>
                                           </div>
-                                      <!-- END MODAL GANADOR -->
+                                        </div>
+                                        <!-- END MODAL TICKET EDIT -->
+                                    </td>
+                                    <td>
+                                        <!-- Acción Imagen Ticket -->
+                                        <span data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}">
+                                            <a class="text-light font-20" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                                <img src="{{ asset('img/icons/camera-blue.svg') }}" width="22">
+                                            </a>
+                                        </span>
+                                        <!-- Acción Eliminar Ticket -->
+                                        <a class="text-light font-20" ng-click="delete({{$ticket}})" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                            <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
+                                        </a>
+
+                                        <!-- START MODAL TICKET IMAGE -->
+                                        <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <form class="modal-content">
+                                                    <div class="modal-header p-4">
+                                                        <h5 class="modal-title">TICKET</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body p-4">
+                                                        <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                    </div>
+                                                    <div class="modal-footer bg-primary-50"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- END MODAL TICKET IMAGE -->
                                     </td>
                                 </tr>
                                 @endforeach

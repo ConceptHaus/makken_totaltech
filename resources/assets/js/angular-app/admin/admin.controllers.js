@@ -8,16 +8,16 @@ var app = angular.module('adminController',['angularApp']);
 app.run(function(amMoment) {
 	amMoment.changeLocale('es');
 });
-    
+
 app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN){
-    // Usuarios registrados  
+    // Usuarios registrados
     AdminFactory.allUsers().then(function(res){
         $scope.usuarios = res.data;
     },function(err){
         console.log(err);
     })
 
-    // Usuarios Ganadores  
+    // Usuarios Ganadores
     AdminFactory.ganadores().then(function(res){
         $scope.ganadores = res.data;
         // console.log($scope.ganadores);
@@ -25,7 +25,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         console.log(err);
     })
 
-    // Usuario detalle  
+    // Usuario detalle
     AdminFactory.oneUser().then(function(res){
         $scope.usuario = res.data;
         // console.log($scope.usuario);
@@ -41,6 +41,14 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         console.log(err);
     })
 
+    // Tickets Usuarios
+    AdminFactory.ticketsUsuarios().then(function(res){
+        $scope.ticketsUsuarios = res.data;
+        // console.log($scope.ticketsUsuarios);
+    },function(err){
+        console.log(err);
+    })
+
     // Establecimientos
     AdminFactory.establecimientos().then(function(res){
         $scope.establecimientos = res.data;
@@ -48,7 +56,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
     },function(err){
         console.log(err);
     })
-  
+
     $scope.addTicket = function(ticket){
         console.log(ticket);
         swal({
@@ -104,6 +112,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
+        console.log(user);
         $('#modalPosibleGanador').modal('hide');
         AdminFactory.setPosibleGanadorGanador(user)
         .then(function(data){
@@ -171,7 +180,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
-            imageUrl: 'img/icons/Spinner-1s-200px.gif',
+            imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
 
@@ -227,4 +236,35 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
                 function(err){
                     console.log(err);
                 });
+
+		$scope.editMonto = function(ticket){
+        console.log(ticket);
+        swal({
+            title: '¿Estás seguro?',
+            text: 'El monto del ticket sera cambiado',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor:'#d33',
+            confirmButtonText:'Si, cambiar'
+        }).then((result)=>{
+            if(result.value){
+                AdminFactory.editTicket(ticket).then(function(res){
+                    swal({
+                        title:'Todo bien',
+                        text:res.data.message,
+                        type:'success'
+                    })
+                    location.reload();
+                },
+                function(err){
+                    swal({
+                        title: 'Algo salió mal',
+                        text: err.data.message,
+                        type: 'error'
+                    })
+
+                });
+            }
+        })
+    }
 })

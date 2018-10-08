@@ -70,3 +70,14 @@
 .text-blue-total {
   color: $azul;
 }
+
+.p-table {
+  margin: 0;
+  display: contents;
+}
+
+td {
+  input {
+    width: 50%;
+  }
+}

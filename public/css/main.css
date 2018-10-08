@@ -8433,6 +8433,7 @@ table > tbody > tr > td > span.footable-toggle {
 .modal .close {
   color: #223F97;
   text-align: right;
+  top: 12px;
   z-index: 99;
 }
 
@@ -8459,9 +8460,58 @@ table > tbody > tr > td > span.footable-toggle {
   color: #223F97;
 }
 
+.p-table {
+  margin: 0;
+  display: contents;
+}
+
+td input {
+  width: 50%;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;
     width: 100%;
   }
+}
+
+.swal2-title {
+  color: #223F97 !important;
+  font-style: normal !important;
+}
+
+.close {
+  float: right;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+  color: #223F97 !important;
+  text-shadow: none;
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  right: 11px;
+}
+
+.swal2-confirm {
+  background: #F7E300 !important;
+  border-radius: 50px !important;
+  color: #223F97 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 10px 12px !important;
+  width: 200px !important;
+}
+
+.swal2-popup .swal2-styled.swal2-cancel {
+  background: #F7E300 !important;
+  border-radius: 50px !important;
+  color: #223F97 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 10px 12px !important;
+  width: 200px !important;
 }
