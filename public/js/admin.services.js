@@ -147,6 +147,12 @@ app.factory('AdminFactory', function ($http) {
                 url: '/ticket/monto',
                 data: data
             });
+        },
+        dashboard: function dashboard() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/dashboard'
+            });
         }
     };
 });
