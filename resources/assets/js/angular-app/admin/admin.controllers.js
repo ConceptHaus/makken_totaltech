@@ -219,4 +219,12 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
             }
         })
     }
+
+    AdminFactory.dashboard()
+                .then(function(data){
+                    console.log(data);
+                },
+                function(err){
+                    console.log(err);
+                });
 })
