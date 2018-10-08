@@ -320,9 +320,9 @@ class AdminController extends Controller {
     }
 
     public function updateMontoTicket(Request $request){
-        $id_ticket = $request->id_ticket;
+        $id_ticket = $request->id;
         $ticket = Ticket::where('id_ticket',$id_ticket)->first();
-        $ticket->monto = $request->monto;
+        $ticket->monto = intval($request->nuevo_monto);
 
         if($ticket->save()){
 

@@ -71,7 +71,7 @@
                 </div>
             </div>
             {{-- Fin Top Tiendas --}}
-          {{-- Panel 1 --}}
+          {{-- Inicio Reportes --}}
             <div class="col-xl-4">
               <div class="ibox">
                   <div class="ibox-head">
@@ -80,7 +80,7 @@
                   <div class="ibox-body">
                     <ul class="list-group list-group-divider list-group-full">
                         <li class="list-group-item flexbox">
-                            <span class="mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}" width="40"><span class="ml-3">Total</span></span>
+                            <span class="mr-3"><img src="{{asset('img/icons/profile.png')}}" width="40"><span class="ml-3">Total</span></span>
                             <span class="mb-0 ml-2">71</span>
                         </li>
                         <li class="list-group-item flexbox">
@@ -110,7 +110,7 @@
                   </div>
               </div>
             </div>
-            {{-- Fin Panel 1 --}}
+            {{-- Fin Reportes --}}
               {{-- Panel 3 --}}
                 {{-- <div class="col-xl-4">
                   <div class="ibox">

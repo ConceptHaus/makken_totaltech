@@ -231,6 +231,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
 
 		$scope.editMonto = function(ticket){
         console.log(ticket);
+				$('.modalEdit').modal('hide');
         swal({
             title: '¿Estás seguro?',
             text: 'El monto del ticket sera cambiado',
@@ -246,6 +247,7 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
                         text:res.data.message,
                         type:'success'
                     })
+										//console.log(res);
                     location.reload();
                 },
                 function(err){
