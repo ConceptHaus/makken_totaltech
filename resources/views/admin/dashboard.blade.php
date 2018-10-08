@@ -38,32 +38,32 @@
           {{-- Fin de Participantes --}}
         </div>
         <div class="row">
-          {{-- Top Tiendas --}}
+            {{-- Top Tiendas --}}
             <div class="col-xl-4">
                 <div class="ibox">
                     <div class="ibox-head">
                         <div class="ibox-title">TOP TIENDAS</div>
                     </div>
-                    <div class="ibox-body">
+                    <div class="ibox-body ibox-ajust">
                       <ul class="list-group list-group-divider list-group-full">
                           <li class="list-group-item flexbox">
-                              <span class="mr-3"><img src="{{asset('img/logos/lacomer.png')}}" width="70">Comercial Mexicana</span>
+                              <span class="mr-3"><img src="{{asset('img/logos/lacomer.png')}}" width="90"></span>
                               <span class="mb-0 ml-2">25</span>
                           </li>
                           <li class="list-group-item flexbox">
-                              <span class="mr-3"><img src="{{asset('img/logos/casacravioto.png')}}" width="70">Casa Cravioto</span>
+                              <span class="mr-3"><img src="{{asset('img/logos/casacravioto.png')}}" width="90"></span>
                               <span class="mb-0 ml-2">25</span>
                           </li>
                           <li class="list-group-item flexbox">
-                              <span class="mr-3"><img src="{{asset('img/logos/chedraui.png')}}" width="70">Chedraui</span>
+                              <span class="mr-3"><img src="{{asset('img/logos/chedraui.png')}}" width="90"></span>
                               <span class="mb-0 ml-2">25</span>
                           </li>
                           <li class="list-group-item flexbox">
-                              <span class="mr-3"><img src="{{asset('img/logos/heb.png')}}" width="70">HEB</span>
+                              <span class="mr-3"><img src="{{asset('img/logos/heb.png')}}" width="90"></span>
                               <span class="mb-0 ml-2">25</span>
                           </li>
                           <li class="list-group-item flexbox">
-                              <span class="mr-3"><img src="{{asset('img/logos/lowes.png')}}" width="70">LOWES</span>
+                              <span class="mr-3"><img src="{{asset('img/logos/lowes.png')}}" width="90"></span>
                               <span class="mb-0 ml-2">25</span>
                           </li>
                       </ul>
@@ -71,44 +71,74 @@
                 </div>
             </div>
             {{-- Fin Top Tiendas --}}
-          {{-- Panel 1 --}}
+            {{-- Panel 1 --}}
             <div class="col-xl-4">
-              <div class="ibox">
-                  <div class="ibox-head">
-                      <div class="ibox-title">REGISTROS</div>
-                  </div>
-                  <div class="ibox-body">
-                    <ul class="list-group list-group-divider list-group-full">
-                        <li class="list-group-item flexbox">
-                            <span class="mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}" width="40"><span class="ml-3">Total</span></span>
-                            <span class="mb-0 ml-2">71</span>
-                        </li>
-                        <li class="list-group-item flexbox">
-                            <span class="mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}" width="40"><span class="ml-3">WhatsApp</span></span>
-                            <span class="mb-0 ml-2">25</span>
-                        </li>
-                        <li class="list-group-item flexbox">
-                            <span class="mr-3"><img src="{{asset('img/icons/register.svg')}}" width="40"><span class="ml-3">Registros</span></span>
-                            <span class="mb-0 ml-2">46</span>
-                        </li>
-                    </ul>
-                  </div>
-              </div>
+                <div class="ibox">
+                    <div class="ibox-head">
+                        <div class="ibox-title">PARTICIPANTES</div>
+                    </div>
+                    <div class="ibox-body">
+                        <ul class="list-group list-group-divider list-group-full">
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/icons/register.svg')}}" width="30"><span class="ml-3"> Registros</span></span>
+                                <span class="mb-0 ml-2">46</span>
+                            </li>
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}" width="30"><span class="ml-3"> WhatsApp</span></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                            {{-- <li class="list-group-item flexbox">
+                                <span class="mr-3"><i class="ti-cup" style="    font-size: 25px;
+                                    margin-right: 20px;"></i> Ganadores</span></span>
+                                <span class="mb-0 ml-2">71</span>
+                            </li> --}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="ibox">
+                    <div class="ibox-head">
+                        <div class="ibox-title">GANADORES</div>
+                    </div>
+                    <div class="ibox-body">
+                        <div class="">
+                            <span class="btn-icon-only btn-circle bg-primary-50 text-primary mr-3"><i class="ti-cup"></i></span>
+                            <div style="float:right;" class="h1 mb-0 ml-2">$1250</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
 
             <div class="col-xl-4">
-              <div class="ibox">
-                  <div class="ibox-head">
-                      <div class="ibox-title">Ticket de compra con mayor monto</div>
-                  </div>
-                  <div class="ibox-body">
-                      <div class="mb-3">
-                          <span class="btn-icon-only btn-circle bg-primary-50 text-primary mr-3"><i class="ti-cup"></i></span>
-                          <div style="float:right;" class="h1 mb-0 ml-2">$1250</div>
-                          <div style="float:right;">Soriana Izatapalapa SUC. 262</div>
-                      </div>
-                  </div>
-              </div>
+                <div class="ibox">
+                    <div class="ibox-head">
+                        <div class="ibox-title">TOP TICKETS CON MAYOR MONTO DE COMPRA</div>
+                    </div>
+                    <div class="ibox-body ibox-ajust">
+                        <ul class="list-group list-group-divider list-group-full">
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/logos/lacomer.png')}}" width="90"></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/logos/casacravioto.png')}}" width="90"></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/logos/chedraui.png')}}" width="90"></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/logos/heb.png')}}" width="90"></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                            <li class="list-group-item flexbox">
+                                <span class="mr-3"><img src="{{asset('img/logos/lowes.png')}}" width="90"></span>
+                                <span class="mb-0 ml-2">25</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             {{-- Fin Panel 1 --}}
               {{-- Panel 3 --}}

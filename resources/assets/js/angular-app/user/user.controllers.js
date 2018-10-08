@@ -90,7 +90,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
     var success = function(data){
         console.log(data.data);
         if(data.data['admin'] == true){
-            $window.location.href = '/admin/usuarios/registrados';
+            $window.location.href = '/admin/dashboard';
         }else{
             $window.location.href = '/home';
         }
