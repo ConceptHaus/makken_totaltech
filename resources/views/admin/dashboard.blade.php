@@ -16,7 +16,7 @@
                   <div class="ibox-body">
                       <div class="flexbox mb-3">
                         <div class="col-md-7">
-                            <div class="easypie centered" data-percent="71" data-size="120" data-line-width="8">
+                            <div class="easypie centered" data-percent="71" data-size="120" data-line-width="10">
                                 <span class="easypie-data h4 font-strong text-blue-total">71</span>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                   <div class="ibox-body">
                       <div class="flexbox mb-3">
                         <div class="col-md-7">
-                            <div class="easypie centered" data-percent="89" data-size="120" data-line-width="8">
+                            <div class="easypie centered" data-percent="89" data-size="120" data-line-width="10">
                                 <span class="easypie-data h4 font-strong text-blue-total">89</span>
                             </div>
                         </div>
