@@ -77,6 +77,12 @@ app.factory('AdminFactory', function($http){
                 url:'/ticket/monto',
                 data:data
             })
+        },
+        dashboard: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/dashboard'
+            })
         }
     }
 })

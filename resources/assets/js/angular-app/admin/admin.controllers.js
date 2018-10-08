@@ -229,6 +229,15 @@ app.controller("adminCtrl", function($scope, AdminFactory, $http, $window, Uploa
         })
     }
 
+    AdminFactory.dashboard()
+        .then(function(data){
+            $scope.dashboard_data = data.data;
+            console.log(data.data.data);
+        },
+        function(err){
+            console.log(err);
+        });
+
 		$scope.editMonto = function(ticket){
         console.log(ticket);
 				$('.modalEdit').modal('hide');

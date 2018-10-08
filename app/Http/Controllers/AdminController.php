@@ -351,7 +351,8 @@ class AdminController extends Controller {
                         ->take(10)->get();
 
         $establecimientos_top = DB::table('tickets')
-                                ->select('id_establecimiento',DB::raw('count(*) as total'))
+                                ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
+                                ->select('establecimiento.*', DB::raw('count(*) as total'))
                                 ->groupBy('id_establecimiento')
                                 ->orderBy('total','desc')
                                 ->take(10)->get();
