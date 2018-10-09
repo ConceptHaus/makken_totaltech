@@ -9838,6 +9838,10 @@ footer {
   width: 100px;
 }
 
+.dropdown {
+  cursor: pointer;
+}
+
 /**
 *** 5.- Estilos Login
 **/
