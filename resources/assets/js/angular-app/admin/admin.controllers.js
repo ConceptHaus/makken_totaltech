@@ -310,4 +310,4 @@ app.directive("money",function ($filter, $locale) {
         });
       }
     };
-  });
+});

@@ -23,12 +23,10 @@
 
                         <div class="form-group">
                             <input id="ticket" ng-model="ticket.no_ticket" type="text" class="form-control" name="ticket" placeholder="Número de ticket" required>
-
                         </div>
 
                         <div class="form-group">
-                            <input id="monto" ng-model="ticket.monto" type="number" class="form-control" mask="" name="monto" placeholder="Monto de compra" required>
-
+                            <input id="monto" ng-model="ticket.monto" type="text" class="form-control" mask="" name="monto" placeholder="Monto de compra" ng-pattern="/^$|^[0-9,]+$/" money required>
                         </div>
 
                         <div class="form-group">
@@ -58,7 +56,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <button type="submit" ng-click="addTicket(ticket)"  class="btn btn-submit">REGISTRAR</button>
+                                <button type="submit" ng-click="addTicket(ticket)" class="btn btn-submit" ng-disabled="!(ticket.id_establecimiento) || !(ticket.no_ticket) || !(ticket.monto) || !(ticket.fileticket)">REGISTRAR</button>
                             </div>
                         </div>
 

@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <button type="submit" class="btn btn-primary btn-air mr-2" ng-click="register(user,confirm)">Guardar</button>
+                                <button type="submit" class="btn btn-primary btn-air mr-2" ng-click="register(user,confirm)" ng-disabled="!(user.nombre) || !(user.apellido) || !(user.telefono) || !(user.cp) || !(user.estado) || !(user.municipio) || !(user.correo) || !(user.password) || !(user.password_confirmation)">Guardar</button>
                                 <a class="btn btn-secondary" href="{{ url('/admin/usuarios/registrados') }}">Cancelar</a>
                             </div>
                         </form>

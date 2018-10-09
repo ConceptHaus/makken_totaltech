@@ -164,7 +164,7 @@ class AdminController extends Controller {
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to('privacidad@makken.com.mx', 'Total Tech | Posible ganador')->subject('Total Tech | Posible ganador');
+            $contact->to('privacidad@makken.com.mx', 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Tú también puedes con todo ¡Compra y gana! con Total Tech.');
         });
 
         if($usuario->save()){
@@ -285,8 +285,6 @@ class AdminController extends Controller {
                         ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
                         ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
                         ->get();
-                        // where('users.isAdmin','!=', '1')
-
         return response()->json($ticketsUsers);
     }
 
@@ -345,7 +343,7 @@ class AdminController extends Controller {
         $montos_top = DB::table('tickets')
                         ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
                         ->select('tickets.*', 'establecimiento.nombre', 'establecimiento.url')
-                        ->orderBy('monto','asc')
+                        ->orderBy('monto','desc')
                         ->take(8)->get();
         $establecimientos_top = DB::table('tickets')
                                 ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')

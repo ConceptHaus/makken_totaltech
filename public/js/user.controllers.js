@@ -169,6 +169,43 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
     $scope.getEstablecimientos();
 });
 
+app.directive("money", function ($filter, $locale) {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function link(scope, el, attr, ctrl) {
+            // format on init
+            formatMoney();
+
+            function formatMoney() {
+                var value = ctrl.$modelValue;
+
+                // remove all separaters first
+                var groupsep = $locale.NUMBER_FORMATS.GROUP_SEP;
+                var re = new RegExp(groupsep, 'g');
+                value = String(value).replace(re, '');
+
+                // format using angular
+                var currencyFilter = $filter('currency');
+                var value = currencyFilter(value, "");
+
+                // sorry but no cents
+                var decimalsep = $locale.NUMBER_FORMATS.DECIMAL_SEP;
+                value = value.split(decimalsep)[0];
+
+                // render
+                ctrl.$viewValue = value;
+                ctrl.$render();
+            };
+
+            // subscribe on changes
+            scope.$watch(attr.ngModel, function () {
+                formatMoney();
+            });
+        }
+    };
+});
+
 /***/ }),
 
 /***/ 1:
