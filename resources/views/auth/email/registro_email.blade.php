@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Posible Ganador </title>
+		<title>Nuevo Registro</title>
         
     <style type="text/css">
 		p{
@@ -451,9 +451,11 @@
 			line-height:150% !important;
 		}
 
-}</style></head>
+}</style>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"282636",ustr:"",originlat:"0",clientrtt:"41",ghostip:"23.193.172.70",ipv6:false,pct:"10",clientip:"187.163.54.152",requestid:"31ef2ae1",region:"31307",protocol:"",blver:14,akM:"x",akN:"ae",akTT:"O",akTX:"1",akTI:"31ef2ae1",ai:"199322",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
     <body>
-		<span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"> ¡Posible Ganador! </span>
+		<span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"> ¡Nuevo Registro!</span>
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
                 <tr>
@@ -488,10 +490,10 @@
                 <td valign="top" style="padding:0px" class="mcnImageBlockInner">
                     <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
                         <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">	
+                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/c682ec58-549e-417b-9e53-e4bf30e1c6ab.png" width="800" style="max-width:1200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/6fc4fa89-83a0-40f8-ad96-c750353d9100.png" width="800" style="max-width:1200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>

@@ -68,17 +68,17 @@
             <div class="col-xl-4">
                 <div class="ibox">
                     <div class="ibox-head">
-                        <div class="ibox-title">PARTICIPANTES</div>
+                        <div class="ibox-title">TIPOS DE REGISTROS TICKETS</div>
                     </div>
                     <div class="ibox-body">
                         <ul class="list-group list-group-divider list-group-full">
                             <li class="list-group-item flexbox">
-                                <span class="mr-3"><img src="{{asset('img/icons/register.svg')}}" width="30"><span class="ml-3"> Registros</span></span>
-                                <span class="mb-0 ml-2"><% dashboard_data.data.users_web %></span>
+                                <span class="mr-3"><img src="{{asset('img/icons/register.svg')}}" width="30"><span class="ml-3"> Usuarios</span></span>
+                                <span class="mb-0 ml-2"><% dashboard_data.data.tickets_web %></span>
                             </li>
                             <li class="list-group-item flexbox">
                                 <span class="mr-3"><img src="{{asset('img/icons/whatsapp.svg')}}" width="30"><span class="ml-3"> Whatsapp</span></span>
-                                <span class="mb-0 ml-2"><% dashboard_data.data.users_whatsapp %></span>
+                                <span class="mb-0 ml-2"><% dashboard_data.data.tickets_whatsapp %></span>
                             </li>
                         </ul>
                     </div>
@@ -109,28 +109,22 @@
                         <div class="ibox-title">TOP TICKETS CON MAYOR MONTO DE COMPRA</div>
                     </div>
                     <div class="ibox-body ibox-ajust table-responsive">
-                            <table ng-table="demo.tableParams" class="table table-bordered table-hover" id="products-table">
-                                <thead class="thead-default thead-lg">
-                                    <tr>
-                                        <th>Establecimiento</th>
-                                        <th>No. Ticket</th>
-                                        <th>Monto</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="ticket_monto in dashboard_data.data.montos_top | orderBy:'ticket_monto.monto'">
-                                        <td><img src="{{asset('<% ticket_monto.url %>')}}" width="90"></td>
-                                        <td><% ticket_monto.no_ticket %></td>
-                                        <td><% ticket_monto.monto | currency:"$" %></td>
-                                    </tr>      
-                                </tbody>
-                            </table>
-                        {{-- <ul class="list-group list-group-divider list-group-full">
-                            <li class="list-group-item flexbox" ng-repeat="ticket_monto in dashboard_data.data.montos_top | orderBy:'ticket_monto.monto'">
-                                <span class="mr-3"><img src="{{asset('<% ticket_monto.url %>')}}" width="90"> <span class="mr-3"><% ticket_monto.no_ticket %></span></span>
-                                <span class="mb-0 ml-2"><% ticket_monto.monto | currency:"$" %></span>
-                            </li>
-                        </ul> --}}
+                        <table ng-table="demo.tableParams" class="table table-bordered table-hover" id="products-table">
+                            <thead class="thead-default thead-lg">
+                                <tr>
+                                    <th>Establecimiento</th>
+                                    <th>No. Ticket</th>
+                                    <th>Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="ticket_monto in dashboard_data.data.montos_top | orderBy:'ticket_monto.monto'">
+                                    <td><img src="{{asset('<% ticket_monto.url %>')}}" width="90"></td>
+                                    <td><% ticket_monto.no_ticket %></td>
+                                    <td><% ticket_monto.monto | currency:"$" %></td>
+                                </tr>      
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

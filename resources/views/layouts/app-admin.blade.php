@@ -87,6 +87,18 @@
         <nav class="page-sidebar" id="sidebar">
             <div id="sidebar-collapse">
                 <ul class="side-menu metismenu">
+                    @if (Request::path() == 'admin/dashboard')
+                        <li class="active">
+                    @else
+                        <li>
+                    @endif
+                    <li>
+                        <a href="{{ url('/admin/dashboard') }}">
+                            <i class="sidebar-item-icon ti-layout"></i>
+                            <span class="nav-label">DASHBOARD</span>
+                        </a>
+                    </li>
+
                     @if (Request::path() == 'admin/usuarios/registrados' || Request::path() == 'admin/usuarios/ganadores')
                         <li class="active">
                     @else

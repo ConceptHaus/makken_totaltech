@@ -94,8 +94,8 @@ class RegisterController extends Controller
 
             $user->save();
             $user->direccion()->save($direccion);
-            DB::commit();
 
+            DB::commit();
             return $user;
 
         }catch(Exception $e){
@@ -113,6 +113,12 @@ class RegisterController extends Controller
         if($validator->passes()){
 
                 $user = $this->createUser($input);
+
+                $usercontact['nombre'] = '';
+                Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
+                    $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                    $contact->to('privacidad@makken.com.mx', 'Total Tech | Bienvenido')->subject('Gracias por participar en Total Tech ¡Mucha Suerte!');
+                });
 
                 if($request->admin == 0) {
                     Auth::login($user,true);
