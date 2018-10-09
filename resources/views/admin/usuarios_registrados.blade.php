@@ -40,8 +40,8 @@
                                         <td><% usuario.nombre %> <% usuario.apellido %></td>
                                         <td><% usuario.correo %></td>
                                         <td><% usuario.telefono %></td>
-                                        <td><% usuario.tickets.length %></td>
-                                        <td></td>
+                                        <td><% usuario.num_tickets %></td>
+                                        <td><% usuario.monto_total | currency %></td>
                                         <td>
                                             <img ng-if=" usuario.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="22">
                                             <img ng-if=" usuario.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="22">

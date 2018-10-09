@@ -83,6 +83,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuarios registrados
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
+        // console.log($scope.usuarios);
     }, function (err) {
         console.log(err);
     });
@@ -292,13 +293,15 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     AdminFactory.dashboard().then(function (data) {
         $scope.dashboard_data = data.data;
-        console.log(data.data.data);
+        $scope.date = new Date();
+        // console.log(data.data.data);
     }, function (err) {
         console.log(err);
     });
 
     $scope.editMonto = function (ticket) {
         console.log(ticket);
+        $('.modalEdit').modal('hide');
         swal({
             title: '¿Estás seguro?',
             text: 'El monto del ticket sera cambiado',
@@ -314,6 +317,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                         text: res.data.message,
                         type: 'success'
                     });
+                    //console.log(res);
                     location.reload();
                 }, function (err) {
                     swal({

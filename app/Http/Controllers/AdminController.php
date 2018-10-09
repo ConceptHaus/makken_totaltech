@@ -51,7 +51,6 @@ class AdminController extends Controller {
     }
 
     public function usuarioDetalle($id) {
-        //$user = User::where('id',$id)->first();
         $data['user'] = User::getUser($id);
 
         $data['tickets_totales'] = User::where('users.id','=', $id)
@@ -258,7 +257,10 @@ class AdminController extends Controller {
 
     //METHOD GET
     public function getAllUsers(){
-        $users = User::getAllUsers();
+        $users = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->groupBy('users.id')
+                        ->get();
         return response()->json($users);
     }
 
@@ -320,9 +322,9 @@ class AdminController extends Controller {
     }
 
     public function updateMontoTicket(Request $request){
-        $id_ticket = $request->id_ticket;
+        $id_ticket = $request->id;
         $ticket = Ticket::where('id_ticket',$id_ticket)->first();
-        $ticket->monto = $request->monto;
+        $ticket->monto = intval($request->nuevo_monto);
 
         if($ticket->save()){
 
@@ -340,24 +342,26 @@ class AdminController extends Controller {
     }
 
     public function dashboard(){
-        $users = count(User::all());
-
+        $users = count(DB::table('users')->where('isAdmin','!=',1)->get());
+        // count(User::where('isAdmin','!=',1));
         $tickets = count(Ticket::all());
-
         $ganadores = count(Ganador::all());
-
         $montos_top = DB::table('tickets')
-                        ->orderBy('monto','desc')
-                        ->take(10)->get();
-
+                        ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
+                        ->select('tickets.*', 'establecimiento.nombre', 'establecimiento.url')
+                        ->orderBy('monto','asc')
+                        ->take(8)->get();
         $establecimientos_top = DB::table('tickets')
                                 ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
                                 ->select('establecimiento.*', DB::raw('count(*) as total'))
                                 ->groupBy('id_establecimiento')
                                 ->orderBy('total','desc')
-                                ->take(10)->get();
-
-        $registros_whatsapp = count(Ticket::where('registro_admin','=',1));
+                                ->take(5)->get();
+        $registros_tickets_whatsapp = count(DB::table('tickets')->where('registro_admin','=',1)->get());
+        $registros_tickets_web = count(DB::table('tickets')->where('registro_admin','=',0)->get());
+        $registros_users_whatsapp = count(DB::table('users')->where('registro_admin','=',1)->where('isAdmin','!=',1)->get());
+        $registros_users_web = count(DB::table('users')->where('registro_admin','=',0)->where('isAdmin','!=',1)->get());
+        
         return response()->json([
             'error'=>false,
             'message'=>'Successful get data.',
@@ -365,12 +369,14 @@ class AdminController extends Controller {
                 'users'=>$users,
                 'tickets'=>$tickets,
                 'ganadores'=>$ganadores,
-                'tickets_whatsapp'=>$registros_whatsapp,
+                'tickets_whatsapp'=>$registros_tickets_whatsapp,
+                'tickets_web'=>$registros_tickets_web,
+                'users_whatsapp'=>$registros_users_whatsapp,
+                'users_web'=>$registros_users_web,
                 'montos_top'=>$montos_top,
                 'establecimientos_top'=>$establecimientos_top
             ]
         ]);
-
     }
 
 }

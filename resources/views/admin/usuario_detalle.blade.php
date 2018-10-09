@@ -183,11 +183,10 @@
                                     </td>
                                     <td>{{$ticket->created_at->format('d M')}}</td>
                                     <td>${{$ticket->monto}}
-                                      {{-- <% ticket.monto | currency %> --}}
                                       <!-- Acción Editar Monto Ticket -->
-                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right;"></i>
+                                      <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i>
                                         <!-- START MODAL TICKET EDIT -->
-                                        <div class="modal fade" id="editModal{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+                                        <div class="modal fade modalEdit" id="editModal{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
                                           <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                               <div class="modal-header">
@@ -201,11 +200,12 @@
                                                     <h6 class="mt-5">No. de Ticket</h6>
                                                     <h4 class="mb-4 text-blue-total">{{$ticket->no_ticket}}</h1>
                                                     <h6>Monto</h6>
-                                                    <input type=text class="form-control mb-5" name="ticket_monto" value="{{$ticket->monto}}">
+                                                    <input type="text" name="" ng-model="ticket{{$key}}.id" ng-init ="ticket{{$key}}.id = {{$ticket->id_ticket}}" value="" hidden>
+                                                    <input  type=text class="form-control" name="ticket" ng-model="ticket{{$key}}.nuevo_monto" ng-init="ticket{{$key}}.nuevo_monto = {{$ticket->monto}}" >
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                <button class="btn btn-primary" ng-click="editMonto({{$ticket}})">Guardar Cambios</button>
+                                                <button class="btn btn-primary" ng-click="editMonto(ticket{{$key}})">Guardar Cambios</button>
                                               </div>
                                             </div>
                                           </div>
@@ -220,7 +220,7 @@
                                             </a>
                                         </span>
                                         <!-- Acción Eliminar Ticket -->
-                                        <a class="text-light font-20" ng-click="delete({{$ticket}})" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ver imagen de ticket.">
+                                        <a class="text-light font-20" ng-click="delete({{$ticket}})" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Eliminar ticket.">
                                             <img src="{{ asset('img/icons/eliminate.svg') }}" width="19">
                                         </a>
 

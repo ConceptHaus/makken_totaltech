@@ -2412,9 +2412,8 @@ pre:hover .clipboard-copy {
 }
 
 .ibox .ibox-head .ibox-title {
-  color: #7b7b7b;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .ibox .ibox-head .ibox-title small {
@@ -2463,11 +2462,6 @@ pre:hover .clipboard-copy {
 
 .ibox .ibox-body {
   padding: 25px 25px 25px;
-}
-
-.ibox .ibox-body.ibox-ajust {
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 .ibox .ibox-body .ibox-fullwidth-block {

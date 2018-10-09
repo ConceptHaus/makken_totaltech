@@ -222,6 +222,14 @@
                     autoclose: true,
                     format: 'dd-mm-yyyy'
                 });
+                //Settings para chart de Dashboard
+                $('.easypie').each(function(){
+                    $(this).easyPieChart({
+                      //trackColor: $(this).attr('data-trackColor') || '#f2f2f2',
+                      scaleColor: false,
+                      barColor: '#223F97',
+                    });
+                });
             });
         </script>
         <!-- ANGULAR --->
@@ -232,6 +240,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
         <script src="{{ mix('js/admin.controllers.js') }}"></script>
         <script src="{{ mix('js/admin.services.js') }}"></script>
+
+        {{-- <script src="{{ asset('js/angular-locale_es-es.min.js') }}"></script> --}}
 
         {{-- <link rel="stylesheet"; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css"> --}}
         <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
@@ -250,6 +260,9 @@
             })
             app.constant("CSRF_TOKEN",'{{csrf_token()}}');
       </script>
+
+      <script src="{{asset('admin/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js')}}"></script>
+      <script src="{{asset('admin/vendors/chart.js/dist/Chart.min.js')}}"></script>
 
     </body>
 </html>
