@@ -134,6 +134,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
                 title: "¡Todo bien!",
                 text: "Tu ticket se ha registrado con éxito",
                 confirmButtonText: 'Regresar a mi cuenta',
+                showCancelButton: true,
                 cancelButtonText: 'Subir otro ticket'
             }).then(function (result) {
                 if (result.value) {
@@ -154,7 +155,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
     var success = function success(data) {
         console.log(data.data);
         if (data.data['admin'] == true) {
-            $window.location.href = '/admin/usuarios/registrados';
+            $window.location.href = '/admin/dashboard';
         } else {
             $window.location.href = '/home';
         }

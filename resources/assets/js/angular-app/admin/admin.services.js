@@ -44,11 +44,44 @@ app.factory('AdminFactory', function($http){
                 url:'/api/v1/tickets'
             })
         },
+        ticketsUsuarios: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/ticketsUsuarios'
+            })
+        },
+        setPosibleGanadorGanador: function(data){
+            return $http({
+                method:'POST',
+                url:'/posibleganador',
+                data:data
+            })
+        },
         setGanador: function(data){
             return $http({
                 method:'POST',
                 url:'/ganador',
                 data:data
+            })
+        },
+        deleteTicket: function(data){
+            return $http({
+                method:'POST',
+                url:'/ticket/delete',
+                data:data
+            })
+        },
+        editTicket: function(data){
+            return $http({
+                method:'POST',
+                url:'/ticket/monto',
+                data:data
+            })
+        },
+        dashboard: function(){
+            return $http({
+                method:'GET',
+                url:'/api/v1/dashboard'
             })
         }
     }

@@ -9842,6 +9842,43 @@ footer {
   cursor: pointer;
 }
 
+.BotonesFooter {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  background-color: #25D366;
+  color: white !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9999 !important;
+  visibility: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contact-border {
+  border-right: 2px solid #fff;
+}
+
+.btn1 {
+  color: white !important;
+  padding: 10px;
+  text-align: center;
+  width: 100% !important;
+}
+
 /**
 *** 5.- Estilos Login
 **/
@@ -10081,6 +10118,11 @@ footer {
   cursor: pointer !important;
 }
 
+/* TABLAS */
+.table-ganadores-home th:nth-of-type(3), .table-ganadores-home td:nth-of-type(3) {
+  border-right: none !important;
+}
+
 /**
 *** 7.- Tipografía Personalizada
 **/
@@ -10185,6 +10227,9 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .BotonesFooter {
+    visibility: visible !important;
+  }
   .custom-margin2 {
     margin-left: 0;
     margin-right: -35%;

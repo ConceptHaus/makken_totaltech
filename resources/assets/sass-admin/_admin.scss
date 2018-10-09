@@ -722,7 +722,7 @@ pre {
 	background-image: none;
 }
 .btn-primary {
-	color: #fff;
+	color: #fff !important;
 	background-color: $azul;
 	border-color: $azul;
 	&:focus {
@@ -4949,6 +4949,8 @@ select.form-control-sm {
 		text-transform: none;
 		-webkit-font-smoothing: antialiased;
 		opacity: .5;
+		top: 12px;
+		right: 12px;
 		cursor: pointer;
 		&::before {
 			content: "\e646";

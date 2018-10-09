@@ -60,3 +60,24 @@
 .capitalize {
     text-transform: capitalize;
 }
+
+.comments {
+  border: 2px dotted $azul;
+  padding: 3%;
+  margin: auto;
+}
+
+.text-blue-total {
+  color: $azul;
+}
+
+.p-table {
+  margin: 0;
+  display: contents;
+}
+
+td {
+  input {
+    width: 50%;
+  }
+}

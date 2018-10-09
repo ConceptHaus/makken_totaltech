@@ -141,11 +141,11 @@
           <div class="tab-pane fade show" ng-class="{ 'active': {{$i}}==1 }" id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
             <div class="row justify-content-center">
               <div class="col-12 content-table">
-                <table class="table table-borderless table-responsive">
+                <table class="table table-borderless table-responsive table-ganadores-home">
                   <thead>
                     <tr>
                       <th scope="col">NOMBRE</th>
-                      <th scope="col">TIENDA</th>
+                      <th scope="col">MONTO</th>
                       <th scope="col">PREMIO</th>
                     </tr>
                   </thead>
@@ -157,7 +157,7 @@
                       @if ($ganador->id_semana == $i)
                         <tr>
                           <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
-                          <td><img class="img-establecimiento"src="{{ $ganador['ticket']->establecimiento['url'] }}" alt="{{ $ganador['ticket']->establecimiento['nombre'] }}"></td>
+                          <td>$ {{ number_format($ganador->monto_total, 2, '.', ',' ) }}</td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
                         @php
@@ -174,87 +174,6 @@
             </div>
           </div>
         @endfor
-
-        {{-- <div class="tab-pane fade" id="semana2" role="tabpanel" aria-labelledby="semana2-tab">
-          <div class="row justify-content-center">
-            <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive">
-                <thead>
-                  <tr>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">TIENDA</th>
-                    <th scope="col">PREMIO</th>
-                  </tr>
-                </thead>
-                <tbody>
-
-                  @foreach ($ganadores as $ganador)
-                    @if ($ganador->id_semana == 2)
-                  <tr>
-                    <td>{{ $ganador['user']->nombre }}</td>
-                    <td>{{ $ganador['ticket']->url }}</td>
-                    <td>{{ $ganador->id_premio }}</td>
-                  </tr>
-                  @endif
-                @endforeach
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="semana3" role="tabpanel" aria-labelledby="semana3-tab">
-          <div class="row justify-content-center">
-            <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive">
-                <thead>
-                  <tr>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">TIENDA</th>
-                    <th scope="col">PREMIO</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  @foreach ($ganadores as $ganador)
-                    @if ($ganador->id_semana == 3)
-                  <tr>
-                    <td>{{ $ganador['user']->nombre }}</td>
-                    <td>{{ $ganador['ticket']->url }}</td>
-                    <td>{{ $ganador->id_premio }}</td>
-                  </tr>
-                    @endif
-                  @endforeach
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="semana4" role="tabpanel" aria-labelledby="semana4-tab">
-          <div class="row justify-content-center">
-            <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive">
-                <thead>
-                  <tr>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">TIENDA</th>
-                    <th scope="col">PREMIO</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  @foreach ($ganadores as $ganador)
-                    @if ($ganador->id_semana == 4)
-                  <tr>
-                    <td>{{ $ganador['user']->nombre }}</td>
-                    <td>{{ $ganador['ticket']->url }}</td>
-                    <td>{{ $ganador->id_premio }}</td>
-                  </tr>
-                    @endif
-                  @endforeach
-                </tbody>
-              </table>
-
-            </div>
-          </div>
-        </div> --}}
       </div>
     </div>
   </div>

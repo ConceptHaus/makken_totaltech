@@ -4,6 +4,7 @@
     "angular": "^1.7.4",
     "sweetalert2": "^7.26.29",
     "wow": "^1.1.2",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "ngMask": "angular-mask#^3.1.1"
   }
 }

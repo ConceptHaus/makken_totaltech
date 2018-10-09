@@ -48,6 +48,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .BotonesFooter {
+    visibility: visible !important;
+  }
   .custom-margin2 {
     margin-left: 0;
     margin-right: -35%;

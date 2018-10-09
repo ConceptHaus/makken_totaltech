@@ -7,14 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Ticket extends Model
 {
     public $table = 'tickets';
-
+    protected $primaryKey = 'id_ticket';
     protected $fillable = [
       'id_ticket',
       'id_usuario',
       'no_ticket',
       'monto',
       'id_establecimiento',
-      'url'
+      'otro_establecimiento',
+      'url',
+      'registro_admin'
     ];
 
     public function user(){
@@ -25,19 +27,20 @@ class Ticket extends Model
       return $this->belongsTo('App\Establecimiento', 'id_establecimiento','id_establecimiento');
     }
 
-    public function ganador(){
-        return $this->hasOne('App\Ganador','id_ticket','id_ticket');
-    }
+    // public function ganador(){
+    //     return $this->hasOne('App\Ganador','id_ticket','id_ticket');
+    // }
 
     public function scopeGetAllTickets($query){
         return $query->with('user')
                     ->with('establecimiento')
-                    ->with('ganador')->get();
+                    // ->with('ganador')
+                    ->get();
     }
     public function scopeGetAllTicketsFromUser($query,$id){
         return $query->with('user')
                     ->with('establecimiento')
-                    ->with('ganador')
+                    // ->with('ganador')
                     ->where('id_usuario',$id)->get();
     }
 

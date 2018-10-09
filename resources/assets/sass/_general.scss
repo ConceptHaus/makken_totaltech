@@ -333,3 +333,31 @@ footer {
 .dropdown {
     cursor: pointer;
 }
+
+.BotonesFooter {
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    background-color: #25D366;
+    color: white !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 9999 !important;
+    visibility: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.contact-border {
+    border-right: 2px solid #fff;
+}
+.btn1 {
+    color: white !important;
+    padding: 10px;
+    text-align: center;
+    width: 100% !important;
+}

@@ -12,6 +12,7 @@ let mix = require('laravel-mix');
  */
 mix.js([
     'resources/assets/bower/angular/angular.js',
+    'resources/assets/bower/ngMask/dist/ngMask.js',
     //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
 ], 'public/js/vendor.js');
 mix.sass('resources/assets/sass/app.scss', 'public/css')

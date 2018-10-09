@@ -30,23 +30,23 @@
                                 <th>Nombre</th>
                                 <th>Correo</th>
                                 <th>Teléfono</th>
-                                <th>No. Ticket</th>
-                                <th>Monto</th>
+                                <th>No. Tickets</th>
+                                <th>Monto Total</th>
                                 <th>Semana</th>
-                                <th>Fecha</th>
+                                <th>Día</th>
                                 <th class="no-sort"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="ganador in ganadores | filter:search | filter:{id_semana:semana.selectTypeSemana}" ng-cloak>
                                 <td><% ganador.id_ganador %></td>
-                                <td><% ganador.user.nombre %></td>
+                                <td><% ganador.user.nombre %> <% ganador.apellido %></td>
                                 <td><% ganador.user.correo %></td>
                                 <td><% ganador.user.telefono %></td>
-                                <td><% ganador.ticket.no_ticket %></td>
-                                <td><% ganador.ticket.monto | currency %></td>
+                                <td><% ganador.num_tickets %></td>
+                                <td><% ganador.monto_total | currency %></td>
                                 <td><% ganador.id_semana %></td>
-                                <td class="capitalize"><% ganador.ticket.created_at | amDateFormat:'D, MMMM' %></td>
+                                <td><% ganador.dia %></td>
                                 <td>
                                     <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% ganador.user.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
                                 </td>

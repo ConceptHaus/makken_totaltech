@@ -114,11 +114,44 @@ app.factory('AdminFactory', function ($http) {
                 url: '/api/v1/tickets'
             });
         },
+        ticketsUsuarios: function ticketsUsuarios() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/ticketsUsuarios'
+            });
+        },
+        setPosibleGanadorGanador: function setPosibleGanadorGanador(data) {
+            return $http({
+                method: 'POST',
+                url: '/posibleganador',
+                data: data
+            });
+        },
         setGanador: function setGanador(data) {
             return $http({
                 method: 'POST',
                 url: '/ganador',
                 data: data
+            });
+        },
+        deleteTicket: function deleteTicket(data) {
+            return $http({
+                method: 'POST',
+                url: '/ticket/delete',
+                data: data
+            });
+        },
+        editTicket: function editTicket(data) {
+            return $http({
+                method: 'POST',
+                url: '/ticket/monto',
+                data: data
+            });
+        },
+        dashboard: function dashboard() {
+            return $http({
+                method: 'GET',
+                url: '/api/v1/dashboard'
             });
         }
     };

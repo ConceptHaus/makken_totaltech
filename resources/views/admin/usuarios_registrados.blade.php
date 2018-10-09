@@ -28,17 +28,24 @@
                                         <th>Correo</th>
                                         <th>Teléfono</th>
                                         <th>No. Tickets</th>
-                                        <th>Fecha</th>
+                                        <th>Monto Total</th>
+                                        <th>Registro</th>
+                                        <th>Fecha Registro</th>
                                         <th class="sort"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-repeat="usuario in usuarios | filter:search" ng-cloak>
+                                    <tr ng-repeat="usuario in usuarios | filter:search" ng-cloak ng-if="usuario.isAdmin == 0">
                                         <td><% usuario.id %></td>
                                         <td><% usuario.nombre %> <% usuario.apellido %></td>
                                         <td><% usuario.correo %></td>
                                         <td><% usuario.telefono %></td>
-                                        <td><% usuario.tickets.length %></td>
+                                        <td><% usuario.num_tickets %></td>
+                                        <td><% usuario.monto_total | currency %></td>
+                                        <td>
+                                            <img ng-if=" usuario.registro_admin == 0" src="{{ asset('img/icons/register.svg') }}" width="22">
+                                            <img ng-if=" usuario.registro_admin == 1" src="{{ asset('img/icons/whatsapp.svg') }}" width="22">
+                                        </td>
                                         <td class="capitalize"><% usuario.created_at | amDateFormat:'D, MMMM' %></td>
                                         <td>
                                             <a class="text-muted font-16" href="{{ url('/admin/usuarios/detalle/<% usuario.id %>') }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Conocer detalle de usuario."><i class="ti-layout-list-thumb-alt"></i></a>
