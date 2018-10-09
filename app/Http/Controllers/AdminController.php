@@ -155,19 +155,17 @@ class AdminController extends Controller {
         }
         $json['error'] = $validator->errors();
         return response($json,400);
-
-
     }
 
     public function sendPosibleGanador(Request $request){
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 1;
 
-        // $usercontact['nombre'] = '';
-        // Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-        //     $contact->from('recepcion.reforma@begrand.mx', 'Begrand');
-        //     $contact->to('c@begrand.mx', 'Total Tech | Posible ganador')->subject('Total Tech | Posible ganador');
-        // });
+        $usercontact['nombre'] = '';
+        Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+            $contact->from('privacidad@makken.com.mx', 'Total Tech');
+            $contact->to('privacidad@makken.com.mx', 'Total Tech | Posible ganador')->subject('Total Tech | Posible ganador');
+        });
 
         if($usuario->save()){
             $json['success'] = 'success_posible_ganador';
@@ -327,13 +325,11 @@ class AdminController extends Controller {
         $ticket->monto = intval($request->nuevo_monto);
 
         if($ticket->save()){
-
             return response()->json([
                 'error'=>false,
                 'message'=>'El monto se ha actualizado.'
             ]);
         }
-
         return response()->json([
             'error'=>true,
             'message'=>'El monto no se ha actualizado.'

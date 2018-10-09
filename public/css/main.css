@@ -4757,6 +4757,8 @@ select.form-control-sm:not([size]):not([multiple]) {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   opacity: .5;
+  top: 12px;
+  right: 12px;
   cursor: pointer;
 }
 

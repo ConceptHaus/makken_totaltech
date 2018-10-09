@@ -182,7 +182,7 @@
                                       @endif
                                     </td>
                                     <td>{{$ticket->created_at->format('d M')}}</td>
-                                    <td>${{$ticket->monto}}
+                                    <td>${{ number_format($ticket->monto, 2, '.', ',' ) }}
                                       <!-- Acción Editar Monto Ticket -->
                                       <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i>
                                         <!-- START MODAL TICKET EDIT -->
@@ -201,7 +201,7 @@
                                                     <h4 class="mb-4 text-blue-total">{{$ticket->no_ticket}}</h1>
                                                     <h6>Monto</h6>
                                                     <input type="text" name="" ng-model="ticket{{$key}}.id" ng-init ="ticket{{$key}}.id = {{$ticket->id_ticket}}" value="" hidden>
-                                                    <input  type=text class="form-control" name="ticket" ng-model="ticket{{$key}}.nuevo_monto" ng-init="ticket{{$key}}.nuevo_monto = {{$ticket->monto}}" >
+                                                    <input type=text class="form-control" name="ticket" ng-model="ticket{{$key}}.nuevo_monto" ng-init="ticket{{$key}}.nuevo_monto = {{$ticket->monto}}">
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

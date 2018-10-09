@@ -165,3 +165,12 @@
 .pointer {
   cursor: pointer!important;
 }
+
+/* TABLAS */
+.table-ganadores-home {
+  th, td {
+    &:nth-of-type(3) {
+      border-right: none!important;
+    }
+  }
+}

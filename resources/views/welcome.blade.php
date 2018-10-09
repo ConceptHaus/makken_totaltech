@@ -141,7 +141,7 @@
           <div class="tab-pane fade show" ng-class="{ 'active': {{$i}}==1 }" id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
             <div class="row justify-content-center">
               <div class="col-12 content-table">
-                <table class="table table-borderless table-responsive">
+                <table class="table table-borderless table-responsive table-ganadores-home">
                   <thead>
                     <tr>
                       <th scope="col">NOMBRE</th>
@@ -157,7 +157,7 @@
                       @if ($ganador->id_semana == $i)
                         <tr>
                           <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
-                          <td>$ {{ $ganador->monto_total }}</td>
+                          <td>$ {{ number_format($ganador->monto_total, 2, '.', ',' ) }}</td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
                         @php

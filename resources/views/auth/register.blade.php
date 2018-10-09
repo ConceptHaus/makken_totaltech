@@ -32,7 +32,7 @@
                                 <p ng-cloak class="error-form" ng-if="errors.telefono"><% errors.telefono[0] %></p>
                             </div>
                             <div class="col form-group">
-                                <input ng-class="{'invalido': errorCP }" ng-model="user.cp" id="cp" type="text" class="form-control" name="cp" ng-blur="getCP(user.cp)" placeholder="C.P." required autofocus>
+                                <input ng-class="{'invalido': errorCP }" ng-model="user.cp" id="cp" type="text" class="form-control" name="cp" ng-blur="getCP(user.cp)" placeholder="C.P." mask="999999" required autofocus>
                                 <p ng-cloak class="error-form" ng-if="errorCP"><% errorCP %></p>
                             </div>
                         </div>

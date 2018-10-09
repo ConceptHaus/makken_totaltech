@@ -266,11 +266,12 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log($scope.tickets);
         swal({
             title: '¿Estás seguro?',
-            text: 'El ticket se eliminará',
+            text: 'El ticket será eliminado de forma definitiva.',
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
-            confirmButtonText: 'Si, eliminar'
+            confirmButtonText: 'Si, eliminar',
+            cancelButtonText: 'Cancelar'
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.deleteTicket(ticket).then(function (res) {
@@ -304,7 +305,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         $('.modalEdit').modal('hide');
         swal({
             title: '¿Estás seguro?',
-            text: 'El monto del ticket sera cambiado',
+            text: 'El monto del ticket sera modificado.',
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
@@ -328,6 +329,43 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                 });
             }
         });
+    };
+});
+
+app.directive("money", function ($filter, $locale) {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function link(scope, el, attr, ctrl) {
+            // format on init
+            formatMoney();
+
+            function formatMoney() {
+                var value = ctrl.$modelValue;
+
+                // remove all separaters first
+                var groupsep = $locale.NUMBER_FORMATS.GROUP_SEP;
+                var re = new RegExp(groupsep, 'g');
+                value = String(value).replace(re, '');
+
+                // format using angular
+                var currencyFilter = $filter('currency');
+                var value = currencyFilter(value, "");
+
+                // sorry but no cents
+                var decimalsep = $locale.NUMBER_FORMATS.DECIMAL_SEP;
+                value = value.split(decimalsep)[0];
+
+                // render
+                ctrl.$viewValue = value;
+                ctrl.$render();
+            };
+
+            // subscribe on changes
+            scope.$watch(attr.ngModel, function () {
+                formatMoney();
+            });
+        }
     };
 });
 

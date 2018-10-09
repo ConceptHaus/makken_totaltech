@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <form action="javascript:;">
+                        <form id="form" name="form" action="javascript:;">
                             <input ng-model="ticket.registro_admin" name="registro_admin" ng-init="ticket.registro_admin = 1" type="text" hidden>
                             <div class="row">
                                 <div class="col-sm-6 form-group mb-4">
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Monto</label>
-                                    <input ng-model="ticket.monto" class="form-control form-control-solid" type="text" placeholder="$0.00">
+                                    <input ng-pattern="/^$|^[0-9,]+$/" ng-model="ticket.monto" class="form-control form-control-solid" placeholder="$0.00" money/>
                                 </div>
                             </div>
                             <div class="row">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <button ng-click="addTicket(ticket)" class="btn btn-primary btn-air mr-2">Guardar</button>
+                                <button ng-click="addTicket(ticket)" class="btn btn-primary btn-air mr-2" ng-disabled="!(ticket.fileticket) || !(ticket.no_ticket) || !(ticket.monto) || !(ticket.id_establecimiento) || !(ticket.id_usuario)">Guardar</button>
                                 <a class="btn btn-secondary" href="{{ url('/admin/tickets/registrados') }}">Cancelar</a>
                             </div>
                         </form>
