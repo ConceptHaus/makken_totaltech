@@ -114,10 +114,11 @@ class RegisterController extends Controller
 
                 $user = $this->createUser($input);
 
-                $usercontact['nombre'] = '';
+                $usercontact['correo'] = $input['correo'];
+
                 Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
                     $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                    $contact->to('privacidad@makken.com.mx', 'Total Tech | Bienvenido')->subject('Gracias por participar en Total Tech ¡Mucha Suerte!');
+                    $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar en Total Tech ¡Mucha Suerte!');
                 });
 
                 if($request->admin == 0) {
