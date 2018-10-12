@@ -158,13 +158,16 @@ class AdminController extends Controller {
     }
 
     public function sendPosibleGanador(Request $request){
+        
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 1;
 
+        $usercontact['correo'] = $usuario['correo'];
+        
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to('privacidad@makken.com.mx', 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Tú también puedes con todo ¡Compra y gana! con Total Tech.');
+            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Tú también puedes con todo ¡Compra y gana! con Total Tech.');
         });
 
         if($usuario->save()){
