@@ -73,7 +73,7 @@
 
   {{-- Botónes en móvil --}}
   <div class="BotonesFooter">
-  		<a class="btn1" href="https://wa.me/5543427822" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="btn1" href="https://api.whatsapp.com/send?phone=5215543427822" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 	</div>
 
   <!-- Footer -->
@@ -88,8 +88,8 @@
           </div>
           <div class="col-lg-2 text-responsive">
             <p class="no-margin"><strong>LEGALES</strong><br></p>
-            <p class="no-margin"><a href="/aviso/aviso_de_privacidad.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin">Términos y Condiciones</p>
+            <p class="no-margin"><a href="/avisos/aviso_de_privacidad.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
+            <p class="no-margin"><a href="/avisos/terminos_y_condiciones.pdf" target="_blank" data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-6 text-center">
             <p><a href="https://mundoceys.com/" target="_blank"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
