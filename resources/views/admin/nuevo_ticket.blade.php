@@ -34,17 +34,11 @@
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Establecimientos</label>
                                     <div>
-                                        <select class="selectpicker form-control"ng-model="ticket.id_establecimiento" data-live-search="true" title="Selecciona establecimiento de compra">
+                                        <select class="selectpicker form-control"ng-model="ticket.id_establecimiento" data-live-search="true" title="Selecciona establecimiento">
                                             @foreach ($establecimientos as $establecimiento)
                                                 <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
                                             @endforeach
                                         </select>
-                                        {{-- <select ng-model="ticket.id_establecimiento" class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
-                                            data-style="btn-solid">
-                                            @foreach ($establecimientos as $establecimiento)
-                                            <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
-                                            @endforeach
-                                        </select> --}}
                                     </div>
                                     <div class="mt-4" ng-if="ticket.id_establecimiento == 9">
                                       <label>Nombre del establecimiento</label>
