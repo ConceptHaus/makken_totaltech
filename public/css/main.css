@@ -6104,7 +6104,7 @@ body.fixed-layout.sidebar-mini .content-wrapper {
 }
 
 .page-footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -6117,8 +6117,14 @@ body.fixed-layout.sidebar-mini .content-wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 40px;
   background-color: #fff;
+  text-align: right;
+  z-index: 999;
+}
+
+.page-footer .font-13 {
+  width: 100%;
 }
 
 .page-wrapper {
