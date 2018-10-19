@@ -49,6 +49,7 @@ Route::post('/adminTicket','AdminController@adminRegisterTicket');
 Route::post('/texto','AdminController@editTexto');
 Route::post('/ticket/delete','AdminController@removeTicket');
 Route::post('/ticket/monto','AdminController@updateMontoTicket');
+Route::post('/ticket/fecha','AdminController@updateFechaTicket');
 
 // Administrador
 Route::get('/admin', 'WelcomeController@loginAdmin');

@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- START PAGE CONTENT-->
-    <div class="page-content fade-in-up">
+    <div class="page-content fade-in-up" style="padding-bottom: 20%;">
         <div class="ibox">
             <div class="ibox-body">
                 <h5 class="font-strong mb-5">AGREGAR TICKET</h5>
@@ -34,10 +34,9 @@
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Establecimientos</label>
                                     <div>
-                                        <select ng-model="ticket.id_establecimiento" class="selectpicker show-tick form-control" title="Selecciona establecimiento de compra"
-                                            data-style="btn-solid">
+                                        <select class="selectpicker form-control"ng-model="ticket.id_establecimiento" data-live-search="true" title="Selecciona establecimiento">
                                             @foreach ($establecimientos as $establecimiento)
-                                            <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
+                                                <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
                                             @endforeach
                                         </select>
                                     </div>

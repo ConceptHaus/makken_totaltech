@@ -78,6 +78,13 @@ app.factory('AdminFactory', function($http){
                 data:data
             })
         },
+        editTicketDate: function(data){
+            return $http({
+                method:'POST',
+                url:'/ticket/fecha',
+                data:data
+            })
+        },
         dashboard: function(){
             return $http({
                 method:'GET',

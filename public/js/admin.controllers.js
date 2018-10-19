@@ -265,13 +265,12 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     $scope.delete = function (ticket) {
         console.log($scope.tickets);
         swal({
-            title: '¿Estás seguro?',
-            text: 'El ticket será eliminado de forma definitiva.',
+            title: '¿Seguro que quieres eliminar el monto?',
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
             confirmButtonText: 'Si, eliminar',
-            cancelButtonText: 'Cancelar'
+            cancelButtonText: 'No, Cancelar'
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.deleteTicket(ticket).then(function (res) {
@@ -304,12 +303,12 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(ticket);
         $('.modalEdit').modal('hide');
         swal({
-            title: '¿Estás seguro?',
-            text: 'El monto del ticket sera modificado.',
+            title: '¿Seguro que quieres modificar el monto?',
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
-            confirmButtonText: 'Si, cambiar'
+            confirmButtonText: 'Si, modificar',
+            cancelButtonText: 'No, cancelar'
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.editTicket(ticket).then(function (res) {
@@ -319,6 +318,43 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                         type: 'success'
                     });
                     //console.log(res);
+                    location.reload();
+                }, function (err) {
+                    swal({
+                        title: 'Algo salió mal',
+                        text: err.data.message,
+                        type: 'error'
+                    });
+                });
+            }
+        });
+    };
+
+    // Editar fecha de registro
+    $scope.editFecha = function (ticket) {
+        console.log(ticket);
+        $('.modalEditDate').modal('hide');
+        swal({
+            title: '¿Seguro que quieres modificar la fecha?',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Si, modificar',
+            cancelButtonText: 'No, cancelar'
+        }).then(function (result) {
+            swal({
+                title: 'Espera...',
+                text: 'Estamos modifcando tus datos.',
+                imageUrl: '/img/icons/Spinner-1s-200px.gif',
+                showConfirmButton: false
+            });
+            if (result.value) {
+                AdminFactory.editTicketDate(ticket).then(function (res) {
+                    swal({
+                        title: 'Todo bien',
+                        text: res.data.message,
+                        type: 'success'
+                    });
                     location.reload();
                 }, function (err) {
                     swal({
