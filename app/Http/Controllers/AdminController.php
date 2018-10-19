@@ -335,7 +335,24 @@ class AdminController extends Controller {
             'error'=>true,
             'message'=>'El monto no se ha actualizado.'
         ]);
+    }
 
+    public function updateFechaTicket(Request $request){
+        $id_ticket = $request->id;
+        $ticket = Ticket::where('id_ticket',$id_ticket)->first();
+        $formato_fecha = Carbon::parse($request->nueva_fecha);
+        $ticket->created_at = $formato_fecha;
+
+        if($ticket->save()){
+            return response()->json([
+                'error'=>false,
+                'message'=>'La fecha se ha actualizado con éxito.'
+            ]);
+        }
+        return response()->json([
+            'error'=>true,
+            'message'=>'La fecha no se ha actualizado.'
+        ]);
     }
 
     public function dashboard(){

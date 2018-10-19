@@ -183,27 +183,39 @@
                                     </td>
                                     <td>
                                         {{$ticket->created_at->format('d M')}}
-                                        {{-- <i data-toggle="modal" data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i> --}}
-                                        
-                                        <!-- START MODAL TICKET IMAGE -->
-                                        {{-- <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                        <i data-toggle="modal" data-toggle="modal" data-target="#modalEditDate{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i>
+                                        <!-- START MODAL TICKET EDIT DATE -->
+                                        <div class="modal fade modalEditDate" id="modalEditDate{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <form class="modal-content">
                                                     <div class="modal-header p-4">
-                                                        <h5 class="modal-title">TICKET</h5>
+                                                        <h5 class="modal-title">Editar Fecha</h5>
                                                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">×</span>
                                                         </button>
                                                     </div>
-                                                    <div class="modal-body p-4">
-                                                        <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                    <div class="modal-body text-center p-4">
+                                                        <p>En esta opción podrás modificar la fecha de registro.</p>
+                                                        <h6 class="mt-5">No. de Ticket</h6>
+                                                        <h4 class="mb-4 text-blue-total">{{$ticket->no_ticket}}</h4>
+                                                        <h6>Fecha de compra registrada</h6>
+                                                        <h4 class="mb-4 text-blue-total">{{$ticket->created_at->format('d-M-Y')}}</h4>
+                                                        <input type="text" name="" ng-model="ticket{{$key}}.id" ng-init ="ticket{{$key}}.id = {{$ticket->id_ticket}}" value="" hidden>
+                                                        <div class="form-group" id="date_1">
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon bg-white"><i class="fa fa-calendar"></i></span>
+                                                                <input class="form-control" type="text" ng-model="ticket{{$key}}.nueva_fecha" placeholder="Actualizar fecha">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-footer bg-primary-50"></div>
+                                                    <div class="modal-footer bg-primary-50">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                        <button class="btn btn-primary" ng-click="editFecha(ticket{{$key}})">Guardar Cambios</button>
+                                                    </div>
                                                 </form>
                                             </div>
-                                        </div> --}}
-                                        <!-- END MODAL TICKET IMAGE -->
-                                        
+                                        </div>
+                                        <!-- END MODAL TICKET EDIT DATE -->
                                     </td>
                                     <td>${{ number_format($ticket->monto, 2, '.', ',' ) }}
                                       <!-- Acción Editar Monto Ticket -->
@@ -252,7 +264,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <form class="modal-content">
                                                     <div class="modal-header p-4">
-                                                        <h5 class="modal-title">TICKET</h5>
+                                                        <h5 class="modal-title">Ticket</h5>
                                                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">×</span>
                                                         </button>
