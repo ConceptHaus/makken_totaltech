@@ -181,7 +181,30 @@
                                         {{$ticket->otro_establecimiento}}
                                       @endif
                                     </td>
-                                    <td>{{$ticket->created_at->format('d M')}}</td>
+                                    <td>
+                                        {{$ticket->created_at->format('d M')}}
+                                        {{-- <i data-toggle="modal" data-toggle="modal" data-target="#modalTicket{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i> --}}
+                                        
+                                        <!-- START MODAL TICKET IMAGE -->
+                                        {{-- <div class="modal fade" id="modalTicket{{$ticket->id_ticket}}" tabindex="-1" role="dialog" aria-labelledby="modalGanador" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <form class="modal-content">
+                                                    <div class="modal-header p-4">
+                                                        <h5 class="modal-title">TICKET</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body p-4">
+                                                        <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                    </div>
+                                                    <div class="modal-footer bg-primary-50"></div>
+                                                </form>
+                                            </div>
+                                        </div> --}}
+                                        <!-- END MODAL TICKET IMAGE -->
+                                        
+                                    </td>
                                     <td>${{ number_format($ticket->monto, 2, '.', ',' ) }}
                                       <!-- Acción Editar Monto Ticket -->
                                       <i data-toggle="modal" data-target="#editModal{{$ticket->id_ticket}}" class="la la-pencil" style="float:right; cursor:pointer;"></i>
