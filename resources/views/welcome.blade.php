@@ -41,7 +41,7 @@
         <div class="text-left text-responsive">
           <h5 class="no-margin responsive-title">REGISTRA</h5>
           <h6 class="no-margin blanco responsive-title">TU TICKET VÍA WHATSAPP AL 044 (55) 4342 – 7322 O EN
-            <a href="www.tupuedescontodo.com">TUPUEDESCONTODO.COM</a></h6>
+            <a href="{{url('/')}}" target="_blank">TTPUEDECONTODO.COM</a></h6>
         </div>
       </div>
       <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="140" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -145,7 +145,6 @@
                   <thead>
                     <tr>
                       <th scope="col">NOMBRE</th>
-                      <th scope="col">MONTO</th>
                       <th scope="col">PREMIO</th>
                     </tr>
                   </thead>
@@ -157,7 +156,6 @@
                       @if ($ganador->id_semana == $i)
                         <tr>
                           <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
-                          <td>$ {{ number_format($ganador->monto_total, 2, '.', ',' ) }}</td>
                           <td>{{ $ganador['premio']->nombre }}</td>
                         </tr>
                         @php
