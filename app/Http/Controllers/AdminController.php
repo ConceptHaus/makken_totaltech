@@ -284,9 +284,9 @@ class AdminController extends Controller {
     }
 
     public function getAllTicketsUsuarios(){
-        $ticketsUsers = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+        $ticketsUsers = User::join('tickets', 'tickets.id_usuario', '=', 'users.id')
                         ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
-                        ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
+                        ->groupBy('users.id', DB::raw('CAST(tickets.created_at AS DATE)'))
                         ->get();
         return response()->json($ticketsUsers);
     }
