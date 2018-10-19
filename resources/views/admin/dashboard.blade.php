@@ -118,7 +118,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="ticket_monto in dashboard_data.data.montos_top | orderBy:'ticket_monto.monto'">
+                                <tr ng-repeat="ticket_monto in dashboard_data.data.montos_top | orderBy:'monto'">
                                     <td><img src="{{asset('<% ticket_monto.url %>')}}" width="90"></td>
                                     <td><% ticket_monto.no_ticket %></td>
                                     <td><% ticket_monto.monto | currency:"$" %></td>
