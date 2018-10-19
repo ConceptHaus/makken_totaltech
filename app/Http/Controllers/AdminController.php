@@ -369,7 +369,7 @@ class AdminController extends Controller {
                                 ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
                                 ->select('establecimiento.*', DB::raw('count(*) as total'))
                                 ->groupBy('id_establecimiento')
-                                // ->orderBy('total','desc')
+                                ->orderBy('total','desc')
                                 ->take(5)->get();
         $registros_tickets_whatsapp = count(DB::table('tickets')->where('registro_admin','=',1)->get());
         $registros_tickets_web = count(DB::table('tickets')->where('registro_admin','=',0)->get());

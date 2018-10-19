@@ -34,7 +34,7 @@
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Establecimientos</label>
                                     <div>
-                                        <select class="selectpicker form-control"ng-model="ticket.id_establecimiento" data-live-search="true" title="Selecciona establecimiento">
+                                        <select class="selectpicker form-control form-control-solid" ng-model="ticket.id_establecimiento" data-live-search="true" title="Selecciona establecimiento">
                                             @foreach ($establecimientos as $establecimiento)
                                                 <option value="{{$establecimiento->id_establecimiento}}">{{$establecimiento->nombre}}</option>
                                             @endforeach
@@ -52,12 +52,11 @@
                                 <div class="col-sm-6 form-group mb-4">
                                     <label>Usuarios</label>
                                     <div>
-                                        <select ng-model="ticket.id_usuario" class="selectpicker show-tick form-control" title="Selecciona el usuario de compra"
-                                            data-style="btn-solid">
+                                        <select class="selectpicker form-control form-control-solid" ng-model="ticket.id_usuario" data-live-search="true" title="Selecciona el usuario de compra">
                                             @foreach ($users as $user)
-                                              @if (!($user->isAdmin))
-                                                <option value="{{$user->id}}">{{$user->correo}}</option>
-                                              @endif
+                                                @if($user->isAdmin != 1)
+                                                    <option value="{{$user->id}}">{{$user->correo}}</option>
+                                                @endif
                                             @endforeach
                                         </select>
                                     </div>
