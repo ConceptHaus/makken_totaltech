@@ -144,8 +144,8 @@
                 <table class="table table-borderless table-responsive table-ganadores-home">
                   <thead>
                     <tr>
-                      <th scope="col">NOMBRE</th>
-                      <th scope="col">PREMIO</th>
+                      <th scope="col" width="50%">NOMBRE</th>
+                      <th scope="col" width="50%">PREMIO</th>
                     </tr>
                   </thead>
                   <tbody>
