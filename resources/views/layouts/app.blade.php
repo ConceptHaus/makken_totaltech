@@ -25,10 +25,19 @@
   })(window,document,'script','dataLayer','GTM-PK4GNK7');</script>
   <!-- End Google Tag Manager -->
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127968611-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127968611-1');
+  </script>
+
 </head>
 
-@if (Request::path() == '/')
   <body ng-app="angularApp">
+@if (Request::path() == '/')
 @else
   <body ng-app="angularApp" class="body-bg">
 @endif
