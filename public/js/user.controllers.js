@@ -146,10 +146,10 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
         }, function (err) {
             swal({
                 type: 'error',
-                title: 'Oh no!',
-                text: 'Algo salió mal.'
+                title: 'Oh no!, Algo salió mal.',
+                text: err.data.error.no_ticket
             });
-            console.log(err.data);
+            // console.log(err.data);
         });
     };
     var success = function success(data) {
