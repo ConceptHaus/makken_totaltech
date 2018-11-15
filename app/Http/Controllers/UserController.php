@@ -45,7 +45,7 @@ class UserController extends Controller
             'no_ticket'=>'required|string|unique:tickets,no_ticket',
             'monto' => 'required|numeric',
             'id_establecimiento'=>'required|numeric',
-            'fileticket'=>'required|image',
+            'fileticket'=>'required|file|mimes:pdf,png,jpeg',
 
         ]);
     }
