@@ -270,7 +270,11 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body p-4">
+                                                      @if (strpos($ticket->url,'.pdf'))
+                                                        <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}" width="400" height="300">
+                                                        @else
                                                         <img src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                      @endif
                                                     </div>
                                                     <div class="modal-footer bg-primary-50"></div>
                                                 </form>

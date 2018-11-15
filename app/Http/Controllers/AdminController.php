@@ -113,7 +113,7 @@ class AdminController extends Controller {
             'no_ticket'=>'required|string|unique:tickets,no_ticket',
             'monto' => 'required|numeric',
             'id_establecimiento'=>'required|numeric',
-            'fileticket'=>'required|image',
+            'fileticket'=>'required|file|mimes:pdf,png,jpeg',
 
         ]);
     }
@@ -158,12 +158,12 @@ class AdminController extends Controller {
     }
 
     public function sendPosibleGanador(Request $request){
-        
+
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 1;
 
         $usercontact['correo'] = $usuario['correo'];
-        
+
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Total Tech');
@@ -375,7 +375,7 @@ class AdminController extends Controller {
         $registros_tickets_web = count(DB::table('tickets')->where('registro_admin','=',0)->get());
         $registros_users_whatsapp = count(DB::table('users')->where('registro_admin','=',1)->where('isAdmin','!=',1)->get());
         $registros_users_web = count(DB::table('users')->where('registro_admin','=',0)->where('isAdmin','!=',1)->get());
-        
+
         return response()->json([
             'error'=>false,
             'message'=>'Successful get data.',
