@@ -130,7 +130,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     $scope.addTicket = function (ticket) {
         console.log(ticket);
-        swal({
+        Swal.fire({
             title: "Espera...",
             text: "Estamos enviando tu ticket.",
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
@@ -140,7 +140,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             url: '/adminTicket',
             data: ticket
         }).then(function (res) {
-            swal({
+            Swal.fire({
                 title: '¡Todo bien!',
                 text: 'Tu ticket se ha registrado con éxito',
                 confirmButtonText: 'Aceptar'
@@ -150,7 +150,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             $scope.ticket = {};
             $('.img-default-ticket').attr('src', '/img/icons/camera-blue.svg');
         }, function (err) {
-            swal({
+            Swal.fire({
                 type: 'error',
                 title: 'Oh no! Algo salió mal.',
                 text: err.data.error.no_ticket
@@ -175,7 +175,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     });
 
     $scope.checkPosibleGanador = function (user) {
-        swal({
+        Swal.fire({
             title: "Espera...",
             text: "Estamos enviado la información al posible ganador.",
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
@@ -184,14 +184,14 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         console.log(user);
         $('#modalPosibleGanador').modal('hide');
         AdminFactory.setPosibleGanadorGanador(user).then(function (data) {
-            swal({
+            Swal.fire({
                 type: 'success',
                 title: "¡Listo!",
                 text: "El correo ha sido enviado con éxito."
             });
             location.reload();
         }, function (err) {
-            swal({
+            Swal.fire({
                 type: 'error',
                 title: '¡Oh no!',
                 text: err.data
@@ -202,14 +202,14 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     $scope.addGanador = function (userGanador) {
         console.log(userGanador);
-        swal({
+        Swal.fire({
             title: "Espera...",
             text: "Estamos agregando los datos del ganador.",
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
             showConfirmButton: false
         });
         AdminFactory.setGanador(userGanador).then(function (data) {
-            swal({
+            Swal.fire({
                 type: 'success',
                 title: "¡Listo!",
                 text: "El usuario ganador ha sido agregado con éxito."
@@ -218,7 +218,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             });
             console.log(data.data);
         }, function (err) {
-            swal({
+            Swal.fire({
                 type: 'error',
                 title: '¡Oh no!',
                 text: err.data
@@ -241,7 +241,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     $scope.register = function (user) {
         console.log(user);
-        swal({
+        Swal.fire({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',
             imageUrl: '/img/icons/Spinner-1s-200px.gif',
@@ -258,13 +258,13 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     var error = function error(errors) {
         $scope.errors = errors.data.fail;
-        swal.close();
+        Swal.close();
         console.log(errors.data.fail);
     };
 
     $scope.delete = function (ticket) {
         console.log($scope.tickets);
-        swal({
+        Swal.fire({
             title: '¿Seguro que quieres eliminar el monto?',
             type: 'warning',
             showCancelButton: true,
@@ -274,14 +274,14 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.deleteTicket(ticket).then(function (res) {
-                    swal({
+                    Swal.fire({
                         title: 'Todo bien',
                         text: res.data.message,
                         type: 'success'
                     });
                     location.reload();
                 }, function (err) {
-                    swal({
+                    Swal.fire({
                         title: 'Algo salió mal',
                         text: err.data.message,
                         type: 'error'
@@ -302,7 +302,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     $scope.editMonto = function (ticket) {
         console.log(ticket);
         $('.modalEdit').modal('hide');
-        swal({
+        Swal.fire({
             title: '¿Seguro que quieres modificar el monto?',
             type: 'warning',
             showCancelButton: true,
@@ -312,7 +312,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         }).then(function (result) {
             if (result.value) {
                 AdminFactory.editTicket(ticket).then(function (res) {
-                    swal({
+                    Swal.fire({
                         title: 'Todo bien',
                         text: res.data.message,
                         type: 'success'
@@ -320,7 +320,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                     //console.log(res);
                     location.reload();
                 }, function (err) {
-                    swal({
+                    Swal.fire({
                         title: 'Algo salió mal',
                         text: err.data.message,
                         type: 'error'
@@ -334,7 +334,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     $scope.editFecha = function (ticket) {
         console.log(ticket);
         $('.modalEditDate').modal('hide');
-        swal({
+        Swal.fire({
             title: '¿Seguro que quieres modificar la fecha?',
             type: 'warning',
             showCancelButton: true,
@@ -342,7 +342,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             confirmButtonText: 'Si, modificar',
             cancelButtonText: 'No, cancelar'
         }).then(function (result) {
-            swal({
+            Swal.fire({
                 title: 'Espera...',
                 text: 'Estamos modifcando tus datos.',
                 imageUrl: '/img/icons/Spinner-1s-200px.gif',
@@ -350,14 +350,14 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
             });
             if (result.value) {
                 AdminFactory.editTicketDate(ticket).then(function (res) {
-                    swal({
+                    Swal.fire({
                         title: 'Todo bien',
                         text: res.data.message,
                         type: 'success'
                     });
                     location.reload();
                 }, function (err) {
-                    swal({
+                    Swal.fire({
                         title: 'Algo salió mal',
                         text: err.data.message,
                         type: 'error'

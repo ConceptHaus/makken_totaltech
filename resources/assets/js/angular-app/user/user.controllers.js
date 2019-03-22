@@ -9,7 +9,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
 
     $scope.login = function(user){
         console.log(user);
-        swal({
+        Swal.fire({
             title:'Espera...',
             text:'Estamos verificando tus datos.',
             imageUrl: 'img/icons/Spinner-1s-200px.gif',
@@ -53,7 +53,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
     }
    $scope.addTicket = function(ticket){
        console.log(ticket);
-    swal({
+    Swal.fire({
         title:"Espera...",
         text:"Estamos enviando tu ticket.",
         imageUrl: 'img/icons/Spinner-1s-200px.gif',
@@ -64,7 +64,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
         data:ticket
     })
     .then(function(res){
-        swal({
+        Swal.fire({
             title:"¡Todo bien!",
             text:"Tu ticket se ha registrado con éxito",
             confirmButtonText: 'Regresar a mi cuenta',
@@ -78,7 +78,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
         console.log(res.data);
         $ticket = null;
     },function(err){
-        swal({
+        Swal.fire({
             type:'error',
             title:'Oh no!, Algo salió mal.',
             text: err.data.error.no_ticket
@@ -99,7 +99,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
 
     var error = function(errors){
         $scope.errors = errors.data.fail;
-        swal.close();
+        Swal.close();
         console.log(errors.data.fail);
     }
      $scope.getEstablecimientos();
