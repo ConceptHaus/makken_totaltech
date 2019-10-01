@@ -102,10 +102,9 @@
                                         <label class="font-normal"></label>
                                         <div class="input-group date">
                                             <span class="input-group-addon bg-white"><i class="fa fa-calendar"></i></span>
-                                            <input class="form-control" type="text" ng-model="userGanador.dia">
+                                            <input class="form-control" type="text" name="dia" ng-model="userGanador.dia">
                                         </div>
                                     </div>
-
                                     <div ng-if="userGanador.dia">
                                         <div ng-repeat="ticket_total in {{$tickets_totales}} | filter:userGanador.dia">
                                             <div class="form-group mb-4 row">
@@ -117,7 +116,7 @@
                                             <div class="form-group mb-4 row">
                                                 <label class="col-sm-6 col-form-label">Monto total acumulado</label>
                                                 <div class="col-sm-6">
-                                                    <input type="text" ng-model="userGanador.monto_total | currency" ng-init="userGanador.monto_total = ticket_total.monto_total" class="form-control form-control-solid" name="monto_total" disabled>
+                                                    <input type="text" ng-model="userGanador.monto_total" ng-init="userGanador.monto_total = ticket_total.monto_total" class="form-control form-control-solid" name="monto_total" disabled>
                                                 </div>
                                             </div>
                                         </div>

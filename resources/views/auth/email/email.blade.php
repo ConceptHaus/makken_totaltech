@@ -450,7 +450,8 @@ Recibimos un pedido para el cambio de contraseña de tu cuenta <strong>Total Tec
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 18px; padding: 15px;">
-                                <a class="mcnButton " title="Nueva Contraseña" href="https://clientes.concepthaus.mx/reset/{{$token}}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #1F3B99;">Nueva Contraseña</a>
+                                {{--<a class="mcnButton " title="Nueva Contraseña" href="https://ttpuedecontodo.com/reset/{{$token}}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #1F3B99;">Nueva Contraseña</a>--}}
+                                <a class="mcnButton " title="Nueva Contraseña" href="{{route('resetPwd',['token' => $token] )}}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #1F3B99;">Nueva Contraseña</a>
                             </td>
                         </tr>
                     </tbody>

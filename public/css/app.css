@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 /**
 ***
 *** 1.- Fonts
@@ -54,7 +54,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-sans-serif: Helvetica Neue;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -84,7 +84,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -5884,7 +5884,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -5997,7 +5997,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -9563,13 +9563,20 @@ html {
 }
 
 .body-bg {
-  background: url(../img/backgrounds/bg-bike-mask-v7.jpg) no-repeat;
+  background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
   background-size: cover;
   min-height: 100%;
 }
 
 .no-border {
   border: none !important;
+}
+
+.img-silicon-login {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 30%;
 }
 
 .form-control {
@@ -9633,8 +9640,8 @@ html {
 
 .navbar .navbar-nav .nav-link {
   color: #FFF;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   padding-left: 20px;
   padding-right: 20px;
   -webkit-transition: all .5s ease-in-out;
@@ -9678,11 +9685,13 @@ html {
 }
 
 .navbar-brand img {
-  width: 350px;
+  width: 50% !important;
+  padding-left: 30px;
 }
 
 .navbar-brand-home img {
-  width: 80%;
+  width: 70%;
+  padding-left: 30px;
 }
 
 .navbar-collapse {
@@ -9703,15 +9712,36 @@ html {
 
 .btn-submit-upload {
   background: #F7E300;
-  border-radius: 50%;
-  color: #223F97 !important;
+  border-radius: 50px;
+  color: #0033a1 !important;
   font-size: 20px;
   font-weight: 600;
   padding: 8px 12px;
   width: auto;
   text-align: center;
-  float: left;
+  float: right;
   cursor: pointer;
+  font-family: Helvetica !important;
+  width: 200px;
+  margin: auto;
+}
+
+.ticketupload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subetuticket {
+  color: #0033a1 !important;
+  font-family: Helvetica !important;
+  font-size: 15px;
+  font-style: normal !important;
+}
+
+.formatos {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 table th {
@@ -9898,10 +9928,10 @@ footer {
 }
 
 #pageSytyle .panel {
-  background: rgba(1, 25, 73, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 0;
   margin-top: 5%;
-  padding: 3% 15%;
+  padding: 8% 18%;
   padding-top: 0% !important;
 }
 
@@ -9920,6 +9950,8 @@ footer {
   font-size: 20px;
   font-weight: 600;
   padding: 25px;
+  font-style: normal;
+  padding-top: 45px;
 }
 
 #pageSytyle p {
@@ -9952,11 +9984,11 @@ footer {
 *** 6.- Estilos Home
 **/
 .header-home {
-  background: url("../img/images/background.jpg");
+  background: url("../img/images/backgorund-nuevo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   position: relative;
 }
@@ -9975,9 +10007,9 @@ footer {
 }
 
 .header-home .img-silicon {
-  bottom: 15px;
-  right: 50px;
-  width: 220px;
+  top: 32%;
+  left: 70px;
+  width: 450px;
 }
 
 .header-home .img-logo-ceys {
@@ -9987,17 +10019,17 @@ footer {
 }
 
 .header-home .btn-call-to-action {
-  background: rgba(34, 63, 151, 0.8);
+  background: #0033a1;
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
   position: absolute;
-  bottom: 170px;
-  left: 100px;
+  bottom: 20%;
+  left: 40%;
   border-radius: 8px;
   padding: 15px 40px;
   text-decoration: none;
-  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  text-shadow: 4px 5px 9px rgba(1, 1, 1, 0.5);
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
@@ -10006,7 +10038,7 @@ footer {
 
 .header-home .btn-call-to-action span {
   color: #F7E300;
-  font-size: 30px;
+  font-size: 45px;
   display: block;
 }
 
@@ -10034,7 +10066,18 @@ footer {
 }
 
 .dinamica {
-  background-color: #253B81;
+  background: url("../img/backgrounds/dinamica.png");
+  background-color: #0033a1;
+  background-position: right;
+  background-position-y: bottom;
+}
+
+.link {
+  color: #F7E300;
+}
+
+.plecatop {
+  background-color: #003189;
 }
 
 .pasos-img {
@@ -10046,7 +10089,7 @@ footer {
 }
 
 .ganadores {
-  background: url("../img/images/background3.jpg");
+  background: url("../img/images/background3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10076,7 +10119,7 @@ footer {
 }
 
 .btn-call-to-action {
-  background: #223f97;
+  background-color: #003189;
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
@@ -10104,10 +10147,16 @@ footer {
 
 #dinamica h5.responsive-title, #dinamica .h5.responsive-title {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 #dinamica h6.responsive-title, #dinamica .h6.responsive-title {
   font-size: 14px;
+  line-height: 20px;
+}
+
+.bicicleta {
+  padding-top: 30px;
 }
 
 .premio {
@@ -10119,13 +10168,41 @@ footer {
 }
 
 /* TABLAS */
-.table-ganadores-home th:nth-of-type(2), .table-ganadores-home td:nth-of-type(2) {
+.table-ganadores-home th:nth-of-type(3), .table-ganadores-home td:nth-of-type(3) {
   border-right: none !important;
 }
 
 /**
 *** 7.- Tipografía Personalizada
 **/
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/fonts/HelveticaNeue.woff2") format("woff2"), url("/fonts/HelveticaNeue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/fonts/HelveticaNeue-BoldItalic.woff2") format("woff2"), url("/fonts/HelveticaNeue-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("/fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2"), url("/fonts/HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
@@ -10206,12 +10283,15 @@ strong {
     margin-bottom: 0;
   }
   .header-home.header-user .btn-call-to-action {
-    left: 0;
+    left: 500px;
     bottom: -100px;
   }
 }
 
 @media screen and (max-width: 1250px) {
+  .img-silicon-login {
+    display: none;
+  }
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -10224,9 +10304,35 @@ strong {
   h6.responsive-title, .h6.responsive-title {
     font-size: 11px !important;
   }
+  .navbar-brand-home {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar-brand img {
+    width: 50% !important;
+  }
+  .btn-call-to-action {
+    left: 54% !important;
+    bottom: 25% !important;
+  }
+  .btn-call-to-action span {
+    font-size: 35px !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .dinamica {
+    background-position-y: top !important;
+  }
+  .btn-call-to-action {
+    bottom: 25% !important;
+    left: 45% !important;
+  }
+  .btn-call-to-action span {
+    font-size: 30px !important;
+  }
   .BotonesFooter {
     visibility: visible !important;
   }
@@ -10253,7 +10359,7 @@ strong {
     font-size: 20px !important;
   }
   .navbar .navbar-nav .nav-link {
-    font-size: 28px;
+    font-size: 25px;
   }
   .mb-sm-5 {
     margin-bottom: 0;
@@ -10271,12 +10377,6 @@ strong {
   }
   .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
     background: rgba(1, 25, 73, 0.6);
-  }
-  .navbar-brand img {
-    width: 300px;
-  }
-  .navbar-brand-home img {
-    width: 80% !important;
   }
   #ganadores .nav-tabs .nav-link {
     margin: 0px 5px;
@@ -10298,7 +10398,7 @@ strong {
     right: -150px;
   }
   .header-home .img-silicon {
-    width: 120px;
+    width: 30%;
   }
   .header-home .img-logo-ceys {
     right: 220px;
@@ -10306,6 +10406,9 @@ strong {
   }
   .premio {
     border-right: 0;
+  }
+  .navbar-brand img {
+    width: 40% !important;
   }
 }
 
@@ -10331,7 +10434,11 @@ strong {
     bottom: 220px;
     left: 0px;
   }
-  .mb-sm-5 {
+  .my-sm-3 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .mb-sm-3 {
     margin-bottom: 3rem;
   }
   .navbar-toggler {
@@ -10352,7 +10459,7 @@ strong {
     width: 100%;
   }
   #ganadores .content-table {
-    max-width: 94%;
+    max-width: 100%;
   }
   #ganadores table th {
     font-size: 15px;
@@ -10366,19 +10473,23 @@ strong {
     bottom: -115%;
   }
   .header-home .btn-call-to-action {
-    left: 10%;
-    width: 80%;
+    left: 21% !important;
+    bottom: 43% !important;
+    width: auto;
   }
   .header-home .img-silicon {
     display: none;
   }
   .header-home .img-logo-ceys {
-    left: 30%;
+    left: 33%;
     right: inherit;
   }
   table th {
     font-size: 13px;
     padding: 1rem !important;
+  }
+  .dinamica {
+    background: #0033a1;
   }
 }
 

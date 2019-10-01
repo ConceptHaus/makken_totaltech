@@ -26,11 +26,11 @@
                         </div>
 
                         <div class="form-group">
-                            <input id="monto" ng-model="ticket.monto" type="text" class="form-control" mask="" name="monto" placeholder="Monto de compra" ng-pattern="/^$|^[0-9,]+$/" money required>
+                            <input id="monto" ng-model="ticket.monto" type="text" class="form-control" mask="" name="monto" placeholder="Monto de compra en productos" ng-pattern="/^$|^[0-9,]+$/" money required>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-md-10 pointer">
+                        <div class="">
+                            <div class="col-md-12 pointer ticketupload">
                                 {{-- <label class="custom-file">
                                   <span class="custom-file-control btn-submit-upload"><i class="fas fa-cloud-upload-alt"></i></span>
                                   <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="custom-file-input">
@@ -38,16 +38,20 @@
                                   </label> --}}
 
                                     <a class='btn-submit-upload pointer' href='javascript:;'>
-                                      <i class="fas fa-cloud-upload-alt"></i>
+                                      <h5 class="my-2 subetuticket">SUBE TU TICKET</h5>
                                       <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="inputfile" name="file" onchange='$("#upload-file-info").html($(this).val());'>
                                     </a>
                                     <span class='label label-info' id="upload-file-info"></span>
 
-                                <h5 class="blanco mt-2">SUBE TU TICKET</h5>
-                                <small>Formatos .jpg, .png o .pdf</small>
-                            </div>
+                                </div>
+                                
                         </div>
-
+                        <div class="my-2">
+                        <div class="col-md-12 formatos">
+                                <small>Formatos .jpg, .png o .pdf</small>
+                                
+                                </div>
+                        </div>
                         <div class="form-group">
                           <div class="col-md-12 form-check-inline">
                             <input class="form-control form-check-input" type="checkbox" name="privacidad" value="1">
@@ -65,5 +69,7 @@
             </div>
         </div>
     </div>
+    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
 @endsection

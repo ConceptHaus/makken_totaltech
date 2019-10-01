@@ -1,8 +1,6 @@
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
 @media screen and (max-width: 1680px) {
-    //   h3{
-    //     color: brown!important;
-    //   }
+  
     .mb-sm-5 {
       margin-bottom: 0;
     }
@@ -10,20 +8,22 @@
     .header-home {
       &.header-user {
         .btn-call-to-action {
-          left: 0;
+          left: 500px;
           bottom: -100px;
         }
       }
     }
+   
 }
 
 @media screen and (max-width: 1250px) {
+  .img-silicon-login{
+    display:none;
+  }
 
-    // h3{
-    //     color: orange!important;
-    // }
+  
     .mb-sm-5 {
-      margin-bottom: 0;
+      margin-bottom: 0; 
     }
     // Navbar
     .navbar {
@@ -45,9 +45,47 @@
         font-size: 11px !important;
       }
     }
+    .navbar-brand-home  {
+      width: 60% !important;
+      
+  }
 }
+@media screen and (max-width: 1250px) {
+  
+  
+  .navbar-brand img {
+    width: 50% !important;
+}
+  .btn-call-to-action{
+    left: 54%!important;
+    bottom: 25%!important;
+    span{
+      font-size: 35px!important;
+
+    }
+
+  }
+
+
+}
+  
 
 @media screen and (max-width: 992px) {
+  .dinamica{
+    background-position-y: top!important;
+
+  }
+  .btn-call-to-action {
+    bottom: 25%!important;
+    left: 45%!important;
+    
+    span {
+      font-size: 30px!important;
+
+
+
+  }}
+
   .BotonesFooter {
     visibility: visible !important;
   }
@@ -80,13 +118,11 @@
     .navbar {
       .navbar-nav {
         .nav-link {
-          font-size: 28px;
+          font-size: 25px;
         }
       }
     }
-    // h3{
-    //     color: blue!important;
-    // }
+ 
     .mb-sm-5 {
       margin-bottom: 0;
     }
@@ -109,18 +145,6 @@
                     background: rgba(1, 25, 73, 0.6);
                 }
             }
-        }
-    }
-
-    .navbar-brand {
-        img {
-            width: 300px;
-        }
-    }
-
-    .navbar-brand-home {
-        img {
-            width: 80% !important;
         }
     }
 
@@ -150,7 +174,7 @@
             right: -150px;
         }
         .img-silicon {
-            width: 120px;
+            width: 30%;
         }
         .img-logo-ceys {
             right: 220px;
@@ -160,6 +184,12 @@
 
     .premio {
       border-right: 0;
+    }
+    .navbar-brand{
+      img{
+        width: 40%!important;
+      }
+
     }
 }
 
@@ -186,11 +216,7 @@
 }
 
 @media screen and (max-width: 600px) {
-
-    // h3{
-    //   color: black!important;
-    // }
-
+ 
     .custom-margin2 {
       margin-left: 0;
       margin-right: 4%;
@@ -201,7 +227,11 @@
       left: 0px;
     }
 
-    .mb-sm-5 {
+    .my-sm-3 {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .mb-sm-3 {
       margin-bottom: 3rem;
     }
 
@@ -228,7 +258,7 @@
             }
         }
         .content-table {
-            max-width: 94%;
+            max-width: 100%;
         }
         table {
             th {
@@ -249,14 +279,15 @@
         }
       }
         .btn-call-to-action {
-            left: 10%;
-            width: 80%;
+            left: 21%!important;
+            bottom: 43%!important;
+            width: auto;
         }
         .img-silicon {
             display: none;
         }
         .img-logo-ceys {
-            left: 30%;
+            left: 33%;
             right: inherit;
         }
     }
@@ -267,14 +298,16 @@
         padding: 1rem !important;
       }
     }
+.dinamica{
+
+  background:#0033a1;
+}
 
 }
 
 @media screen and (max-width: 480px) {
 
-    // h3{
-    //   color: yellow!important;
-    // }
+
 
     .navbar-brand {
         img {

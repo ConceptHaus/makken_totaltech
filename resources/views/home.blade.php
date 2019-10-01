@@ -4,13 +4,11 @@
   <!-- Header -->
   <section class="header-home header-user">
     <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
-    <img class="img-silicon wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/product.png') }}" alt="Silicón">
+    <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
     <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
     <div class="texto-home col-lg-6 col-md-12 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-      <h1>¡HOLA</h1>
-      <h3 class="blanco">{{auth()->user()->nombre}} {{auth()->user()->apellido}}!</h3>
-      <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-        <span>¡REGISTRA!</span> TU TICKET
+    <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
+        <span>¡PARTICIPA!</span> DA CLICK AQUÍ
       </a>
     </div>
   </section>

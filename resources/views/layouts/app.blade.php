@@ -48,7 +48,7 @@
     @else
       <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @endif
-      <img class="logo-menu" src="{{ asset('img/logos/puedescontodo-logo.svg') }}">
+      <img class="logo-menu" id="logo-img-resp" src="{{ asset('img/logos/consigue-tu-bicicleta.png') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +143,7 @@
 
   <!-- Scripts -->
    <!-- Cambio de Menu con Scrolll -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+  <script src="{{asset('bower/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
   <script src="{{ mix('js/vendor.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
   <script src="{{ mix('js/user.controllers.js') }}"></script>

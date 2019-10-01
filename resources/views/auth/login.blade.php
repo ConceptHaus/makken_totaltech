@@ -3,7 +3,7 @@
 @section('content')
 <div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-8 offset-md-2 mt-md-5 pt-md-5">
             <div class="panel">
                 <div class="panel-body text-center">
                     <form class="form-horizontal" >
@@ -41,5 +41,6 @@
             </div>
         </div>
     </div>
+    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
 @endsection

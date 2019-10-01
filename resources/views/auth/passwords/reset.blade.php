@@ -46,5 +46,7 @@
             </div>
         </div>
     </div>
+    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
 @endsection

@@ -1,10 +1,10 @@
 // Estilos de Home
 .header-home {
-  background: url('../img/images/background.jpg');
+  background: url('../img/images/backgorund-nuevo.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   position: relative;
 
@@ -22,9 +22,9 @@
   }
 
   .img-silicon {
-    bottom: 15px;
-    right: 50px;
-    width: 220px;
+    top: 32%;
+    left: 70px;
+    width: 450px;
   }
 
   .img-logo-ceys {
@@ -32,29 +32,29 @@
     right: 340px;
     width: 210px;
   }
-
+//Boton para header
   .btn-call-to-action {
-    background: rgba(34, 63, 151, 0.8);
+    background: #0033a1;
     font-style: italic;
     font-weight: 600;
     line-height: 1.2;
     position: absolute;
-    bottom: 170px;
-    left: 100px;
+    bottom: 20%;
+    left: 40%;
     border-radius: 8px;
     padding: 15px 40px;
     text-decoration: none;
-    text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+    text-shadow: 4px 5px 9px rgba(1, 1, 1, 0.5);
     transition: transform .2s;
+  
 
     span {
       color: #F7E300;
-      font-size: 30px;
+      font-size: 45px;
       display: block;
     }
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: #fff;
       transform: scale(1.1);
     }
@@ -79,9 +79,19 @@
 }
 
 .dinamica {
-  background-color: $azul_2;
-}
+  background: url('../img/backgrounds/dinamica.png');
+  background-color: #0033a1;
+  background-position: right;
+  background-position-y: bottom;
 
+}
+.link{
+ color: $amarillo;
+}
+.plecatop{
+
+  background-color: #003189;
+}
 .pasos-img {
   width: 150px;
 }
@@ -91,7 +101,7 @@
 }
 
 .ganadores {
-  background: url('../img/images/background3.jpg');
+  background: url('../img/images/background3.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,9 +131,10 @@
     }
   }
 }
-
+//Botton participa seccion premio
 .btn-call-to-action {
-  background: rgba(34, 63, 151, 1);
+
+  background-color: #003189;
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
@@ -148,14 +159,21 @@
   h5, .h5 {
     &.responsive-title {
         font-size: 22px;
+        margin-bottom: 10px;
     }
   }
 
   h6, .h6 {
     &.responsive-title {
         font-size: 14px;
+        line-height: 20px;
     }
   }
+}
+.bicicleta{
+
+  padding-top: 30px;
+
 }
 
 .premio {
@@ -169,7 +187,7 @@
 /* TABLAS */
 .table-ganadores-home {
   th, td {
-    &:nth-of-type(2) {
+    &:nth-of-type(3) {
       border-right: none!important;
     }
   }

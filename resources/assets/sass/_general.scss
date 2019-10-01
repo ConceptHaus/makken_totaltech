@@ -24,13 +24,20 @@ html {
 }
 
 .body-bg {
-    background: url(../img/backgrounds/bg-bike-mask-v7.jpg) no-repeat;
+    background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
     background-size: cover;
     min-height: 100%;
 }
 
 .no-border {
     border: none !important;
+}
+.img-silicon-login{
+
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    width: 30%;
 }
 
 // Estilos input
@@ -100,8 +107,8 @@ html {
 
         .nav-link {
             color: $blanco;
-            font-size: 17px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 400;
             padding-left: 20px;
             padding-right: 20px;
             transition: all .5s ease-in-out;
@@ -148,13 +155,15 @@ html {
 
 .navbar-brand {
     img {
-        width: 350px;
+        width: 50%!important;
+        padding-left: 30px;
     }
 }
 
 .navbar-brand-home {
     img {
-        width: 80%;
+        width: 70%;
+        padding-left: 30px;
     }
 }
 
@@ -176,15 +185,34 @@ html {
 
 .btn-submit-upload {
   background: #F7E300;
-  border-radius: 50%;
-  color: #223F97 !important;
+  border-radius: 50px;
+  color: #0033a1 !important;
   font-size: 20px;
   font-weight: 600;
   padding: 8px 12px;
   width: auto;
   text-align: center;
-  float: left;
+  float: right;
   cursor: pointer;
+  font-family: Helvetica!important;
+  width: 200px;
+  margin: auto;
+
+}
+.ticketupload{
+    display: flex;
+
+}
+.subetuticket{
+    color: #0033a1 !important;
+    font-family: Helvetica!important; 
+    font-size: 15px;
+    font-style: normal!important;
+
+}
+.formatos{
+  font-size: 17px;
+  font-weight: bold;
 }
 
 // Tablas
@@ -255,6 +283,7 @@ footer {
   &.header-user {
     .btn-call-to-action {
         bottom: -95px;
+       
     }
   }
 }
