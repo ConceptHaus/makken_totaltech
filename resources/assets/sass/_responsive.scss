@@ -245,6 +245,7 @@
 
   }  
 
+
 }
 
 
@@ -400,7 +401,8 @@
 @media screen and (max-width: 320px) {
   .navbar-brand img {
     width: 80% !important;
-    margin-top: 0.5rem
+    margin-top: 0.5rem;
+    padding-left: 0!important;
   }
 
   .participantes {
