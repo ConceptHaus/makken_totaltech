@@ -97,7 +97,7 @@
   @if (Request::path() == '/' || Request::path() === 'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-0">
           <div class="col-lg-2 text-responsive">
             <p><strong>SOPORTE</strong><br>
             41-600-800/900
