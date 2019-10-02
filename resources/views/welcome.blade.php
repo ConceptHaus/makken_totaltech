@@ -151,7 +151,7 @@
                       <th scope="col" width="30%">PREMIO</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="tabla-resp">
                     @php
                       $j = 0
                     @endphp

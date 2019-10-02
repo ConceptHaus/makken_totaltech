@@ -10005,8 +10005,8 @@ footer {
 }
 
 .header-home .img-silicon {
-  top: 32%;
-  left: 70px;
+  top: 33%;
+  left: 16px;
   width: 450px;
 }
 
@@ -10296,10 +10296,12 @@ strong {
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
   }
-  h5.responsive-title, .h5.responsive-title {
+  h5.responsive-title,
+  .h5.responsive-title {
     font-size: 18px !important;
   }
-  h6.responsive-title, .h6.responsive-title {
+  h6.responsive-title,
+  .h6.responsive-title {
     font-size: 11px !important;
   }
   .navbar-brand-home {
@@ -10511,12 +10513,18 @@ strong {
   .mascompras {
     margin-bottom: 2rem;
   }
+  .tabla-resp {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .navbar-brand img {
     width: 80% !important;
     margin-top: 0.5rem;
+  }
+  .participantes {
+    font-size: 20px;
   }
 }
 
