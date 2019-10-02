@@ -98,7 +98,7 @@
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
         <div class="row align-items-center mx-0">
-          <div class="col-lg-2 text-responsive">
+          <div class="col-lg-2 text-responsive pl-md-4">
             <p><strong>SOPORTE</strong><br>
             41-600-800/900
             <a class="mail-footer" href="mailto:privacidad@makken.com.mx" target="_blank">privacidad@makken.com.mx</a></p>
@@ -111,7 +111,7 @@
           <div class="col-lg-6 text-center">
             <p><a href="https://mundoceys.com/" target="_blank"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
           </div>
-          <div class="col-lg-2 text-center">
+          <div class="col-lg-2 text-right pr-md-4">
             <a href="https://mundoceys.com/" target="_blank"><img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys"></a>
           </div>
         </div>
