@@ -4,7 +4,7 @@
 <div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <div class="panel panel-register">
+            <div class="panel panel-register my-5">
                 <div class="panel-body text-center">
                     <a class="a-login" href="{{ route('login') }}">
                         Ya tengo una cuenta.
