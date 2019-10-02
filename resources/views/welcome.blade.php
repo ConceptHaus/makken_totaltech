@@ -67,7 +67,7 @@
   <div class="row">
     <div class="row text-center col-lg-6 col-sm-12 mt-4 premio establecimientos">
       <div class="col-12">
-        <h2 class="azul">ESTABLECIMIENTOS PARTICIPANTES</h2>
+        <h2 class="azul participantes">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
       <div class="col-6 my-md-4 py-md-3">
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
