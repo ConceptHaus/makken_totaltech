@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 /**
 ***
 *** 1.- Fonts
@@ -9575,7 +9575,6 @@ html {
 
 .img-silicon-login {
   position: absolute;
-  bottom: 10px;
   left: 10px;
   width: 30%;
 }
