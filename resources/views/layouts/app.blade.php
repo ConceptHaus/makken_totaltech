@@ -66,7 +66,7 @@
           @if (Auth::check())
             {{-- <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA LOGIN</a> --}}
             <div class="dropdown nav-link">
-                <a class="dropdown-toggle" data-toggle="dropdown"><p>MI CUENTA</p></a>
+               <a class="dropdown-toggle" data-toggle="dropdown">MI CUENTA</a>
                 <div class="dropdown-menu shadow-menu">
                   <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/ticket') }}">Agregar Ticket</a>
                   <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/home') }}">Mi Cuenta</a>
