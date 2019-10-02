@@ -4,7 +4,7 @@
 <div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2 mt-md-5 pt-md-5">
-            <div class="panel">
+            <div class="panel my-4">
                 <div class="panel-body text-center">
                     <form class="form-horizontal" >
                         {{ csrf_field() }}

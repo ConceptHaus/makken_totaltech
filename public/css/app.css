@@ -10342,6 +10342,9 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  footer {
+    padding-bottom: 35px !important;
+  }
   .header-home .texto-home {
     bottom: 200px !important;
     left: 0px !important;
@@ -10556,6 +10559,13 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+  .btn-call-to-action span {
+    font-size: 20px !important;
+  }
+  .header-home .btn-call-to-action {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .navbar-brand img {
     width: 76% !important;
   }
