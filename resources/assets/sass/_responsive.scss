@@ -244,6 +244,13 @@
 
 
 @media screen and (max-width: 600px) {
+  .container-button-participa{
+    position: absolute;
+    bottom: 150px;
+    a{
+      position: relative!important;
+    }
+  }
 
   .custom-margin2 {
     margin-left: 0;

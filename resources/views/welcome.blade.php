@@ -8,7 +8,7 @@
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-  <div class="d-flex row">
+  <div class="d-flex row container-button-participa">
     @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
       <span>¡PARTICIPA!</span> REGISTRA TU TICKET AQUÍ
