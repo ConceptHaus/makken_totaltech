@@ -59,7 +59,7 @@
 
 
   .navbar-brand img {
-    width: 50% !important;
+    width: 70% !important;
   }
 
   .btn-call-to-action {
@@ -72,12 +72,27 @@
     }
 
   }
+  .navbar-resp{
+    max-width: 40%!important;
+} 
 
 
 }
 
 
 @media screen and (max-width: 992px) {
+  .header-home .texto-home {
+    bottom: 200px!important;
+    left: 0px!important;
+    display: flex;
+    width: 100%;
+    a{
+      position: relative!important;
+      right: 0!important;
+      left: 0!important;
+      margin: auto;
+    }
+  }
   .dinamica {
     background-position-y: top !important;
 
@@ -163,6 +178,9 @@
         }
       }
     }
+    .navbar-resp{
+      width: 60%!important;
+}  
   }
 
   #ganadores {
@@ -209,7 +227,7 @@
 
   .navbar-brand {
     img {
-      width: 40% !important;
+      width: 70% !important;
     }
 
   }
@@ -239,11 +257,7 @@
 
     background: #0033a1 !important;
   }
-  .navbar-resp{
-    width: 60%!important;
 
-
-  }  
 
 
 }
@@ -271,6 +285,13 @@
   .header-home .texto-home {
     bottom: 220px;
     left: 0px;
+    display: flex;
+    a{
+      margin: auto;
+      position: relative!important;
+      left: 0!important;
+      right: 0;
+    }
   }
 
   .my-sm-3 {
@@ -332,7 +353,7 @@
     }
 
     .btn-call-to-action {
-      //left: 21% !important;
+      
       bottom: 43% !important;
       width: auto;
     }

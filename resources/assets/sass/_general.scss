@@ -389,3 +389,15 @@ footer {
     width: 100% !important;
 }
 
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.content-table{
+    overflow: scroll;
+}
