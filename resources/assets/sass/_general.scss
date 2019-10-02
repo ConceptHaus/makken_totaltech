@@ -27,6 +27,7 @@ html {
     background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
     background-size: cover;
     min-height: 100%;
+    background-attachment: fixed;
 }
 
 .no-border {
@@ -144,9 +145,7 @@ html {
     background: transparent;
     border: none;
     font-size: 1.8rem;
-    position: absolute;
-    right: 20px;
-    top: 50px;
+  
 
     .icon-bar {
         background: $amarillo;

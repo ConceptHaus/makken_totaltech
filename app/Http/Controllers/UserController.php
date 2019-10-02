@@ -69,7 +69,7 @@ class UserController extends Controller
                 $ticket = new Ticket();
                 $ticket->id_usuario = $user->id;
                 $ticket->no_ticket = $request->no_ticket;
-                $ticket->monto = $request->monto;
+                $ticket->monto = $input['monto'];
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->registro_admin = $request->registro_admin;

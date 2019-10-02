@@ -9566,6 +9566,7 @@ html {
   background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
   background-size: cover;
   min-height: 100%;
+  background-attachment: fixed;
 }
 
 .no-border {
@@ -9675,9 +9676,6 @@ html {
   background: transparent;
   border: none;
   font-size: 1.8rem;
-  position: absolute;
-  right: 20px;
-  top: 50px;
 }
 
 .navbar-toggler .icon-bar {
@@ -10412,7 +10410,7 @@ strong {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -10422,6 +10420,9 @@ strong {
   #ganadores .nav-tabs .nav-link {
     font-size: 16px;
     margin: 0px;
+  }
+  .dinamica {
+    background: #0033a1 !important;
   }
 }
 

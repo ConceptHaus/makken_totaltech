@@ -193,11 +193,9 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
-    // h3{
-    //     color: green!important;
-    // }
+
     .mb-sm-5 {
       margin-bottom: 0;
     }
@@ -212,8 +210,14 @@
                 margin: 0px;
             }
         }
-    }
+      }
+      .dinamica{
+
+        background:#0033a1!important;
+      }
+      
 }
+
 
 @media screen and (max-width: 600px) {
  
