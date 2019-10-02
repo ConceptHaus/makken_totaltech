@@ -9919,6 +9919,10 @@ footer {
   overflow: scroll;
 }
 
+.navbar-resp, a.navbar-brand {
+  max-width: 40% !important;
+}
+
 /**
 *** 5.- Estilos Login
 **/
