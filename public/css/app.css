@@ -10425,9 +10425,24 @@ strong {
   .dinamica {
     background: #0033a1 !important;
   }
+  .navbar-resp {
+    width: 60% !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .container-button-participa {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .container-button-participa a {
+    position: relative !important;
+    left: 0 !important;
+    right: 0;
+    margin: auto;
+  }
   .custom-margin2 {
     margin-left: 0;
     margin-right: 4%;
@@ -10475,7 +10490,6 @@ strong {
     bottom: -115%;
   }
   .header-home .btn-call-to-action {
-    left: 21% !important;
     bottom: 43% !important;
     width: auto;
   }

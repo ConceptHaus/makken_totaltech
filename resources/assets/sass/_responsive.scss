@@ -239,6 +239,11 @@
 
     background: #0033a1 !important;
   }
+  .navbar-resp{
+    width: 60%!important;
+
+
+  }  
 
 }
 
@@ -247,8 +252,13 @@
   .container-button-participa{
     position: absolute;
     bottom: 150px;
+    width: 100%;
+    margin: 0!important;
     a{
-      position: relative!important;
+      position: relative !important;
+      left: 0!important;
+      right: 0;
+      margin: auto;
     }
   }
 
@@ -321,7 +331,7 @@
     }
 
     .btn-call-to-action {
-      left: 21% !important;
+      //left: 21% !important;
       bottom: 43% !important;
       width: auto;
     }
@@ -351,9 +361,12 @@
   .navbar-brand img {
     width: 200px !important;
   }
+
 }
 
 @media screen and (max-width: 480px) {
+
+  
 .navbar-brand {
     img {
       width: 76% !important;

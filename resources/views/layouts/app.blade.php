@@ -44,7 +44,7 @@
   <!-- Inicio de Menú -->
   <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
     @if (Request::path() !== '/')
-      <a class="navbar-brand" href="{{ url('/') }}">
+      <a class="navbar-brand navbar-resp" href="{{ url('/') }}">
     @else
       <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @endif

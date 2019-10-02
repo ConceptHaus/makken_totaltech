@@ -87,7 +87,7 @@
         <h5 class="azul">¡Y MUCHAS MÁS!</h5>
       </div>
     </div>
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center establecimientos">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center establecimientos mx-0 px-0">
       <div class="col-12">
         <h2 class="azul">PREMIO</h2>
       </div>
@@ -96,7 +96,7 @@
         <img class="img-fluid wow zoomIn" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/bicycle.png') }}" alt="Premio Bicicleta">
         <h6 class="mt-3 gris">¡GANA UNA BICICLETA TODO TERRENO!</h6>
       </div>
-      <div class="col-12">
+      <div class="col-12 px-0">
       @if (Auth::check())
         <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
           <span>¡REGISTRA!</span> TU TICKET
