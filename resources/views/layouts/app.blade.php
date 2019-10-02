@@ -111,7 +111,7 @@
           <div class="col-lg-6 text-center">
             <p><a href="https://mundoceys.com/" target="_blank"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
           </div>
-          <div class="col-lg-2 text-right pr-md-4">
+          <div class="col-lg-2 text-md-right text-center pr-md-4">
             <a href="https://mundoceys.com/" target="_blank"><img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys"></a>
           </div>
         </div>
