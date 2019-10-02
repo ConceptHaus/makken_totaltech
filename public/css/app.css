@@ -10492,11 +10492,31 @@ strong {
   .dinamica {
     background: #0033a1;
   }
+  .navbar-brand img {
+    width: 200px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .navbar-brand img {
     width: 76% !important;
+  }
+  .recuerda {
+    font-size: 17px !important;
+    margin-bottom: 2rem;
+  }
+  .participantes {
+    font-size: 25px;
+  }
+  .mascompras {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    width: 80% !important;
+    margin-top: 0.5rem;
   }
 }
 

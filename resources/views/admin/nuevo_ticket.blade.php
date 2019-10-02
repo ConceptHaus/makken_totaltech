@@ -49,7 +49,7 @@
                                       </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 form-group mb-4">
+                                <div class="col-sm-6 form-group mb-4 dropmenu-container">
                                     <label>Usuarios</label>
                                     <div>
                                         <select class="selectpicker form-control form-control-solid" ng-model="ticket.id_usuario" data-live-search="true" title="Selecciona el usuario de compra">

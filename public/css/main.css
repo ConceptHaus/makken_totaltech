@@ -8476,6 +8476,11 @@ td input {
   width: 50%;
 }
 
+.dropmenu-container div.dropdown-menu.open.show {
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+          transform: translate3d(0px, 0px, 0px) !important;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;

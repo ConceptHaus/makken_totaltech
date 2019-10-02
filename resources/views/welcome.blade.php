@@ -8,15 +8,17 @@
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-  @if (Auth::check())
-    <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
-    <span>¡PARTICIPA!</span> DA CLICK AQUÍ
-    </a>
-  @else
-    <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
-      <span>¡PARTICIPA!</span> DA CLICK AQUÍ
-    </a>
-  @endif
+  <div class="d-flex row">
+    @if (Auth::check())
+      <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
+      <span>¡PARTICIPA!</span> REGISTRA TU TICKET AQUÍ
+      </a>
+    @else
+      <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
+        <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+      </a>
+    @endif
+  </div>
 </section>
 
 <!-- Dinámica del concurso -->
@@ -55,8 +57,8 @@
   </div>
   <div class="row text-center justify-content-center">
     <div class="col-lg-8 col-md-12 mt-5 mb-sm-5 pb-md-4">
-      <h6 class="blanco">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
-      <h4>¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</h4>
+      <h6 class="blanco mascompras">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
+      <h4 class="recuerda">¡RECUERDA QUE TODAS LAS COMPRAS DE UN MISMO DÍA PARTICIPAN!</h4>
     </div>
   </div>
 </div>
@@ -64,8 +66,8 @@
 
 <!-- Establecimientos Participantes -->
 <div class="container pt-5 pb-5">
-  <div class="row">
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio establecimientos">
+  <div class="row mx-0">
+    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio establecimientos mx-0">
       <div class="col-12">
         <h2 class="azul participantes">ESTABLECIMIENTOS PARTICIPANTES</h2>
       </div>
