@@ -22,9 +22,10 @@
   }
 
   .img-silicon {
-    top: 33%;
+    top: unset !important;
     left: 16px;
     width: 600px;
+    bottom: 10px;
   }
 
   .img-logo-ceys {

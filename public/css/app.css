@@ -10032,9 +10032,10 @@ footer {
 }
 
 .header-home .img-silicon {
-  top: 33%;
+  top: unset !important;
   left: 16px;
   width: 600px;
+  bottom: 10px;
 }
 
 .header-home .img-logo-ceys {
@@ -10311,11 +10312,10 @@ strong {
     bottom: -100px;
   }
   .btn-call-to-action {
-    margin-top: 300px !important;
+    margin-top: 250px !important;
   }
   .img-silicon {
     width: 500px !important;
-    top: 42% !important;
   }
   .img-logo-ceys {
     right: 220px !important;
@@ -10362,7 +10362,6 @@ strong {
   }
   .img-silicon {
     width: 450px !important;
-    top: 47% !important;
   }
   .img-logo-ceys {
     right: 210px !important;
