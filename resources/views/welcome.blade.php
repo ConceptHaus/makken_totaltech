@@ -22,13 +22,13 @@
 </section>
 
 <!-- Dinámica del concurso -->
-<div id="dinamica" class="container-fluid dinamica pb-sm-5 pb-md-2">
+<div id="dinamica" class="container-fluid dinamica ">
   <div class="row text-center justify-content-center plecatop">
     <div class="col-lg-12 col-md-12 my-md-3 py-md-2 my-sm-3">
       <h1 class="my-md-0">DINÁMICA DEL CONCURSO</h1>
     </div>
   </div>
-  <div class="row text-center justify-content-center mt-md-2 mt-xl-4 pt-xl-3">
+  <div class="row text-center justify-content-center pt-xl-3">
     <div class="row col-lg-8 justify-content-around">
       <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s">
         <img src="{{ asset('img/icons/step1.png') }}" class="pasos-img  pt-md-2" alt="Paso 1">

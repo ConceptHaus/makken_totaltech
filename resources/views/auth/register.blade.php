@@ -6,9 +6,7 @@
         <div class="col-md-8 offset-md-2">
             <div class="panel panel-register my-5">
                 <div class="panel-body text-center">
-                    <a class="a-login" href="{{ route('login') }}">
-                        Ya tengo una cuenta.
-                    </a>
+                    
                     <h3>REGÍSTRATE</h3>
                     <form class="form-horizontal form-ajust">
                         {{ csrf_field() }}
@@ -80,13 +78,17 @@
                         <div class="form-group">
                             <button type="submit" ng-click="register(user,confirm)"
                                 class="btn btn-submit">ENTRAR</button>
+                                
                         </div>
+                        <div class="mb-2"><a class="a-login mb-2" href="{{ route('login') }}">
+                        Ya tengo una cuenta.
+                    </a></div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+    <img class="img-silicon-login wow slideInLeft d-none" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
 @endsection

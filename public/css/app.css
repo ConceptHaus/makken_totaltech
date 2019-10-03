@@ -9544,6 +9544,10 @@ a.text-dark:hover, a.text-dark:focus {
   outline: 0px !important;
 }
 
+input {
+  border-radius: 5px !important;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -10303,6 +10307,28 @@ strong {
 /**
 *** 8.- Responsive
 **/
+@media screen and (min-width: 2000px) {
+  .nav-link {
+    font-size: 40px !important;
+  }
+  .img-pleca {
+    width: calc(100vw + 50px) !important;
+  }
+  .btn-call-to-action {
+    margin-top: 500px !important;
+  }
+  .btn-call-to-action span {
+    font-size: 55px !important;
+  }
+  .img-silicon {
+    width: 700px !important;
+  }
+  .img-logo-ceys {
+    right: 350px !important;
+    width: 300px !important;
+  }
+}
+
 @media screen and (max-width: 1680px) {
   .mb-sm-5 {
     margin-bottom: 0;
