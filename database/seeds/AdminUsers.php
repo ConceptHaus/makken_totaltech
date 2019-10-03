@@ -13,7 +13,7 @@ class AdminUsers extends Seeder
     {
         DB::table('users')->insert([
             [
-                'id' => '1',
+                'id' => '6',
                 'nombre' => 'Nancy',
                 'apellido' => 'Gomez',
                 'correo' => 'nancy.gomez@makken.com.mx',
@@ -22,7 +22,7 @@ class AdminUsers extends Seeder
                 'isAdmin' => '1',
             ],
             [
-                'id' => '2',
+                'id' => '7',
                 'nombre' => 'Mariana',
                 'apellido' => 'Camacho',
                 'correo' => 'mariana.camacho@makken.com.mx',
