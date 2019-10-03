@@ -112,7 +112,7 @@ html {
             padding-left: 20px;
             padding-right: 20px;
             transition: all .5s ease-in-out;
-            text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+            text-shadow: 2px 5px 19px rgba(0, 51, 161, 1);
             text-decoration: none;
 
             &:hover,
@@ -153,9 +153,13 @@ html {
 
 .navbar-brand {
     img {
-        width: 50%!important;
-        padding-left: 30px;
+        width: 45%!important;
+        margin-left: 15px;
     }
+}
+.nav-item{
+text-shadow: #0033a1;
+
 }
 
 .navbar-brand-home {
@@ -247,6 +251,8 @@ table {
     background: $blanco !important;
     padding-top: 3%;
     padding-bottom: 3%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .content-table-tickets {
@@ -254,7 +260,7 @@ table {
 }
 
 .img-footer {
-    width: 60%;
+    width: 25%;
 }
 
 .camera-icon {
@@ -284,6 +290,13 @@ footer {
        
     }
   }
+}
+.mundo-link{
+    
+    &:hover{
+        text-decoration: underline!important;
+        color: $amarillo;
+    }
 }
 
 .modal-content {

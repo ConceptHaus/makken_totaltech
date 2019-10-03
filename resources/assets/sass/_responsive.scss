@@ -50,7 +50,8 @@
   }
 
   .navbar-brand-home {
-    width: 60% !important;
+    width: 50% !important;
+    margin-left: 40px !important;
 
   }
 }
@@ -59,12 +60,13 @@
 
 
   .navbar-brand img {
-    width: 70% !important;
+    width: 50% !important;
   }
 
   .btn-call-to-action {
-    left: 54% !important;
-    bottom: 25% !important;
+    //left: 54% !important;
+    //bottom: 25% !important;
+    margin-top: 290px !important;
 
     span {
       font-size: 35px !important;
@@ -75,7 +77,14 @@
   .navbar-resp{
     max-width: 40%!important;
 } 
-
+.img-silicon {
+  width: 450px !important;
+  top:47% !important;
+}
+.img-logo-ceys {
+  right: 210px !important;
+  width: 180px !important;
+}
 
 }
 
@@ -102,14 +111,11 @@
   }
 
   .btn-call-to-action {
-    bottom: 25% !important;
-    left: 45% !important;
-
+    //bottom: 25% !important;
+    //left: 45% !important;
+    margin-top: 220px !important;
     span {
       font-size: 30px !important;
-
-
-
     }
   }
 
@@ -215,12 +221,12 @@
     }
 
     .img-silicon {
-      width: 30%;
+      width: 300px !important;
     }
 
     .img-logo-ceys {
-      right: 220px;
-      width: 150px;
+      right: 100px !important;
+      width: 150px !important;
     }
   }
 

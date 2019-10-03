@@ -11,11 +11,11 @@
   <div class="d-flex row container-button-participa">
     @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
-      <span>¡PARTICIPA!</span> REGISTRA TU TICKET AQUÍ
+      <span class="mx-4 px-3">PARTICIPA</span> REGISTRA TU TICKET AQUÍ
       </a>
     @else
       <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
-        <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+        <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
       </a>
     @endif
   </div>
@@ -98,12 +98,12 @@
       </div>
       <div class="col-12 px-0">
       @if (Auth::check())
-        <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-          <span>¡REGISTRA!</span> TU TICKET
+        <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center ">
+          <span class="mx-4 px-3">REGISTRA</span> TU TICKET
         </a>
       @else
         <a href="{{ url('/login') }}" class="btn btn-call-to-action text-center">
-          <span>¡PARTICIPA!</span> DA CLICK AQUÍ
+          <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
         </a>
       @endif
 
@@ -117,7 +117,7 @@
 <div class="container-fluid ganadores" id="ganadores">
   <div class="row text-center justify-content-center">
     <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
-      <h1 class="blanco">GANADORES</h1>
+      <h1 class="blanco ganadores_title">GANADORES</h1>
     </div>
     <div class="col-10 mt-2">
       <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">

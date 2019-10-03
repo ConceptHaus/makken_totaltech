@@ -24,7 +24,7 @@
   .img-silicon {
     top: 33%;
     left: 16px;
-    width: 450px;
+    width: 600px;
   }
 
   .img-logo-ceys {
@@ -38,25 +38,27 @@
     font-style: italic;
     font-weight: 600;
     line-height: 1.2;
-    position: absolute;
-    bottom: 20%;
-    left: 40%;
+    position: relative;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
     padding: 15px 40px;
     text-decoration: none;
     text-shadow: 4px 5px 9px rgba(1, 1, 1, 0.5);
-    transition: transform .2s;
+    transition: all .2s;
   
 
     span {
       color: #F7E300;
-      font-size: 45px;
+      font-size: 35px;
       display: block;
     }
 
     &:hover, &:focus {
-      color: #fff;
-      transform: scale(1.1);
+
+      letter-spacing: 3px;
+     
     }
   }
 
@@ -115,7 +117,8 @@
     .nav-link {
       background-color: $amarillo;
       border-color: $amarillo;
-      border-radius: 0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       color: $azul;
       font-size: 20px;
       font-style: italic;
@@ -131,6 +134,11 @@
     }
   }
 }
+.ganadores_title{
+  
+    text-shadow: 5px 5px 6px #0033a1;
+  
+}
 //Botton participa seccion premio
 .btn-call-to-action {
 
@@ -142,7 +150,7 @@
   padding: 15px 40px;
   text-decoration: none;
   text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
-  transition: transform .2s;
+  transition: all .2s;
   span {
     color: #F7E300;
     font-size: 30px;
@@ -150,9 +158,10 @@
   }
   &:hover, &:focus {
     color: #fff;
-    transform: scale(1.1);
+    letter-spacing: 3px;
   }
 }
+
 
 #dinamica {
 

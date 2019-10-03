@@ -9646,7 +9646,7 @@ html {
   padding-right: 20px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+  text-shadow: 2px 5px 19px #0033a1;
   text-decoration: none;
 }
 
@@ -9682,8 +9682,12 @@ html {
 }
 
 .navbar-brand img {
-  width: 50% !important;
-  padding-left: 30px;
+  width: 45% !important;
+  margin-left: 15px;
+}
+
+.nav-item {
+  text-shadow: #0033a1;
 }
 
 .navbar-brand-home img {
@@ -9762,6 +9766,8 @@ table tr td {
   background: #FFF !important;
   padding-top: 3%;
   padding-bottom: 3%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .content-table-tickets {
@@ -9769,7 +9775,7 @@ table tr td {
 }
 
 .img-footer {
-  width: 60%;
+  width: 25%;
 }
 
 .camera-icon {
@@ -9794,6 +9800,11 @@ footer {
 
 .header-home.header-user .btn-call-to-action {
   bottom: -95px;
+}
+
+.mundo-link:hover {
+  text-decoration: underline !important;
+  color: #F7E300;
 }
 
 .modal-content {
@@ -10023,7 +10034,7 @@ footer {
 .header-home .img-silicon {
   top: 33%;
   left: 16px;
-  width: 450px;
+  width: 600px;
 }
 
 .header-home .img-logo-ceys {
@@ -10037,29 +10048,26 @@ footer {
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
-  position: absolute;
-  bottom: 20%;
-  left: 40%;
+  position: relative;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   padding: 15px 40px;
   text-decoration: none;
   text-shadow: 4px 5px 9px rgba(1, 1, 1, 0.5);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .header-home .btn-call-to-action span {
   color: #F7E300;
-  font-size: 45px;
+  font-size: 35px;
   display: block;
 }
 
 .header-home .btn-call-to-action:hover, .header-home .btn-call-to-action:focus {
-  color: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  letter-spacing: 3px;
 }
 
 .header-home .texto-home {
@@ -10117,7 +10125,8 @@ footer {
 #ganadores .nav-tabs .nav-link {
   background-color: #F7E300;
   border-color: #F7E300;
-  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   color: #223F97;
   font-size: 20px;
   font-style: italic;
@@ -10132,6 +10141,10 @@ footer {
   border-color: #FFF;
 }
 
+.ganadores_title {
+  text-shadow: 5px 5px 6px #0033a1;
+}
+
 .btn-call-to-action {
   background-color: #003189;
   font-style: italic;
@@ -10141,10 +10154,8 @@ footer {
   padding: 15px 40px;
   text-decoration: none;
   text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .btn-call-to-action span {
@@ -10155,8 +10166,7 @@ footer {
 
 .btn-call-to-action:hover, .btn-call-to-action:focus {
   color: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  letter-spacing: 3px;
 }
 
 #dinamica h5.responsive-title, #dinamica .h5.responsive-title {
@@ -10321,23 +10331,31 @@ strong {
     font-size: 11px !important;
   }
   .navbar-brand-home {
-    width: 60% !important;
+    width: 50% !important;
+    margin-left: 40px !important;
   }
 }
 
 @media screen and (max-width: 1250px) {
   .navbar-brand img {
-    width: 70% !important;
+    width: 50% !important;
   }
   .btn-call-to-action {
-    left: 54% !important;
-    bottom: 25% !important;
+    margin-top: 290px !important;
   }
   .btn-call-to-action span {
     font-size: 35px !important;
   }
   .navbar-resp {
     max-width: 40% !important;
+  }
+  .img-silicon {
+    width: 450px !important;
+    top: 47% !important;
+  }
+  .img-logo-ceys {
+    right: 210px !important;
+    width: 180px !important;
   }
 }
 
@@ -10363,8 +10381,7 @@ strong {
     background-position-y: top !important;
   }
   .btn-call-to-action {
-    bottom: 25% !important;
-    left: 45% !important;
+    margin-top: 220px !important;
   }
   .btn-call-to-action span {
     font-size: 30px !important;
@@ -10437,11 +10454,11 @@ strong {
     right: -150px;
   }
   .header-home .img-silicon {
-    width: 30%;
+    width: 300px !important;
   }
   .header-home .img-logo-ceys {
-    right: 220px;
-    width: 150px;
+    right: 100px !important;
+    width: 150px !important;
   }
   .premio {
     border-right: 0;

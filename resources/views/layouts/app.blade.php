@@ -98,6 +98,8 @@
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
         <div class="row align-items-center mx-0">
+        <div class="col-lg-1 text-responsive pl-md-4">
+          </div>
           <div class="col-lg-2 text-responsive pl-md-4">
             <p><strong>SOPORTE</strong><br>
             41-600-800/900
@@ -108,12 +110,13 @@
             <p class="no-margin"><a href="/avisos/aviso_de_privacidad.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
             <p class="no-margin"><a href="/avisos/terminos_y_condiciones.pdf" target="_blank" data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
-          <div class="col-lg-6 text-center">
-            <p><a href="https://mundoceys.com/" target="_blank"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
+          <div class="col-lg-2 text-center">
+            <p><a href="https://mundoceys.com/" target="_blank" class="mundo-link"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
           </div>
-          <div class="col-lg-2 text-md-right text-center pr-md-4">
+          <div class="col-lg-4 text-md-right text-center pr-md-4">
             <a href="https://mundoceys.com/" target="_blank"><img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys"></a>
           </div>
+        
         </div>
       </div>
     </footer>
