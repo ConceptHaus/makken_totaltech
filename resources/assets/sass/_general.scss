@@ -51,11 +51,7 @@ html {
     letter-spacing: 2px;
 }
 
-// .form-group {
-//   a {
-//     color: $amarillo !important;
-//   }
-// }
+
 
 #formulario-ticket {
   .form-group {
@@ -85,7 +81,7 @@ html {
 
   small {
     color: white;
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
@@ -178,7 +174,7 @@ text-shadow: #0033a1;
 // Botones
 .btn-submit {
     background: $amarillo;
-    border-radius: 50px;
+    border-radius: 10px;
     color: $azul;
     font-size: 15px;
     font-weight: 600;
@@ -189,7 +185,7 @@ text-shadow: #0033a1;
 
 .btn-submit-upload {
   background: #F7E300;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #0033a1 !important;
   font-size: 20px;
   font-weight: 600;
@@ -210,7 +206,7 @@ text-shadow: #0033a1;
 .subetuticket{
     color: #0033a1 !important;
     font-family: Helvetica!important; 
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal!important;
 
 }
@@ -262,7 +258,7 @@ table {
 }
 
 .img-footer {
-    width: 25%;
+    width: 150px;
 }
 
 .camera-icon {
@@ -318,6 +314,10 @@ footer {
     font-style: inherit;
   }
 }
+
+   
+
+
 
 // Estilos de errores
 
@@ -419,3 +419,12 @@ footer {
 .navbar-resp, a.navbar-brand{
     max-width: 40%!important;
 } 
+//terminos y condiciones add ticket
+.terminosaddticket{
+    color: $amarillo!important;
+    :hover{
+        color:$blanco;
+        text-decoration: underline!important;
+
+    }
+}

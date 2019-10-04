@@ -55,7 +55,7 @@
                         <div class="form-group">
                           <div class="col-md-12 form-check-inline">
                             <input class="form-control form-check-input" type="checkbox" name="privacidad" value="1">
-                            <label class="form-check-label">He leído y aceptado los <a href="{{asset('avisos/terminos_y_condiciones.pdf')}}"><b>Términos y Condiciones.</b></a></label>
+                            <label class="form-check-label">He leído y aceptado los <a class="terminosaddticket" href="{{asset('avisos/terminos_y_condiciones.pdf')}}"><b>Términos y Condiciones.</b></a></label>
                           </div>
                         </div>
                         <div class="form-group">
@@ -69,7 +69,6 @@
             </div>
         </div>
     </div>
-    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
+    
 </div>
 @endsection

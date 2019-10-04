@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 /**
 ***
 *** 1.- Fonts
@@ -9621,7 +9621,7 @@ html {
 
 #formulario-ticket small {
   color: white;
-  font-size: 60%;
+  font-size: 70%;
 }
 
 #app {
@@ -9706,7 +9706,7 @@ html {
 
 .btn-submit {
   background: #F7E300;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #223F97;
   font-size: 15px;
   font-weight: 600;
@@ -9717,7 +9717,7 @@ html {
 
 .btn-submit-upload {
   background: #F7E300;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #0033a1 !important;
   font-size: 20px;
   font-weight: 600;
@@ -9740,7 +9740,7 @@ html {
 .subetuticket {
   color: #0033a1 !important;
   font-family: Helvetica !important;
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal !important;
 }
 
@@ -9779,7 +9779,7 @@ table tr td {
 }
 
 .img-footer {
-  width: 25%;
+  width: 150px;
 }
 
 .camera-icon {
@@ -9938,6 +9938,15 @@ footer {
   max-width: 40% !important;
 }
 
+.terminosaddticket {
+  color: #F7E300 !important;
+}
+
+.terminosaddticket :hover {
+  color: #FFF;
+  text-decoration: underline !important;
+}
+
 /**
 *** 5.- Estilos Login
 **/
@@ -9962,16 +9971,19 @@ footer {
   margin-top: 5%;
   padding: 8% 18%;
   padding-top: 0% !important;
+  border-radius: 5px !important;
 }
 
 #pageSytyle .panel-register {
   padding: 5% 15%;
   padding-top: 5% !important;
+  border-radius: 5px !important;
 }
 
 #pageSytyle .panel-forget {
   padding: 10% 15%;
   padding-top: 10% !important;
+  border-radius: 5px !important;
 }
 
 #pageSytyle h3 {
@@ -9997,7 +10009,8 @@ footer {
 }
 
 #pageSytyle p, #pageSytyle .a-forget-password, #pageSytyle .a-login {
-  font-weight: 500;
+  font-weight: bold !important;
+  text-align: left;
 }
 
 #pageSytyle .a-forget-password, #pageSytyle .a-login {
@@ -10007,6 +10020,10 @@ footer {
 #pageSytyle .a-login {
   position: relative;
   top: 20px;
+}
+
+.registrate {
+  font-weight: bold !important;
 }
 
 /**
@@ -10039,7 +10056,7 @@ footer {
   top: unset !important;
   left: 16px;
   width: 600px;
-  bottom: 10px;
+  bottom: -5px;
 }
 
 .header-home .img-logo-ceys {
@@ -10054,7 +10071,7 @@ footer {
   font-weight: 600;
   line-height: 1.2;
   position: relative;
-  margin-top: 15%;
+  margin-top: 17%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
@@ -10314,7 +10331,7 @@ strong {
   .img-pleca {
     width: calc(100vw + 50px) !important;
   }
-  .btn-call-to-action {
+  .container-button-participa .btn-call-to-action {
     margin-top: 500px !important;
   }
   .btn-call-to-action span {
@@ -10322,14 +10339,21 @@ strong {
   }
   .img-silicon {
     width: 700px !important;
+    bottom: 16px !important;
   }
   .img-logo-ceys {
     right: 350px !important;
     width: 300px !important;
   }
+  .img-footer {
+    width: 40% !important;
+  }
 }
 
 @media screen and (max-width: 1680px) {
+  .img-footer {
+    width: 45% !important;
+  }
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -10337,11 +10361,12 @@ strong {
     left: 500px;
     bottom: -100px;
   }
-  .btn-call-to-action {
-    margin-top: 220px !important;
+  .container-button-participa .btn-call-to-action {
+    margin-top: 290px !important;
   }
   .img-silicon {
     width: 500px !important;
+    bottom: 2px !important;
   }
   .img-logo-ceys {
     right: 220px !important;
@@ -10377,7 +10402,7 @@ strong {
   .navbar-brand img {
     width: 50% !important;
   }
-  .btn-call-to-action {
+  .container-button-participa .btn-call-to-action {
     margin-top: 290px !important;
   }
   .btn-call-to-action span {
@@ -10388,6 +10413,7 @@ strong {
   }
   .img-silicon {
     width: 450px !important;
+    bottom: 10px !important;
   }
   .img-logo-ceys {
     right: 210px !important;
@@ -10396,6 +10422,14 @@ strong {
 }
 
 @media screen and (max-width: 992px) {
+  .mascompras {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .recuerda {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
   footer {
     padding-bottom: 35px !important;
   }
@@ -10414,10 +10448,11 @@ strong {
     margin: auto;
   }
   .dinamica {
-    background-position-y: top !important;
+    background-position-y: bottom !important;
+    background-size: 600%;
   }
-  .btn-call-to-action {
-    margin-top: 220px !important;
+  .container-button-participa .btn-call-to-action {
+    margin-top: 185px !important;
   }
   .btn-call-to-action span {
     font-size: 30px !important;
@@ -10480,7 +10515,7 @@ strong {
     width: 100% !important;
   }
   .img-footer {
-    width: 20% !important;
+    width: 15% !important;
   }
   .header-home {
     height: 500px;
@@ -10491,6 +10526,7 @@ strong {
   }
   .header-home .img-silicon {
     width: 300px !important;
+    bottom: 20px !important;
   }
   .header-home .img-logo-ceys {
     right: 100px !important;
@@ -10518,12 +10554,18 @@ strong {
   .dinamica {
     background: #0033a1 !important;
   }
+  .container-button-participa .btn-call-to-action {
+    margin-top: 150px !important;
+  }
+  .text-md-right {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .container-button-participa {
     position: absolute;
-    bottom: 150px;
+    top: 25vh;
     width: 100%;
     margin: 0 !important;
   }
@@ -10549,6 +10591,9 @@ strong {
     position: relative !important;
     left: 0 !important;
     right: 0;
+  }
+  .btn-call-to-action {
+    margin-top: 0 !important;
   }
   .my-sm-3 {
     margin-bottom: 2rem;
@@ -10612,6 +10657,9 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+  .container-button-participa .btn-call-to-action {
+    margin-top: 0px !important;
+  }
   .btn-call-to-action span {
     font-size: 20px !important;
   }
@@ -10619,8 +10667,15 @@ strong {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+  .navbar-brand-home {
+    margin-left: 15px !important;
+  }
+  .navbar-brand-home img {
+    padding-left: 0px !important;
+  }
   .navbar-brand img {
     width: 76% !important;
+    margin-left: 0px;
   }
   .recuerda {
     font-size: 17px !important;
@@ -10671,7 +10726,7 @@ strong {
 
 .swal2-confirm {
   background: #F7E300 !important;
-  border-radius: 50px !important;
+  border-radius: 8px !important;
   color: #223F97 !important;
   font-size: 15px !important;
   font-weight: 600 !important;
@@ -10682,7 +10737,7 @@ strong {
 
 .swal2-popup .swal2-styled.swal2-cancel {
   background: #F7E300 !important;
-  border-radius: 50px !important;
+  border-radius: 8px !important;
   color: #223F97 !important;
   font-size: 15px !important;
   font-weight: 600 !important;

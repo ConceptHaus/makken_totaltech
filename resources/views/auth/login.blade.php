@@ -26,7 +26,7 @@
                         <div ng-cloak ng-if="errors['password']" class="alert alert-warning" role="alert">
                             <% errors['password'][0] %>
                         </div>
-                        <div class="form-group content-actions">
+                        <div class="form-group content-actions text-center no-margin align-items-start pt-0">
                         
                             <a class="a-forget-password" href="{{ route('password.request') }}">
                                 ¿Olvidaste tu contraseña?
@@ -36,7 +36,7 @@
                             <div class="col-md-12">
                                 <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
                             </div>
-                            <p class="my-3">¿No tienes cuenta? <a class="" href="{{ route('register') }}">Regístrate.</a></p>
+                            <p class="my-3 text-center">¿No tienes cuenta? <a class="registrate" href="{{ route('register') }}">Regístrate.</a></p>
                         </div>
 
                     </form>
