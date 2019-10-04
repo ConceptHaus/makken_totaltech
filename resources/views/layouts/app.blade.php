@@ -36,13 +36,13 @@
 
 </head>
 
-  <body ng-app="angularApp">
+  <body ng-app="angularApp" >
 @if (Request::path() == '/')
 @else
-  <body ng-app="angularApp" class="body-bg">
+  <body ng-app="angularApp" class="body-bg" >
 @endif
   <!-- Inicio de Menú -->
-  <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
+  <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark" >
     @if (Request::path() !== '/')
       <a class="navbar-brand navbar-resp" href="{{ url('/') }}">
     @else
@@ -56,21 +56,29 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-        <a id="menu-link" class="nav-link" data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
+        @if (Request::path() == '/')
+        <li id="dinamica-link"  class="nav-item ">
+        @else
+        <li id="dinamica-link" class="nav-item">
+        @endif
+        <a id="menu-link" class="nav-link " data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
         </li>
-        <li class="nav-item">
+        <li  id="ganadores-link" class="nav-item">
           <a id="menus-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
         </li>
-        <li class="nav-item">
-          @if (Auth::check())
+        @if (Request::path() == 'login')
+        <li class="nav-item active" >
+        @else 
+        <li class="nav-item " >
+        @endif
+        @if (Auth::check())
             {{-- <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA LOGIN</a> --}}
             <div class="dropdown nav-link">
-               <a class="dropdown-toggle" data-toggle="dropdown">MI CUENTA</a>
+               <a class="dropdown-toggle " data-toggle="dropdown">MI CUENTA</a>
                 <div class="dropdown-menu shadow-menu">
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/ticket') }}">Agregar Ticket</a>
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/home') }}">Mi Cuenta</a>
-                  <a id="menu-link" class="dropdown-item nav-link" href="{{ url('/logout') }}">Cerrar Sesión</a>
+                  <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/ticket') }}">Agregar Ticket</a>
+                  <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/home') }}">Mi Cuenta</a>
+                  <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/logout') }}">Cerrar Sesión</a>
                 </div>
             </div>
           @else
@@ -130,6 +138,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="{{ asset('js/scrollMenu.js') }}"></script>
+  <script src="{{asset('js/nav.js')}}"></script>
   <script>
 	 var scroll = new SmoothScroll('a[href*="#"]', {
       speed: 2500,
@@ -162,6 +171,7 @@
   <script>
     var app = angular.module('angularApp',['userController','userFactory','forgotPasswordController', 'forgotFactory','ngFileUpload','ngMask']);
     app.config(function($interpolateProvider){
+      
       $interpolateProvider.startSymbol('<%');
       $interpolateProvider.endSymbol('%>');
     })
@@ -172,7 +182,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4GNK7"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
+    
 </body>
 
 </html>

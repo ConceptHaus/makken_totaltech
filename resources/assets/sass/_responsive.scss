@@ -46,13 +46,7 @@
     margin-bottom: 0;
   }
 
-  .header-home {
-    &.header-user {
-      .btn-call-to-action {
-      
-      }
-    }
-  }
+
 
   .container-button-participa {
     .btn-call-to-action {
@@ -491,7 +485,14 @@
 
     background: #0033a1;
   }
-
+    // Navbar
+    .navbar {
+      .navbar-nav {
+        .nav-link {
+          font-size: 18px;
+        }
+      }
+    }
   .navbar-brand img {
     width: 200px !important;
   }

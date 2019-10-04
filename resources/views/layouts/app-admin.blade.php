@@ -262,7 +262,7 @@
         <script src="{{ asset('js/angular-moment.min.js') }}"></script>
         <script src="{{ asset('js/es.js') }}"></script>
         <script src="{{ asset('admin/vendors/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
-
+        <script src="{{asset('js/nav.js')}}"></script>
         <!-- End Scripts -->
         <script>
             var app = angular.module('angularApp',['adminController','AdminFactory','ngFileUpload', 'ngTable','angularMoment','ngMask']);

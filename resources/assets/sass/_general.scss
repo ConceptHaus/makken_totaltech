@@ -170,6 +170,10 @@ text-shadow: #0033a1;
 .navbar-collapse {
     box-shadow: none;
 }
+li.active {
+    text-decoration: underline;
+    color:$amarillo;
+  }
 
 // Botones
 .btn-submit {

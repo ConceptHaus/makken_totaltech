@@ -9704,6 +9704,11 @@ html {
           box-shadow: none;
 }
 
+li.active {
+  text-decoration: underline;
+  color: #F7E300;
+}
+
 .btn-submit {
   background: #F7E300;
   border-radius: 10px;
@@ -10648,6 +10653,9 @@ strong {
   }
   .dinamica {
     background: #0033a1;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 18px;
   }
   .navbar-brand img {
     width: 200px !important;
