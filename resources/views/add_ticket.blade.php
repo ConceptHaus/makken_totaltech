@@ -4,7 +4,7 @@
 <div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <div class="panel">
+            <div class="panel mt-md-5">
                 <div class="panel-body text-center">
                     <form id="formulario-ticket" class="form-horizontal">
                         {{ csrf_field() }}
@@ -41,7 +41,7 @@
                                       <h5 class="my-2 subetuticket">SUBE TU TICKET</h5>
                                       <input ng-model="ticket.fileticket" ngf-select ngf-pattern="'image/*,application/pdf'" ngf-max-size="20MB" type="file" id="file" class="inputfile" name="file" onchange='$("#upload-file-info").html($(this).val());'>
                                     </a>
-                                    <span class='label label-info' id="upload-file-info"></span>
+                                    <span class='label label-info pt-lg-4 pt-md-4' id="upload-file-info"></span>
 
                                 </div>
                                 

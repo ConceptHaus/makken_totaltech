@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="135" data-wow-duration="1s" data-wow-delay="0.5s">
-        <img src="{{ asset('img/icons/step2.png') }}" class="pasos-img" alt="Paso 2">
+        <img src="{{ asset('img/icons/step2.svg') }}" class="pasos-img-2" alt="Paso 2">
         <div class="text-center text-responsive my-md-3 py-md-3">
           <h5 class="no-margin responsive-title">REGISTRA</h5>
           <h6 class="no-margin blanco responsive-title">TU TICKET VÍA WHATSAPP AL (55) 80 68 10 49 O EN
