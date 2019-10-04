@@ -282,11 +282,14 @@ footer {
 }
 
 .header-home {
+    
   &.header-user {
+    display:flex!important;
     .btn-call-to-action {
-        bottom: -95px;
+       // bottom: -95px;
        
     }
+    
   }
 }
 .mundo-link{

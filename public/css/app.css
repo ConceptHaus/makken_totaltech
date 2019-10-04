@@ -9802,8 +9802,10 @@ footer {
   border: 0;
 }
 
-.header-home.header-user .btn-call-to-action {
-  bottom: -95px;
+.header-home.header-user {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .mundo-link:hover {
@@ -10071,7 +10073,7 @@ footer {
   font-weight: 600;
   line-height: 1.2;
   position: relative;
-  margin-top: 17%;
+  margin-top: 350px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
@@ -10090,11 +10092,6 @@ footer {
 
 .header-home .btn-call-to-action:hover, .header-home .btn-call-to-action:focus {
   letter-spacing: 3px;
-}
-
-.header-home .texto-home {
-  bottom: 250px;
-  left: 200px;
 }
 
 .header-home .texto-home h1 {
@@ -10356,10 +10353,6 @@ strong {
   }
   .mb-sm-5 {
     margin-bottom: 0;
-  }
-  .header-home.header-user .btn-call-to-action {
-    left: 500px;
-    bottom: -100px;
   }
   .container-button-participa .btn-call-to-action {
     margin-top: 290px !important;
