@@ -3,9 +3,9 @@
   <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> This project was made for "total tech" to have a registration ticket campaigning.
+> This project was made for "CEYS" to have a registration ticket campaigning.
 
-### 🏠 [Homepage](https://github.com/ConceptHaus/makken_totaltech)
+### 🏠 [Homepage](https://github.com/ConceptHaus/makken_totaltech/tree/consiguetubicicleta)
 
 ## Prerequisites 
 
@@ -54,3 +54,5 @@ npm run watch
 
 Give a ⭐️ if this project helped you!
 
+
+<img aling=center alt="ConceptHaus" src="./public/img/concept-logo-01.png" />
