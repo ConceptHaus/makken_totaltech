@@ -10074,6 +10074,7 @@ footer {
 
 .header-home .btn-call-to-action {
   background: #0033a1;
+  color: #fff;
   font-style: italic;
   font-weight: 600;
   line-height: 1.2;
@@ -10175,6 +10176,7 @@ footer {
 }
 
 .btn-call-to-action {
+  color: #fff;
   background-color: #003189;
   font-style: italic;
   font-weight: 600;
