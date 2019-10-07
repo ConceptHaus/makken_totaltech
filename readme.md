@@ -8,13 +8,24 @@
 ### 🏠 [Homepage](https://github.com/ConceptHaus/makken_totaltech)
 
 ## Prerequisites 
+
+<ul>
+  <li>
 node 10.16.0
+  </li>
+ <li>
 npm 6.9.0
+  </li>
+  <li>
 php 7.3.10
+  </li>
+  <li>
 Laravel Valet 2.5.0
+  </li>
+  <li>
 mysql 5.7.0
-
-
+  </li>
+</ul>
 ## Install
 
 ```sh
