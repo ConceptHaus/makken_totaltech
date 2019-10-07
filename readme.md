@@ -55,4 +55,4 @@ npm run watch
 Give a ⭐️ if this project helped you!
 
 
-<img aling=center alt="ConceptHaus" src="./public/img/concept-logo-01.png" />
+<img align=center alt="ConceptHaus" src="./public/img/concept-logo-01.png" />
