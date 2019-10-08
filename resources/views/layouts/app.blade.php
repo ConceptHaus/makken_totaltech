@@ -116,7 +116,7 @@
           <div class="col-lg-3 text-responsive">
             <p class="no-margin"><strong>LEGALES</strong><br></p>
             <p class="no-margin"><a href="/avisos/aviso_de_privacidad.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdff" target="_blank" data-scroll-ignore>Términos y Condiciones</a></p>
+            <p class="no-margin"><a href="/avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf" target="_blank" data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-2 text-center">
             <p><a href="https://mundoceys.com/" target="_blank" class="mundo-link"><strong>WWW.MUNDOCEYS.COM</strong></a></p>
