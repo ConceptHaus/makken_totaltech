@@ -12,29 +12,34 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group{{ $errors->has('correo') ? ' has-error' : '' }}">
-                            <input ng-model="resetP.correo" id="correo" type="email" class="form-control" name="correo" value="{{ $email or old('correo') }}" placeholder="Ingresa tu correo" required autofocus>
+                            <input ng-model="resetP.correo" id="correo" type="email" class="form-control" name="correo"
+                                value="{{ $email or old('correo') }}" placeholder="Ingresa tu correo" required
+                                autofocus>
                             @if ($errors->has('correo'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('correo') }}</strong>
-                                </span>
+                            <span class="help-block">
+                                <strong>{{ $errors->first('correo') }}</strong>
+                            </span>
                             @endif
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <input ng-model="resetP.password" id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
+                            <input ng-model="resetP.password" id="password" type="password" class="form-control"
+                                name="password" placeholder="Contraseña" required>
                             @if ($errors->has('password'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('password') }}</strong>
-                                </span>
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
                             @endif
                         </div>
 
                         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <input ng-model="resetP.password_confirmation" id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar contraseña" required>
+                            <input ng-model="resetP.password_confirmation" id="password-confirm" type="password"
+                                class="form-control" name="password_confirmation" placeholder="Confirmar contraseña"
+                                required>
                             @if ($errors->has('password_confirmation'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                </span>
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password_confirmation') }}</strong>
+                            </span>
                             @endif
                         </div>
 
@@ -46,7 +51,5 @@
             </div>
         </div>
     </div>
-    <img class="img-silicon-login wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
 @endsection

@@ -12,22 +12,17 @@
         p {
             margin: 10px 0;
             padding: 0;
-        }
+        };
 
         table {
             border-collapse: collapse;
-        }
+        };
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
             display: block;
             margin: 0;
             padding: 0;
-        }
+        };
 
         img,
         a img {
@@ -35,67 +30,54 @@
             height: auto;
             outline: none;
             text-decoration: none;
-        }
+        };
 
-        body,
-        #bodyTable,
-        #bodyCell {
+        body, #bodyTable, #bodyCell {
             height: 100%;
             margin: 0;
             padding: 0;
             width: 100%;
-        }
+        };
 
         .mcnPreviewText {
             display: none !important;
-        }
+        };
 
         #outlook a {
             padding: 0;
-        }
+        };
 
         img {
             -ms-interpolation-mode: bicubic;
-        }
+        };
 
         table {
             mso-table-lspace: 0pt;
             mso-table-rspace: 0pt;
-        }
+        };
 
         .ReadMsgBody {
             width: 100%;
-        }
+        };
 
         .ExternalClass {
             width: 100%;
-        }
+        };
 
-        p,
-        a,
-        li,
-        td,
-        blockquote {
+        p, a, li, td, blockquote {
             mso-line-height-rule: exactly;
-        }
+        };
 
-        a[href^=tel],
-        a[href^=sms] {
+        a[href^=tel], a[href^=sms] {
             color: inherit;
             cursor: default;
             text-decoration: none;
-        }
+        };
 
-        p,
-        a,
-        li,
-        td,
-        body,
-        table,
-        blockquote {
+        p, a, li, td, body, table, blockquote {
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
-        }
+        };
 
         .ExternalClass,
         .ExternalClass p,
@@ -104,7 +86,7 @@
         .ExternalClass span,
         .ExternalClass font {
             line-height: 100%;
-        }
+        };
 
         a[x-apple-data-detectors] {
             color: inherit !important;
@@ -113,39 +95,39 @@
             font-family: inherit !important;
             font-weight: inherit !important;
             line-height: inherit !important;
-        }
+        };
 
         a.mcnButton {
             display: block;
-        }
+        };
 
         .mcnImage,
         .mcnRetinaImage {
             vertical-align: bottom;
-        }
+        };
 
         .mcnTextContent {
             word-break: break-word;
-        }
+        };
 
         .mcnTextContent img {
             height: auto !important;
-        }
+        };
 
         .mcnDividerBlock {
             table-layout: fixed !important;
-        }
+        };
 
         #bodyCell {
             padding-top: 20px;
             padding-right: 10px;
             padding-bottom: 20px;
             padding-left: 10px;
-        }
+        };
 
         .templateContainer {
             max-width: 600px;
-        }
+        };
 
         body,
         #bodyTable {
@@ -154,11 +136,11 @@
             background-position: top left;
             background-repeat: repeat;
             background-size: auto;
-        }
+        };
 
         #bodyCell {
             border-top: 0;
-        }
+        };
 
         h1 {
             color: #ffffff !important;
@@ -169,7 +151,7 @@
             line-height: 150%;
             letter-spacing: 4px;
             text-align: center;
-        }
+        };
 
         h2 {
             color: #ffffff !important;
@@ -180,7 +162,7 @@
             line-height: 125%;
             letter-spacing: 3px;
             text-align: center;
-        }
+        };
 
         h3 {
             color: #ffffff !important;
@@ -191,7 +173,7 @@
             line-height: 125%;
             letter-spacing: normal;
             text-align: center;
-        }
+        };
 
         h4 {
             color: #ffffff !important;
@@ -202,11 +184,11 @@
             line-height: 125%;
             letter-spacing: normal;
             text-align: center;
-        }
+        };
 
         .preheaderContainer {
             padding-bottom: 18px;
-        }
+        };
 
         .preheaderContainer .mcnTextContent,
         .preheaderContainer .mcnTextContent p {
@@ -215,27 +197,27 @@
             font-size: 12px;
             line-height: 125%;
             text-align: center;
-        }
+        };
 
         .preheaderContainer .mcnTextContent a {
             color: #000000;
             font-weight: normal;
             text-decoration: underline;
-        }
+        };
 
         .bodyWrapper {
             background: rgba(1, 25, 73, 0.6);
             padding: 10px;
             border-top: 0;
             border-bottom: 0;
-        }
+        };
 
         .bodyContainer {
             border-top: 0;
             border-bottom: 0;
             padding-top: 9px;
             padding-bottom: 9px;
-        }
+        };
 
         .bodyContainer .mcnTextContent,
         .bodyContainer .mcnTextContent p {
@@ -244,17 +226,17 @@
             font-size: 16px;
             line-height: 150%;
             text-align: left;
-        }
+        };
 
         .bodyContainer .mcnTextContent a {
             color: #CC231C;
             font-weight: normal;
             text-decoration: underline;
-        }
+        };
 
         .footerContainer {
             padding-top: 36px;
-        }
+        };
 
         .footerContainer .mcnTextContent,
         .footerContainer .mcnTextContent p {
@@ -263,20 +245,20 @@
             font-size: 12px;
             line-height: 125%;
             text-align: center;
-        }
+        };
 
         .footerContainer .mcnTextContent a {
             color: #FFFFFF;
             font-weight: normal;
             text-decoration: underline;
-        }
+        };
 
         @media screen and (min-width:768px) {
             .templateContainer {
                 width: 600px !important;
-            }
+            };
 
-        }
+        };
 
         @media only screen and (max-width: 480px) {
 
@@ -288,49 +270,43 @@
             li,
             blockquote {
                 -webkit-text-size-adjust: none !important;
-            }
+            };
 
-        }
+        };
 
         @media only screen and (max-width: 480px) {
             body {
                 width: 100% !important;
                 min-width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             #bodyCell {
                 padding-top: 10px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .templateContainer {
                 max-width: 600px !important;
                 width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnRetinaImage {
                 max-width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnImage {
                 width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .mcnCartContainer,
             .mcnCaptionTopContent,
             .mcnRecContentContainer,
@@ -348,32 +324,28 @@
             .mcnImageCardRightImageContentContainer {
                 max-width: 100% !important;
                 width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnBoxedTextContentContainer {
                 min-width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnImageGroupContent {
                 padding: 9px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
 
             .mcnCaptionLeftContentOuter .mcnTextContent,
             .mcnCaptionRightContentOuter .mcnTextContent {
                 padding-top: 9px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
 
@@ -381,93 +353,80 @@
             .mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,
             .mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent {
                 padding-top: 18px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnImageCardBottomImageContent {
                 padding-bottom: 9px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnImageGroupBlockInner {
                 padding-top: 0 !important;
                 padding-bottom: 0 !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcnImageGroupBlockOuter {
                 padding-top: 9px !important;
                 padding-bottom: 9px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .mcnTextContent,
             .mcnBoxedTextContentColumn {
                 padding-right: 18px !important;
                 padding-left: 18px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .mcnImageCardLeftImageContent,
             .mcnImageCardRightImageContent {
                 padding-right: 18px !important;
                 padding-bottom: 0 !important;
                 padding-left: 18px !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             .mcpreview-image-uploader {
                 display: none !important;
                 width: 100% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             h1 {
                 font-size: 24px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             h2 {
                 font-size: 20px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             h3 {
                 font-size: 18px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             h4 {
                 font-size: 16px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
 
@@ -475,46 +434,39 @@
             .mcnBoxedTextContentContainer .mcnTextContent p {
                 font-size: 18px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
             #templatePreheader {
                 display: block !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .preheaderContainer .mcnTextContent,
             .preheaderContainer .mcnTextContent p {
                 font-size: 14px !important;
                 line-height: 115% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .bodyContainer .mcnTextContent,
             .bodyContainer .mcnTextContent p {
                 font-size: 18px !important;
                 line-height: 125% !important;
-            }
-
-        }
+            };
+        };
 
         @media only screen and (max-width: 480px) {
-
             .footerContainer .mcnTextContent,
             .footerContainer .mcnTextContent p {
                 font-size: 14px !important;
                 line-height: 115% !important;
-            }
-
-        }
+            };
+        };
+        
     </style>
 </head>
 
