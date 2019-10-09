@@ -1,5 +1,5 @@
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
-@media screen and (min-width: 2100px) {
+@media screen and (min-width: 2101px) {
   .nav-link {
     font-size: 40px !important;
 
@@ -38,6 +38,42 @@
 }
 }
 
+@media screen and (max-width: 2100px) {
+  .nav-link {
+    font-size: 30px !important;
+
+  }
+
+  .img-pleca {
+    width: calc(100vw + 50px) !important;
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 400px !important;
+    }
+  }
+
+  .btn-call-to-action {
+
+    span {
+      font-size: 50px !important;
+
+    }
+  }
+
+  .img-silicon {
+    width: 600px !important;
+    bottom: 2px !important;
+  }
+
+  .img-logo-ceys {
+    right: 300px !important;
+    width: 280px !important;
+  }
+
+}
 @media screen and (max-width: 1680px) {
   .img-footer {
     width: 45%!important;
