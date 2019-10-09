@@ -115,7 +115,7 @@
           </div>
           <div class="col-lg-3 text-responsive">
             <p class="no-margin"><strong>LEGALES</strong><br></p>
-            <p class="no-margin"><a href="/avisos/aviso_de_privacidad.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
+            <p class="no-margin"><a href="/avisos/AVISO_DE_PRIVACIDAD_TotalTech.pdf" target="_blank" data-scroll-ignore>Aviso de Privacidad</a></p>
             <p class="no-margin"><a href="/avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf" target="_blank" data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-2 text-center">
