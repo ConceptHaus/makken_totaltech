@@ -20,7 +20,7 @@ npm 6.9.0
 php 7.3.10
   </li>
   <li>
-Laravel Valet 2.5.0
+Laravel 5.5.43
   </li>
   <li>
 mysql 5.7.0
@@ -35,15 +35,15 @@ composer install
 npm install
 cp .env.example .env
 php artisan key:generate 
+php artisan migrate
 ```
-
-## Usage
+## Production
 
 ```sh
-php artisan migrate
-npm run dev
-npm run watch
+npm run production 
+
 ```
+
 
 ## Author
 
@@ -55,4 +55,4 @@ npm run watch
 Give a ⭐️ if this project helped you!
 
 
-<img class="d-flex justify-content-center" alt="ConceptHaus" src="./public/img/concept-logo-01.png" />
+<img diplay="flex" justify-content="center" alt="ConceptHaus" src="./public/img/concept-logo-01.png" />
