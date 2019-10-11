@@ -60,15 +60,16 @@ class UserController extends Controller
     public function creaTicketUser(Request $request){
         //Guarda registro de ticket
         $user = auth()->user();
-        $validador = $this->validadorTickets($request->all());
-
+        $input = $request->all();
+        $input['monto'] = str_replace(',', '', $request->monto);
+        $validador = $this->validadorTickets($input);
         if($validador->passes()){
             DB::beginTransaction();
             try{
                 $ticket = new Ticket();
                 $ticket->id_usuario = $user->id;
                 $ticket->no_ticket = $request->no_ticket;
-                $ticket->monto = $request->monto;
+                $ticket->monto = $input['monto'];
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->registro_admin = $request->registro_admin;

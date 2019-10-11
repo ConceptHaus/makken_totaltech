@@ -55,24 +55,10 @@ class AdminController extends Controller {
 
         $data['tickets_totales'] = User::where('users.id','=', $id)
                                     ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
-                                    ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
+                                    ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%m-%Y") as fecha_ganador') )
                                     ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
                                     ->get();
 
-                                    // $data['tickets_totales'] = User::where('users.id','=', $id)
-        //                             ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
-        //                             ->select('users.id', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
-        //                             ->get();
-                                    // ->groupBy(function($date){
-                                    //     return Carbon::parse($date->fecha)->format('d M');
-                                    // });
-
-        // $tickets = $user->tickets()->sum()->get()->groupBy(function($date){
-        //     return Carbon::parse($date->created_at)->format('d M');
-        // });
-
-
-        //                             return response()->json($tickets,200);
 
         return view('admin/usuario_detalle',$data);
     }
@@ -167,7 +153,7 @@ class AdminController extends Controller {
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Tú también puedes con todo ¡Compra y gana! con Total Tech.');
+            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu bicicleta ¡Compra y gana! con Total Tech."');
         });
 
         if($usuario->save()){

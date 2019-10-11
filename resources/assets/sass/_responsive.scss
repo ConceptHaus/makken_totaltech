@@ -1,63 +1,252 @@
 // Breakpoints para rwd 320 480 600 767 992 1250 1680
-@media screen and (max-width: 1680px) {
-    //   h3{
-    //     color: brown!important;
-    //   }
-    .mb-sm-5 {
-      margin-bottom: 0;
-    }
+@media screen and (min-width: 2101px) {
+  .nav-link {
+    font-size: 40px !important;
 
-    .header-home {
-      &.header-user {
-        .btn-call-to-action {
-          left: 0;
-          bottom: -100px;
-        }
+  }
+
+  .img-pleca {
+    width: calc(100vw + 50px) !important;
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 500px !important;
+    }
+  }
+
+  .btn-call-to-action {
+
+    span {
+      font-size: 55px !important;
+
+    }
+  }
+
+  .img-silicon {
+    width: 700px !important;
+    bottom: 16px !important;
+  }
+
+  .img-logo-ceys {
+    right: 350px !important;
+    width: 300px !important;
+  }
+  .img-footer {
+    width: 40%!important;
+}
+}
+
+@media screen and (min-width: 2000px) {
+  .nav-link {
+    font-size: 30px !important;
+
+  }
+
+  .img-pleca {
+    width: calc(100vw + 50px) !important;
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 400px !important;
+    }
+  }
+
+  .btn-call-to-action {
+
+    span {
+      font-size: 50px !important;
+
+    }
+  }
+
+  .img-silicon {
+    width: 600px !important;
+    bottom: 2px !important;
+  }
+
+  .img-logo-ceys {
+    right: 300px !important;
+    width: 280px !important;
+  }
+
+}
+@media screen and (max-width: 1680px) {
+  .img-footer {
+    width: 45%!important;
+}
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+
+
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 290px !important;
+    }
+  }
+
+  .img-silicon {
+    width: 500px !important;
+    bottom: 2px !important;
+
+  }
+
+  .img-logo-ceys {
+    right: 220px !important;
+    width: 195px !important;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .img-silicon-login {
+    display: none;
+  }
+
+
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+
+  // Navbar
+  .navbar {
+    .navbar-nav {
+      .nav-link {
+        font-size: 14px;
       }
     }
+  }
+
+  h5,
+  .h5 {
+    &.responsive-title {
+      font-size: 18px !important;
+    }
+  }
+
+  h6,
+  .h6 {
+    &.responsive-title {
+      font-size: 11px !important;
+    }
+  }
+
+  .navbar-brand-home {
+    width: 50% !important;
+    margin-left: 40px !important;
+
+  }
 }
 
 @media screen and (max-width: 1250px) {
 
-    // h3{
-    //     color: orange!important;
-    // }
-    .mb-sm-5 {
-      margin-bottom: 0;
+
+  .navbar-brand img {
+    width: 50% !important;
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 290px !important;
     }
-    // Navbar
-    .navbar {
-        .navbar-nav {
-            .nav-link {
-                font-size: 14px;
-            }
-        }
+  }
+
+  .btn-call-to-action {
+
+
+    span {
+      font-size: 35px !important;
+
     }
 
-    h5, .h5 {
-      &.responsive-title {
-        font-size: 18px !important;
-      }
-    }
+  }
 
-    h6, .h6 {
-      &.responsive-title {
-        font-size: 11px !important;
-      }
-    }
+  .navbar-resp {
+    max-width: 40% !important;
+  }
+
+  .img-silicon {
+    width: 450px !important;
+    bottom: 10px !important;
+
+  }
+
+  .img-logo-ceys {
+    right: 210px !important;
+    width: 180px !important;
+  }
+
 }
 
+
 @media screen and (max-width: 992px) {
+  .mascompras {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .recuerda {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  footer {
+    padding-bottom: 35px !important;
+  }
+
+  .header-home .texto-home {
+    bottom: 200px !important;
+    left: 0px !important;
+    display: flex;
+    width: 100%;
+
+    a {
+      position: relative !important;
+      right: 0 !important;
+      left: 0 !important;
+      margin: auto;
+    }
+  }
+
+  .dinamica {
+    background-position-y: bottom !important;
+    background-size: 600%
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 185px !important;
+    }
+  }
+
+  .btn-call-to-action {
+
+    span {
+      font-size: 30px !important;
+    }
+  }
+
   .BotonesFooter {
     visibility: visible !important;
   }
+
   .custom-margin2 {
     margin-left: 0;
     margin-right: -35%;
   }
+
   .contenido-modal {
     left: 20%;
   }
+
   .table-responsive {
     display: block;
   }
@@ -65,229 +254,352 @@
   .header-home {
     .texto-home {
       h1 {
-          font-size: 2rem;
-        }
+        font-size: 2rem;
+      }
     }
   }
-.dropdown-menu {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  .nav-link {
-    font-size: 20px !important;
+
+  .dropdown-menu {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+
+    .nav-link {
+      font-size: 20px !important;
+    }
   }
-}
-    .navbar {
-      .navbar-nav {
-        .nav-link {
-          font-size: 28px;
+
+  .navbar {
+    .navbar-nav {
+      .nav-link {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    min-height: 0;
+
+    .navbar-nav {
+      margin-right: 0px;
+      margin-left: 0px;
+      text-align: center;
+
+      .nav-link {
+
+        &:hover,
+        &:focus {
+          background: rgba(1, 25, 73, 0.6);
         }
       }
     }
-    // h3{
-    //     color: blue!important;
-    // }
-    .mb-sm-5 {
-      margin-bottom: 0;
+
+    .navbar-resp {
+      width: 60% !important;
+    }
+  }
+
+  #ganadores {
+    .nav-tabs {
+      .nav-link {
+        margin: 0px 5px;
+      }
+    }
+  }
+
+  .text-responsive {
+    text-align: center !important;
+  }
+
+  .tiendas-img {
+    width: 100% !important;
+  }
+
+  .img-footer {
+    width: 15% !important;
+  }
+
+  .header-home {
+    height: 500px;
+
+    .img-pleca {
+      bottom: -65px;
+      right: -150px;
     }
 
-    h1, .h1 {
-      font-size: 2rem;
+    .img-silicon {
+      width: 300px !important;
+      bottom: 20px !important;
     }
 
-    .navbar {
-      min-height: 0;
-        .navbar-nav {
-            margin-right: 0px;
-            margin-left: 0px;
-            text-align: center;
+    .img-logo-ceys {
+      right: 100px !important;
+      width: 150px !important;
+    }
+  }
 
-            .nav-link {
+  .premio {
+    border-right: 0;
+  }
 
-                &:hover,
-                &:focus {
-                    background: rgba(1, 25, 73, 0.6);
-                }
-            }
-        }
+  .navbar-brand {
+    img {
+      width: 70% !important;
     }
 
-    .navbar-brand {
-        img {
-            width: 300px;
-        }
-    }
-
-    .navbar-brand-home {
-        img {
-            width: 80% !important;
-        }
-    }
-
-    #ganadores {
-        .nav-tabs {
-            .nav-link {
-                margin: 0px 5px;
-            }
-        }
-    }
-
-    .text-responsive {
-        text-align: center !important;
-    }
-
-    .tiendas-img {
-        width: 100% !important;
-    }
-
-    .img-footer {
-        width: 20% !important;
-    }
-    .header-home {
-        height: 500px;
-        .img-pleca {
-            bottom: -65px;
-            right: -150px;
-        }
-        .img-silicon {
-            width: 120px;
-        }
-        .img-logo-ceys {
-            right: 220px;
-            width: 150px;
-        }
-    }
-
-    .premio {
-      border-right: 0;
-    }
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
-    // h3{
-    //     color: green!important;
-    // }
-    .mb-sm-5 {
-      margin-bottom: 0;
-    }
-    .establecimientos {
-      padding-right: 0;
-    }
 
-    #ganadores {
-        .nav-tabs {
-            .nav-link {
-                font-size: 16px;
-                margin: 0px;
-            }
-        }
+  .mb-sm-5 {
+    margin-bottom: 0;
+  }
+
+  .establecimientos {
+    padding-right: 0;
+  }
+
+  #ganadores {
+    .nav-tabs {
+      .nav-link {
+        font-size: 16px;
+        margin: 0px;
+      }
     }
+  }
+
+  .dinamica {
+
+    background: #0033a1 !important;
+  }
+
+  .container-button-participa {
+    .btn-call-to-action {
+
+      margin-top: 150px !important;
+    }
+  }
+
+
+  .text-md-right {
+    text-align: center !important;
+  }
+
 }
+
 
 @media screen and (max-width: 600px) {
+  .container-button-participa {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    margin: 0 !important;
 
-    // h3{
-    //   color: black!important;
-    // }
-
-    .custom-margin2 {
-      margin-left: 0;
-      margin-right: 4%;
+    a {
+      position: relative !important;
+      left: 0 !important;
+      right: 0;
+      margin: auto;
     }
+  }
 
-    .header-home .texto-home {
-      bottom: 220px;
-      left: 0px;
-    }
+  .custom-margin2 {
+    margin-left: 0;
+    margin-right: 4%;
+  }
 
-    .mb-sm-5 {
-      margin-bottom: 3rem;
-    }
+  .header-home .texto-home {
+    bottom: 220px;
+    left: 0px;
+    display: flex;
 
-    .navbar-toggler {
-      right: 10px;
-      top: 25px;
+    a {
+      margin: auto;
+      position: relative !important;
+      left: 0 !important;
+      right: 0;
     }
+  }
 
-    .table-responsive {
-        display: block;
-    }
-    #pageSytyle {
-      padding-top: 35%;
-        .panel {
-            padding: 3% 5% !important;
-        }
-    }
+  .btn-call-to-action {
+    margin-top: 0 !important;
+  }
 
-    #ganadores {
-        .nav-tabs {
-            .nav-item {
-                margin-bottom: 10px;
-                width: 100%;
-            }
-        }
-        .content-table {
-            max-width: 94%;
-        }
-        table {
-            th {
-                font-size: 15px;
-            }
-            td {
-                padding: 1.5rem;
-            }
-        }
-    }
+  .my-sm-3 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
 
-    .header-home {
-      &.header-user {
-        .btn-call-to-action{
-          left: 5%;
-          width: auto;
-          bottom: -115%;
-        }
+  .mb-sm-3 {
+    margin-bottom: 3rem;
+  }
+
+  .navbar-toggler {
+    right: 10px;
+    top: 25px;
+  }
+
+  .table-responsive {
+    display: block;
+  }
+
+  #pageSytyle {
+    padding-top: 35%;
+
+    .panel {
+      padding: 3% 5% !important;
+    }
+  }
+
+  #ganadores {
+    .nav-tabs {
+      .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
       }
-        .btn-call-to-action {
-            left: 10%;
-            width: 80%;
-        }
-        .img-silicon {
-            display: none;
-        }
-        .img-logo-ceys {
-            left: 30%;
-            right: inherit;
-        }
+    }
+
+    .content-table {
+      max-width: 100%;
     }
 
     table {
       th {
-        font-size: 13px;
-        padding: 1rem !important;
+        font-size: 15px;
+      }
+
+      td {
+        padding: 1.5rem;
       }
     }
+  }
+
+  .header-home {
+    &.header-user {
+      .btn-call-to-action {
+        left: 5%;
+        width: auto;
+        bottom: -115%;
+      }
+    }
+
+    .btn-call-to-action {
+
+      bottom: 43% !important;
+      width: auto;
+    }
+
+    .img-silicon {
+      display: none;
+    }
+
+    .img-logo-ceys {
+      left: 33%;
+      right: inherit;
+    }
+  }
+
+  table {
+    th {
+      font-size: 13px;
+      padding: 1rem !important;
+    }
+  }
+
+  .dinamica {
+
+    background: #0033a1;
+  }
+    // Navbar
+    .navbar {
+      .navbar-nav {
+        .nav-link {
+          font-size: 18px;
+        }
+      }
+    }
+  .navbar-brand img {
+    width: 200px !important;
+  }
 
 }
 
 @media screen and (max-width: 480px) {
-
-    // h3{
-    //   color: yellow!important;
-    // }
-
-    .navbar-brand {
-        img {
-            width: 76% !important;
-        }
+  .container-button-participa {
+    .btn-call-to-action {
+      margin-top: 0px !important;
     }
 
-    // Responsive home
+  }
+
+  .btn-call-to-action span {
+    font-size: 20px !important;
+  }
+
+  .header-home .btn-call-to-action {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .navbar-brand-home {
+    margin-left: 15px !important;
+
+    img {
+      padding-left: 0px !important;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 76% !important;
+      margin-left: 0px
+    }
+  }
+
+  // Responsive home
+  .recuerda {
+
+    font-size: 17px !important;
+    margin-bottom: 2rem;
+
+  }
+
+  .participantes {
+    font-size: 25px;
+  }
+
+  .mascompras {
+    margin-bottom: 2rem;
+
+
+  }
+
+  .tabla-resp {
+    font-size: 10px;
+  }
+
 
 }
 
 @media screen and (max-width: 320px) {
-    // h3{
-    //   color: pink!important;
-    // }
+  .navbar-brand img {
+    width: 80% !important;
+    margin-top: 0.5rem;
+    padding-left: 0 !important;
+  }
+
+  .participantes {
+    font-size: 20px;
+  }
 }

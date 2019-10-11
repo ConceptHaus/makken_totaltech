@@ -1,4 +1,38 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, {
+
+//Normal
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue.woff2') format('woff2'),
+      url('/fonts/HelveticaNeue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//bold-italic
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-BoldItalic.woff2') format('woff2'),
+      url('/fonts/HelveticaNeue-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+//bold
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+      url('/fonts/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+//light
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Light.woff2') format('woff2'),
+      url('/fonts/HelveticaNeue-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
   line-height: 1;
   color: $amarillo;

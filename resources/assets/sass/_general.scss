@@ -5,7 +5,9 @@
 :focus {
     outline: 0px !important;
 }
-
+input{
+    border-radius: 5px !important;
+}
 a {
     text-decoration: none !important;
     &:hover {
@@ -24,13 +26,20 @@ html {
 }
 
 .body-bg {
-    background: url(../img/backgrounds/bg-bike-mask-v7.jpg) no-repeat;
+    background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
     background-size: cover;
     min-height: 100%;
+    background-attachment: fixed;
 }
 
 .no-border {
     border: none !important;
+}
+.img-silicon-login{
+
+    position: absolute;
+    left:10px;
+    width: 30%;
 }
 
 // Estilos input
@@ -42,11 +51,7 @@ html {
     letter-spacing: 2px;
 }
 
-// .form-group {
-//   a {
-//     color: $amarillo !important;
-//   }
-// }
+
 
 #formulario-ticket {
   .form-group {
@@ -76,7 +81,7 @@ html {
 
   small {
     color: white;
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
@@ -100,12 +105,12 @@ html {
 
         .nav-link {
             color: $blanco;
-            font-size: 17px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 400;
             padding-left: 20px;
             padding-right: 20px;
             transition: all .5s ease-in-out;
-            text-shadow: 1px 5px 19px rgba(0, 0, 0, 0.43);
+            text-shadow: 2px 5px 19px rgba(0, 51, 161, 1);
             text-decoration: none;
 
             &:hover,
@@ -137,9 +142,7 @@ html {
     background: transparent;
     border: none;
     font-size: 1.8rem;
-    position: absolute;
-    right: 20px;
-    top: 50px;
+  
 
     .icon-bar {
         background: $amarillo;
@@ -148,24 +151,34 @@ html {
 
 .navbar-brand {
     img {
-        width: 350px;
+        width: 45%!important;
+        margin-left: 15px;
     }
+}
+.nav-item{
+text-shadow: #0033a1;
+
 }
 
 .navbar-brand-home {
     img {
-        width: 80%;
+        width: 70%;
+        padding-left: 30px;
     }
 }
 
 .navbar-collapse {
     box-shadow: none;
 }
+li.active {
+    text-decoration: underline;
+    color:$amarillo;
+  }
 
 // Botones
 .btn-submit {
     background: $amarillo;
-    border-radius: 50px;
+    border-radius: 10px;
     color: $azul;
     font-size: 15px;
     font-weight: 600;
@@ -176,15 +189,34 @@ html {
 
 .btn-submit-upload {
   background: #F7E300;
-  border-radius: 50%;
-  color: #223F97 !important;
+  border-radius: 10px;
+  color: #0033a1 !important;
   font-size: 20px;
   font-weight: 600;
   padding: 8px 12px;
   width: auto;
   text-align: center;
-  float: left;
+  float: right;
   cursor: pointer;
+  font-family: Helvetica!important;
+  width: 200px;
+  margin: auto;
+
+}
+.ticketupload{
+    display: flex;
+
+}
+.subetuticket{
+    color: #0033a1 !important;
+    font-family: Helvetica!important; 
+    font-size: 18px;
+    font-style: normal!important;
+
+}
+.formatos{
+  font-size: 17px;
+  font-weight: bold;
 }
 
 // Tablas
@@ -195,20 +227,12 @@ table {
         font-size: 18px;
         font-weight: 600;
         padding: 2rem !important;
-        // &:nth-of-type(3), &:nth-of-type(5) {
-        //     border: none!important;
-        // }
-
     }
 
     tr {
         td {
             border-right: 1px solid $azul_3!important;
             padding: 2rem;
-
-            // &:nth-of-type(3), &:nth-of-type(5) {
-            //     border: none!important;
-            // }
         }
     }
 }
@@ -221,6 +245,8 @@ table {
     background: $blanco !important;
     padding-top: 3%;
     padding-bottom: 3%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .content-table-tickets {
@@ -228,7 +254,7 @@ table {
 }
 
 .img-footer {
-    width: 60%;
+    width: 150px;
 }
 
 .camera-icon {
@@ -252,11 +278,19 @@ footer {
 }
 
 .header-home {
+    
   &.header-user {
-    .btn-call-to-action {
-        bottom: -95px;
-    }
+    display:flex!important;
+   
+    
   }
+}
+.mundo-link{
+    
+    &:hover{
+        text-decoration: underline!important;
+        color: $amarillo;
+    }
 }
 
 .modal-content {
@@ -276,6 +310,10 @@ footer {
     font-style: inherit;
   }
 }
+
+   
+
+
 
 // Estilos de errores
 
@@ -360,4 +398,29 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100% !important;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.content-table{
+    overflow: scroll;
+}
+.navbar-resp, a.navbar-brand{
+    max-width: 40%!important;
+} 
+//terminos y condiciones add ticket
+.terminosaddticket{
+    color: $amarillo!important;
+    :hover{
+        color:$blanco;
+        text-decoration: underline!important;
+
+    }
 }

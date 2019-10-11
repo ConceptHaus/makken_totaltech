@@ -81,3 +81,8 @@ td {
     width: 50%;
   }
 }
+.dropmenu-container{
+    div.dropdown-menu.open.show{
+        transform: translate3d(0px, 0px, 0px)!important;
+    }
+}

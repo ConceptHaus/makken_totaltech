@@ -25,6 +25,7 @@ class Ganador extends Model
 
     public function scopegetAllGanadores($query){
         return $query->with('user')
+                    ->with('user.tickets.establecimiento')
                      ->with('premio')
                      ->with('semanas')->get();
     }

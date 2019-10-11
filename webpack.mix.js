@@ -32,4 +32,4 @@ mix.styles([
     'resources/assets/bower/sweetalert2/sweetalert2.css'
 ],'public/css/all.css').version();
 
-mix.browserSync('192.168.33.10');
+mix.browserSync('makken_totaltech.test');
