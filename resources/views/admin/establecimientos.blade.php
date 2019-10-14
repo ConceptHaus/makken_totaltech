@@ -23,6 +23,7 @@
                             <th>No.</th>
                             <th>Nombre</th>
                             <th>Logo</th>
+                            <th>Monto</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,6 +35,9 @@
                                     ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
                                 <img ng-if="establecimiento.nombre == 'Otro'" class="img-establecimiento mr-3"
                                     ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                            </td>
+                            <td>
+                                <% establecimiento.monto %>
                             </td>
                         </tr>
                     </tbody>
