@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 form-group mb-4">
+                            <div class="col-sm-6 form-group mb-4 dropmenu-container">
                                 <label>Establecimientos</label>
                                 <div>
                                     <select class="selectpicker form-control form-control-solid"

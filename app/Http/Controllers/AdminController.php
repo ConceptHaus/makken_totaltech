@@ -185,22 +185,6 @@ class AdminController extends Controller {
         return response($json,400);
     }
 
-    // public function setGanadorTicket(Request $request){
-    //     $ganador = new Ganador();
-    //     $ganador->id_usuario = $request->id_usuario;
-    //     $ganador->id_ticket = $request->id_ticket;
-    //     $ganador->id_semana = intval($request->id_semana);
-    //     $ganador->id_premio = 1;
-    //     $ticket = Ticket::where('id_ticket',$ganador->id_ticket)->first();
-    //     if($ganador->save()){
-    //         $json['success'] = 'success_ganador';
-    //         $json['ticket'] = $ticket->no_ticket;
-    //         return response($json, 200);
-    //     }
-    //     $json['error'] = 'error_ganador';
-    //     return response($json,400);
-    // }
-
     public function editEstablecimientos(Request $request){
         $establecimiento = Establecimiento::where('id_establecimiento',$request->id_establecimiento)->first();
 
@@ -340,10 +324,18 @@ class AdminController extends Controller {
             'message'=>'La fecha no se ha actualizado.'
         ]);
     }
+    
+    public function top_tiendas(){
+        return  DB::table('tickets')
+                                ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
+                                ->select('establecimiento.*', DB::raw('count(*) as total'))
+                                ->groupBy('id_establecimiento')
+                                ->orderBy('total','desc')
+                                ->get();
+    }
 
     public function dashboard(){
         $users = count(DB::table('users')->where('isAdmin','!=',1)->get());
-        // count(User::where('isAdmin','!=',1));
         $tickets = count(Ticket::all());
         $ganadores = count(Ganador::all());
         $montos_top = DB::table('tickets')
@@ -378,5 +370,6 @@ class AdminController extends Controller {
             ]
         ]);
     }
+    
 
 }
