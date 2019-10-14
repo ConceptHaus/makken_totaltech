@@ -12,6 +12,7 @@ use App\Establecimiento;
 use App\Seccion;
 use App\Texto;
 use App\CodigosPostales;
+Use DB;
 
 class WelcomeController extends Controller
 {
@@ -26,7 +27,13 @@ class WelcomeController extends Controller
         return view('welcome', $data);
     }
     public function getEstablecimientos(){
-        $establecimientos = Establecimiento::all();
+        return DB::table('tickets')
+                        ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
+                        //->select('tickets.monto', 'establecimiento.nombre')
+                        ->select(DB::raw('sum(tickets.monto) as monto'), 'establecimiento.nombre', 'establecimiento.id_establecimiento', 'establecimiento.url')
+                        ->groupBy('tickets.id_establecimiento')
+                        ->orderBy('monto','desc')
+                        ->get();
 
         return response()->json($establecimientos);
     }
