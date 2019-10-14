@@ -82,6 +82,8 @@
           src="{{ asset('img/logos/heb.png') }}" alt="HEB">
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
           src="{{ asset('img/logos/homedepot.png') }}" alt="HomeDepot">
+          <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
+          src="{{ asset('img/logos/bodega-aurrera.png') }}" alt="Bodega">
       </div>
       <div class="col-6 my-md-4 py-md-3">
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -89,9 +91,12 @@
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.6s"
           src="{{ asset('img/logos/casacravioto.png') }}" alt="Casa Cravioto">
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.7s"
-          src="{{ asset('img/logos/lowes.png') }}" alt="Lowes">
+          src="{{ asset('img/logos/superama.png') }}" alt="Lowes">
         <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
           src="{{ asset('img/logos/chedraui.png') }}" alt="Chedrahui">
+          <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
+          src="{{ asset('img/logos/sodimac.png') }}" alt="Sodimac">
+          
       </div>
       <div class="col-12 mt-3 my-md-4">
         <h5 class="azul">¡Y MUCHAS MÁS!</h5>
