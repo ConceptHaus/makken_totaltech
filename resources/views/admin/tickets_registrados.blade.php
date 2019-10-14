@@ -52,7 +52,7 @@
     </div>
     <!-- END PAGE CONTENT-->
     <footer class="page-footer">
-        <div class="font-13">2018 © Makken & ConceptHaus</div>
+        <div class="font-13">2019 © Makken & ConceptHaus</div>
         <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
     </footer>
 
