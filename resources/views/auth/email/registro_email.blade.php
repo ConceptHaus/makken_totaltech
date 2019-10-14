@@ -802,7 +802,7 @@
 															<td class="mcnImageContent" valign="top"
 																style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
 
-																<a href="http://www.conTTpuedescontodo.com" title=""
+																<a href="{{url('/')}}" title=""
 																	class="" target="_blank">
 																	<img align="center" alt=""
 																		src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/18a0a676-5ca1-4853-afb1-b08b546d6973.jpg"

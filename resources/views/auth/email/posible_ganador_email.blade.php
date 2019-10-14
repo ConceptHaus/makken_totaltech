@@ -611,7 +611,7 @@
 															<td class="mcnImageContent" valign="top"
 																style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
 
-																<a href="http://www.conTTpuedescontodo.com" title=""
+																<a href="{{url('/')}}" title=""
 																	class="" target="_blank">
 																	<img align="center" alt=""
 																		src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/f22308fa-f8a1-4d94-87a5-0b4b49840160.jpg"
