@@ -57,13 +57,6 @@
             <div class="flexbox flex-1">
                 <!-- START TOP-RIGHT TOOLBAR-->
                 <ul class="nav navbar-toolbar">
-                    {{-- <li class="dropdown dropdown-user">
-                        <a class="dropdown-toggle">
-                            <span>Administrador</span>
-                            <i class="la la-user"></i>
-                        </a>
-                    </li> --}}
-
                     <li class="dropdown dropdown-user">
                         <a class="nav-link dropdown-toggle link" data-toggle="dropdown" aria-expanded="false">
                             <span>Administrador</span>
@@ -109,7 +102,7 @@
                     <li>
                         @endif
                         <a href="javascript:;">
-                            <!-- <i class="sidebar-item-icon ti-user"></i> -->
+                            
                             <i class="sidebar-item-icon la la-user"></i>
                             <span class="nav-label">USUARIOS</span><i class="fa fa-angle-left arrow"></i>
                         </a>
