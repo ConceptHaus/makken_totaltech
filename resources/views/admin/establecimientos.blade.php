@@ -37,7 +37,7 @@
                                     ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
                             </td>
                             <td>
-                                <% establecimiento.monto %>
+                                <% establecimiento.monto | currency:"$" %>
                             </td>
                         </tr>
                     </tbody>
