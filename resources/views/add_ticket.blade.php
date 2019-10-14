@@ -61,7 +61,7 @@
                                 <input class="form-control form-check-input" type="checkbox" name="privacidad"
                                     value="1">
                                 <label class="form-check-label">He leído y aceptado los <a class="terminosaddticket"
-                                        href="{{asset('avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf')}}"><b>Términos yCondiciones.</b></a></label>
+                                        href="{{asset('avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf')}}"><b>Términos y Condiciones.</b></a></label>
                             </div>
                         </div>
                         <div class="form-group">
