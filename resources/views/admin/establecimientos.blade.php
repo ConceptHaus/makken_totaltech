@@ -24,6 +24,7 @@
                             <th>Nombre</th>
                             <th>Logo</th>
                             <th>Monto</th>
+                            <th>Usuarios registrados</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,6 +50,11 @@
                             <td>
                                 <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <% establecimiento.monto | currency:"$" %>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
+                                    <% establecimiento.usuarios %>
                                 </a>
                             </td>
                         </tr>
