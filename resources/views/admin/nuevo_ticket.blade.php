@@ -61,12 +61,12 @@
                                 <label>Usuarios</label>
                                 @if($user_registrado)
                                     <div>
-                                        <select class="selectpicker form-control form-control-solid"
+                                        <select disabled class="selectpicker form-control form-control-solid"
                                             ng-model="ticket.id_usuario" data-live-search="true" 
                                             title="Selecciona el usuario de compra">
                                             @foreach ($users as $user)
                                             @if($user->isAdmin != 1 && $user->id == $user_registrado)
-                                            <option value="$('$user_registrado').selectpicker({{$user->id}}>{{$user->correo}})</option>
+                                            <option disabled selected value="{{$user->id}}">{{$user->correo}}</option>
                                             @endif
                                             @endforeach
                                         </select>
@@ -78,7 +78,7 @@
                                             title="Selecciona el usuario de compra">
                                             @foreach ($users as $user)
                                             @if($user->isAdmin != 1)
-                                            <option selected="true" value="{{$user->id}}">{{$user->correo}}</option>
+                                            <option value="{{$user->id}}">{{$user->correo}}</option>
                                             @endif
                                             @endforeach
                                         </select>
