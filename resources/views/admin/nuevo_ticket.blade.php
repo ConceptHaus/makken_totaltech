@@ -66,7 +66,7 @@
                                             title="Selecciona el usuario de compra">
                                             @foreach ($users as $user)
                                             @if($user->isAdmin != 1 && $user->id == $user_registrado)
-                                            <option value="{{$user->id}}">{{$user->correo}}</option>
+                                            <option value="$('$user_registrado').selectpicker({{$user->id}}>{{$user->correo}})</option>
                                             @endif
                                             @endforeach
                                         </select>

@@ -28,16 +28,28 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="establecimiento in establecimientos | filter:search">
-                            <td><% establecimiento.id_establecimiento %></td>
-                            <td><% establecimiento.nombre %></td>
                             <td>
-                                <img ng-if="establecimiento.nombre != 'Otro'" class="mr-3"
-                                    ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
-                                <img ng-if="establecimiento.nombre == 'Otro'" class="img-establecimiento mr-3"
-                                    ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                                <a href="/">
+                                    <% establecimiento.id_establecimiento %>
+                                </a>
                             </td>
                             <td>
-                                <% establecimiento.monto | currency:"$" %>
+                                <a href="/">
+                                    <% establecimiento.nombre %>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="/">
+                                    <img ng-if="establecimiento.nombre != 'Otro'" class="mr-3"
+                                        ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                                    <img ng-if="establecimiento.nombre == 'Otro'" class="img-establecimiento mr-3"
+                                        ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="/">
+                                    <% establecimiento.monto | currency:"$" %>
+                                </a>
                             </td>
                         </tr>
                     </tbody>
