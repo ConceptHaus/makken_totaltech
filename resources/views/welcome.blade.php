@@ -17,7 +17,7 @@
     @else
     <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
       data-wow-delay="0.5s">
-      <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
+      <span class="mx-4 px-3">PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
     </a>
     @endif
   </div>
@@ -118,7 +118,7 @@
         </a>
         @else
         <a href="{{ url('/login') }}" class="btn btn-call-to-action text-center">
-          <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
+          <span class="mx-4 px-3">PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
         </a>
         @endif
       </div>
