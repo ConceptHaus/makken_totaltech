@@ -161,8 +161,10 @@
         <div class="col-xl-7">
             <div class="ibox">
                 <div class="ibox-body">
-                    <h5 class="font-strong mb-5">Tickets registrados</h5>
-                    <a href={{ route('nuevoTicket') }}> <b> Ingresa un nuevo ticket</b></a>
+                    <div class="inbox-title d-flex justify-content-between align-items-center mb-5">
+                        <h5 class="font-strong align-self-center">Tickets registrados</h5>
+                        <a class="btn btn-rounded btn-primary " style="height: 2.8em !important" href={{ route('nuevoTicket', ['user_registrado'=>$user]) }}> <b> Ingresa un nuevo ticket</b></a>
+                    </div>
                     <table class="table table-bordered table-hover">
                         <thead class="thead-default thead-lg">
                             <tr>
