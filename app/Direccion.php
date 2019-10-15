@@ -14,7 +14,9 @@ class Direccion extends Model
       'id_usuario',
       'cp',
       'estado',
-      'municipio'
+      'municipio',
+      'colonia',
+      'calle'
     ];
 
     public function user(){

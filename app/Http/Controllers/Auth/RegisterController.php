@@ -64,6 +64,8 @@ class RegisterController extends Controller
             'nombre' => 'required|string|max:255',
             'apellido' => 'required|string|max:255',
             'telefono' => 'required|string|max:255',
+            'calle' => 'required|string|max:255',
+            'colonia' => 'required|string|max:255',
             'correo' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -90,6 +92,8 @@ class RegisterController extends Controller
             $direccion = new Direccion();
             $direccion->estado = $data['estado'];
             $direccion->municipio = $data['municipio'];
+            $direccion->colonia = $data['colonia'];
+            $direccion->calle = $data['calle'];
             $direccion->cp = $data['cp'];
 
             $user->save();

@@ -35,6 +35,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
                     $scope.errorCP = null;
                     $scope.user.estado = res.data.Estado;
                     $scope.user.municipio = res.data.Municipio;
+                    $scope.user.coloniaArray = (res.data.Colonia).split(';');
                     console.log($scope.user);
 
             }, function(error){
