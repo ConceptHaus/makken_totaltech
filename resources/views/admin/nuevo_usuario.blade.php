@@ -56,9 +56,11 @@
                         <div class="row" ng-if="user.cp">
                             <div class="col-md-6 form-group mb-4">
                                 <label>Colonia</label>
-                                <select
-                                    ng-model="user.colonia"  id="colonia" type="text" class="form-control form-solid" name="colonia"
-                                    required ng-options="colonia for colonia in user.coloniaArray">
+                                <select ng-class="{'invalido': errors.colonia }" class="form-control form-control-solid"
+                                    ng-model="user.colonia" data-live-search="true" id="colonia" type="text" name="colonia"
+                                    title="Selecciona tu colonia" required
+                                    ng-options="colonia for colonia in user.coloniaArray"
+                                    >
                                 </select>
                                 <p ng-cloak class="error-form" ng-if="errors.colonia"><% errors.colonia[0] %></p>
                             </div>
