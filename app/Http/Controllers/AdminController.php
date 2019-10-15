@@ -59,7 +59,8 @@ class AdminController extends Controller {
                                     ->groupBy(DB::raw('CAST(tickets.created_at AS DATE)'))
                                     ->get();
 
-
+        $data['ganador'] =DB::table('users')->join('ganador', 'ganador.id_usuario', 'users.id')->where('users.id', $id)->first();
+        
         return view('admin/usuario_detalle',$data);
     }
 

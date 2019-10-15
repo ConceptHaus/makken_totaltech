@@ -42,9 +42,11 @@
                     </div>
                 </div>
             </div>
-            @if($user->posible_ganador == 0)
-            <a class="btn btn-rounded btn-primary btn-air" name="posibleGanador" data-toggle="modal"
-                data-target="#modalPosibleGanador">Posible Ganador</a>
+            @if($ganador == null)
+                @if($user->posible_ganador == 0)
+                <a class="btn btn-rounded btn-primary btn-air" name="posibleGanador" data-toggle="modal"
+                    data-target="#modalPosibleGanador">Posible Ganador</a>
+                @endif
             @endif
             <!-- START MODAL POSIBLE GANADOR -->
             <div class="modal fade" id="modalPosibleGanador" tabindex="-1" role="dialog"
@@ -76,10 +78,15 @@
                     </form>
                 </div>
             </div>
+            
+        
+            
             <!-- END MODAL POSIBLE GANADOR -->
-            @if($user->posible_ganador == 1)
-            <a class="btn btn-rounded btn-primary btn-air" name="ganador" data-toggle="modal"
-                data-target="#modalGanador">Ganador</a>
+            @if($ganador == null)
+                @if($user->posible_ganador == 1)
+                <a class="btn btn-rounded btn-primary btn-air" name="ganador" data-toggle="modal"
+                    data-target="#modalGanador">Ganador</a>
+                @endif
             @endif
             <!-- START MODAL GANADOR -->
             <div class="modal fade" id="modalGanador" tabindex="-1" role="dialog" aria-labelledby="modalGanador"
