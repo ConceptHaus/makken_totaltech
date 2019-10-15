@@ -67,6 +67,7 @@
                   </div>
                 </div>
               </div>
+              
               <!-- Fin Modal Tickets -->
             </td>
           </tr>

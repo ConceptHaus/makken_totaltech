@@ -160,6 +160,7 @@
               <table class="table table-borderless table-responsive table-ganadores-home">
                 <thead>
                   <tr>
+                    <th scope="col" width="30%">FECHA</th>
                     <th scope="col" width="30%">NOMBRE</th>
                     <th scope="col" width="30%">TIENDA</th>
                     <th scope="col" width="30%">PREMIO</th>
@@ -172,6 +173,7 @@
                   @foreach ($ganadores as $ganador)
                   @if ($ganador->id_semana == $i)
                   <tr>
+                    <td>{{$ticket->created_at->format('d M')}}</td>
                     <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
                     <td>{{ $ganador['user']->tickets[0]->establecimiento->nombre}}</td>
                     <td>{{ $ganador['premio']->nombre }}</td>
