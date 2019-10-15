@@ -53,28 +53,47 @@
                                     required autofocus disabled>
                             </div>
                         </div>
+                        <div class="row" ng-if="user.cp">
+                            <div class="col-md-6 form-group mb-4">
+                                <label>Colonia</label>
+                                <select
+                                    ng-model="user.colonia"  id="colonia" type="text" class="form-control form-solid" name="colonia"
+                                    required ng-options="colonia for colonia in user.coloniaArray">
+                                </select>
+                                <p ng-cloak class="error-form" ng-if="errors.colonia"><% errors.colonia[0] %></p>
+                            </div>
+                            <div class="col-md-6 form-group mb-4">
+                                <label>Calle y número</label>
+                                <input ng-model="user.calle" id="calle" type="text" class="selectpicker form-control form-control-solid"
+                                    name="calle" placeholder="Calle y número" required autofocus>
+                                <p ng-cloak class="error-form" ng-if="errors.calle"><% errors.calle[0] %></p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12 form-group mb-4">
                                 <label>Correo</label>
-                                <input ng-model="user.correo" class="form-control form-control-solid" name="correo"
+                                <input ng-model="user.correo" ng-class="{'invalido': errors.correo}" class="form-control form-control-solid" name="correo"
                                     type="text" >
+                                <p ng-cloak class="error-form" ng-if="errors.correo"><% errors.correo[0] %></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group mb-4">
                                 <label>Contraseña</label>
-                                <input ng-model="user.password" class="form-control form-control-solid" name="password"
+                                <input ng-model="user.password" ng-class="{'invalido': errors.password}" class="form-control form-control-solid" name="password"
                                     type="password" >
+                                <p ng-cloak class="error-form" ng-if="errors.password"><% errors.password[0] %></p>
                             </div>
                             <div class="col-md-6 form-group mb-4">
                                 <label>Confirmar Contraseña</label>
-                                <input ng-model="user.password_confirmation" class="form-control form-control-solid"
+                                <input ng-model="user.password_confirmation" ng-class="{'invalido': errors.password}" class="form-control form-control-solid"
                                     name="password_confirmation" type="password" >
+                                <p ng-cloak class="error-form" ng-if="errors.password"><% errors.password[0] %></p>
                             </div>
                         </div>
                         <div class="text-right">
                             <button type="submit" class="btn btn-primary btn-air mr-2" ng-click="register(user,confirm)"
-                                ng-disabled="!(user.nombre) || !(user.apellido) || !(user.telefono) || !(user.cp) || !(user.estado) || !(user.municipio) || !(user.correo) || !(user.password) || !(user.password_confirmation)">Guardar</button>
+                                ng-disabled="!(user.nombre) || !(user.apellido) || !(user.telefono) || !(user.cp) || !(user.estado) || !(user.municipio) || !(user.correo) || !(user.password) || !(user.password_confirmation) || !(user.colonia) || !(user.calle)">Guardar</button>
                             <a class="btn btn-secondary" href="{{ url('/admin/usuarios/registrados') }}">Cancelar</a>
                         </div>
                     </form>

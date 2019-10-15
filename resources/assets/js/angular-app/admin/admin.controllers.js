@@ -167,7 +167,8 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
                 $scope.errorCP = null;
                 $scope.user.estado = res.data.Estado;
                 $scope.user.municipio = res.data.Municipio;
-                // console.log($scope.user);
+                $scope.user.coloniaArray = (res.data.Colonia).split(';');
+                //console.log($scope.user);
 
             }, function (error) {
                 $scope.errorCP = error.data.error;
