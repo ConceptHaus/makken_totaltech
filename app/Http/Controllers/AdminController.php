@@ -72,7 +72,8 @@ class AdminController extends Controller {
         return view('admin/tickets_registrados');
     }
 
-    public function nuevoTicket() {
+    public function nuevoTicket($user_registado = null) {
+        $data['user_registrado'] = $user_registado;
         $data['users'] = User::getAllUsers();
         $data['establecimientos'] = Establecimiento::all();
         return view('admin/nuevo_ticket',$data);
@@ -231,6 +232,16 @@ class AdminController extends Controller {
     public function getAllUsers(){
         $users = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
                         ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->groupBy('users.id')
+                        ->get();
+        return response()->json($users);
+    }
+
+    public function getUsersByEstablecimiento($id){
+        $users = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                        ->join('establecimiento', 'establecimiento.id_establecimiento', '=', 'tickets.id_establecimiento')
+                        ->select('users.*', 'establecimiento.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->where('establecimiento.id_establecimiento', '=', $id)
                         ->groupBy('users.id')
                         ->get();
         return response()->json($users);
