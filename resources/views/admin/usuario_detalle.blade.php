@@ -155,6 +155,7 @@
             <div class="ibox">
                 <div class="ibox-body">
                     <h5 class="font-strong mb-5">Tickets registrados</h5>
+                    <a href={{ route('nuevoTicket') }}> <b> Ingresa Un nuevo ticket</b></a>
                     <table class="table table-bordered table-hover">
                         <thead class="thead-default thead-lg">
                             <tr>
