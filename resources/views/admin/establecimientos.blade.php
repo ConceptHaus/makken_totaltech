@@ -29,17 +29,17 @@
                     <tbody>
                         <tr ng-repeat="establecimiento in establecimientos | filter:search">
                             <td>
-                                <a href="/">
+                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <% establecimiento.id_establecimiento %>
                                 </a>
                             </td>
                             <td>
-                                <a href="/">
+                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <% establecimiento.nombre %>
                                 </a>
                             </td>
                             <td>
-                                <a href="/">
+                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <img ng-if="establecimiento.nombre != 'Otro'" class="mr-3"
                                         ng-src="{{ asset('<% establecimiento.url %>') }}" alt="image" width="90" />
                                     <img ng-if="establecimiento.nombre == 'Otro'" class="img-establecimiento mr-3"
@@ -47,7 +47,7 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="/">
+                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <% establecimiento.monto | currency:"$" %>
                                 </a>
                             </td>

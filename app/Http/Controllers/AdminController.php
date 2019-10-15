@@ -238,9 +238,19 @@ class AdminController extends Controller {
     }
 
     public function getUsersByEstablecimiento($id){
+        $data['users'] = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
+                        ->join('establecimiento', 'establecimiento.id_establecimiento', '=', 'tickets.id_establecimiento')
+                        ->select('users.*', 'establecimiento.nombre as establecimiento_nombre', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->where('establecimiento.id_establecimiento', '=', $id)
+                        ->groupBy('users.id')
+                        ->get();
+        return view('admin/usuarios_establecimiento',$data);
+    }
+
+    public function getAPIUsersByEstablecimiento($id){
         $users = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
                         ->join('establecimiento', 'establecimiento.id_establecimiento', '=', 'tickets.id_establecimiento')
-                        ->select('users.*', 'establecimiento.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->select('users.*', 'establecimiento.nombre as establecimiento_nombre', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
                         ->where('establecimiento.id_establecimiento', '=', $id)
                         ->groupBy('users.id')
                         ->get();
