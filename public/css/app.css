@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 /**
 ***
 *** 1.- Fonts
@@ -10383,7 +10383,7 @@ footer {
 }
 
 /* TABLAS */
-.table-ganadores-home th:nth-of-type(3), .table-ganadores-home td:nth-of-type(3) {
+.table-ganadores-home th:nth-of-type(4), .table-ganadores-home td:nth-of-type(4) {
   border-right: none !important;
 }
 
