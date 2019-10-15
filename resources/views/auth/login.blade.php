@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+@php
+    $date = new DateTime('2019-10-21');
+    $now = new DateTime();
+@endphp
 <div id="pageSytyle" class="container" ng-controller="userCtrl">
     <div class="row">
         <div class="col-md-8 offset-md-2 mt-md-5 pt-md-5">
@@ -40,7 +44,13 @@
                             <div class="col-md-12">
                                 <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
                             </div>
-                            <p class="my-3 text-center">¿No tienes cuenta? <a class="registrate" href="{{ route('register') }}">Regístrate.</a></p>
+                            <p class="my-3 text-center">¿No tienes cuenta?
+                                @if($date <= $now)
+                                    <a class="registrate" href="{{ route('register') }}">Regístrate.</a>
+                                @else
+                                    <a class="disabled registrate" >Regístrate.</a>
+                                @endif
+                            </p>
                         </div>
                     </form>
                 </div>

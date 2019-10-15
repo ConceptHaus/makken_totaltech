@@ -25,6 +25,9 @@ html {
     height: 100%;
 }
 
+.disabled{
+    cursor: not-allowed;
+}
 .body-bg {
     background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
     background-size: cover;
