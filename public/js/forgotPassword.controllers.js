@@ -178,7 +178,7 @@ app.controller("ForgotPasswordCtrl", function ($scope, ForgotFactory, $http, $wi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/devhaus/Documents/Omar/Proyectos/makken_totaltech/resources/assets/js/angular-app/forgotPassword/forgotPassword.controllers.js */"./resources/assets/js/angular-app/forgotPassword/forgotPassword.controllers.js");
+module.exports = __webpack_require__(/*! /Users/Concepthaus18/Desktop/Concepthaus/makken_totaltech/resources/assets/js/angular-app/forgotPassword/forgotPassword.controllers.js */"./resources/assets/js/angular-app/forgotPassword/forgotPassword.controllers.js");
 
 
 /***/ })

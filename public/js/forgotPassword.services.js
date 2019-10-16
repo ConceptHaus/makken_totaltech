@@ -127,7 +127,7 @@ app.factory('ForgotFactory', function ($http) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/devhaus/Documents/Omar/Proyectos/makken_totaltech/resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js */"./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js");
+module.exports = __webpack_require__(/*! /Users/Concepthaus18/Desktop/Concepthaus/makken_totaltech/resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js */"./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js");
 
 
 /***/ })

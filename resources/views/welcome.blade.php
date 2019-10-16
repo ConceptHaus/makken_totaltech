@@ -11,7 +11,7 @@
   <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
   <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
-  <div class="d-flex row container-button-participa">
+  <div class="d-flex row container-button-participa justify-content-center ">
     @if (Auth::check())
       @if($date >= $now)
       <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
@@ -26,10 +26,18 @@
       @endif
     @else
       @if($date >= $now)
-      <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
-        data-wow-delay="0.5s">
-        <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
-      </a>
+      <!-- Falta hacer el resposive -->
+      <div class="d-flex flex-column justify-content-center align-items-center" style="height:100vh">
+          <a href="" class="btn-call-to-action text-center wow btn slideInLeft mt-1" data-wow-duration="1s"
+          data-wow-delay="0.5s">
+            <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
+          </a>
+          <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled mt-4" data-wow-duration="1s"
+          data-wow-delay="0.5s">
+          <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
+          </a>
+      </div>
+      <!-- Fin de lo que falta de resposive -->
       @else
       <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
@@ -163,6 +171,7 @@
 <!-- Ganadores -->
 <div class="container-fluid ganadores" id="ganadores">
   <div class="row text-center justify-content-center">
+  <!-- Falta hacer el resposive -->
     <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1 class="blanco ganadores_title">GANADORES</h1>
     </div>
@@ -184,6 +193,19 @@
           <a class="nav-link" id="semana4-tab" data-scroll-ignore data-toggle="tab" href="#semana4" role="tab"
             aria-controls="semana4" aria-selected="false">SEMANA 4</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana5-tab" data-scroll-ignore data-toggle="tab" href="#semana5" role="tab"
+            aria-controls="semana5" aria-selected="false">SEMANA 5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana6-tab" data-scroll-ignore data-toggle="tab" href="#semana6" role="tab"
+            aria-controls="semana6" aria-selected="false">SEMANA 6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana7" role="tab"
+            aria-controls="semana7" aria-selected="false">SEMANA 7</a>
+        </li>
+        
       </ul>
       <div class="tab-content" id="ganadoresTabContent">
         @for ($i=1; $i <= 4; $i++) <div class="tab-pane fade show" ng-class="{ 'active': {{$i}}==1 }" id="semana{{$i}}"

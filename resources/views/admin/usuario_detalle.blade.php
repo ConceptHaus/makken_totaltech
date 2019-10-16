@@ -112,6 +112,9 @@
                                     <option value="2">2 Semana</option>
                                     <option value="3">3 Semana</option>
                                     <option value="4">4 Semana</option>
+                                    <option value="5">5 Semana</option>
+                                    <option value="6">6 Semana</option>
+                                    <option value="7">7 Semana</option>
                                 </select>
 
                                 <div class="form-group" id="date_1">
