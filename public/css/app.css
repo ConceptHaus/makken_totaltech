@@ -10561,6 +10561,10 @@ b, strong {
     right: 220px !important;
     width: 195px !important;
   }
+
+  #ganadores .nav-tabs .nav-link {
+    font-size: 17px !important;
+  }
 }
 @media screen and (max-width: 1250px) {
   .img-silicon-login {
@@ -10589,6 +10593,10 @@ b, strong {
     width: 50% !important;
     margin-left: 40px !important;
   }
+
+  #ganadores .nav-tabs .nav-link {
+    font-size: 12px !important;
+  }
 }
 @media screen and (max-width: 1250px) {
   .navbar-brand img {
@@ -10615,6 +10623,10 @@ b, strong {
   .img-logo-ceys {
     right: 210px !important;
     width: 180px !important;
+  }
+
+  #ganadores .nav-tabs .nav-link {
+    font-size: 12px !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -10717,7 +10729,20 @@ b, strong {
   }
 
   #ganadores .nav-tabs .nav-link {
-    margin: 0px 5px;
+    font-size: 20px !important;
+  }
+  #ganadores .nav-tabs .nav-item {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #ganadores .content-table {
+    max-width: 100%;
+  }
+  #ganadores table th {
+    width: 25%;
+  }
+  #ganadores table td {
+    width: 25%;
   }
 
   .text-responsive {
@@ -10766,8 +10791,31 @@ b, strong {
   }
 
   #ganadores .nav-tabs .nav-link {
-    font-size: 16px;
-    margin: 0px;
+    font-size: 20px !important;
+  }
+  #ganadores .nav-tabs .nav-item {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #ganadores .content-table {
+    max-width: 100%;
+  }
+  #ganadores table th {
+    width: 25%;
+  }
+  #ganadores table td {
+    width: 25%;
+  }
+
+  .content-table {
+    max-width: 100%;
+  }
+
+  table th {
+    font-size: 15px;
+  }
+  table td {
+    padding: 1.5rem;
   }
 
   .dinamica {
@@ -10842,6 +10890,9 @@ b, strong {
     padding: 3% 5% !important;
   }
 
+  #ganadores .nav-tabs .nav-link {
+    font-size: 20px !important;
+  }
   #ganadores .nav-tabs .nav-item {
     margin-bottom: 10px;
     width: 100%;
@@ -10850,10 +10901,10 @@ b, strong {
     max-width: 100%;
   }
   #ganadores table th {
-    font-size: 15px;
+    width: 25%;
   }
   #ganadores table td {
-    padding: 1.5rem;
+    width: 25%;
   }
 
   .header-home.header-user .btn-call-to-action {

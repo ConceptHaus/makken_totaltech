@@ -101,7 +101,13 @@
     right: 220px !important;
     width: 195px !important;
   }
-
+  #ganadores {
+    .nav-tabs {
+      .nav-link {
+        font-size: 17px !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -140,7 +146,13 @@
   .navbar-brand-home {
     width: 50% !important;
     margin-left: 40px !important;
-
+  }
+  #ganadores {
+    .nav-tabs {
+      .nav-link {
+        font-size: 12px !important;
+      }
+    }
   }
 }
 
@@ -182,7 +194,13 @@
     right: 210px !important;
     width: 180px !important;
   }
-
+  #ganadores {
+    .nav-tabs {
+      .nav-link {
+        font-size: 12px !important;
+      }
+    }
+  }
 }
 
 
@@ -308,10 +326,30 @@
     }
   }
 
+
   #ganadores {
     .nav-tabs {
-      .nav-link {
-        margin: 0px 5px;
+      .nav-link{
+        font-size: 20px !important;
+      }
+      .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+
+    .content-table {
+      max-width: 100%;
+    }
+
+    table {
+      
+      th {
+        width: 25%;
+      }
+
+      td {
+        width: 25%;
       }
     }
   }
@@ -361,7 +399,6 @@
 
 @media screen and (max-width: 768px) {
 
-
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -372,12 +409,45 @@
 
   #ganadores {
     .nav-tabs {
-      .nav-link {
-        font-size: 16px;
-        margin: 0px;
+      .nav-link{
+        font-size: 20px !important;
+      }
+      .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+
+    .content-table {
+      max-width: 100%;
+    }
+
+    table {
+      
+      th {
+        width: 25%;
+      }
+
+      td {
+        width: 25%;
       }
     }
   }
+
+    .content-table {
+      max-width: 100%;
+    }
+
+    table {
+      th {
+        font-size: 15px;
+      }
+
+      td {
+        padding: 1.5rem;
+      }
+    }
+
 
   .dinamica {
 
@@ -395,8 +465,8 @@
   .text-md-right {
     text-align: center !important;
   }
-
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -464,6 +534,9 @@
 
   #ganadores {
     .nav-tabs {
+      .nav-link{
+        font-size: 20px !important;
+      }
       .nav-item {
         margin-bottom: 10px;
         width: 100%;
@@ -475,12 +548,13 @@
     }
 
     table {
+      
       th {
-        font-size: 15px;
+        width: 25%;
       }
 
       td {
-        padding: 1.5rem;
+        width: 25%;
       }
     }
   }

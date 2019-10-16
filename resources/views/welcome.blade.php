@@ -166,7 +166,7 @@
     <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1 class="blanco ganadores_title">GANADORES</h1>
     </div>
-    <div class="col-10 mt-2">
+    <div class="col-10  mt-2">
       <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="semana1-tab" data-scroll-ignore data-toggle="tab" href="#semana1" role="tab"
@@ -203,7 +203,7 @@
         <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }" id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive table-ganadores-home">
+              <table class="table table-borderless table-responsive table-ganadores-home d-flex justify-content-center">
                 <thead>
                   <tr>
                     <th scope="col" width="25%">FECHA</th>
