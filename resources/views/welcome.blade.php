@@ -26,8 +26,7 @@
       @endif
     @else
       @if($date >= $now)
-          <a href="" class="btn-call-to-action text-center wow btn slideInLeft mt-1" data-wow-duration="1s"
-          data-wow-delay="0.5s" >
+          <a href="" class="btn-call-to-action text-center wow slideInLeft btn " data-wow-duration="1s" data-wow-delay="0.5s">
             <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
           </a>
       @else
