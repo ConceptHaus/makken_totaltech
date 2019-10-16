@@ -26,18 +26,10 @@
       @endif
     @else
       @if($date >= $now)
-      <!-- Falta hacer el resposive -->
-      <div class="d-flex flex-column justify-content-center align-items-center" style="height:100vh">
           <a href="" class="btn-call-to-action text-center wow btn slideInLeft mt-1" data-wow-duration="1s"
-          data-wow-delay="0.5s">
+          data-wow-delay="0.5s" >
             <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
           </a>
-          <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled mt-4" data-wow-duration="1s"
-          data-wow-delay="0.5s">
-          <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
-          </a>
-      </div>
-      <!-- Fin de lo que falta de resposive -->
       @else
       <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
@@ -153,7 +145,7 @@
           @if($date >= $now)
           <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
             data-wow-delay="0.5s">
-            <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
+            <span class="mx-4 px-3" >PARTICIPA</span> A 
           </a>
           @else
           <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
@@ -208,8 +200,8 @@
         
       </ul>
       <div class="tab-content" id="ganadoresTabContent">
-        @for ($i=1; $i <= 4; $i++) <div class="tab-pane fade show" ng-class="{ 'active': {{$i}}==1 }" id="semana{{$i}}"
-          role="tabpanel" aria-labelledby="semana{{$i}}-tab">
+        @for ($i=1; $i <= 7; $i++) 
+        <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }" id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
               <table class="table table-borderless table-responsive table-ganadores-home">
