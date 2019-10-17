@@ -48,8 +48,11 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
+                                <a ng-if="establecimiento.monto >= 1" href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
                                     <% establecimiento.monto | currency:"$" %>
+                                </a>
+                                <a ng-if="establecimiento.monto < 1" href="{{ url('/admin/usuarios/establecimientos/<% establecimiento.id_establecimiento %>') }}">
+                                    $0.00
                                 </a>
                             </td>
                             <td>
