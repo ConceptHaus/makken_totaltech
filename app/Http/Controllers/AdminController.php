@@ -186,8 +186,15 @@ class AdminController extends Controller {
         $usuario->save();
 
         if($ganador->save() && $usuario->save()){
+            
+            Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
+                $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu bicicleta ¡Compra y gana! con Total Tech."');
+            });
+
             $json['success'] = 'success_ganador_user';
             return response($json, 200);
+
         }
         $json['error'] = 'error_ganador_user';
         return response($json,400);
