@@ -14,10 +14,9 @@
   <div class="d-flex row container-button-participa justify-content-center ">
     @if (Auth::check())
       @if($date >= $now)
-      <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
-      data-wow-delay="0.5s">
-        <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
-      </a>
+      <a href="" class="btn-call-to-action text-center wow slideInLeft btn " data-wow-duration="1s" data-wow-delay="0.5s">
+          <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE<br> Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
+        </a>
       @else
       <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
       data-wow-delay="0.5s">
@@ -27,7 +26,7 @@
     @else
       @if($date >= $now)
           <a href="" class="btn-call-to-action text-center wow slideInLeft btn " data-wow-duration="1s" data-wow-delay="0.5s">
-            <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
+            <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE<br> Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
           </a>
       @else
       <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
