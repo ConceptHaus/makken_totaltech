@@ -124,7 +124,13 @@ class AdminController extends Controller {
                 $ticket = new Ticket();
                 $ticket->id_usuario = $user->id;
                 $ticket->no_ticket = $request->no_ticket;
-                $ticket->monto = $request->monto;
+                // Pasar de string a numbre el monto
+                //$ticket->monto = $request->monto;
+                $num = str_replace(',', '', $request->monto);
+                $monto = intval(strval($num));
+                $ticket->monto = $monto;
+                //print ($monto);
+
                 $ticket->id_establecimiento = $request->id_establecimiento;
                 $ticket->otro_establecimiento = $request->otro_establecimiento;
                 $ticket->url =$this->uploadTicketS3($request->fileticket,$user->id);

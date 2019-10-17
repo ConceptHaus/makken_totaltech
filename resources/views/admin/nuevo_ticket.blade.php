@@ -90,7 +90,6 @@
                             <button ng-click="addTicket(ticket)" class="btn btn-primary btn-air mr-2"
                                 ng-disabled="!(ticket.fileticket) || !(ticket.no_ticket) || !(ticket.monto) || !(ticket.id_establecimiento) || !(ticket.id_usuario)">Guardar</button>
                             <a class="btn btn-secondary" href="{{ url('/admin/tickets/registrados') }}">Cancelar</a>
-                           
                         </div>
                     </form>
                 </div>
