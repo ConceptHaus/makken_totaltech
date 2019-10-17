@@ -7236,6 +7236,10 @@ td input {
   transform: translate3d(0px, 0px, 0px) !important;
 }
 
+.h-100-vh {
+  height: 100vh;
+}
+
 @media screen and (max-width: 600px) {
   .admin-view .input-group-search {
     margin-right: 0px !important;
