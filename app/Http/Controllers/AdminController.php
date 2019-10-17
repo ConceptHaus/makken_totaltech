@@ -184,7 +184,9 @@ class AdminController extends Controller {
         $usuario = User::where('id',$request->id_usuario)->first();
         $usuario->posible_ganador = 0;
         $usuario->save();
+        $usercontact['correo'] = $usuario['correo'];
 
+        $usercontact['nombre'] = '';
         if($ganador->save() && $usuario->save()){
             
             Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {

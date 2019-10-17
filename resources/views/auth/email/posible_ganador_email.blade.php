@@ -614,7 +614,7 @@
 																<a href="{{url('/')}}" title=""
 																	class="" target="_blank">
 																	<img align="center" alt=""
-																		src="{{asset('img/email/posible-ganador.png')}}"
+																		src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/542328b6-62b4-495f-a3cd-d79902359040.png"
 																		width="564"
 																		style="max-width:1200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;"
 																		class="mcnImage">
