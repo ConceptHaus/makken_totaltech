@@ -805,7 +805,7 @@
 																<a href="{{url('/')}}" title=""
 																	class="" target="_blank">
 																	<img align="center" alt=""
-																		src="https://gallery.mailchimp.com/766ee0c962d543c02140cdccb/images/18a0a676-5ca1-4853-afb1-b08b546d6973.jpg"
+																		src="{{asset('img/email/confirmacion.png')}}"
 																		width="564"
 																		style="max-width:1201px; padding-bottom: 0; display: inline !important; vertical-align: bottom;"
 																		class="mcnImage">
