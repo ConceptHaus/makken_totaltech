@@ -34,17 +34,6 @@ class WelcomeController extends Controller
             ->orderBy('establecimiento.id_establecimiento','asc')
             ->get();
         return response()->json($establecimientos);
-        return DB::table('tickets')
-                        ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
-                        ->join('users','users.id','=','tickets.id_usuario')
-                        ->where('users.isAdmin', '=', '0')
-                        
-                        ->select(DB::raw('sum(tickets.monto) as monto'),DB::raw('count(tickets.id_usuario) as usuarios'), 'establecimiento.nombre', 'establecimiento.id_establecimiento', 'establecimiento.url')
-                        ->groupBy('tickets.id_establecimiento')
-                        ->orderBy('monto','desc')
-                        ->get();
-
-        return response()->json($establecimientos);
     }
 
     public function getTextos(){
