@@ -59,8 +59,12 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     })
 
     $scope.addTicket = function (ticket) {
-        console.log(ticket.monto.match(/\d+/g).map(Number));
-        // ticket.monto.match(/\d+/g).map(Number);
+        //console.log(ticket.monto.match(/\d+/g).map(Number));
+        let arrayMonto = ticket.monto.match(/\d+/g).map(Number);
+        ticket.monto = '';
+        for( i = 0; i < arrayMonto.length; i ++){
+            ticket.monto = ticket.monto + arrayMonto[i];
+        }
         Swal.fire({
             title: "Espera...",
             text: "Estamos enviando tu ticket.",
