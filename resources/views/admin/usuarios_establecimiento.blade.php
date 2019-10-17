@@ -38,7 +38,7 @@
                     </thead>
                     <tbody>
                         @foreach ($users as $user )
-                            @if($user->isAdmin == 0)
+                            
                                 <tr>
                                     <td>{{$user->id}}</td>
                                     <td>{{$user->nombre}} {{$user->apellido}}</td>
@@ -66,7 +66,7 @@
                                     </td>
                                 </tr>
                                 <% usuario.id %>
-                            @endif
+                                
                         @endforeach
                     </tbody>
                 </table>

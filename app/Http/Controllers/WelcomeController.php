@@ -30,10 +30,9 @@ class WelcomeController extends Controller
         $establecimientos = DB::table('establecimiento')
             ->leftJoin('tickets', 'establecimiento.id_establecimiento', '=', 'tickets.id_establecimiento')
             ->leftJoin('users', function($join){
-                $join->on('users.id', '=', 'tickets.id_usuario')
-                    ->where('users.isAdmin', '=', 0);
+                $join->on('users.id', '=', 'tickets.id_usuario');
             })
-            ->select(DB::raw('sum(tickets.monto) as monto'),DB::raw('count(tickets.id_usuario) as usuarios'), 'establecimiento.nombre', 'establecimiento.id_establecimiento', 'establecimiento.url')
+            ->select(DB::raw('sum(tickets.monto) as monto'),DB::raw('count(users.id) as usuarios'), 'establecimiento.nombre', 'establecimiento.id_establecimiento', 'establecimiento.url')
             ->groupBy('establecimiento.id_establecimiento')
             ->get();
         
