@@ -3,9 +3,14 @@
 @section('content')
 <!-- START PAGE CONTENT-->
 <div class="page-content admin-view fade-in-up">
+
     <div class="ibox">
         <div class="ibox-body">
-        <h5 class="font-strong mb-4">USUARIOS REGISTRADOS EN {{$users[0]->establecimiento_nombre}}</h5>
+        @if(count($users))
+            <h5 class="font-strong mb-4">USUARIOS REGISTRADOS EN {{$users[0]->establecimiento_nombre}}</h5>
+        @else
+            <h5 class="font-strong mb-4">NO HAY USUARIOS REGISTRADOS</h5>
+        @endif
             <div class="flexbox mb-4">
                 <div class="flexbox"></div>
                 <div class="flexbox mb-4">
