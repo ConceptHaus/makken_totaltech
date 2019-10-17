@@ -10147,6 +10147,10 @@ footer {
   text-decoration: underline !important;
 }
 
+.h-100-vh {
+  height: 100vh;
+}
+
 /**
 *** 5.- Estilos Login
 **/

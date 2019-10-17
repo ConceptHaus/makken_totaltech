@@ -165,7 +165,7 @@
         <!-- END SIDEBAR-->
 
         <!-- CONTENT-->
-        <div class="content-wrapper" ng-controller="adminCtrl">
+        <div class="content-wrapper h-100-vh" ng-controller="adminCtrl">
             @yield('content')
         </div>
         <!-- END CONTENT-->
