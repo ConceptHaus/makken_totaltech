@@ -59,7 +59,8 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     })
 
     $scope.addTicket = function (ticket) {
-        console.log(ticket);
+        console.log(ticket.monto);
+        // ticket.monto = parse numero ( ticket.monto )
         Swal.fire({
             title: "Espera...",
             text: "Estamos enviando tu ticket.",
