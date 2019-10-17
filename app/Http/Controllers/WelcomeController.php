@@ -27,6 +27,13 @@ class WelcomeController extends Controller
         return view('welcome', $data);
     }
     public function getEstablecimientos(){
+        $establecimientos = DB::table('establecimiento')
+            ->leftjoin('tickets', 'tickets.id_establecimiento', 'establecimiento.id_establecimiento')
+            ->select(DB::raw('sum(tickets.monto) as monto'),DB::raw('count(tickets.id_usuario) as usuarios'), 'establecimiento.nombre', 'establecimiento.id_establecimiento', 'establecimiento.url')
+            ->groupBy('tickets.id_establecimiento')
+            ->orderBy('establecimiento.id_establecimiento','asc')
+            ->get();
+        return response()->json($establecimientos);
         return DB::table('tickets')
                         ->join('establecimiento','tickets.id_establecimiento','=','establecimiento.id_establecimiento')
                         ->join('users','users.id','=','tickets.id_usuario')
