@@ -429,7 +429,7 @@ app.directive("money", function ($filter, $locale) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/devhaus/Documents/Omar/Proyectos/makken_totaltech/resources/assets/js/angular-app/admin/admin.controllers.js */"./resources/assets/js/angular-app/admin/admin.controllers.js");
+module.exports = __webpack_require__(/*! /Users/Concepthaus18/Desktop/Concepthaus/makken_totaltech/resources/assets/js/angular-app/admin/admin.controllers.js */"./resources/assets/js/angular-app/admin/admin.controllers.js");
 
 
 /***/ })
