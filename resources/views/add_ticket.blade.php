@@ -42,7 +42,7 @@
                                 <a class='btn-submit-upload pointer' href='javascript:;'>
                                     <h5 class="my-2 subetuticket">SUBE TU TICKET</h5>
                                     <input ng-model="ticket.fileticket" ngf-select
-                                        ngf-pattern="'image/*,application/pdf'" ngf-max-size="10MB" type="file"
+                                        ngf-pattern="'image/*,application/pdf'" ngf-max-size="5MB" type="file"
                                         id="file" class="inputfile" name="file"
                                         onchange='$("#upload-file-info").html($(this).val());'>
                                 </a>
