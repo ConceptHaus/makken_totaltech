@@ -386,8 +386,8 @@ class AdminController extends Controller {
                                 ->groupBy('id_establecimiento')
                                 ->orderBy('total','desc')
                                 ->take(5)->get();
-        $registros_tickets_whatsapp = count(DB::table('tickets')->where('registro_admin','=',1)->get());
-        $registros_tickets_web = count(DB::table('tickets')->where('registro_admin','=',0)->get());
+        $registros_tickets_whatsapp = count(DB::table('tickets')->where('registro_admin','=',0)->get());
+        $registros_tickets_web = count(DB::table('tickets')->where('registro_admin','=',1)->get());
         $registros_users_whatsapp = count(DB::table('users')->where('registro_admin','=',1)->where('isAdmin','!=',1)->get());
         $registros_users_web = count(DB::table('users')->where('registro_admin','=',0)->where('isAdmin','!=',1)->get());
 
