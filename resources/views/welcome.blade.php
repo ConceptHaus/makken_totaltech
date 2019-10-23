@@ -202,7 +202,7 @@
         <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }" id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive table-ganadores-home d-flex justify-content-center">
+              <table class="table table-borderless table-responsive table-ganadores-home justify-content-center">
                 <thead>
                   <tr>
                     <th scope="col" width="25%">FECHA</th>
