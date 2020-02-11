@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@php
-    $date = new DateTime('2019-10-21');
-    $now = new DateTime();
-@endphp
+
 <!-- Header -->
 <p id="home" class="home" style="display:none;"></p>
 <section class="header-home">
@@ -13,27 +10,13 @@
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
   <div class="d-flex row container-button-participa justify-content-center ">
     @if (Auth::check())
-      @if($date >= $now)
-      <a href="" class="btn-call-to-action text-center wow slideInLeft btn " data-wow-duration="1s" data-wow-delay="0.5s">
-          <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE<br> Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
-        </a>
-      @else
-      <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
-      data-wow-delay="0.5s">
+      <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
         <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
       </a>
-      @endif
     @else
-      @if($date >= $now)
-          <a href="" class="btn-call-to-action text-center wow slideInLeft btn " data-wow-duration="1s" data-wow-delay="0.5s">
-            <span class="mx-4 px-3" >ACUMULA TUS TICKETS</span> DESDE EL 14 DE OCTUBRE<br> Y COMIENZA A PARTICIPAR EL 21 DE OCTUBRE
-          </a>
-      @else
-      <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
-        data-wow-delay="0.5s">
+      <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s" data-wow-delay="0.5s">
         <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
       </a>
-      @endif
     @endif
   </div>
 </section>
@@ -128,29 +111,15 @@
       </div>
       <div class="col-12 px-0">
         @if (Auth::check())
-          @if($date >= $now)
-          <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
-          data-wow-delay="0.5s">
-            <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
-          </a>
-          @else
           <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
           data-wow-delay="0.5s">
             <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
           </a>
-          @endif
         @else
-          @if($date >= $now)
-          <a href="" class="btn-call-to-action text-center wow slideInLeft btn disabled" data-wow-duration="1s"
-            data-wow-delay="0.5s">
-            <span class="mx-4 px-3" >PARTICIPA</span> A PARTIR DEL 21 DE OCTUBRE
-          </a>
-          @else
           <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"
             data-wow-delay="0.5s">
             <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
           </a>
-          @endif
         @endif
       </div>
     </div>
