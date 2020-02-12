@@ -9999,7 +9999,7 @@ table tr td {
 }
 
 footer {
-  background: #253B81;
+  background: #003d8f;
 }
 
 .shadow-menu {
@@ -10217,7 +10217,7 @@ footer {
 *** 6.- Estilos Home
 **/
 .header-home {
-  background: url("../img/images/backgorund-nuevo.png");
+  background: url("../img/images/background-home.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10226,7 +10226,6 @@ footer {
   position: relative;
 }
 .header-home .img-pleca,
-.header-home .img-silicon,
 .header-home .img-logo-ceys,
 .header-home .texto-home {
   position: absolute;
@@ -10237,15 +10236,43 @@ footer {
   width: 2000px;
 }
 .header-home .img-silicon {
-  top: unset !important;
-  left: 16px;
-  width: 600px;
-  bottom: -5px;
+  top: 100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  position: relative;
+  display: flex;
+  bottom: 0;
 }
-.header-home .img-logo-ceys {
-  bottom: 20px;
-  right: 340px;
-  width: 210px;
+.header-home .ceys-montack {
+  width: 75%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+.header-home .ceys-productos {
+  margin-top: 195px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: auto;
+  display: flex;
+}
+.header-home .scooter {
+  width: 62%;
+  display: flex;
+  margin-left: 0%;
+  margin-right: auto;
+  position: relative;
+  top: -100px;
+}
+.header-home .montate {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  margin-right: 10%;
+  top: 150px;
+  position: relative;
 }
 .header-home .btn-call-to-action {
   background: #0033a1;
@@ -10254,9 +10281,9 @@ footer {
   font-weight: 600;
   line-height: 1.2;
   position: relative;
-  margin-top: 350px;
+  margin-top: 0px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 13%;
   border-radius: 8px;
   padding: 15px 40px;
   text-decoration: none;
@@ -10283,35 +10310,36 @@ footer {
 }
 
 .dinamica {
-  background: url("../img/backgrounds/dinamica.png");
-  background-color: #0033a1;
-  background-position: right;
-  background-position-y: bottom;
+  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
+}
+
+.recuerda {
+  font-style: normal;
 }
 
 .link {
   color: #F7E300;
 }
 
-.plecatop {
-  background-color: #003189;
-}
-
 .pasos-img {
-  width: 150px;
+  width: 40px;
 }
 
 .pasos-img-2 {
-  width: 100px !important;
-  margin-top: 3rem;
+  width: 60px !important;
+  margin-top: 1rem;
 }
 
 .tiendas-img {
   width: 80%;
 }
 
+.participantes {
+  background-color: #ebebeb;
+}
+
 .ganadores {
-  background: url("../img/images/background3.png");
+  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10322,8 +10350,8 @@ footer {
   margin-top: 30px;
 }
 #ganadores .nav-tabs .nav-link {
-  background-color: #F7E300;
-  border-color: #F7E300;
+  background-color: #efefef;
+  border-color: #efefef;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: #223F97;
@@ -10339,11 +10367,19 @@ footer {
   border-color: #FFF;
 }
 
+.mascompras {
+  font-style: normal;
+}
+
 .ganadores_title {
   text-shadow: 5px 5px 6px #0033a1;
+  color: #f8e24c;
+  font-family: HelveticaNeue;
+  font-style: normal;
 }
 
 .btn-call-to-action {
+  bottom: 730px;
   color: #fff;
   background-color: #003189;
   font-style: italic;
@@ -10372,6 +10408,10 @@ footer {
 #dinamica h6.responsive-title, #dinamica .h6.responsive-title {
   font-size: 14px;
   line-height: 20px;
+}
+#dinamica h1 {
+  font-style: normal;
+  color: white !important;
 }
 
 .bicicleta {
@@ -10503,11 +10543,6 @@ b, strong {
     bottom: 16px !important;
   }
 
-  .img-logo-ceys {
-    right: 350px !important;
-    width: 300px !important;
-  }
-
   .img-footer {
     width: 40% !important;
   }
@@ -10533,11 +10568,6 @@ b, strong {
     width: 600px !important;
     bottom: 2px !important;
   }
-
-  .img-logo-ceys {
-    right: 300px !important;
-    width: 280px !important;
-  }
 }
 @media screen and (max-width: 1680px) {
   .img-footer {
@@ -10555,11 +10585,6 @@ b, strong {
   .img-silicon {
     width: 500px !important;
     bottom: 2px !important;
-  }
-
-  .img-logo-ceys {
-    right: 220px !important;
-    width: 195px !important;
   }
 
   #ganadores .nav-tabs .nav-link {
@@ -10618,11 +10643,6 @@ b, strong {
   .img-silicon {
     width: 450px !important;
     bottom: 10px !important;
-  }
-
-  .img-logo-ceys {
-    right: 210px !important;
-    width: 180px !important;
   }
 
   #ganadores .nav-tabs .nav-link {
@@ -10767,10 +10787,6 @@ b, strong {
   .header-home .img-silicon {
     width: 300px !important;
     bottom: 20px !important;
-  }
-  .header-home .img-logo-ceys {
-    right: 100px !important;
-    width: 150px !important;
   }
 
   .premio {
@@ -10918,10 +10934,6 @@ b, strong {
   }
   .header-home .img-silicon {
     display: none;
-  }
-  .header-home .img-logo-ceys {
-    left: 33%;
-    right: inherit;
   }
 
   table th {

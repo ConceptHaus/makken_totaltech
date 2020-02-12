@@ -1,6 +1,6 @@
 // Estilos de Home
 .header-home {
-  background: url('../img/images/backgorund-nuevo.png');
+  background: url('../img/images/background-home.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
   position: relative;
 
   .img-pleca,
-  .img-silicon,
+  // .img-silicon,
   .img-logo-ceys,
   .texto-home {
     position: absolute;
@@ -22,17 +22,45 @@
   }
 
   .img-silicon {
-    top: unset !important;
-    left: 16px;
-    width: 600px;
-    bottom: -5px;
+    top: 100px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    position: relative;
+    display: flex;
+    bottom: 0;
   }
+  .ceys-montack {
+    width: 75%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+}
+.ceys-productos {
+  margin-top: 195px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: auto;
+  display: flex;
+}
+.scooter {
+  width: 62%;
+  display: flex;
+  margin-left: 0%;
+  margin-right: auto;
+  position: relative;
+  top: -100px;
+}
 
-  .img-logo-ceys {
-    bottom: 20px;
-    right: 340px;
-    width: 210px;
-  }
+ .montate {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  margin-right: 10%;
+  top: 150px;
+  position: relative;
+}
 //Boton para header
   .btn-call-to-action {
     background: #0033a1;
@@ -41,9 +69,9 @@
     font-weight: 600;
     line-height: 1.2;
     position: relative;
-    margin-top: 350px;
+    margin-top: 0px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 13%;
     border-radius: 8px;
     padding: 15px 40px;
     text-decoration: none;
@@ -82,33 +110,34 @@
 }
 
 .dinamica {
-  background: url('../img/backgrounds/dinamica.png');
-  background-color: #0033a1;
-  background-position: right;
-  background-position-y: bottom;
+  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
 
+
+}
+.recuerda{
+  font-style: normal;
 }
 .link{
  color: $amarillo;
 }
-.plecatop{
 
-  background-color: #003189;
-}
 .pasos-img {
-  width: 150px;
+  width: 40px;
 }
 .pasos-img-2{
-  width: 100px!important;
-  margin-top: 3rem;
+  width: 60px!important;
+  margin-top: 1rem;
 }
 
 .tiendas-img {
   width: 80%;
 }
+.participantes{
+  background-color: #ebebeb;
+}
 
 .ganadores {
-  background: url('../img/images/background3.png');
+  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,8 +149,8 @@
     margin-top: 30px;
 
     .nav-link {
-      background-color: $amarillo;
-      border-color: $amarillo;
+      background-color: #efefef;
+      border-color: #efefef;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       color: $azul;
@@ -138,14 +167,24 @@
       }
     }
   }
+ 
+}
+.mascompras{
+  font-style: normal;
+
+
 }
 .ganadores_title{
   
     text-shadow: 5px 5px 6px #0033a1;
+    color:#f8e24c;
+    font-family: HelveticaNeue;
+    font-style: normal;
   
 }
 //Botton participa seccion premio
 .btn-call-to-action {
+  bottom: 730px;
   color: #fff;
   background-color: #003189;
   font-style: italic;
@@ -182,6 +221,10 @@
         font-size: 14px;
         line-height: 20px;
     }
+  }
+  h1{
+    font-style: normal;
+    color: white!important;
   }
 }
 .bicicleta{
