@@ -1,9 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="container" ng-controller="userCtrl">
+<div id="pageSytyle" class="container-fluid" ng-controller="userCtrl">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
+
+        <div class="col-3 mx-0'">
+
+            <img class="ceys-montack-login mx-auto d-flex wow " data-wow-duration="1s" data-wow-delay="0.5s"
+                src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
+            <img class="img-silicon-login wow " data-wow-duration="1s" data-wow-delay="0.5s"
+                src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
+
+        </div>
+        <div class="col-md-6">
             <div class="panel panel-register my-5">
                 <div class="panel-body text-center">
 
@@ -55,17 +64,18 @@
                         </div>
                         <div class="form-row">
                             <div class="col form-group">
-                                <select ng-class="{'invalido': errors.colonia }" class="selectpicker form-control form-control-solid"
-                                    ng-model="user.colonia" data-live-search="true" id="colonia" type="text" class="form-control" name="colonia"
+                                <select ng-class="{'invalido': errors.colonia }"
+                                    class="selectpicker form-control form-control-solid" ng-model="user.colonia"
+                                    data-live-search="true" id="colonia" type="text" class="form-control" name="colonia"
                                     title="Selecciona tu colonia" required
-                                    ng-options="colonia for colonia in user.coloniaArray"
-                                    >
+                                    ng-options="colonia for colonia in user.coloniaArray">
                                 </select>
                                 <p ng-cloak class="error-form" ng-if="errors.colonia"><% errors.colonia[0] %></p>
                             </div>
                             <div class="col form-group">
-                                <input ng-model="user.calle" id="calle" ng-class="{'invalido': errors.calle }" type="text" class="form-control"
-                                    name="calle" placeholder="Calle y número" required autofocus>
+                                <input ng-model="user.calle" id="calle" ng-class="{'invalido': errors.calle }"
+                                    type="text" class="form-control" name="calle" placeholder="Calle y número" required
+                                    autofocus>
                                 <p ng-cloak class="error-form" ng-if="errors.calle"><% errors.calle[0] %></p>
                             </div>
                         </div>
@@ -102,6 +112,12 @@
                     </form>
                 </div>
             </div>
+
+        </div>
+        <div class="col-3 d-flex ml-auto">
+
+            <img class="scooter-login" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+
         </div>
     </div>
 </div>

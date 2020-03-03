@@ -9789,7 +9789,7 @@ html {
 }
 
 .body-bg {
-  background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
+  background: url("../img/images/background-home.png") no-repeat;
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
@@ -9800,9 +9800,23 @@ html {
 }
 
 .img-silicon-login {
-  position: absolute;
-  left: 10px;
-  width: 30%;
+  top: 100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  position: relative;
+  display: flex;
+  bottom: 0;
+}
+
+.scooter-login {
+  width: 125%;
+  right: 30%;
+  position: relative;
+}
+
+.ceys-montack-login {
+  width: 80%;
 }
 
 .form-control {
@@ -10151,7 +10165,7 @@ footer {
 *** 5.- Estilos Login
 **/
 #pageSytyle {
-  padding-top: 10%;
+  padding-top: 9%;
   padding-bottom: 7%;
 }
 #pageSytyle a, #pageSytyle p {
@@ -10579,12 +10593,15 @@ b, strong {
   }
 
   .container-button-participa .btn-call-to-action {
-    margin-top: 290px !important;
+    margin-top: 90px !important;
   }
 
   .img-silicon {
-    width: 500px !important;
     bottom: 2px !important;
+  }
+
+  .scooter {
+    width: 75% !important;
   }
 
   #ganadores .nav-tabs .nav-link {
@@ -10641,8 +10658,7 @@ b, strong {
   }
 
   .img-silicon {
-    width: 450px !important;
-    bottom: 10px !important;
+    width: 100px !important;
   }
 
   #ganadores .nav-tabs .nav-link {

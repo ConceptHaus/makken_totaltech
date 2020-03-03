@@ -8,7 +8,7 @@
   <!-- <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech"> -->
 <div class="row">
   
-    <div class="col-3">
+    <div class="col-3 ">
         <img class="ceys-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
         <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
     </div>
@@ -17,7 +17,7 @@
         <img class="ceys-productos" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/ceys_productos.png') }}"alt="ceys-productos">
     </div>
 
-    <div class="col-6">
+    <div class="col-6 ">
       <img class="montate" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/montate.png') }}" alt="montate">
       <img class="scooter" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/razor.png') }}" alt="scooter">
         <!-- <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech"> -->

@@ -11,15 +11,15 @@
   <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
   <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
   <div class="texto-home col-lg-12 col-md-12 wow slideInLeft text-center" data-wow-duration="1s" data-wow-delay="0.5s">
-        @if($date >= $now)
+        <!-- @if($date >= $now)
         <a href="" class="btn btn-call-to-action text-center disabled">
           <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
-        </a>
-        @else
+        </a> -->
+        <!-- @else -->
         <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
           <span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
         </a>
-        @endif
+        <!-- @endif -->
   </div>
 </section>
 <!-- Fin de Header -->

@@ -29,7 +29,7 @@ html {
     cursor: not-allowed;
 }
 .body-bg {
-    background: url(../img/backgrounds/bg-bike-mask-login.png) no-repeat;
+    background: url('../img/images/background-home.png') no-repeat;
     background-size: cover;
     min-height: 100%;
     background-attachment: fixed;
@@ -40,11 +40,24 @@ html {
 }
 .img-silicon-login{
 
-    position: absolute;
-    left:10px;
-    width: 30%;
+    top: 100px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    position: relative;
+    display: flex;
+    bottom: 0;
 }
-
+.scooter-login {
+    width: 125%;
+    right: 30%;
+    position: relative;
+    
+}
+.ceys-montack-login{
+    width: 80%;
+    
+}
 // Estilos input
 .form-control {
     border: none;
