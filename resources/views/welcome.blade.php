@@ -3,241 +3,29 @@
 @section('content')
 
 <!-- Header -->
-<p id="home" class="home" style="display:none;"></p>
-<section class="header-home container-fluid">
-  <!-- <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech"> -->
-<div class="row">
-  
-    <div class="col-3 ">
-        <img class="ceys-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
-        <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
-    </div>
-  
-    <div class="col-3">
-        <img class="ceys-productos" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/ceys_productos.png') }}"alt="ceys-productos">
-    </div>
+<section class="hero">
 
-    <div class="col-6 ">
-      <img class="montate" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/montate.png') }}" alt="montate">
-      <img class="scooter" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/razor.png') }}" alt="scooter">
-        <!-- <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech"> -->
+  @include('components.hero')
 
-      <div class="d-flex row container-button-participa justify-content-center ">
-        @if (Auth::check())
-          <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow slideInLeft btn" data-wow-duration="1s"data-wow-delay="0.5s">
-            <span class="mx-4 px-3">PARTICIPA</> DA CLICK AQUÍ
-          </a>
-        @else
-          <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow slideInRight btn" data-wow-duration="1s"data-wow-delay="0.5s">
-            <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
-          </a>
-        @endif
-      </div>
-    </div>
-
-</div>
-  
-  
-
-
-
-  
 </section>
 
-<!-- Dinámica del concurso -->
-<div id="dinamica" class="container-fluid dinamica ">
-  <div class="row text-center justify-content-center plecatop">
-    <div class="col-lg-12 col-md-12 my-md-4 py-md-3 my-sm-3">
-      <h1 class="my-md-0">DINÁMICA DEL CONCURSO</h1>
-    </div>
-  </div>
-  <div class="row text-center justify-content-center pt-xl-3">
-    <div class="row col-lg-8 justify-content-around">
-      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s">
-        <img src="{{ asset('img/icons/paso1.svg') }}" class="pasos-img  pt-md-2" alt="Paso 1">
-        <h5 class="numeros-pasos">1</h5>
-        <div class="text-center text-responsive my-md-3 py-md-3">
-          <h5 class="no-margin responsive-title mt-md-2">COMPRA PRODUCTOSMONTACK</h5>
-          <!-- <h6 class="no-margin blanco responsive-title">CUALQUIER PRODUCTO TOTAL TECH® O DE LA MARCA CEYS.</h6> -->
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="135" data-wow-duration="1s" data-wow-delay="0.5s">
-        <img src="{{ asset('img/icons/paso2.svg') }}" class="pasos-img-2" alt="Paso 2">
-        <h5 class="numeros-pasos">2</h5>
-        <div class="text-center text-responsive my-md-3 py-md-3">
-          <h5 class="no-margin responsive-title">REGISTRA EL MAYOR NÚMERO DE TICKETS</h5>
-          <!-- <h6 class="no-margin blanco responsive-title">TU TICKET VÍA WHATSAPP AL (55) 80 68 10 49 O EN
-            <a href="{{url('/')}}" class="link" target="_blank">TTPUEDECONTODO.COM</a></h6> -->
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-7 wow zoomIn" data-wow-offset="135" data-wow-duration="1s" data-wow-delay="0.5s">
-        <img src="{{ asset('img/icons/paso3.svg') }}" class="pasos-img bicicleta" alt="Paso 3">
-        <h5 class="numeros-pasos">3</h5>
-        <div class="text-center text-responsive my-md-3 py-md-3">
-          <h5 class="no-margin responsive-title">GANA SCOOTERS ELÉCTRICOS CADA SEMANA</h5>
-          <!-- <h6 class="no-margin blanco responsive-title responsive-title">UNA BICICLETA CADA DÍA.</h6> -->
-        </div>
+<section>
 
-      </div>
-    </div>
-  </div>
-  <div class="row text-center justify-content-center">
-    <div class="col-lg-8 col-md-12 mt-5 mb-sm-5 pb-md-4">
-      <h6 class="blanco mascompras">MIENTRAS MÁS COMPRAS, MÁS OPORTUNIDADES TIENES DE GANAR.</h6>
-      <h4 class="recuerda">¡RECUERDA QUE TODAS LAS COMPRAS DE LA SEMANA PARTICIPAN!</h4>
-    </div>
-  </div>
-</div>
-<!-- Fin Dinámica del concurso -->
+  @include('components.dinamica')
 
-<!-- Establecimientos Participantes -->
-<div class="participantes">
-<div class="container pt-5 pb-5 participantes">
-  <div class="row mx-0">
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 premio establecimientos mx-0">
-      <div class="col-12">
-        <h2 class="azul participantes">ESTABLECIMIENTOS PARTICIPANTES</h2>
-      </div>
-      <div class="col-6 my-md-4 py-md-3">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s"
-          src="{{ asset('img/logos/walmart.png') }}" alt="Walmart">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.6s"
-          src="{{ asset('img/logos/lacomer.png') }}" alt="La Comer">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.7s"
-          src="{{ asset('img/logos/heb.png') }}" alt="HEB">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
-          src="{{ asset('img/logos/homedepot.png') }}" alt="HomeDepot">
-        <!-- <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
-          src="{{ asset('img/logos/bodega-aurrera.png') }}" alt="Bodega"> -->
-      </div>
-      <div class="col-6 my-md-4 py-md-3">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s"
-          src="{{ asset('img/logos/soriana.png') }}" alt="Soriana">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.6s"
-          src="{{ asset('img/logos/casacravioto.png') }}" alt="Casa Cravioto">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.7s"
-          src="{{ asset('img/logos/lowes.png') }}" alt="Lowes">
-        <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
-          src="{{ asset('img/logos/chedraui.png') }}" alt="Chedrahui">
-        <!-- <img class="tiendas-img wow fadeInDown my-3" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.8s"
-          src="{{ asset('img/logos/sodimac.png') }}" alt="Sodimac"> -->
+</section>
 
-      </div>
-      <!-- <div class="col-12 mt-3 my-md-4">
-        <h5 class="azul">¡Y MUCHAS MÁS!</h5>
-      </div> -->
-    </div>
-    <div class="row text-center col-lg-6 col-sm-12 mt-4 justify-content-center establecimientos mx-0 px-0">
-      <div class="col-12">
-        <h2 class="azul">PREMIO</h2>
-      </div>
-      <div class="col-lg-11 my-5">
-        <img class="img-fluid wow zoomIn w-50" data-wow-offset="130" data-wow-duration="1s" data-wow-delay="0.5s"
-          src="{{ asset('img/images/razor-premio.png') }}" alt="scooter-premio">
-        <h6 class="mt-3 gris">¡GANA UN SCOOTER ELÉCTRICO!</h6>
-      </div>
-      <div class="col-12 px-0">
-        @if (Auth::check())
-        <a href="{{ url('/ticket') }}" class="btn-call-to-action text-center wow zoomIn btn" data-wow-duration="1s"
-          data-wow-delay="0.5s">
-          <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
-        </a>
-        @else
-        <a href="{{ url('/login') }}" class="btn-call-to-action text-center wow zoomIn btn" data-wow-duration="1s"
-          data-wow-delay="0.5s">
-          <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
-        </a>
-        @endif
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Fin Establecimientos Participantes -->
+<section class="participantes">
 
-<!-- Ganadores -->
-<div class="container-fluid ganadores" id="ganadores">
-  <div class="row text-center justify-content-center">
-    
-    <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
-      <h1 class="ganadores_title">Ganadores</h1>
-    </div>
-    <div class="col-10  mt-2">
-      <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="semana1-tab" data-scroll-ignore data-toggle="tab" href="#semana1" role="tab"
-            aria-controls="semana1" aria-selected="true">SEMANA 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana2-tab" data-scroll-ignore data-toggle="tab" href="#semana2" role="tab"
-            aria-controls="semana2" aria-selected="false">SEMANA 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana3-tab" data-scroll-ignore data-toggle="tab" href="#semana3" role="tab"
-            aria-controls="semana3" aria-selected="false">SEMANA 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana4-tab" data-scroll-ignore data-toggle="tab" href="#semana4" role="tab"
-            aria-controls="semana4" aria-selected="false">SEMANA 4</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana5-tab" data-scroll-ignore data-toggle="tab" href="#semana5" role="tab"
-            aria-controls="semana5" aria-selected="false">SEMANA 5</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana6-tab" data-scroll-ignore data-toggle="tab" href="#semana6" role="tab"
-            aria-controls="semana6" aria-selected="false">SEMANA 6</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana7" role="tab"
-            aria-controls="semana7" aria-selected="false">SEMANA 7</a>
-        </li>
+  @include('components.participantes')
 
-      </ul>
-      <div class="tab-content" id="ganadoresTabContent">
-        @for ($i=1; $i <= 7; $i++) <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }"
-          id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
-          <div class="row justify-content-center">
-            <div class="col-12 content-table">
-              <table class="table table-borderless table-responsive table-ganadores-home justify-content-center">
-                <thead>
-                  <tr>
-                    <th scope="col" width="25%">FECHA</th>
-                    <th scope="col" width="25%">NOMBRE</th>
-                    <th scope="col" width="25%">TIENDA</th>
-                    <th scope="col" width="25%">PREMIO</th>
-                  </tr>
-                </thead>
-                <tbody class="tabla-resp">
-                  @php
-                  $j = 0
-                  @endphp
-                  @foreach ($ganadores as $ganador)
-                  @if ($ganador->id_semana == $i)
-                  <tr>
-                    <td>{{$ganador->dia}}</td>
-                    <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
-                    <td>{{ $ganador['user']->tickets[0]->establecimiento->nombre}}</td>
-                    <td>{{ $ganador['premio']->nombre }}</td>
-                  </tr>
-                  @php
-                  $j++
-                  @endphp
-                  @endif
-                  @endforeach
-                </tbody>
-              </table>
-              @if ($j == 0)
-              <h2 class="azul">No hay ganadores</h2>
-              @endif
-            </div>
-          </div>
-      </div>
-      @endfor
-    </div>
-  </div>
-</div>
-</div>
-<!-- Fin Ganadores -->
+</section>
+
+<section id="ganadores">
+
+  @include('components.ganadores')
+
+</section>
+
 
 @endsection

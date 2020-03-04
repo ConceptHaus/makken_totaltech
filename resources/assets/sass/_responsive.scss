@@ -9,25 +9,7 @@
     width: calc(100vw + 50px) !important;
   }
 
-  .container-button-participa {
-    .btn-call-to-action {
 
-      margin-top: 500px !important;
-    }
-  }
-
-  .btn-call-to-action {
-
-    span {
-      font-size: 55px !important;
-
-    }
-  }
-
-  .img-silicon {
-    width: 700px !important;
-    bottom: 16px !important;
-  }
 
  
   .img-footer {
@@ -45,27 +27,6 @@
     width: calc(100vw + 50px) !important;
   }
 
-  .container-button-participa {
-    .btn-call-to-action {
-
-      margin-top: 400px !important;
-    }
-  }
-
-  .btn-call-to-action {
-
-    span {
-      font-size: 50px !important;
-
-    }
-  }
-
-  .img-silicon {
-    width: 600px !important;
-    bottom: 2px !important;
-  }
-
-
 
 }
 @media screen and (max-width: 1680px) {
@@ -78,22 +39,7 @@
 
 
 
-  .container-button-participa {
-    .btn-call-to-action {
 
-      margin-top:90px !important;
-    }
-  }
-
-  .img-silicon {
-    // width: 500px !important;
-    bottom: 2px !important;
-
-  }
-  .scooter {
-    width: 75%!important;
- 
-}
 
  
   #ganadores {
@@ -124,19 +70,7 @@
     }
   }
 
-  h5,
-  .h5 {
-    &.responsive-title {
-      font-size: 18px !important;
-    }
-  }
-
-  h6,
-  .h6 {
-    &.responsive-title {
-      font-size: 11px !important;
-    }
-  }
+  
 
   .navbar-brand-home {
     width: 50% !important;
@@ -158,22 +92,7 @@
     width: 50% !important;
   }
 
-  .container-button-participa {
-    .btn-call-to-action {
-
-      margin-top: 290px !important;
-    }
-  }
-
-  .btn-call-to-action {
-
-
-    span {
-      font-size: 35px !important;
-
-    }
-
-  }
+  
 
   .navbar-resp {
     max-width: 40% !important;
@@ -229,20 +148,7 @@
     background-position-y: bottom !important;
     background-size: 600%
   }
-
-  .container-button-participa {
-    .btn-call-to-action {
-
-      margin-top: 185px !important;
-    }
-  }
-
-  .btn-call-to-action {
-
-    span {
-      font-size: 30px !important;
-    }
-  }
+  
 
   .BotonesFooter {
     visibility: visible !important;
@@ -346,9 +252,6 @@
     }
   }
 
-  .text-responsive {
-    text-align: center !important;
-  }
 
   .tiendas-img {
     width: 100% !important;
@@ -392,9 +295,7 @@
     margin-bottom: 0;
   }
 
-  .establecimientos {
-    padding-right: 0;
-  }
+
 
   #ganadores {
     .nav-tabs {
@@ -443,12 +344,7 @@
     background: #0033a1 !important;
   }
 
-  .container-button-participa {
-    .btn-call-to-action {
-
-      margin-top: 150px !important;
-    }
-  }
+  
 
 
   .text-md-right {
@@ -596,16 +492,18 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container-button-participa {
-    .btn-call-to-action {
-      margin-top: 0px !important;
+  .header-home{
+    .btn-call-to-action{
+      bottom: 5%;
     }
-
+    .scooter{
+      width: 150px;
+    }
   }
 
-  .btn-call-to-action span {
-    font-size: 20px !important;
-  }
+  
+
+  
 
   .header-home .btn-call-to-action {
     padding-left: 15px !important;
@@ -659,7 +557,4 @@
     padding-left: 0 !important;
   }
 
-  .participantes {
-    font-size: 20px;
-  }
 }

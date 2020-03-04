@@ -1,0 +1,30 @@
+.participantes {
+    background-color: $gris_claro;
+    &__block{
+        border-right: 3px solid $azul;
+        @include down-screen(mobile-big){
+            border-right: none;
+        }
+    }
+    &__h2 {
+        color: $azul;
+        @include fluid-type($min-vw, $max-vw, 20px, 35px);
+    }
+
+    &__h6 {
+        color: $gris_oscuro;
+        @include fluid-type($min-vw, $max-vw, 18px, 28px);
+    }
+
+    &__scooter{
+        width: 250px;
+        @include down-screen(tablet){
+            width: 180px;
+        }
+    }
+    &__tiendas-img{
+        width: 95%;
+    }
+
+    
+}

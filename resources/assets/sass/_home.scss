@@ -1,140 +1,15 @@
 // Estilos de Home
-.header-home {
-  background: url('../img/images/background-home.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
 
-  .img-pleca,
-  // .img-silicon,
-  .img-logo-ceys,
-  .texto-home {
-    position: absolute;
-  }
-
-  .img-pleca {
-    bottom: -50px;
-    right: -50px;
-    width: 2000px;
-  }
-
-  .img-silicon {
-    top: 100px !important;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    position: relative;
-    display: flex;
-    bottom: 0;
-  }
-  .ceys-montack {
-    width: 75%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 160px;
-}
-.ceys-productos {
-  margin-top: 195px;
-  width: 100%;
-  margin-left: 0px;
-  margin-right: auto;
-  display: flex;
-}
-.scooter {
-  width: 62%;
-  display: flex;
-  margin-left: 0%;
-  margin-right: auto;
-  position: relative;
-  top: -100px;
-}
-
- .montate {
-  width: 50%;
-  margin-left: auto;
-  display: flex;
-  margin-right: 10%;
-  top: 150px;
-  position: relative;
-}
-//Boton para header
-  .btn-call-to-action {
-    background: #0033a1;
-    color: #fff;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: 13%;
-    border-radius: 8px;
-    padding: 15px 40px;
-    text-decoration: none;
-    text-shadow: 4px 5px 9px rgba(1, 1, 1, 0.5);
-    transition: all .2s;
-  
-
-    span {
-      color: #F7E300;
-      font-size: 35px;
-      display: block;
-    }
-
-    &:hover, &:focus {
-
-      letter-spacing: 3px;
-     
-    }
-  }
-
-  .texto-home {
-  
-
-    h1 {
-      font-size: 60px;
-    }
-
-    h3 {
-      font-size: 30px;
-    }
-  }
-}
 
 .fila-header {
   height: 100%;
 }
 
-.dinamica {
-  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
 
-
-}
-.recuerda{
-  font-style: normal;
-}
-.link{
- color: $amarillo;
+.link {
+  color: $amarillo;
 }
 
-.pasos-img {
-  width: 40px;
-}
-.pasos-img-2{
-  width: 60px!important;
-  margin-top: 1rem;
-}
-
-.tiendas-img {
-  width: 80%;
-}
-.participantes{
-  background-color: #ebebeb;
-}
 
 .ganadores {
   background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
@@ -149,8 +24,8 @@
     margin-top: 30px;
 
     .nav-link {
-      background-color: #efefef;
-      border-color: #efefef;
+      background-color: $gris_claro;
+      border-color: $gris_claro;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       color: $azul;
@@ -167,85 +42,31 @@
       }
     }
   }
- 
+
 }
-.mascompras{
+
+.ganadores_title {
+
+  text-shadow: 5px 5px 6px $azul;
+  color: $amarillo;
+  font-family: 'Helvetica Neue';
   font-style: normal;
 
-
-}
-.ganadores_title{
-  
-    text-shadow: 5px 5px 6px #0033a1;
-    color:#f8e24c;
-    font-family: HelveticaNeue;
-    font-style: normal;
-  
-}
-//Botton participa seccion premio
-.btn-call-to-action {
-  bottom: 730px;
-  color: #fff;
-  background-color: #003189;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 1.2;
-  border-radius: 8px;
-  padding: 15px 40px;
-  text-decoration: none;
-  text-shadow: 1px 5px 19px rgba(0,0,0,0.43);
-  transition: all .2s;
-  span {
-    color: #F7E300;
-    font-size: 30px;
-    display: block;
-  }
-  &:hover, &:focus {
-    color: #fff;
-    letter-spacing: 3px;
-  }
 }
 
 
-#dinamica {
-
-  h5, .h5 {
-    &.responsive-title {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-  }
-
-  h6, .h6 {
-    &.responsive-title {
-        font-size: 14px;
-        line-height: 20px;
-    }
-  }
-  h1{
-    font-style: normal;
-    color: white!important;
-  }
-}
-.bicicleta{
-
-  padding-top: 30px;
-
-}
-
-.premio {
-  border-right: 2px solid $gris_claro;
-}
 
 .pointer {
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 
 /* TABLAS */
 .table-ganadores-home {
-  th, td {
+
+  th,
+  td {
     &:nth-of-type(4) {
-      border-right: none!important;
+      border-right: none !important;
     }
   }
 }

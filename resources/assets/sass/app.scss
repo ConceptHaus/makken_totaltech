@@ -12,6 +12,8 @@
 ***
 **/
 
+@import 'mixins/screen';
+@import 'mixins/fluid_font';
 /**
 *** 1.- Fonts
 **/
@@ -27,6 +29,11 @@
 **/
 @import "~bootstrap/scss/bootstrap";
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Componentes
+@import 'components/hero';
+@import 'components/dinamica';
+@import 'components/participantes';
 
 /**
 *** 4.- Estilos Generales
@@ -46,7 +53,7 @@
 /**
 *** 7.- Tipografía Personalizada
 **/
-@import "typography";
+@import "base";
 
 /**
 *** 8.- Responsive

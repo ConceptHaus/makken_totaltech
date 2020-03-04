@@ -1,3 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    color: $amarillo;
+
+    &.blanco {
+        color: white;
+    }
+
+    &.azul {
+        color: $azul_2;
+    }
+
+    &.azul-dos {
+        color: $azul;
+    }
+
+    &.gris {
+        color: $gris_oscuro;
+    }
+
+    &.normal {
+        font-style: normal;
+    }
+
+    &.no-margin {
+        margin: 0;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+footer {
+    p {
+        color: white;
+        font-weight: 100;
+        font-size: 0.8rem;
+
+        &.no-margin {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: inherit;
+            }
+
+            &.mail-footer {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.modal-link {
+    color: $text-color !important;
+}
+
+b,
+strong {
+    font-weight: 800;
+}
+
 ::placeholder {
     color: $gris !important;
 }
@@ -5,11 +78,14 @@
 :focus {
     outline: 0px !important;
 }
-input{
+
+input {
     border-radius: 5px !important;
 }
+
 a {
     text-decoration: none !important;
+
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -25,9 +101,10 @@ html {
     height: 100%;
 }
 
-.disabled{
+.disabled {
     cursor: not-allowed;
 }
+
 .body-bg {
     background: url('../img/images/background-home.png') no-repeat;
     background-size: cover;
@@ -38,7 +115,8 @@ html {
 .no-border {
     border: none !important;
 }
-.img-silicon-login{
+
+.img-silicon-login {
 
     top: 100px !important;
     margin-left: auto;
@@ -48,16 +126,19 @@ html {
     display: flex;
     bottom: 0;
 }
+
 .scooter-login {
     width: 125%;
     right: 30%;
     position: relative;
-    
+
 }
-.ceys-montack-login{
+
+.ceys-montack-login {
     width: 80%;
-    
+
 }
+
 // Estilos input
 .form-control {
     border: none;
@@ -70,39 +151,42 @@ html {
 
 
 #formulario-ticket {
-  .form-group {
-    margin-bottom: 2rem !important;
-  }
-  p {
-    font-size: 14px;
-    margin-bottom: 25px !important;
-  }
-  .form-control {
-    background: transparent;
-    border-bottom: 2px solid white;
-    height: 30px;
-    color: white !important;
-    font-size: 13px;
-    font-weight: 100;
-
-    &.form-check-input {
-      width: 6%;
+    .form-group {
+        margin-bottom: 2rem !important;
     }
-  }
-  .form-check-label {
-    color: white;
-    text-align: left;
-    font-size: 12px;
-  }
 
-  small {
-    color: white;
-    font-size: 70%;
-  }
+    p {
+        font-size: 14px;
+        margin-bottom: 25px !important;
+    }
+
+    .form-control {
+        background: transparent;
+        border-bottom: 2px solid white;
+        height: 30px;
+        color: white !important;
+        font-size: 13px;
+        font-weight: 100;
+
+        &.form-check-input {
+            width: 6%;
+        }
+    }
+
+    .form-check-label {
+        color: white;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    small {
+        color: white;
+        font-size: 70%;
+    }
 }
 
 #app {
-    height: 100vh;
+    //height: 100vh;
 }
 
 // Navbar
@@ -158,7 +242,7 @@ html {
     background: transparent;
     border: none;
     font-size: 1.8rem;
-  
+
 
     .icon-bar {
         background: $amarillo;
@@ -167,12 +251,13 @@ html {
 
 .navbar-brand {
     img {
-        width: 45%!important;
+        width: 45% !important;
         margin-left: 15px;
     }
 }
-.nav-item{
-text-shadow: #0033a1;
+
+.nav-item {
+    text-shadow: #0033a1;
 
 }
 
@@ -186,10 +271,11 @@ text-shadow: #0033a1;
 .navbar-collapse {
     box-shadow: none;
 }
+
 li.active {
     text-decoration: underline;
-    color:$amarillo;
-  }
+    color: $amarillo;
+}
 
 // Botones
 .btn-submit {
@@ -204,41 +290,44 @@ li.active {
 }
 
 .btn-submit-upload {
-  background: #F7E300;
-  border-radius: 10px;
-  color: #0033a1 !important;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 8px 12px;
-  width: auto;
-  text-align: center;
-  float: right;
-  cursor: pointer;
-  font-family: Helvetica!important;
-  width: 200px;
-  margin: auto;
+    background: #F7E300;
+    border-radius: 10px;
+    color: #0033a1 !important;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    width: auto;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    font-family: Helvetica !important;
+    width: 200px;
+    margin: auto;
 
 }
-.ticketupload{
+
+.ticketupload {
     display: flex;
 
 }
-.subetuticket{
+
+.subetuticket {
     color: #0033a1 !important;
-    font-family: Helvetica!important; 
+    font-family: Helvetica !important;
     font-size: 18px;
-    font-style: normal!important;
+    font-style: normal !important;
 
 }
-.formatos{
-  font-size: 17px;
-  font-weight: bold;
+
+.formatos {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 // Tablas
 table {
     th {
-        border-right: 1px solid $azul_3!important;
+        border-right: 1px solid $azul_3 !important;
         color: $azul;
         font-size: 18px;
         font-weight: 600;
@@ -247,7 +336,7 @@ table {
 
     tr {
         td {
-            border-right: 1px solid $azul_3!important;
+            border-right: 1px solid $azul_3 !important;
             padding: 2rem;
         }
     }
@@ -285,59 +374,61 @@ footer {
 }
 
 .shadow-menu {
-  box-shadow: 0px 0px 36px 0px black;
+    box-shadow: 0px 0px 36px 0px black;
 }
 
 .dropdown-menu {
-  background: $azul;
-  border: 0;
+    background: $azul;
+    border: 0;
 }
 
 .header-home {
-    
-  &.header-user {
-    display:flex!important;
-   
-    
-  }
+
+    &.header-user {
+        display: flex !important;
+
+
+    }
 }
-.mundo-link{
-    
-    &:hover{
-        text-decoration: underline!important;
+
+.mundo-link {
+
+    &:hover {
+        text-decoration: underline !important;
         color: $amarillo;
     }
 }
 
 .modal-content {
-  background-color: #ffffffe3;
-  border: 0;
-  border-radius: 0;
-  min-height: 620px;
+    background-color: #ffffffe3;
+    border: 0;
+    border-radius: 0;
+    min-height: 620px;
 }
 
 .contenido-modal {
-  position: absolute;
-  left: 29%;
-  top: 40%;
+    position: absolute;
+    left: 29%;
+    top: 40%;
 
-  h1 ,.h1 {
-    color: white;
-    font-style: inherit;
-  }
+    h1,
+    .h1 {
+        color: white;
+        font-style: inherit;
+    }
 }
 
-   
+
 
 
 
 // Estilos de errores
 
 .alert-warning {
-  color: $amarillo;
-  font-size: 11px;
-  background-color: transparent;
-  border-color: transparent;
+    color: $amarillo;
+    font-size: 11px;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .error-form {
@@ -357,27 +448,27 @@ footer {
 }
 
 .custom-margin2 {
-  margin-left: 20%;
+    margin-left: 20%;
 }
 
 .inputfile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  background-color: transparent;
-  color: transparent;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .label-info {
-  color: white;
-  overflow: hidden;
-  font-size: 13px;
-  cursor: pointer;
+    color: white;
+    overflow: hidden;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .img-establecimiento {
@@ -406,9 +497,11 @@ footer {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
 .contact-border {
     border-right: 2px solid #fff;
 }
+
 .btn1 {
     color: white !important;
     padding: 10px;
@@ -421,22 +514,69 @@ footer {
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
-.content-table{
+.content-table {
     overflow: scroll;
 }
-.navbar-resp, a.navbar-brand{
-    max-width: 40%!important;
-} 
-//terminos y condiciones add ticket
-.terminosaddticket{
-    color: $amarillo!important;
-    :hover{
-        color:$blanco;
-        text-decoration: underline!important;
 
+.navbar-resp,
+a.navbar-brand {
+    max-width: 40% !important;
+}
+
+//terminos y condiciones add ticket
+.terminosaddticket {
+    color: $amarillo !important;
+
+    :hover {
+        color: $blanco;
+        text-decoration: underline !important;
+
+    }
+}
+
+.btn-call-to-action {
+    background: $azul_2;
+    color: $blanco;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 30px;
+    box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
+    padding: 10px 0px;
+    text-decoration: none;
+    transition: all 0.2s;
+    height: 100px;
+    @include fluid-type($min-vw, $max-vw, 10px, 13px);
+    >span {
+        color: $amarillo;
+        display: block;
+        @include fluid-type($min-vw, $max-vw, 18px, 30px);
+    }
+
+    &:hover,
+    &:focus {
+        border: 2px solid $amarillo;
+
+        >span {
+            color: $blanco;
+        }
+    }
+    @include down-screen(desktop-big){
+        height: 70px;
+    }
+    @include down-screen(landscape) {
+        height: 70px;
+    }
+
+    @include down-screen(tablet) {
+        height: 60px;
+    }
+
+    @include down-screen(mobile-big) {
+        
+        height: 60px;
     }
 }

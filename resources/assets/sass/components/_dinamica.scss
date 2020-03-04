@@ -1,0 +1,33 @@
+
+.dinamica {
+    font-style: normal;
+    background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
+
+    &__h1 {
+        color: $blanco;
+        @include fluid-type($min-vw, $max-vw, 20px, 35px);
+    }
+
+    &__h4 {
+        @include fluid-type($min-vw, $max-vw, 11px, 20px);
+    }
+
+    &__h5 {
+        @include fluid-type($min-vw, $max-vw, 18px, 23px);
+    }
+
+    &__h6 {
+        @include fluid-type($min-vw, $max-vw, 9px, 15px);
+        color: $blanco;
+    }
+
+    &__pasos-img {
+        display: inline-block;
+        width: 50px;
+    }
+
+    &__pasos-number {
+        width: 35px;
+    }
+
+}

@@ -1,0 +1,132 @@
+.hero {
+    background: url('../img/images/background-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+
+    &__img-silicon {
+        display: block;
+        bottom: 10%;
+        left: 10%;
+        width: 130px;
+
+        @include down-screen(landscape) {
+            left: 5%;
+        }
+    }
+
+    &__ceys-montack {
+        display: block;
+        left: 10%;
+        top: 20%;
+        width: 160px;
+
+        @include down-screen(landscape) {
+            left: 5%;
+        }
+    }
+
+    &__ceys-productos {
+        display: block;
+        left: 30%;
+        top: 20%;
+        width: 280px;
+
+        @include down-screen(landscape) {
+            width: 250px;
+            left: 25%;
+        }
+
+    }
+
+    &__scooter {
+        display: block;
+        right: 20%;
+        top: 15%;
+        width: 300px;
+
+        @include down-screen(landscape) {
+            width: 280px;
+        }
+
+        @include down-screen(tablet) {
+            right: 30%;
+            top: 25%;
+            width: 250px;
+        }
+
+        @include down-screen(mobile-big) {
+            right: 40%;
+            top: 20%;
+            width: 200px;
+        }
+    }
+
+    &__montate {
+        width: 300px;
+        right: 5%;
+        top: 15%;
+
+        @include down-screen(landscape) {
+            width: 250px;
+        }
+
+        @include down-screen(tablet) {
+            top: 25%;
+            width: 200px;
+        }
+
+        @include down-screen(mobile-big) {
+            top: 20%;
+            width: 200px;
+        }
+    }
+
+    //Boton para header
+    &__btn-call-to-action {
+        background: $azul-2;
+        color: $blanco;
+        font-weight: 600;
+        line-height: 1.2;
+        border-radius: 30px;
+        padding: 10px 10px;
+        text-decoration: none;
+        box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
+        transition: all 0.2s;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        height: 100px;
+        @include fluid-type($min-vw, $max-vw, 15px, 20px);
+        >span {
+            color: $amarillo;
+            @include fluid-type($min-vw, $max-vw, 20px, 40px);
+            display: block;
+        }
+
+        &:hover,
+        &:focus {
+            border: 2px solid $amarillo;
+            >span {
+                color: $blanco;
+            }
+        }
+
+        @include down-screen(landscape) {
+            height: 80px;
+        }
+
+        @include down-screen(tablet) {
+            top: 50%;
+            height: 75px;
+        }
+
+        @include down-screen(mobile-big) {
+            height: 70px;
+            top: 80%;
+            right: 20%;
+        }
+    }
+}
