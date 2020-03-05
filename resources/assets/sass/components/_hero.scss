@@ -110,7 +110,7 @@
         &:hover,
         &:focus {
             border: 2px solid $amarillo;
-
+            color: $amarillo;
             >span {
                 color: $blanco;
             }

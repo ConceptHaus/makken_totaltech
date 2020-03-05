@@ -2,29 +2,29 @@
     &__scooter{
         z-index: -3;
         position: absolute;
-        width: 400px;
+        width: 350px;
         right: 0%;
         @include down-screen(desktop-big){
-            width: 550px;
+            width: 350px;
         }
         @include down-screen(landscape){
-            width: 400px;
+            width: 300px;
         }
         @include down-screen(tablet){
             top: 20%;
-            width: 300px;
+            width: 200px;
         }
         @include down-screen(mobile-big){
             top: 30%;
-            width: 400px;
+            width: 300px;
         }
     }
     &__ceys-montack{
         position: absolute;
-        width: 280px;
+        width: 200px;
         left: 5%;
         @include down-screen(desktop-big){
-            width: 320px;
+            width: 200px;
         }
         @include down-screen(landscape){
             width: 250px;
@@ -41,14 +41,14 @@
     }
     &__img-silicon{
         position: absolute;
-        width: 200px;
+        width: 150px;
         top: 50%;
-        left: 10%;
+        left: 5%;
         @include down-screen(desktop-big){
-            width: 280px;
+            width: 150px;
         }
         @include down-screen(landscape){
-            width: 200px;
+            width: 150px;
         }
         @include down-screen(tablet){
             width: 150px;

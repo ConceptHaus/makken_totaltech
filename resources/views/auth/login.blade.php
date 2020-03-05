@@ -6,15 +6,15 @@ $date = new DateTime('2019-10-21');
 $now = new DateTime();
 @endphp
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
-    <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter">
-    <img class="login__ceys-montack mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
+    <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+    <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
-    <img class="login__img-silicon wow " data-wow-duration="1s" data-wow-delay="0.5s"
+    <img class="login__img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
 
-    <div class="row justify-content-center my-5">
-        <div class="col-xl-8 col-lg-6 col-md-8 col-10 pt-md-5 px-md-5">
-            <div class="panel my-4">
+    <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-10">
+            <div class="panel">
                 <div class="panel-body text-center">
                     <form class="form-horizontal">
                         {{ csrf_field() }}

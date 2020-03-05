@@ -9876,6 +9876,7 @@ h3 {
 }
 .hero__btn-call-to-action:hover, .hero__btn-call-to-action:focus {
   border: 2px solid #f2e524;
+  color: #f2e524;
 }
 .hero__btn-call-to-action:hover > span, .hero__btn-call-to-action:focus > span {
   color: #FFF;
@@ -10613,39 +10614,39 @@ a.navbar-brand {
 .login__scooter {
   z-index: -3;
   position: absolute;
-  width: 400px;
+  width: 350px;
   right: 0%;
 }
 @media (max-width: 1440px) {
   .login__scooter {
-    width: 550px;
+    width: 350px;
   }
 }
 @media (max-width: 1024px) {
   .login__scooter {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (max-width: 769px) {
   .login__scooter {
     top: 20%;
-    width: 300px;
+    width: 200px;
   }
 }
 @media (max-width: 640px) {
   .login__scooter {
     top: 30%;
-    width: 400px;
+    width: 300px;
   }
 }
 .login__ceys-montack {
   position: absolute;
-  width: 280px;
+  width: 200px;
   left: 5%;
 }
 @media (max-width: 1440px) {
   .login__ceys-montack {
-    width: 320px;
+    width: 200px;
   }
 }
 @media (max-width: 1024px) {
@@ -10668,18 +10669,18 @@ a.navbar-brand {
 }
 .login__img-silicon {
   position: absolute;
-  width: 200px;
+  width: 150px;
   top: 50%;
-  left: 10%;
+  left: 5%;
 }
 @media (max-width: 1440px) {
   .login__img-silicon {
-    width: 280px;
+    width: 150px;
   }
 }
 @media (max-width: 1024px) {
   .login__img-silicon {
-    width: 200px;
+    width: 150px;
   }
 }
 @media (max-width: 769px) {
