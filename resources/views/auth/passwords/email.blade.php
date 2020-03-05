@@ -2,8 +2,8 @@
 
 @section('content')
 <div id="pageStyle" class="container" ng-controller="ForgotPasswordCtrl">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
+    <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel panel-forget">
                 <div class="panel-body text-center">
                     @if (session('status'))
