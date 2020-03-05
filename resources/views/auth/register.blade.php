@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="login container-fluid" ng-controller="userCtrl">
+<div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
     <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter">
     <img class="login__ceys-montack mx-auto d-flex wow " data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
