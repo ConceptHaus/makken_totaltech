@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="¡Compra y gana una bicicleta con TotalTech!" />
+  <meta name="description" content="¡Compra y gana un scooter con TotalTech!" />
   <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="" />
