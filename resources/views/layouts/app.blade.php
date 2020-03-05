@@ -9,7 +9,7 @@
   <!-- Facebook -->
   <meta property="og:title" content="" />
   <meta property="og:image" content="{{asset('img/logos/meta-totaltech.jpg')}}" />
-  <meta property="og:description" content="¡Compra y gana una bicicleta con TotalTech!" />
+  <meta property="og:description" content="¡Compra y gana un scooter con TotalTech!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://beta.ttpuedecontodo.com" />
   <!--<meta property="og:site_name" content="" />-->
