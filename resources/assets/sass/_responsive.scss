@@ -11,10 +11,10 @@
 
 
 
- 
+
   .img-footer {
-    width: 40%!important;
-}
+    width: 40% !important;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -29,10 +29,12 @@
 
 
 }
+
 @media screen and (max-width: 1680px) {
   .img-footer {
-    width: 45%!important;
-}
+    width: 45% !important;
+  }
+
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -41,7 +43,7 @@
 
 
 
- 
+
   #ganadores {
     .nav-tabs {
       .nav-link {
@@ -70,12 +72,13 @@
     }
   }
 
-  
+
 
   .navbar-brand-home {
     width: 50% !important;
     margin-left: 40px !important;
   }
+
   #ganadores {
     .nav-tabs {
       .nav-link {
@@ -92,7 +95,7 @@
     width: 50% !important;
   }
 
-  
+
 
   .navbar-resp {
     max-width: 40% !important;
@@ -148,7 +151,7 @@
     background-position-y: bottom !important;
     background-size: 600%
   }
-  
+
 
   .BotonesFooter {
     visibility: visible !important;
@@ -227,9 +230,10 @@
 
   #ganadores {
     .nav-tabs {
-      .nav-link{
+      .nav-link {
         font-size: 20px !important;
       }
+
       .nav-item {
         margin-bottom: 10px;
         width: 100%;
@@ -241,7 +245,7 @@
     }
 
     table {
-      
+
       th {
         width: 25%;
       }
@@ -262,7 +266,7 @@
   }
 
   .header-home {
-    height: 500px;
+    height: 300px;
 
     .img-pleca {
       bottom: -65px;
@@ -274,7 +278,7 @@
       bottom: 20px !important;
     }
 
-    
+
   }
 
   .premio {
@@ -299,9 +303,10 @@
 
   #ganadores {
     .nav-tabs {
-      .nav-link{
+      .nav-link {
         font-size: 20px !important;
       }
+
       .nav-item {
         margin-bottom: 10px;
         width: 100%;
@@ -313,7 +318,7 @@
     }
 
     table {
-      
+
       th {
         width: 25%;
       }
@@ -324,19 +329,19 @@
     }
   }
 
-    .content-table {
-      max-width: 100%;
+  .content-table {
+    max-width: 100%;
+  }
+
+  table {
+    th {
+      font-size: 15px;
     }
 
-    table {
-      th {
-        font-size: 15px;
-      }
-
-      td {
-        padding: 1.5rem;
-      }
+    td {
+      padding: 1.5rem;
     }
+  }
 
 
   .dinamica {
@@ -344,7 +349,7 @@
     background: #0033a1 !important;
   }
 
-  
+
 
 
   .text-md-right {
@@ -409,7 +414,7 @@
     display: block;
   }
 
-  #pageSytyle {
+  #pageStyle {
     padding-top: 35%;
 
     .panel {
@@ -419,9 +424,10 @@
 
   #ganadores {
     .nav-tabs {
-      .nav-link{
+      .nav-link {
         font-size: 20px !important;
       }
+
       .nav-item {
         margin-bottom: 10px;
         width: 100%;
@@ -433,7 +439,7 @@
     }
 
     table {
-      
+
       th {
         width: 25%;
       }
@@ -463,7 +469,7 @@
       display: none;
     }
 
-    
+
   }
 
   table {
@@ -477,14 +483,16 @@
 
     background: #0033a1;
   }
-    // Navbar
-    .navbar {
-      .navbar-nav {
-        .nav-link {
-          font-size: 18px;
-        }
+
+  // Navbar
+  .navbar {
+    .navbar-nav {
+      .nav-link {
+        font-size: 18px;
       }
     }
+  }
+
   .navbar-brand img {
     width: 200px !important;
   }
@@ -492,18 +500,19 @@
 }
 
 @media screen and (max-width: 480px) {
-  .header-home{
-    .btn-call-to-action{
+  .header-home {
+    .btn-call-to-action {
       bottom: 5%;
     }
-    .scooter{
+
+    .scooter {
       width: 150px;
     }
   }
 
-  
 
-  
+
+
 
   .header-home .btn-call-to-action {
     padding-left: 15px !important;

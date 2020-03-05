@@ -10610,18 +10610,103 @@ a.navbar-brand {
 /**
 *** 5.- Estilos Login
 **/
-#pageSytyle {
-  padding-top: 9%;
-  padding-bottom: 7%;
+.login__scooter {
+  z-index: -3;
+  position: absolute;
+  width: 400px;
+  right: 0%;
 }
-#pageSytyle a, #pageSytyle p {
+@media (max-width: 1440px) {
+  .login__scooter {
+    width: 550px;
+  }
+}
+@media (max-width: 1024px) {
+  .login__scooter {
+    width: 400px;
+  }
+}
+@media (max-width: 769px) {
+  .login__scooter {
+    top: 20%;
+    width: 300px;
+  }
+}
+@media (max-width: 640px) {
+  .login__scooter {
+    top: 30%;
+    width: 400px;
+  }
+}
+.login__ceys-montack {
+  position: absolute;
+  width: 280px;
+  left: 5%;
+}
+@media (max-width: 1440px) {
+  .login__ceys-montack {
+    width: 320px;
+  }
+}
+@media (max-width: 1024px) {
+  .login__ceys-montack {
+    width: 250px;
+  }
+}
+@media (max-width: 769px) {
+  .login__ceys-montack {
+    top: 10%;
+    width: 200px;
+  }
+}
+@media (max-width: 640px) {
+  .login__ceys-montack {
+    top: 12%;
+    left: 10%;
+    width: 150px;
+  }
+}
+.login__img-silicon {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 10%;
+}
+@media (max-width: 1440px) {
+  .login__img-silicon {
+    width: 280px;
+  }
+}
+@media (max-width: 1024px) {
+  .login__img-silicon {
+    width: 200px;
+  }
+}
+@media (max-width: 769px) {
+  .login__img-silicon {
+    width: 150px;
+  }
+}
+@media (max-width: 640px) {
+  .login__img-silicon {
+    top: 12%;
+    left: 60%;
+    width: 80px;
+  }
+}
+
+#pageStyle {
+  padding-top: 10%;
+  margin-bottom: 10%;
+}
+#pageStyle a, #pageStyle p {
   color: #FFF;
   transition: all 0.5s ease-in-out;
 }
-#pageSytyle a:hover {
+#pageStyle a:hover {
   color: #f2e524;
 }
-#pageSytyle .panel {
+#pageStyle .panel {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 0;
   margin-top: 5%;
@@ -10629,17 +10714,17 @@ a.navbar-brand {
   padding-top: 0% !important;
   border-radius: 5px !important;
 }
-#pageSytyle .panel-register {
+#pageStyle .panel-register {
   padding: 5% 15%;
   padding-top: 5% !important;
   border-radius: 5px !important;
 }
-#pageSytyle .panel-forget {
+#pageStyle .panel-forget {
   padding: 10% 15%;
   padding-top: 10% !important;
   border-radius: 5px !important;
 }
-#pageSytyle h3 {
+#pageStyle h3 {
   color: #FFF;
   font-size: 20px;
   font-weight: 600;
@@ -10647,24 +10732,24 @@ a.navbar-brand {
   font-style: normal;
   padding-top: 45px;
 }
-#pageSytyle p {
+#pageStyle p {
   margin-bottom: 5px;
 }
-#pageSytyle form.form-ajust .btn-submit {
+#pageStyle form.form-ajust .btn-submit {
   margin-top: 20px;
 }
-#pageSytyle .content-actions {
+#pageStyle .content-actions {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#pageSytyle p, #pageSytyle .a-forget-password, #pageSytyle .a-login {
+#pageStyle p, #pageStyle .a-forget-password, #pageStyle .a-login {
   font-weight: bold !important;
   text-align: left;
 }
-#pageSytyle .a-forget-password, #pageSytyle .a-login {
+#pageStyle .a-forget-password, #pageStyle .a-login {
   font-size: 12px;
 }
-#pageSytyle .a-login {
+#pageStyle .a-login {
   position: relative;
   top: 20px;
 }
@@ -10965,7 +11050,7 @@ html {
   }
 
   .header-home {
-    height: 500px;
+    height: 300px;
   }
   .header-home .img-pleca {
     bottom: -65px;
@@ -11078,10 +11163,10 @@ html {
     display: block;
   }
 
-  #pageSytyle {
+  #pageStyle {
     padding-top: 35%;
   }
-  #pageSytyle .panel {
+  #pageStyle .panel {
     padding: 3% 5% !important;
   }
 

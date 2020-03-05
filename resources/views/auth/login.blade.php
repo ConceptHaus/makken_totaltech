@@ -5,21 +5,15 @@
 $date = new DateTime('2019-10-21');
 $now = new DateTime();
 @endphp
-<div id="pageSytyle" class="container-fluid" ng-controller="userCtrl">
+<div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
+    <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+    <img class="login__ceys-montack mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
+    <img class="login__img-silicon wow " data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
 
-
-
-    <div class="row">
-        <div class="col-3 mx-0'">
-
-            <img class="ceys-montack-login mx-auto d-flex wow " data-wow-duration="1s" data-wow-delay="0.5s"
-                src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
-            <img class="img-silicon-login wow " data-wow-duration="1s" data-wow-delay="0.5s"
-                src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
-
-        </div>
-        <div class="col-md-6  pt-md-5 px-md-5">
-
+    <div class="row justify-content-center my-5">
+        <div class="col-xl-8 col-lg-6 col-md-8 col-10 pt-md-5 px-md-5">
             <div class="panel my-4">
                 <div class="panel-body text-center">
                     <form class="form-horizontal">
@@ -58,22 +52,17 @@ $now = new DateTime();
                             </div>
                             <p class="my-3 text-center">¿No tienes cuenta?
                                 <!-- @if($date <= $now)  -->
-                                
+
                                 <a class="registrate" href="{{ route('register') }}">Regístrate.</a>
-                                    <!-- @else -->
-                                    <a class="disabled registrate">Regístrate.</a>
-                                    <!-- @endif -->
+                                <!-- @else -->
+                                <a class="disabled registrate">Regístrate.</a>
+                                <!-- @endif -->
                             </p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    <div class="col-3 d-flex ml-auto">
-        
-            <img class="scooter-login"  src="{{ asset('img/images/razor.png') }}" alt="scooter">
-        
-    </div>
     </div>
 </div>
 @endsection

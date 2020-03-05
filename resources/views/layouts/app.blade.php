@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="¡Compra y gana una bicicleta con TotalTech!"/>
-  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}"/>
+  <meta name="description" content="¡Compra y gana una bicicleta con TotalTech!" />
+  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
   <!-- Facebook -->
-  <meta property="og:title" content=""/>
+  <meta property="og:title" content="" />
   <meta property="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
-  <meta property="og:description" content="¡Compra y gana una bicicleta con TotalTech!"/>   
+  <meta property="og:description" content="¡Compra y gana una bicicleta con TotalTech!" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mundoceys.com" /> 
+  <meta property="og:url" content="https://www.mundoceys.com" />
   <!--<meta property="og:site_name" content="" />-->
 
   <title>Total Tech</title>
@@ -35,76 +35,81 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127968611-1"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-127968611-1');
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-127968611-1');
   </script>
 
 </head>
 @if (Request::path() == '/')
-  <body ng-app="angularApp">
-@else
+
+<body ng-app="angularApp">
+  @else
+
   <body ng-app="angularApp" class="body-bg">
-@endif
-  <!-- Inicio de Menú -->
-  <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
-    {{-- @if (Request::path() !== '/')
-      <a class="navbar-brand navbar-resp" href="{{ url('/') }}">
-    @else
-      <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
     @endif
-      <img class="logo-menu" id="logo-img-resp" src="{{ asset('img/logos/consigue-tu-bicicleta.png') }}">
-    </a> --}}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-      <ul class="navbar-nav">
-        <li id="dinamica-link" class="nav-item">
-          <a id="menu-link" class="nav-link " data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
-        </li>
-        <li id="ganadores-link" class="nav-item">
-          <a id="menus-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
-        </li>
-        @if (Request::path() == 'login')
+    <!-- Inicio de Menú -->
+    <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
+      {{-- @if (Request::path() !== '/')
+      <a class="navbar-brand navbar-resp" href="{{ url('/') }}">
+      @else
+      <a class="navbar-brand navbar-brand-home" href="{{ url('/') }}">
+        @endif
+        <img class="logo-menu" id="logo-img-resp" src="{{ asset('img/logos/consigue-tu-bicicleta.png') }}">
+      </a> --}}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+        <ul class="navbar-nav">
+          <li id="dinamica-link" class="nav-item">
+            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
+          </li>
+          <li id="ganadores-link" class="nav-item">
+            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
+          </li>
+          @if (Request::path() == 'login')
           <li class="nav-item active">
-        @else
+            @else
           <li class="nav-item ">
-        @endif
-        @if (Auth::check())
-          <div class="dropdown nav-link">
-            <a class="dropdown-toggle " data-toggle="dropdown">MI CUENTA</a>
-            <div class="dropdown-menu shadow-menu">
-              <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/ticket') }}">Agregar Ticket</a>
-              <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/home') }}">Mi Cuenta</a>
-              <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/logout') }}">Cerrar Sesión</a>
+            @endif
+            @if (Auth::check())
+            <div class="dropdown nav-link">
+              <a class="dropdown-toggle " data-toggle="dropdown">MI CUENTA</a>
+              <div class="dropdown-menu shadow-menu">
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/ticket') }}">Agregar Ticket</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/home') }}">Mi Cuenta</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/logout') }}">Cerrar Sesión</a>
+              </div>
             </div>
-          </div>
-        @else
-          <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
-        @endif
-        </li>
-      </ul>
+            @else
+            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
+            @endif
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Fin del Menú -->
+    {{-- Content --}}
+    @yield('content')
+    {{-- End Content --}}
+
+    {{-- Botónes en móvil --}}
+    <div class="BotonesFooter">
+      <a class="btn1" href="https://api.whatsapp.com/send?phone=5543427822" target="_blank"><i
+          class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
-  </nav>
-  <!-- Fin del Menú -->
-  {{-- Content --}}
-  @yield('content')
-  {{-- End Content --}}
 
-  {{-- Botónes en móvil --}}
-  <div class="BotonesFooter">
-    <a class="btn1" href="https://api.whatsapp.com/send?phone=5543427822" target="_blank"><i
-      class="fab fa-whatsapp"></i> WhatsApp</a>
-  </div>
-
-  <!-- Footer -->
-  @if (Request::path() == '/' || Request::path() === 'home')
+    <!-- Footer -->
+    @if (Request::path() == '/' || Request::path() === 'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
-        <div class="row align-items-center mx-0">
+        <div class="row align-items-center mx-0 text-center">
           <div class="col-lg-3 text-responsive pl-md-4 ml-lg-5 pl-lg-2">
             <p class="no-margin">
               <strong>SOPORTE</strong><br>
@@ -117,14 +122,13 @@
               <strong>LEGALES</strong><br>
             </p>
             <p class="no-margin"><a href="/avisos/AVISO_DE_PRIVACIDAD_TotalTech.pdf" target="_blank"
-              data-scroll-ignore>Aviso de Privacidad</a></p>
+                data-scroll-ignore>Aviso de Privacidad</a></p>
             <p class="no-margin"><a href="/avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf" target="_blank"
-              data-scroll-ignore>Términos y Condiciones</a></p>
+                data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-2 text-center">
             <p>
-              <a href="https://mundoceys.com/" target="_blank"
-                class="mundo-link">
+              <a href="https://mundoceys.com/" target="_blank" class="mundo-link">
                 <strong>WWW.MUNDOCEYS.COM</strong>
               </a>
             </p>
@@ -137,71 +141,71 @@
         </div>
       </div>
     </footer>
-  @endif
-  <!-- Fin Footer -->
+    @endif
+    <!-- Fin Footer -->
 
-  <!-- Scripts de Javi -->
-  <script src="{{ asset('js/wow.min.js') }}"></script>
-  <script src="{{ asset('js/smooth-scroll.js') }}"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-  <script src="{{ asset('js/scrollMenu.js') }}"></script>
-  <script src="{{asset('js/nav.js')}}"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 2500,
-      clip: false,
-      ignore: '[data-scroll-ignore]',
-    });
-  </script>
-  <script>
-    new WOW({
-      resetAnimation: false,
-    }).init();
-  </script>
-  <!-- Scripts -->
+    <!-- Scripts de Javi -->
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/smooth-scroll.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="{{ asset('js/scrollMenu.js') }}"></script>
+    <script src="{{ asset('js/nav.js') }}"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 2500,
+        clip: false,
+        ignore: '[data-scroll-ignore]',
+      });
+    </script>
+    <script>
+      new WOW({
+        resetAnimation: false,
+      }).init();
+    </script>
+    <!-- Scripts -->
 
-  <!-- Cambio de Menu con Scrolll -->
-  <script src="{{asset('bower/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
-  <script src="{{ mix('js/vendor.js') }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
-  </script>
-  <script src="{{ mix('js/user.controllers.js') }}"></script>
-  <script src="{{ mix('js/user.services.js') }}"></script>
-  <script src="{{ mix('js/admin.controllers.js') }}"></script>
-  <script src="{{ mix('js/admin.services.js') }}"></script>
-  <script src="{{ mix('js/home.controllers.js') }}"></script>
-  <script src="{{ mix('js/home.services.js') }}"></script>
-  <script src="{{ mix('js/forgotPassword.controllers.js') }}"></script>
-  <script src="{{ mix('js/forgotPassword.services.js') }}"></script>
+    <!-- Cambio de Menu con Scrolll -->
+    <script src="{{asset('bower/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+    <script src="{{ mix('js/vendor.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
+    </script>
+    <script src="{{ mix('js/user.controllers.js') }}"></script>
+    <script src="{{ mix('js/user.services.js') }}"></script>
+    <script src="{{ mix('js/admin.controllers.js') }}"></script>
+    <script src="{{ mix('js/admin.services.js') }}"></script>
+    <script src="{{ mix('js/home.controllers.js') }}"></script>
+    <script src="{{ mix('js/home.services.js') }}"></script>
+    <script src="{{ mix('js/forgotPassword.controllers.js') }}"></script>
+    <script src="{{ mix('js/forgotPassword.services.js') }}"></script>
 
-  <!-- End Scripts -->
-  <script>
-    var app = angular.module('angularApp', ['userController', 'userFactory', 'forgotPasswordController',
-      'forgotFactory', 'ngFileUpload', 'ngMask'
-    ]);
-    app.config(function ($interpolateProvider) {
-      $interpolateProvider.startSymbol('<%');
-      $interpolateProvider.endSymbol('%>');
-    })
-    app.constant("CSRF_TOKEN", '{{csrf_token()}}');
-  </script>
+    <!-- End Scripts -->
+    <script>
+      var app = angular.module('angularApp', ['userController', 'userFactory', 'forgotPasswordController',
+        'forgotFactory', 'ngFileUpload', 'ngMask'
+      ]);
+      app.config(function ($interpolateProvider) {
+        $interpolateProvider.startSymbol('<%');
+        $interpolateProvider.endSymbol('%>');
+      })
+      app.constant("CSRF_TOKEN", '{{csrf_token()}}');
+    </script>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4GNK7" height="0" width="0"
-      style="display:none;visibility:hidden">
-    </iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4GNK7" height="0" width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-</body>
+  </body>
 
 </html>

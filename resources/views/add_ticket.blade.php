@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="pageSytyle" class="container" ng-controller="userCtrl">
+<div id="pageStyle" class="login container" ng-controller="userCtrl">
+    <img class="login__scooter d-none d-sm-block" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+    <img class="login__ceys-montack mx-auto d-flex wow " data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
+    <img class="login__img-silicon wow " data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="panel mt-md-5">
@@ -42,8 +47,8 @@
                                 <a class='btn-submit-upload pointer' href='javascript:;'>
                                     <h5 class="my-2 subetuticket">SUBE TU TICKET</h5>
                                     <input ng-model="ticket.fileticket" ngf-select
-                                        ngf-pattern="'image/*,application/pdf'" ngf-max-size="5MB" type="file"
-                                        id="file" class="inputfile" name="file"
+                                        ngf-pattern="'image/*,application/pdf'" ngf-max-size="5MB" type="file" id="file"
+                                        class="inputfile" name="file"
                                         onchange='$("#upload-file-info").html($(this).val());'>
                                 </a>
                                 <span class='label label-info pt-lg-4 pt-md-4' id="upload-file-info"></span>
@@ -61,7 +66,8 @@
                                 <input class="form-control form-check-input" type="checkbox" name="privacidad"
                                     value="1">
                                 <label class="form-check-label">He leído y aceptado los <a class="terminosaddticket"
-                                        href="{{asset('avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf')}}"><b>Términos y Condiciones.</b></a></label>
+                                        href="{{asset('avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf')}}"><b>Términos y
+                                            Condiciones.</b></a></label>
                             </div>
                         </div>
                         <div class="form-group">

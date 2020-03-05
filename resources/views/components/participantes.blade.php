@@ -45,7 +45,7 @@
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
-        <span class="mx-4 px-3">PARTICIPA</span> DA CLICK AQUÍ
+        <span class="mx-4 px-3">¡PARTICIPA!</span> DA CLICK AQUÍ
       </a>
       @else
       <a href="{{ url('/login') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"

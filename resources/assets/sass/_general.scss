@@ -550,6 +550,7 @@ a.navbar-brand {
     transition: all 0.2s;
     height: 100px;
     @include fluid-type($min-vw, $max-vw, 10px, 13px);
+
     >span {
         color: $amarillo;
         display: block;
@@ -564,9 +565,11 @@ a.navbar-brand {
             color: $blanco;
         }
     }
-    @include down-screen(desktop-big){
+
+    @include down-screen(desktop-big) {
         height: 70px;
     }
+
     @include down-screen(landscape) {
         height: 70px;
     }
@@ -576,7 +579,7 @@ a.navbar-brand {
     }
 
     @include down-screen(mobile-big) {
-        
+
         height: 60px;
     }
 }

@@ -2,43 +2,40 @@
 
 @section('content')
 @php
-    $date = new DateTime('2019-10-21');
-    $now = new DateTime();
+$date = new DateTime('2019-10-21');
+$now = new DateTime();
 @endphp
-<!-- Header -->
+{{-- <!-- Header -->
 <section class="header-home header-user">
-  <img class="img-pleca" src="{{ asset('img/elements/pleca3.svg') }}" alt="Pleca Total Tech">
-  <img class="img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
-  <img class="img-logo-ceys wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys total Tech">
   <div class="texto-home col-lg-12 col-md-12 wow slideInLeft text-center" data-wow-duration="1s" data-wow-delay="0.5s">
-        <!-- @if($date >= $now)
+    <!-- @if($date >= $now)
         <a href="" class="btn btn-call-to-action text-center disabled">
           <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
         </a> -->
-        <!-- @else -->
-        <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-          <span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
-        </a>
-        <!-- @endif -->
-  </div>
+    <!-- @else -->
+    <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
+<span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
+</a>
+<!-- @endif -->
+</div>
 </section>
-<!-- Fin de Header -->
+<!-- Fin de Header --> --}}
 
 <!-- Tickets -->
-<div class="container-fluid ganadores" id="tickets">
+<div id="pageStyle" class="login container-fluid" id="tickets">
   <div class="row text-center justify-content-center">
     <div class="col-10 content-table-tickets content-table">
       @if ($tickets->count() == 0)
       <h5 class="azul-dos mb-3">Aún no has registrado ningún ticket.</h5>
-        @if($date >= $now)
-        <a href="" class="btn btn-call-to-action text-center disabled">
-          <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
-        </a>
-        @else
-        <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-          <span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
-        </a>
-        @endif
+      @if($date >= $now)
+      <a href="" class="btn btn-call-to-action text-center disabled">
+        <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
+      </a>
+      @else
+      <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
+        <span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
+      </a>
+      @endif
       @else
       <table class="table table-borderless table-responsive">
         <thead>
@@ -83,7 +80,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <!-- Fin Modal Tickets -->
             </td>
           </tr>
