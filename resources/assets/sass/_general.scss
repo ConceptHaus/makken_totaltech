@@ -225,9 +225,7 @@ html {
         color: $amarillo !important;
     }
 
-    .navbar-toggler-icon {
-        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=F9ED46');
-    }
+    
 }
 
 .navbar-home {
@@ -484,8 +482,8 @@ footer {
     left: 0 !important;
     bottom: 0 !important;
     width: 100% !important;
-    background-color: #25D366;
-    color: white !important;
+    box-shadow: 0px 1px 18px 0 rgba(4, 0, 0, 0.5);
+    background-color:$azul-2;
     text-align: center !important;
     text-decoration: none !important;
     font-size: 20px;
@@ -496,18 +494,24 @@ footer {
     visibility: hidden;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    &__boton{
+        font-weight: 600;
+        color: $amarillo !important;
+        padding: 10px;
+        text-align: center;
+        width: 100% !important;
+    }
+    &__span{
+        display: block;
+        color:$blanco;
+        font-size: 12px;
+    }
 }
 
 .contact-border {
     border-right: 2px solid #fff;
 }
 
-.btn1 {
-    color: white !important;
-    padding: 10px;
-    text-align: center;
-    width: 100% !important;
-}
 
 .container-fluid {
     width: 100%;

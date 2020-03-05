@@ -9,9 +9,8 @@
         src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
-            <div class="panel panel-register my-5">
+            <div class="panel panel-register">
                 <div class="panel-body text-center">
-
                     <h3>REGÍSTRATE</h3>
                     <form class="form-horizontal form-ajust">
                         {{ csrf_field() }}
@@ -24,7 +23,6 @@
                                     type="text" class="form-control" name="name" placeholder="Nombre" required
                                     autofocus>
                                 <p ng-cloak class="error-form" ng-if="errors.nombre"><% errors.nombre[0] %></p>
-
                             </div>
                             <div class="col form-group">
                                 <input ng-class="{'invalido': errors.apellido }" ng-model="user.apellido" id="lastname"

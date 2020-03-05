@@ -101,8 +101,11 @@
 
     {{-- Botónes en móvil --}}
     <div class="BotonesFooter">
-      <a class="btn1" href="https://api.whatsapp.com/send?phone=5543427822" target="_blank"><i
-          class="fab fa-whatsapp"></i> WhatsApp</a>
+      @if(Auth::check())
+      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK AQUÍ</span></a>
+      @else
+      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK AQUÍ</span></a>
+      @endif
     </div>
 
     <!-- Footer -->
