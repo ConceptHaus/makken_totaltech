@@ -8,7 +8,7 @@
   <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="" />
-  <meta property="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
+  <meta property="og:image" content="{{asset('img/logos/meta-totaltech.jpg')}}" />
   <meta property="og:description" content="¡Compra y gana una bicicleta con TotalTech!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.mundoceys.com" />
