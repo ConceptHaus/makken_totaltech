@@ -30,19 +30,24 @@
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WC7P933');
+  </script>
   <!-- End Google Tag Manager -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127968611-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-127968611-1');
-  </script>
 
 </head>
 @if (Request::path() == '/')
@@ -51,6 +56,10 @@
   @else
 
   <body ng-app="angularApp" class="body-bg">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7P933" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     @endif
     <!-- Inicio de Menú -->
     <nav id="menu1" class="navbar navbar-home navbar-expand-lg navbar-dark">
@@ -102,9 +111,11 @@
     {{-- Botónes en móvil --}}
     <div class="BotonesFooter">
       @if(Auth::check())
-      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK AQUÍ</span></a>
+      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+          AQUÍ</span></a>
       @else
-      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK AQUÍ</span></a>
+      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+          AQUÍ</span></a>
       @endif
     </div>
 
