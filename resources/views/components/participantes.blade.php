@@ -25,7 +25,7 @@
         </div>
         <div class="col-6">
           <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s"
-            data-wow-delay="0.5s" src="{{ asset('img/logos/lowes.png') }}" alt="Lowe's">
+            data-wow-delay="0.5s" src="{{ asset('img/logos/sodimac.png') }}" alt="Lowe's">
         </div>
         <div class="col-6">
           <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-offset="130" data-wow-duration="1s"

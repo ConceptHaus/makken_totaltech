@@ -11,7 +11,7 @@
       <img src="{{asset('img/icons/paso_1.svg')}}" class="dinamica__pasos-number" alt="Paso 1">
       <img src="{{ asset('img/icons/paso1.svg') }}" class="dinamica__pasos-img" alt="Paso 1">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">COMPRA PRODUCTOSMONTACK</h5>
+        <h5 class="dinamica__h5 mt-3">COMPRA PRODUCTOSMONTACK O DE LA MARCA CEYS</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"

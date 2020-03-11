@@ -4,7 +4,7 @@
     <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1 class="ganadores_title">Ganadores</h1>
     </div>
-    <div class="col-10  mt-2">
+    <div class="col-12  mt-2">
       <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="semana1-tab" data-scroll-ignore data-toggle="tab" href="#semana1" role="tab"
@@ -34,10 +34,14 @@
           <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana7" role="tab"
             aria-controls="semana7" aria-selected="false">SEMANA 7</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana8" role="tab"
+            aria-controls="semana7" aria-selected="false">SEMANA 8</a>
+        </li>
 
       </ul>
       <div class="tab-content" id="ganadoresTabContent">
-        @for ($i=1; $i <= 7; $i++) <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }"
+        @for ($i=1; $i <= 8; $i++) <div class="tab-pane fade show" ng-class="{ 'active': {{$i}} == 1 }"
           id="semana{{$i}}" role="tabpanel" aria-labelledby="semana{{$i}}-tab">
           <div class="row justify-content-center">
             <div class="col-12 content-table">
