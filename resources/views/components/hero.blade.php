@@ -11,16 +11,16 @@
 @endif
 
 <img class="position-absolute hero__ceys-montack  wow slideInLeft" data-wow-duration="1s"
-    data-wow-delay="0.5s" src="{{ asset('img/images/ceys_logo.png') }}" alt="Ceys Logo">
+     src="{{ asset('img/images/ceys_logo.png') }}" alt="Ceys Logo">
 
 <img class="position-absolute hero__img-silicon wow slideInLeft" data-wow-duration="1s"
-    data-wow-delay="0.5s" src="{{ asset('img/images/agarre_total.png') }}" alt="Agarre Total">
+     src="{{ asset('img/images/agarre_total.png') }}" alt="Agarre Total">
 
 <img class="position-absolute hero__ceys-productos wow slideInUp" data-wow-duration="1s"
-    data-wow-delay="0.5s" src="{{ asset('img/images/ceys_productos.png') }}" alt="Ceys Productos">
+     src="{{ asset('img/images/ceys_productos.png') }}" alt="Ceys Productos">
 
-<img class="position-absolute hero__scooter wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s"
+<img class="position-absolute hero__scooter wow slideInRight" data-wow-duration="1s"
     src="{{ asset('img/images/razor.png') }}" alt="Scooter">
 
-<img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s" data-wow-delay="0.5s"
+<img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">

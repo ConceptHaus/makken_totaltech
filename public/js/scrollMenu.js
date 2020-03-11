@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 /*detect mobile*/
 if ($(window).width() > 991){
-  if ($(window).scrollTop() > 100 ) {
+  if ($(window).scrollTop() > 30 ) {
     $("#menu1").css("background" , "rgb(34, 63, 151)");
     $(".logo-menu").attr("src","/img/logos/ceys-logo.svg");
     $('.navbar').css('min-height','0');
@@ -15,7 +15,7 @@ if ($(window).width() > 991){
   $(window).scroll(function(){
 
       var scroll = $(window).scrollTop();
-      if (scroll > 100) {
+      if (scroll > 30) {
           /* Fondo azul */
         $("#menu1").css("background" , "rgb(34, 63, 151)");
         $(".logo-menu").attr("src","/img/logos/ceys-logo.svg");

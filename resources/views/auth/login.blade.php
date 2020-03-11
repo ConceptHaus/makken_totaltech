@@ -24,7 +24,7 @@ $now = new DateTime();
                                 id="email" type="email" class="form-control" name="email" placeholder="Usuario" required
                                 autofocus>
                             <div ng-cloak ng-if="errors['email']" class="alert alert-warning" role="alert">
-                                <!-- <% errors['email'][0] %> -->
+                                <% errors['email'][0] %> 
                             </div>
                         </div>
 
@@ -34,11 +34,11 @@ $now = new DateTime();
                                 name="password" placeholder="Contraseña" required>
                         </div>
                         <div ng-cloak ng-if="errors['error']" class="alert alert-warning" role="alert">
-                            <!-- <% errors['error'] %> -->
+                            <% errors['error'] %>
                         </div>
 
                         <div ng-cloak ng-if="errors['password']" class="alert alert-warning" role="alert">
-                            <!-- <% errors['password'][0] %> -->
+                            <% errors['password'][0] %>
                         </div>
                         <div class="form-group content-actions text-center no-margin align-items-start pt-0">
 

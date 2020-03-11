@@ -1,7 +1,7 @@
 <div class="container-fluid ganadores">
   <div class="row text-center justify-content-center">
 
-    <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="col-12 mt-5 wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
       <h1 class="ganadores_title">Ganadores</h1>
     </div>
     <div class="col-12  mt-2">
