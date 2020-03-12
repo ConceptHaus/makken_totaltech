@@ -9,7 +9,7 @@
     }
 
     &__h4 {
-        @include fluid-type($min-vw, $max-vw, 11px, 20px);
+        @include fluid-type($min-vw, $max-vw, 11px, 18px);
     }
 
     &__h5 {
@@ -17,7 +17,7 @@
     }
 
     &__h6 {
-        @include fluid-type($min-vw, $max-vw, 9px, 15px);
+        @include fluid-type($min-vw, $max-vw, 9px, 11px);
         color: $blanco;
     }
 

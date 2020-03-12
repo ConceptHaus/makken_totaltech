@@ -9974,12 +9974,12 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .dinamica__h4 {
-    font-size: calc(11px + 9 * ((100vw - 360px) / 1080));
+    font-size: calc(11px + 7 * ((100vw - 360px) / 1080));
   }
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .dinamica__h5 {
@@ -10003,12 +10003,12 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .dinamica__h6 {
-    font-size: calc(9px + 6 * ((100vw - 360px) / 1080));
+    font-size: calc(9px + 2 * ((100vw - 360px) / 1080));
   }
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h6 {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 .dinamica__pasos-img {
