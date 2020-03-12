@@ -135,9 +135,9 @@
             <p class="no-margin">
               <strong>LEGALES</strong><br>
             </p>
-            <p class="no-margin"><a href="/avisos/AVISO_DE_PRIVACIDAD_TotalTech.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana Con Ceys Aviso de Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/TERMINOS_Y_CONDICIONES_TOTAL_TECH.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana Con Ceys Términos y Condiciones.pdf" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-2 text-center">
