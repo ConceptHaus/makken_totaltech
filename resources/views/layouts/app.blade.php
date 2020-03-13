@@ -110,12 +110,14 @@
 
     {{-- Botónes en móvil --}}
     <div class="BotonesFooter">
-      @if(Auth::check())
-      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
-          AQUÍ</span></a>
-      @else
-      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
-          AQUÍ</span></a>
+      @if(Request::path() == '/')
+        @if(Auth::check())
+        <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+            AQUÍ</span></a>
+        @else
+        <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+            AQUÍ</span></a>
+        @endif
       @endif
     </div>
 
