@@ -13,7 +13,7 @@
                 <div class="panel-body text-center">
                     <form id="formulario-ticket" class="form-horizontal">
                         {{ csrf_field() }}
-                        <h3>REGÍSTRA TU TICKET</h3>
+                        <h3>REGISTRA TU TICKET</h3>
                         <input ng-model="ticket.registro_admin" name="registro_admin"
                             ng-init="ticket.registro_admin = 0" type="text" hidden>
                         <div class="form-group">
@@ -37,8 +37,8 @@
                         </div>
 
                         <div class="form-group">
-                            <input id="monto" ng-model="ticket.monto" type="text" class="form-control" mask=""
-                                name="monto" placeholder="Monto de compra en productos" ng-pattern="/^$|^[0-9,]+$/"
+                            <input id="monto" ng-model="ticket.monto" type="text" class="form-control"
+                                name="monto" placeholder="Monto de compra en productos" ng-pattern="/^\d+$/"
                                 money required>
                         </div>
 
