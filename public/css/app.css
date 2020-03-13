@@ -10474,6 +10474,10 @@ footer {
   font-style: inherit;
 }
 
+.btn.disabled, .btn:disabled {
+  cursor: not-allowed;
+}
+
 .alert-warning {
   color: #f2e524;
   font-size: 11px;

@@ -120,7 +120,7 @@
     </div>
 
     <!-- Footer -->
-    @if (Request::path() == '/' || Request::path() === 'login'|| Request::path() === 'home')
+    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() === 'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
         <div class="row align-items-center mx-0 text-center">
@@ -160,7 +160,6 @@
 
     <!-- Scripts de Javi -->
     <script src="{{ asset('js/wow.min.js') }}"></script>
-    {{-- <script src="{{ asset('js/smooth-scroll.js') }}"></script> --}}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -172,13 +171,6 @@
     </script>
     <script src="{{ asset('js/scrollMenu.js') }}"></script>
     <script src="{{ asset('js/nav.js') }}"></script>
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 2500,
-        clip: false,
-        ignore: '[data-scroll-ignore]',
-      });
-    </script>
     <script>
       new WOW({
         resetAnimation: false,
