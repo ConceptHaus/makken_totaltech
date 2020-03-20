@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Support\Facades\Storage;
+use App\Exports\ReportExport;
+use Maatwebsite\Excel\Facades\Excel;
 // use Illuminate\Support\Carbon;
 use DB;
 use Mail;
@@ -406,6 +408,26 @@ class AdminController extends Controller {
                 'establecimientos_top'=>$establecimientos_top
             ]
         ]);
+    }
+
+    public function reporte(){
+
+        $date = Carbon::now();
+        $headings = [
+            'nombre',
+            'apellido',
+            'email',
+            'telefono',
+            'cp',
+            'estado',
+            'premio',
+            'no_ticket',
+            'monto',
+            'nombre_establecimiento',
+            'registro whatsapp',
+            'fecha_registro',
+        ];
+        return (new ReportExport($headings))->download($date.'_reporte.xlsx');
     }
     
 

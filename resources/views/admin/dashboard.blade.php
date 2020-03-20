@@ -8,6 +8,9 @@
         <li class="breadcrumb-item"><i class="la la-calendar-minus-o" style="font-size: 20px;"></i> Fecha</li>
         <li class="breadcrumb-item"><% date | date:'dd/MM/yyyy' %></li>
     </ol>
+    <div class="text-right">
+        <a href="/api/v1/reporte" class="btn btn-rounded btn-secondary download btn-air"><i class="la la-download font-16"></i> Descargar</a>
+    </div>
 </div>
 <div class="page-content fade-in-up">
     {{-- Participantes --}}

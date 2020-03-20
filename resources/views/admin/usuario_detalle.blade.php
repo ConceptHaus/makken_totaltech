@@ -178,7 +178,7 @@
                                 <th>Establecimiento</th>
                                 <th>Fecha</th>
                                 <th>Monto</th>
-                                <th></th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>

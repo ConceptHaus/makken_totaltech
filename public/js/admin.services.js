@@ -197,7 +197,7 @@ app.factory('AdminFactory', function ($http) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sergirams/Development/Laravel/makken_totaltech/resources/assets/js/angular-app/admin/admin.services.js */"./resources/assets/js/angular-app/admin/admin.services.js");
+module.exports = __webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/js/angular-app/admin/admin.services.js */"./resources/assets/js/angular-app/admin/admin.services.js");
 
 
 /***/ })

@@ -55,7 +55,7 @@ Route::get('/admin/tickets/nuevo/{user_registrado?}', 'AdminController@nuevoTick
 Route::get('/admin/establecimientos', 'AdminController@establecimientos');
 Route::get('/admin/establecimientos/nuevo', 'AdminController@nuevoEstablecimiento');
 Route::get('/admin/establecimientos/editar', 'AdminController@editarEstablecimiento');
-
+Route::get('/api/v1/reporte','AdminController@reporte');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

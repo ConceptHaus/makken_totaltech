@@ -50,11 +50,14 @@
 }
 
 .table {
+
     thead {
         th {
             background: $gris_background;
         }
     }
+    overflow: scroll;
+    display: block;
 }
 
 .capitalize {
