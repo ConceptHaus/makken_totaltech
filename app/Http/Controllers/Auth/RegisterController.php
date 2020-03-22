@@ -121,8 +121,8 @@ class RegisterController extends Controller
                 $usercontact['correo'] = $input['correo'];
 
                 Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
-                    $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                    $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar en Total Tech ¡Mucha Suerte!');
+                    $contact->from('privacidad@makken.com.mx', 'Montack');
+                    $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
                 });
 
                 if($request->admin == 0) {

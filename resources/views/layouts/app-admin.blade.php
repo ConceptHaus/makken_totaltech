@@ -14,7 +14,7 @@
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.mundoceys.com" /> 
      <!--<meta property="og:site_name" content="" />-->
-    <title>Admin / Total Tech</title>
+    <title>Admin / Montack</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
     <meta name="description" content="DESCRIPTION">

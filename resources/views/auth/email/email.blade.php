@@ -586,7 +586,7 @@
                                                                             ¡Hola!<br>
                                                                             <br>
                                                                             Recibimos un pedido para el cambio de
-                                                                            contraseña de tu cuenta <strong>Total Tech.
+                                                                            contraseña de tu cuenta <strong>Montack.
                                                                             </strong>Simplemente tienes que hacer click
                                                                             en el siguiente botón para resetear tu
                                                                             contraseña:<br>
@@ -683,7 +683,7 @@
                                                                         <td valign="top" class="mcnTextContent"
                                                                             style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                                                                            <em>Copyright © Total Tech</em>
+                                                                            <em>Copyright © Montack</em>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>

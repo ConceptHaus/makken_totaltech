@@ -144,7 +144,7 @@
 </div>
 <!-- END PAGE CONTENT-->
 <footer class="page-footer">
-    <div class="font-13">2019 © Total Tech</div>
+    <div class="font-13">2019 © Montack</div>
     <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
 </footer>
 @endsection

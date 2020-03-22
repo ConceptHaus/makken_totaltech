@@ -162,8 +162,8 @@ class AdminController extends Controller {
 
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-            $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu bicicleta ¡Compra y gana! con Total Tech."');
+            $contact->from('privacidad@makken.com.mx', 'Montack');
+            $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu bicicleta ¡Compra y gana! con Montack."');
         });
 
         if($usuario->save()){
@@ -192,8 +192,8 @@ class AdminController extends Controller {
         if($ganador->save() && $usuario->save()){
             
             Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
-                $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu bicicleta ¡Compra y gana! con Total Tech."');
+                $contact->from('privacidad@makken.com.mx', 'Montack');
+                $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu bicicleta ¡Compra y gana! con Montack."');
             });
 
             $json['success'] = 'success_ganador_user';
