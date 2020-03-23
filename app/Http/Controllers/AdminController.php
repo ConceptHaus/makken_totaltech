@@ -163,7 +163,7 @@ class AdminController extends Controller {
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Montack');
-            $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu bicicleta ¡Compra y gana! con Montack."');
+            $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu scooter eléctrico ¡compra y gana! con Montack."');
         });
 
         if($usuario->save()){
