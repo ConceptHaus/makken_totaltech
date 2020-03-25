@@ -48,7 +48,7 @@
               <table class="table table-borderless table-responsive table-ganadores-home justify-content-center">
                 <thead>
                   <tr>
-                    <th scope="col" width="25%">FECHA</th>
+                    {{-- <th scope="col" width="25%">FECHA</th> --}}
                     <th scope="col" width="25%">NOMBRE</th>
                     <th scope="col" width="25%">TIENDA</th>
                     <th scope="col" width="25%">PREMIO</th>
@@ -61,7 +61,7 @@
                   @foreach ($ganadores as $ganador)
                   @if ($ganador->id_semana == $i)
                   <tr>
-                    <td>{{$ganador->dia}}</td>
+                    {{-- <td>{{$ganador->dia}}</td> --}}
                     <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
                     <td>{{ $ganador['user']->tickets[0]->establecimiento->nombre}}</td>
                     <td>{{ $ganador['premio']->nombre }}</td>
