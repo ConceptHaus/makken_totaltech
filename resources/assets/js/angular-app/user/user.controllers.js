@@ -54,6 +54,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
     }
    $scope.addTicket = function(ticket){
        console.log(ticket);
+       $('#covidModal').modal('show');
     // Swal.fire({
     //     title:"Espera...",
     //     text:"Estamos enviando tu ticket.",

@@ -190,11 +190,11 @@ a {
 	color: inherit;
 	&:hover {
 		text-decoration: none;
-		color: $secondary;
+		color: $amarillo;
 	}
 	&:focus {
 		text-decoration: none;
-		color: $secondary;
+		color: $amarillo;
 		outline: none;
 	}
 }
@@ -451,8 +451,8 @@ pre {
 	}
 	>.btn-outline-success.dropdown-toggle {
 		color: #fff;
-		background-color: $secondary;
-		border-color: $secondary;
+		background-color: $amarillo;
+		border-color: $amarillo;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
@@ -784,8 +784,8 @@ pre {
 }
 .btn-success {
 	color: #fff;
-	background-color: $secondary;
-	border-color: $secondary;
+	background-color: $amarillo;
+	border-color: $amarillo;
 	&:focus {
 		color: #fff;
 		background-color: #15ae96;
@@ -1300,30 +1300,30 @@ pre {
 	background-image: none;
 }
 .btn-outline-success {
-	color: $secondary;
+	color: $amarillo;
 	background-image: none;
 	background-color: transparent;
-	border-color: $secondary;
+	border-color: $amarillo;
 	&:focus {
 		color: #fff;
-		background-color: $secondary;
-		border-color: $secondary;
+		background-color: $amarillo;
+		border-color: $amarillo;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
 	}
 	&:hover {
 		color: #fff;
-		background-color: $secondary;
-		border-color: $secondary;
+		background-color: $amarillo;
+		border-color: $amarillo;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
 	}
 	&:active {
 		color: #fff;
-		background-color: $secondary;
-		border-color: $secondary;
+		background-color: $amarillo;
+		border-color: $amarillo;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
@@ -1331,16 +1331,16 @@ pre {
 }
 .btn-outline-success.focus {
 	color: #fff;
-	background-color: $secondary;
-	border-color: $secondary;
+	background-color: $amarillo;
+	border-color: $amarillo;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-image: none;
 }
 .btn-outline-success.active {
 	color: #fff;
-	background-color: $secondary;
-	border-color: $secondary;
+	background-color: $amarillo;
+	border-color: $amarillo;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-image: none;
@@ -1791,8 +1791,8 @@ pre {
 	color: #2CC4CB;
 }
 .btn-label-out-success {
-	border-color: $secondary;
-	color: $secondary;
+	border-color: $amarillo;
+	color: $amarillo;
 }
 .btn-label-out-warning {
 	border-color: #F39C12;
@@ -2387,13 +2387,13 @@ body.fullscreen-mode {
 .tabs-line-success {
 	.nav-link {
 		&:hover {
-			color: $secondary;
-			border-bottom-color: $secondary;
+			color: $amarillo;
+			border-bottom-color: $amarillo;
 		}
 	}
 	.nav-link.active {
-		color: $secondary;
-		border-bottom-color: $secondary;
+		color: $amarillo;
+		border-bottom-color: $amarillo;
 	}
 }
 .tabs-line-info {
@@ -2462,7 +2462,7 @@ body.fullscreen-mode {
 }
 .nav-pills-success {
 	.nav-link.active {
-		background-color: $secondary;
+		background-color: $amarillo;
 		color: #fff;
 	}
 }
@@ -2640,10 +2640,10 @@ body.fullscreen-mode {
 	background-color: #5C6BC0;
 }
 .badge-success {
-	background-color: $secondary;
+	background-color: $amarillo;
 }
 .label-success {
-	background-color: $secondary;
+	background-color: $amarillo;
 }
 .badge-info {
 	background-color: #2CC4CB;
@@ -2913,7 +2913,7 @@ body.fullscreen-mode {
 		color: #ccc;
 	}
 	.list-group-item.active {
-		color: $secondary;
+		color: $amarillo;
 	}
 	.list-group-item-success {
 		color: #424d8a;
@@ -3251,7 +3251,7 @@ body.fullscreen-mode {
 .form-success {
 	.form-control {
 		&:focus {
-			border-color: $secondary;
+			border-color: $amarillo;
 		}
 	}
 }
@@ -3537,9 +3537,9 @@ select.form-control-sm {
 }
 .has-success {
 	.form-control {
-		border-color: $secondary;
+		border-color: $amarillo;
 		&:focus {
-			border-color: $secondary;
+			border-color: $amarillo;
 		}
 		&::-webkit-input-placeholder {
 			color: #8ce2d4;
@@ -3558,14 +3558,14 @@ select.form-control-sm {
 		}
 	}
 	.control-label {
-		color: $secondary;
+		color: $amarillo;
 	}
 	.col-form-label {
-		color: $secondary;
+		color: $amarillo;
 	}
 	.input-icon {
 		>i {
-			color: $secondary;
+			color: $amarillo;
 		}
 	}
 }
@@ -3860,8 +3860,8 @@ select.form-control-sm {
 		&:checked {
 			~ {
 				.input-span {
-					background-color: $secondary;
-					border-color: $secondary;
+					background-color: $amarillo;
+					border-color: $amarillo;
 					&::after {
 						border-color: #fff;
 					}
@@ -3875,8 +3875,8 @@ select.form-control-sm {
 		&:checked {
 			~ {
 				.input-span {
-					background-color: $secondary;
-					border-color: $secondary;
+					background-color: $amarillo;
+					border-color: $amarillo;
 					&::after {
 						background-color: #fff;
 					}
@@ -4098,9 +4098,9 @@ select.form-control-sm {
 		&:checked {
 			~ {
 				.input-span {
-					border-color: $secondary;
+					border-color: $amarillo;
 					&::after {
-						border-color: $secondary;
+						border-color: $amarillo;
 					}
 				}
 			}
@@ -4112,9 +4112,9 @@ select.form-control-sm {
 		&:checked {
 			~ {
 				.input-span {
-					border-color: $secondary;
+					border-color: $amarillo;
 					&::after {
-						background-color: $secondary;
+						background-color: $amarillo;
 					}
 				}
 			}
@@ -4391,7 +4391,7 @@ select.form-control-sm {
 			~ {
 				span {
 					&:after {
-						background-color: $secondary;
+						background-color: $amarillo;
 						-webkit-box-shadow: 0 3px 20px 0 rgba(24, 197, 169, 0.4);
 						box-shadow: 0 3px 20px 0 rgba(24, 197, 169, 0.4);
 					}
@@ -4517,11 +4517,11 @@ select.form-control-sm {
 }
 .switch-solid-success {
 	span {
-		background-color: $secondary;
-		border-color: $secondary;
+		background-color: $amarillo;
+		border-color: $amarillo;
 		&:after {
 			background-color: #fff;
-			color: $secondary;
+			color: $amarillo;
 			-webkit-box-shadow: none;
 			box-shadow: none;
 			opacity: .42;
@@ -4791,8 +4791,8 @@ select.form-control-sm {
 .table-head-success {
 	thead {
 		th {
-			background-color: $secondary;
-			border-color: $secondary;
+			background-color: $amarillo;
+			border-color: $amarillo;
 			color: #fff;
 		}
 	}
@@ -4807,12 +4807,12 @@ select.form-control-sm {
 	}
 }
 .table-border-success {
-	border-color: $secondary;
+	border-color: $amarillo;
 	th {
-		border-color: $secondary;
+		border-color: $amarillo;
 	}
 	td {
-		border-color: $secondary;
+		border-color: $amarillo;
 	}
 }
 .thead-default {
@@ -5034,7 +5034,7 @@ select.form-control-sm {
 		.timeline-point {
 			height: 16px;
 			width: 16px;
-			background-color: $secondary;
+			background-color: $amarillo;
 			border: 4px solid #fff;
 			-webkit-border-radius: 100%;
 			border-radius: 100%;
@@ -5262,7 +5262,7 @@ select.form-control-sm {
 	background-color: #f7f8f8 !important;
 }
 .bg-success {
-	background-color: $secondary !important;
+	background-color: $amarillo !important;
 }
 .bg-success-800 {
 	background-color: #118e7a !important;
@@ -5439,17 +5439,17 @@ select.form-control-sm {
 .link-green {
 	color: inherit;
 	&:hover {
-		color: $secondary !important;
+		color: $amarillo !important;
 	}
 	&:focus {
-		color: $secondary !important;
+		color: $amarillo !important;
 	}
 }
 .text-primary {
 	color: #5C6BC0 !important;
 }
 .text-success {
-	color: $secondary !important;
+	color: $amarillo !important;
 }
 .text-info {
 	color: #2CC4CB !important;
@@ -5708,7 +5708,7 @@ a.text-light {
 				position: absolute;
 				top: -3px;
 				right: -3px;
-				background: $secondary;
+				background: $amarillo;
 				-webkit-border-radius: 50%;
 				border-radius: 50%;
 				&::before {
@@ -5720,7 +5720,7 @@ a.text-light {
 					height: 25px;
 					width: 25px;
 					z-index: 10;
-					border: 5px solid $secondary;
+					border: 5px solid $amarillo;
 					-webkit-border-radius: 50%;
 					border-radius: 50%;
 					-webkit-animation: heartbit 1s ease-out;
@@ -5799,11 +5799,11 @@ a.text-light {
 			-ms-flex-align: center;
 			align-items: center;
 			padding: 30px 40px;
-			background-color: $secondary;
+			background-color: $amarillo;
 		}
 		.dropdown-arrow {
 			&:after {
-				background-color: $secondary;
+				background-color: $amarillo;
 			}
 		}
 		.admin-avatar {
@@ -6626,7 +6626,7 @@ body.drawer-sidebar {
 				font-size: 16px;
 				opacity: .5;
 				&:hover {
-					color: $secondary;
+					color: $amarillo;
 				}
 			}
 			.messanger-paperclip {
@@ -6672,7 +6672,7 @@ body.drawer-sidebar {
 		>a.active {
 			-webkit-box-shadow: 0 2px 5px #d6dee4;
 			box-shadow: 0 2px 5px #d6dee4;
-			color: $secondary;
+			color: $amarillo;
 		}
 	}
 	.logs {
@@ -7161,7 +7161,7 @@ table.dataTable.dtr-inline.collapsed {
 	}
 }
 .toast-success {
-	background-color: $secondary;
+	background-color: $amarillo;
 }
 .toast-info {
 	background-color: #2CC4CB;
@@ -7400,14 +7400,14 @@ table.dataTable.dtr-inline.collapsed {
 	.fc-event.fc-start.fc-event-success {
 		.fc-content {
 			&:before {
-				background-color: $secondary;
+				background-color: $amarillo;
 			}
 		}
 	}
 	.fc-event-dot.fc-start.fc-event-success {
 		.fc-content {
 			&:before {
-				background-color: $secondary;
+				background-color: $amarillo;
 			}
 		}
 	}
@@ -7433,7 +7433,7 @@ table.dataTable.dtr-inline.collapsed {
 	}
 	.fc-list-item.fc-event-success {
 		.fc-event-dot {
-			background-color: $secondary;
+			background-color: $amarillo;
 		}
 	}
 	td.fc-today {
@@ -7487,21 +7487,21 @@ table.dataTable.dtr-inline.collapsed {
 	}
 }
 .jvectormap-zoomin {
-	background: $secondary;
+	background: $amarillo;
 }
 .jvectormap-zoomout {
-	background: $secondary;
+	background: $amarillo;
 }
 .jvectormap-goback {
-	background: $secondary;
+	background: $amarillo;
 }
 .dropzone {
 	border: 2px dashed #5c6bc0;
 	.dz-preview {
 		.dz-progress {
-			border-color: $secondary;
+			border-color: $amarillo;
 			.dz-upload {
-				background-color: $secondary;
+				background-color: $amarillo;
 			}
 		}
 	}

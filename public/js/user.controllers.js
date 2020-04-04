@@ -146,36 +146,38 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
 
   $scope.addTicket = function (ticket) {
     console.log(ticket);
-    Swal.fire({
-      title: "Espera...",
-      text: "Estamos enviando tu ticket.",
-      imageUrl: 'img/icons/Spinner-1s-200px.gif',
-      showConfirmButton: false
-    });
-    Upload.upload({
-      url: '/ticket',
-      data: ticket
-    }).then(function (res) {
-      Swal.fire({
-        title: "¡Todo bien!",
-        text: "Tu ticket se ha registrado con éxito",
-        confirmButtonText: 'Regresar a mi cuenta',
-        showCancelButton: true,
-        cancelButtonText: 'Subir otro ticket'
-      }).then(function (result) {
-        if (result.value) {
-          $window.location.href = "/home";
-        }
-      });
-      console.log(res.data);
-      $ticket = null;
-    }, function (err) {
-      Swal.fire({
-        type: 'error',
-        title: 'Oh no!, Algo salió mal.',
-        text: err.data.error.no_ticket
-      }); // console.log(err.data);
-    });
+    $('#covidModal').modal('show'); // Swal.fire({
+    //     title:"Espera...",
+    //     text:"Estamos enviando tu ticket.",
+    //     imageUrl: 'img/icons/Spinner-1s-200px.gif',
+    //     showConfirmButton:false
+    // });
+    // Upload.upload({
+    //     url:'/ticket',
+    //     data:ticket
+    // })
+    // .then(function(res){
+    //     Swal.fire({
+    //         title:"¡Todo bien!",
+    //         text:"Tu ticket se ha registrado con éxito",
+    //         confirmButtonText: 'Regresar a mi cuenta',
+    //         showCancelButton: true,
+    //         cancelButtonText: 'Subir otro ticket'
+    //     }).then((result)=>{
+    //         if(result.value){
+    //             $window.location.href="/home";
+    //         }
+    //     })
+    //     console.log(res.data);
+    //     $ticket = null;
+    // },function(err){
+    //     Swal.fire({
+    //         type:'error',
+    //         title:'Oh no!, Algo salió mal.',
+    //         text: err.data.error.no_ticket
+    //     })
+    //     // console.log(err.data);
+    // })
   };
 
   var success = function success(data) {
