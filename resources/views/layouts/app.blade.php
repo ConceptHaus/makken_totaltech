@@ -174,6 +174,7 @@
     <script src="{{ asset('js/scrollMenu.js') }}"></script>
     <script src="{{ asset('js/nav.js') }}"></script>
     <script>
+      console.log('modal');
       $('#covidModal').modal('show');
     </script>
     <script>
