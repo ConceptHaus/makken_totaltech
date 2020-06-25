@@ -174,7 +174,7 @@
               a partir del corte del 3 de abril de 2020 (semana 3 de participación), se suspende temporalmente la promoción
           </p>
           <img src="{{asset('img/images/montate.png')}}" class="img-fluid" alt="Ceys Logo">
-          <p class="m-4 text-light">¡Visita el sitio con frecuencia para seguir participando una vez que se normalicen las activiades!</p>
+          <p class="m-4 text-light">¡Registra tu ticket y una vez que se reactive la promoción te contactaremos!</p>
           <p class="aviso m-4 text-light">*Los ganadores de las semanas 1,2 y 3 están confirmados y serán contactados para la entrega de sus premios</p>
       </div>
       <div class="modal-footer">
