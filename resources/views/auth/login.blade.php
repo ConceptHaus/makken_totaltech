@@ -15,6 +15,7 @@ $now = new DateTime();
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel">
+                <img src="{{ asset('img/elements/date-stamp.png') }}" class="panel-img img-fluid" width="200" alt="">
                 <div class="panel-body text-center">
                     <form class="form-horizontal">
                         {{ csrf_field() }}

@@ -10767,7 +10767,7 @@ a.navbar-brand {
   border-radius: 0;
   margin-top: 5%;
   padding: 8% 18%;
-  padding-top: 0% !important;
+  padding-top: 6% !important;
   border-radius: 5px !important;
 }
 #pageStyle .panel-register {
@@ -10779,6 +10779,11 @@ a.navbar-brand {
   padding: 10% 15%;
   padding-top: 10% !important;
   border-radius: 5px !important;
+}
+#pageStyle .panel-img {
+  position: absolute;
+  right: 14px;
+  top: 50px;
 }
 #pageStyle h3 {
   color: #FFF;
@@ -10973,6 +10978,17 @@ html {
   }
 }
 @media screen and (max-width: 1250px) {
+  #pageStyle .panel {
+    padding-top: 0 !important;
+    text-align: center;
+  }
+  
+  #pageStyle .panel-img {
+    position: relative;
+    right: initial;
+    top: 25px;
+  }
+
   .img-silicon-login {
     display: none;
   }
