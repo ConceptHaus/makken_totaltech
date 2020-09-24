@@ -8,10 +8,10 @@
   <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
-  <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg"/>
+  <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg" />
   <meta property="og:description" content="¡Compra y gana un scooter con Montack!" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ganaconceys.com.mx"/>
+  <meta property="og:url" content="https://ganaconceys.com.mx" />
   <!--<meta property="og:site_name" content="" />-->
 
   <title>Gana con Ceys</title>
@@ -111,18 +111,19 @@
     {{-- Botónes en móvil --}}
     <div class="BotonesFooter">
       @if(Request::path() == '/')
-        @if(Auth::check())
-        <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
-            AQUÍ</span></a>
-        @else
-        <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
-            AQUÍ</span></a>
-        @endif
+      @if(Auth::check())
+      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+          AQUÍ</span></a>
+      @else
+      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+          AQUÍ</span></a>
+      @endif
       @endif
     </div>
 
     <!-- Footer -->
-    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() === 'home')
+    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() ===
+    'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
         <div class="row align-items-center mx-0 text-center">
@@ -137,9 +138,9 @@
             <p class="no-margin">
               <strong>LEGALES</strong><br>
             </p>
-            <p class="no-margin"><a href="/avisos/Gana Con Ceys Aviso de Privacidad.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Gana Con Ceys Términos y Condiciones.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <div class="col-lg-2 text-center">
@@ -159,30 +160,6 @@
     </footer>
     @endif
     <!-- Fin Footer -->
-     <!-- Modal -->
- <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-  <div class="modal-content">
-      <div class="modal-header">
-          <h5 class="modal-title font-italic text-center" id="exampleModalLabel">¡AVISO IMPORTANTE!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-      <div class="modal-body">
-          <p class="m-4 text-light">Debido a la contingencia vivida por el brote COVID-19 considerada causa de fuerza mayor,
-              a partir del corte del 3 de abril de 2020 (semana 3 de participación), se suspende temporalmente la promoción
-          </p>
-          <img src="{{asset('img/images/montate.png')}}" class="img-fluid" alt="Ceys Logo">
-          <p class="m-4 text-light">¡Regístrate y una vez que se reactive la promoción te contactaremos!</p>
-          <p class="aviso m-4 text-light">*Los ganadores de las semanas 1,2 y 3 están confirmados y serán contactados para la entrega de sus premios</p>
-      </div>
-      <div class="modal-footer">
-      <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Aceptar</button>
-      </div>
-  </div>
-  </div>
-</div>
     <!-- Scripts de Javi -->
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -196,10 +173,6 @@
     </script>
     <script src="{{ asset('js/scrollMenu.js') }}"></script>
     <script src="{{ asset('js/nav.js') }}"></script>
-    <script>
-      console.log('modal');
-      $('#covidModal').modal('show');
-    </script>
     <script>
       new WOW({
         resetAnimation: false,

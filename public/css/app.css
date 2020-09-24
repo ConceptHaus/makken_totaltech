@@ -10819,28 +10819,6 @@ a.navbar-brand {
   font-weight: bold !important;
 }
 
-#covidModal p {
-  text-align: center;
-}
-#covidModal img {
-  margin: 0 auto;
-  max-width: 50%;
-  display: block;
-}
-#covidModal h5 {
-  font-size: 27px;
-}
-#covidModal .modal-content {
-  background: linear-gradient(180deg, #003d8f 50%, #d1323a 50%);
-}
-#covidModal .modal-header {
-  margin: 0 auto;
-}
-#covidModal .aviso {
-  font-size: 12px;
-  text-align: center;
-}
-
 /**
 *** 6.- Estilos Home
 **/
