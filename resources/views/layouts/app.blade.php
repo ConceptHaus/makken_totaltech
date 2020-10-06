@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="¡Compra y gana un scooter con Montack!" />
-  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
+  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.jpg')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
   <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg" />
   <meta property="og:description" content="¡Compra y gana un scooter con Montack!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ganaconceys.com.mx" />
-  <!--<meta property="og:site_name" content="" />-->
 
   <title>Gana con Ceys</title>
   <!-- Favicon -->

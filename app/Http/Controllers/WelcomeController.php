@@ -44,6 +44,7 @@ class WelcomeController extends Controller
 
         return response()->json($textos);
     }
+    
      public function getCP($cp){
         $datosCP = CodigosPostales::where('CodigoPostal','=',$cp)->first();
 

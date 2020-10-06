@@ -38,7 +38,7 @@
       <h6 class="dinamica__h6">EL PARTICIPANTE QUE REGISTRE EL MAYOR MONTO ACUMULADO GANARÁ UN SCOOTER.</h6>
       <h4 class="dinamica__h4">¡RECUERDA QUE TODAS LAS COMPRAS DE LA SEMANA PARTICIPAN!</h4>
       <h6 class="dinamica__h6">*Límitado a un scooter por participante</h6>
-      <h6 class="dinamica__h6">Vigencia del 13 de marzo al 8 de mayo 2020</h6>
+      <h6 class="dinamica__h6">Vigencia del 25 de septiembre al 22 de octubre 2020</h6>
     </div>
   </div>
 </div>
