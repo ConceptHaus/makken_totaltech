@@ -193,7 +193,7 @@ class AdminController extends Controller {
             
             Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
                 $contact->from('privacidad@makken.com.mx', 'Montack');
-                $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu bicicleta ¡Compra y gana! con Montack."');
+                $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu scooter eléctrico ¡Compra y gana! con Montack."');
             });
 
             $json['success'] = 'success_ganador_user';
