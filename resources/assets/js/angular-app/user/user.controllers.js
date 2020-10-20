@@ -5,7 +5,7 @@
  */
 var app = angular.module('userController',['angularApp']);
 
-app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
+app.controller('userCtrl', ['$scope','UserFactory', '$http', '$window', 'Upload', function($scope, UserFactory, $http, $window, Upload){
 
     $scope.login = function(user){
         console.log(user);
@@ -104,7 +104,7 @@ app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,
     }
      $scope.getEstablecimientos();
 
-})
+}])
 
 app.directive("money",function ($filter, $locale) {
     return {

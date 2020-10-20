@@ -5,7 +5,7 @@
  */
 var app = angular.module('userFactory',['angularApp']);
 
-app.factory('UserFactory', function($http){
+app.factory('UserFactory',['$http', function($http){
     return {
         login: function(data){
             return $http({
@@ -22,4 +22,4 @@ app.factory('UserFactory', function($http){
             })
         }
     }
-})
+}])

@@ -9,7 +9,7 @@ app.run(function (amMoment) {
     amMoment.changeLocale('es');
 });
 
-app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Upload, CSRF_TOKEN) {
+app.controller("adminCtrl", ['$scope', 'AdminFactory', '$http', '$window', 'Upload', function ($scope, AdminFactory, $http, $window, Upload) {
     // Usuarios registrados
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
@@ -318,7 +318,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
         })
     }
 
-})
+}])
 
 app.directive("money", function ($filter, $locale) {
     return {

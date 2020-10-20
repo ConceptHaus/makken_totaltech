@@ -5,7 +5,7 @@
  */
 var app = angular.module('AdminFactory', ['angularApp']);
 
-app.factory('AdminFactory', function($http){
+app.factory('AdminFactory',['$http', function($http){
     return{
         register: function(data){
             return $http({
@@ -92,4 +92,4 @@ app.factory('AdminFactory', function($http){
             })
         }
     }
-})
+}])
