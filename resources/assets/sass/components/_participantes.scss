@@ -20,7 +20,7 @@
     }
 
     &__scooter {
-        width: 450px;
+        width: 700px;
 
         @include down-screen(tablet) {
             width: 180px;

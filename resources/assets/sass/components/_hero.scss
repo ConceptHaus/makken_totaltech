@@ -75,9 +75,9 @@
 
     &__scooter {
         display: block;
-        right: 8%;
+        right: 0%;
         top: 0%;
-        width: 480px;
+        width: 700px;
         z-index: 0;
 
         @include down-screen(landscape) {

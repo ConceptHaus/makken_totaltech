@@ -20,7 +20,7 @@
      src="{{ asset('img/images/producto.svg') }}" alt="Ceys Productos">
 
 <img class="position-absolute hero__scooter wow slideInRight" data-wow-duration="1s"
-    src="{{ asset('img/images/dron.svg') }}" alt="Scooter">
+    src="{{ asset('img/images/dron.png') }}" alt="Scooter">
 
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/gana-dron.png') }}" alt="Móntate con Montack">

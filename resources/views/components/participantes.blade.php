@@ -72,7 +72,7 @@
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center">
       <h2 class="participantes__h2 text-center font-italic">PREMIO</h2>
       <img class="participantes__scooter my-4 img-fluid wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/dron.svg') }}" alt="scooter-premio">
+        src="{{ asset('img/images/dron.png') }}" alt="scooter-premio">
       <h6 class="participantes__h6">GANA UN DRON</h6>
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
