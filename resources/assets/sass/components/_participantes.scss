@@ -20,15 +20,24 @@
     }
 
     &__scooter {
-        width: 250px;
+        width: 450px;
 
         @include down-screen(tablet) {
             width: 180px;
         }
     }
-
+    &__tiendas{
+        &--disclaimer{
+            font-size: .5rem;
+            color: black;
+        }
+    }
     &__tiendas-img {
         width: 95%;
+        ~h5{
+            color: black;
+            font-size: 1rem;
+        }
     }
 
 

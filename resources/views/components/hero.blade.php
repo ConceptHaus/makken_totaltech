@@ -11,16 +11,16 @@
 @endif
 
 <img class="position-absolute hero__ceys-montack  wow slideInLeft" data-wow-duration="1s"
-     src="{{ asset('img/images/ceys_logo.png') }}" alt="Ceys Logo">
+     src="{{ asset('img/images/logo.svg') }}" alt="Ceys Logo">
 
 <img class="position-absolute hero__img-silicon wow slideInLeft" data-wow-duration="1s"
-     src="{{ asset('img/images/agarre_total.png') }}" alt="Agarre Total">
+     src="{{ asset('img/images/logo_2.png') }}" alt="Agarre Total">
 
 <img class="position-absolute hero__ceys-productos wow slideInUp" data-wow-duration="1s"
-     src="{{ asset('img/images/ceys_productos.png') }}" alt="Ceys Productos">
+     src="{{ asset('img/images/producto.svg') }}" alt="Ceys Productos">
 
 <img class="position-absolute hero__scooter wow slideInRight" data-wow-duration="1s"
-    src="{{ asset('img/images/razor.png') }}" alt="Scooter">
+    src="{{ asset('img/images/dron.svg') }}" alt="Scooter">
 
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
-    src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
+    src="{{ asset('img/images/gana-dron.png') }}" alt="Móntate con Montack">

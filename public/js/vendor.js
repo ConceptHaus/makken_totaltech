@@ -20656,10 +20656,10 @@ bindJQuery();publishExternalAPI(angular);angular.module("ngLocale",[],["$provide
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/bower/angular/angular.js */"./resources/assets/bower/angular/angular.js");
-__webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/bower/ngMask/dist/ngMask.js */"./resources/assets/bower/ngMask/dist/ngMask.js");
-__webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
-module.exports = __webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/sass-admin/main.scss */"./resources/assets/sass-admin/main.scss");
+__webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/bower/angular/angular.js */"./resources/assets/bower/angular/angular.js");
+__webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/bower/ngMask/dist/ngMask.js */"./resources/assets/bower/ngMask/dist/ngMask.js");
+__webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/sass-admin/main.scss */"./resources/assets/sass-admin/main.scss");
 
 
 /***/ })

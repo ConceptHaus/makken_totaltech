@@ -1,7 +1,7 @@
 <div class="container py-5 participantes">
   <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 participantes__block">
-      <h2 class="participantes__h2 text-center">ESTABLECIMIENTOS PARTICIPANTES</h2>
+      <h2 class="participantes__h2 text-center font-italic">ESTABLECIMIENTOS PARTICIPANTES</h2>
       <div class="row">
         <div class="col-6">
           <a href=" https://super.walmart.com.mx/productos?Ntt=ceys" target="_blank"><img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
@@ -42,13 +42,38 @@
              src="{{ asset('img/logos/chedraui.png') }}" alt="Chedraui">
           </a>
         </div>
+        <div class="col-6">
+          <a href="#" target="_blank">
+            <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
+             src="{{ asset('img/logos/cornershop.svg') }}" alt="Conrnershop">
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" target="_blank">
+            <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
+             src="{{ asset('img/logos/ibushak.svg') }}" alt="Ibushak">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <a href="#" target="_blank">
+            <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
+            src="{{ asset('img/logos/amazon.svg') }}" alt="Amazon">
+            <h5>(SOLO TIENDA OFICIAL)</h5>
+          </a>
+        </div>
+        <div class="col-12">
+            <p class="participantes__tiendas--disclaimer text-center mt-4">*PUEDES REGISTRAR LOS TICKETS DE TUS COMPRAS HECHAS EN TIENDAS FÍSICAS O EN LÍNEA.</p>
+          </a>
+        </div>
       </div>
     </div>
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center">
-      <h2 class="participantes__h2 text-center">PREMIO</h2>
+      <h2 class="participantes__h2 text-center font-italic">PREMIO</h2>
       <img class="participantes__scooter my-4 img-fluid wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/razor-premio.png') }}" alt="scooter-premio">
-      <h6 class="participantes__h6">GANA UN SCOOTER ELÉCTRICO</h6>
+        src="{{ asset('img/images/dron.svg') }}" alt="scooter-premio">
+      <h6 class="participantes__h6">GANA UN DRON</h6>
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">

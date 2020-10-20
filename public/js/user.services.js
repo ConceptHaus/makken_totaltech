@@ -127,7 +127,7 @@ app.factory('UserFactory', function ($http) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sergirams/Development/ConceptHaus/makken_totaltech/resources/assets/js/angular-app/user/user.services.js */"./resources/assets/js/angular-app/user/user.services.js");
+module.exports = __webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/js/angular-app/user/user.services.js */"./resources/assets/js/angular-app/user/user.services.js");
 
 
 /***/ })

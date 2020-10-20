@@ -6,16 +6,16 @@ $date = new DateTime('2019-10-21');
 $now = new DateTime();
 @endphp
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
-    <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+    <!-- <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
+        src="{{ asset('img/images/logo.svg') }}" alt="ceys-montack">
     <img class="login__img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
+        src="{{ asset('img/images/logo_2.png') }}" alt="agarre-total">
 
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel">
-                <img src="{{ asset('img/elements/date-stamp.png') }}" class="panel-img img-fluid" width="200" alt="">
+                <!-- <img src="{{ asset('img/elements/date-stamp.png') }}" class="panel-img img-fluid" width="200" alt=""> -->
                 <div class="panel-body text-center">
                     <form class="form-horizontal">
                         {{ csrf_field() }}

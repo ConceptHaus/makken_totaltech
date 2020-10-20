@@ -1,8 +1,8 @@
 
 .dinamica {
     font-style: normal;
-    background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
-
+    background-image: linear-gradient(to top, #011a3c, #01276e 84%, #0033a0 51%, #012873 22%, #011d46);
+    
     &__h1 {
         color: $blanco;
         @include fluid-type($min-vw, $max-vw, 20px, 35px);
@@ -23,7 +23,8 @@
 
     &__pasos-img {
         display: inline-block;
-        width: 50px;
+        min-width: 80px;
+        padding: 10px;
     }
 
     &__pasos-number {

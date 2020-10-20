@@ -24,7 +24,7 @@
         width: 200px;
         left: 5%;
         @include down-screen(desktop-big){
-            width: 200px;
+            width: 250px;
         }
         @include down-screen(landscape){
             width: 250px;
@@ -45,7 +45,7 @@
         top: 50%;
         left: 5%;
         @include down-screen(desktop-big){
-            width: 150px;
+            width: 200px;
         }
         @include down-screen(landscape){
             width: 150px;

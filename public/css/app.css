@@ -9741,7 +9741,7 @@ h3 {
   }
 }
 .hero {
-  background: url("../img/images/background-home.png");
+  background: url("../img/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9760,9 +9760,9 @@ h3 {
 }
 .hero__img-silicon {
   display: block;
-  bottom: 15%;
+  bottom: 5%;
   left: 10%;
-  width: 130px;
+  width: 200px;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9787,7 +9787,7 @@ h3 {
   display: block;
   left: 10%;
   top: 22%;
-  width: 180px;
+  width: 250px;
 }
 @media (max-width: 1024px) {
   .hero__ceys-montack {
@@ -9810,7 +9810,7 @@ h3 {
   display: block;
   left: 30%;
   top: 28%;
-  width: 300px;
+  width: 380px;
 }
 @media (max-width: 1024px) {
   .hero__ceys-productos {
@@ -9833,9 +9833,10 @@ h3 {
 }
 .hero__scooter {
   display: block;
-  right: 20%;
-  top: 20%;
-  width: 280px;
+  right: 8%;
+  top: 0%;
+  width: 480px;
+  z-index: 0;
 }
 @media (max-width: 1024px) {
   .hero__scooter {
@@ -9857,9 +9858,9 @@ h3 {
   }
 }
 .hero__montate {
-  width: 290px;
-  right: 5%;
-  top: 15%;
+  width: 400px;
+  right: 10%;
+  bottom: 28%;
 }
 @media (max-width: 1024px) {
   .hero__montate {
@@ -9889,9 +9890,10 @@ h3 {
   box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
   transition: all 0.2s;
   position: absolute;
-  right: 5%;
-  top: 45%;
+  right: 15%;
+  bottom: 10%;
   height: 80px;
+  z-index: 1;
 }
 .hero__btn-call-to-action {
   font-size: 12px;
@@ -9951,7 +9953,7 @@ h3 {
 
 .dinamica {
   font-style: normal;
-  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
+  background-image: linear-gradient(to top, #011a3c, #01276e 84%, #0033a0 51%, #012873 22%, #011d46);
 }
 .dinamica__h1 {
   color: #FFF;
@@ -10013,7 +10015,8 @@ h3 {
 }
 .dinamica__pasos-img {
   display: inline-block;
-  width: 50px;
+  min-width: 80px;
+  padding: 10px;
 }
 .dinamica__pasos-number {
   width: 35px;
@@ -10063,15 +10066,23 @@ h3 {
   }
 }
 .participantes__scooter {
-  width: 250px;
+  width: 450px;
 }
 @media (max-width: 769px) {
   .participantes__scooter {
     width: 180px;
   }
 }
+.participantes__tiendas--disclaimer {
+  font-size: 0.5rem;
+  color: black;
+}
 .participantes__tiendas-img {
   width: 95%;
+}
+.participantes__tiendas-img ~ h5 {
+  color: black;
+  font-size: 1rem;
 }
 
 /**
@@ -10218,7 +10229,7 @@ html {
 }
 
 .body-bg {
-  background: url("../img/images/background-home.png") no-repeat;
+  background: url("../img/images/bg2.jpg") no-repeat;
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
@@ -10701,7 +10712,7 @@ a.navbar-brand {
 }
 @media (max-width: 1440px) {
   .login__ceys-montack {
-    width: 200px;
+    width: 250px;
   }
 }
 @media (max-width: 1024px) {
@@ -10730,7 +10741,7 @@ a.navbar-brand {
 }
 @media (max-width: 1440px) {
   .login__img-silicon {
-    width: 150px;
+    width: 200px;
   }
 }
 @media (max-width: 1024px) {
@@ -10767,7 +10778,7 @@ a.navbar-brand {
   border-radius: 0;
   margin-top: 5%;
   padding: 8% 18%;
-  padding-top: 6% !important;
+  padding-top: 0% !important;
   border-radius: 5px !important;
 }
 #pageStyle .panel-register {
@@ -10779,11 +10790,6 @@ a.navbar-brand {
   padding: 10% 15%;
   padding-top: 10% !important;
   border-radius: 5px !important;
-}
-#pageStyle .panel-img {
-  position: absolute;
-  right: 14px;
-  top: 50px;
 }
 #pageStyle h3 {
   color: #FFF;
@@ -10956,17 +10962,6 @@ html {
   }
 }
 @media screen and (max-width: 1250px) {
-  #pageStyle .panel {
-    padding-top: 0 !important;
-    text-align: center;
-  }
-  
-  #pageStyle .panel-img {
-    position: relative;
-    right: initial;
-    top: 25px;
-  }
-
   .img-silicon-login {
     display: none;
   }

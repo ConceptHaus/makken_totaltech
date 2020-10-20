@@ -1,14 +1,14 @@
 {
-    "/js/admin.controllers.js": "/js/admin.controllers.js?id=952d005291e0c62284a0",
-    "/js/admin.services.js": "/js/admin.services.js?id=86cbd805b1cf51858c4f",
-    "/js/forgotPassword.controllers.js": "/js/forgotPassword.controllers.js?id=897c8afaba7623983c88",
-    "/js/forgotPassword.services.js": "/js/forgotPassword.services.js?id=a13568d78a91d47a637e",
-    "/js/home.controllers.js": "/js/home.controllers.js?id=01c8ebec787e44ba412a",
-    "/js/home.services.js": "/js/home.services.js?id=fbc323c72b68fcdadd23",
-    "/js/user.controllers.js": "/js/user.controllers.js?id=dbcdfa8026ecb99faaf5",
-    "/js/user.services.js": "/js/user.services.js?id=9cf952c320e664440c52",
-    "/js/vendor.js": "/js/vendor.js?id=18bb9d1d171b9c1292a0",
-    "/css/app.css": "/css/app.css?id=05297b0cd83418228217",
-    "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980",
-    "/css/main.css": "/css/main.css?id=419e79a91dc1f10204ee"
+    "/js/admin.controllers.js": "/js/admin.controllers.js?id=87856d2f4718a03af760",
+    "/js/admin.services.js": "/js/admin.services.js?id=aecaefa7cd77774440a0",
+    "/js/forgotPassword.controllers.js": "/js/forgotPassword.controllers.js?id=05c9136bc2b9e9d662d3",
+    "/js/forgotPassword.services.js": "/js/forgotPassword.services.js?id=fcc18622844647b0248b",
+    "/js/home.controllers.js": "/js/home.controllers.js?id=3525e196c782b4906c28",
+    "/js/home.services.js": "/js/home.services.js?id=36121c0bba83b7612ef5",
+    "/js/user.controllers.js": "/js/user.controllers.js?id=be0900dabe064eb118ed",
+    "/js/user.services.js": "/js/user.services.js?id=67edca9914e3136fe683",
+    "/js/vendor.js": "/js/vendor.js?id=91948a6041e38f1367e1",
+    "/css/app.css": "/css/app.css?id=42d621252cabe2f6088a",
+    "/css/main.css": "/css/main.css?id=419e79a91dc1f10204ee",
+    "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }

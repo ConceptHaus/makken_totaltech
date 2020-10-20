@@ -2,11 +2,11 @@
 
 @section('content')
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
-    <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter">
+    <!-- <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="login__ceys-montack mx-auto d-flex wow " data-wow-duration="1s"
-        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
+        src="{{ asset('img/images/logo.svg') }}" alt="ceys-montack">
     <img class="login__img-silicon wow " data-wow-duration="1s"
-        src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
+        src="{{ asset('img/images/logo_2.png') }}" alt="agarre-total">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel panel-register">
