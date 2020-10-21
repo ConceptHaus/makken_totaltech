@@ -109,7 +109,7 @@ app.controller('userCtrl', ['$scope','UserFactory', '$http', '$window', 'Upload'
 
 }])
 
-app.directive("money",function ($filter, $locale) {
+app.directive("money",['$filter','$locale'],function ($filter, $locale) {
     return {
       restrict: 'A',
       require: 'ngModel',
