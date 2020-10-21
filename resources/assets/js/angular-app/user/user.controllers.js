@@ -74,6 +74,9 @@ app.controller('userCtrl', ['$scope','UserFactory', '$http', '$window', 'Upload'
         }).then((result)=>{
             if(result.value){
                 $window.location.href="/home";
+            }else{
+                $('#formulario-ticket')[0].reset();
+                $("#upload-file-info").html('');
             }
         })
         console.log(res.data);
