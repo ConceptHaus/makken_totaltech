@@ -11,7 +11,7 @@
       <!-- <img src="{{asset('img/icons/paso_1.svg')}}" class="dinamica__pasos-number" alt="Paso 1"> -->
       <img src="{{ asset('img/icons/1.svg') }}" class="dinamica__pasos-img" alt="Paso 1">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">COMPRA mínimo $300 PESOS EN PRODUCTOS DE LA MARCA CEYS</h5>
+        <h5 class="dinamica__h5 mt-3">COMPRA MÍNIMO $300 PESOS EN PRODUCTOS DE LA MARCA CEYS</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
@@ -35,7 +35,7 @@
     <div class="col-lg-8 col-md-12 mt-5 mb-5 mx-2">
       <h6 class="dinamica__h6">ENTRE MÁS COMPRAS REALICES MÁS OPORTUNIDADES TENDRÁS DE GANAR</h6>
       <h4 class="dinamica__h4">¡RECUERDA QUE TODAS LAS COMPRAS DE LA SEMANA PARTICIPAN!</h4>
-      <h6 class="dinamica__h6">*El participante que registre el mayor monto acumulado ganará</h6> 
+      <h6 class="dinamica__h6">*El participante que registre el mayor monto acumulado ganará.</h6> 
       <!-- <h6 class="dinamica__h6">Vigencia del 25 de septiembre al 22 de octubre 2020</h6> -->
     </div>
   </div>
