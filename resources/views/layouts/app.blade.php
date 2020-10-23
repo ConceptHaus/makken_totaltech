@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="¡Compra, participa y gana un Dron!" />
-  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.jpg')}}" />
+  <meta name="og:image" content="{{asset('img/logos/meta-totaltech2.jpg')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Total Tech® puede con todo." />
-  <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg" />
+  <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech2.jpg" />
   <meta property="og:description" content="¡Compra, participa y gana un Dron!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ganaconceys.com.mx" />
