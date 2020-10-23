@@ -67,7 +67,7 @@
         }
         @include down-screen(mobile-big){
             width: 185px;
-            left: 10%;
+            left: 0;
             top:55%;
         }
 
@@ -92,8 +92,8 @@
 
         @include down-screen(mobile-big) {
             right:0%;
-            top: 57%;
-            width: 180px;
+            top: 61%;
+            width: 280px;
         }
     }
 
