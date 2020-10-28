@@ -137,7 +137,7 @@
             <p class="no-margin">
               <strong>LEGALES</strong><br>
             </p>
-            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/aviso_tt.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
             <p class="no-margin"><a href="/avisos/terminos_condiciones_tt.pdf" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
