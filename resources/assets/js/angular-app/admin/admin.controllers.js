@@ -320,7 +320,7 @@ app.controller("adminCtrl", ['$scope', 'AdminFactory', '$http', '$window', 'Uplo
 
 }])
 
-app.directive("money", function ($filter, $locale) {
+app.directive("money",['$filter','$locale', function ($filter, $locale) {
     return {
         restrict: 'A',
         require: 'ngModel',
@@ -355,4 +355,4 @@ app.directive("money", function ($filter, $locale) {
             });
         }
     };
-});
+}]);
