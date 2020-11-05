@@ -176,6 +176,27 @@
             <div class="page-preloader">Cargando</div>
         </div>
         <!-- END PAGA BACKDROPS-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.0/ngMask.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
+        </script>
+        <!-- ANGULAR --->
+        <!-- Cambio de Menu con Scrolll -->
+        <script src="{{ mix('js/admin.controllers.js') }}"></script>
+        <script src="{{ mix('js/admin.services.js') }}"></script>
+        <script>
+            var app = angular.module('angularApp', ['adminController', 'AdminFactory', 'ngFileUpload', 'ngTable',
+                'angularMoment', 'ngMask'
+            ]);
+            app.config(function ($interpolateProvider) {
+                $interpolateProvider.startSymbol('<%');
+                $interpolateProvider.endSymbol('%>');
+            })
+            app.constant("CSRF_TOKEN", '{{csrf_token()}}');
+        </script>
         <!-- CORE PLUGINS-->
         <script src="{{ asset('admin/vendors/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/popper.js/dist/umd/popper.min.js') }}"></script>
@@ -235,17 +256,7 @@
                 });
             });
         </script>
-        <!-- ANGULAR --->
-        <!-- Cambio de Menu con Scrolll -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.4/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.0/ngMask.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
-        </script>
-        <script src="{{ mix('js/admin.controllers.js') }}"></script>
-        <script src="{{ mix('js/admin.services.js') }}"></script>
+        
 
         {{-- <script src="{{ asset('js/angular-locale_es-es.min.js') }}"></script> --}}
 
@@ -258,16 +269,6 @@
         </script>
         <script src="{{asset('js/nav.js')}}"></script>
         <!-- End Scripts -->
-        <script>
-            var app = angular.module('angularApp', ['adminController', 'AdminFactory', 'ngFileUpload', 'ngTable',
-                'angularMoment', 'ngMask'
-            ]);
-            app.config(function ($interpolateProvider) {
-                $interpolateProvider.startSymbol('<%');
-                $interpolateProvider.endSymbol('%>');
-            })
-            app.constant("CSRF_TOKEN", '{{csrf_token()}}');
-        </script>
 
         <script src="{{asset('admin/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js')}}"></script>
         <script src="{{asset('admin/vendors/chart.js/dist/Chart.min.js')}}"></script>
