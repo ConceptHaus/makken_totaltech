@@ -239,7 +239,8 @@
         <!-- Cambio de Menu con Scrolll -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.min.js"></script>
-        <script src="{{ mix('js/vendor.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.0/ngMask.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
         </script>

@@ -181,7 +181,8 @@
 
     <!-- Cambio de Menu con Scrolll -->
     <script src="{{asset('bower/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
-    <script src="{{ mix('js/vendor.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.0/ngMask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
     </script>
     <script src="{{ mix('js/user.controllers.js') }}"></script>

@@ -1,13 +1,13 @@
 {
-    "/js/admin.controllers.js": "/js/admin.controllers.js?id=b7bb5ca9260468c9da02",
-    "/js/admin.services.js": "/js/admin.services.js?id=1c07ec81cd5180659c40",
-    "/js/forgotPassword.controllers.js": "/js/forgotPassword.controllers.js?id=e1182656dae05f76c2c8",
-    "/js/forgotPassword.services.js": "/js/forgotPassword.services.js?id=40457a68484d394d73ec",
-    "/js/home.controllers.js": "/js/home.controllers.js?id=9a0f1101a3ecc7e6d03e",
-    "/js/home.services.js": "/js/home.services.js?id=9287c0bba19de2e3623f",
-    "/js/user.controllers.js": "/js/user.controllers.js?id=b3181521ecd65e3ede79",
-    "/css/app.css": "/css/app.css?id=0fdb52e83ed6b78a3d8a",
-    "/css/main.css": "/css/main.css?id=419e79a91dc1f10204ee",
-    "/js/user.services.js": "/js/user.services.js?id=c47c316efd0f51638834",
+    "/js/admin.controllers.js": "/js/admin.controllers.js?id=87a3ce0ba6cea1437ffd",
+    "/js/admin.services.js": "/js/admin.services.js?id=996426846f6dac2c358c",
+    "/js/forgotPassword.controllers.js": "/js/forgotPassword.controllers.js?id=7a8672a5b130f6a90fad",
+    "/js/forgotPassword.services.js": "/js/forgotPassword.services.js?id=4d24a93e385eb4235f71",
+    "/js/home.controllers.js": "/js/home.controllers.js?id=3baebae8bc938dc43f74",
+    "/js/home.services.js": "/js/home.services.js?id=adeef3070ee7de44cb25",
+    "/js/user.controllers.js": "/js/user.controllers.js?id=023c4daf178fd45dba74",
+    "/css/app.css": "/css/app.css?id=e822a5c8888f720680e5",
+    "/css/main.css": "/css/main.css?id=81387e645eee3c10b11f",
+    "/js/user.services.js": "/js/user.services.js?id=ad4e6f96addb0a719dc4",
     "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }
