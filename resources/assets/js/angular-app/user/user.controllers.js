@@ -107,7 +107,7 @@ app.controller('userCtrl', ['$scope','UserFactory', '$http', '$window', 'Upload'
     }
      $scope.getEstablecimientos();
 
-}])
+}]);
 
 app.directive("money",['$filter','$locale',function ($filter, $locale) {
     return {

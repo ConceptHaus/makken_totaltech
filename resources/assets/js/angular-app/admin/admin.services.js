@@ -92,4 +92,4 @@ app.factory('AdminFactory',['$http', function($http){
             })
         }
     }
-}])
+}]);

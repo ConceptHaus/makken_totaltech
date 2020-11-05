@@ -22,4 +22,4 @@ app.factory('UserFactory',['$http', function($http){
             })
         }
     }
-}])
+}]);
