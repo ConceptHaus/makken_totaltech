@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -422,7 +422,7 @@ app.directive("money", ['$filter', '$locale', function ($filter, $locale) {
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!**************************************************************************!*\
   !*** multi ./resources/assets/js/angular-app/admin/admin.controllers.js ***!
   \**************************************************************************/

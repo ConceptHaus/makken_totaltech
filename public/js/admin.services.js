@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,7 @@ app.factory('AdminFactory', ['$http', function ($http) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 7:
 /*!***********************************************************************!*\
   !*** multi ./resources/assets/js/angular-app/admin/admin.services.js ***!
   \***********************************************************************/

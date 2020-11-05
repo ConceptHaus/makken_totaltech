@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -120,7 +120,7 @@ app.factory('ForgotFactory', function ($http) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*****************************************************************************************!*\
   !*** multi ./resources/assets/js/angular-app/forgotPassword/forgotPassword.services.js ***!
   \*****************************************************************************************/

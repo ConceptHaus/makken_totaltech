@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -235,14 +235,38 @@ app.directive("money", ['$filter', '$locale', function ($filter, $locale) {
 
 /***/ }),
 
-/***/ 1:
-/*!************************************************************************!*\
-  !*** multi ./resources/assets/js/angular-app/user/user.controllers.js ***!
-  \************************************************************************/
+/***/ "./resources/assets/sass-admin/main.scss":
+/*!***********************************************!*\
+  !*** ./resources/assets/sass-admin/main.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/assets/sass/app.scss":
+/*!****************************************!*\
+  !*** ./resources/assets/sass/app.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!*************************************************************************************************************************************************!*\
+  !*** multi ./resources/assets/js/angular-app/user/user.controllers.js ./resources/assets/sass/app.scss ./resources/assets/sass-admin/main.scss ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/js/angular-app/user/user.controllers.js */"./resources/assets/js/angular-app/user/user.controllers.js");
+__webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/js/angular-app/user/user.controllers.js */"./resources/assets/js/angular-app/user/user.controllers.js");
+__webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/sergioramos/Development/Projects/makken_totaltech/resources/assets/sass-admin/main.scss */"./resources/assets/sass-admin/main.scss");
 
 
 /***/ })

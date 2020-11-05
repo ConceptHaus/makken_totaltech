@@ -162,8 +162,8 @@ class AdminController extends Controller {
 
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-            $contact->from('privacidad@makken.com.mx', 'Montack');
-            $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Haz resultado posible ganador de la promoción "Consigue tu scooter eléctrico ¡compra y gana! con Montack."');
+            $contact->from('privacidad@makken.com.mx', 'Total Tech');
+            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de un Dron con Total Tech');
         });
 
         if($usuario->save()){
@@ -191,9 +191,9 @@ class AdminController extends Controller {
         $usercontact['nombre'] = '';
         if($ganador->save() && $usuario->save()){
             
-            Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
-                $contact->from('privacidad@makken.com.mx', 'Montack');
-                $contact->to($usercontact['correo'], 'Montack | Felicidades')->subject('Se han confirmado tus datos de la promoción "Consigue tu scooter eléctrico ¡Compra y gana! con Montack."');
+            Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado un Dron con Total Tech');
             });
 
             $json['success'] = 'success_ganador_user';

@@ -10,11 +10,11 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.js([
-    'resources/assets/bower/angular/angular.js',
-    'resources/assets/bower/ngMask/dist/ngMask.js',
-    //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
-], 'public/js/vendor.js');
+// mix.js([
+//     //'resources/assets/bower/angular/angular.js',
+//     //'resources/assets/bower/ngMask/dist/ngMask.js',
+//     //'resources/assets/bower/sweetalert2/dist/sweetalert2.all.js'
+// ], 'public/js/vendor.js');
 mix.sass('resources/assets/sass/app.scss', 'public/css')
    .sass('resources/assets/sass-admin/main.scss', 'public/css')
    .options({
