@@ -126,8 +126,8 @@
                                         <input class="form-control" type="text" name="dia" ng-model="userGanador.dia">
                                     </div>
                                 </div>
-                                <p>{{$userGanador.dia}}</p>
-                                <div>
+                                <p><% userGanador.dia %></p>
+                                <div ng-if="userGanador.dia">
                                     <div ng-repeat="ticket_total in {{$tickets_totales}} | filter:userGanador.dia">
                                         <div class="form-group mb-4 row">
                                             <label class="col-sm-6 col-form-label">No. Tickets Acumulados</label>
