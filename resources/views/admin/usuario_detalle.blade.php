@@ -126,7 +126,6 @@
                                         <input class="form-control" type="date" name="dia" ng-model="userGanador.dia">
                                     </div>
                                 </div>
-                                <p><% userGanador.dia %></p>
                                 <div>
                                     <div ng-repeat="ticket_total in {{$tickets_totales}}">
                                         <div class="form-group mb-4 row">
