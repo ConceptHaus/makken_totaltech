@@ -121,7 +121,7 @@
 
                                 <div class="form-group" id="date_1">
                                     <label class="font-normal"></label>
-                                    <div class="input-group">
+                                    <div class="input-group date">
                                         <span class="input-group-addon bg-white"><i class="fa fa-calendar"></i></span>
                                         <input class="form-control" type="text" name="dia" ng-model="userGanador.dia">
                                     </div>
