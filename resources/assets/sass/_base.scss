@@ -47,3 +47,19 @@ body {
 html {
     scroll-behavior: smooth !important;
 }
+.lcc-button.js-lcc-accept, .lcc-button.js-lcc-settings-save{
+    background:$azul !important;
+    color: #f2e524 !important;
+    border-radius: 10px;
+}
+.lcc-modal{
+    border-top: 6px solid #e2211c;
+}
+.link-cookies{
+    text-decoration: underline;
+    color: #e2211c;
+    &:hover{
+        color: #e2211c;
+        text-decoration: underline;
+    }
+}
