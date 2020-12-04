@@ -66,6 +66,7 @@ html {
 .lcc-modal {
     position: fixed;
     left: 50%;
+    top: inherit !important;
     bottom: -10% !important;
     transform: translate(-50%,-50%);
     width: 100% !important;
