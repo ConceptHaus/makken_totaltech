@@ -26,6 +26,13 @@
   @include('components.ganadores')
 
 </section>
-
+<div id="popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#popup">&times;</a>
+                <div class="popupContent">
+                    
+                </div>
+            </div>
+</div>
 
 @endsection

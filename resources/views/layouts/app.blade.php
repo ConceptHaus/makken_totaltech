@@ -28,7 +28,7 @@
     integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link href="{{ asset('css/poup.css') }}" rel="stylesheet" type="text/css" />
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -50,8 +50,11 @@
 
 
 </head>
-@if (Request::path() == '/')
 
+
+
+
+@if (Request::path() == '/')
 <body ng-app="angularApp">
   @else
 
