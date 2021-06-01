@@ -5,6 +5,7 @@
 $date = new DateTime('2019-10-21');
 $now = new DateTime();
 @endphp
+<section class="section_home">
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
     <!-- <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -70,4 +71,5 @@ $now = new DateTime();
         </div>
     </div>
 </div>
+</section>
 @endsection

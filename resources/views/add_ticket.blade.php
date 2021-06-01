@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="section_home">
 <div id="pageStyle" class="login container" ng-controller="userCtrl">
     <!-- <img class="login__scooter d-none d-sm-block" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -92,4 +93,5 @@
     </div>
 
 </div>
+</section>
 @endsection
