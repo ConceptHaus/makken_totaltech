@@ -1,7 +1,7 @@
 <div class="container py-5 participantes">
   <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 participantes__block">
-      <h2 class="participantes__h2 text-center">ESTABLECIMIENTOS PARTICIPANTES</h2>
+      <h2 class="participantes__h2 text-center font-italic">ESTABLECIMIENTOS PARTICIPANTES</h2>
       <div class="row">
         <div class="col-6">
           <a href=" https://super.walmart.com.mx/productos?Ntt=ceys" target="_blank"><img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
@@ -42,22 +42,15 @@
              src="{{ asset('img/logos/chedraui.png') }}" alt="Chedraui">
           </a>
         </div>
-<<<<<<< Updated upstream
-=======
        
->>>>>>> Stashed changes
       </div>
       
     </div>
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center">
-      <h2 class="participantes__h2 text-center">PREMIO</h2>
+      <h2 class="participantes__h2 text-center font-italic">PREMIO</h2>
       <img class="participantes__scooter my-4 img-fluid wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/razor-premio.png') }}" alt="scooter-premio">
-<<<<<<< Updated upstream
-      <h6 class="participantes__h6">GANA UN SCOOTER ELÉCTRICO</h6>
-=======
       <h6 class="participantes__h6">GANA UN SCOOTER ELÉCTRONICO</h6>
->>>>>>> Stashed changes
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
