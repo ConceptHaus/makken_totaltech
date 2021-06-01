@@ -130,7 +130,7 @@
             <p class="no-margin">
               <strong>SOPORTE</strong><br>
               41-600-800/900<br>
-              <a class="mail-footer" href="mailto:privacidad@makken.com.mx" target="_blank">Enviar correo</a>
+              <a class="mail-footer" href="mailto:privacidad@makken.com.mx" target="_blank">inf@correo.com</a>
             </p>
           </div>
           <div class="col-lg-3 text-responsive">

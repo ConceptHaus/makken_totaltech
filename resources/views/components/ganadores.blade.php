@@ -8,36 +8,25 @@
       <ul class="nav nav-tabs justify-content-center" id="ganadoresTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="semana1-tab" data-scroll-ignore data-toggle="tab" href="#semana1" role="tab"
-            aria-controls="semana1" aria-selected="true">SEMANA 1</a>
+            aria-controls="semana1" aria-selected="true">Semana 1</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="semana2-tab" data-scroll-ignore data-toggle="tab" href="#semana2" role="tab"
-            aria-controls="semana2" aria-selected="false">SEMANA 2</a>
+            aria-controls="semana2" aria-selected="false">Semana 2</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="semana3-tab" data-scroll-ignore data-toggle="tab" href="#semana3" role="tab"
-            aria-controls="semana3" aria-selected="false">SEMANA 3</a>
+            aria-controls="semana3" aria-selected="false">Semana 3</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="semana4-tab" data-scroll-ignore data-toggle="tab" href="#semana4" role="tab"
-            aria-controls="semana4" aria-selected="false">SEMANA 4</a>
+            aria-controls="semana4" aria-selected="false">Semana 4</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="semana5-tab" data-scroll-ignore data-toggle="tab" href="#semana5" role="tab"
-            aria-controls="semana5" aria-selected="false">SEMANA 5</a>
+            aria-controls="semana5" aria-selected="false">Semana 5</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana6-tab" data-scroll-ignore data-toggle="tab" href="#semana6" role="tab"
-            aria-controls="semana6" aria-selected="false">SEMANA 6</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana7" role="tab"
-            aria-controls="semana7" aria-selected="false">SEMANA 7</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana8" role="tab"
-            aria-controls="semana7" aria-selected="false">SEMANA 8</a>
-        </li>
+        
 
       </ul>
       <div class="tab-content" id="ganadoresTabContent">

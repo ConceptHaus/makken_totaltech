@@ -84,6 +84,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+
 }
 
 [tabindex="-1"]:focus {
@@ -9742,17 +9743,18 @@ h3 {
 }
 .hero {
   background: url("../img/images/background-home.png");
+<<<<<<< Updated upstream
   background-position: center;
+=======
+ 
+>>>>>>> Stashed changes
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 50vw;
+  width:100%;
   position: relative;
 }
-@media (max-width: 1024px) {
-  .hero {
-    height: 600px;
-  }
-}
+
 @media (max-width: 640px) {
   .hero {
     height: 600px;
@@ -9760,9 +9762,16 @@ h3 {
 }
 .hero__img-silicon {
   display: block;
+<<<<<<< Updated upstream
   bottom: 15%;
   left: 10%;
   width: 130px;
+=======
+  bottom: 5%;
+  left: 9%;
+  width: 12vw;
+  top:55%;
+>>>>>>> Stashed changes
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9778,16 +9787,28 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__img-silicon {
+<<<<<<< Updated upstream
     width: 60px;
     top: 30%;
     left: 10%;
+=======
+    width: 75px;
+    top: 39%;
+    left: 65%;
+>>>>>>> Stashed changes
   }
 }
 .hero__ceys-montack {
   display: block;
+<<<<<<< Updated upstream
   left: 10%;
   top: 22%;
   width: 180px;
+=======
+  left: 5%;
+  top: 15%;
+  width: 20vw;
+>>>>>>> Stashed changes
 }
 @media (max-width: 1024px) {
   .hero__ceys-montack {
@@ -9801,14 +9822,21 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-montack {
+<<<<<<< Updated upstream
     top: 15%;
     width: 100px;
     left: 5%;
+=======
+    top: 39%;
+    width: 125px;
+    left: 13%;
+>>>>>>> Stashed changes
   }
 }
 .hero__ceys-productos {
   display: block;
   left: 30%;
+<<<<<<< Updated upstream
   top: 28%;
   width: 300px;
 }
@@ -9817,7 +9845,12 @@ h3 {
     width: 260px;
     left: 25%;
   }
+=======
+  top: 23%;
+  width: 25vw;
+>>>>>>> Stashed changes
 }
+
 @media (max-width: 769px) {
   .hero__ceys-productos {
     width: 180px;
@@ -9826,31 +9859,34 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
+<<<<<<< Updated upstream
     width: 150px;
     left: 10%;
     top: 45%;
+=======
+    width: 40%;
+    left: 10%;
+    top: 60%;
+>>>>>>> Stashed changes
   }
 }
 .hero__scooter {
   display: block;
+<<<<<<< Updated upstream
   right: 20%;
   top: 20%;
   width: 280px;
+=======
+  right: 16%;
+  top: 100px;
+  width: 30vw;
+  z-index: 0;
+>>>>>>> Stashed changes
 }
-@media (max-width: 1024px) {
-  .hero__scooter {
-    width: 280px;
-  }
-}
-@media (max-width: 769px) {
-  .hero__scooter {
-    right: 25%;
-    top: 30%;
-    width: 200px;
-  }
-}
+
 @media (max-width: 640px) {
   .hero__scooter {
+<<<<<<< Updated upstream
     right: 0%;
     top: 50%;
     width: 180px;
@@ -9860,6 +9896,18 @@ h3 {
   width: 290px;
   right: 5%;
   top: 15%;
+=======
+    right: 10%;
+    top: 65%;
+    width: 30%;
+  }
+}
+.hero__montate {
+  width: 25vw;
+  right: 5%;
+  top:20%;
+  bottom: 28%;
+>>>>>>> Stashed changes
 }
 @media (max-width: 1024px) {
   .hero__montate {
@@ -9882,16 +9930,25 @@ h3 {
   background: #0033a0;
   color: #FFF;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.5;
   border-radius: 30px;
   padding: 10px 5px;
   text-decoration: none;
   box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
   transition: all 0.2s;
   position: absolute;
+<<<<<<< Updated upstream
   right: 5%;
   top: 45%;
   height: 80px;
+=======
+  right: 8%;
+  bottom: 10%;
+  top:45%;
+  height: 6vw;
+  width:20vw;
+  z-index: 1;
+>>>>>>> Stashed changes
 }
 .hero__btn-call-to-action {
   font-size: 12px;
@@ -9903,7 +9960,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .hero__btn-call-to-action {
-    font-size: 13px;
+    font-size: 1vw;
   }
 }
 .hero__btn-call-to-action > span {
@@ -9920,7 +9977,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .hero__btn-call-to-action > span {
-    font-size: 28px;
+    font-size: 2vw;
   }
 }
 .hero__btn-call-to-action:hover, .hero__btn-call-to-action:focus {
@@ -9955,9 +10012,11 @@ h3 {
 }
 .dinamica__h1 {
   color: #FFF;
+
+
 }
 .dinamica__h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 @media screen and (min-width: 360px) {
   .dinamica__h1 {
@@ -9966,7 +10025,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h1 {
-    font-size: 35px;
+    font-size: 2vw;
   }
 }
 .dinamica__h4 {
@@ -9974,16 +10033,19 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .dinamica__h4 {
-    font-size: calc(11px + 7 * ((100vw - 360px) / 1080));
+    font-size: calc(17px + 7 * ((100vw - 360px) / 1080));
   }
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h4 {
-    font-size: 18px;
+     font-size: calc(17px + 7 * ((100vw - 360px) / 1080));
   }
 }
 .dinamica__h5 {
   font-size: 18px;
+  font-family: "Helvetica NeueLTS";
+  font-weight: bold;
+  font-style: italic;
 }
 @media screen and (min-width: 360px) {
   .dinamica__h5 {
@@ -9999,16 +10061,16 @@ h3 {
   color: #FFF;
 }
 .dinamica__h6 {
-  font-size: 9px;
+  font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
 }
 @media screen and (min-width: 360px) {
   .dinamica__h6 {
-    font-size: calc(9px + 2 * ((100vw - 360px) / 1080));
+    font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
   }
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h6 {
-    font-size: 11px;
+    font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
   }
 }
 .dinamica__pasos-img {
@@ -10032,6 +10094,7 @@ h3 {
 }
 .participantes__h2 {
   color: #003d8f;
+  font-weight: bold;
 }
 .participantes__h2 {
   font-size: 20px;
@@ -10047,6 +10110,7 @@ h3 {
   }
 }
 .participantes__h6 {
+
   color: #363636;
 }
 .participantes__h6 {
@@ -10063,7 +10127,11 @@ h3 {
   }
 }
 .participantes__scooter {
+<<<<<<< Updated upstream
   width: 250px;
+=======
+  width: 200px;
+>>>>>>> Stashed changes
 }
 @media (max-width: 769px) {
   .participantes__scooter {
@@ -10148,6 +10216,9 @@ footer p {
 }
 footer p.no-margin {
   margin: 0;
+  text-align: left;
+  font-family: "Helvetica NeueLTSBold";
+
 }
 footer p a {
   text-decoration: none;
@@ -10219,9 +10290,15 @@ html {
 
 .body-bg {
   background: url("../img/images/background-home.png") no-repeat;
+<<<<<<< Updated upstream
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
+=======
+  background-size: 100% 110%;
+  height:100%;
+
+>>>>>>> Stashed changes
 }
 
 .no-border {
@@ -10453,7 +10530,13 @@ footer {
 
 .mundo-link:hover {
   text-decoration: underline !important;
+  font-family: "Helvetica NeueLTSBold" !important;
   color: #f2e524;
+}
+.mundo-link{
+
+  font-family: "Helvetica NeueLTSBold" !important;
+  
 }
 
 .modal-content {
@@ -10567,14 +10650,18 @@ footer {
 .contact-border {
   border-right: 2px solid #fff;
 }
+.section_home{
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height: 100%;
 
+
+}
 .container-fluid {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  
   overflow: hidden;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 
 .content-table {
@@ -10656,8 +10743,15 @@ a.navbar-brand {
   .btn-call-to-action {
     height: 60px;
   }
+  
 }
 @media (max-width: 640px) {
+  .body-bg {
+  background: url("../img/images/background-home.png") no-repeat;
+  background-size: 100% 150vh;
+  height:150vh;
+
+}
   .btn-call-to-action {
     height: 60px;
   }
@@ -10683,12 +10777,24 @@ a.navbar-brand {
   }
 }
 @media (max-width: 769px) {
+   footer p.no-margin {
+  margin: 0;
+  text-align: center;
+  font-family: "Helvetica NeueLTSBold";
+
+  }
   .login__scooter {
     top: 20%;
     width: 200px;
   }
 }
 @media (max-width: 640px) {
+  footer p.no-margin {
+  margin: 0;
+  text-align: center;
+  font-family: "Helvetica NeueLTSBold";
+
+  }
   .login__scooter {
     top: 30%;
     width: 300px;
@@ -10696,17 +10802,28 @@ a.navbar-brand {
 }
 .login__ceys-montack {
   position: absolute;
-  width: 200px;
-  left: 5%;
+  width: 11%;
+  left: 10%;
+  top:20%;
 }
 @media (max-width: 1440px) {
   .login__ceys-montack {
+<<<<<<< Updated upstream
     width: 200px;
+=======
+   width: 11%;
+>>>>>>> Stashed changes
   }
 }
 @media (max-width: 1024px) {
+   footer p.no-margin {
+  margin: 0;
+  text-align: center;
+  font-family: "Helvetica NeueLTSBold";
+
+  }
   .login__ceys-montack {
-    width: 250px;
+    width: 11%;
   }
 }
 @media (max-width: 769px) {
@@ -10717,7 +10834,7 @@ a.navbar-brand {
 }
 @media (max-width: 640px) {
   .login__ceys-montack {
-    top: 12%;
+    top: 20%;
     left: 10%;
     width: 150px;
   }
@@ -10725,32 +10842,66 @@ a.navbar-brand {
 .login__img-silicon {
   position: absolute;
   width: 150px;
-  top: 50%;
-  left: 5%;
+  top: 60%;
+  left: 10%;
 }
 @media (max-width: 1440px) {
   .login__img-silicon {
+<<<<<<< Updated upstream
     width: 150px;
+=======
+    width: 11%;
+>>>>>>> Stashed changes
   }
 }
 @media (max-width: 1024px) {
   .login__img-silicon {
-    width: 150px;
+    width: 11%;
   }
 }
+.image_premio{
+  visibility: visible ;
+  position: absolute;
+  width:25%;
+  top:30%;
+  left:60%;
+}
+.image_premio_movil{
+  position: absolute;
+  visibility: hidden;
+}
 @media (max-width: 769px) {
+  
+
+.ng-
   .login__img-silicon {
     width: 150px;
   }
 }
 @media (max-width: 640px) {
+  .image_premio{
+  visibility: hidden;
+}
+  .image_premio_movil{
+  visibility: visible !important;
+  position: absolute;
+  width:70%;
+  top:40%;
+  left:30%;
+  overflow: hidden!important;
+  overflow-y: hidden!important;   
+}
   .login__img-silicon {
-    top: 12%;
+    top: 18%;
     left: 60%;
-    width: 80px;
+    width: 110px;
   }
 }
 
+
+.ng-binding{
+  color: #000000;
+}
 #pageStyle {
   padding-top: 10%;
   margin-bottom: 10%;
@@ -10763,7 +10914,7 @@ a.navbar-brand {
   color: #f2e524;
 }
 #pageStyle .panel {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 0;
   margin-top: 5%;
   padding: 8% 18%;
@@ -10844,12 +10995,11 @@ a.navbar-brand {
 #ganadores .nav-tabs .nav-link {
   background-color: #F0F0F0;
   border-color: #F0F0F0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 0px;
+   font-family: "Helvetica NeueLTSBold";
+  border-top-right-radius: 0px;
   color: #003d8f;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
+  font-size: 2vw;
   letter-spacing: 0.5px;
   margin: 0px 10px;
   text-decoration: none;
@@ -10862,8 +11012,9 @@ a.navbar-brand {
 .ganadores_title {
   text-shadow: 5px 5px 6px #003d8f;
   color: #f2e524;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica NeueLTSBold";
   font-style: normal;
+  font-size: 5vw;
 }
 
 .pointer {
@@ -10884,6 +11035,18 @@ a.navbar-brand {
   src: url("/fonts/HelveticaNeue.woff2") format("woff2"), url("/fonts/HelveticaNeue.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica NeueLTS";
+  src: url("/fonts/AnyConv.com__HelveticaNeueLTStd-BdCn.woff") format("woff");
+
+  
+}
+@font-face {
+  font-family: "Helvetica NeueLTSBold";
+  src: url("/fonts/AnyConv.com__HelveticaNeueLTStd-BlkCnO.woff") format("woff");
+   font-style: italic;
+  
 }
 @font-face {
   font-family: "Helvetica Neue";
@@ -10952,7 +11115,7 @@ html {
   }
 
   #ganadores .nav-tabs .nav-link {
-    font-size: 17px !important;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -10985,7 +11148,7 @@ html {
   }
 
   #ganadores .nav-tabs .nav-link {
-    font-size: 12px !important;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -11002,10 +11165,14 @@ html {
   }
 
   #ganadores .nav-tabs .nav-link {
-    font-size: 12px !important;
+    font-size: 2vw;
+
   }
 }
 @media screen and (max-width: 992px) {
+  .ganadores_title {
+    font-size: 40px;
+  }
   .mascompras {
     padding-left: 15%;
     padding-right: 15%;
@@ -11142,6 +11309,9 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+  #pageStyle .panel {
+  margin-top: 55%;
+}
   .mb-sm-5 {
     margin-bottom: 0;
   }
@@ -11237,6 +11407,7 @@ html {
 
   #pageStyle {
     padding-top: 35%;
+    height:140vh;
   }
   #pageStyle .panel {
     padding: 3% 5% !important;
@@ -11289,6 +11460,11 @@ html {
     width: 200px !important;
   }
 }
+.tabla-resp {
+    color:#707B7C;
+    font-family: "Helvetica NeueLTS";
+
+  }
 @media screen and (max-width: 480px) {
   .header-home .btn-call-to-action {
     bottom: 5%;
@@ -11329,6 +11505,8 @@ html {
 
   .tabla-resp {
     font-size: 10px;
+    font-family: "Helvetica NeueLTSBold";
+
   }
 }
 @media screen and (max-width: 320px) {

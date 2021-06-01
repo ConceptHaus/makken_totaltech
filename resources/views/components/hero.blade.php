@@ -20,7 +20,11 @@
      src="{{ asset('img/images/ceys_productos.png') }}" alt="Ceys Productos">
 
 <img class="position-absolute hero__scooter wow slideInRight" data-wow-duration="1s"
+<<<<<<< Updated upstream
     src="{{ asset('img/images/razor.png') }}" alt="Scooter">
+=======
+    src="{{ asset('img/images/razor-premio.png') }}" alt="Scooter">
+>>>>>>> Stashed changes
 
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">

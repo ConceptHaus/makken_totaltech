@@ -27,7 +27,7 @@
         <div class="col-6">
           <a href="https://www.sodimac.com.mx/sodimac-mx/search/?Ntt=ceys" target="_blank">
             <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
-            src="{{ asset('img/logos/sodimac.png') }}" alt="Sodimac">
+            src="{{ asset('img/logos/lowes.png') }}" alt="Sodimac">
           </a>
         </div>
         <div class="col-6">
@@ -42,13 +42,22 @@
              src="{{ asset('img/logos/chedraui.png') }}" alt="Chedraui">
           </a>
         </div>
+<<<<<<< Updated upstream
+=======
+       
+>>>>>>> Stashed changes
       </div>
+      
     </div>
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center">
       <h2 class="participantes__h2 text-center">PREMIO</h2>
       <img class="participantes__scooter my-4 img-fluid wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/razor-premio.png') }}" alt="scooter-premio">
+<<<<<<< Updated upstream
       <h6 class="participantes__h6">GANA UN SCOOTER ELÉCTRICO</h6>
+=======
+      <h6 class="participantes__h6">GANA UN SCOOTER ELÉCTRONICO</h6>
+>>>>>>> Stashed changes
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
