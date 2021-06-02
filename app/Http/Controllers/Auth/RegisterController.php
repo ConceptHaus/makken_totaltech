@@ -64,8 +64,6 @@ class RegisterController extends Controller
             'nombre' => 'required|string|max:255',
             'apellido' => 'required|string|max:255',
             'telefono' => 'required|string|max:255',
-            'calle' => 'required|string|max:255',
-            'colonia' => 'required|string|max:255',
             'correo' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -90,10 +88,10 @@ class RegisterController extends Controller
             $user->registro_admin = $data['registro_admin'];
 
             $direccion = new Direccion();
-            $direccion->estado = $data['estado'];
-            $direccion->municipio = $data['municipio'];
-            $direccion->colonia = $data['colonia'];
-            $direccion->calle = $data['calle'];
+            $direccion->estado = " ";
+            $direccion->municipio = " ";
+            $direccion->colonia = " ";
+            $direccion->calle = " ";
             $direccion->cp = $data['cp'];
 
             $user->save();
@@ -121,8 +119,11 @@ class RegisterController extends Controller
                 $usercontact['correo'] = $input['correo'];
 
                 Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
+                    $contact->from('privacidad@makken.com.mx', 'Montack');
+                    $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
                     $contact->from('privacidad@makken.com.mx', 'Total Tech');
                     $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
+
                 });
 
                 if($request->admin == 0) {

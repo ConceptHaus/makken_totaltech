@@ -20,10 +20,9 @@
                         <div class="col-8">{{$user->nombre}} {{$user->apellido}}</div>
                     </div>
                     <div class="row align-items-center mb-3">
-                        <div class="col-4 text-light">Dirección</div>
+                        <div class="col-4 text-light">CP</div>
                         <div class="col-8">
-                            {{$user->direccion->calle}} {{$user->direccion->colonia}},
-                            {{$user->direccion->municipio}}, {{$user->direccion->estado}},
+                            
                             {{$user->direccion->cp}}</div>
                     </div>
                     <div class="row align-items-center mb-3">

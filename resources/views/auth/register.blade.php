@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="section_home">
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
     <!-- <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -50,33 +51,7 @@
                                 <p ng-cloak class="error-form" ng-if="errorCP"><% errorCP %></p>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <input ng-model="user.estado" id="estado" type="text" class="form-control" name="estado"
-                                    placeholder="Estado" required autofocus disabled>
-                            </div>
-                            <div class="col form-group">
-                                <input ng-model="user.municipio" id="municipio" type="text" class="form-control"
-                                    name="municipio" placeholder="Municipio" required autofocus disabled>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <select ng-class="{'invalido': errors.colonia }"
-                                    class="selectpicker form-control form-control-solid" ng-model="user.colonia"
-                                    data-live-search="true" id="colonia" type="text" class="form-control" name="colonia"
-                                    title="Selecciona tu colonia" required
-                                    ng-options="colonia for colonia in user.coloniaArray">
-                                </select>
-                                <p ng-cloak class="error-form" ng-if="errors.colonia"><% errors.colonia[0] %></p>
-                            </div>
-                            <div class="col form-group">
-                                <input ng-model="user.calle" id="calle" ng-class="{'invalido': errors.calle }"
-                                    type="text" class="form-control" name="calle" placeholder="Calle y número" required
-                                    autofocus>
-                                <p ng-cloak class="error-form" ng-if="errors.calle"><% errors.calle[0] %></p>
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group">
                             <input ng-class="{'invalido': errors.correo }" ng-model="user.correo" id="email"
@@ -114,4 +89,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection
