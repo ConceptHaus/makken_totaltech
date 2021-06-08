@@ -26,7 +26,7 @@
                             <div class="col form-group">
                                 <input ng-class="{'invalido': errors.nombre }" ng-model="user.nombre" id="name"
                                     type="text" class="form-control" name="name" placeholder="Nombre" required
-                                    autofocus>
+                                    autofocus >
                                 <p ng-cloak class="error-form" ng-if="errors.nombre"><% errors.nombre[0] %></p>
                             </div>
                             <div class="col form-group">

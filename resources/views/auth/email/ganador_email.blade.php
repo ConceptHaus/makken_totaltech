@@ -64,7 +64,7 @@ a[x-apple-data-detectors] {
       <td valign="top" style="padding:0;Margin:0;"> 
        <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;"> 
          <tr style="border-collapse:collapse;"> 
-          <td align="center" style="padding:0;Margin:0;"> 
+          <td align="center" style="padding:0;Margin:0; background-color:#FFFFFF"> 
            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;"> 
              <tr style="border-collapse:collapse;"> 
               <td align="left" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;"> 

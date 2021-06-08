@@ -10601,7 +10601,12 @@ footer {
 }
 
 .content-table {
-  overflow: scroll;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.content-table::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar-resp,
@@ -10627,7 +10632,7 @@ a.navbar-brand {
   padding: 10px 0px;
   text-decoration: none;
   transition: all 0.2s;
-  height: 100px;
+  height:80px;
 }
 .btn-call-to-action {
   font-size: 10px;

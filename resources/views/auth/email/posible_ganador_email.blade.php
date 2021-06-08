@@ -64,7 +64,7 @@ a[x-apple-data-detectors] {
       <td valign="top" style="padding:0;Margin:0;"> 
        <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;"> 
          <tr style="border-collapse:collapse;"> 
-          <td align="center" style="padding:0;Margin:0;"> 
+          <td align="center" style="padding:0;Margin:0;  background-color:#FFFFFF"> 
            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;"> 
              <tr style="border-collapse:collapse;"> 
               <td align="left" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;"> 
@@ -73,7 +73,8 @@ a[x-apple-data-detectors] {
                   <td class="es-m-p0r" width="560" valign="top" align="center" style="padding:0;Margin:0;"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
                      <tr style="border-collapse:collapse;"> 
-                      <td align="center" style="padding:0;Margin:0;font-size:0px;"><img class="adapt-img" src="https://fvqhsq.stripocdn.email/content/guids/CABINET_49a0fc5c4397d31027f3239d314945b1/images/29161584988743800.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="560"></td> 
+                      <td align="center" style="padding:0;Margin:0;font-size:0px;">
+                        <img class="adapt-img" src="https://fvqhsq.stripocdn.email/content/guids/CABINET_49a0fc5c4397d31027f3239d314945b1/images/29161584988743800.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="560"></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
