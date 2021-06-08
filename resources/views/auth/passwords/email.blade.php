@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="section_home">
 <div id="pageStyle" class="container" ng-controller="ForgotPasswordCtrl">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
@@ -40,4 +41,5 @@
     <img class="img-silicon-login wow slideInLeft d-none" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/pega-sella-repara.png') }}" alt="Silicón">
 </div>
+</section>
 @endsection

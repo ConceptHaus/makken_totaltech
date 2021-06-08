@@ -9887,7 +9887,7 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .hero__btn-call-to-action {
-    font-size: calc(12px + 1 * ((100vw - 360px) / 1080));
+    font-size: 1vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -9904,7 +9904,7 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .hero__btn-call-to-action > span {
-    font-size: calc(10px + 10 * ((100vw - 360px) / 1080));
+    font-size: 1.8vw;
     position:relative;
     text-align: center;
     width: 100%;

@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app') 
 
 @section('content')
+<section class="section_home">
 <div id="pageStyle" class="container" ng-controller="ForgotPasswordCtrl">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
@@ -52,4 +53,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection
