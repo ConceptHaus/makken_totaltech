@@ -9,7 +9,7 @@
     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="130"
       data-wow-duration="1s">
       <!-- <img src="{{asset('img/icons/paso_1.svg')}}" class="dinamica__pasos-number" alt="Paso 1"> -->
-      <img src="{{ asset('img/icons/sitio_motack_2_0003s_0002s_0000_Vector-Smart-Object.png') }}" class="dinamica__pasos-img" alt="Paso 1">
+      <img src="{{ asset('img/icons/Carrito-1.svg') }}" class="dinamica__pasos-img2" alt="Paso 1">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">COMPRA PRODUCTOS MONTACK <br/>O DE LA MARCA CEYS <br/>(MONTO MÍNIMO DE $200 M. N.)</h5>
       </div>
@@ -17,7 +17,7 @@
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
       data-wow-duration="1s">
       <!-- <img src="{{asset('img/icons/paso_2.svg')}}" class="dinamica__pasos-number" alt="Paso 2"> -->
-      <img src="{{ asset('img/icons/sitio_motack_2_0003s_0001s_0001_Vector-Smart-Object.png') }}" class="dinamica__pasos-img" alt="Paso 2">
+      <img src="{{ asset('img/icons/Compu-2.svg') }}" class="dinamica__pasos-img" alt="Paso 2">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">REGISTRA EL MAYOR MONTO <br/>DE COMPRA <br/> (PUEDEN SER VARIOS TICKETS)</h5>
       </div>
@@ -25,7 +25,7 @@
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
       data-wow-duration="1s">
       <!-- <img src="{{asset('img/icons/paso_3.svg')}}" class="dinamica__pasos-number" alt="Paso 3"> -->
-      <img src="{{ asset('img/icons/sitio_motack_2_0003s_0000s_0001_Vector-Smart-Object.png') }}" class="dinamica__pasos-img" alt="Paso 3">
+      <img src="{{ asset('img/icons/Scooter-2.svg') }}" class="dinamica__pasos-img" alt="Paso 3">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">GANA<br/>SCOOTER ELÉCTRICO</h5>
       </div>

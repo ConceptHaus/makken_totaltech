@@ -10079,8 +10079,25 @@ h3 {
 }
 .dinamica__pasos-img {
   display: inline-block;
-  min-width: 80px;
+  min-width: 90px;
+  width:10vw;
   padding: 10px;
+}
+.dinamica__pasos-img2{
+   display: inline-block;
+  min-width: 90px;
+  width:8.8vw;
+  padding: 10px;
+
+}
+@media screen and (max-width: 768px) {
+  .dinamica__pasos-img {
+  width:17vw;
+  }
+  .dinamica__pasos-img2{
+    width:15.8vw;
+
+  }
 }
 .dinamica__pasos-number {
   width: 35px;
