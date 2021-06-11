@@ -44,8 +44,8 @@
                         <div class="form-group">
                             <input id="monto" ng-model="ticket.monto" type="text" class="form-control" name="monto"
                                 placeholder="Monto de compra en productos" ng-pattern="/^\d+$/" money required>
-                                <div ng-cloak ng-if="ticket.monto < 300" class="alert alert-warning" role="alert">
-                                    Tickets con monto menor a 300 pesos no participan.
+                                <div ng-cloak ng-if="ticket.monto < 200" class="alert alert-warning" role="alert">
+                                    Tickets con monto menor a 200 pesos no participan.
                                 </div>
                         </div>
 

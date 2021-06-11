@@ -26,6 +26,18 @@
           <a class="nav-link" id="semana5-tab" data-scroll-ignore data-toggle="tab" href="#semana5" role="tab"
             aria-controls="semana5" aria-selected="false">Semana 5</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana6-tab" data-scroll-ignore data-toggle="tab" href="#semana6" role="tab"
+            aria-controls="semana6" aria-selected="false">Semana 6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana7-tab" data-scroll-ignore data-toggle="tab" href="#semana7" role="tab"
+            aria-controls="semana7" aria-selected="false">Semana 7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="semana8-tab" data-scroll-ignore data-toggle="tab" href="#semana8" role="tab"
+            aria-controls="semana8" aria-selected="false">Semana 8</a>
+        </li>
         
 
       </ul>
@@ -36,12 +48,14 @@
             <div class="col-12 content-table">
               <table class="table table-borderless table-responsive table-ganadores-home justify-content-center">
                 <thead>
-                  <tr>
-                    {{-- <th scope="col" width="25%">FECHA</th> --}}
-                    <th scope="col" width="25%">NOMBRE</th>
-                    <th scope="col" width="25%">TIENDA</th>
-                    <th scope="col" width="25%">PREMIO</th>
-                  </tr>
+                    @if (sizeof($ganadores)!= 0)
+                    <tr>
+                      {{-- <th scope="col" width="25%">FECHA</th> --}}
+                      <th scope="col" width="25%">Nombre</th>
+                      <th scope="col" width="25%">Tienda</th>
+                      <th class="premio_border" scope="col" width="25%">Premio</th>
+                    </tr>
+                    @endif
                 </thead>
                 <tbody class="tabla-resp">
                   @php
@@ -53,7 +67,7 @@
                     {{-- <td>{{$ganador->dia}}</td> --}}
                     <td>{{ $ganador['user']->nombre }} {{ $ganador['user']->apellido }}</td>
                     <td>{{ $ganador['user']->tickets[0]->establecimiento->nombre}}</td>
-                    <td>{{ $ganador['premio']->nombre }}</td>
+                    <td class="premio_user_border">{{ $ganador['premio']->nombre }}</td>
                   </tr>
                   @php
                   $j++

@@ -37,8 +37,8 @@ $now = new DateTime();
         <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
       </a>
       @else
-      <a href="{{ url('/ticket') }}" class="btn btn-call-to-action text-center">
-        <span class="mx-4 px-3">REGISTRA</span> DA CLICK AQUÍ
+      <a href="{{ url('/ticket') }}" class="btn btn-call-to-action2 text-center">
+        <span class="mx-4 px-3">REGISTRA</span> <span class="daclick_home">DA CLICK AQUÍ</span>
       </a>
       @endif
       @else
@@ -66,7 +66,7 @@ $now = new DateTime();
               {{$ticket->otro_establecimiento}}
               @endif
             </td>
-            <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/camera-blue.svg')}}" alt="Ticket"
+            <td class="no-border"> <img class="camera-icon" src="{{asset('img/icons/search-solid.svg')}}" alt="Ticket"
                 data-toggle="modal" data-target="#ticketModal{{$ticket->no_ticket}}">
               <!-- Modal Tickets -->
               <div class="modal fade" id="ticketModal{{$ticket->no_ticket}}" tabindex="-1" role="dialog"

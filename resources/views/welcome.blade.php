@@ -9,7 +9,7 @@
 
 </section>
 
-<section>
+<section class="dinamica_ganador">
 
   @include('components.dinamica')
 

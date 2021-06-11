@@ -40,7 +40,7 @@
                         <div class="form-row">
                             <div class="col form-group">
                                 <input ng-class="{'invalido': errors.telefono }" ng-model="user.telefono" id="phone"
-                                    type="text" class="form-control" name="phone" mask="(99) 9999-9999"
+                                    type="text" class="form-control" name="phone" mask="(99) 9999-9999" 
                                     placeholder="Teléfono" required autofocus>
                                 <p ng-cloak class="error-form" ng-if="errors.telefono"><% errors.telefono[0] %></p>
                             </div>

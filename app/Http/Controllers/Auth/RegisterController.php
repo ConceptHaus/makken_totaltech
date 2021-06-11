@@ -63,7 +63,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'nombre' => 'required|string|max:255||regex:([a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+)',
             'apellido' => 'required|string|max:255||regex:([a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+)',
-            'telefono' => 'required|string|max:255',
+            'telefono' => 'required|string|max:255||regex:(^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$)',
             'correo' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
