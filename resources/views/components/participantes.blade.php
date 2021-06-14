@@ -25,12 +25,6 @@
              src="{{ asset('img/logos/heb.png') }}" alt="HEB">
         </div>
         <div class="col-6">
-          <a href="https://www.sodimac.com.mx/sodimac-mx/search/?Ntt=ceys" target="_blank">
-            <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
-            src="{{ asset('img/logos/lowes.png') }}" alt="Sodimac">
-          </a>
-        </div>
-        <div class="col-6">
           <a href="https://www.homedepot.com.mx/SearchDisplay?categoryId=&storeId=10351&catalogId=10101&langId=-5&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=20&searchTerm=ceys#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&" target="_blank">
             <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
              src="{{ asset('img/logos/homedepot.png') }}" alt="Home Depot">
