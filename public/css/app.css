@@ -10016,11 +10016,15 @@ h3 {
     top:-2vw;
   }
 }
-.dinamica__h4 {
+.dinamica__h4,.dinamica__h4_dos {
   font-size: 2vw;
   position: relative;
   width:90vw;
   left:-15vw;  
+}
+.dinamica__h4_dos {
+  color: #ffffff;
+  font-size: 1vw;
 }
 @media screen and (max-width: 768px) {
   .dinamica__h1 {
@@ -10030,16 +10034,19 @@ h3 {
     width:90vw;
     left:-6vw;
   }
-  .dinamica__h4 {
+  .dinamica__h4,.dinamica__h4_dos {
     font-size:3.5vw;
     width:90vw;
     position:relative;
     left:-2vw;
   }
+  .dinamica__h4_dos {
+    font-size:2.5vw;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .dinamica__h4 {
-     font-size: calc(17px + 7 * ((100vw - 360px) / 1080));
+  .dinamica__h4,.dinamica__h4_dos {
+     font-size: 2;
   }
 }
 .dinamica__h5 {
