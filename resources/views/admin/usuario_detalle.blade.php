@@ -335,7 +335,8 @@
                                                         width="400" height="300">
                                                     @else
                                                     <img
-                                                        src="https://makkenbucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+
+                                                        src="https://makken-bucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
                                                     @endif
                                                 </div>
                                                 <div class="modal-footer bg-primary-50"></div>
