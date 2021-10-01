@@ -1399,8 +1399,8 @@ pre code {
   }
 
   .col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+        flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .col-xl-5 {
@@ -9782,14 +9782,13 @@ h3 {
   }
 }
 .hero {
-  z-index:1;
-  background: url("../img/images/background-home.png");
- 
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vw;
-  width:100%;
-  position: relative;
+     z-index: 1;
+    background: url("../img/images/background-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100%;
+    position: relative;
 }
 
 @media (max-width: 640px) {
@@ -9798,11 +9797,11 @@ h3 {
   }
 }
 .hero__img-silicon {
-  display: block;
-  bottom: 5%;
-  left: 9%;
-  width: 12vw;
-  top:55%;
+      display: block;
+    bottom: 5%;
+    left: 2.5%;
+    width: 18vw;
+    top: 39%;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9827,10 +9826,10 @@ h3 {
   border-right: 0px solid #FFFFFF !important;
 }
 .hero__ceys-montack {
-  display: block;
-  left: 5%;
-  top: 15%;
-  width: 20vw;
+        display: block;
+    left: 2%;
+    top: 18%;
+    width: 19.2vw;
 }
 @media (max-width: 1024px) {
   .hero__ceys-montack {
@@ -9850,47 +9849,72 @@ h3 {
   }
 }
 .hero__ceys-productos {
-  display: block;
-  left: 30%;
-  top: 23%;
-  width: 25vw;
+      display: block;
+    left: 24%;
+    top: 15%;
+    width: 23vw;
 }
 .dinamica_ganador{
-  z-index:1;
+      z-index: 1;
+    height: 37vw;
 }
 @media (max-width: 768px) {
   .hero__ceys-productos {
     width: 180px;
     left: 28%;
   }
+  .dinamica_ganador{
+      z-index: 1;
+    height: 230vw;
+}
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 45%;
+    width: 30%;
     left: 10%;
-    top: 65%;
+    top: 55%;
   }
 }
 .hero__scooter {
-  display: block;
-  right: 17%;
-  top:8vw;
-  width: 29.7vw;
-  z-index: 0;
+      display: block;
+    right: 11%;
+    top: 17vw;
+    width: 27vw;
+    z-index: 0;
+}
+.dinami{
+       position: absolute;
+    color: white;
+    top: 55vw;
+    left: 2vw;
+    font-size: .7vw;
+    font-family: 'Helvetica NeueLTSBold';
+    letter-spacing: .16vw;
+    /* text-align: center; */
 }
 
 @media (max-width: 640px) {
+  .dinami{
+        position: absolute;
+    color: white;
+    top: 140vw;
+    left: 1vw;
+    font-size: 2.2vw;
+    font-family: 'Helvetica NeueLTSBold';
+    letter-spacing: .16vw;
+    text-align: center;
+}
   .hero__scooter {
-    right: 0%;
+        right: 5%;
     top: 63%;
     width: 40%;
   }
 }
 .hero__montate {
-  width: 25vw;
-  right: 5%;
-  top:20%;
-  bottom: 28%;
+      width: 32vw;
+    right: 9%;
+    top: 63%;
+    bottom: 28%;
 }
 @media (max-width: 1024px) {
   .hero__montate {
@@ -9911,22 +9935,22 @@ h3 {
   }
 }
 .hero__btn-call-to-action {
-  background: #0033a0;
-  color: #FFF;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 30px;
-  padding: 10px 5px;
-  text-decoration: none;
-  box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
-  transition: all 0.2s;
-  position: absolute;
-  right: 8%;
-  bottom: 10%;
-  top:45%;
-  height: 6vw;
-  width:20vw;
-  z-index: 1;
+     background: #0033a0;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 30px;
+    padding: 10px 5px;
+    text-decoration: none;
+    box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
+    transition: all 0.2s;
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    top: 80%;
+    height: 6vw;
+    width: 20vw;
+    z-index: 1;
 }
 .hero__btn-call-to-action {
   font-size: 12px;
@@ -10017,14 +10041,18 @@ h3 {
   }
 }
 .dinamica__h4,.dinamica__h4_dos {
-  font-size: 2vw;
-  position: relative;
-  width:90vw;
-  left:-15vw;  
+      font-size: 2vw;
+    position: relative;
+    width: 90vw;
+    left: -15vw;
+    top: 4vw; 
 }
 .dinamica__h4_dos {
-  color: #ffffff;
-  font-size: 1vw;
+      color: #ffffff;
+    font-size: .7vw;
+    top: 5.5vw;
+    left: -25%;
+    width: 48.3%;
 }
 @media screen and (max-width: 768px) {
   .dinamica__h1 {
@@ -10035,13 +10063,15 @@ h3 {
     left:-6vw;
   }
   .dinamica__h4,.dinamica__h4_dos {
-    font-size:3.5vw;
-    width:90vw;
-    position:relative;
-    left:-2vw;
+        font-size: 3.5vw;
+    width: 90vw;
+    position: relative;
+    left: -2vw;
+    top: 70vw;
   }
   .dinamica__h4_dos {
-    font-size:2.5vw;
+        font-size: 2.5vw;
+    top: 70vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -10069,41 +10099,69 @@ h3 {
   color: #FFF;
 }
 .dinamica__h6 {
-  font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
+    font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
+    top: 4vw;
+    position: relative;
 }
 @media screen and (max-width: 768px) {
   .dinamica__h6 {
-    font-size:2.5vw;
-     width:90vw;
-    position:relative;
-    left:-2vw;
+        font-size: 2.5vw;
+    width: 90vw;
+    position: relative;
+    left: -2vw;
+    top: 65vw;
   }
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h6 {
-    font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
+        font-size: 1.5vw;
   }
 }
 .dinamica__pasos-img {
-  display: inline-block;
-  min-width: 90px;
-  width:10vw;
-  padding: 10px;
+      display: inline-block;
+    /* min-width: 90px; */
+    width: 23vw;
+    padding: 10px;
 }
 .dinamica__pasos-img2{
-   display: inline-block;
-  min-width: 90px;
-  width:8.8vw;
-  padding: 10px;
+       display: inline-block;
+    /* min-width: 90px; */
+    width: 19vw;
+    /* padding: 10px; */
+    left: -0vw;
+    position: absolute;
+
+}
+.dinamica__pasos-img3{
+         display: inline-block;
+    /* min-width: 90px; */
+    width: 19vw;
+    /* padding: 10px; */
+    left: 4vw;
+    position: absolute;
 
 }
 @media screen and (max-width: 768px) {
   .dinamica__pasos-img {
-  width:17vw;
+      width: 70vw;
+    left: 4vw;
+    position: relative;
+    top: 20vw;
   }
   .dinamica__pasos-img2{
-    width:15.8vw;
+        width: 60vw;
+    left: 13%;
 
+  }
+  .dinamica__pasos-img3{
+        width: 68vw;
+    top: 20vw;
+    left: 10vw;
+
+}
+  .movil_sty{
+        top: 40vw;
+    width: 60vw;
   }
 }
 .dinamica__pasos-number {
@@ -10148,35 +10206,44 @@ h3 {
   color: #363636;
 }
 .participantes__h6 {
-  font-size: 1.2vw;
-  position: relative;
-  top:-5.5vw;
+        font-size: 1.2vw;
+    position: relative;
+    top: 9vw;
+    left: 2vw;
 }
 
 @media screen and (min-width: 1440px) {
 
 }
 .participantes__scooter {
-  width: 17vw;
-  position: relative;
-  top:.5vw;
-  left:5%;
+      width: 20vw;
+    position: relative;
+    top: 6vw;
+    left: 5%;
 
 }
 @media (max-width: 768px) {
   .participantes__scooter {
-    width: 40vw;
+        width: 60vw;
     position: relative;
-    top:10%;
+    top: 15vw;
+    left: 3vw;
   }
   .participantes__h6 {
-    font-size: 3.5vw;
-    top:-3.5vw;
+        font-size: 3.5vw;
+    top: -45vw;
   }
 }
 .participantes__tiendas--disclaimer {
   font-size: 0.5rem;
   color: black;
+}
+.top_part{
+    visibility: visible;
+    animation-duration: 1s;
+    animation-name: fadeInDown;
+    top: 1.5vw;
+    position: relative;
 }
 .participantes__tiendas-img {
   width: 15vw;
@@ -10612,7 +10679,7 @@ footer {
 @media (max-width: 768px){
   .barra{
     height:.8vw;
-    top:48%;
+    top:55%;
     width:50%;
     left:25%;
   }
@@ -10747,9 +10814,9 @@ footer {
 
 }
 .container-fluid {
-  width: 100%;
-  
-  overflow: hidden;
+     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .content-table {
@@ -10775,19 +10842,20 @@ a.navbar-brand {
 }
 
 .btn-call-to-action,.btn-call-to-action2 {
-  background: #0033a0;
-  color: #FFF;
-  font-weight: 600;
-  line-height: 1.2;
-  border-radius: 20px;
-  box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
-  padding: 10px 0px;
-  text-decoration: none;
-  transition: all 0.2s;
-  height:5vw;
-  width:15vw;
-  top:-7vw;
-  position: relative;
+      background: #0033a0;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 20px;
+    box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
+    padding: 10px 0px;
+    text-decoration: none;
+    transition: all 0.2s;
+    height: 5vw;
+    width: 15vw;
+    top: 11vw;
+    position: relative;
+    left: 2vw;
 }
 .btn-call-to-action2 {
   top:0vw;
@@ -10805,7 +10873,7 @@ a.navbar-brand {
   transition: all 0.2s;
   height:11vw!important;
   width:35vw;
-  top:-0vw;
+  top:10vw;
   position: relative;
 }
 .btn-call-to-action2 {
@@ -10939,10 +11007,10 @@ a.navbar-brand {
   }
 }
 .login__ceys-montack {
-  position: absolute;
-  width: 11%;
-  left: 10%;
-  top:20%;
+      position: absolute;
+    width: 18%;
+    left: 4%;
+    top: 17%;
 }
 @media (max-width: 1440px) {
   .login__ceys-montack {
@@ -10974,10 +11042,10 @@ a.navbar-brand {
   }
 }
 .login__img-silicon {
-  position: absolute;
-  width: 150px;
-  top: 60%;
-  left: 10%;
+      position: absolute;
+    width: 17.5vw;
+    top: 42%;
+    left: 4%;
 }
 @media (max-width: 1440px) {
   .login__img-silicon {
@@ -10994,7 +11062,7 @@ a.navbar-brand {
   position: absolute;
   width:25%;
   top:30%;
-  left:60%;
+  left:65%;
   min-width:400px;
 }
 .image_premio_movil{
@@ -11108,7 +11176,7 @@ a.navbar-brand {
 }
 
 .ganadores {
-  background-image: linear-gradient(to top, #011a3c, #01276e, #012c84, #003199, #0033a0);
+  background: url("../img/images/BGR copia.png") no-repeat;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11133,7 +11201,7 @@ a.navbar-brand {
 }
 @media (min-width: 994px){
 #ganadores .nav-tabs .nav-link{
-   width:11vw;
+   width:17.9vw;
 }
 }
 #ganadores .nav-tabs .nav-link.active {

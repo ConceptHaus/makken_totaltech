@@ -59,7 +59,7 @@ $now = new DateTime();
             <td>{{$ticket->no_ticket}}</td>
             <td>$ {{ number_format($ticket->monto, 2, '.', ',' ) }}</td>
             <td>
-              @if ($ticket->id_establecimiento != 9)
+              @if ($ticket->id_establecimiento != 10)
               <img class="img-establecimiento" src="{{$ticket->establecimiento->url}}"
                 alt="{{$ticket->establecimiento->nombre}}">
               @else

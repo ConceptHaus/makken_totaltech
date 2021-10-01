@@ -24,3 +24,5 @@
 
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
+<span class="dinami"> "TOTAL TECH, PUEDE CON TODO" CONSULTA VIGENCIA, MECÁNICA, TÉRMINOS Y CONDICIONES<br>
+EN:WWW.GANACONCEYS.COM.MX</span>
