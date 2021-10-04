@@ -10141,6 +10141,15 @@ h3 {
     position: absolute;
 
 }
+.dinamica__pasos-img4{
+        display: inline-block;
+    /* min-width: 90px; */
+    width: 15.5vw;
+    /* padding: 10px; */
+    left: 4vw;
+    position: absolute;
+
+}
 @media screen and (max-width: 768px) {
   .dinamica__pasos-img {
       width: 70vw;
@@ -10154,6 +10163,12 @@ h3 {
 
   }
   .dinamica__pasos-img3{
+        width: 68vw;
+    top: 20vw;
+    left: 10vw;
+
+}
+.dinamica__pasos-img4{
         width: 68vw;
     top: 20vw;
     left: 10vw;

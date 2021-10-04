@@ -25,7 +25,7 @@
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn " data-wow-offset="135"
       data-wow-duration="1s">
       <!-- <img src="{{asset('img/icons/paso_3.svg')}}" class="dinamica__pasos-number" alt="Paso 3"> -->
-      <img src="{{ asset('img/images/cadasemana.png') }}" class="dinamica__pasos-img3 movil_sty" alt="Paso 3">
+      <img src="{{ asset('img/images/cadasemana.png') }}" class="dinamica__pasos-img4 movil_sty" alt="Paso 3">
     </div>
   </div>
   <div class="row text-center justify-content-center">
