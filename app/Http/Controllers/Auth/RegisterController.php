@@ -122,7 +122,7 @@ class RegisterController extends Controller
                     $contact->from('privacidad@makken.com.mx', 'Montack');
                     $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
                     $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                    $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
+                    $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un GoPro9 con Total Tech, ¡mucha suerte!');
 
                 });
 
