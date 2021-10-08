@@ -193,7 +193,7 @@ class AdminController extends Controller {
             
             Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
                 $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado un Scooter con Total Tech');
+                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una GoPro9 con Total Tech');
             });
 
             $json['success'] = 'success_ganador_user';
