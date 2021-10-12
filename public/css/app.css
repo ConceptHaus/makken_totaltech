@@ -1218,8 +1218,8 @@ pre code {
   }
 
   .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .col-lg-5 {
@@ -10048,13 +10048,19 @@ h3 {
     top: 4vw; 
 }
 .dinamica__h4_dos {
-      color: #ffffff;
+       color: #ffffff;
     font-size: .7vw;
-    top: 5.5vw;
+    top: 4.5vw;
     left: -25%;
-    width: 48.3%;
+    width: 40vw;
+}
+.top_row{
+  top: -1vw;
 }
 @media screen and (max-width: 768px) {
+  .top_row {
+    top: 69vw;
+}
   .dinamica__h1 {
     font-size: 5vw;
     position: relative;
@@ -10099,9 +10105,11 @@ h3 {
   color: #FFF;
 }
 .dinamica__h6 {
-    font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
+        font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
     top: 4vw;
     position: relative;
+    width: 100vw;
+    left: -18vw;
 }
 @media screen and (max-width: 768px) {
   .dinamica__h6 {
@@ -11216,7 +11224,7 @@ a.navbar-brand {
 }
 @media (min-width: 994px){
 #ganadores .nav-tabs .nav-link{
-   width:17.9vw;
+   width:10.9vw;
 }
 }
 #ganadores .nav-tabs .nav-link.active {
@@ -11796,4 +11804,8 @@ html {
   letter-spacing: 1px !important;
   padding: 10px 12px !important;
   width: 200px !important;
+}
+
+.row_tam{
+  height: 8vw!important;
 }

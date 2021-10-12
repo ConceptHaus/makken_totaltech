@@ -26,7 +26,7 @@
           <a class="nav-link" id="semana5-tab" data-scroll-ignore data-toggle="tab" href="#semana5" role="tab"
             aria-controls="semana5" aria-selected="false">Semana 5</a>
         </li>
-        <!--
+        
         <li class="nav-item">
           <a class="nav-link" id="semana6-tab" data-scroll-ignore data-toggle="tab" href="#semana6" role="tab"
             aria-controls="semana6" aria-selected="false">Semana 6</a>
@@ -38,7 +38,7 @@
         <li class="nav-item">
           <a class="nav-link" id="semana8-tab" data-scroll-ignore data-toggle="tab" href="#semana8" role="tab"
             aria-controls="semana8" aria-selected="false">Semana 8</a>
-        </li>-->
+        </li>
         
 
       </ul>
