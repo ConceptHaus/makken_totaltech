@@ -9795,6 +9795,16 @@ h3 {
   .hero {
     height: 150vw;
   }
+  .hero {
+       z-index: 1;
+    background: url("../img/images/background-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vw!important;
+    width: 100%;
+    position: relative;
+    background-size: 110% 100%;
+}
 }
 .hero__img-silicon {
       display: block;
@@ -9817,9 +9827,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__img-silicon {
-    width: 20vw;
-    top: 39%;
-    left: 65%;
+    width: 15vw;
+    top: 55%;
+    left: 5%;
   }
 }
 .premio_border,.premio_user_border{
@@ -9843,9 +9853,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-montack {
-    top: 39%;
-    width: 35vw;
-    left: 13%;
+        top: 39%;
+    width: 15vw;
+    left: 5%;
   }
 }
 .hero__ceys-productos {
@@ -9870,9 +9880,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 30%;
-    left: 10%;
-    top: 55%;
+          width: 23%;
+    left: 26%;
+    top: 34%;
   }
 }
 .hero__scooter {
@@ -9895,19 +9905,20 @@ h3 {
 
 @media (max-width: 640px) {
   .dinami{
-        position: absolute;
+       position: absolute;
     color: white;
-    top: 140vw;
-    left: 1vw;
+    top: 72vw;
+    left: 10vw;
     font-size: 2.2vw;
     font-family: 'Helvetica NeueLTSBold';
     letter-spacing: .16vw;
     text-align: center;
+    width: 80%;
 }
   .hero__scooter {
-        right: 5%;
-    top: 63%;
-    width: 40%;
+        right: 9%;
+    top: 34%;
+    width: 30%;
   }
 }
 .hero__montate {
@@ -9929,9 +9940,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 20%;
-    right: 25%;
-    width: 50vw;
+        top: 70%;
+    right: 10%;
+    width: 30vw;
   }
 }
 .hero__btn-call-to-action {
@@ -11105,13 +11116,13 @@ a.navbar-brand {
   visibility: hidden;
 }
   .image_premio_movil{
-  visibility: visible !important;
-  position: absolute;
-  width:70%;
-  top:40%;
-  left:30%;
-  overflow: hidden!important;
-  overflow-y: hidden!important;   
+      visibility: visible !important;
+    position: absolute;
+    width: 40%;
+    top: 40%;
+    left: 55%;
+    overflow: hidden!important;
+    overflow-y: hidden!important;
 }
   .login__img-silicon {
     top: 10%;
