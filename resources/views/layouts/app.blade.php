@@ -9,7 +9,7 @@
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
   <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg" />
-  <meta property="og:description" content="¡Compra y gana un scooter con Montack!" />
+  <meta property="og:description" content="¡Compra y gana una GoPro con Total Tech!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ganaconceys.com.mx" />
 
