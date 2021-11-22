@@ -47,6 +47,42 @@
   </script>
   <!-- End Google Tag Manager -->
 
+<!-- Adform Tracking Code BEGIN -->
+
+<script type="text/javascript">
+
+    window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+
+    window._adftrack.push({
+
+        HttpHost: 'track.adform.net',
+
+        pm: 2316305,
+
+        divider: encodeURIComponent('|'),
+
+        pagename: encodeURIComponent('CEYS | RTG-MX-HOMEDEPOT')
+
+    });
+
+    (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+
+
+
+</script>
+
+<noscript>
+
+    <p style="margin:0;padding:0;border:0;">
+
+        <img src="https://track.adform.net/Serving/TrackPoint/?pm=2316305&ADFPageName=CEYS%20%7C%20RTG-MX-HOMEDEPOT&ADFdivider=|" width="1" height="1" alt="" />
+
+    </p>
+
+</noscript>
+
+<!-- Adform Tracking Code END -->
+
 
 </head>
 @if (Request::path() == '/')
