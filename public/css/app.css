@@ -10760,12 +10760,11 @@ footer {
   border-right: 0px solid #fff;
 }
 .section_home{
-  position:relative;
-  overflow:hidden;
-  width:100%;
-  height: 100vh;
-
-
+     position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
 }
 .container-fluid {
   width: 100%;
