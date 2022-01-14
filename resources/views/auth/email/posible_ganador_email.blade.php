@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta content="telephone=no" name="format-detection"> 
   <title>Posible ganador</title> 
-  <!--[if (mso 16)]>
+  <!--[if (mso 16)]> 
     <style type="text/css">
     a {text-decoration: none;}
     </style>
@@ -74,7 +74,7 @@ a[x-apple-data-detectors] {
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
                      <tr style="border-collapse:collapse;"> 
                       <td align="center" style="padding:0;Margin:0;font-size:0px;">
-                        <img class="adapt-img" src="https://fvqhsq.stripocdn.email/content/guids/CABINET_49a0fc5c4397d31027f3239d314945b1/images/29161584988743800.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="560"></td> 
+                        <img class="adapt-img" src="{{asset('img/email/mailing_ganador.jpg')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="560"></td> 
                      </tr> 
                    </table></td> 
                  </tr> 

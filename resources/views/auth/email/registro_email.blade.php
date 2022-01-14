@@ -60,7 +60,7 @@ a[x-apple-data-detectors] {
 			</v:background>
 		<![endif]--> 
    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;"> 
-     <tr style="border-collapse:collapse;"> 
+     <tr style="border-collapse:collapse;">  
       <td valign="top" style="padding:0;Margin:0;"> 
        <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;"> 
          <tr style="border-collapse:collapse;"> 
@@ -73,7 +73,7 @@ a[x-apple-data-detectors] {
                   <td class="es-m-p0r" width="600" valign="top" align="center" style="padding:0;Margin:0;"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
                      <tr style="border-collapse:collapse;"> 
-                      <td align="center" style="padding:0;Margin:0;font-size:0px;"><img class="adapt-img" src="https://fvqhsq.stripocdn.email/content/guids/CABINET_6c23d8695b35f74b2157cc32812de5db/images/82051583883860762.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="600"></td> 
+                      <td align="center" style="padding:0;Margin:0;font-size:0px;"><img class="adapt-img" src="{{asset('img/email/mailing_registro.jpg')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="600"></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
