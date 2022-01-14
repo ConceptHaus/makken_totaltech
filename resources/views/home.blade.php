@@ -25,9 +25,9 @@ $now = new DateTime();
 <section class="section_home">
 <div id="pageStyle" class="login container-fluid" id="tickets">
   <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/razor.png') }}" alt="agarre-total" />
+        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/razormovil.png') }}" alt="agarre-total" />
+        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
   <div class="row text-center justify-content-center">
     <div class="col-10 content-table-tickets content-table">
       @if ($tickets->count() == 0)

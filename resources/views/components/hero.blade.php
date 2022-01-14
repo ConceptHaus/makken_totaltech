@@ -10,8 +10,8 @@
 </a>
 @endif
 
-<img class="position-absolute hero__ceys-montack  wow slideInLeft" data-wow-duration="1s"
-     src="{{ asset('img/images/ceys_logo.png') }}" alt="Ceys Logo">
+<!--<img class="position-absolute hero__ceys-montack  wow slideInLeft" data-wow-duration="1s"
+     src="{{ asset('img/images/ceys_logo.png') }}" alt="Ceys Logo">-->
 
 <img class="position-absolute hero__img-silicon wow slideInLeft" data-wow-duration="1s"
      src="{{ asset('img/images/agarre_total.png') }}" alt="Agarre Total">
