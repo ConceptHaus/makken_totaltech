@@ -10103,17 +10103,22 @@ h3 {
   }
 }
 .dinamica__pasos-img {
-  display: inline-block;
-  min-width: 90px;
-  width:10vw;
-  padding: 10px;
+     display: inline-block;
+    min-width: 90px;
+    width: 7vw;
+    padding: 10px;
 }
 .dinamica__pasos-img2{
    display: inline-block;
   min-width: 90px;
-  width:8.8vw;
+  width:7vw;
   padding: 10px;
 
+}
+.dinamica__pasos-img3{
+      display: inline-block;
+    width: 4vw;
+    padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .dinamica__pasos-img {
@@ -10123,6 +10128,9 @@ h3 {
     width:15.8vw;
 
   }
+  .dinamica__pasos-img3{
+    width: 15vw;
+}
 }
 .dinamica__pasos-number {
   width: 35px;
