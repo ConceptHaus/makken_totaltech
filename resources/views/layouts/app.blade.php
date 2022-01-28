@@ -22,6 +22,7 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+  <link href="{{ asset('css/popup.css') }}" rel="stylesheet" type="text/css" />
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
     integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
@@ -140,6 +141,11 @@
     </nav>
     <!-- Fin del Menú -->
     {{-- Content --}}
+    <div id="popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#popup">&times;</a>
+            </div>
+        </div>
     @yield('content')
     {{-- End Content --}}
 
@@ -216,6 +222,7 @@
     <!-- Scripts -->
 
     <!-- Cambio de Menu con Scrolll -->
+    <script src="{{ asset('js/popup.js') }}"></script>
     <script src="{{asset('bower/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
     <script src="{{ mix('js/vendor.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js">
