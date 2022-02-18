@@ -38,9 +38,20 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <!-- PAGE LEVEL STYLES-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ64ST5FG6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CZ64ST5FG6');
+</script>
+
 </head>
 
 <body class="fixed-navbar" ng-app="angularApp">
+
     <div class="page-wrapper">
         <!-- START HEADER-->
         <header class="header">
