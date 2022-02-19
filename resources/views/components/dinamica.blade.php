@@ -12,7 +12,7 @@
       <img src="{{ asset('img/icons/1-carrito.png') }}" class="dinamica__pasos-img2" alt="Paso 1">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">COMPRA 2 PRODUCTOS <br/>O MÁS CEYS</h5>
-        <h5 class="dinamica__mincompra mt-3">(Consulta en bases el minimo de compra)</h5>
+        <h5 class="dinamica__mincompra mt-3">(Mínimo de compra $200)</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
@@ -20,7 +20,7 @@
       <!-- <img src="{{asset('img/icons/paso_2.svg')}}" class="dinamica__pasos-number" alt="Paso 2"> -->
       <img src="{{ asset('img/icons/2-registro.png') }}" class="dinamica__pasos-img" alt="Paso 2">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">ENTRA A<br/>GANACONCEYS.COM</h5>
+        <h5 class="dinamica__h5 mt-3">ENTRA A<br/>GANACONCEYS.COM.MX</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
