@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="¡Compra y gana una bicicleta eléctrica con Montack!" />
-  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.jpg')}}" />
+  <meta name="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
   <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech.jpg" />

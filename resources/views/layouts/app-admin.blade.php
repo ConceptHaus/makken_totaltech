@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta name="description" content=""/>
-    <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}"/>
+    <meta name="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}"/>
      <!-- Facebook -->
      <meta property="og:title" content="¡Compra y gana una bicicleta eléctrica con TotalTech!"/>
-     <meta property="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
+     <meta property="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}" />
      <meta property="og:description" content="¡Compra y gana una bicicleta eléctrica con TotalTech!"/>   
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.mundoceys.com" /> 
