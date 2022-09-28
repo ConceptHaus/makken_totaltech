@@ -13,14 +13,14 @@ $now = new DateTime();
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/montate.png') }}" alt="ceys-montack">
+        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
     <img class="login__img-silicon wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/agarre_total.png') }}" alt="agarre-total">
 
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel">
-                <img src="{{ asset('img/images/date-satamp.svg') }}" class="panel-img img-fluid" width="200" alt="">
+                <!--<img src="{{ asset('img/images/date-satamp.svg') }}" class="panel-img img-fluid" width="200" alt="">-->
                 <div class="panel-body text-center">
                     <form class="form-horizontal">
                         {{ csrf_field() }}
