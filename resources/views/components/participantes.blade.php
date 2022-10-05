@@ -1,7 +1,7 @@
 <div class="container py-5 participantes">
   <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-6 col-12 participantes__block">
-      <h2 class="participantes__h2 text-center font-italic">ESTABLECIMIENTOS <br/>PARTICIPANTES</h2>
+      <h2 class="participantes__h2 text-center font-italic">ESTABLECIMIENTO <br/>PARTICIPANTE</h2>
       <div class="row">
         <div class="col-12">
           <a href="https://www.homedepot.com.mx/SearchDisplay?categoryId=&storeId=10351&catalogId=10101&langId=-5&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=20&searchTerm=ceys#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&" target="_blank">

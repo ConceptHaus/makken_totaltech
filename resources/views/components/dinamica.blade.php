@@ -12,7 +12,7 @@
       <img src="{{ asset('img/icons/1-carrito.png') }}" class="dinamica__pasos-img2" alt="Paso 1">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">COMPRA 2 PRODUCTOS <br/>O MÁS  MONTACK</h5>
-        <h5 class="dinamica__mincompra mt-3">(Consulta en bases el minimo de compra)</h5>
+        <h5 class="dinamica__mincompra mt-3">(Consulta en bases el mínimo de compra)</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
@@ -29,7 +29,7 @@
       <img src="{{ asset('img/icons/3-check.png') }}" class="dinamica__pasos-img" alt="Paso 3">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">REGISTRA TU TICKET<br/>DE COMPRA</h5>
-        <h5 class="dinamica__mincompra mt-3">(Exclisivamente en Home Depot)</h5>
+        <h5 class="dinamica__mincompra mt-3">(Exclusivamente en Home Depot)</h5>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 wow zoomIn" data-wow-offset="135"
@@ -38,7 +38,7 @@
       <img src="{{ asset('img/icons/4-trofeo.png') }}" class="dinamica__pasos-img3" alt="Paso 3">
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">CADA SEMANA PODRÁS <br/>GANAR 1 DE LOS 3 PREMIOS</h5>
-        <h5 class="dinamica__mincompra mt-3">SI ERES UNO DE LOS PRIMEROS 3 EN REGISTRAR TU TiCKET PODRÁS GANAR UN JERSEY DE LA SELECCIÓN MEXICANA.<br>La página estará habilitada para el registro  de 10am a 11:59 pm de cada día</h5>
+        <h5 class="dinamica__mincompra mt-3">¡Los primeros 3 registros del día ganarán un jersey de la selección mexicana!</h5>
       </div>
     </div>
   </div>
@@ -46,6 +46,7 @@
     <div class="col-lg-12 col-md-12 mt-5 mb-5 mx-2">
       <h3 class="dinamica__h6">Consulta las bases, condiciones y vigencia de la promoción en :</h3>
       <h2 class="dinamica__h4">www.ganaconceys.com.mx</h2>
+      <h5 class="dinamica__mincompra mt-3">*La página estará habilitada para el registro de 10:00 am a 11:59 pm</h5>
       
       <!-- <h6 class="dinamica__h6">Vigencia del 25 de septiembre al 22 de octubre 2020</h6> -->
     </div>
