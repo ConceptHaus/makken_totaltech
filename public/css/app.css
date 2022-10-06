@@ -9798,6 +9798,20 @@ h3 {
     height: 80vw;
      top: 17vw;
   }
+  .hero__montack-silicon {
+    display: block;
+    bottom: 5%;
+    left: 28%;
+    width: 25vw;
+    top: 20vw;
+}
+.hero__ceys-silicon {
+  display: block;
+  bottom: 5%;
+  left: 7%;
+  width: 15vw;
+  top: 20vw;
+}
 }
 .hero__img-silicon {
   display: block;
@@ -9890,14 +9904,14 @@ h3 {
 }
 .hero__scooter {
   display: block;
-  right: 20%;
-  top: 24vw;
+  right: 11%;
+  top: 15vw;
   width: 18vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 10%;
+  right: 31%;
   top: 33vw;
   width: 8vw;
   z-index: 0;
@@ -9917,13 +9931,13 @@ h3 {
 
 @media (max-width: 640px) {
   .hero__scooter {
-    right: 15%;
+    right: 5%;
     top: 50%;
     width: 30%;
   }
   .hero__home {
     display: block;
-    right: 7%;
+    right: 30%;
     top: 60vw;
     width: 11vw;
     z-index: 0;
@@ -9942,14 +9956,14 @@ h3 {
 }
 @media (max-width: 768px) {
   .hero__montate {
-     top: 18%;
-    right: 8%;
+    top: 6%;
+    right: 6%;
     width: 29vw;
   }
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 18%;
+    top: 25%;
     right: 8%;
     width: 32vw;
   }
@@ -9965,11 +9979,11 @@ h3 {
   box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
   transition: all 0.2s;
   position: absolute;
-  right: 9%;
+  right: 12%;
   bottom: 10%;
-  top: 31%;
-  height: 6vw;
-  width: 20vw;
+  top: 80%;
+  height: 4.7vw;
+  width: 15vw;
   z-index: 1;
 }
 .hero__btn-call-to-action {
@@ -9997,17 +10011,18 @@ h3 {
 }
 @media screen and (min-width: 360px) {
   .hero__btn-call-to-action > span {
-    font-size: 1.8vw;
-    position:relative;
+    font-size: 1.2vw;
+    position: relative;
     text-align: center;
     width: 100%;
     left: 0%;
-    z-index:99;
+    z-index: 99;
+    top: -.5vw;
   }
 }
 @media screen and (min-width: 1440px) {
   .hero__btn-call-to-action > span {
-    font-size: 2vw;
+    font-size: 1.2vw;
   }
 }
 .hero__btn-call-to-action:hover, .hero__btn-call-to-action:focus {
@@ -10019,13 +10034,13 @@ h3 {
 }
 @media (max-width: 1024px) {
   .hero__btn-call-to-action {
-    height: 70px;
+    height: 50px;
   }
 }
 @media (max-width: 768px) {
   .hero__btn-call-to-action {
-    top: 50%;
-    height: 75px;
+    top: 75%;
+    height: 50px;
   }
 }
 @media (max-width: 640px) {
