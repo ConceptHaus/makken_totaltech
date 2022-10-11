@@ -44,7 +44,7 @@
   </div>
   <div class="row text-center justify-content-center">
     <div class="col-lg-12 col-md-12 mt-5 mb-5 mx-2">
-      <h3 class="dinamica__h6">Consulta las bases, condiciones y vigencia de la promoción en :</h3>
+      <h3 class="dinamica__h6">Consulta las bases, condiciones y vigencia de la promoción en:</h3>
       <h2 class="dinamica__h4">www.ganaconceys.com.mx</h2>
       <h5 class="dinamica__mincompra mt-3">*La página estará habilitada para el registro de 10:00 am a 11:59 pm</h5>
       
