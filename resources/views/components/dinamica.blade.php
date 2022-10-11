@@ -11,7 +11,7 @@
       <!-- <img src="{{asset('img/icons/paso_1.svg')}}" class="dinamica__pasos-number" alt="Paso 1"> -->
       <img src="{{ asset('img/icons/1-carrito.png') }}" class="dinamica__pasos-img2" alt="Paso 1">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">COMPRA 2 PRODUCTOS <br/>O MÁS  MONTACK</h5>
+        <h5 class="dinamica__h5 mt-3">COMPRA 2 O MÁS PRODUCTOS <br/>MONTACK</h5>
         <h5 class="dinamica__mincompra mt-3">(Consulta en bases el mínimo de compra)</h5>
       </div>
     </div>

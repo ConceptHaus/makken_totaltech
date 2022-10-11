@@ -20,8 +20,8 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css?1') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.min.css?1') }}">
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
     integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
@@ -134,13 +134,13 @@
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
-          <div class="col-lg-2 text-center">
+          <!--<div class="col-lg-2 text-center">
             <p>
               <a href="https://mundoceys.com/" target="_blank" class="mundo-link">
                 <strong>WWW.MUNDOCEYS.COM</strong>
               </a>
             </p>
-          </div>
+          </div>-->
           <div class="col-lg-3 text-lg-right text-center">
             <a href="https://mundoceys.com/" target="_blank">
               <img class="img-footer" src="{{ asset('img/logos/ceys-logo.svg') }}" alt="Ceys">

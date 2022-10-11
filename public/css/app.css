@@ -9795,7 +9795,7 @@ h3 {
 
 @media (max-width: 640px) {
   .hero {
-    height: 80vw;
+    height: 60vw;
      top: 17vw;
   }
   .hero__montack-silicon {
@@ -9824,15 +9824,15 @@ h3 {
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
-  left: 7%;
-  width: 12vw;
+  left: 4%;
+  width: 17vw;
   top: 8vw;
 }
 .hero__montack-silicon {
   display: block;
   bottom: 5%;
-  left: 28%;
-  width: 20vw;
+  left: 25%;
+  width: 26vw;
   top: 8vw;
 }
 @media (max-width: 1024px) {
@@ -9849,9 +9849,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__img-silicon {
-    width: 10vw;
-    top: 60%;
-    left: 9%;
+    width: 13vw;
+    top: 57%;
+    left: 6%;
   }
 }
 .premio_border,.premio_user_border{
@@ -9897,9 +9897,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 25%;
-    left: 25%;
-    top: 50%;
+    width: 27%;
+    left: 24%;
+    top: 35%;
   }
 }
 .hero__scooter {
@@ -9931,15 +9931,15 @@ h3 {
 
 @media (max-width: 640px) {
   .hero__scooter {
-    right: 5%;
-    top: 50%;
-    width: 30%;
+    right: 8%;
+    top: 35%;
+    width: 25%;
   }
   .hero__home {
     display: block;
-    right: 30%;
-    top: 60vw;
-    width: 11vw;
+    right: 32%;
+    top: 45vw;
+    width: 9vw;
     z-index: 0;
   }
 }
@@ -9963,8 +9963,8 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 25%;
-    right: 8%;
+    top: 10%;
+    right: 4%;
     width: 32vw;
   }
 }
