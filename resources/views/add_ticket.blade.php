@@ -83,7 +83,7 @@
                                 {{-- <button type="submit" ng-click="addTicket(ticket)" class="btn btn-submit"
                                     ng-disabled="!(ticket.privacidad) ||!(ticket.id_establecimiento) || !(ticket.no_ticket) || !(ticket.monto) || !(ticket.fileticket)"
                                     >REGISTRAR</button> --}}
-                                <button type="submit" ng-click="addTicket(ticket)" class="btn btn-submit">REGISTRAR</button>
+                                <button type="submit" ng-click="addTicket(ticket)" class="btn btn-submit" ng-disabled="validHorario()">REGISTRAR</button>
                             </div>
                         </div>
                     </form>

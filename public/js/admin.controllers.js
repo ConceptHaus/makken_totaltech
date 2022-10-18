@@ -219,6 +219,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     });
   };
 
+
   $scope.addGanador = function (userGanador) {
     console.log(userGanador);
     Swal.fire({

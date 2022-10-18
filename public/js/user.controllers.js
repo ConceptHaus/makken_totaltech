@@ -135,6 +135,15 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
     });
   };
 
+  // Valida el horario y desactiva el botton de registro a ticket 
+  $scope.validHorario = function () {
+    const date = new Date();
+    const hora = date.getHours();
+    const minute = date.getMinutes();
+    if (hora >= 10  ) return false;
+    else return true;
+  }
+
   $scope.getEstablecimientos = function () {
     $http.get('api/v1/establecimientos').then(function (res) {
       $scope.establecimientos = res.data;
