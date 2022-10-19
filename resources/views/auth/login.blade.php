@@ -56,14 +56,14 @@ $now = new DateTime();
                             <div class="col-md-12">
                                 <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
                             </div>
-                            <!--<p class="my-3 text-center">¿No tienes cuenta?-->
+                            <p class="my-3 text-center">¿No tienes cuenta?
                                 <!-- @if($date <= $now)  -->
 
-                                <!--<a class="registrate" href="{{ route('register') }}">Regístrate.</a>-->
+                                <a class="registrate" href="{{ route('register') }}">Regístrate.</a>
                                 <!-- @else -->
-                                <!--<a class="disabled registrate">Regístrate.</a>-->
+                                <a class="disabled registrate">Regístrate.</a>
                                 <!-- @endif -->
-                            <!--</p>-->
+                            </p>
                         </div>
                     </form>
                 </div>
