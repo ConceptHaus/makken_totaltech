@@ -131,7 +131,7 @@
             </p>
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf?3" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <!--<div class="col-lg-2 text-center">
