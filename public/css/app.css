@@ -10252,8 +10252,9 @@ h3 {
   .participantes__scooter {
     width: 70vw;
     position: relative;
-    top: 10%;
+    /* top: 10%; */
     left: 0vw;
+    margin-top: 60px!important;
   }
   .participantes__h6 {
     font-size: 3.5vw;

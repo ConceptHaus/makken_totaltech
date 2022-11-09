@@ -199,7 +199,7 @@
         <script src="{{ asset('admin/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
         <script src="{{ asset('admin/vendors/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
         <!-- CORE SCRIPTS-->
-        <script src="{{ asset('admin/js/app.min.js') }}"></script>
+        <script src="{{ asset('admin/js/app.min.js?1') }}"></script>
         <!-- PAGE LEVEL PLUGINS-->
         <script src="{{ asset('admin/vendors/dataTables/datatables.min.js') }}"></script>
         <!-- PAGE LEVEL SCRIPTS-->

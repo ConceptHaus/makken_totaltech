@@ -20,7 +20,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
-  <link rel="stylesheet" href="{{ asset('css/app.css?1') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css?2') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.min.css?1') }}">
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
