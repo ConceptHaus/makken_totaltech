@@ -6,7 +6,7 @@
         <div class="col-12">
           <a href="https://www.homedepot.com.mx/SearchDisplay?categoryId=&storeId=10351&catalogId=10101&langId=-5&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=20&searchTerm=ceys#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&" target="_blank">
             <img class="participantes__tiendas-img wow fadeInDown my-3" data-wow-duration="1s"
-             src="{{ asset('img/logos/homedepot.png') }}" alt="Home Depot">
+             src="{{ asset('img/logos/homedep.png') }}" alt="Home Depot">
           </a>
         </div>
        
@@ -18,7 +18,7 @@
       <h2 class="participantes__h3 text-center font-italic">PREMIO</h2>
       <img class="participantes__scooter my-4 img-fluid wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="scooter-premio">
-      <h6 class="participantes__h6">GANA UNA UN JERSEY DE LA SELECCIÓN MEXICANA</h6>
+      <h6 class="participantes__h6">GANA UNA BOCINA <br> BOSE SMART SPEAKER 500. </h6>
       @if (Auth::check())
       <a href="{{ url('/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">

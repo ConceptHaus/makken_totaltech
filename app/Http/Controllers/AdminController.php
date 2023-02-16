@@ -163,7 +163,7 @@ class AdminController extends Controller {
         $usercontact['nombre'] = '';
         Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
             $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Jersey con Total Tech');
+            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Bocina Bose con Total Tech');
         });
 
         if($usuario->save()){
@@ -193,7 +193,7 @@ class AdminController extends Controller {
             
             Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
                 $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Jersey con Total Tech');
+                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Bocina Bose con Total Tech');
             });
 
             $json['success'] = 'success_ganador_user';

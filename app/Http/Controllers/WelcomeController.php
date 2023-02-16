@@ -26,6 +26,13 @@ class WelcomeController extends Controller
         $data['ganadores'] = Ganador::getAllGanadores();
         return view('welcome', $data);
     }
+
+    public function indexTargeta() {
+        $dataGanadores = json_decode(file_get_contents("json/targetaGanadores.json"),true);
+        $data['ganadores'] = $dataGanadores;
+        return view('welcomeTarjeta', $data);
+    }
+
     public function getEstablecimientos(){
         $establecimientos = DB::table('establecimiento')
             ->leftJoin('tickets', 'establecimiento.id_establecimiento', '=', 'tickets.id_establecimiento')

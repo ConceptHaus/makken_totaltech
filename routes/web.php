@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/ceystedadetodo', 'WelcomeController@indexTargeta');
 
 //Auth
 Route::post('/login','Auth\LoginController@login');

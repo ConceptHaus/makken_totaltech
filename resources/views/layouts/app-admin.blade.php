@@ -8,9 +8,9 @@
     <meta name="description" content=""/>
     <meta name="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}"/>
      <!-- Facebook -->
-     <meta property="og:title" content="¡Compra y gana una Jersey con TotalTech!"/>
+     <meta property="og:title" content="¡Compra y gana una Bocina Bose con TotalTech!"/>
      <meta property="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}" />
-     <meta property="og:description" content="¡Compra y gana una Jersey con TotalTech!"/>   
+     <meta property="og:description" content="¡Compra y gana una Bocina Bose con TotalTech!"/>   
      <meta property="og:type" content="website" />
      <meta property="og:url" content="https://www.mundoceys.com" /> 
      <!--<meta property="og:site_name" content="" />-->

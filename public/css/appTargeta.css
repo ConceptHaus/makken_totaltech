@@ -9802,7 +9802,7 @@ h3 {
     display: block;
     bottom: 5%;
     left: 28%;
-    width: 32vw!important;
+    width: 25vw!important;
     top: 20vw;
 }
 .hero__ceys-silicon {
@@ -9831,9 +9831,9 @@ h3 {
 .hero__montack-silicon {
   display: block;
   bottom: 5%;
-  left: 25%;
-  width: 28vw;
-  top: 8vw;
+  left: 28%;
+  width: 20vw;
+  top: 9vw;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9883,8 +9883,8 @@ h3 {
 .hero__ceys-productos {
   display: block;
   left: 4%;
-  top: 35%;
-  width: 21.5vw;
+  top: 40%;
+  width: 39vw;
 }
 .dinamica_ganador{
   z-index:1;
@@ -9897,16 +9897,16 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 27%;
+    width: 40%;
     left: 7%;
-    top: 30%;
+    top: 39%;
   }
 }
 .hero__scooter {
   display: block;
-  right: 14%;
+  right: 3%;
   top: 20vw;
-  width: 21vw;
+  width: 40vw;
   z-index: 0;
 }
 .hero__home {
@@ -9931,9 +9931,9 @@ h3 {
 
 @media (max-width: 640px) {
   .hero__scooter {
-    right: 8%;
-    top: 35%;
-    width: 25%;
+    right: 2%;
+    top: 43%;
+    width: 40%;
   }
   .hero__home {
     display: block;
@@ -9944,9 +9944,9 @@ h3 {
   }
 }
 .hero__montate {
-  width: 35vw;
-  right: 2%;
-  top: 17%;
+  width: 30vw;
+  right: 6%;
+  top: 19%;
   bottom: 28%;
 }
 @media (max-width: 1024px) {
@@ -9955,6 +9955,27 @@ h3 {
   }
 }
 @media (max-width: 768px) {
+  .dinamica_ganador {
+    z-index: 1;
+    display: block;
+    position: relative;
+    top: 16vw;
+}
+.text-fija-pega {
+  width: 109%;
+  width: 109%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 15vw;
+  background-color: #bb2727;
+  left: -5%;
+  color: white;
+  font-size: 5vw;
+  font-family: 'Helvetica NeueLTSBold';
+  line-height: 15vw;
+}
   .hero__montate {
     top: 15%;
     right: 3%;
@@ -9972,7 +9993,7 @@ h3 {
     position: absolute;
     left: 35vw!important;
     width: 11vw!important;
-    top: 34vw!important;
+    top: 39vw!important;
 }
 .dinamica__thehome {
   position: absolute;
@@ -9983,6 +10004,8 @@ h3 {
 .participantes {
   background-color: #F0F0F0;
   height: 230vw!important;
+  top: 5vw;
+  position: relative;
 }
 }
 .hero__btn-call-to-action {
@@ -9996,9 +10019,9 @@ h3 {
   box-shadow: -0.9px 0.5px 18px 0 rgba(4, 0, 0, 0.42);
   transition: all 0.2s;
   position: absolute;
-  right: 12%;
+  right: 14%;
   bottom: 10%;
-  top: 80%;
+  top: 89%;
   height: 4.7vw;
   width: 15vw;
   z-index: 1;
@@ -10115,7 +10138,7 @@ h3 {
     left: 0vw;
   }
   .dinamica__mincompra {
-    font-size: 2vw!important;
+    font-size: 2.5vw!important;
     font-family: 'Helvetica NeueLTSBold';
     font-weight: bold;
     font-style: italic;
@@ -10154,7 +10177,6 @@ h3 {
 @media screen and (max-width: 768px) {
    .dinamica__h5 {
     font-size: 4.6vw;
-    width: 80vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -10259,15 +10281,15 @@ h3 {
   }
   .participantes__h3 {
     position: relative;
-    top: 20%;
+    top: 15%;
   }
 }
 @media screen and (min-width: 768px) {
   .participantes__h2,.participantes__h3 {
-       position: relative;
+    position: relative;
     font-size: 2vw;
     top: -1vw;
-    left: 2.8vw;
+    left: 5vw;
 
   }
 }
@@ -10288,18 +10310,18 @@ h3 {
 
 }
 .participantes__scooter {
-  width: 20vw;
+  width: 33vw;
   position: relative;
   top: .5vw;
   left: 5%;
 }
 @media (max-width: 768px) {
   .participantes__scooter {
-    width: 40vw;
+    width: 80vw;
     position: relative;
     top: 13%!important;
     left: 0vw;
-    margin-top: 60px!important;
+    margin-top: 0px!important;
   }
   .participantes__h6 {
     font-size: 3.5vw;
@@ -10313,16 +10335,35 @@ h3 {
   color: black;
 }
 .participantes__tiendas-img {
-  width: 15vw;
+  width: 10vw;
   left: 37%;
   position: relative;
   top: 30%;
 }
+.participantes__tiendas-img-2 {
+  width: 10vw;
+  left: 50%;
+  position: relative;
+  top: 30%;
+}
+.text-tiendas-participantes {
+  position: relative;
+  left: 32%;
+  top: 6vw;
+  font-size: .8vw;
+}
 @media (max-width: 767px){
   .participantes__tiendas-img {
-    width: 40vw;
-    left: 25%;
+    width: 30vw;
+    left: -0%;
     top: 10%;
+    margin-right: 10px;
+}
+.participantes__tiendas-img-2 {
+  width: 21vw;
+  left: 40%;
+  position: relative;
+  top: 30%;
 }
 }
 .participantes__tiendas-img ~ h5 {
@@ -10738,6 +10779,7 @@ footer {
     position:relative;
     font-size:10px!important;
   }
+  
 }
 
 .barra{
@@ -10751,10 +10793,13 @@ footer {
 @media (max-width: 768px){
   .barra{
     height: .8vw;
-    top: 45%;
+    top: 55%;
     width: 50%;
     left: 24%;
   }
+  .text-tiendas-participantes {
+   visibility: hidden;
+}
 }
 .modal-content {
   background-color: #ffffffe3;
