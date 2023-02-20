@@ -60,12 +60,12 @@
         src="{{ asset('img/images/tarjeta/trajeta.png') }}" alt="scooter-premio">
       <h6 class="participantes__h6">GANA UN VALE <br> ELECTRÓNICO DE $2,000. </h6>
       @if (Auth::check())
-      <a href="https://wa.me/qr/X36YTUSQX277N1" target="_blank" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
+      <a href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
         <span class="mx-4 px-3">¡PARTICIPA!</span><span class="dar_click"> DA CLICK AQUÍ</span>
       </a>
       @else
-      <a href="https://wa.me/qr/X36YTUSQX277N1" target="_blank" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
+      <a href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
         <span class="mx-4 px-3">¡PARTICIPA!</span><span class="dar_click"> DA CLICK AQUÍ</span>
       </a>

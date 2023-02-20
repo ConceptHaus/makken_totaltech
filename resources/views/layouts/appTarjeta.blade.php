@@ -20,8 +20,8 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
-  <link rel="stylesheet" href="{{ asset('css/appTargeta.css?2') }}">
-  <link rel="stylesheet" href="{{ asset('css/animate.min.css?1') }}">
+  <link rel="stylesheet" href="{{ asset('css/appTargeta.css?3') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.min.css?2') }}">
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
     integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
@@ -81,7 +81,7 @@
             @if (Auth::check())
             
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="https://wa.me/qr/X36YTUSQX277N1" target="_blank">PARTICIPA</a>
+            <a id="menu-link" class="nav-link" data-scroll href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">PARTICIPA</a>
             @endif
           </li>
         </ul>
@@ -96,10 +96,10 @@
     <div class="BotonesFooter">
       @if(Request::path() == '/')
       @if(Auth::check())
-      <a class="BotonesFooter__boton" href="https://wa.me/qr/X36YTUSQX277N1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @else
-      <a class="BotonesFooter__boton" href="https://wa.me/qr/X36YTUSQX277N1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @endif
       @endif

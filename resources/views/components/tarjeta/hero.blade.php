@@ -4,7 +4,7 @@
     <span class="mx-4 px-3">¡PARTICIPA!</span> DA CLICK AQUÍ
 </a>-->
 @else
-<a href="https://wa.me/qr/X36YTUSQX277N1" target="_blank" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
+<a href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
     data-wow-delay="0.5s">
     <span class="mx-4 px-3">¡PARTICIPA!</span> DA CLICK AQUÍ
 </a> 
