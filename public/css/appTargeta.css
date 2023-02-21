@@ -11393,10 +11393,7 @@ a.navbar-brand {
 }
 @font-face {
   font-family: "Helvetica NeueLTSBold";
-  src: url("/fonts/AnyConv.com__HelveticaNeueLTStd-BlkCnO.woff") format("woff"),
-  url("/fonts/AnyConv.com__AnyConv.com__HelveticaNeueLTStd-BlkCnO.woff2") format("woff2");
-   font-style: italic;
-  
+  src: url("/fonts/HelveticaNeue-BoldItalic.woff2") format("woff2"), url("/fonts/HelveticaNeue-BoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "Helvetica Neue";
