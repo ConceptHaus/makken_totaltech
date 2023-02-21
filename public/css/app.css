@@ -670,19 +670,21 @@ pre code {
   left:12%;
 
 }
-@media (max-width: 768px) {
-  .daclick_home{
-      position: absolute;
-      font-size:2.5vw!important;
-      color:#ffffff!important;
-      top:65%!important;
-  }
-}
+
  .daclick_home{
       position: absolute;
       font-size:1vw!important;
       color:#ffffff!important;
       top:65%!important;
+  }
+
+  @media (max-width: 768px) {
+    .daclick_home{
+        position: absolute;
+        font-size:2.5vw!important;
+        color:#ffffff!important;
+        top:65%!important;
+    }
   }
 @media (max-width: 767px){
   .col-6 {
@@ -9978,7 +9980,8 @@ h3 {
   position: absolute;
   left: 35vw!important;
   width: 11vw!important;
-  top: 35vw!important;
+  /* top: 35vw!important; */
+  margin-top: 16vw;
 }
 .participantes {
   background-color: #F0F0F0;
@@ -10259,7 +10262,7 @@ h3 {
   }
   .participantes__h3 {
     position: relative;
-    top: 20%;
+    top: 23%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10297,9 +10300,9 @@ h3 {
   .participantes__scooter {
     width: 40vw;
     position: relative;
-    top: 13%!important;
+    /* top: 13%!important; */
     left: 0vw;
-    margin-top: 60px!important;
+    margin-top: 40%!important;
   }
   .participantes__h6 {
     font-size: 3.5vw;
@@ -10946,7 +10949,7 @@ a.navbar-brand {
   width: 35vw;
   top: 18vw;
   position: relative;
-  left: 3vw;
+  left: calc(0vw);
 }
 .btn-call-to-action2 {
   background: #0033a0;
@@ -11375,9 +11378,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  font-family: "Helvetica Neue" !important;
-}
 
 html {
   scroll-behavior: smooth !important;
@@ -11884,4 +11884,17 @@ html {
   letter-spacing: 1px !important;
   padding: 10px 12px !important;
   width: 200px !important;
+}
+
+.text-fija-pega {
+  width: 106.5%;
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 6vw;
+  background-color: #bb2727;
+  left: -5%;
+  color: white;
+  font-size: 4vw;
+  font-family: 'Helvetica NeueLTSBold' !important;
 }

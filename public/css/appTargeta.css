@@ -10003,7 +10003,7 @@ h3 {
 }
 .participantes {
   background-color: #F0F0F0;
-  height: 230vw!important;
+  height: 260vw!important;
   top: 5vw;
   position: relative;
 }
@@ -10281,7 +10281,7 @@ h3 {
   }
   .participantes__h3 {
     position: relative;
-    top: 15%;
+    top: 20%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10319,9 +10319,9 @@ h3 {
   .participantes__scooter {
     width: 80vw;
     position: relative;
-    top: 13%!important;
+    /* top: 13%!important; */
     left: 0vw;
-    margin-top: 0px!important;
+    margin-top: 25% !important;
   }
   .participantes__h6 {
     font-size: 3.5vw;
