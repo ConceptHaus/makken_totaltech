@@ -45,7 +45,7 @@
 </div>
 <div class="row">
   <div class="col-lg-12 col-md-12">
-    <span class="text-fija-pega">¡FIJA, PEGA Y GANA!</span>
+    <span class="text-fija-pega" style="font-family: 'Helvetica NeueLTSBold' !important;">¡FIJA, PEGA Y GANA!</span>
   </div>
 </div>
 <!-- Fin Dinámica del concurso -->
