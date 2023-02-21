@@ -11891,5 +11891,6 @@ html {
   left: -5%;
   color: white;
   font-size: 4vw;
-  font-family: 'Helvetica NeueLTSBold' !important;
+  font-weight: bolder;
+   font-family: 'Helvetica NeueLTSBold' !important;
 }
