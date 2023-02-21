@@ -10156,7 +10156,7 @@ h3 {
 }
 @media screen and (max-width: 768px) {
    .dinamica__h5 {
-    font-size: 4.6vw;
+    font-size: 4.1vw;
     width: 80vw;
   }
 }
@@ -11295,7 +11295,7 @@ a.navbar-brand {
   background-color: #F0F0F0;
   border-color: #F0F0F0;
   border-top-left-radius: 0px;
-   font-family: "Helvetica NeueLTSBold";
+   font-family: "Helvetica NeueLTSBold" !important;
   border-top-right-radius: 0px;
   color: #003d8f;
 
@@ -11371,11 +11371,6 @@ a.navbar-brand {
   src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2"), url("/fonts/HelveticaNeue-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-}
-html {
-  font-family: "Helvetica Neue";
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 
