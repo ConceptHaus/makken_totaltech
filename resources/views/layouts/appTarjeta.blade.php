@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="¡Compra y gana una Bocina Bose con Montack!" />
+  <meta name="description" content="¡Compra y Gana con Ceys!" />
   <meta name="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
   <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech-bici.PNG" />
-  <meta property="og:description" content="¡Compra y gana una Bocina Bose con Montack!" />
+  <meta property="og:description" content="¡Compra y Gana con Ceys!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ganaconceys.com.mx" />
 
   <title>Gana con Ceys</title>
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
-  <meta name="description" content="¡Compra y gana una Bocina Bose con Montack!">
+  <meta name="description" content="¡Compra y Gana con Ceys!">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
