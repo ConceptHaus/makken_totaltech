@@ -1,0 +1,37 @@
+[
+    {
+        "id_semana": 1,
+        "user": {
+          "nombre": "Fernando",
+          "apellido": "prueba",
+          "tickets": [
+            {
+              "establecimiento": {
+                "nombre": "The Home Depot"
+              }
+            }
+          ]
+        },
+        "premio": {
+          "nombre": "BocinaBose"
+        }
+    },
+    {
+        "id_semana": 2,
+        "user": {
+          "nombre": "Fernando 2",
+          "apellido": "prueba",
+          "tickets": [
+            {
+              "establecimiento": {
+                "nombre": "The Home Depot"
+              }
+            }
+          ]
+        },
+        "premio": {
+          "nombre": "BocinaBose"
+        }
+    }
+
+  ]
