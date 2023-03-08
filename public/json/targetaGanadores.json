@@ -1,4 +1,173 @@
 [
-   
+  {
+      "id_semana": 1,
+      "user": {
+        "nombre": "Cristhian Ivan",
+        "apellido": "Pascual Martínez",
+        "tickets": [
+          {
+            "establecimiento": {
+              "nombre": "The Home Depot"
+            }
+          }
+        ]
+      },
+      "premio": {
+        "nombre": "Vale electrónico BONNUS de $2,000.00"
+      }
+  },
+  {
+    "id_semana": 1,
+    "user": {
+      "nombre": "José Manuel",
+      "apellido": "Montiel Corona",
+      "tickets": [
+        {
+          "establecimiento": {
+            "nombre": "The Home Depot"
+          }
+        }
+      ]
+    },
+    "premio": {
+      "nombre": "Vale electrónico BONNUS de $2,000.00"
+    }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Isabel",
+    "apellido": "Martínez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Valeria Jazmin",
+    "apellido": "Barrios Ruiz",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "José Francisco",
+    "apellido": "Rojo Espinoza",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Nancy",
+    "apellido": "Calihua Cortez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Dulce Andrea",
+    "apellido": "Barrera López",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "María Adriana",
+    "apellido": "Cortés González",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Edmundo David",
+    "apellido": "Madrid Rodriguez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 1,
+  "user": {
+    "nombre": "Silvia Vanessa",
+    "apellido": "Rivero Arredondo",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": "The Home Depot"
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+}
 
-  ]
+]
