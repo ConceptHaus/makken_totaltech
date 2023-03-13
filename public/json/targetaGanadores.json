@@ -168,6 +168,176 @@
   "premio": {
     "nombre": "Vale electrónico BONNUS de $2,000.00"
   }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Rodrigo",
+    "apellido": "Ramirez Pascual",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Carmina Graciela",
+    "apellido": "Martinez Rea",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Sara Cecilia",
+    "apellido": "Soto Vieyra",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Maria Angelica",
+    "apellido": "Bustamante Ruiz",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Emilio",
+    "apellido": "López López",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Raquel",
+    "apellido": "Garcia Sanchez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Moisés Guillermo",
+    "apellido": "Pérez Enríquez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Erick",
+    "apellido": "Tello Juarez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Bryan",
+    "apellido": "Lozano Rodriguez",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
+},
+{
+  "id_semana": 2,
+  "user": {
+    "nombre": "Andrea",
+    "apellido": "Velazquez Silva",
+    "tickets": [
+      {
+        "establecimiento": {
+          "nombre": ""
+        }
+      }
+    ]
+  },
+  "premio": {
+    "nombre": "Vale electrónico BONNUS de $2,000.00"
+  }
 }
 
 ]
