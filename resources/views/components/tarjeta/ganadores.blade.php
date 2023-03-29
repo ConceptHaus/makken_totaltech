@@ -52,7 +52,7 @@
                     <tr>
                       {{-- <th scope="col" width="25%">FECHA</th> --}}
                       <th scope="col" width="25%">Nombre</th>
-                      <th scope="col" width="25%">Tienda</th>
+                     
                       <th class="premio_border" scope="col" width="25%">Premio</th>
                     </tr>
                     @endif
@@ -66,7 +66,6 @@
                   <tr>
                     {{-- <td>{{$ganador->dia}}</td> --}}
                     <td>{{ $ganador['user']['nombre'] }} {{ $ganador['user']['apellido'] }}</td>
-                    <td>{{ $ganador['user']['tickets'][0]['establecimiento']['nombre']}}</td>
                     <td class="premio_user_border">{{ $ganador['premio']['nombre'] }}</td>
                   </tr>
                   @php
