@@ -5,17 +5,19 @@
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl">
     <!-- <img class="login__scooter" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
-    <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
-        <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/ceys_logo.png') }}" alt="ceys-montack">
-    <img class="login__img-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/montack.png') }}" alt="subeleconmontack">
-    <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/ceys_productos.png') }}" alt="ceysproduct">
-        <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/montate.png') }}" alt="ceysproduct">
+    src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+<img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
+    src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+<img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
+    src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">
+<img class="login__img-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+    src="{{ asset('img/images/montack.png') }}" alt="subeleconmontack">
+<img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+    src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
+
+<img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+    src="{{ asset('img/images/montate.png') }}" alt="ceysproduct">
+
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel panel-register">
