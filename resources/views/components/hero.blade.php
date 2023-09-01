@@ -31,5 +31,6 @@
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
 
-    <img class="position-absolute hero__vigencia wow slideInDown" data-wow-duration="1s"
-    src="{{ asset('img/images/promocionvalida.png') }}" alt="Móntate con Montack">
+<span class="position-absolute hero__vigencia wow slideInDown"> Promoción válida del 2 de octubre al 26 de noviembre <br> Registra tus compras y conoce las bases de la promoción en ganaconceys.com.mx</span>
+
+   

@@ -16,7 +16,7 @@ class PremioExample extends Seeder
         $faker = Faker::create();
         for ($i=0; $i < 10; $i++) {
            \DB::table('premio')->insert(array(
-            'nombre' => 'Bocina Bose',
+            'nombre' => 'Ipad',
             'cantidad' => 1,
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s')

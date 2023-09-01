@@ -9954,9 +9954,16 @@ h3 {
 
 .hero__vigencia {
   width: 43vw;
-  right: 1%;
+  right: -1%;
   top: 93%;
   bottom: 28%;
+  font-size: .7vw;
+  font-family: 'Helvetica NeueLTSBold';
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  line-height: 1vw;
+  visibility: visible;
 }
 @media (max-width: 768px) {
   .hero__montate {
@@ -9966,6 +9973,10 @@ h3 {
   }
   .paso_tres {
     top: 8vw;
+  }
+  .hero__vigencia {
+   
+    visibility: hidden!important;
   }
 }
 @media (max-width: 640px) {
@@ -11092,19 +11103,19 @@ a.navbar-brand {
 }
 .login__ceys-montack {
   position: absolute;
-  width: 11%;
+  width: 8%;
   left: 9%;
   top: 13%;
 }
 .login__img-montack {
   position: absolute;
   width: 11%;
-  left: 9%;
+  left: 8%;
   top: 35%;
 }
 .login__img-productos {
   position: absolute;
-  width: 10%;
+  width: 9%;
   left: 9%;
   top: 51%;
 }
