@@ -69,6 +69,14 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function showRegisterForm() {
+        return view('auth.register');
+    }
+
+    public function showRegisterFormTotaltech() {
+        return view('totaltech.auth.register');
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -86,6 +94,7 @@ class RegisterController extends Controller
             $user->correo = $data['correo'];
             $user->password = bcrypt($data['password']);
             $user->registro_admin = $data['registro_admin'];
+            $user->id_promo = $data['id_promo'];
 
             $direccion = new Direccion();
             $direccion->estado = " ";

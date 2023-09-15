@@ -203,12 +203,13 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     console.log(user);
     $('#modalPosibleGanador').modal('hide');
     AdminFactory.setPosibleGanadorGanador(user).then(function (data) {
+      console.log("data",data);
       Swal.fire({
         type: 'success',
         title: "¡Listo!",
         text: "El correo ha sido enviado con éxito."
       });
-      location.reload();
+      //location.reload();
     }, function (err) {
       Swal.fire({
         type: 'error',

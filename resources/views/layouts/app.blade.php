@@ -88,7 +88,7 @@
               </div>
             </div>
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/login')}}">PARTICIPA</a>
+            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/montack/login')}}">PARTICIPA</a>
             @endif
           </li>
         </ul>
@@ -106,7 +106,7 @@
       <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @else
-      <a class="BotonesFooter__boton" href="{{ url('/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="{{ url('/montack/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @endif
       @endif
@@ -131,7 +131,7 @@
             </p>
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf?4" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_CondicionesMONTACK2023.pdf?4" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <!--<div class="col-lg-2 text-center">

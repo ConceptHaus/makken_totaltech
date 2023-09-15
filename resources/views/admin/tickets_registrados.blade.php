@@ -22,6 +22,7 @@
                         <thead class="thead-default thead-lg">
                             <tr>
                                 <th>No.</th>
+                                <th>Promoción</th>
                                 <th>Nombre</th>
                                 <th>Correo</th>
                                 <th>Total de Tickets</th>
@@ -33,6 +34,7 @@
                         <tbody>
                             <tr ng-repeat="ticketUsuario in ticketsUsuarios | filter:search" ng-if="ticketUsuario.isAdmin == 0">
                                 <td><% ticketUsuario.id %></td>
+                                <td><% ticketUsuario.tipo_promo_nombre %></td>
                                 <td>
                                     <% ticketUsuario.nombre %> <% ticketUsuario.apellido %>
                                 </td>

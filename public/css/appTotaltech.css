@@ -9786,7 +9786,7 @@ h3 {
 }
 .hero {
     z-index: 1;
-    background: url("../img/images/background-home.png");
+    background: url("../img/images/totaltech/fondo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 50vw;
@@ -9831,11 +9831,11 @@ h3 {
   top: 10vw;
 }
 .hero__montack-silicon {
-  display: block;
-  bottom: 5%;
-  left: 5%;
-  width: 18vw;
-  top: 30vw;
+    display: block;
+    bottom: 5%;
+    left: 7%;
+    width: 16vw;
+    top: 18vw;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9883,10 +9883,10 @@ h3 {
   }
 }
 .hero__ceys-productos {
-  display: block;
-  left: 27%;
-  top: 20%;
-  width: 19vw;
+    display: block;
+    left: 23.5%;
+    top: 10%;
+    width: 22vw;
 }
 .dinamica_ganador{
   z-index:1;
@@ -9946,10 +9946,10 @@ h3 {
   }
 }
 .hero__montate {
-  width: 40vw;
-  right: 2%;
-  top: 10%;
-  bottom: 28%;
+    width: 30vw;
+    right: 9%;
+    top: 6%;
+    bottom: 28%;
 }
 
 .hero__vigencia {
@@ -9964,6 +9964,7 @@ h3 {
   text-align: left;
   line-height: 1vw;
   visibility: visible;
+  color: white;
 }
 @media (max-width: 768px) {
   .hero__montate {
@@ -10247,7 +10248,10 @@ h3 {
 }
 }
 .dinamica__pasos-number {
-  width: 35px;
+    width: 3VW;
+    position: absolute;
+    left: 28vw;
+    top: 5.5vw;
 }
 
 .participantes {
@@ -10330,10 +10334,10 @@ h3 {
   color: black;
 }
 .participantes__tiendas-img {
-  width: 13vw;
-  left: 15%;
-  position: relative;
-  top: 30%;
+    width: 10vw;
+    left: 15%;
+    position: relative;
+    top: 30%;
 }
 @media (max-width: 767px){
   .participantes__tiendas-img {
@@ -10494,7 +10498,7 @@ html {
 }
 
 .section_home {
-  background: url("../img/images/background-home.png") no-repeat;
+  background: url("../img/images/totaltech/fondo.png") no-repeat;
   background-size:100% 100%;
   height:120vh;
   min-height:1000px!important;
@@ -10987,11 +10991,11 @@ a.navbar-brand {
 }
 @media screen and (min-width: 720px) {
   .login__img-montante {
-       /* visibility: hidden!important; */
-       position: absolute;
-       width: 40vw;
-       right: 3vw;
-       top: 2vw;
+          /* visibility: hidden!important; */
+    position: absolute;
+    width: 25vw;
+    right: 3vw;
+    top: 2vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -11109,13 +11113,13 @@ a.navbar-brand {
 }
 .login__img-montack {
   position: absolute;
-  width: 11%;
+  width: 9%;
   left: 8%;
-  top: 35%;
+  top: 22%;
 }
 .login__img-productos {
   position: absolute;
-  width: 9%;
+  width: 7%;
   left: 9%;
   top: 51%;
 }

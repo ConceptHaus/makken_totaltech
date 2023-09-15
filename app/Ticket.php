@@ -34,7 +34,7 @@ class Ticket extends Model
     public function scopeGetAllTickets($query){
         return $query->with('user')
                     ->with('establecimiento')
-                    // ->with('ganador')
+                    ->with('user.tipoPromo')
                     ->get();
     }
     public function scopeGetAllTicketsFromUser($query,$id){

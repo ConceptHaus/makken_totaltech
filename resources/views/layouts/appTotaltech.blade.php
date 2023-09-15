@@ -20,7 +20,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Estilos -->
-  <link rel="stylesheet" href="{{ asset('css/appTargeta.css?5') }}">
+  <link rel="stylesheet" href="{{ asset('css/appTotaltech.css?7') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.min.css?2') }}">
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
@@ -68,10 +68,10 @@
       <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="navbar-nav">
           <li id="dinamica-link" class="nav-item">
-            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
+            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/totaltech#dinamica')}}">DINÁMICA</a>
           </li>
           <li id="ganadores-link" class="nav-item">
-            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/ceystedadetodo/#ganadores')}}">GANADORES</a>
+            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/totaltech#ganadores')}}">GANADORES</a>
           </li>
           @if (Request::path() == 'login')
           <li class="nav-item active">
@@ -79,9 +79,16 @@
           <li class="nav-item ">
             @endif
             @if (Auth::check())
-            
+            <div class="dropdown nav-link">
+              <a class="dropdown-toggle " data-toggle="dropdown">MI CUENTA</a>
+              <div class="dropdown-menu shadow-menu">
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/ticket') }}">Agregar Ticket</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/home') }}">Mi Cuenta</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/logout') }}">Cerrar Sesión</a>
+              </div>
+            </div>
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">PARTICIPA</a>
+            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>
             @endif
           </li>
         </ul>
@@ -96,17 +103,18 @@
     <div class="BotonesFooter">
       @if(Request::path() == '/')
       @if(Auth::check())
-      <a class="BotonesFooter__boton" href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @else
-      <a class="BotonesFooter__boton" href="https://wa.me/message/YZK2YHVJRSY7L1" target="_blank">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="{{ url('/montack/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @endif
       @endif
     </div>
 
     <!-- Footer -->
-    
+    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() ===
+    'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
         <div class="row align-items-center mx-0 text-center">
@@ -123,7 +131,7 @@
             </p>
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Términos y Condiciones 2023.pdf?1" target="_blank"
+            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_CondicionesMONTACK2023.pdf?4" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <!--<div class="col-lg-2 text-center">
@@ -141,7 +149,7 @@
         </div>
       </div>
     </footer>
-  
+    @endif
     <!-- Fin Footer -->
     <!-- Scripts de Javi -->
     <script src="{{ asset('js/wow.min.js') }}"></script>

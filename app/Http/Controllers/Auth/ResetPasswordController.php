@@ -54,6 +54,13 @@ class ResetPasswordController extends Controller
         ]);
     }
 
+    public function resetPass() {
+      return view('auth.passwords.email');
+    }
+    public function resetPassTotaltech() {
+      return view('totaltech.auth.passwords.email');
+    }
+
     public function reset_view($token){
 
       $reset = PasswordReset::where('token','=',$token)->first();

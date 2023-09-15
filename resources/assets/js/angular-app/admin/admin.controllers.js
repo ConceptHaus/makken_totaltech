@@ -45,7 +45,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Tickets Usuarios
     AdminFactory.ticketsUsuarios().then(function (res) {
         $scope.ticketsUsuarios = res.data;
-        // console.log($scope.ticketsUsuarios);
+       
     }, function (err) {
         console.log(err);
     })

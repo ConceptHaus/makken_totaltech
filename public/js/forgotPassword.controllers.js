@@ -115,7 +115,7 @@ app.controller("ForgotPasswordCtrl", function ($scope, ForgotFactory, $http, $wi
         confirmButtonText: 'Iniciar Sesión'
       }).then(function (result) {
         if (result.value) {
-          $window.location.href = "/login";
+          $window.location.href = "/montack/login";
         }
       });
     }, function (err) {

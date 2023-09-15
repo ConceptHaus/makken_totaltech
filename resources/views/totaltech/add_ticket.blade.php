@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appTotaltech')
 
 @section('content')
 <section class="section_home">

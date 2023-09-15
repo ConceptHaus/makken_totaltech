@@ -22,7 +22,7 @@ class User extends Authenticatable
     public $table = 'users';
 
     protected $fillable = [
-        'id_usuario','nombre','apellido', 'correo', 'password','telefono','registro_admin'
+        'id_usuario','nombre','apellido', 'correo', 'password','telefono','registro_admin', 'id_promo'
     ];
 
     /**
@@ -38,6 +38,10 @@ class User extends Authenticatable
       return $this->hasMany('App\Ticket', 'id_usuario','id');
     }
 
+    public function tipoPromo(){
+      return $this->belongsTo('App\TipoPromo', 'id_promo','id_promo');
+    }
+
     public function direccion(){
       return $this->hasOne('App\Direccion', 'id_usuario','id');
     }
@@ -45,6 +49,8 @@ class User extends Authenticatable
     public function ganador(){
       return $this->hasMany('App\Ganador', 'id_usuario','id');
     }
+
+    
 
     public function scopegetAllUsers($query){
       return $query->with('tickets')

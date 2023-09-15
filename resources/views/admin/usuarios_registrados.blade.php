@@ -26,6 +26,7 @@
                     <thead class="thead-default thead-lg">
                         <tr>
                             <th>No.</th>
+                            <th>Tipo promo</th>
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Teléfono</th>
@@ -39,6 +40,7 @@
                     <tbody>
                         <tr ng-repeat="usuario in usuarios | filter:search" ng-cloak ng-if="usuario.isAdmin == 0">
                             <td><% usuario.id %></td>
+                            <td><% usuario.tipo_promo_nombre %></td>
                             <td><% usuario.nombre %> <% usuario.apellido %></td>
                             <td><% usuario.correo %></td>
                             <td><% usuario.telefono %></td>

@@ -47,14 +47,23 @@ class LoginController extends Controller
         ]);
     }
 
+    public function showLoginForm() {
+        return view('auth.login');
+    }
+
+    public function showLoginFormTotaltech() {
+        return view('totaltech.auth.login');
+    }
+
     public function login(Request $request){
         $validator = $this->validadorLogin($request->all());
 
         $email = $request->email;
         $password = $request->password;
+        $id_promo = $request->id_promo;
 
         if($validator->passes()){
-            if(auth()->attempt(array('correo'=>$email,'password'=>$password))){
+            if(auth()->attempt(array('correo'=>$email,'password'=>$password, 'id_promo'=>$id_promo))){
                 if(auth()->user()->isAdmin){
                     $json['admin'] = true;
                     return response($json,200);

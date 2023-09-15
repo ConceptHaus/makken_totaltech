@@ -100,6 +100,11 @@
  */
 var app = angular.module('userController', ['angularApp']);
 app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload, CSRF_TOKEN) {
+  //$scope.id_promo = 'valor_de_id_promo';
+  id_promo = $scope.user;
+  console.log($scope['user']);
+  console.log($scope);
+  console.log($scope['id_promo']);
   $scope.login = function (user) {
     console.log(user);
     Swal.fire({
@@ -137,17 +142,18 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
 
   // Valida el horario y desactiva el botton de registro a ticket 
   $scope.validHorario = function () {
-    const date = new Date();
+    
+    /*const date = new Date();
     const hora = date.getHours();
     const minute = date.getMinutes();
     if (hora >= 10  ) return false;
-    else return true;
+    else return true;*/
+    return false;
   }
-
   $scope.getEstablecimientos = function () {
-    $http.get('api/v1/establecimientos').then(function (res) {
+    $http.get('api/v1/establecimientos/' + $scope['id_promo']).then(function (res) {
       $scope.establecimientos = res.data;
-      console.log($scope.establecimientos);
+      console.log("dddd",$scope.establecimientos);
     }, function (err) {
       console.log(err);
     });
@@ -204,8 +210,10 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
     Swal.close();
     console.log(errors.data.fail);
   };
-
-  $scope.getEstablecimientos();
+  setTimeout(function() {
+    $scope.getEstablecimientos();
+  }, 500);
+  
 });
 app.directive("money", function ($filter, $locale) {
   return {

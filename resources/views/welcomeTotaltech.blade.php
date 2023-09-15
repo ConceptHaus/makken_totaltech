@@ -1,29 +1,29 @@
-@extends('layouts.appTarjeta')
+@extends('layouts.appTotaltech')
 
 @section('content')
 
 <!-- Header -->
 <section class="hero">
 
-  @include('components.tarjeta.hero')
+  @include('totaltech.components.hero')
 
 </section>
 
 <section class="dinamica_ganador">
 
-  @include('components.tarjeta.dinamica')
+  @include('totaltech.components.dinamica')
 
 </section>
 
 <section class="participantes">
 
-  @include('components.tarjeta.participantes')
+  @include('totaltech.components.participantes')
 
 </section>
 
 <section id="ganadores">
 
-  @include('components.tarjeta.ganadores')
+  @include('totaltech.components.ganadores')
 
 </section>
 

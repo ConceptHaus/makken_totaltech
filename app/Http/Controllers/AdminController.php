@@ -54,6 +54,7 @@ class AdminController extends Controller {
 
     public function usuarioDetalle($id) {
         $data['user'] = User::getUser($id);
+        $data['promo'] =DB::table('tipo_promo')->where('tipo_promo.id_promo', $data['user']['id_promo'])->first();
 
         $data['tickets_totales'] = User::where('users.id','=', $id)
                                     ->leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
@@ -62,7 +63,6 @@ class AdminController extends Controller {
                                     ->get();
 
         $data['ganador'] =DB::table('users')->join('ganador', 'ganador.id_usuario', 'users.id')->where('users.id', $id)->first();
-        
         return view('admin/usuario_detalle',$data);
     }
 
@@ -156,18 +156,26 @@ class AdminController extends Controller {
     public function sendPosibleGanador(Request $request){
 
         $usuario = User::where('id',$request->id_usuario)->first();
+        
         $usuario->posible_ganador = 1;
 
         $usercontact['correo'] = $usuario['correo'];
 
         $usercontact['nombre'] = '';
-        Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-            $contact->from('privacidad@makken.com.mx', 'Total Tech');
-            $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Ipad con Total Tech');
-        });
+        if ($usuario->id_promo === '1') {
+            $mailResult = Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Ipad con Total Tech');
+            });
+            $json['correo'] = $mailResult;
+        }
+       
+
+        
 
         if($usuario->save()){
             $json['success'] = 'success_posible_ganador';
+            $json['user'] = $usuario;
             return response()->json($json);
         }
         $json['error'] = 'error_posible_ganador';
@@ -190,13 +198,18 @@ class AdminController extends Controller {
 
         $usercontact['nombre'] = '';
         if($ganador->save() && $usuario->save()){
-            
-            Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-                $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Ipad con Total Tech');
-            });
 
+            $usercontact['nombre'] = '';
+            if ($usuario->id_promo === '1') {
+                Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                    $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                    $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Ipad con Total Tech');
+                });
+    
+               
+            }
             $json['success'] = 'success_ganador_user';
+           
             return response($json, 200);
 
         }
@@ -248,7 +261,8 @@ class AdminController extends Controller {
     //METHOD GET
     public function getAllUsers(){
         $users = User::leftjoin('tickets', 'tickets.id_usuario', '=', 'users.id')
-                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"))
+                        ->leftJoin('tipo_promo', 'tipo_promo.id_promo', '=', 'users.id_promo')
+                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw("tipo_promo.nombre as tipo_promo_nombre"))
                         ->groupBy('users.id')
                         ->get();
         return response()->json($users);
@@ -288,13 +302,15 @@ class AdminController extends Controller {
             Storage::setVisibility($ticket->url,'public');
             $ticket->url = $disk->url($ticket->url);
         }
+       
 
         return response()->json($tickets);
     }
 
     public function getAllTicketsUsuarios(){
         $ticketsUsers = User::join('tickets', 'tickets.id_usuario', '=', 'users.id')
-                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador') )
+                        ->leftJoin('tipo_promo', 'tipo_promo.id_promo', '=', 'users.id_promo')
+                        ->select('users.*', DB::raw("SUM(tickets.monto) as monto_total"), DB::raw("COUNT(tickets.id_ticket) AS num_tickets"), DB::raw('DATE_FORMAT(tickets.created_at, "%d-%c-%Y") as fecha_ganador'), DB::raw("tipo_promo.nombre as tipo_promo_nombre") )
                         ->groupBy('users.id', DB::raw('CAST(tickets.created_at AS DATE)'))
                         ->get();
         return response()->json($ticketsUsers);

@@ -16,6 +16,10 @@
                 <div class="ibox-body">
                     <h5 class="font-strong mb-4">Informacion General</h5>
                     <div class="row align-items-center mb-3">
+                        <div class="col-4 text-light"> Tipo Promoción</div>
+                        <div class="col-8"> <strong> {{$promo->nombre}}</strong></div>
+                    </div>
+                    <div class="row align-items-center mb-3">
                         <div class="col-4 text-light">Nombre</div>
                         <div class="col-8">{{$user->nombre}} {{$user->apellido}}</div>
                     </div>
@@ -55,7 +59,7 @@
                 <div class="modal-dialog" role="document">
                     <form class="modal-content">
                         <div class="modal-header p-4">
-                            <h5 class="modal-title">POSIBLE GANADOR</h5>
+                            <h5 class="modal-title">POSIBLE GANADOR  PROMO <span style="text-transform: uppercase;">{{$promo->nombre}}</span> </h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>

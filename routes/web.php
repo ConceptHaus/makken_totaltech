@@ -1,19 +1,39 @@
 <?php
 
-Route::get('/', 'WelcomeController@index');
-Route::get('/ceystedadetodo', 'WelcomeController@indexTargeta');
+Route::get('/', function () {return redirect('/montack');});
+Route::get('/montack', 'WelcomeController@index')->name('indexTotal');
+Route::get('/totaltech', 'WelcomeController@indexTotaltech');
+
+
+
 
 //Auth
+Route::get('/login', function () {return redirect('/montack/login');});
+Route::get('/montack/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login','Auth\LoginController@login');
-Route::post('/registro','Auth\RegisterController@registroUser');
+
+Route::get('/totaltech/login', 'Auth\LoginController@showLoginFormTotaltech')->name('totaltech.login');
+
+Route::get('/register', function () {return redirect('/montack/register');});
+Route::get('/montack/register', 'Auth\RegisterController@showRegisterForm')->name('montack.register');
+Route::post('/registro','Auth\RegisterController@registroUser')->name('registro');
 Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::get('/totaltech/register', 'Auth\RegisterController@showRegisterFormTotaltech')->name('totaltech.register');
+
+Route::get('/password/reset', function () {return redirect('/montack/password/reset');});
+Route::get('/montack/password/reset', 'Auth\ResetPasswordController@resetPass')->name('password.request');
+
+Route::get('/totaltech/password/reset', 'Auth\ResetPasswordController@resetPassTotaltech')->name('totaltech.password.request');
 
 Auth::routes();
 
 
 //Vistas
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/ticket', 'HomeController@addNewTicket');
+Route::get('/home', function () {return redirect('/montack/home');});
+Route::get('/montack/home', 'HomeController@index')->name('home');
+Route::get('/ticket', function () {return redirect('/montack/ticket');});
+Route::get('/montack/ticket', 'HomeController@addNewTicket');
 //Reset Password
 Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
 Route::get('/reset/{token}', 'Auth\ResetPasswordController@reset_view')->name('resetPwd');
@@ -27,7 +47,11 @@ Route::get('/api/v1/users/establecimiento/{id}', 'AdminController@getAPIUsersByE
 Route::get('/api/v1/tickets', 'AdminController@getAllTickets');
 Route::get('/api/v1/ticketsUsuarios', 'AdminController@getAllTicketsUsuarios');
 Route::get('/api/v1/ganadores', 'AdminController@getAllGanadores');
-Route::get('/api/v1/establecimientos', 'WelcomeController@getEstablecimientos');
+
+Route::get('/montack/api/v1/establecimientos/{id}', function ($id) {
+    return redirect("/api/v1/establecimientos/{$id}");
+});
+Route::get('/api/v1/establecimientos/{id}', 'WelcomeController@getEstablecimientos');
 Route::get('/api/v1/textos', 'WelcomeController@getTextos');
 Route::get('/api/v1/dashboard','AdminController@dashboard');
 
@@ -59,4 +83,4 @@ Route::get('/admin/establecimientos/editar', 'AdminController@editarEstablecimie
 Route::get('/api/v1/reporte','AdminController@reporte');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+

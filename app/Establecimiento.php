@@ -17,5 +17,9 @@ class Establecimiento extends Model
         return $this->hasMany('App\Ticket','id_ticket');
     }
 
+    public function promos(){
+        return $this->hasMany('App\Ticket','id_promo');
+    }
+
     
 }
