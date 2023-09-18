@@ -101,9 +101,9 @@
 
     {{-- Botónes en móvil --}}
     <div class="BotonesFooter">
-      @if(Request::path() == '/')
+      @if(Request::path() == 'montack')
       @if(Auth::check())
-      <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="{{ url('/montack/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @else
       <a class="BotonesFooter__boton" href="{{ url('/montack/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
@@ -113,7 +113,7 @@
     </div>
 
     <!-- Footer -->
-    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() ===
+    @if (Request::path() == 'montack'|| Request::path() === 'montack/ticket' || Request::path() === 'montack/login'|| Request::path() ===
     'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
