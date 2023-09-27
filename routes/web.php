@@ -2,7 +2,7 @@
 
 Route::get('/', function () {return redirect('/montack');});
 Route::get('/montack', 'WelcomeController@index')->name('indexTotal');
-Route::get('/totaltech', 'WelcomeController@indexTotaltech');
+Route::get('/totaltech', 'WelcomeController@indexTotaltech')->name('indexTotaltech');
 
 
 
@@ -17,7 +17,11 @@ Route::get('/totaltech/login', 'Auth\LoginController@showLoginFormTotaltech')->n
 Route::get('/register', function () {return redirect('/montack/register');});
 Route::get('/montack/register', 'Auth\RegisterController@showRegisterForm')->name('montack.register');
 Route::post('/registro','Auth\RegisterController@registroUser')->name('registro');
-Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/logout', function ($id) {
+    return redirect("/logout/1");
+});
+Route::get('/logout/{id}', 'Auth\LoginController@logout');
+Route::get('/totaltech/logout/{id}', 'Auth\LoginController@logout');
 
 Route::get('/totaltech/register', 'Auth\RegisterController@showRegisterFormTotaltech')->name('totaltech.register');
 
@@ -31,9 +35,11 @@ Auth::routes();
 
 //Vistas
 Route::get('/home', function () {return redirect('/montack/home');});
-Route::get('/montack/home', 'HomeController@index')->name('home');
+Route::get('/montack/home', 'HomeController@index')->name('home')->name('montack.home');
+Route::get('/totaltech/home', 'HomeController@indexTotaltech')->name('totaltech.home');
 Route::get('/ticket', function () {return redirect('/montack/ticket');});
-Route::get('/montack/ticket', 'HomeController@addNewTicket');
+Route::get('/montack/ticket', 'HomeController@addNewTicket')->name('montack.ticket');
+Route::get('/totaltech/ticket', 'HomeController@addNewTicketTotaltech')->name('totaltech.ticket');
 //Reset Password
 Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
 Route::get('/reset/{token}', 'Auth\ResetPasswordController@reset_view')->name('resetPwd');
@@ -49,6 +55,9 @@ Route::get('/api/v1/ticketsUsuarios', 'AdminController@getAllTicketsUsuarios');
 Route::get('/api/v1/ganadores', 'AdminController@getAllGanadores');
 
 Route::get('/montack/api/v1/establecimientos/{id}', function ($id) {
+    return redirect("/api/v1/establecimientos/{$id}");
+});
+Route::get('/totaltech/api/v1/establecimientos/{id}', function ($id) {
     return redirect("/api/v1/establecimientos/{$id}");
 });
 Route::get('/api/v1/establecimientos/{id}', 'WelcomeController@getEstablecimientos');

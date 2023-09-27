@@ -23,11 +23,13 @@
                         id="key-search" type="text" placeholder="Buscar ...">
                 </div>
             </div>
+            
             <div class="table-responsive row">
                 <table ng-table="demo.tableParams" class="table table-bordered table-hover">
                     <thead class="thead-default thead-lg">
                         <tr>
                             <th>No.</th>
+                            <th>Tipo Promo</th>
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Teléfono</th>
@@ -42,6 +44,7 @@
                         <tr ng-repeat="ganador in ganadores | filter:search | filter:{id_semana:semana.selectTypeSemana}"
                             ng-cloak>
                             <td><% ganador.id_ganador %></td>
+                            <td><% ganador.promo.nombre %></td>
                             <td><% ganador.user.nombre %> <% ganador.apellido %></td>
                             <td><% ganador.user.correo %></td>
                             <td><% ganador.user.telefono %></td>

@@ -23,13 +23,52 @@ class WelcomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
+        $user = auth()->user();
         $data['ganadores'] = Ganador::getAllGanadores();
-        return view('welcome', $data);
+        $idTipoPromoArray = [];
+
+        foreach ($data['ganadores'] as $ganador) {
+            $idTipoPromo = $ganador->user->id_promo;
+
+            // Verifica si el id_tipo_promo no está en el arreglo para evitar duplicados
+            if ($idTipoPromo == 1) {
+                $idTipoPromoArray[] = $ganador;
+            }
+        }
+        $data['ganadores'] = $idTipoPromoArray;
+        if ($user) {
+            $promo =  $user->id_promo;
+            if ($promo == 2) return redirect()->route('indexTotaltech');
+            else return view('welcome', $data);
+        } else {
+            return view('welcome', $data);
+        }
+        
+       
     }
 
     public function indexTotaltech() {
+        $user = auth()->user();
         $data['ganadores'] = Ganador::getAllGanadores();
-        return view('welcomeTotaltech', $data);
+        $idTipoPromoArray = [];
+
+        foreach ($data['ganadores'] as $ganador) {
+            $idTipoPromo = $ganador->user->id_promo;
+
+            // Verifica si el id_tipo_promo no está en el arreglo para evitar duplicados
+            if ($idTipoPromo == 2) {
+                $idTipoPromoArray[] = $ganador;
+            }
+        }
+        $data['ganadores'] = $idTipoPromoArray;
+      
+        if ($user) {
+            $promo =  $user->id_promo;
+            if ($promo == 2) return view('welcomeTotaltech', $data);
+            else return redirect()->route('indexTotal');
+        } else {
+            return view('welcomeTotaltech', $data);
+        }
     }
 
     public function getEstablecimientos($id){

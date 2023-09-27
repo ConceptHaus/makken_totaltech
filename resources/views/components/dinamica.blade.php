@@ -43,7 +43,10 @@
 </div>
 <div class="row">
   <div class="col-lg-12 col-md-12">
-    <span class="text-fija-pega" style="font-family: 'Helvetica NeueLTSBold' !important;">MONTACK®</span>
+    <span class="text-fija-pega" style="font-family: 'Helvetica NeueLTSBold' !important;">MONTACK<span style="    font-size: 1.2vw;
+      display: inline-block;
+      position: absolute;
+      top: 1vw;">®</span></span>
   </div>
 </div>
 <!-- Fin Dinámica del concurso -->

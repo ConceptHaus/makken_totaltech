@@ -126,14 +126,21 @@ class RegisterController extends Controller
                 $user = $this->createUser($input);
 
                 $usercontact['correo'] = $input['correo'];
-
-                Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
-                    $contact->from('privacidad@makken.com.mx', 'Montack');
-                    $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
-                    $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                    $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
-
-                });
+                $usercontact['id_promo'] = $input['id_promo'];
+                if ($usercontact['id_promo'] == 1) {
+                    Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        $contact->from('privacidad@makken.com.mx', 'Montack');
+                        $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
+    
+                    });
+                } else if ($usercontact['id_promo'] == 2) {
+                    Mail::send('totaltech.auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        
+                        $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                        $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
+                    });
+                }
+                
 
                 if($request->admin == 0) {
                     Auth::login($user,true);

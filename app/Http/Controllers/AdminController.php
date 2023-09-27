@@ -49,8 +49,12 @@ class AdminController extends Controller {
 
     public function usuariosGanadores() {
         $data['semanas'] = Semanas::all();
+        
+      
         return view('admin/usuarios_ganadores',$data);
     }
+
+    
 
     public function usuarioDetalle($id) {
         $data['user'] = User::getUser($id);
@@ -162,13 +166,31 @@ class AdminController extends Controller {
         $usercontact['correo'] = $usuario['correo'];
 
         $usercontact['nombre'] = '';
-        if ($usuario->id_promo === '1') {
-            $mailResult = Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-                $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Ipad con Total Tech');
-            });
-            $json['correo'] = $mailResult;
-        }
+        
+            if ($usuario->id_promo === '1') {
+                try {
+                $mailResult = Mail::send('auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                        $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Ipad con Total Tech');
+                    });
+                    $json['correo']['mensaje'] = 'Correo enviado exitosamente';
+                    $json['correo']['mail'] = $usercontact['correo'];
+                } catch (\Exception $e) {
+                    $json['correo'] = 'Error al enviar el correo: ' . $e->getMessage();
+                }
+            } else  if ($usuario->id_promo === '2') {
+                try {
+                $mailResult = Mail::send('totaltech.auth.email.posible_ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                        $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('Has resultado posible ganador de una Ipad con Total Tech');
+                    });
+                    $json['correo']['mensaje'] = 'Correo enviado exitosamente';
+                    $json['correo']['mail'] = $usercontact['correo'];
+                } catch (\Exception $e) {
+                    $json['correo'] = 'Error al enviar el correo: ' . $e->getMessage();
+                }
+            } 
+        
        
 
         
@@ -186,6 +208,7 @@ class AdminController extends Controller {
         $ganador = new Ganador();
         $ganador->id_usuario = $request->id_usuario;
         $ganador->id_premio = 1;
+
         $ganador->id_semana = intval($request->id_semana);
         $ganador->dia = $request->dia;
         $ganador->num_tickets = $request->num_tickets;
@@ -195,16 +218,35 @@ class AdminController extends Controller {
         $usuario->posible_ganador = 0;
         $usuario->save();
         $usercontact['correo'] = $usuario['correo'];
-
+        $ganador->id_promo =$usuario->id_promo;
         $usercontact['nombre'] = '';
         if($ganador->save() && $usuario->save()){
 
             $usercontact['nombre'] = '';
             if ($usuario->id_promo === '1') {
-                Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
-                    $contact->from('privacidad@makken.com.mx', 'Total Tech');
-                    $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Ipad con Total Tech');
-                });
+                try {
+                    $mailResult =  Mail::send('auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                        $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Ipad con Total Tech');
+                    });
+                    $json['correo']['mensaje'] = 'Correo enviado exitosamente';
+                    $json['correo']['mail'] = $usercontact['correo'];
+                } catch (\Exception $e) {
+                    $json['correo'] = 'Error al enviar el correo: ' . $e->getMessage();
+                }
+    
+               
+            } else if ($usuario->id_promo === '2') {
+                try {
+                    $mailResult =  Mail::send('totaltech.auth.email.ganador_email' ,$usercontact, function ($contact) use ($usercontact) {
+                        $contact->from('privacidad@makken.com.mx', 'Total Tech');
+                        $contact->to($usercontact['correo'], 'Total Tech | Felicidades')->subject('¡Felicidades! Has ganado una Ipad con Total Tech');
+                    });
+                    $json['correo']['mensaje'] = 'Correo enviado exitosamente';
+                    $json['correo']['mail'] = $usercontact['correo'];
+                } catch (\Exception $e) {
+                    $json['correo'] = 'Error al enviar el correo: ' . $e->getMessage();
+                }
     
                
             }
@@ -318,7 +360,7 @@ class AdminController extends Controller {
 
     public function getAllGanadores(){
         $ganadores = Ganador::getAllGanadores();
-
+        //var_dump($ganadores);
         return response()->json($ganadores);
 
     }

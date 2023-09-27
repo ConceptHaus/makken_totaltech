@@ -13,9 +13,10 @@
         src="{{ asset('img/images/montack.png') }}" alt="subeleconmontack">
     <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
-
+        <img class="position-absolute hero__home_participa wow slideInRight" data-wow-duration="1s" src="{{ asset('img/images/participa.png') }}" alt="Scooter">
     <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/montate.png') }}" alt="ceysproduct">
+    <span class="position-absolute hero__vigencia_style wow slideInDown"> <strong>Promoción válida del 2 de octubre al 26 de noviembre <br> Registra tus compras y conoce las bases de la promoción en ganaconceys.com.mx </strong></span>
 
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">

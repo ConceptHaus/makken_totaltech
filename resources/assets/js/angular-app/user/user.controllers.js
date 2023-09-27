@@ -8,17 +8,17 @@ var app = angular.module('userController',['angularApp']);
 app.controller("userCtrl", function($scope, UserFactory, $http, $window, Upload,CSRF_TOKEN){
 
     $scope.login = function(user){
-        console.log(user);
+        
         Swal.fire({
             title:'Espera...',
             text:'Estamos verificando tus datos.',
             imageUrl: 'img/icons/Spinner-1s-200px.gif',
             showConfirmButton:false
         });
-        UserFactory.login(user).then(success, error);
+        UserFactory.login(user).then(success, error); 
     }
     $scope.register = function(user) {
-        console.log(user);
+       
         swal({
             title: 'Espera...',
             text: 'Estamos verificando tus datos.',

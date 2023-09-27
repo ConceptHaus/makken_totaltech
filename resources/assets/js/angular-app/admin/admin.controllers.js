@@ -20,6 +20,7 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
 
     // Usuarios Ganadores
     AdminFactory.ganadores().then(function (res) {
+        
         $scope.ganadores = res.data;
         // console.log($scope.ganadores);
     }, function (err) {

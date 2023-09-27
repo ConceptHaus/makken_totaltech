@@ -23,10 +23,15 @@ class Ganador extends Model
         return $this->belongsTo('App\Semanas', 'id_semana', 'id_semana');
     }
 
+    public function promo(){
+        return $this->belongsTo('App\TipoPromo', 'id_promo', 'id_promo');
+    }
+
     public function scopegetAllGanadores($query){
         return $query->with('user')
                     ->with('user.tickets.establecimiento')
                      ->with('premio')
+                     ->with('promo')
                      ->with('semanas')->get();
     }
 }

@@ -79,7 +79,7 @@
                             <div class="dropdown-arrow"></div>
                             <div class="admin-menu-content">
                                 <div class="d-flex justify-content-between mt-2">
-                                    <a class="d-flex align-items-center" href="{{ url('/logout') }}">Cerrar Sesión <i
+                                    <a class="d-flex align-items-center" href="{{ url('/logout/1') }}">Cerrar Sesión <i
                                             class="ti-shift-right ml-2 font-20"></i></a>
                                 </div>
                             </div>

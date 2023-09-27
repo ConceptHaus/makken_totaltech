@@ -80,6 +80,7 @@ class UserController extends Controller
                 $user->tickets()->save($ticket);
                 DB::commit();
                 $json['success'] = 'Ticket guardado';
+                $json['id_promo'] = $user->id_promo;
 
                 return response($json,200);
             }catch(Exception $e){

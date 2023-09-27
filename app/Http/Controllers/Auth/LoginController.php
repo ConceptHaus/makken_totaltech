@@ -63,23 +63,46 @@ class LoginController extends Controller
         $id_promo = $request->id_promo;
 
         if($validator->passes()){
-            if(auth()->attempt(array('correo'=>$email,'password'=>$password, 'id_promo'=>$id_promo))){
+           
+            if(auth()->attempt(array('correo'=>$email,'password'=>$password))){
+               
                 if(auth()->user()->isAdmin){
                     $json['admin'] = true;
                     return response($json,200);
+                } else {
+                    if (auth()->user()->id_promo == $id_promo) {
+                        $json['id_promo'] =  $id_promo;
+                        $json['success'] = true;
+                        return response($json,200);
+                    } else {
+                        Auth::logout();
+                        $json['fail']['error'] = 'La dirección de correo electrónico y/o la contraseña que has ingresado no coinciden.';
+                        return response($json, 400);
+                    }
                 }
-                $json['success'] = true;
-                return response($json,200);
+               
             }
             $json['fail']['error'] = 'La dirección de correo electrónico y/o la contraseña que has ingresado no coinciden.';
             return response($json, 400);
         }
         $json['fail'] = $validator->errors()->toArray();
+        $json['id_promo'] =  $id_promo;
         return response($json, 400);
     }
 
-    public function logout(){
+    public function logout($id){
         Auth::logout();
-        return redirect('/');
+        if ($id  == '1') {
+            return redirect('/');
+        } else if ($id  === '2') {
+            return redirect('/totaltech');
+        } else return redirect('/');
+       
+        
+    }
+    
+    public function logoutTotaltech(){
+        Auth::logout();
+        return redirect('/totaltech');
     }
 }

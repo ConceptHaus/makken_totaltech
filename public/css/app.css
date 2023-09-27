@@ -9906,14 +9906,14 @@ h3 {
 }
 .hero__scooter {
   display: block;
-  right: 13%;
-  top: 13vw;
-  width: 23vw;
+  right: 11%;
+  top: 14vw;
+  width: 22vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 4%;
+  right: 3%;
   top: 35vw;
   width: 37vw;
   z-index: 0;
@@ -9954,7 +9954,7 @@ h3 {
 
 .hero__vigencia {
   width: 43vw;
-  right: -1%;
+  right: -3%;
   top: 93%;
   bottom: 28%;
   font-size: .7vw;
@@ -9964,6 +9964,7 @@ h3 {
   text-align: left;
   line-height: 1vw;
   visibility: visible;
+  letter-spacing: .03vw;
 }
 @media (max-width: 768px) {
   .hero__montate {
@@ -10895,11 +10896,11 @@ footer {
   border-right: 0px solid #fff;
 }
 .section_home{
-     position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vw;
+  min-height: 753px!important;
 }
 .container-fluid {
   width: 100%;
@@ -11162,18 +11163,40 @@ a.navbar-brand {
     width: 11%;
   }
 }
+.hero__home_participa {
+  visibility: hidden!important;
+}
 @media (max-width: 1024px) {
   .login__img-silicon {
     width: 11%;
   }
+  .hero__home_participa {
+    visibility: visible!important;
+    width: 45vw;
+    right: 1vw;
+    top: 52vw;
+  }
+
+  .hero__vigencia_style {
+    visibility: hidden!important;
+  }
+}
+.hero__vigencia_style {
+  visibility: visible;
+  animation-name: slideInDown;
+  font-size: .8vw;
+  letter-spacing: .05vw;
+  right: 1vw;
+  top: 90%;
+  font-family: 'Helvetica NeueLTSBold';
 }
 .image_premio{
   visibility: visible;
   position: absolute;
-  width: 20%;
-  top: 30%;
+  width: 25%;
+  top: 35%;
   left: 70%;
-  min-width: 400px;
+  min-width: 100px;
 }
 .image_premio_movil{
   position: absolute;

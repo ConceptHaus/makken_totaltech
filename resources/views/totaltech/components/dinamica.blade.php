@@ -25,8 +25,9 @@
     </div>
     <div class="col-sm-4 col-12 my-4 wow zoomIn paso_tres" data-wow-offset="135"
       data-wow-duration="1s">
-       <img src="{{asset('img/images/totaltech/HD.png')}}" class="dinamica__pasos-number" alt="Paso 3"> 
+       
       <img src="{{ asset('img/icons/3-check.png') }}" class="dinamica__pasos-img" alt="Paso 3">
+      <img src="{{asset('img/images/totaltech/HD.png')}}" class="dinamica__pasos-number" alt="Paso 3"> 
       <div class="text-center">
         <h5 class="dinamica__h5 mt-3">REGISTRA TU TICKET DE COMPRA <br/> DE THE HOME DEPOT</h5>
       </div>

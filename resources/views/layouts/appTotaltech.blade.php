@@ -84,11 +84,11 @@
               <div class="dropdown-menu shadow-menu">
                 <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/ticket') }}">Agregar Ticket</a>
                 <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/home') }}">Mi Cuenta</a>
-                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/logout') }}">Cerrar Sesión</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('logout/2') }}">Cerrar Sesión</a>
               </div>
             </div>
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>
+            <!--<a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>-->
             @endif
           </li>
         </ul>

@@ -9805,7 +9805,7 @@ h3 {
     bottom: 5%;
     left: 4%!important;
     width: 17vw!important;
-    top: 40vw!important;
+    top: 30vw!important;
 }
 .hero__ceys-silicon {
   display: block;
@@ -10201,11 +10201,18 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .dinamica__h6 {
-    font-size:2.5vw;
-     width:90vw;
-    position:relative;
-    left:-2vw;
+    font-size: 2.5vw;
+    width: 90vw;
+    position: relative;
+    left: -2vw;
+    margin-top: 50px;
   }
+  .dinamica__pasos-number {
+    width: 17vw!important;
+    position: absolute;
+    left: calc(50% - 8vw)!important;
+    top: 35vw!important;
+}
 }
 @media screen and (min-width: 1440px) {
   .dinamica__h6 {
@@ -10772,7 +10779,7 @@ footer {
 @media (max-width: 768px){
   .barra{
     height: .8vw;
-    top: 51%;
+    top: 40%;
     width: 50%;
     left: 24%;
   }
@@ -11047,7 +11054,7 @@ a.navbar-brand {
 
 @media (max-width: 740px) {
   .section_home {
-    background: url(../img/images/background-homemovil.png) no-repeat;
+    background: url(../img/images/totaltech/background-homemovil.png) no-repeat;
     background-size: 100% 100%;
     height: 100vh!important;
     min-height: 1000px!important;
@@ -11115,7 +11122,7 @@ a.navbar-brand {
   position: absolute;
   width: 9%;
   left: 8%;
-  top: 22%;
+  top: 24%;
 }
 .login__img-productos {
   position: absolute;

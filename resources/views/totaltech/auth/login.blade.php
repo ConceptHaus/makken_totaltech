@@ -22,6 +22,7 @@ $now = new DateTime();
     <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/totaltech/Ceys regala ipads.png') }}" alt="ceysproduct">
 
+    
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel">
@@ -55,22 +56,22 @@ $now = new DateTime();
                         </div>
                         <div class="form-group content-actions text-center no-margin align-items-start pt-0">
 
-                            <a class="a-forget-password" href="{{ route('totaltech.password.request') }}">
+                           <!-- <a class="a-forget-password" href="{{ route('totaltech.password.request') }}">
                                 ¿Olvidaste tu contraseña?
-                            </a>
+                            </a>-->
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
+                                <!--<button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>-->
                             </div>
-                            <p class="my-3 text-center">¿No tienes cuenta?
+                            <!--<p class="my-3 text-center">¿No tienes cuenta?-->
                                 <!-- @if($date <= $now)  -->
 
-                                <a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>
+                                <!--<a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>-->
                                 <!-- @else -->
-                                <a class="disabled registrate">Regístrate.</a>
+                                <!--<a class="disabled registrate">Regístrate.</a>-->
                                 <!-- @endif -->
-                            </p>
+                            <!--</p>-->
                         </div>
                     </form>
                 </div>

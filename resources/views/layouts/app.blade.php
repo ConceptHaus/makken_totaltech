@@ -84,7 +84,7 @@
               <div class="dropdown-menu shadow-menu">
                 <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/ticket') }}">Agregar Ticket</a>
                 <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/home') }}">Mi Cuenta</a>
-                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/logout') }}">Cerrar Sesión</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('/logout/1') }}">Cerrar Sesión</a>
               </div>
             </div>
             @else

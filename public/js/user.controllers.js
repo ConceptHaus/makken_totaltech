@@ -102,11 +102,7 @@ var app = angular.module('userController', ['angularApp']);
 app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload, CSRF_TOKEN) {
   //$scope.id_promo = 'valor_de_id_promo';
   id_promo = $scope.user;
-  console.log($scope['user']);
-  console.log($scope);
-  console.log($scope['id_promo']);
   $scope.login = function (user) {
-    console.log(user);
     Swal.fire({
       title: 'Espera...',
       text: 'Estamos verificando tus datos.',
@@ -117,7 +113,6 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
   };
 
   $scope.register = function (user) {
-    console.log(user);
     swal({
       title: 'Espera...',
       text: 'Estamos verificando tus datos.',
@@ -133,10 +128,8 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
       $scope.user.estado = res.data.Estado;
       $scope.user.municipio = res.data.Municipio;
       $scope.user.coloniaArray = res.data.Colonia.split(';');
-      console.log($scope.user);
     }, function (error) {
       $scope.errorCP = error.data.error;
-      console.log($scope.errorCP);
     });
   };
 
@@ -153,9 +146,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
   $scope.getEstablecimientos = function () {
     $http.get('api/v1/establecimientos/' + $scope['id_promo']).then(function (res) {
       $scope.establecimientos = res.data;
-      console.log("dddd",$scope.establecimientos);
     }, function (err) {
-      console.log(err);
     });
   };
 
@@ -180,10 +171,15 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
             cancelButtonText: 'Subir otro ticket'
         }).then((result)=>{
             if(result.value){
-                $window.location.href="/home";
+                console.log(res);
+                if (res.data.id_promo === 1) {
+                  $window.location.href="/home";
+                } else {
+                  $window.location.href="/totaltech/home";
+                }
+                //
             }
         })
-        console.log(res.data);
         $ticket = null;
     },function(err){
         Swal.fire({
@@ -191,24 +187,25 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
             title:'Oh no!, Algo salió mal.',
             text: err.data.error.no_ticket
         })
-        // console.log(err.data);
     })
   };
 
   var success = function success(data) {
-    console.log(data.data);
-
     if (data.data['admin'] == true) {
       $window.location.href = '/admin/dashboard';
     } else {
-      $window.location.href = '/home';
+      if (data.data.id_promo === 1) {
+        $window.location.href = '/home';
+      } else {
+        $window.location.href = '/totaltech/';
+      }
+      
     }
   };
 
   var error = function error(errors) {
     $scope.errors = errors.data.fail;
     Swal.close();
-    console.log(errors.data.fail);
   };
   setTimeout(function() {
     $scope.getEstablecimientos();
