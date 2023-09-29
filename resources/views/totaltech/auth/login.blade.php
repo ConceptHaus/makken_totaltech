@@ -62,7 +62,7 @@ $now = new DateTime();
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <!--<button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>-->
+                                <!--<button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>--> 
                             </div>
                             <!--<p class="my-3 text-center">¿No tienes cuenta?-->
                                 <!-- @if($date <= $now)  -->

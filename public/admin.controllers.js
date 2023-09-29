@@ -79,14 +79,13 @@ app.controller("adminCtrl", function ($scope, AdminFactory, $http, $window, Uplo
     // Usuarios registrados
     AdminFactory.allUsers().then(function (res) {
         $scope.usuarios = res.data;
-        console.log($scope.usuarios);
+
     }, function (err) {
         console.log(err);
     });
 
     AdminFactory.establecimientos().then(function (res) {
         $scope.establecimientos = res.data;
-        console.log($scope.establecimientos);
     }, function (err) {
         console.log(err);
     });

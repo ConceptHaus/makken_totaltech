@@ -11,7 +11,7 @@
       <!-- <img src="{{asset('img/icons/paso_1.svg')}}" class="dinamica__pasos-number" alt="Paso 1"> -->
       <img src="{{ asset('img/icons/1-carrito.png') }}" class="dinamica__pasos-img2" alt="Paso 1">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">COMPRA 200 PESOS O MÁS <br/>EN PRODUCTOS TOTAL TECH</h5>
+        <h5 class="dinamica__h5 mt-3">COMPRA $200 PESOS O MÁS <br/>EN PRODUCTOS TOTAL TECH</h5>
       </div>
     </div>
     <div class="col-sm-4 col-12 my-4 wow zoomIn" data-wow-offset="135"
