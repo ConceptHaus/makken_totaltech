@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="¡Compra y Gana con Ceys!" />
-  <meta name="og:image" content="{{asset('img/logos/meta_maken.PNG')}}" />
+  <meta name="og:image" content="{{asset('img/logos/meta_maken.png')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
   <meta property="og:description" content="¡Compra y Gana con Ceys!" />
