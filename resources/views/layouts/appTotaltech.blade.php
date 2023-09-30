@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="¡Compra y Gana con Ceys!" />
-  <meta name="og:image" content="{{asset('img/logos/meta-totaltech-bici.PNG')}}" />
+  <meta name="og:image" content="{{asset('img/logos/meta-totaltech.png')}}" />
   <!-- Facebook -->
   <meta property="og:title" content="Gana con Ceys" />
-  <meta property="og:image" content="https://ganaconceys.com.mx/img/logos/meta-totaltech-bici.PNG" />
   <meta property="og:description" content="¡Compra y Gana con Ceys!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ganaconceys.com.mx" />
