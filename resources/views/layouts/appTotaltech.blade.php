@@ -88,7 +88,7 @@
               </div>
             </div>
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>
+            <!--<a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>-->
             @endif
           </li>
         </ul>

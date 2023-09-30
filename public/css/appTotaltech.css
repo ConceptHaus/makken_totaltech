@@ -9913,10 +9913,21 @@ h3 {
 }
 .hero__home {
   display: block;
-  right: 4%;
-  top: 35vw;
+  right: 5%;
+  top: 39vw;
   width: 37vw;
   z-index: 0;
+}
+.hero__button {
+  position: absolute!important;
+  top: 30vw;
+  right: 17vw;
+}
+.hero__button img {
+  position: absolute;
+  left: -15vw;
+  top: 3vw;
+  width: 13vw;
 }
 .text-fija-pega {
   width: 106.5%;
@@ -9932,15 +9943,21 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .hero__button {
+    visibility: hidden!important;
+  }
+  .hero__button img {
+    visibility: hidden!important;
+}
   .hero__scooter {
     right: 12%;
-    top: 30%;
+    top: 35%;
     width: 25%;
   }
   .hero__home {
     display: block;
-    left: 57vw;
-    top: 43vw;
+    left: 56vw;
+    top: 48vw;
     width: 40vw;
     z-index: 0;
   }

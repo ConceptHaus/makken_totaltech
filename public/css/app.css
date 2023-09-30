@@ -9801,17 +9801,17 @@ h3 {
      top: 17vw;
   }
   .hero__montack-silicon {
-    display: block;
+       display: block;
     bottom: 5%;
-    left: 4%!important;
+    left: 3%!important;
     width: 17vw!important;
-    top: 40vw!important;
+    top: 34vw!important;
 }
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
   left: 4%!important;
-  width: 16vw!important;
+  width: 14vw!important;
   top: 13vw!important;
 }
 }
@@ -9826,16 +9826,16 @@ h3 {
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
-  left: 7%;
-  width: 14vw;
-  top: 10vw;
+  left: 3%;
+  width: 10vw;
+  top: 13vw;
 }
 .hero__montack-silicon {
   display: block;
   bottom: 5%;
-  left: 5%;
-  width: 18vw;
-  top: 30vw;
+  left: 2%;
+  width: 13vw;
+  top: 29vw;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9884,9 +9884,15 @@ h3 {
 }
 .hero__ceys-productos {
   display: block;
-  left: 27%;
-  top: 20%;
-  width: 19vw;
+  left: 20%;
+  top: 25%;
+  width: 14vw;
+}
+.hero__aplica {
+  position: absolute!important;
+  width: 18vw;
+  top: 86%;
+  left: 9%;
 }
 .dinamica_ganador{
   z-index:1;
@@ -9896,25 +9902,31 @@ h3 {
     width: 180px;
     left: 28%;
   }
+  .hero__aplica {
+    position: absolute!important;
+    width: 21vw;
+    top: 86%;
+    left: 12%;
+  }
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 22%;
-    left: 24%;
+    width: 17%;
+    left: 23%;
     top: 20%;
   }
 }
 .hero__scooter {
   display: block;
-  right: 11%;
-  top: 14vw;
-  width: 22vw;
+  right: 19%;
+  top: 15vw;
+  width: 21vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 3%;
-  top: 35vw;
+  right: 11%;
+  top: 39vw;
   width: 37vw;
   z-index: 0;
 }
@@ -9930,31 +9942,57 @@ h3 {
   font-size: 4vw;
   font-family: 'Helvetica NeueLTSBold';
 }
-
+.hero__aplica_reg {
+  position: absolute!important;
+  width: 20vw;
+  top: 39vw;
+  left: 21vw;
+}
 @media (max-width: 640px) {
-  .hero__scooter {
-    right: 12%;
-    top: 30%;
-    width: 25%;
+  .hero__aplica_reg {
+    position: absolute!important;
+    width: 28vw;
+    top: 67vw;
+    left: 3vw;
   }
+  .hero__scooter {
+    right: 17%;
+    top: 36%;
+    width: 23%;
+  }
+  .hero__button {
+    left: 60vw;
+    top: 32vw;
+    visibility: hidden!important;
+}
   .hero__home {
     display: block;
-    left: 57vw;
-    top: 43vw;
+    left: 51vw;
+    top: 48vw;
     width: 40vw;
     z-index: 0;
   }
 }
 .hero__montate {
-  width: 40vw;
-  right: 2%;
-  top: 10%;
+  width: 38vw;
+  right: 11%;
+  top: 12%;
   bottom: 28%;
 }
-
+.hero__button {
+  left: 60vw;
+  top: 32vw;
+}
+.hero__button img{
+  left: 5vw!important;
+  top: 1.1vw;
+  display: block;
+  position: absolute;
+  width: 12.5vw;
+}
 .hero__vigencia {
   width: 43vw;
-  right: -3%;
+  right: 5%;
   top: 93%;
   bottom: 28%;
   font-size: .7vw;
@@ -9982,9 +10020,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 15%;
-    right: 3%;
-    width: 41vw;
+    top: 14%;
+    right: 8%;
+    width: 43vw;
   }
 
   .dinamica__qr {
@@ -11137,7 +11175,7 @@ a.navbar-brand {
   .login__img-montack {
     position: absolute;
     width: 30%;
-    left: 5%;
+    left: 3%;
     top: 18%;
 }
 .login__img-productos {

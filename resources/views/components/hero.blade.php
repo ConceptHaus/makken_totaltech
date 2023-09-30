@@ -31,6 +31,12 @@
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
 
+<img class="position-absolute hero__aplica wow slideInDown" data-wow-duration="1s"
+    src="{{ asset('img/images/aplica.png') }}" alt="Apliación">
+
+    <a href="{{ url('/montack/login')}}" class="position-absolute hero__button wow slideInDown"><img  data-wow-duration="1s"
+    src="{{ asset('img/images/Btn_participa.png') }}" alt="Button"></a>
+
 <span class="position-absolute hero__vigencia wow slideInDown"> Promoción válida del 2 de octubre al 26 de noviembre <br> Registra tus compras y conoce las bases de la promoción en ganaconceys.com.mx</span>
 
    

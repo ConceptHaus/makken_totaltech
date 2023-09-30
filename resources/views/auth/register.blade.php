@@ -18,7 +18,8 @@
 <img class="position-absolute hero__home_participa wow slideInRight" data-wow-duration="1s" src="{{ asset('img/images/participa.png') }}" alt="Scooter">
 <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
     src="{{ asset('img/images/montate.png') }}" alt="ceysproduct">
-
+    <img class="position-absolute hero__aplica_reg wow slideInDown" data-wow-duration="1s"
+    src="{{ asset('img/images/aplica.png') }}" alt="Apliación">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">
             <div class="panel panel-register">
