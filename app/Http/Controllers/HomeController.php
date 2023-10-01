@@ -60,7 +60,7 @@ public function indexTotaltech() {
     if ($user) {
         $promo =  $user->id_promo;
         if ($promo == 2) return view('totaltech.home', $tickets);
-        else return redirect()->route('montack.home');
+        else return redirect()->route('home');
     } else {
         // No hay usuario autenticado
         echo 'No hay usuario autenticado.';
