@@ -35,7 +35,7 @@ Auth::routes();
 
 //Vistas
 Route::get('/home', function () {return redirect('/montack/home');});
-Route::get('/montack/home', 'HomeController@index')->name('home')->name('montack.home');
+Route::get('/montack/home', 'HomeController@index')->name('home');
 Route::get('/totaltech/home', 'HomeController@indexTotaltech')->name('totaltech.home');
 Route::get('/ticket', function () {return redirect('/montack/ticket');});
 Route::get('/montack/ticket', 'HomeController@addNewTicket')->name('montack.ticket');
