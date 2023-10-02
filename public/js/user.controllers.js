@@ -178,6 +178,8 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
                   $window.location.href="/totaltech/home";
                 }
                 //
+            } else  {
+              $window.location.href="/ticket";
             }
         })
         $ticket = null;
@@ -191,14 +193,22 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
   };
 
   var success = function success(data) {
+    console.log("aasdlfjk");
     if (data.data['admin'] == true) {
       $window.location.href = '/admin/dashboard';
     } else {
-      if (data.data.id_promo === 1) {
-        $window.location.href = '/home';
+      console.log(data.data);
+      if (data.data.id_promo !== undefined) {
+        if (data.data.id_promo === 1) {
+          console.log("sdaflasdjhf home");
+          $window.location.href = '/home';
+        } else {
+          $window.location.href = '/totaltech/';
+        }
       } else {
-        $window.location.href = '/totaltech/';
+        $window.location.href = '/home';
       }
+     
       
     }
   };
