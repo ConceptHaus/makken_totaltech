@@ -63,7 +63,7 @@ class ForgotPasswordController extends Controller
             if($reset->save()){
               Mail::send('auth.email.email',$array , function ($message) use ($array){
                     $message->subject('Recuperación de Contraseña');
-                    $message->from('privacidad@makken.com.mx','Mundo Ceys');
+                    $message->from('privacidadmakken@gmail.com','Mundo Ceys');
                     $message->to($array['email']);
             });
           }
