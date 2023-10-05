@@ -129,14 +129,14 @@ class RegisterController extends Controller
                 $usercontact['id_promo'] = $input['id_promo'];
                 if ($usercontact['id_promo'] == 1) {
                     Mail::send('auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
-                        $contact->from('privacidadmakken@gmail.com', 'Montack');
+                        $contact->from('privacidad.makken@gmail.com', 'Montack');
                         $contact->to($usercontact['correo'], 'Montack | Bienvenido')->subject('Gracias por participar con Montack ¡Mucha Suerte!');
     
                     });
                 } else if ($usercontact['id_promo'] == 2) {
                     Mail::send('totaltech.auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
                         
-                        $contact->from('privacidadmakken@gmail.com', 'Total Tech');
+                        $contact->from('privacidad.makken@gmail.com', 'Total Tech');
                         $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
                     });
                 }
