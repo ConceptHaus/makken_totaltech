@@ -121,7 +121,7 @@
             <p class="no-margin">
               <strong>SOPORTE</strong><br>
               41-600-800/900<br>
-              <a class="mail-footer" href="mailto:privacidad@makken.com.mx" target="_blank">Promociones@makken.com.mx</a>
+              <a class="mail-footer" href="mailto:ganaconceys@ceysmexicana.com.mx" target="_blank">ganaconceys@ceysmexicana.com.mx</a>
             </p>
           </div>
           <div class="col-lg-3 text-responsive">
