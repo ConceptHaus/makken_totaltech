@@ -1,13 +1,13 @@
 @if (Auth::check())
-<!--<a href="{{ url('/ticket') }}" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
+<a href="{{ url('/ticket') }}" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
     data-wow-delay="0.5s">
     <span class="mx-4 px-3">¡PARTICIPA!</span> DA CLICK AQUÍ
-</a>-->
+</a>
 @else
-<!--<a href="{{ url('/login') }}" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
+<a href="{{ url('/login') }}" class="hero__btn-call-to-action d-none d-sm-block text-center wow slideInRight btn" data-wow-duration="1s"
     data-wow-delay="0.5s">
     <span class="mx-4 px-3">¡PARTICIPA!</span> DA CLICK AQUÍ
-</a> -->
+</a>
 @endif
 
 <!--<img class="position-absolute hero__ceys-montack  wow slideInLeft" data-wow-duration="1s"
