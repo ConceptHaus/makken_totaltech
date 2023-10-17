@@ -31,9 +31,9 @@
 <img class="position-absolute hero__montate wow slideInDown" data-wow-duration="1s"
     src="{{ asset('img/images/totaltech/Ceys regala ipads.png') }}" alt="Móntate con Montack">
 @if (Auth::check())
-<a href="{{ url('/ticket') }}" class="position-absolute hero__button wow slideInDown"><img data-wow-duration="1s" src="{{ asset('img/images/Btn_participa.png') }}" alt="Button"></a>
+<a href="{{ url('/totaltech/ticket') }}" class="position-absolute hero__button wow slideInDown"><img data-wow-duration="1s" src="{{ asset('img/images/Btn_participa.png') }}" alt="Button"></a>
 @else
-<a href="{{ url('/login') }}" class="position-absolute hero__button wow slideInDown"><img data-wow-duration="1s" src="{{ asset('img/images/Btn_participa.png') }}" alt="Button"></a>
+<a href="{{ url('/totaltech/login') }}" class="position-absolute hero__button wow slideInDown"><img data-wow-duration="1s" src="{{ asset('img/images/Btn_participa.png') }}" alt="Button"></a>
 @endif
 <span class="position-absolute hero__vigencia wow slideInDown"> Promoción válida del 16 de octubre al 10 de diciembre <br> Registra tus compras y conoce las bases de la promoción en ganaconceys.com.mx</span>
 

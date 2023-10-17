@@ -56,22 +56,22 @@ $now = new DateTime();
                         </div>
                         <div class="form-group content-actions text-center no-margin align-items-start pt-0">
 
-                           <!-- <a class="a-forget-password" href="{{ route('totaltech.password.request') }}">
+                           <a class="a-forget-password" href="{{ route('totaltech.password.request') }}">
                                 ¿Olvidaste tu contraseña?
-                            </a>-->
+                            </a>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <!--<button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>--> 
+                                <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
                             </div>
-                            <!--<p class="my-3 text-center">¿No tienes cuenta?-->
-                                <!-- @if($date <= $now)  -->
+                            <p class="my-3 text-center">¿No tienes cuenta?
+                                @if($date <= $now)
 
-                                <!--<a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>-->
-                                <!-- @else -->
-                                <!--<a class="disabled registrate">Regístrate.</a>-->
-                                <!-- @endif -->
-                            <!--</p>-->
+                                <a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>
+                                @else
+                                <a class="disabled registrate">Regístrate.</a>
+                                @endif
+                            </p>
                         </div>
                     </form>
                 </div>
