@@ -47,6 +47,31 @@ class WelcomeController extends Controller
        
     }
 
+    public function indexHome() {
+        $user = auth()->user();
+        if ($user) {
+            $data['ganadores'] = Ganador::getAllGanadores();
+            $idTipoPromoArray = [];
+    
+            foreach ($data['ganadores'] as $ganador) {
+                $idTipoPromo = $ganador->user->id_promo;
+    
+                // Verifica si el id_tipo_promo no está en el arreglo para evitar duplicados
+                if ($idTipoPromo == 1) {
+                    $idTipoPromoArray[] = $ganador;
+                }
+            }
+            $data['ganadores'] = $idTipoPromoArray;
+            $promo =  $user->id_promo;
+            if ($promo == 2) return redirect()->route('indexTotaltech');
+            else return view('welcome', $data);
+        } else {
+            return view('index');
+        }
+        
+       
+    }
+
     public function indexTotaltech() {
         $user = auth()->user();
         $data['ganadores'] = Ganador::getAllGanadores();
