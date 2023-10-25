@@ -137,7 +137,7 @@ class RegisterController extends Controller
                     Mail::send('totaltech.auth.email.registro_email' ,$usercontact, function ($contact) use ($usercontact) {
                         
                         $contact->from('privacidad.makken@gmail.com', 'Total Tech');
-                        $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar un Scooter con Total Tech, ¡mucha suerte!');
+                        $contact->to($usercontact['correo'], 'Total Tech | Bienvenido')->subject('Gracias por participar para ganar una iPad con Total Tech, ¡mucha suerte!');
                     });
                 }
                 
