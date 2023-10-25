@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', function () {return redirect('/montack');});
+Route::get('/', 'WelcomeController@indexHome')->name('indexHome');
 Route::get('/montack', 'WelcomeController@index')->name('indexTotal');
 Route::get('/totaltech', 'WelcomeController@indexTotaltech')->name('indexTotaltech');
 

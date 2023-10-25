@@ -1,0 +1,60 @@
+
+.contentindex {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.montack-index, .totaltech-index  {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.no-padding {
+    padding: 0px!important;
+}
+
+.ceys-index {
+    position: absolute;
+    z-index: 99;
+    top: 15px;
+    left: calc(50% - 75px);
+    width: 150px;
+}
+
+.logo-index-promo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 12vw;
+    /* z-index: 99; */
+    top: calc(50vh - 6vw);
+    left: calc(50% - 6vw);
+    transition: transform 0.3s;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .logo-index-promo {
+        width: 21vw;
+        top: calc(50% - 11vw);
+        left: calc(50% - 9vw);
+    }
+
+    .montack-index, .totaltech-index {
+        width: 100%;
+        height: 50vh;
+    }
+    .ceys-index {
+        position: absolute;
+        z-index: 99;
+        top: 15px;
+        left: calc(50% - 50px);
+        width: 100px;
+    }
+}
+
