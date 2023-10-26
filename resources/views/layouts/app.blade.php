@@ -67,10 +67,10 @@
       <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="navbar-nav">
           <li id="dinamica-link" class="nav-item">
-            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/#dinamica')}}">DINÁMICA</a>
+            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/montack/#dinamica')}}">DINÁMICA</a>
           </li>
           <li id="ganadores-link" class="nav-item">
-            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/#ganadores')}}">GANADORES</a>
+            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/montack/#ganadores')}}">GANADORES</a>
           </li>
           @if (Request::path() == 'login')
           <li class="nav-item active">

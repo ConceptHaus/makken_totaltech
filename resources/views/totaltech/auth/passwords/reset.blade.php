@@ -13,7 +13,8 @@
         src="{{ asset('img/images/totaltech/totaltech.png') }}" alt="subeleconmontack">
     <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/totaltech/ceysprod.png') }}" alt="ceysproduct">
-
+        <img class="position-absolute hero__home wow slideInRight" data-wow-duration="1s"
+        src="{{ asset('img/images/totaltech/participa.png') }}" alt="Scooter">
     <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/totaltech/Ceys regala ipads.png') }}" alt="ceysproduct">
 

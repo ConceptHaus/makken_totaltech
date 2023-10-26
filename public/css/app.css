@@ -9797,8 +9797,7 @@ h3 {
 
 @media (max-width: 640px) {
   .hero {
-    height: 60vw;
-     top: 17vw;
+     top: 18vw;
   }
   .hero__montack-silicon {
        display: block;
@@ -9826,14 +9825,14 @@ h3 {
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
-  left: 3%;
+  left: 8%;
   width: 10vw;
   top: 13vw;
 }
 .hero__montack-silicon {
   display: block;
   bottom: 5%;
-  left: 2%;
+  left: 6%;
   width: 13vw;
   top: 29vw;
 }
@@ -9884,11 +9883,12 @@ h3 {
 }
 .hero__ceys-productos {
   display: block;
-  left: 20%;
-  top: 25%;
-  width: 14vw;
+  left: 26%;
+  top: 19%;
+  width: 17vw;
 }
 .hero__aplica {
+  visibility: hidden!important;
   position: absolute!important;
   width: 18vw;
   top: 86%;
@@ -9907,6 +9907,7 @@ h3 {
     width: 21vw;
     top: 86%;
     left: 12%;
+    visibility: hidden!important;
   }
 }
 @media (max-width: 640px) {
@@ -9918,16 +9919,16 @@ h3 {
 }
 .hero__scooter {
   display: block;
-  right: 19%;
-  top: 15vw;
-  width: 21vw;
+  right: 16%;
+  top: 10vw;
+  width: 16vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 11%;
-  top: 39vw;
-  width: 37vw;
+  right: 13%;
+  top: 31vw;
+  width: 23vw;
   z-index: 0;
 }
 .text-fija-pega {
@@ -9957,8 +9958,8 @@ h3 {
   }
   .hero__scooter {
     right: 17%;
-    top: 36%;
-    width: 23%;
+    top: 25%;
+    width: 17%;
   }
   .hero__button {
     left: 60vw;
@@ -9967,16 +9968,16 @@ h3 {
 }
   .hero__home {
     display: block;
-    left: 51vw;
-    top: 48vw;
-    width: 40vw;
+    left: 61vw;
+    top: 36vw;
+    width: 25vw;
     z-index: 0;
   }
 }
 .hero__montate {
-  width: 38vw;
+  width: 26vw;
   right: 11%;
-  top: 12%;
+  top: 5%;
   bottom: 28%;
 }
 .hero__button {
@@ -9989,6 +9990,7 @@ h3 {
   display: block;
   position: absolute;
   width: 12.5vw;
+  visibility: hidden;
 }
 .hero__vigencia {
   width: 43vw;
@@ -10020,9 +10022,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 14%;
+    top: 7%;
     right: 8%;
-    width: 43vw;
+    width: 33vw;
   }
 
   .dinamica__qr {
@@ -11026,11 +11028,11 @@ a.navbar-brand {
 }
 @media screen and (min-width: 720px) {
   .login__img-montante {
-       /* visibility: hidden!important; */
-       position: absolute;
-       width: 40vw;
-       right: 3vw;
-       top: 2vw;
+    visibility: hidden!important;
+    position: absolute;
+    width: 21vw;
+    right: 3vw;
+    top: 2vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -11183,9 +11185,9 @@ a.navbar-brand {
 }
 .login__img-montante {
   visibility: visible;
-  width: 60%;
+  width: 36%;
   position: absolute;
-  left: 37%;
+  left: 58%;
   top: 10%;
 }
 }
@@ -11209,7 +11211,7 @@ a.navbar-brand {
     width: 11%;
   }
   .hero__home_participa {
-    visibility: visible!important;
+    visibility: hidden!important;
     width: 45vw;
     right: 1vw;
     top: 52vw;
@@ -11231,9 +11233,9 @@ a.navbar-brand {
 .image_premio{
   visibility: visible;
   position: absolute;
-  width: 25%;
-  top: 35%;
-  left: 70%;
+  width: 17%;
+  top: 19%;
+  left: 67%;
   min-width: 100px;
 }
 .image_premio_movil{
@@ -11241,7 +11243,7 @@ a.navbar-brand {
   visibility: hidden;
 }
 @media (max-width: 768px) {
-  
+ 
 
 .ng-
   .login__img-silicon {
@@ -11249,6 +11251,9 @@ a.navbar-brand {
   }
 }
 @media (max-width: 640px) {
+  .movil-hide{
+    visibility: hidden!important;
+  }
   .image_premio{
   visibility: hidden;
 }

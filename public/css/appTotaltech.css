@@ -9805,7 +9805,7 @@ h3 {
     bottom: 5%;
     left: 4%!important;
     width: 17vw!important;
-    top: 30vw!important;
+    top: 19vw!important;
 }
 .hero__ceys-silicon {
   display: block;
@@ -9824,6 +9824,7 @@ h3 {
 }
 
 .hero__ceys-silicon {
+  visibility: hidden!important;
   display: block;
   bottom: 5%;
   left: 7%;
@@ -9831,11 +9832,11 @@ h3 {
   top: 10vw;
 }
 .hero__montack-silicon {
-    display: block;
-    bottom: 5%;
-    left: 7%;
-    width: 16vw;
-    top: 18vw;
+  display: block;
+  bottom: 5%;
+  left: 7%;
+  width: 16vw;
+  top: 12vw;
 }
 @media (max-width: 1024px) {
   .hero__img-silicon {
@@ -9883,10 +9884,10 @@ h3 {
   }
 }
 .hero__ceys-productos {
-    display: block;
-    left: 23.5%;
-    top: 10%;
-    width: 22vw;
+  display: block;
+  left: 29.5%;
+  top: 27%;
+  width: 18vw;
 }
 .dinamica_ganador{
   z-index:1;
@@ -9899,23 +9900,23 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__ceys-productos {
-    width: 22%;
+    width: 19%;
     left: 24%;
-    top: 20%;
+    top: 34%;
   }
 }
 .hero__scooter {
   display: block;
-  right: 13%;
-  top: 13vw;
-  width: 23vw;
+  right: 16%;
+  top: 12vw;
+  width: 17vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 5%;
-  top: 39vw;
-  width: 37vw;
+  right: 13%;
+  top: 35vw;
+  width: 23vw;
   z-index: 0;
 }
 .hero__button {
@@ -9924,6 +9925,7 @@ h3 {
   right: 17vw;
 }
 .hero__button img {
+  visibility: hidden;
   position: absolute;
   left: -15vw;
   top: 3vw;
@@ -9950,15 +9952,15 @@ h3 {
     visibility: hidden!important;
 }
   .hero__scooter {
-    right: 12%;
-    top: 35%;
-    width: 25%;
+    right: 16%;
+    top: 26%;
+    width: 17%;
   }
   .hero__home {
     display: block;
-    left: 56vw;
-    top: 48vw;
-    width: 40vw;
+    left: 60vw;
+    top: 39vw;
+    width: 32vw;
     z-index: 0;
   }
 }
@@ -9999,9 +10001,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .hero__montate {
-    top: 15%;
-    right: 3%;
-    width: 41vw;
+    top: 8%;
+    right: 8%;
+    width: 33vw;
   }
 
   .dinamica__qr {
@@ -11015,11 +11017,11 @@ a.navbar-brand {
 }
 @media screen and (min-width: 720px) {
   .login__img-montante {
-          /* visibility: hidden!important; */
-    position: absolute;
-    width: 25vw;
-    right: 3vw;
-    top: 2vw;
+       /* visibility: hidden!important; */
+       position: absolute;
+       width: 25vw;
+       right: 11vw;
+       top: 2vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -11143,9 +11145,9 @@ a.navbar-brand {
 }
 .login__img-productos {
   position: absolute;
-  width: 7%;
-  left: 9%;
-  top: 51%;
+  width: 10%;
+  left: 8%;
+  top: 53%;
 }
 @media (max-width: 1024px) {
    footer p.no-margin {
@@ -11158,7 +11160,7 @@ a.navbar-brand {
 
 @media (max-width: 768px) {
   .login__ceys-montack {
-    top: 8%;
+    top: 11%;
     width: 20vw;
   }
   .login__img-montack {
@@ -11172,10 +11174,10 @@ a.navbar-brand {
 }
 .login__img-montante {
   visibility: visible;
-  width: 60%;
+  width: 38%;
   position: absolute;
-  left: 37%;
-  top: 10%;
+  left: 57%;
+  top: 11%;
 }
 }
 
@@ -11198,10 +11200,10 @@ a.navbar-brand {
 .image_premio{
   visibility: visible;
   position: absolute;
-  width: 20%;
-  top: 30%;
-  left: 70%;
-  min-width: 400px;
+  width: 12%;
+  top: 23%;
+  left: 67%;
+  min-width: 339px;
 }
 .image_premio_movil{
   position: absolute;
