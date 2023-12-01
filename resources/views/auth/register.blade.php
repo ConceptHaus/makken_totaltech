@@ -26,7 +26,7 @@
             <div class="panel panel-register">
                 <div class="panel-body text-center">
                     <h3>REGÍSTRATE</h3>
-                    <p>¡La promoción a llegado a su fin!</p>
+                    <p class="text-center">¡La promoción a llegado a su fin!</p>
                     <!--<form class="form-horizontal form-ajust">
                         {{ csrf_field() }}
                         <input ng-model="user.registro_admin" name="registro_admin" ng-init="user.registro_admin = 0"
