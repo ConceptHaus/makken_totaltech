@@ -33,7 +33,7 @@ $now = new DateTime();
                     <form class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
-                        <p class="text-center">¡La promoción ya termino!</p>
+                        <p class="text-center">¡La promoción ya terminó!</p>
                         
                         </div>
                     </form>
