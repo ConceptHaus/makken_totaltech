@@ -10,11 +10,10 @@
            
         </div>
         <div class="col-sm-6 no-padding cursor" id="index-totatech">
-            <a href="{{ url('/totaltech') }}">
+            <a href="{{ url('/ceys') }}">
                 <img src="{{ asset('img/images/index/totaltech.png') }}" alt="" class="totaltech-index">
                 <img src="{{ asset('img/images/totaltech/totaltech.png') }}" alt="" class="logo-index-promo" id="image-totaltech-index">
             </a>
         </div>
     </div>
-    <img src="{{ asset('img/images/ceys.png') }}" alt="" class="ceys-index">
 </div>

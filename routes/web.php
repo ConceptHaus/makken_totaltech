@@ -3,7 +3,7 @@
 Route::get('/', function () {return redirect('/montack');});
 Route::get('/', 'WelcomeController@indexHome')->name('indexHome');
 Route::get('/montack', 'WelcomeController@index')->name('indexTotal');
-Route::get('/totaltech', 'WelcomeController@indexTotaltech')->name('indexTotaltech');
+Route::get('/ceys', 'WelcomeController@indexTotaltech')->name('indexTotaltech');
 
 
 
@@ -13,7 +13,7 @@ Route::get('/login', function () {return redirect('/montack/login');});
 Route::get('/montack/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login','Auth\LoginController@login');
 
-Route::get('/totaltech/login', 'Auth\LoginController@showLoginFormTotaltech')->name('totaltech.login');
+Route::get('/ceys/login', 'Auth\LoginController@showLoginFormTotaltech')->name('totaltech.login');
 
 Route::get('/register', function () {return redirect('/montack/register');});
 Route::get('/montack/register', 'Auth\RegisterController@showRegisterForm')->name('montack.register');
@@ -22,14 +22,14 @@ Route::get('/logout', function ($id) {
     return redirect("/logout/1");
 });
 Route::get('/logout/{id}', 'Auth\LoginController@logout');
-Route::get('/totaltech/logout/{id}', 'Auth\LoginController@logout');
+Route::get('/ceys/logout/{id}', 'Auth\LoginController@logout');
 
-Route::get('/totaltech/register', 'Auth\RegisterController@showRegisterFormTotaltech')->name('totaltech.register');
+Route::get('/ceys/register', 'Auth\RegisterController@showRegisterFormTotaltech')->name('totaltech.register');
 
 Route::get('/password/reset', function () {return redirect('/montack/password/reset');});
 Route::get('/montack/password/reset', 'Auth\ResetPasswordController@resetPass')->name('password.request');
 
-Route::get('/totaltech/password/reset', 'Auth\ResetPasswordController@resetPassTotaltech')->name('totaltech.password.request');
+Route::get('/ceys/password/reset', 'Auth\ResetPasswordController@resetPassTotaltech')->name('totaltech.password.request');
 
 Auth::routes();
 
@@ -37,10 +37,10 @@ Auth::routes();
 //Vistas
 Route::get('/home', function () {return redirect('/montack/home');});
 Route::get('/montack/home', 'HomeController@index')->name('home');
-Route::get('/totaltech/home', 'HomeController@indexTotaltech')->name('totaltech.home');
+Route::get('/ceys/home', 'HomeController@indexTotaltech')->name('totaltech.home');
 Route::get('/ticket', function () {return redirect('/montack/ticket');});
 Route::get('/montack/ticket', 'HomeController@addNewTicket')->name('montack.ticket');
-Route::get('/totaltech/ticket', 'HomeController@addNewTicketTotaltech')->name('totaltech.ticket');
+Route::get('/ceys/ticket', 'HomeController@addNewTicketTotaltech')->name('totaltech.ticket');
 //Reset Password
 Route::post('/forgot', 'Auth\ForgotPasswordController@forgot');
 Route::get('/reset/{token}', 'Auth\ResetPasswordController@reset_view')->name('resetPwd');
@@ -58,7 +58,7 @@ Route::get('/api/v1/ganadores', 'AdminController@getAllGanadores');
 Route::get('/montack/api/v1/establecimientos/{id}', function ($id) {
     return redirect("/api/v1/establecimientos/{$id}");
 });
-Route::get('/totaltech/api/v1/establecimientos/{id}', function ($id) {
+Route::get('/ceys/api/v1/establecimientos/{id}', function ($id) {
     return redirect("/api/v1/establecimientos/{$id}");
 });
 Route::get('/api/v1/establecimientos/{id}', 'WelcomeController@getEstablecimientos');

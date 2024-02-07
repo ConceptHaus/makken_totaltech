@@ -4,16 +4,23 @@
 <section class="section_home">
 <div id="pageStyle" class="login container" ng-controller="userCtrl"  ng-model="id_promo" ng-init="id_promo='1'">
     <!-- <img class="login__scooter d-none d-sm-block" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
+    <img class="position-absolute hero__montate2 wow slideInDown movil-hide" data-wow-duration="1s" 
+    src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
+    <img class="position-absolute hero__home2 wow slideInRight movil-hide" data-wow-duration="1s" 
+    src="{{ asset('img/images/participa_registro.png') }}" alt="Scooter">
+    <img class="position-absolute hero__ceys-logo2 wow slideInLeft" data-wow-duration="1s"
+    src="{{ asset('img/images/ceys.png') }}" alt="Ceys">
+    <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
-    src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-    src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">
-    <img class="login__img-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-    src="{{ asset('img/images/montack.png') }}" alt="subeleconmontack">
+        src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">>
     <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-    src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
+        src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
     <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-    src="{{ asset('img/images/montate.png') }}" alt="ceysproduct">
+        src="{{ asset('img/images/participa-2.png') }}" alt="ceysproduct">
+    <img class="position-absolute hero__home_participa wow slideInRight" data-wow-duration="1s" src="{{ asset('img/images/participa_registro.png') }}" alt="Scooter">
 
     <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-10">

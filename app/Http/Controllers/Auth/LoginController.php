@@ -95,7 +95,7 @@ class LoginController extends Controller
         if ($id  == '1') {
             return redirect('/');
         } else if ($id  === '2') {
-            return redirect('/totaltech');
+            return redirect('/ceys');
         } else return redirect('/');
        
         
@@ -103,6 +103,6 @@ class LoginController extends Controller
     
     public function logoutTotaltech(){
         Auth::logout();
-        return redirect('/totaltech');
+        return redirect('/ceys');
     }
 }

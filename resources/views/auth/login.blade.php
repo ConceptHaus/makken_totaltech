@@ -8,19 +8,18 @@ $now = new DateTime();
 <section class="section_home">
 <div id="pageStyle" class="login container-fluid" ng-controller="userCtrl" ng-model="id_promo"  ng-init="id_promo = '1'">
     <!-- <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
-    <img class="position-absolute hero__montate wow slideInDown movil-hide" data-wow-duration="1s" 
+    <img class="position-absolute hero__montate2 wow slideInDown movil-hide" data-wow-duration="1s" 
     src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
-    <img class="position-absolute hero__home wow slideInRight movil-hide" data-wow-duration="1s" 
-    src="{{ asset('img/images/participa.png') }}" alt="Scooter">
-
+    <img class="position-absolute hero__home2 wow slideInRight movil-hide" data-wow-duration="1s" 
+    src="{{ asset('img/images/participa_registro.png') }}" alt="Scooter">
+    <img class="position-absolute hero__ceys-logo2 wow slideInLeft" data-wow-duration="1s"
+    src="{{ asset('img/images/ceys.png') }}" alt="Ceys">
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">
-    <img class="login__img-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/montack.png') }}" alt="subeleconmontack">
+        src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">>
     <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
     <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
@@ -34,8 +33,8 @@ $now = new DateTime();
                     <form class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
-                        <p>¡La promoción a llegado a su fin!</p>
-                       <!-- <div class="form-group">
+                        <!--<p>¡La promoción a llegado a su fin!</p>-->
+                       <div class="form-group">
                             <input ng-model="user.id_promo" name="id_promo" ng-init="user.id_promo = 1"
                             type="text" hidden>    
                             <input ng-class="{'invalido': errors['error'] || errors['email'] }" ng-model="user.email"
@@ -63,8 +62,20 @@ $now = new DateTime();
                             <a class="a-forget-password" href="{{ route('password.request') }}">
                                 ¿Olvidaste tu contraseña?
                             </a>
-                        </div>-->
-                        
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button ng-click="login(user)" class="btn btn-submit">ENTRAR</button>
+                            </div>
+                            <p class="my-3 text-center">¿No tienes cuenta?
+                                @if($date <= $now)
+
+                                <a class="registrate" href="{{ route('register') }}">Regístrate.</a>
+                                @else
+                                <!--<a class="disabled registrate">Regístrate.</a>-->
+                                @endif
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>

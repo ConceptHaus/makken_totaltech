@@ -24,10 +24,23 @@ $now = new DateTime();
 <!-- Tickets -->
 <section class="section_home">
 <div id="pageStyle" class="login container-fluid" id="tickets">
-  <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
+  <img class="position-absolute hero__montate2 wow slideInDown movil-hide" data-wow-duration="1s" 
+    src="{{ asset('img/images/montate.png') }}" alt="Móntate con Montack">
+    <img class="position-absolute hero__home2 wow slideInRight movil-hide" data-wow-duration="1s" 
+    src="{{ asset('img/images/participa_registro.png') }}" alt="Scooter">
+    <img class="position-absolute hero__ceys-logo2 wow slideInLeft" data-wow-duration="1s"
+    src="{{ asset('img/images/ceys.png') }}" alt="Ceys">
+    <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+    <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/montackinmmediate.png') }}" alt="ceys-montack">>
+    <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/cintal.png') }}" alt="ceysproduct">
+    <img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+        src="{{ asset('img/images/participa-2.png') }}" alt="ceysproduct">
+    <img class="position-absolute hero__home_participa wow slideInRight" data-wow-duration="1s" src="{{ asset('img/images/participa_registro.png') }}" alt="Scooter">
   <div class="row text-center justify-content-center">
     <div class="col-10 content-table-tickets content-table">
       @if ($tickets->count() == 0)

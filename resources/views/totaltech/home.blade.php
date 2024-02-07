@@ -24,10 +24,23 @@ $now = new DateTime();
 <!-- Tickets -->
 <section class="section_home">
 <div id="pageStyle" class="login container-fluid" id="tickets">
-  <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
-    <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+  <    <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+  <img class="position-absolute hero__home_2 wow slideInRight" data-wow-duration="1s"
+  src="{{ asset('img/images/totaltech/participa2.png') }}" alt="Scooter">
+<img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
+<img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/totaltech/totaltech.png') }}" alt="ceys-montack">
+<img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/totaltech/ceysprod.png') }}" alt="ceysproduct">
+
+<img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/totaltech/Ceys regala ipads.png') }}" alt="ceysproduct">
+
+
+<img class="login__img-montante wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
+  src="{{ asset('img/images/totaltech/Ceys regala ipads.png') }}" alt="ceysproduct">
   <div class="row text-center justify-content-center">
     <div class="col-10 content-table-tickets content-table">
       @if ($tickets->count() == 0)
@@ -37,7 +50,7 @@ $now = new DateTime();
         <span class="mx-4 px-3">REGISTRA</span> A PARTIR DEL 21 DE OCTUBRE
       </a>
       @else
-      <a href="{{ url('/totaltech/ticket') }}" class="btn btn-call-to-action2 text-center">
+      <a href="{{ url('/ceys/ticket') }}" class="btn btn-call-to-action2 text-center">
         <span class="mx-4 px-3">REGISTRA</span> <span class="daclick_home">DA CLICK AQUÍ</span>
       </a>
       @endif

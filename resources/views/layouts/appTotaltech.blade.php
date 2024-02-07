@@ -67,10 +67,10 @@
       <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="navbar-nav">
           <li id="dinamica-link" class="nav-item">
-            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/totaltech#dinamica')}}">DINÁMICA</a>
+            <a id="menu-link" class="nav-link " data-scroll href="{{ url('/ceys#dinamica')}}">DINÁMICA</a>
           </li>
           <li id="ganadores-link" class="nav-item">
-            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/totaltech#ganadores')}}">GANADORES</a>
+            <a id="menus-link" class="nav-link" data-scroll href="{{ url('/ceys#ganadores')}}">GANADORES</a>
           </li>
           @if (Request::path() == 'login')
           <li class="nav-item active">
@@ -81,13 +81,13 @@
             <div class="dropdown nav-link">
               <a class="dropdown-toggle " data-toggle="dropdown">MI CUENTA</a>
               <div class="dropdown-menu shadow-menu">
-                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/ticket') }}">Agregar Ticket</a>
-                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('totaltech/home') }}">Mi Cuenta</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('ceys/ticket') }}">Agregar Ticket</a>
+                <a id="menu-link" class="dropdown-item nav-link " href="{{ url('ceys/home') }}">Mi Cuenta</a>
                 <a id="menu-link" class="dropdown-item nav-link " href="{{ url('logout/2') }}">Cerrar Sesión</a>
               </div>
             </div>
             @else
-            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/totaltech/login')}}">PARTICIPA</a>
+            <a id="menu-link" class="nav-link" data-scroll href="{{ url('/ceys/login')}}">PARTICIPA</a>
             @endif
           </li>
         </ul>

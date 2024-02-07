@@ -10,14 +10,12 @@ $now = new DateTime();
     <!-- <img class="login__scooter wow slideInRight" src="{{ asset('img/images/razor.png') }}" alt="scooter"> -->
     <img class="image_premio" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
-        <img class="position-absolute hero__home wow slideInRight" data-wow-duration="1s"
-        src="{{ asset('img/images/totaltech/participa.png') }}" alt="Scooter">
+        <img class="position-absolute hero__home_2 wow slideInRight" data-wow-duration="1s"
+        src="{{ asset('img/images/totaltech/participa2.png') }}" alt="Scooter">
     <img class="image_premio_movil" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/premio.png') }}" alt="agarre-total" />
     <img class="login__ceys-montack wow slideInLeft mx-auto d-flex wow" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/totaltech/ceys.png') }}" alt="ceys-montack">
-    <img class="login__img-montack wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
-        src="{{ asset('img/images/totaltech/totaltech.png') }}" alt="subeleconmontack">
+        src="{{ asset('img/images/totaltech/totaltech.png') }}" alt="ceys-montack">
     <img class="login__img-productos wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"
         src="{{ asset('img/images/totaltech/ceysprod.png') }}" alt="ceysproduct">
 
@@ -69,7 +67,7 @@ $now = new DateTime();
                             <p class="my-3 text-center">¿No tienes cuenta?
                                 @if($date <= $now)
 
-                                <!--<a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>-->
+                                <a class="registrate" href="{{ route('totaltech.register') }}">Regístrate.</a>
                                 @else
                                 <!--<a class="disabled registrate">Regístrate.</a>-->
                                 @endif

@@ -9809,9 +9809,9 @@ h3 {
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
-  left: 4%!important;
-  width: 14vw!important;
-  top: 13vw!important;
+  left: 14%!important;
+  width: 21vw!important;
+  top: 15vw!important;
 }
 }
 .hero__img-silicon {
@@ -9825,9 +9825,9 @@ h3 {
 .hero__ceys-silicon {
   display: block;
   bottom: 5%;
-  left: 8%;
-  width: 10vw;
-  top: 13vw;
+  left: 14%;
+  width: 22vw;
+  top: 16vw;
 }
 .hero__montack-silicon {
   display: block;
@@ -9883,8 +9883,8 @@ h3 {
 }
 .hero__ceys-productos {
   display: block;
-  left: 26%;
-  top: 19%;
+  left: 0%;
+  top: 45%;
   width: 17vw;
 }
 .hero__aplica {
@@ -9913,21 +9913,28 @@ h3 {
 @media (max-width: 640px) {
   .hero__ceys-productos {
     width: 17%;
-    left: 23%;
-    top: 20%;
+    left: 0%;
+    top: 43%;
   }
 }
 .hero__scooter {
   display: block;
-  right: 16%;
-  top: 10vw;
-  width: 16vw;
+  right: 7%;
+  top: 21vw;
+  width: 29vw;
   z-index: 0;
 }
 .hero__home {
   display: block;
-  right: 13%;
-  top: 31vw;
+  right: 17%;
+  top: 41vw;
+  width: 23vw;
+  z-index: 0;
+}
+.hero__home2 {
+  display: block;
+  right: 3%;
+  top: 82%;
   width: 23vw;
   z-index: 0;
 }
@@ -9957,9 +9964,9 @@ h3 {
     left: 3vw;
   }
   .hero__scooter {
-    right: 17%;
-    top: 25%;
-    width: 17%;
+    right: 9%;
+    top: 37%;
+    width: 27%;
   }
   .hero__button {
     left: 60vw;
@@ -9968,6 +9975,14 @@ h3 {
 }
   .hero__home {
     display: block;
+    left: 59vw;
+    top: 38vw;
+    width: 36vw;
+    z-index: 0;
+  }
+
+  .hero__home2 {
+    display: block;
     left: 61vw;
     top: 36vw;
     width: 25vw;
@@ -9975,9 +9990,16 @@ h3 {
   }
 }
 .hero__montate {
-  width: 26vw;
-  right: 11%;
-  top: 5%;
+  width: 30vw;
+  right: 13%;
+  top: 15%;
+  bottom: 28%;
+}
+
+.hero__montate2 {
+  width: 22vw;
+  right: 4%;
+  top: 15%;
   bottom: 28%;
 }
 .hero__button {
@@ -10027,11 +10049,17 @@ h3 {
     width: 33vw;
   }
 
+  .hero__montate2 {
+    top: 7%;
+    right: 8%;
+    width: 33vw;
+  }
+
   .dinamica__qr {
       /* position: relative!important; */
-      left: 35vw!important;
+      left: 50vw!important;
       width: 15vw!important;
-      top: 34vw!important;
+      top: 0vw!important;
       margin-bottom: 9vw;
 }
 .dinamica__thehome {
@@ -10219,11 +10247,23 @@ h3 {
     font-size: 1.2vw;
   }
 }
+.hero__ceys-logo{
+  position: relative!important;
+  top: 7.5vw;
+  left: 20vw;
+  width: 8.5vw;
+}
+.hero__ceys-logo2{
+  position: absolute!important;
+  top: 15%;
+  left: 10vw;
+  width: 8.5vw;
+}
 .dinamica__qr {
   position: absolute;
-  left: 23vw;
-  width: 5vw;
-  top: 2vw;
+  left: 19vw;
+  width: 4vw;
+  top: 0.5vw;
 }
 .dinamica__thehome {
   position: absolute;
@@ -10240,6 +10280,19 @@ h3 {
   font-size: calc(15px + 2 * ((100vw - 360px) / 1080));
 }
 @media screen and (max-width: 768px) {
+
+  .hero__ceys-logo{
+    position: relative!important;
+    top: 5.5vw;
+    left: 20vw;
+    width: 8.5vw;
+  }
+  .hero__ceys-logo2{
+    position: relative!important;
+    top: -3.5vw;
+    left: 16vw;
+    width: 11.5vw;
+  }
   .dinamica__h6 {
     font-size:2.5vw;
      width:90vw;
@@ -11144,9 +11197,9 @@ a.navbar-brand {
 }
 .login__ceys-montack {
   position: absolute;
-  width: 8%;
-  left: 9%;
-  top: 13%;
+  width: 14%;
+  left: 7%;
+  top: 35%;
 }
 .login__img-montack {
   position: absolute;
@@ -11156,9 +11209,9 @@ a.navbar-brand {
 }
 .login__img-productos {
   position: absolute;
-  width: 9%;
-  left: 9%;
-  top: 51%;
+  width: 13%;
+  left: 0%;
+  top: 57%;
 }
 @media (max-width: 1024px) {
    footer p.no-margin {
@@ -11171,8 +11224,9 @@ a.navbar-brand {
 
 @media (max-width: 768px) {
   .login__ceys-montack {
-    top: 8%;
+    top: 16%;
     width: 20vw;
+    left: 16vw;
   }
   .login__img-montack {
     position: absolute;
@@ -11181,14 +11235,17 @@ a.navbar-brand {
     top: 18%;
 }
 .login__img-productos {
-   visibility: hidden!important;
+  position: absolute;
+  width: 21%;
+  left: 0%;
+  top: 17%;
 }
 .login__img-montante {
   visibility: visible;
-  width: 36%;
+  width: 43%;
   position: absolute;
-  left: 58%;
-  top: 10%;
+  left: 52%;
+  top: 15%;
 }
 }
 
@@ -11234,8 +11291,8 @@ a.navbar-brand {
   visibility: visible;
   position: absolute;
   width: 17%;
-  top: 19%;
-  left: 67%;
+  top: 37%;
+  left: 77%;
   min-width: 100px;
 }
 .image_premio_movil{

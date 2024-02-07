@@ -175,7 +175,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
                 if (res.data.id_promo === 1) {
                   $window.location.href="/home";
                 } else {
-                  $window.location.href="/totaltech/home";
+                  $window.location.href="/ceys/home";
                 }
                 //
             } else  {
@@ -203,7 +203,7 @@ app.controller("userCtrl", function ($scope, UserFactory, $http, $window, Upload
           console.log("sdaflasdjhf home");
           $window.location.href = '/home';
         } else {
-          $window.location.href = '/totaltech/';
+          $window.location.href = '/ceys/';
         }
       } else {
         $window.location.href = '/home';

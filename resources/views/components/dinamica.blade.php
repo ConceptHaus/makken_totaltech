@@ -19,7 +19,7 @@
       <!-- <img src="{{asset('img/icons/paso_2.svg')}}" class="dinamica__pasos-number" alt="Paso 2"> -->
       <img src="{{ asset('img/icons/2-registro.png') }}" class="dinamica__pasos-img" alt="Paso 2">
       <div class="text-center">
-        <img src="{{ asset('img/icons/QR.png') }}" class="dinamica__qr" alt="codigoqr">
+       
         <h5 class="dinamica__h5 mt-3">ENTRA A<br/>GANACONCEYS.COM.MX/MONTACK</h5>
       </div>
     </div>
@@ -28,7 +28,8 @@
       <!-- <img src="{{asset('img/icons/paso_3.svg')}}" class="dinamica__pasos-number" alt="Paso 3"> -->
       <img src="{{ asset('img/icons/3-check.png') }}" class="dinamica__pasos-img" alt="Paso 3">
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">REGISTRA TU TICKET/S DE COMPRA <br/> DE LOS ESTABLECIMIENTOS PARTICIPANTES</h5>
+        <img src="{{ asset('img/images/totaltech/HD.png') }}" class="dinamica__qr" alt="codigoqr">
+        <h5 class="dinamica__h5 mt-3">REGISTRA TU TICKET/S DE COMPRA <br/> DE THE HOME DEPOT</h5>
       </div>
     </div>
   </div>
