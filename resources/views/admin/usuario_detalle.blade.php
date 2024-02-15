@@ -340,7 +340,7 @@
                                                     @else
                                                     <img
 
-                                                        src="https://makken-bucket.s3.us-east-2.amazonaws.com/{{$ticket->url}}">
+                                                        src="https://chmexico.s3.amazonaws.com/{{$ticket->url}}">
                                                     @endif
                                                 </div>
                                                 <div class="modal-footer bg-primary-50"></div>
