@@ -80,7 +80,7 @@
                                 <input class="form-control form-check-input" ng-model="ticket.privacidad" type="checkbox" name="privacidad"
                                     value="1">
                                 <label class="form-check-label">He leído y aceptado los <a class="terminosaddticket"
-                                        href="{{asset('avisos/Gana_Con_Ceys_Terminos_y_Condiciones.pdf')}}"
+                                        href="{{asset('avisos/TerminosyCondicionesCEYSREGALAIPHONE2024.pdf')}}"
                                         target="_blank"><b>Términos y
                                             Condiciones.</b></a></label>
                             </div>
