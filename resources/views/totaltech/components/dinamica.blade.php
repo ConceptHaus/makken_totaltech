@@ -20,7 +20,7 @@
       <img src="{{ asset('img/icons/2-registro.png') }}" class="dinamica__pasos-img" alt="Paso 2">
       <div class="text-center">
         <!--<img src="{{ asset('img/images/totaltech/Qr.png') }}" class="dinamica__qr" alt="codigoqr">-->
-        <h5 class="dinamica__h5 mt-3">ENTRA A<br/>GANACONCEYS.COM.MX/CEYS</h5>
+        <h5 class="dinamica__h5 mt-3">ENTRA A<br/>GANACONCEYS.COM.MX/CEYS Y CREA TU CUENTA</h5>
       </div>
     </div>
     <div class="col-sm-4 col-12 my-4 wow zoomIn paso_tres" data-wow-offset="135"
@@ -29,14 +29,14 @@
       <img src="{{ asset('img/icons/3-check.png') }}" class="dinamica__pasos-img" alt="Paso 3">
       <!--<img src="{{asset('img/images/totaltech/HD.png')}}" class="dinamica__pasos-number" alt="Paso 3"> -->
       <div class="text-center">
-        <h5 class="dinamica__h5 mt-3">REGISTRA TU TICKET DE COMPRA <br/> DE LOS ESTABLECIMIENTOS PARTICIPANTES</h5>
+        <h5 class="dinamica__h5 mt-3"> REGISTRA TU TICKET O TICKETS DE COMPRA<br/> DE LOS ESTABLECIMIENTOS PARTICIPANTES</h5>
       </div>
     </div>
   </div>
   <div class="row text-center justify-content-center">
     <div class="col-lg-12 col-md-12 mt-5 mb-5 mx-2">
       <h3 class="dinamica__h6">Consulta las bases, condiciones y vigencia de la promoción en:</h3>
-      <h2 class="dinamica__h4">www.ganaconceys.com.mx/ceys</h2>
+      <a href="https://ganaconceys.com.mx/ceys"> <h2 class="dinamica__h4">www.ganaconceys.com.mx/ceys</h2></a>
       
       <!-- <h6 class="dinamica__h6">Vigencia del 25 de septiembre al 22 de octubre 2020</h6> -->
     </div>

@@ -105,14 +105,14 @@
       <a class="BotonesFooter__boton" href="{{ url('/ticket') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @else
-      <a class="BotonesFooter__boton" href="{{ url('/montack/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
+      <a class="BotonesFooter__boton" href="{{ url('/ceys/login') }}">¡PARTICIPA! <span class="BotonesFooter__span">DA CLICK
           AQUÍ</span></a>
       @endif
       @endif
     </div>
 
     <!-- Footer -->
-    @if (Request::path() == '/'|| Request::path() === 'ticket' || Request::path() === 'login'|| Request::path() ===
+    @if (Request::path() == 'ceys'|| Request::path() === 'ceys/ticket' || Request::path() === 'ceys/login'|| Request::path() ===
     'home')
     <footer>
       <div class="container-fluid pt-4 pb-4 pl-5 pr-5">
@@ -120,7 +120,7 @@
           <div class="col-lg-3 text-responsive pl-md-4 ml-lg-5 pl-lg-2">
             <p class="no-margin">
               <strong>SOPORTE</strong><br>
-              41-600-800/900<br>
+              800-888-8362 / 41-600-900<br>
               <a class="mail-footer" href="mailto:ganaconceys@ceysmexicana.com.mx" target="_blank">ganaconceys@ceysmexicana.com.mx</a>
             </p>
           </div>
@@ -130,7 +130,7 @@
             </p>
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_CondicionesMONTACK2023.pdf?4" target="_blank"
+            <p class="no-margin"><a href="/avisos/TerminosyCondicionesCEYSREGALAIPHONE2024.pdf?4" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <!--<div class="col-lg-2 text-center">

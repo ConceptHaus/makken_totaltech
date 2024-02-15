@@ -120,7 +120,7 @@
           <div class="col-lg-3 text-responsive pl-md-4 ml-lg-5 pl-lg-2">
             <p class="no-margin">
               <strong>SOPORTE</strong><br>
-              41-600-800/900<br>
+              800-888-8362 / 41-600-900<br>
               <a class="mail-footer" href="mailto:ganaconceys@ceysmexicana.com.mx" target="_blank">ganaconceys@ceysmexicana.com.mx</a>
             </p>
           </div>
@@ -130,7 +130,7 @@
             </p>
             <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Aviso_de_Privacidad.pdf" target="_blank"
                 data-scroll-ignore>Aviso de Privacidad</a></p>
-            <p class="no-margin"><a href="/avisos/Gana_Con_Ceys_Terminos_y_CondicionesMONTACK2023.pdf?4" target="_blank"
+            <p class="no-margin"><a href="/avisos/TerminosyCondicionesMONTACK2024.pdf?4" target="_blank"
                 data-scroll-ignore>Términos y Condiciones</a></p>
           </div>
           <!--<div class="col-lg-2 text-center">
