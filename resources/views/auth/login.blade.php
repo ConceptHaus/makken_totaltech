@@ -30,10 +30,10 @@ $now = new DateTime();
             <div class="panel">
                 <!--<img src="{{ asset('img/images/date-satamp.svg') }}" class="panel-img img-fluid" width="200" alt="">-->
                 <div class="panel-body text-center">
-                    <form class="form-horizontal">
+                    <!--<form class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
-                        <!--<p>¡La promoción a llegado a su fin!</p>-->
+                        
                        <div class="form-group">
                             <input ng-model="user.id_promo" name="id_promo" ng-init="user.id_promo = 1"
                             type="text" hidden>    
@@ -72,11 +72,11 @@ $now = new DateTime();
 
                                 <a class="registrate" href="{{ route('register') }}">Regístrate.</a>
                                 @else
-                                <!--<a class="disabled registrate">Regístrate.</a>-->
+                               
                                 @endif
                             </p>
                         </div>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
