@@ -36,7 +36,7 @@
   <div class="row text-center justify-content-center">
     <div class="col-lg-12 col-md-12 mt-5 mb-5 mx-2">
       <h3 class="dinamica__h6">Consulta las bases, condiciones y vigencia de la promoción <a style="    text-decoration: underline!important;" href="/avisos/TerminosyCondicionesMONTACK2024.pdf?4">aquí</a>. </h3>
-      <a href="https://ganaconceys.com.mx/montack"><h2 class="dinamica__h4">www.ganaconceys.com.mx/montack</h2></a>
+      <!--<a href="https://ganaconceys.com.mx/montack"><h2 class="dinamica__h4">www.ganaconceys.com.mx/montack</h2></a>-->
       
       <!-- <h6 class="dinamica__h6">Vigencia del 25 de septiembre al 22 de octubre 2020</h6> -->
     </div>
