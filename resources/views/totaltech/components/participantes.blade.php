@@ -59,12 +59,12 @@
         src="{{ asset('img/images/premio.png') }}" alt="scooter-premio">
       <h6 class="participantes__h6">GANA UN IPHONE </h6>
       @if (Auth::check())
-      <a href="{{ url('/totaltech/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
+      <a href="{{ url('/ceys/ticket') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
         <span class="mx-4 px-3">¡PARTICIPA!</span><span class="dar_click"> DA CLICK AQUÍ</span>
       </a>
       @else
-      <a href="{{ url('/totaltech/login') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
+      <a href="{{ url('/ceys/login') }}" class="btn-call-to-action my-4 text-center wow zoomIn btn" data-wow-duration="1s"
         data-wow-delay="0.5s">
         <span class="mx-4 px-3">¡PARTICIPA!</span><span class="dar_click"> DA CLICK AQUÍ</span>
       </a>
