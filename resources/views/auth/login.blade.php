@@ -30,7 +30,7 @@ $now = new DateTime();
             <div class="panel">
                 <!--<img src="{{ asset('img/images/date-satamp.svg') }}" class="panel-img img-fluid" width="200" alt="">-->
                 <div class="panel-body text-center">
-                    <!--<form class="form-horizontal">
+                    <form class="form-horizontal">
                         {{ csrf_field() }}
                         <h3>INICIAR SESIÓN</h3>
                         
@@ -76,7 +76,7 @@ $now = new DateTime();
                                 @endif
                             </p>
                         </div>
-                    </form>-->
+                    </form>
                 </div>
             </div>
         </div>
